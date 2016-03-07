@@ -53,10 +53,10 @@
     <div class="col-xs-3 left-column bg-light overflow-x-hidden">
       <div class="row">
         <h6 class="col-xs-12">Modules</h6>
-          <a class="row active" ng-class="{'active': home.tab === 'installed'}" ng-click="setTab('installed')" href="javascript:void()">
+          <a class="row active" ng-class="{'active': home.tab === 'installed'}" ng-click="home.setTab('installed')">
               <i class="fa fa-check"></i> Installed <span>6788</span>
           </a>
-          <a class="row" ng-class="{'active': home.tab === 'outdated'}" ng-click="setTab('installed')" href="javascript:void()">
+          <a class="row" ng-class="{'active': home.tab === 'outdated'}" ng-click="home.setTab('outdated')">
               <i class="fa fa-clock-o"></i> Outdated <span>8</span>
           </a>
       </div>

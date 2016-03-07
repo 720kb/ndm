@@ -1,0 +1,15 @@
+<div ng-hide="loaded" class="table-loader">
+  Loading ...
+</div>
+<div ng-show="loaded">
+<div class="row table-header">
+  <div class="col-xs-7">Package</div>
+    <div class="col-xs-5">Version</div>
+</div>
+<div class="table-body">
+<div class="row table-row" ng-focus="" ng-repeat="(key,value) in deps.dependencies">
+  <div class="col-xs-7">{{key}}</div>
+    <div class="col-xs-5">{{value.version}}</div>
+</div>
+</div>
+</div>

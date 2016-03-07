@@ -1,19 +1,48 @@
-/*global angular*/
+/*global angular require*/
 (function withAngular(angular) {
   'use strict';
 
 
-  var NpmFactory = function NpmFactory($scope) {
+  var exec = require('child_process').exec
+    , NpmFactory = function NpmFactory() {
 
-      var npmOutdated = function npmOutdated() {
+      var list = function list() {
 
+        return new Promise(function listPromise(resolve, reject) {
+
+          exec('npm list --json', function onList(err, stdout, stderr) {
+
+            if (err) {
+
+              reject(err);
+            }
+
+            resolve(stdout,stderr);
+          });
+        });
+      }
+      , outdated = function outdated() {
+
+        return new Promise(function listPromise(resolve, reject) {
+
+          exec('npm outdated --json', function onList(err, stdout, stderr) {
+
+            if (err) {
+
+              reject(err);
+            }
+
+            resolve(stdout,stderr);
+          });
+        });
       };
 
       return {
-        'outdated': npmOutdated
-      }
-  };
+        'list': list,
+        'outdated': outdated
+      };
+    };
 
   angular.module('electron.npm.factories', [])
-    .factory('npm', ['$scope', NpmFactory]);
+    .factory('npmFactory', NpmFactory);
 }(angular));

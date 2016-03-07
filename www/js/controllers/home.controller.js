@@ -2,14 +2,24 @@
 (function withAngular(angular) {
   'use strict';
 
-  var HomeController = function HomeController($scope) {
-      var that = this;
-      const exec = require('child_process').exec;
+  const exec = require('child_process').exec;
 
-      exec('npm list', function(error, stdout, stderr) {
-  console.log(error, stdout, stderr);
-});
-      that.a = 'yoyoyo';
+  var HomeController = function HomeController($scope) {
+      var that = this
+        , setTab = function setactiveTab(tab) {
+          that.tab = tab;
+        }
+        , npmList = exec('npm install angular-fx --save', function(error, stdout, stderr) {
+          console.log(error, stdout, stderr);
+        });
+
+      npmList.stdout.on('data', function (data) {
+        $scope.$evalAsync(function evalAsync() {
+        that.a += data;
+        });
+      });
+    that.a = '';
+    that.tab = 'installed';
   };
 
   angular.module('electron.home.controllers', [])

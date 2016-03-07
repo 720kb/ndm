@@ -1,0 +1,15 @@
+/*!
+ * Angular Fx v1.1.0
+ *
+ * Angular.js CSS3 animation directives, conditional animations and effects for your elements.
+ *
+ * Released under the MIT license
+ * www.opensource.org/licenses/MIT
+ *
+ * Brought to you by 720kb.net
+ *
+ * 2015-07-25
+ */
+
+
+[ngfx-bounce-in-down],[ngfx-bounce-in-left],[ngfx-bounce-in-right],[ngfx-bounce-in-up],[ngfx-bounce-in],[ngfx-default=hide],[ngfx-fade-in-down-big],[ngfx-fade-in-down],[ngfx-fade-in-left-big],[ngfx-fade-in-left],[ngfx-fade-in-right-big],[ngfx-fade-in-right],[ngfx-fade-in-up-big],[ngfx-fade-in-up],[ngfx-fade-in],[ngfx-flip-in-x],[ngfx-flip-in-y],[ngfx-light-speed-in],[ngfx-roll-in],[ngfx-rotate-in-down-left],[ngfx-rotate-in-down-right],[ngfx-rotate-in-up-left],[ngfx-rotate-in-up-right],[ngfx-rotate-in],[ngfx-slide-in-up],[ngfx-zoom-in-down],[ngfx-zoom-in-left],[ngfx-zoom-in-right],[ngfx-zoom-in-up],[ngfx-zoom-in]{display:none}[ngfx-bounce-in-down].ngfx-bounceindown-start,[ngfx-bounce-in-left].ngfx-bounceinleft-start,[ngfx-bounce-in-right].ngfx-bounceinright-start,[ngfx-bounce-in-up].ngfx-bounceinup-start,[ngfx-bounce-in].ngfx-bouncein-start,[ngfx-default=show],[ngfx-fade-in-down-big].ngfx-fadeindownbig-start,[ngfx-fade-in-down].ngfx-fadeindown-start,[ngfx-fade-in-left-big].ngfx-fadeinleftbig-start,[ngfx-fade-in-left].ngfx-fadeinleft-start,[ngfx-fade-in-right-big].ngfx-fadeinrightbig-start,[ngfx-fade-in-right].ngfx-fadeinright-start,[ngfx-fade-in-up-big].ngfx-fadeinupbig-start,[ngfx-fade-in-up].ngfx-fadeinup-start,[ngfx-fade-in].ngfx-fadein-start,[ngfx-flip-in-x].ngfx-flipinx-start,[ngfx-flip-in-y].ngfx-flipiny-start,[ngfx-light-speed-in].ngfx-lightspeedin-start,[ngfx-roll-in].ngfx-rollin-start,[ngfx-rotate-in-down-left].ngfx-rotateindownleft-start,[ngfx-rotate-in-down-right].ngfx-rotateindownright-start,[ngfx-rotate-in-up-left].ngfx-rotateinupleft-start,[ngfx-rotate-in-up-right].ngfx-rotateinupright-start,[ngfx-rotate-in].ngfx-rotatein-start,[ngfx-slide-down-up].ngfx-slideindown-start,[ngfx-slide-in-up].ngfx-slideinup-start,[ngfx-slide-left-up].ngfx-slideinleft-start,[ngfx-slide-right-up].ngfx-slideinright-start,[ngfx-zoom-in-down].ngfx-zoomindown-start,[ngfx-zoom-in-left].ngfx-zoomindown-start,[ngfx-zoom-in-right].ngfx-zoominright-start,[ngfx-zoom-in-up].ngfx-zoominup-start,[ngfx-zoom-in].ngfx-zoomin-start{display:inherit}.animated.infinite,[ngfx-infinite]{-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;animation-iteration-count:infinite}.animated,[ngfx-speed=medium]{-webkit-animation-duration:.75s;-moz-animation-duration:.75s;animation-duration:.75s}[ngfx-speed=slow]{-webkit-animation-duration:1.25s;-moz-animation-duration:1.25s;animation-duration:1.25s}[ngfx-speed=fast]{-webkit-animation-duration:.45s;-moz-animation-duration:.45s;animation-duration:.45s}

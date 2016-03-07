@@ -1,0 +1,193 @@
+<!doctype html>
+<html ng-app="720kb">
+<head>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="http://720kb.github.io/csshelper/assets/ext/src/helper.css">
+<link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.css">
+<link rel="stylesheet" type="text/css" href="src/css/angular-fx.css">
+<title>Angular Fx</title>
+</head>
+<body class="center-content" >
+<div class="col4 offset-left2" ng-controller="myCtrl">
+  <div class="separator100"></div>
+  <h1> Condition is {{x > 2}}</h1>
+  <div class="separator10"></div>
+  <div class="separator10"></div>
+  <h1>JELLO</h1>
+  <button class="btn btn-large bg-error color-white" ngfx-speed="slow" ngfx-infinite ngfx-jello="x > 2"> ngfx-jello</button>
+  <div class="separator10"></div>
+    <h1>SLIDE IN</h1>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-speed="slow" ngfx-slide-in-up="x > 2">  ngfx-slide-in-up</button>
+  <div class="separator10"></div>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-speed="slow" ngfx-slide-in-left="x > 2">  ngfx-slide-in-left</button>
+  <div class="separator10"></div>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-speed="slow" ngfx-slide-in-right="x > 2">  ngfx-slide-in-right</button>
+  <div class="separator10"></div>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-speed="slow" ngfx-slide-in-down="x > 2">  ngfx-slide-in-down</button>
+  <div class="separator10"></div>
+  <h1>SLIDE OUT</h1>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-speed="slow" ngfx-slide-out-up="x > 2">  ngfx-slide-out-up</button>
+  <div class="separator10"></div>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-speed="slow" ngfx-slide-out-left="x > 2">  ngfx-slide-out-left</button>
+  <div class="separator10"></div>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-speed="slow" ngfx-slide-out-right="x > 2">  ngfx-slide-out-right</button>
+  <div class="separator10"></div>
+
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-speed="slow" ngfx-slide-out-down="x > 2">  ngfx-slide-out-down</button>
+  <div class="separator10"></div>
+<h1>BOUNCE</h1>
+  <button class="btn btn-large bg-error color-white" ngfx-default="show" ngfx-speed="slow" ngfx-bounce-in="x <= 5">ngfx-bounce</button>
+  <div class="separator10"></div>
+
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-flash="x > 2">             ngfx-flash</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-pulse="x > 2">ngfx-pulse</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-rubber-band="x > 2">ngfx-rubber-band</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-shake="x > 2">ngfx-shake</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-swing="x > 2">ngfx-swing</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-tada="x > 2">ngfx-tada</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-wobble="x > 2">ngfx-wobble</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-bounce-in="x > 2">ngfx-bounce-in</button>
+
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-bounce-in-down="x > 2">ngfx-bounce-in-down</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-bounce-in-left="x > 2">ngfx-bounce-in-left</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-bounce-in-right="x > 2">ngfx-bounce-in-right</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-bounce-in-up="x > 2">ngfx-bounce-in-up</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-bounce-out="x > 2">ngfx-bounce-out</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-bounce-out-down="x > 2">ngfx-bounce-out-down</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-bounce-out-left="x > 2">ngfx-bounce-out-left</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-bounce-out-right="x > 2">ngfx-bounce-out-right</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-bounce-out-up="x > 2">ngfx-bounce-out-up</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-in="x > 2">ngfx-fade-in</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-in-down="x > 2">ngfx-fade-in-down</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-in-down-big="x > 2">ngfx-fade-in-down-big</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-in-left="x > 2">ngfx-fade-in-left</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-in-left-big="x > 2">ngfx-fade-in-left-big</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-in-right="x > 2">ngfx-fade-in-right</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-in-right-big="x > 2">ngfx-fade-in-right-big</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-in-up="x > 2">ngfx-fade-in-up</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-in-up-big="x > 2">ngfx-fade-in-up-big</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-out="x > 2">ngfx-fade-out</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-out-down="x > 2">ngfx-fade-out-down</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-out-down-big="x > 2">ngfx-fade-out-down-big</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-out-left="x > 2">ngfx-fade-out-left</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-out-left-big="x > 2">ngfx-fade-out-left-big</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-out-right="x > 2">ngfx-fade-out-right</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-out-right-big="x > 2">ngfx-fade-out-right-big</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-out-up="x > 2">ngfx-fade-out-up</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-fade-out-up-big="x > 2">
+    ngfx-fade-out-up-big
+  </button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-flip="x > 2">ngfx-flip</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-flip-in-x="x > 2">ngfx-flip-in-x</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-flip-in-y="x > 2">ngfx-flip-in-y</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-flip-out-x="x > 2">ngfx-flip-out-x</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-flip-out-y="x > 2">ngfx-flip-out-y</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-light-speed-in="x > 2">ngfx-light-speed-in</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-light-speed-out="x > 2">ngfx-light-speed-out</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-rotate-in="x > 2">ngfx-rotate-in</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-rotate-in-up-left="x > 2">ngfx-rotate-in-up-left</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-rotate-in-up-right="x > 2">zngfx-rotate-in-up-right</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-rotate-in-down-left="x > 2">zngfx-rotate-in-down-left</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-rotate-in-down-right="x > 2">ngfx-rotate-in-down-right</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-rotate-out="x > 2">ngfx-rotate-out</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-rotate-out-up-left="x > 2">ngfx-rotate-out-up-left</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-rotate-out-up-right="x > 2">ngfx-rotate-out-up-right</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-rotate-out-down-left="x > 2">ngfx-rotate-out-down-left</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-rotate-out-down-right="x > 2">ngfx-rotate-out-down-right</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-hinge="x > 2">ngfx-hinge</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-roll-in="x > 2">ngfx-roll-in</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-roll-out="x > 2">ngfx-roll-out</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-zoom-in="x > 2">ngfx-zoom-in</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-zoom-in-down="x > 2">ngfx-zoom-in-down</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-zoom-in-left="x > 2">ngfx-zoom-in-left</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-zoom-in-right="x > 2">ngfx-zoom-in-right</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-zoom-in-up="x > 2">ngfx-zoom-in-up</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-zoom-out="x > 2">ngfx-zoom-out</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-zoom-out-down="x > 2">ngfx-zoom-out-down</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-zoom-out-left="x > 2">ngfx-zoom-out-left</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-zoom-out-right="x > 2">ngfx-zoom-out-right</button>
+  <div class="separator10"></div>
+  <button class="btn btn-large bg-error color-white" ngfx-zoom-out-up="x > 2">ngfx-zoom-out-up</button>
+  <div class="separator10"></div>
+
+-->
+
+</div>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular-route.min.js"></script>
+<script type="text/javascript" src="src/js/angular-fx.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>

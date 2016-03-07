@@ -1,0 +1,29 @@
+{
+  "folders": [
+    {
+      "path": "./",
+      "follow_symlinks": false
+    }
+  ],
+  "settings": {
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true
+  },
+  "ternjs": {
+    "exclude": [
+      "node_modules/**"
+    ],
+    "libs": [
+      "browser",
+      "ecma5"
+    ],
+    "plugins": {
+      "angular": {
+        "baseURL": "./js"
+      },
+      "node": {
+        "baseURL": "./js"
+      }
+    }
+  }
+}

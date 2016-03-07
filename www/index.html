@@ -9,15 +9,21 @@
   <link rel="stylesheet" href="css/settings.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/utils.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.fixtures.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="../node_modules/angular-fx/dist/angular-fx.min.css" media="screen" title="no title" charset="utf-8">
   <title>NPM</title>
   <script src="../node_modules/angular/angular.min.js"></script>
   <script src="../node_modules/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="../node_modules/angular-fx/dist/angular-fx.min.js"></script>
 
   <script src="js/controllers/home.controller.js"></script>
   <script src="js/controllers/module.js"></script>
 
   <script src="js/factories/npm.factory.js"></script>
   <script src="js/factories/module.js"></script>
+
+  <script src="js/directives/mods.directive.js"></script>
+  <script src="js/directives/module.js"></script>
 
   <script src="js/index.js"></script>
 </head>
@@ -32,9 +38,12 @@
           </a>
         </div>
         <div class="col-xs-7">
-          <input type="checkbox" ng-chaked="home.global" ng-click="home.global = !home.global"/> <small>Globally</small>
+          <input type="checkbox" ng-chaked="home.global" ng-click="home.global = !home.global"/>
+          <small>
+            Globally
+          </small>
           &nbsp;&nbsp;&nbsp;
-          <select ng-disabled="home.global" title="Uncheck Global option for local updates">
+          <select ng-disabled="home.global" title="Uncheck Global option for specific folder updates">
             <option>Select project folder</option>
             <option>/usr/asd/Project</option>
           </select>
@@ -44,29 +53,28 @@
     <div class="col-xs-3 left-column bg-light overflow-x-hidden">
       <div class="row">
         <h6 class="col-xs-12">Modules</h6>
-          <a class="row active" href="javascript:void()">
+          <a class="row active" ng-class="{'active': home.tab === 'installed'}" ng-click="setTab('installed')" href="javascript:void()">
               <i class="fa fa-check"></i> Installed <span>6788</span>
           </a>
-          <a class="row" href="javascript:void()">
+          <a class="row" ng-class="{'active': home.tab === 'outdated'}" ng-click="setTab('installed')" href="javascript:void()">
               <i class="fa fa-clock-o"></i> Outdated <span>8</span>
           </a>
       </div>
     </div>
     <div class="col-xs-9 right-column overflow-x-hidden">
-      <div class="row table-header">
-        <div class="col-xs-6">Package</div>
-          <div class="col-xs-4">Version</div>
-            <div class="col-xs-2">Global</div>
-      </div>
-      <div class="row table-row" ng-repeat="i in [1,2,3,4,5,6,7,8,9,10]">
-        <div class="col-xs-6">Package</div>
-          <div class="col-xs-4">Version</div>
-            <div class="col-xs-2">Global</div>
-      </div>
+      <!--<div class="pusher">
+        <pre>{{home.a}}</pre>
+        <div class="text-right">
+          <button> close</button>
+        </div>
+      </div>-->
+      <mods-installed-directive ng-if="home.tab === 'installed'"></mods-installed-directive>
+      <mods-outdated-directive ng-if="home.tab === 'outdated'"></mods-outdated-directive>
     </div>
   </div>
   <div class="footer bg-footer">
     © <a href="http://720kb.net" target="_blank">720kb</a>
+    <span> <i class="fa fa-circle-o-notch fa-spin"></i> </span>
   </div>
 </body>
 </html>

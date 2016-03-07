@@ -37,27 +37,24 @@
             Update npm
           </a>
         </div>
-        <div class="col-xs-7">
-          <input type="checkbox" ng-chaked="home.global" ng-click="home.global = !home.global"/>
-          <small>
-            Globally
-          </small>
-          &nbsp;&nbsp;&nbsp;
-          <select ng-disabled="home.global" title="Uncheck Global option for specific folder updates">
-            <option>Select project folder</option>
-            <option>/usr/asd/Project</option>
-          </select>
-        </div>
       </div>
     </div>
     <div class="col-xs-3 left-column bg-light overflow-x-hidden">
       <div class="row">
-        <h6 class="col-xs-12">Modules</h6>
-          <a class="row active" ng-class="{'active': home.tab === 'installed'}" ng-click="home.setTab('installed')">
-              <i class="fa fa-check"></i> Installed <span>6788</span>
+          <h6 class="col-xs-12">Packages</h6>
+          <a class="row">
+              <i class="fa fa-folder-open"></i> Global <span>6788</span>
           </a>
-          <a class="row" ng-class="{'active': home.tab === 'outdated'}" ng-click="home.setTab('outdated')">
-              <i class="fa fa-clock-o"></i> Outdated <span>8</span>
+          <br><br>
+          <h6 class="col-xs-12">Projects</h6>
+          <a class="row">
+              <i class="fa fa-folder-o"></i> Project 1
+          </a>
+          <a class="row">
+              <i class="fa fa-folder-o"></i> Project 1
+          </a>
+          <a class="row">
+              <i class="fa fa-folder-o"></i> Project 1
           </a>
       </div>
     </div>

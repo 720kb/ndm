@@ -1,3 +1,4 @@
+/*global require*/
 'use strict';
 
 const electron = require('electron');

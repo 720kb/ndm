@@ -4,13 +4,8 @@
 
   var HomeController = function HomeController() {
 
-    var that = this
-      , setTab = function setactiveTab(tab) {
-        that.tab = tab;
-      };
+    var that = this;
 
-    that.setTab = setTab;
-    that.tab = 'installed';
   };
 
   angular.module('electron.home.controllers', [])

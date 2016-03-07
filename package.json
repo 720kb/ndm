@@ -1,0 +1,14 @@
+{
+  "name": "electronapp",
+  "version": "0.0.0",
+  "description": "Just an electron app",
+  "main": "index.js",
+  "author": "720kb",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0"
+  }
+}

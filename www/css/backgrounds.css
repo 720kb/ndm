@@ -1,0 +1,17 @@
+.bg-footer{
+  background: #f4f4f4;
+  background: -moz-linear-gradient(top,  #f4f4f4 0%, #f2f2f2 100%);
+  background: -webkit-linear-gradient(top,  #f4f4f4 0%,#f2f2f2 100%);
+  background: linear-gradient(to bottom,  #f4f4f4 0%,#f2f2f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#f2f2f2',GradientType=0 );
+}
+.bg-light{
+  background-color: #f4f6f6;
+}
+.bg-gradient-grey{
+  background: #eeeeee;
+  background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);
+  background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+  background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+}

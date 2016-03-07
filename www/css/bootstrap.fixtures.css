@@ -1,0 +1,109 @@
+body,html{
+  height:100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  padding:0;
+  cursor: default;
+  -webkit-user-select: none;
+}
+*, *:hover, *:active, *:focus, a, a:hover,a:active, a:focus{
+  outline: none;
+  text-decoration: none;
+}
+.top-menu{
+  width: 100%;
+  box-shadow: 0 -1px #ccc inset;
+}
+.top-menu a{
+  display: block;
+  width:90px;
+  text-align: center;
+  color: #666;
+  text-shadow:0 1px rgba(255,255,255,.4);
+  padding:5px;
+}
+.top-menu input, .top-menu select{
+
+  margin-top:20px;
+}
+.top-menu a i{
+  font-size: 28px;
+}
+.page{
+  height: calc(100vh - 30px);
+}
+.left-column{
+  box-shadow: -1px -1px #ddd inset;
+  height: 100vh;
+}
+.left-column a{
+  width:100%;
+  display: inline-block;
+  margin: 0;
+  line-height: 25px;
+  padding: 0 16px;
+  color:#888;
+  cursor: default;
+}
+.left-column a:active,.left-column a.active{
+  background: #327DFF;
+  cursor: default;
+  color:white;
+}
+.left-column a:active span,.left-column a.active span {
+  background: rgba(0,0,0, .2);
+  box-shadow:0px -2px rgba(0,0,0, .1) inset;
+  text-shadow: 0 1px rgba(0,0,0, .2);
+  color: white;
+}
+.left-column a i{
+  font-size: 15px;
+  position: relative;
+  top:1px;
+  margin-right:5px;
+}
+.left-column a span{
+  border-radius:10px;
+  display: inline-block;
+  float: right;
+  background: rgba(0,0,0, .3);
+  font-size: 11px;
+  color:white;
+  min-width: 23px;
+  text-align: center;
+  font-weight: 500;
+  padding:0 7px 1px 7px;
+  line-height: 15px;
+  margin-top:4px;
+}
+.footer{
+  border-top:1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  padding:0 15px;
+  z-index: 9;
+  bottom:0;
+  line-height: 30px;
+}
+.footer, .footer *, .footer *:hover{
+  color:#999;
+  font-size: 11px;
+  font-weight: 300;
+}
+.table-header{
+  color: #222;
+  font-size: 11px;
+  line-height: 23px;
+}
+.table-header div{
+  box-shadow: -1px -1px #eee inset;
+  background: #fefefe;
+}
+.table-row{
+  color:#333;
+  font-size: 11.5px;
+  line-height: 23px;
+}
+.table-row:nth-child(odd){
+  background: #EFF3F7;
+}

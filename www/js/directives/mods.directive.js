@@ -2,7 +2,7 @@
 (function withAngular(angular) {
   'use strict';
 
-  var ModsInstalledDirective = function ModsInstalledDirective($rootScope, npmFactory) {
+  var ModsInstalledDirective = function ModsInstalledDirective($rootScope, npmFactory, loadingService) {
       return {
         'restrict': 'E',
         'templateUrl': 'templates/mods-directive.html',
@@ -10,6 +10,8 @@
 
           var json
             , paginate = function Paginate(projectPath) {
+
+              loadingService.loading();
 
               npmFactory.list($rootScope.globally, projectPath).then(function onListResult(results) {
 
@@ -34,11 +36,23 @@
 
                     scope.json = json;
                     scope.loaded = true;
+                    loadingService.finished();
                   });
+                }).catch(function onCatch() {
+
+                  scope.json = json;
+                  scope.loaded = true;
+                  loadingService.finished();
                 });
+              }).catch(function onCatch() {
+
+                scope.json = json;
+                scope.loaded = true;
+                loadingService.finished();
               });
             }
             , unregisterOnProjectSelected = $rootScope.$on('user:selected-project', function onSelectedProject(eventInfo, data) {
+
               scope.loaded = undefined;
               scope.$evalAsync(function evalAsync() {
 
@@ -61,5 +75,5 @@
 
   angular.module('electron.mods.directives', [])
 
-  .directive('modsInstalledDirective', ['$rootScope', 'npmFactory', ModsInstalledDirective]);
+  .directive('modsInstalledDirective', ['$rootScope', 'npmFactory', 'loadingService', ModsInstalledDirective]);
 }(angular));

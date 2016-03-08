@@ -26,6 +26,7 @@
     '720kb.fx',
     'LocalStorageModule',
     'electron.controllers',
+    'electron.services',
     'electron.factories',
     'electron.directives'
   ])

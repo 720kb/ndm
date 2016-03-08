@@ -5,10 +5,16 @@
   var HomeController = function HomeController($rootScope, $scope) {
 
     var that = this
+      /*, choosedPackage
+      , choosedPackageDir
+      , updatePackage = function updatePackage() {
+        $rootScope.$emit();
+      }*/
       , selectGlobal = function selectGlobalDir() {
 
           $rootScope.globally = true;
           that.selectedProject = undefined;
+          that.showMenuButtons = undefined;
           $rootScope.$emit('user:selected-global');
         }
       , selectProject = function selectProject(project, event) {
@@ -19,7 +25,7 @@
         $rootScope.globally = undefined;
         that.selectedProject = project;
         $rootScope.$emit('user:selected-project', project);
-
+        that.showMenuButtons = undefined;
         if (event) {
           event.stopPropagation();
         }
@@ -33,12 +39,18 @@
         var index = $rootScope.projectsList.indexOf(project);
         $rootScope.projectsList.splice(index, 1);
         $rootScope.$emit('user:deleted-project', project);
-
+        that.showMenuButtons = undefined;
         if (event) {
           event.stopPropagation();
         }
       }
+      , unregisterOnSelectedPackage = $rootScope.$on('user:selected-package', function onSelectedPackage() {
+        that.showMenuButtons = true;
+      })
       , unregisterOnNewProject = $rootScope.$on('user:added-new-project', function onNewProject(eventInfo, data) {
+
+        that.showMenuButtons = undefined;
+
         $scope.$evalAsync(function evalAsync() {
 
           $rootScope.projectsList.unshift(data);
@@ -49,6 +61,7 @@
       $scope.$on('$destroy', function scopeDestroy() {
 
         unregisterOnNewProject();
+        unregisterOnSelectedPackage();
       });
 
       that.selectGlobal = selectGlobal;

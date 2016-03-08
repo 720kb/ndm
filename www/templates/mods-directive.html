@@ -15,7 +15,7 @@
   <div class="col-xs-2">Env</div>
 </div>
 <div class="table-body">
-<div class="row table-row" ng-focus="" ng-repeat="(key,value) in json.dependencies">
+<div class="row table-row" ng-repeat="(key,value) in json.dependencies" ng-class="{'active': selectedPackage && selectedPackage === key}" ng-click="selectPackage(key)">
   <div class="col-xs-4">{{key}}</div>
     <div class="col-xs-3">{{value.version}}</div>
       <div class="col-xs-3">

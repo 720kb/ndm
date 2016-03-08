@@ -9,6 +9,12 @@
         'link': function linkingFunction(scope) {
 
           var json
+            , selectPackage = function selectEmitPackage(item) {
+
+              scope.selectedPackage = item;
+
+              $rootScope.$emit('user:selected-package');
+            }
             , paginate = function Paginate(projectPath) {
 
               loadingService.loading();
@@ -57,20 +63,25 @@
                 });
               });
             }
+            , unregisterOnUpdatePackage = $rootScope.$on('user:update-package', function onUpdateUpackage(eventInfo, data) {
+
+              return true;
+            })
             , unregisterOnProjectSelected = $rootScope.$on('user:selected-project', function onSelectedProject(eventInfo, data) {
 
               scope.loaded = undefined;
               scope.$evalAsync(function evalAsync() {
 
                 scope.json = {};
-
+                scope.projectPath = data.path;
                 paginate(data.path);
               });
             });
-
+          scope.selectPackage = selectPackage;
           scope.$on('$destroy', function onScopeDestroy() {
 
             unregisterOnProjectSelected();
+            unregisterOnUpdatePackage();
           });
         }
       };

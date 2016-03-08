@@ -1,0 +1,28 @@
+<div class="pusher hide">
+  <pre>shell code here</pre>
+  <div class="text-right">
+    <button> close</button>
+  </div>
+</div>
+<div ng-hide="loaded" class="table-loader">
+  Loading ...
+</div>
+<div ng-show="loaded">
+<div class="row table-header">
+  <div class="col-xs-4">Package</div>
+  <div class="col-xs-3">Version</div>
+  <div class="col-xs-3">Latest</div>
+  <div class="col-xs-2">Env</div>
+</div>
+<div class="table-body">
+<div class="row table-row" ng-focus="" ng-repeat="(key,value) in json.dependencies">
+  <div class="col-xs-4">{{key}}</div>
+    <div class="col-xs-3">{{value.version}}</div>
+      <div class="col-xs-3">
+        <b ng-if="value.latest === value.version">{{value.latest}}</b>
+        <span ng-if="value.latest !== value.version">{{value.latest}}</span>
+      </div>
+      <div class="col-xs-2"> {{value.env}}</div>
+</div>
+</div>
+</div>

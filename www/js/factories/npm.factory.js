@@ -4,35 +4,66 @@
 
 
   var exec = require('child_process').exec
-    , NpmFactory = function NpmFactory() {
+    , options = {
+      'maxBuffer': 10000 * 500
+    }
+    , NpmFactory = function NpmFactory($log) {
 
-      var list = function list() {
+      var list = function list(globally, path, env) {
+
+        if (globally) {
+
+          var glob = '-g';
+        }
+        if (path) {
+
+          var cd = `cd ${path} &&`;
+        }
+        if (env) {
+
+          var env = `--${env}`;
+        }
 
         return new Promise(function listPromise(resolve, reject) {
 
-          exec('npm list --json', function onList(err, stdout, stderr) {
+          exec(`${cd || ''} npm list ${glob || ''} --json ${env || ''}`, options, function onList(err, stdout, stderr) {
 
-            if (err) {
-
+            if (err || stderr) {
+              $log.error('Error npm list', err, stderr);
               reject(err);
             }
 
-            resolve(stdout,stderr);
+            resolve(stdout);
           });
         });
       }
-      , outdated = function outdated() {
+      , outdated = function outdated(globally, path, env) {
+
+        if (globally) {
+
+          var glob = '-g';
+        }
+
+        if (path) {
+
+          var cd = `cd ${path} &&`;
+        }
+
+        if (env) {
+          var env = `--${env}`;
+        }
 
         return new Promise(function listPromise(resolve, reject) {
 
-          exec('npm outdated --json', function onList(err, stdout, stderr) {
+          exec(`${cd || ''} npm outdated ${glob || ''} --json ${env || ''}`, options, function onList(err, stdout, stderr) {
 
-            if (err) {
+            if (err || stderr) {
 
+              $log.error('Error npm outdated', err, stderr);
               reject(err);
             }
 
-            resolve(stdout,stderr);
+            resolve(stdout);
           });
         });
       };
@@ -42,7 +73,6 @@
         'outdated': outdated
       };
     };
-
   angular.module('electron.npm.factories', [])
-    .factory('npmFactory', NpmFactory);
+    .factory('npmFactory',['$log', NpmFactory]);
 }(angular));

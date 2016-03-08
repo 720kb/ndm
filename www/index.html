@@ -15,10 +15,12 @@
   <script src="../node_modules/angular/angular.min.js"></script>
   <script src="../node_modules/angular-route/angular-route.min.js"></script>
   <script type="text/javascript" src="../node_modules/angular-fx/dist/angular-fx.min.js"></script>
+  <script type="text/javascript" src="../node_modules/angular-local-storage/dist/angular-local-storage.min.js"></script>
 
   <script src="js/controllers/home.controller.js"></script>
   <script src="js/controllers/module.js"></script>
 
+  <script src="js/factories/session.factory.js"></script>
   <script src="js/factories/npm.factory.js"></script>
   <script src="js/factories/module.js"></script>
 
@@ -32,46 +34,50 @@
     <div class="container top-menu bg-gradient-grey">
       <div class="row">
         <div class="col-xs-3">
-          <a href="">
+          <a>
             <div><i class="fa fa-history"></i></div>
             Update npm
           </a>
-        </div>
+          </div>
+          <div class="col-xs-3">
+            <button onclick="document.getElementById('file-dir-input').click()">
+              <input class="out-of-screen" id="file-dir-input" input-file type="file" webkitdirectory directory/>
+              <i class="fa fa-plus-circle"></i> Add project
+            </button>
+          </div>
+          <div class="col-xs-6">
+            <a class="pull-right">
+              <div><i class="fa fa-level-up"></i></div>
+              Update
+            </a>
+            <a class="pull-right">
+              <div><i class="fa fa-remove"></i></div>
+              Uninstall
+            </a>
+          </div>
       </div>
     </div>
     <div class="col-xs-3 left-column bg-light overflow-x-hidden">
       <div class="row">
           <h6 class="col-xs-12">Packages</h6>
-          <a class="row">
-              <i class="fa fa-folder-open"></i> Global <span>6788</span>
+          <a class="row" ng-class="{'active': globally}" ng-click="home.selectGlobal()">
+              <i class="fa fa-folder-open"></i> Global <span>{{globalInstalledCount || 0}}</span>
           </a>
           <br><br>
           <h6 class="col-xs-12">Projects</h6>
-          <a class="row">
-              <i class="fa fa-folder-o"></i> Project 1
-          </a>
-          <a class="row">
-              <i class="fa fa-folder-o"></i> Project 1
-          </a>
-          <a class="row">
-              <i class="fa fa-folder-o"></i> Project 1
+          <a ng-repeat="item in projectsList" class="row project" ng-class="{'active': home.selectedProject === item}" ng-click="home.selectProject(item, $event)">
+              <i class="fa fa-folder-o"></i> {{item.name}}
+              <button ng-click="home.deleteProject(item, $event)"><i class="fa fa-times-circle-o"></i></button>
           </a>
       </div>
     </div>
     <div class="col-xs-9 right-column overflow-x-hidden">
-      <!--<div class="pusher">
-        <pre>{{home.a}}</pre>
-        <div class="text-right">
-          <button> close</button>
-        </div>
-      </div>-->
-      <mods-installed-directive ng-if="home.tab === 'installed'"></mods-installed-directive>
-      <mods-outdated-directive ng-if="home.tab === 'outdated'"></mods-outdated-directive>
+      <mods-installed-directive></mods-installed-directive>
     </div>
   </div>
   <div class="footer bg-footer">
     © <a href="http://720kb.net" target="_blank">720kb</a>
-    <span> <i class="fa fa-circle-o-notch fa-spin"></i> </span>
+    <span class="pull-right"> License - MIT </span>
   </div>
 </body>
 </html>

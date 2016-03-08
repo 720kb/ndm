@@ -9,6 +9,16 @@ body,html{
 *, *:hover, *:active, *:focus, a, a:hover,a:active, a:focus{
   outline: none;
   text-decoration: none;
+  cursor: default;
+}
+button{
+  background:none;
+  border: none;
+  border-radius: 20px;
+}
+button i{
+  font-size:13px;
+  vertical-align: middle;
 }
 .top-menu{
   width: 100%;
@@ -22,9 +32,22 @@ body,html{
   text-shadow:0 1px rgba(255,255,255,.4);
   padding:5px;
 }
-.top-menu input, .top-menu select{
-
-  margin-top:20px;
+.top-menu button{
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 15px;
+  height: 20px;
+  text-shadow:0 1px rgba(255,255,255,.4);
+}
+.top-menu button i{
+  color:#327DFF;
+  text-shadow:0 1px rgba(255,255,255,.2);
+  font-size: 15px;
+  vertical-align: text-bottom;
+}
+.top-menu button:active{
+  background: rgba(0,0,0, .05);
+  box-shadow: 0 1px 1px rgba(0,0,0, .2) inset;
 }
 .top-menu a i{
   font-size: 28px;
@@ -34,7 +57,9 @@ body,html{
 }
 .left-column{
   box-shadow: -1px -1px #ddd inset;
-  height: 100vh;
+  height:100vh;
+  max-height:calc(100vh - 84px);
+  overflow-y: scroll;
 }
 .left-column a{
   width:100%;
@@ -45,10 +70,27 @@ body,html{
   color:#888;
   cursor: default;
 }
-.left-column a:active,.left-column a.active{
+.left-column a.project:hover,.left-column a.project:active{
+  background-color: rgba(0,0,0, .03);
+  color:#888;
+}
+.left-column a:active,.left-column a.active, .left-column a.project.active{
   background: #327DFF;
   cursor: default;
   color:white;
+}
+.left-column a.project button{
+  float: right;
+  display: none;
+  text-align: right;
+  width: 23px;
+  line-height: 0;
+  margin-top:2px;
+  position: relative;
+  z-index:999;
+}
+.left-column a.project:hover button{
+  display: inherit;
 }
 .left-column a:active span,.left-column a.active span {
   background: rgba(0,0,0, .2);
@@ -105,10 +147,11 @@ body,html{
   line-height: 23px;
 }
 .table-row:nth-child(odd){
-  background: #EFF3F7;
+  background: #F2FDFF;
 }
 .table-row:active, .table-row.active{
-  background:  rgba(50,50,255, .4);
+  background:  #C2E0F9;
+  color: rgba(0,0,0, .7);
 }
 .table-body{
   min-height: 100vh;
@@ -116,6 +159,15 @@ body,html{
 .table-loader{
   text-align: center;
   line-height: 30vh;
+}
+.drop-area {
+  background: lightblue;
+  text-align: center;
+  width: 90%;
+  margin:0 auto;
+  float: none;
+  clear: both;
+  border-radius:10px;
 }
 .pusher{
   position: absolute;

@@ -2,21 +2,58 @@
 (function withAngular(angular) {
   'use strict';
 
-  var ModsInstalledDirective = function ModsInstalledDirective(npmFactory) {
+  var ModsInstalledDirective = function ModsInstalledDirective($rootScope, npmFactory) {
       return {
         'restrict': 'E',
-        'templateUrl': 'templates/directives/mods-installed.html',
+        'templateUrl': 'templates/mods-directive.html',
         'link': function linkingFunction(scope) {
 
-          npmFactory.list().then(function onResolve(stdout) {
-            scope.$evalAsync(function evalAsync() {
+          var json
+            , paginate = function Paginate(projectPath) {
 
-              scope.deps = JSON.parse(stdout);
+              npmFactory.list($rootScope.globally, projectPath).then(function onListResult(results) {
 
-              scope.loaded = true;
+                json = JSON.parse(results);
+
+                npmFactory.outdated($rootScope.globally, projectPath).then(function onOutdatedResult(result) {
+
+                  var outdated = JSON.parse(result);
+                  if (Object.keys(outdated) && Object.keys(outdated).length > 0) {
+
+                    angular.forEach(outdated, function forEachItem(value, key) {
+
+                      angular.forEach(json.dependencies, function forEachOutdated(v, k) {
+                        if (key === k) {
+
+                          json.dependencies[k].latest = outdated[key].latest;
+                        }
+                      });
+                    });
+                  }
+                  scope.$evalAsync(function evalAsync() {
+
+                    scope.json = json;
+                    scope.loaded = true;
+                  });
+                });
+              });
+            }
+            , unregisterOnProjectSelected = $rootScope.$on('user:selected-project', function onSelectedProject(eventInfo, data) {
+              scope.loaded = undefined;
+              scope.$evalAsync(function evalAsync() {
+
+                scope.json = {};
+
+                paginate(data.path);
+              });
             });
+
+          paginate();
+
+          scope.$on('$destroy', function onScopeDestroy() {
+
+            unregisterOnProjectSelected();
           });
-          scope.deps = [];
         }
       };
     };
@@ -24,5 +61,5 @@
 
   angular.module('electron.mods.directives', [])
 
-  .directive('modsInstalledDirective', ['npmFactory', ModsInstalledDirective]);
+  .directive('modsInstalledDirective', ['$rootScope', 'npmFactory', ModsInstalledDirective]);
 }(angular));

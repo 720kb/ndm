@@ -3,6 +3,7 @@
   'use strict';
 
   angular.module('electron.factories', [
-    'electron.npm.factories'
+    'electron.npm.factories',
+    'electron.session.factories'
   ]);
 }(angular));

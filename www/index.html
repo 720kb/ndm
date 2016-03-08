@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/backgrounds.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/settings.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/utils.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/loading.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.fixtures.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="../node_modules/angular-fx/dist/angular-fx.min.css" media="screen" title="no title" charset="utf-8">
@@ -67,7 +68,7 @@
               <i class="fa fa-folder-open"></i> Global <span>{{globalInstalledCount || 0}}</span>
           </a>
           <br><br>
-          <h6 class="col-xs-12">Projects</h6>
+          <h6 class="col-xs-12" ng-if="projectsList.length > 0">Projects</h6>
           <a ng-repeat="item in projectsList" class="row project" ng-class="{'active': home.selectedProject === item}" ng-click="home.selectProject(item, $event)">
               <i class="fa fa-folder-o"></i> {{item.name}}
               <button ng-click="home.deleteProject(item, $event)"><i class="fa fa-times-circle-o"></i></button>

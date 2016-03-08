@@ -5,7 +5,7 @@
   </div>
 </div>
 <div ng-hide="loaded" class="table-loader">
-  Loading ...
+  <img src="img/loading.svg" width="22"/> Loading ...
 </div>
 <div ng-show="loaded">
 <div class="row table-header">
@@ -23,6 +23,10 @@
         <span ng-if="value.latest !== value.version">{{value.latest}}</span>
       </div>
       <div class="col-xs-2"> {{value.env}}</div>
+</div>
+<div class="container" ng-show="!json.dependencies">
+  <br>
+  0 packages found
 </div>
 </div>
 </div>

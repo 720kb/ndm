@@ -2,7 +2,7 @@
 (function withAngular(angular) {
   'use strict';
 
-  var HomeController = function HomeController($rootScope, $scope, npmFactory) {
+  var HomeController = function HomeController($rootScope, $scope) {
 
     var that = this
       , selectGlobal = function selectGlobalDir() {
@@ -10,7 +10,6 @@
           $rootScope.globally = true;
           that.selectedProject = undefined;
           $rootScope.$emit('user:selected-global');
-          console.log('selected globally');
         }
       , selectProject = function selectProject(project, event) {
         if (event) {
@@ -20,7 +19,6 @@
         $rootScope.globally = undefined;
         that.selectedProject = project;
         $rootScope.$emit('user:selected-project', project);
-        console.log('selected project');
 
         if (event) {
           event.stopPropagation();
@@ -35,7 +33,6 @@
         var index = $rootScope.projectsList.indexOf(project);
         $rootScope.projectsList.splice(index, 1);
         $rootScope.$emit('user:deleted-project', project);
-        console.log('deleted project');
 
         if (event) {
           event.stopPropagation();
@@ -44,7 +41,7 @@
       , unregisterOnNewProject = $rootScope.$on('user:added-new-project', function onNewProject(eventInfo, data) {
         $scope.$evalAsync(function evalAsync() {
 
-          $rootScope.projectsList.push(data);
+          $rootScope.projectsList.unshift(data);
           selectProject(data);
         });
       });
@@ -54,7 +51,6 @@
         unregisterOnNewProject();
       });
 
-      selectGlobal();
       that.selectGlobal = selectGlobal;
       that.selectProject = selectProject;
       that.deleteProject = deleteProject;
@@ -83,6 +79,6 @@
   };
 
   angular.module('electron.home.controllers', [])
-    .controller('HomeController', ['$rootScope', '$scope', 'npmFactory', HomeController])
+    .controller('HomeController', ['$rootScope', '$scope', HomeController])
     .directive('inputFile', ['$window', '$rootScope', inputFile]);
 }(angular));

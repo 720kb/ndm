@@ -40,15 +40,21 @@
                   });
                 }).catch(function onCatch() {
 
+                  scope.$evalAsync(function evalAsync() {
+
+                    scope.json = json;
+                    scope.loaded = true;
+                    loadingService.finished();
+                  });
+                });
+              }).catch(function onCatch() {
+
+                scope.$evalAsync(function evalAsync() {
+
                   scope.json = json;
                   scope.loaded = true;
                   loadingService.finished();
                 });
-              }).catch(function onCatch() {
-
-                scope.json = json;
-                scope.loaded = true;
-                loadingService.finished();
               });
             }
             , unregisterOnProjectSelected = $rootScope.$on('user:selected-project', function onSelectedProject(eventInfo, data) {
@@ -61,8 +67,6 @@
                 paginate(data.path);
               });
             });
-
-          paginate();
 
           scope.$on('$destroy', function onScopeDestroy() {
 

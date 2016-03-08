@@ -3,100 +3,67 @@
   'use strict';
 
 
-  var npm = require('npm')
+  var exec = require('child_process').exec
+    , options = {
+      'maxBuffer': 10000 * 500
+    }
     , NpmFactory = function NpmFactory($log) {
 
-      var list = function list(globally, path, dev, prod) {
-
-        var listOptions = [];
-
-        listOptions.prefix = path;
-        listOptions.json = true;
+      var list = function list(globally, path, env) {
 
         if (globally) {
 
-          listOptions.global = true;
+          var glob = '-g';
         }
+        if (path) {
 
-        if (dev) {
-
-          listOptions.dev = true;
+          var cd = `cd ${path} &&`;
         }
+        if (env) {
 
-        if (prod) {
-
-          listOptions.prod = true;
+          var env = `--${env}`;
         }
 
         return new Promise(function listPromise(resolve, reject) {
 
-          npm.load({
-            'prefix': path,
-            'cache': false,
-            'logLevel': 'none'
-          }, function onNpmLoad(err) {
+          exec(`${cd || ''} npm list ${glob || ''} --json ${env || ''}`, options, function onList(err, stdout, stderr) {
 
-           if (err) {
-
-             reject(err);
-           }
-
-           npm.commands.list(listOptions, function onList(listError, installedDeps) {
-
-            if (listError) {
-
-              $log.error('Error npm list', listError);
-              reject(listError);
-            }
-
-            resolve(installedDeps);
-            });
-          });
-        });
-      }
-      , outdated = function outdated(globally, path, dev, prod) {
-
-        var listOptions = [];
-
-        listOptions.json = true;
-
-        if (globally) {
-
-          listOptions.global = true;
-        }
-
-        if (dev) {
-
-          listOptions.dev = true;
-        }
-
-        if (prod) {
-
-          listOptions.prod = true;
-        }
-
-        return new Promise(function listPromise(resolve, reject) {
-
-          npm.load({
-            'prefix': path,
-            'cache': false
-          }, function onNpmLoad(err) {
-
-            if (err) {
-
+            if (err || stderr) {
+              $log.error('Error npm list', err, stderr);
               reject(err);
             }
 
-            npm.commands.outdated(listOptions, function onList(listError, outdatedDeps) {
+            resolve(stdout);
+          });
+        });
+      }
+      , outdated = function outdated(globally, path, env) {
 
-              if (listError) {
+        if (globally) {
 
-                $log.error('Error npm list', listError);
-                reject(listError);
-              }
+          var glob = '-g';
+        }
 
-              resolve(outdatedDeps);
-            });
+        if (path) {
+
+          var cd = `cd ${path} &&`;
+        }
+
+        if (env) {
+          var env = `--${env}`;
+        }
+
+        return new Promise(function listPromise(resolve, reject) {
+
+          exec(`${cd || ''} npm outdated ${glob || ''} --json ${env || ''}`, options, function onList(err, stdout, stderr) {
+
+            if (err || stderr) {
+
+              $log.error('Error npm outdated', err, stderr);
+              reject(err);
+            }
+
+            resolve(stdout);
           });
         });
       };

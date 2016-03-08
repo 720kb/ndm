@@ -75,7 +75,7 @@
           }
         });
       }
-    }
+    };
   };
 
   angular.module('electron.home.controllers', [])

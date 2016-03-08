@@ -9,17 +9,17 @@
         'link': function linkingFunction(scope) {
 
           var json
-            , paginate = function Paginate(projectPath) {
+            , paginate = function Paginate(globally, projectPath, dev, prod) {
 
               loadingService.loading();
 
-              npmFactory.list($rootScope.globally, projectPath).then(function onListResult(results) {
+              npmFactory.list(globally, projectPath, dev, prod).then(function onListResult(results) {
 
-                json = JSON.parse(results);
+                json = results;
 
-                npmFactory.outdated($rootScope.globally, projectPath).then(function onOutdatedResult(result) {
+                npmFactory.outdated(globally, projectPath, dev, prod).then(function onOutdatedResult(result) {
 
-                  var outdated = JSON.parse(result);
+                  var outdated = result;
                   if (Object.keys(outdated) && Object.keys(outdated).length > 0) {
 
                     angular.forEach(outdated, function forEachItem(value, key) {
@@ -63,8 +63,7 @@
               scope.$evalAsync(function evalAsync() {
 
                 scope.json = {};
-
-                paginate(data.path);
+                paginate($rootScope.globally, data.path, true , true);
               });
             });
 

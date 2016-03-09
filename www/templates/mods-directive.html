@@ -1,5 +1,5 @@
 <div class="dialog prompt" ngfx-speed="fast" ngfx-fade-in-down="showVersionDialog">
-    <input type="text" ng-model="selectedVersion" ng-value="json.dependencies[selectedPackage].latest"/>
+    <input type="text" ngfx-shake="errorUpdating" ng-model="selectedVersion" ng-value="json.dependencies[selectedPackage].latest"/>
     <button ng-click="updatePackage(selectedVersion)">OK</button>
 </div>
 <div class="pusher hide">
@@ -19,7 +19,7 @@
     <div class="col-xs-2">Env</div>
   </div>
   <div class="table-body">
-    <div class="row table-row" ng-repeat="(key,value) in json.dependencies" ng-class="{'active': selectedPackage && selectedPackage === key}" ng-click="selectPackage(key)">
+    <div class="row table-row" ng-repeat="(key,value) in json.dependencies" ng-class="{'active': selectedPackage.name && selectedPackage.name === key}" ng-click="selectPackage(json.dependencies[key])">
       <div class="col-xs-4">{{key}}</div>
       <div class="col-xs-3">{{value.version}}</div>
       <div class="col-xs-3">
@@ -32,7 +32,7 @@
       <br>
       <pre>{{error}}</pre>
     </div>
-    <div ng-show="!json.dependencies">
+    <div ng-show="loaded && !json.dependencies">
       <br>
       <span ng-show="error && error.length > 5"><i class="fa fa-warning"></i> Issues ,</span> 0 packages found
     </div>

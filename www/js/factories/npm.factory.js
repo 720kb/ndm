@@ -5,11 +5,11 @@
 
   var exec = require('child_process').exec
     , options = {
-      'maxBuffer': 10000 * 500
+      'maxBuffer': 100000 * 500
     }
     , NpmFactory = function NpmFactory($log) {
 
-      var update = function update(lib, path, version, env) {
+      var update = function update(lib, path, version, env, globally) {
 
           if (path) {
 
@@ -17,14 +17,19 @@
           }
           if (env) {
 
-            var env = `--${env}`;
+            var env = `--only:${env}`;
+          }
+
+          if (globally) {
+
+            var glob = '-g';
           }
 
           return new Promise(function listPromise(resolve, reject) {
 
             if (path && version && lib) {
-
-              var process = exec(`npm update ${glob || ''} ${lib}@${version} ${env || ''} ${prefix || ''}`, options, function onList(err, stdout, stderr) {
+              console.log(`npm install ${glob || ''} ${lib}@${version} ${env || ''} ${prefix || ''} --save`);
+              var process = exec(`npm install ${glob || ''} ${lib}@${version} ${env || ''} ${prefix || ''} --save`, options, function onList(err, stdout, stderr) {
 
                   if (err || stderr) {
                     $log.error('Error npm update', err, stderr);
@@ -60,7 +65,7 @@
 
         return new Promise(function listPromise(resolve, reject) {
 
-          exec(`npm list ${glob || ''} --json --long ${env || ''} ${prefix || ''}`, options, function onList(err, stdout, stderr) {
+          exec(`npm list ${glob || ''} --json --long ${prefix || ''}`, options, function onList(err, stdout, stderr) {
 
             if (err || stderr) {
               $log.error('Error npm list', err, stderr);

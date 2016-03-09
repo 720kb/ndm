@@ -2,7 +2,7 @@
 (function withAngular(angular) {
   'use strict';
 
-  var ModsInstalledDirective = function ModsInstalledDirective($rootScope, npmFactory, loadingService) {
+  var ModsInstalledDirective = function ModsInstalledDirective($rootScope, npmFactory, loadingService, $log) {
       return {
         'restrict': 'E',
         'templateUrl': 'templates/mods-directive.html',
@@ -13,20 +13,30 @@
               scope.showVersionDialog = true;
             }
             , updatePackage = function updatePackage() {
-              console.log('updating',scope.selectedPackage, scope.projectPath, scope.selectedVersion);
-              npmFactory.update(scope.selectedPackage, scope.projectPath, scope.selectedVersion).then(function onUpdated(result) {
+
+              scope.errorUpdating = undefined;
+
+              npmFactory.update(scope.selectedPackage.name, scope.projectPath, scope.selectedVersion, scope.selectedEnv)
+              .then(function onUpdated() {
                 scope.showVersionDialog = undefined;
-                console.log('updated pakcage', scope.selectedPackage);
+
               }).catch(function onCatch(err) {
-                return err;
+                $log.info('Error updating lib', err);
+                scope.errorUpdating = true;
               });
             }
             , selectPackage = function selectEmitPackage(item) {
 
               scope.selectedPackage = item;
               scope.showVersionDialog = undefined;
-              scope.selectedVersion = scope.json.dependencies[scope.selectedPackage].latest;
-              $rootScope.$emit('user:selected-package', {'name': item, 'path': scope.projectPath});
+              scope.selectedVersion = item.latest;
+              scope.selectedEnv = item.env;
+
+              $rootScope.$emit('user:selected-package', {
+                'package': scope.selectedPackage,
+                'path': scope.projectPath,
+                'env': scope.selectedEnv
+              });
             }
             , paginate = function Paginate(projectPath) {
 
@@ -38,21 +48,44 @@
               npmFactory.list($rootScope.globally, projectPath).then(function onListResult(results) {
 
                 json = JSON.parse(results);
+                //set which are devDeps
+                if (json &&
+                  Object.keys(json.dependencies) &&
+                  Object.keys(json.dependencies).length > 0 &&
+                  Object.keys(json.devDependencies) &&
+                  Object.keys(json.devDependencies).length > 0) {
+
+                  angular.forEach(json.devDependencies, function forEachDevDep(value, key){
+
+                    angular.forEach(json.dependencies, function forEachDep(v, k) {
+
+                      if (key === k) {
+
+                        json.dependencies[k].env = 'dev';
+                      }
+                    });
+                  });
+                }
 
                 npmFactory.outdated($rootScope.globally, projectPath).then(function onOutdatedResult(result) {
 
-                  var outdated = JSON.parse(result);
-                  if (Object.keys(outdated) && Object.keys(outdated).length > 0) {
+                  if (result &&
+                    result.length > 0) {
 
-                    angular.forEach(outdated, function forEachItem(value, key) {
+                    var outdated = JSON.parse(result);
 
-                      angular.forEach(json.dependencies, function forEachOutdated(v, k) {
-                        if (key === k) {
+                    if (Object.keys(outdated) && Object.keys(outdated).length > 0) {
 
-                          json.dependencies[k].latest = outdated[key].latest;
-                        }
+                      angular.forEach(outdated, function forEachItem(value, key) {
+
+                        angular.forEach(json.dependencies[0], function forEachOutdated(v, k) {
+                          if (key === k) {
+
+                            json.dependencies[k].latest = outdated[key].latest;
+                          }
+                        });
                       });
-                    });
+                    }
                   }
                   scope.$evalAsync(function evalAsync() {
 
@@ -61,6 +94,8 @@
                     loadingService.finished();
                   });
                 }).catch(function onCatch(err) {
+
+                  $log.info('Error1', err);
 
                   scope.$evalAsync(function evalAsync() {
                     scope.error = err;
@@ -71,6 +106,7 @@
                 });
               }).catch(function onCatch(error) {
 
+                $log.info('Error2', error);
                 scope.$evalAsync(function evalAsync() {
 
                   scope.error = error;
@@ -99,6 +135,7 @@
           scope.selectPackage = selectPackage;
           scope.choosePackageVersion = choosePackageVersion;
           scope.updatePackage = updatePackage;
+
           scope.$on('$destroy', function onScopeDestroy() {
 
             unregisterOnProjectSelected();
@@ -111,5 +148,5 @@
 
   angular.module('electron.mods.directives', [])
 
-  .directive('modsInstalledDirective', ['$rootScope', 'npmFactory', 'loadingService', ModsInstalledDirective]);
+  .directive('modsInstalledDirective', ['$rootScope', 'npmFactory', 'loadingService', '$log', ModsInstalledDirective]);
 }(angular));

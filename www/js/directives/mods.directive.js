@@ -9,14 +9,30 @@
         'link': function linkingFunction(scope) {
 
           var json
+            , choosePackageVersion = function choosePackageVersion() {
+              scope.showVersionDialog = true;
+              console.log(scope.selectedPackage);
+            }
+            , updatePackage = function updatePackage(version) {
+
+              npmFactory.update(scope.selectedPackage, scope.projectPath, version).then(function onUpdated(result) {
+                scope.showVersionDialog = undefined;
+                console.log('updated pakcage', scope.selectedPackage);
+              }).catch(function onCatch(err) {
+                return err;
+              });
+            }
             , selectPackage = function selectEmitPackage(item) {
 
               scope.selectedPackage = item;
-
+              scope.showVersionDialog = undefined;
               $rootScope.$emit('user:selected-package');
             }
             , paginate = function Paginate(projectPath) {
 
+              scope.json = {};
+              scope.loaded = undefined;
+              scope.error = undefined;
               loadingService.loading();
 
               npmFactory.list($rootScope.globally, projectPath).then(function onListResult(results) {
@@ -44,20 +60,21 @@
                     scope.loaded = true;
                     loadingService.finished();
                   });
-                }).catch(function onCatch() {
+                }).catch(function onCatch(err) {
 
                   scope.$evalAsync(function evalAsync() {
-
-                    scope.json = json;
+                    scope.error = err;
+                    scope.json = {};
                     scope.loaded = true;
                     loadingService.finished();
                   });
                 });
-              }).catch(function onCatch() {
+              }).catch(function onCatch(error) {
 
                 scope.$evalAsync(function evalAsync() {
 
-                  scope.json = json;
+                  scope.error = error;
+                  scope.json = {};
                   scope.loaded = true;
                   loadingService.finished();
                 });
@@ -65,19 +82,23 @@
             }
             , unregisterOnUpdatePackage = $rootScope.$on('user:update-package', function onUpdateUpackage(eventInfo, data) {
 
-              return true;
+              choosePackageVersion();
             })
             , unregisterOnProjectSelected = $rootScope.$on('user:selected-project', function onSelectedProject(eventInfo, data) {
 
-              scope.loaded = undefined;
               scope.$evalAsync(function evalAsync() {
 
                 scope.json = {};
+                scope.loaded = undefined;
+                scope.showVersionDialog = undefined;
                 scope.projectPath = data.path;
                 paginate(data.path);
               });
             });
+
           scope.selectPackage = selectPackage;
+          scope.choosePackageVersion = choosePackageVersion;
+          scope.updatePackage = updatePackage;
           scope.$on('$destroy', function onScopeDestroy() {
 
             unregisterOnProjectSelected();

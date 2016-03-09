@@ -11,6 +11,11 @@ body,html{
   text-decoration: none;
   cursor: default;
 }
+pre{
+  border:none;
+  line-height: 20px;
+  font-size: 11.5px;
+}
 button{
   background:none;
   border: none;
@@ -195,4 +200,36 @@ button i{
   overflow-y: scroll;
   font-weight:bold;
   font-size:13px;
+}
+.dialog{
+  float: none;
+  position: absolute;
+  z-index:99;
+  right:0;
+  padding: 5px 2%;
+  box-shadow: 0 0 10px rgba(0,0,0, .3);
+  width:50%;
+  background: #eee;
+  border-radius: 0 0 0 5px;
+}
+.dialog.prompt input{
+  text-indent: 5px;
+  width:85%;
+  border:none;
+  border-bottom:1px solid rgba(0,0,0, .08);
+  border-radius:1px;
+  box-shadow: 0 1px 1px rgba(0,0,0, .3) inset;
+}
+.dialog.prompt button{
+  font-size: 9.5px;
+  vertical-align: middle;
+  font-weight: 500;
+  width:13%;
+  height:19px;
+  border-radius: 3px;
+  line-height: 15px;
+  background: #fefefe;
+  color:#777;
+  text-shadow: 0 1px white;
+  box-shadow: 0 1px 2px rgba(0,0,0, .1);
 }

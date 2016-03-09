@@ -17,7 +17,7 @@
         }
         if (path) {
 
-          var cd = `cd ${path} &&`;
+          var prefix = `--prefix ${path}`;
         }
         if (env) {
 
@@ -26,11 +26,11 @@
 
         return new Promise(function listPromise(resolve, reject) {
 
-          exec(`${cd || ''} npm list ${glob || ''} --json ${env || ''}`, options, function onList(err, stdout, stderr) {
+          exec(`npm list ${glob || ''} --json --long ${env || ''} ${prefix || ''}`, options, function onList(err, stdout, stderr) {
 
             if (err || stderr) {
               $log.error('Error npm list', err, stderr);
-              reject(err);
+              reject(err + stderr);
             }
 
             resolve(stdout);
@@ -46,7 +46,7 @@
 
         if (path) {
 
-          var cd = `cd ${path} &&`;
+          var prefix = `--prefix ${path}`;
         }
 
         if (env) {
@@ -55,12 +55,12 @@
 
         return new Promise(function listPromise(resolve, reject) {
 
-          exec(`${cd || ''} npm outdated ${glob || ''} --json ${env || ''}`, options, function onList(err, stdout, stderr) {
+          exec(`npm outdated ${glob || ''} --json ${env || ''} ${prefix || ''}`, options, function onList(err, stdout, stderr) {
 
             if (err || stderr) {
 
               $log.error('Error npm outdated', err, stderr);
-              reject(err);
+              reject(err + stderr);
             }
 
             resolve(stdout);

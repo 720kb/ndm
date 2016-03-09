@@ -5,11 +5,12 @@
   var HomeController = function HomeController($rootScope, $scope) {
 
     var that = this
-      /*, choosedPackage
+      , choosedPackage
       , choosedPackageDir
       , updatePackage = function updatePackage() {
-        $rootScope.$emit();
-      }*/
+
+        $rootScope.$emit('user:update-package');
+      }
       , selectGlobal = function selectGlobalDir() {
 
           $rootScope.globally = true;
@@ -67,6 +68,7 @@
       that.selectGlobal = selectGlobal;
       that.selectProject = selectProject;
       that.deleteProject = deleteProject;
+      that.updatePackage = updatePackage;
   }
   , inputFile = function inputFile($window, $rootScope) {
     return {

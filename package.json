@@ -11,10 +11,9 @@
     "angular-local-storage": "^0.2.6",
     "angular-route": "^1.5.0",
     "bootstrap": "^3.3.6",
-    "font-awesome": "^4.5.0",
-    "npm": "^3.8.0"
+    "font-awesome": "^4.5.0"
   },
   "devDependencies": {
-    "lodash": "^1.0.0"
+    "lodash": "^0.1.0"
   }
 }

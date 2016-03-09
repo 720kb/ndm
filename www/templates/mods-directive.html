@@ -1,3 +1,7 @@
+<div class="dialog prompt" ngfx-speed="fast" ngfx-fade-in-down="showVersionDialog">
+    <input type="text" ng-model="selectedVersion" ng-value="json.dependencies[selectedPackage].latest"/>
+    <button ng-click="updatePackage(selectedVersion)">OK</button>
+</div>
 <div class="pusher hide">
   <pre>shell code here</pre>
   <div class="text-right">
@@ -8,25 +12,29 @@
   <img src="img/loading.svg" width="22"/> Loading ...
 </div>
 <div ng-show="loaded">
-<div class="row table-header">
-  <div class="col-xs-4">Package</div>
-  <div class="col-xs-3">Version</div>
-  <div class="col-xs-3">Latest</div>
-  <div class="col-xs-2">Env</div>
-</div>
-<div class="table-body">
-<div class="row table-row" ng-repeat="(key,value) in json.dependencies" ng-class="{'active': selectedPackage && selectedPackage === key}" ng-click="selectPackage(key)">
-  <div class="col-xs-4">{{key}}</div>
-    <div class="col-xs-3">{{value.version}}</div>
+  <div class="row table-header">
+    <div class="col-xs-4">Package</div>
+    <div class="col-xs-3">Version</div>
+    <div class="col-xs-3">Latest</div>
+    <div class="col-xs-2">Env</div>
+  </div>
+  <div class="table-body">
+    <div class="row table-row" ng-repeat="(key,value) in json.dependencies" ng-class="{'active': selectedPackage && selectedPackage === key}" ng-click="selectPackage(key)">
+      <div class="col-xs-4">{{key}}</div>
+      <div class="col-xs-3">{{value.version}}</div>
       <div class="col-xs-3">
         <b ng-if="value.latest === value.version">{{value.latest}}</b>
         <span ng-if="value.latest !== value.version">{{value.latest}}</span>
       </div>
       <div class="col-xs-2"> {{value.env}}</div>
-</div>
-<div class="container" ng-show="!json.dependencies">
-  <br>
-  0 packages found
-</div>
-</div>
+    </div>
+    <div ng-show="error && error.length > 5">
+      <br>
+      <pre>{{error}}</pre>
+    </div>
+    <div ng-show="!json.dependencies">
+      <br>
+      <span ng-show="error && error.length > 5"><i class="fa fa-warning"></i> Issues ,</span> 0 packages found
+    </div>
+  </div>
 </div>

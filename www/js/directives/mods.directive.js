@@ -10,19 +10,35 @@
 
           var json
             , choosePackageVersion = function choosePackageVersion() {
+
+              scope.errorUpdating = undefined;
+              scope.updating = undefined;
               scope.showVersionDialog = true;
+              loadingService.finished();
             }
             , updatePackage = function updatePackage() {
 
               scope.errorUpdating = undefined;
+              scope.updating = true;
+              loadingService.loading();
 
               npmFactory.update(scope.selectedPackage.name, scope.projectPath, scope.selectedVersion, scope.selectedEnv)
               .then(function onUpdated() {
-                scope.showVersionDialog = undefined;
-
+                scope.$evalAsync(function evalAsync() {
+                  scope.showVersionDialog = undefined;
+                  scope.updating = undefined;
+                  scope.errorUpdating = undefined;
+                  loadingService.finished();
+                });
               }).catch(function onCatch(err) {
-                $log.info('Error updating lib', err);
-                scope.errorUpdating = true;
+
+                $log.error('Error updating lib', err);
+
+                scope.$evalAsync(function evalAsync() {
+                  scope.errorUpdating = true;
+                  scope.updating = undefined;
+                  loadingService.finished();
+                });
               });
             }
             , selectPackage = function selectEmitPackage(item) {

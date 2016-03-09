@@ -25,6 +25,9 @@ button i{
   font-size:13px;
   vertical-align: middle;
 }
+input[disabled], button[disabled]{
+  opacity: .5;
+}
 .top-menu{
   width: 100%;
   box-shadow: 0 -1px #ccc inset;

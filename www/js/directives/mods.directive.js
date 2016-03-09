@@ -11,11 +11,10 @@
           var json
             , choosePackageVersion = function choosePackageVersion() {
               scope.showVersionDialog = true;
-              console.log(scope.selectedPackage);
             }
-            , updatePackage = function updatePackage(version) {
-
-              npmFactory.update(scope.selectedPackage, scope.projectPath, version).then(function onUpdated(result) {
+            , updatePackage = function updatePackage() {
+              console.log('updating',scope.selectedPackage, scope.projectPath, scope.selectedVersion);
+              npmFactory.update(scope.selectedPackage, scope.projectPath, scope.selectedVersion).then(function onUpdated(result) {
                 scope.showVersionDialog = undefined;
                 console.log('updated pakcage', scope.selectedPackage);
               }).catch(function onCatch(err) {
@@ -26,7 +25,8 @@
 
               scope.selectedPackage = item;
               scope.showVersionDialog = undefined;
-              $rootScope.$emit('user:selected-package');
+              scope.selectedVersion = scope.json.dependencies[scope.selectedPackage].latest;
+              $rootScope.$emit('user:selected-package', {'name': item, 'path': scope.projectPath});
             }
             , paginate = function Paginate(projectPath) {
 

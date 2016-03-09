@@ -69,20 +69,22 @@
           }
 
           if (duplicated) {
+
             $window.dialog.showErrorBox('Error', 'You already added this folder project');
-          }
-
-          if (!duplicated && dir[0].split(/\//g).pop()) {
-
-            splitForName = dir[0].split(/\//g).pop();
-
-            $rootScope.$emit('user:added-new-project', {
-              'name': splitForName,
-              'path': dir
-            });
           } else {
 
-            $window.dialog.showErrorBox('Error', 'Please select a project folder');
+            if (!duplicated && dir[0].split(/\//g).pop()) {
+
+              splitForName = dir[0].split(/\//g).pop();
+
+              $rootScope.$emit('user:added-new-project', {
+                'name': splitForName,
+                'path': dir
+              });
+            } else {
+
+              $window.dialog.showErrorBox('Error', 'Please select a project folder');
+            }
           }
         }
       }

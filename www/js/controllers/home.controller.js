@@ -1,12 +1,11 @@
 /*global angular*/
+
 (function withAngular(angular) {
   'use strict';
 
-  var HomeController = function HomeController($rootScope, $scope) {
+  var HomeController = function HomeController($rootScope, $scope, $window) {
 
     var that = this
-      , choosedPackage
-      , choosedPackageDir
       , updatePackage = function updatePackage() {
 
         $rootScope.$emit('user:update-package');
@@ -45,6 +44,48 @@
           event.stopPropagation();
         }
       }
+      , chooseProjectDir = function chooseProject() {
+
+        var duplicated = false
+          , splitForName
+          , dir = $window.dialog.showOpenDialog({
+          'properties': [
+            'openDirectory'
+          ]
+        });
+
+        if (dir && dir[0]) {
+          //check if not a duplicate
+          if ($rootScope.projectsList &&
+            $rootScope.projectsList.length > 0) {
+
+            angular.forEach($rootScope.projectsList, function forEachProject(value, key) {
+
+              if (value.path[0] === dir[0]) {
+
+                duplicated = true;
+              }
+            });
+          }
+
+          if (duplicated) {
+            $window.dialog.showErrorBox('Error', 'You already added this folder project');
+          }
+
+          if (!duplicated && dir[0].split(/\//g).pop()) {
+
+            splitForName = dir[0].split(/\//g).pop();
+
+            $rootScope.$emit('user:added-new-project', {
+              'name': splitForName,
+              'path': dir
+            });
+          } else {
+
+            $window.dialog.showErrorBox('Error', 'Please select a project folder');
+          }
+        }
+      }
       , unregisterOnSelectedPackage = $rootScope.$on('user:selected-package', function onSelectedPackage() {
         that.showMenuButtons = true;
       })
@@ -65,35 +106,13 @@
         unregisterOnSelectedPackage();
       });
 
+      that.chooseProjectDir = chooseProjectDir;
       that.selectGlobal = selectGlobal;
       that.selectProject = selectProject;
       that.deleteProject = deleteProject;
       that.updatePackage = updatePackage;
-  }
-  , inputFile = function inputFile($window, $rootScope) {
-    return {
-      'restrict': 'A',
-      'scope': {
-        'inputfile': '='
-      },
-      'link': function linkingFunction(scope, element) {
-
-        element.bind('change', function onInputfileChange(changeEvent) {
-          var selectedDir = changeEvent.target;
-
-          if (selectedDir && selectedDir.files[0]) {
-
-            $rootScope.$emit('user:added-new-project', {
-              'name': selectedDir.files[0].name,
-              'path': selectedDir.files[0].path
-            });
-          }
-        });
-      }
-    };
   };
 
   angular.module('electron.home.controllers', [])
-    .controller('HomeController', ['$rootScope', '$scope', HomeController])
-    .directive('inputFile', ['$window', '$rootScope', inputFile]);
+    .controller('HomeController', ['$rootScope', '$scope', '$window', HomeController]);
 }(angular));

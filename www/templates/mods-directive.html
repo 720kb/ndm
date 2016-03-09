@@ -1,9 +1,11 @@
 <div class="dialog prompt" ngfx-speed="fast" ngfx-fade-in-down="showVersionDialog">
-    <input type="text" ngfx-flash="errorUpdating" ng-model="selectedVersion" ng-value="json.dependencies[selectedPackage].latest"/>
+    <form ng-submit="updatePackage(selectedVersion)">
+      <input type="text" ng-class="{'color-muted': updating}" ngfx-bounce="errorUpdating" ng-focus="errorUpdating = undefined;" ng-model="selectedVersion" ng-value="json.dependencies[selectedPackage].latest"/>
     <button ng-disabled="updating" ng-click="updatePackage(selectedVersion)">
       <span ng-show="!updating">OK</span>
       <span ng-show="updating">...</span>
     </button>
+    </form>
 </div>
 <div class="pusher hide">
   <pre>shell code here</pre>

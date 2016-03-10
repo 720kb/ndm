@@ -2,7 +2,7 @@
 (function withAngular(angular) {
   'use strict';
 
-  var ModsInstalledDirective = function ModsInstalledDirective($rootScope, npmFactory, loadingService, $log) {
+  var ModsInstalledDirective = function ModsInstalledDirective($rootScope, $window, npmFactory, loadingService, $log) {
       return {
         'restrict': 'E',
         'templateUrl': 'templates/mods-directive.html',
@@ -16,14 +16,15 @@
               scope.showVersionDialog = true;
               loadingService.finished();
             }
-            , updatePackage = function updatePackage() {
-
+            , installVersionPackage = function installVersionPackage() {
+              console.log(scope.selectedVersion);
               scope.errorUpdating = undefined;
               scope.updating = true;
               loadingService.loading();
 
               npmFactory.update(scope.selectedPackage.name, scope.projectPath, scope.selectedVersion, scope.selectedEnv)
               .then(function onUpdated() {
+
                 scope.$evalAsync(function evalAsync() {
                   scope.showVersionDialog = undefined;
                   scope.updating = undefined;
@@ -132,9 +133,22 @@
                 });
               });
             }
-            , unregisterOnUpdatePackage = $rootScope.$on('user:update-package', function onUpdateUpackage(eventInfo, data) {
+            , unregisterOnUpdatePackage = $rootScope.$on('user:install-version-package', function onUpdateUpackage() {
 
               choosePackageVersion();
+            })
+            , unregisterOnInstallVersionPackage = $rootScope.$on('user:update-package', function onInstallVersionPackage () {
+
+              if (scope.selectedPackage &&
+                scope.selectedPackage.latest) {
+
+                  scope.selectedVersion = scope.selectedPackage.latest;
+
+                  installVersionPackage();
+              } else {
+
+                $window.dialog.showErrorBox('Error', 'The package is already update');
+              }
             })
             , unregisterOnProjectSelected = $rootScope.$on('user:selected-project', function onSelectedProject(eventInfo, data) {
 
@@ -150,12 +164,13 @@
 
           scope.selectPackage = selectPackage;
           scope.choosePackageVersion = choosePackageVersion;
-          scope.updatePackage = updatePackage;
+          scope.installVersionPackage = installVersionPackage;
 
           scope.$on('$destroy', function onScopeDestroy() {
 
             unregisterOnProjectSelected();
             unregisterOnUpdatePackage();
+            unregisterOnInstallVersionPackage();
           });
         }
       };
@@ -164,5 +179,5 @@
 
   angular.module('electron.mods.directives', [])
 
-  .directive('modsInstalledDirective', ['$rootScope', 'npmFactory', 'loadingService', '$log', ModsInstalledDirective]);
+  .directive('modsInstalledDirective', ['$rootScope', '$window', 'npmFactory', 'loadingService', '$log', ModsInstalledDirective]);
 }(angular));

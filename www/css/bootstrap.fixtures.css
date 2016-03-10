@@ -70,9 +70,6 @@ input[disabled], button[disabled]{
   overflow-y: scroll;
 }
 .left-column a{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   width:100%;
   display: inline-block;
   margin: 0;
@@ -80,6 +77,17 @@ input[disabled], button[disabled]{
   padding: 0 16px;
   color:#888;
   cursor: default;
+}
+.left-column a div{
+  display:inline-flex;
+  max-width: 70%;
+}
+.left-column a div b {
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .left-column a.project:hover,.left-column a.project:active{
   background-color: rgba(0,0,0, .03);
@@ -91,14 +99,16 @@ input[disabled], button[disabled]{
   color:white;
 }
 .left-column a.project button{
-  float: right;
   display: none;
-  text-align: right;
-  width: 23px;
+  width:50%;
+  min-width: 8px;
+  max-width: 19px;
   line-height: 0;
   margin-top:2px;
   position: relative;
   z-index:999;
+  text-indent: -2px;
+  float: right;
 }
 .left-column a.project:hover button{
   display: inherit;
@@ -183,29 +193,26 @@ input[disabled], button[disabled]{
 .pusher{
   position: absolute;
   color:white;
-  padding:10px;
+  padding:10px 3px;
   z-index:999;
   width: 80%;
   right:0;
   left:0;
   margin: 0 auto;
   float:none;
-  min-height:330px;
   border-radius:0 0 5px 5px;
-  background: rgba(50, 125, 255, .8);
-  box-shadow: 0 0 10px rgba(0,0,0, .2) ;
+  background: #eee;
+  box-shadow: 0 0 10px rgba(0,0,0, .2);
+  height: 45vh;
 }
 .pusher pre{
-  min-height:100%;
   border:none;
-  background: rgba(0, 0, 255, .8);
-  background: none;
-  color:white;
-  max-height:300px;
-  min-height:300px;
+  background: #fff;
+  color:#666;
+  height:95%;
   overflow-y: scroll;
-  font-weight:bold;
-  font-size:13px;
+  font-size:12px;
+  line-height: 25px;
 }
 .dialog{
   float: none;
@@ -225,6 +232,8 @@ input[disabled], button[disabled]{
   border-bottom:1px solid rgba(0,0,0, .08);
   border-radius:1px;
   box-shadow: 0 1px 1px rgba(0,0,0, .3) inset;
+  height:20px;
+  font-size: 11px;
 }
 .dialog.prompt button{
   font-size: 9.5px;

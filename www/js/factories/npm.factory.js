@@ -7,9 +7,11 @@
     , options = {
       'maxBuffer': 100000 * 500
     }
-    , NpmFactory = function NpmFactory($log) {
+    , NpmFactory = function NpmFactory($rootScope, $window, $log) {
 
       var update = function update(lib, path, version, env, globally) {
+
+          $rootScope.shellDebug = '';
 
           if (path) {
 
@@ -28,23 +30,33 @@
           return new Promise(function listPromise(resolve, reject) {
 
             if (path && version && lib) {
-              console.log(`npm install ${glob || ''} ${lib}@${version} ${env || ''} ${prefix || ''} --save`);
-              var process = exec(`npm install ${glob || ''} ${lib}@${version} ${env || ''} ${prefix || ''} --save`, options, function onList(err, stdout, stderr) {
+
+              var outputErr = ''
+                , cmd = `npm install ${glob || ''} ${lib}@${version} ${env || ''} ${prefix || ''} --save`
+                , process = exec(cmd, options, function onList(err, stdout, stderr) {
 
                   if (err || stderr) {
-                    $log.error('Error npm update', err, stderr);
-                    reject(err + stderr);
+                    //$log.error('Error npm update', err, stderr);
+                    //reject(err + stderr);
                   }
-
                   resolve(stdout);
                 });
 
-                process.on('data', function (a,e,b) {
-                console.log(a,e,b);
-              });
+                process.stderr.on('data', function onStdoutData(data) {
+                  outputErr += data;
+
+                });
+                process.on('exit', function () {
+
+                  if (outputErr) {
+
+                    $window.dialog.showErrorBox('yoo', outputErr);
+                  }
+                });
             } else {
 
               $log.error('No version provided for npm update');
+              reject();
             }
           });
         }
@@ -68,6 +80,7 @@
           exec(`npm list ${glob || ''} --json --long ${prefix || ''}`, options, function onList(err, stdout, stderr) {
 
             if (err || stderr) {
+
               $log.error('Error npm list', err, stderr);
               reject(err + stderr);
             }
@@ -114,5 +127,5 @@
       };
     };
   angular.module('electron.npm.factories', [])
-    .factory('npmFactory',['$log', NpmFactory]);
+    .factory('npmFactory',['$rootScope', '$window', '$log', NpmFactory]);
 }(angular));

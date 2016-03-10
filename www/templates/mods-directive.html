@@ -1,14 +1,14 @@
 <div class="dialog prompt" ngfx-speed="fast" ngfx-fade-in-down="showVersionDialog">
-    <form ng-submit="updatePackage(selectedVersion)">
-      <input type="text" ng-class="{'color-muted': updating}" ngfx-flash="errorUpdating" ng-focus="errorUpdating = undefined;" ng-model="selectedVersion" ng-value="json.dependencies[selectedPackage].latest"/>
-    <button ng-disabled="updating" ng-click="updatePackage(selectedVersion)">
+  <form ng-submit="installVersionPackage(selectedVersion)">
+    <input placeholder="Type version" type="text" ng-class="{'color-muted': updating}" ngfx-flash="errorUpdating" ng-focus="errorUpdating = undefined;" ng-model="selectedVersion" ng-value="json.dependencies[selectedPackage].latest"/>
+    <button ng-disabled="updating" ng-click="installVersionPackage(selectedVersion)">
       <span ng-show="!updating">OK</span>
-      <span ng-show="updating">...</span>
+      <span ng-show="updating"><i class="fa fa-spinner fa-spin"></i></span>
     </button>
-    </form>
+  </form>
 </div>
-<div class="pusher hide">
-  <pre>shell code here</pre>
+<div class="pusher" ng-show="shellDebug">
+  <pre>{{shellDebug}}</pre>
   <div class="text-right">
     <button> close</button>
   </div>

@@ -53,6 +53,10 @@
               <div><i class="fa fa-level-up"></i></div>
               Update
             </a>
+            <a class="pull-right" ng-click="home.installVersionPackage()">
+              <div><i class="fa fa-at"></i></div>
+              Install release
+            </a>
             <a class="pull-right">
               <div><i class="fa fa-remove"></i></div>
               Uninstall
@@ -64,18 +68,24 @@
       <div class="row">
           <h6 class="col-xs-12">Packages</h6>
           <a class="row" ng-class="{'active': globally}" ng-click="home.selectGlobal()">
-              <i class="fa fa-folder-open"></i> Global <span>{{globalInstalledCount || 0}}</span>
+              <i class="fa fa-globe"></i> Globals <span>{{globalInstalledCount || 0}}</span>
           </a>
-          <br><br>
+          <br>
           <h6 class="col-xs-12" ng-if="projectsList.length > 0">Projects</h6>
+
           <a ng-repeat="item in projectsList" class="row project" ng-class="{'active': home.selectedProject === item}" ng-click="home.selectProject(item, $event)">
-              <i class="fa fa-folder-o"></i> {{item.name}}
+              <i class="fa fa-folder-o"></i>
+              <div>
+                <b>{{item.name}}</b>
+              </div>
               <button ng-click="home.deleteProject(item, $event)"><i class="fa fa-times-circle-o"></i></button>
           </a>
       </div>
+      <br>
     </div>
     <div class="col-xs-9 right-column overflow-x-hidden">
       <mods-installed-directive></mods-installed-directive>
+      <br>
     </div>
   </div>
   <div class="footer bg-footer">

@@ -22,7 +22,20 @@ app.on('window-all-closed', function() {
 // initialization and is ready to create browser windows.
 app.on('ready', function() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1200, height: 900});
+  mainWindow = new BrowserWindow({
+    'title': 'Npm manager',
+    'icon': '',
+    'width': 750,
+    'height': 500,
+    'minWidth': 750,
+    'center': true,
+    'movable': true,
+    'resizable': true,
+    'minimizable': true,
+    'maximizable': true,
+    'closable': true,
+    'fullscreenable': true
+  });
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/www/index.html');

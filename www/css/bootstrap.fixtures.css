@@ -11,6 +11,9 @@ body,html{
   text-decoration: none;
   cursor: default;
 }
+small, small *{
+  font-size: 11.5px;
+}
 pre{
   border:none;
   line-height: 20px;
@@ -37,7 +40,7 @@ input[disabled], button[disabled]{
   width:90px;
   text-align: center;
   color: #666;
-  text-shadow:0 1px rgba(255,255,255,.4);
+  text-shadow:0 1px rgba(255,255,255,.5);
   padding:5px;
 }
 .top-menu button{
@@ -45,20 +48,21 @@ input[disabled], button[disabled]{
   font-size: 13px;
   line-height: 15px;
   height: 20px;
-  text-shadow:0 1px rgba(255,255,255,.4);
+  text-shadow:0 1px rgba(255,255,255,.5);
 }
 .top-menu button i{
   color:#327DFF;
-  text-shadow:0 1px rgba(255,255,255,.2);
+  text-shadow:0 1px rgba(255,255,255,.5);
   font-size: 15px;
   vertical-align: text-bottom;
 }
 .top-menu button:active{
   background: rgba(0,0,0, .05);
-  box-shadow: 0 1px 1px rgba(0,0,0, .2) inset;
+  box-shadow: 0 1px 1px rgba(0,0,0, .15) inset;
 }
 .top-menu a i{
   font-size: 28px;
+  text-shadow:0 1px rgba(255,255,255,.7);
 }
 .page{
   height: calc(100vh - 30px);
@@ -128,6 +132,7 @@ input[disabled], button[disabled]{
   border-radius:10px;
   display: inline-block;
   float: right;
+  text-indent:0.5px;
   background: rgba(0,0,0, .23);
   text-shadow: 0 1px rgba(0,0,0, .2);
   font-size: 11px;
@@ -179,7 +184,8 @@ input[disabled], button[disabled]{
 }
 .table-loader{
   text-align: center;
-  line-height: 30vh;
+  min-height:100vh;
+  padding-top:30vh;
 }
 .drop-area {
   background: lightblue;
@@ -189,30 +195,6 @@ input[disabled], button[disabled]{
   float: none;
   clear: both;
   border-radius:10px;
-}
-.pusher{
-  position: absolute;
-  color:white;
-  padding:10px 3px;
-  z-index:999;
-  width: 80%;
-  right:0;
-  left:0;
-  margin: 0 auto;
-  float:none;
-  border-radius:0 0 5px 5px;
-  background: #eee;
-  box-shadow: 0 0 10px rgba(0,0,0, .2);
-  height: 45vh;
-}
-.pusher pre{
-  border:none;
-  background: #fff;
-  color:#666;
-  height:95%;
-  overflow-y: scroll;
-  font-size:12px;
-  line-height: 25px;
 }
 .dialog{
   float: none;
@@ -253,4 +235,8 @@ input[disabled], button[disabled]{
   text-shadow: none;
   box-shadow: 1px 1px 2px rgba(0,0,0, .07) inset, 0 1px rgba(0,0,0, .07) inset;
   color:#999;
+}
+.dialog.prompt button i{
+  position: relative;
+  top:-1px;
 }

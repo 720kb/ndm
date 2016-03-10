@@ -8,6 +8,9 @@
 .bg-light{
   background-color: #f4f6f6;
 }
+.bg-lighter{
+  background-color: #fefefe;
+}
 .bg-gradient-grey{
   background: #eeeeee;
   background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);

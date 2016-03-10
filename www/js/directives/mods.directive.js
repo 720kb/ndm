@@ -17,7 +17,7 @@
               loadingService.finished();
             }
             , installVersionPackage = function installVersionPackage() {
-              console.log(scope.selectedVersion);
+
               scope.errorUpdating = undefined;
               scope.updating = true;
               loadingService.loading();
@@ -65,6 +65,7 @@
               npmFactory.list($rootScope.globally, projectPath).then(function onListResult(results) {
 
                 json = JSON.parse(results);
+
                 //set which are devDeps
                 if (json &&
                   Object.keys(json.dependencies) &&
@@ -72,7 +73,7 @@
                   Object.keys(json.devDependencies) &&
                   Object.keys(json.devDependencies).length > 0) {
 
-                  angular.forEach(json.devDependencies, function forEachDevDep(value, key){
+                  angular.forEach(json.devDependencies, function forEachDevDep(value, key) {
 
                     angular.forEach(json.dependencies, function forEachDep(v, k) {
 
@@ -82,6 +83,8 @@
                       }
                     });
                   });
+                  //send total installed pkgs number
+                  $rootScope.$emit('project:total-installed-packages', json.dependencies.length);
                 }
 
                 npmFactory.outdated($rootScope.globally, projectPath).then(function onOutdatedResult(result) {
@@ -147,13 +150,23 @@
                   installVersionPackage();
               } else {
 
-                $window.dialog.showErrorBox('Error', 'The package is already update');
+                $window.dialog.showErrorBox('npm', 'The package is already up to latest version');
               }
+            })
+            , unregisterOnGlobalSelected = $rootScope.$on('user:selected-global', function onGlobalSelected() {
+
+              scope.$evalAsync(function evalAsync() {
+                scope.json = {};
+                scope.loaded = undefined;
+                scope.showVersionDialog = undefined;
+                paginate();
+              });
             })
             , unregisterOnProjectSelected = $rootScope.$on('user:selected-project', function onSelectedProject(eventInfo, data) {
 
               scope.$evalAsync(function evalAsync() {
 
+                $rootScope.globally = false;
                 scope.json = {};
                 scope.loaded = undefined;
                 scope.showVersionDialog = undefined;
@@ -166,16 +179,19 @@
           scope.choosePackageVersion = choosePackageVersion;
           scope.installVersionPackage = installVersionPackage;
 
+          //launch global list
+          $rootScope.$emit('user:selected-global');
+
           scope.$on('$destroy', function onScopeDestroy() {
 
             unregisterOnProjectSelected();
             unregisterOnUpdatePackage();
             unregisterOnInstallVersionPackage();
+            unregisterOnGlobalSelected();
           });
         }
       };
     };
-
 
   angular.module('electron.mods.directives', [])
 

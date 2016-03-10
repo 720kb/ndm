@@ -5,7 +5,7 @@
 
   var exec = require('child_process').exec
     , options = {
-      'maxBuffer': 100000 * 500
+      'maxBuffer': 12224
     }
     , NpmFactory = function NpmFactory($rootScope, $window, $log) {
 
@@ -37,21 +37,27 @@
 
                   if (err || stderr) {
                     //$log.error('Error npm update', err, stderr);
-                    //reject(err + stderr);
+                    reject(err + stderr);
                   }
+
                   resolve(stdout);
                 });
 
                 process.stderr.on('data', function onStdoutData(data) {
-                  outputErr += data;
 
+                  outputErr += data;
                 });
-                process.on('exit', function () {
+                process.on('exit', function onExit() {
 
                   if (outputErr) {
-
-                    $window.dialog.showErrorBox('yoo', outputErr);
+                    reject();
+                    $window.dialog.showErrorBox('npm', outputErr);
                   }
+                });
+
+                process.on('kill', function onKilled(data) {
+                  reject();
+                  $window.dialog.showErrorBox('npm', data);
                 });
             } else {
 
@@ -77,11 +83,13 @@
 
         return new Promise(function listPromise(resolve, reject) {
 
-          exec(`npm list ${glob || ''} --json --long ${prefix || ''}`, options, function onList(err, stdout, stderr) {
+          var outputErr = ''
+            , process = exec(`npm list ${glob || ''} --json --long --depth=0 ${prefix || ''}`, options, function onList(err, stdout, stderr) {
 
             if (err || stderr) {
 
-              $log.error('Error npm list', err, stderr);
+              //$log.error('Error npm list', err, stderr);
+              $window.dialog.showErrorBox('npm', err + stderr);
               reject(err + stderr);
             }
 
@@ -108,10 +116,11 @@
         return new Promise(function listPromise(resolve, reject) {
 
           exec(`npm outdated ${glob || ''} --json ${env || ''} ${prefix || ''}`, options, function onList(err, stdout, stderr) {
-
+            console.log(err, stdout, stderr);
             if (err || stderr) {
 
               $log.error('Error npm outdated', err, stderr);
+              $window.dialog.showErrorBox('npm', err, stderr);
               reject(err + stderr);
             }
 

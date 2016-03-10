@@ -95,6 +95,12 @@
           }
         }
       }
+      , unregisterOnTotalInstalledPkg = $rootScope.$on('project:total-installed-packages', function onTotalInstalledPkg(eventInfo, data) {
+          if ($rootScope.globally) {
+
+            $rootScope.globalInstalledCount = data;
+          }
+      })
       , unregisterOnSelectedPackage = $rootScope.$on('user:selected-package', function onSelectedPackage() {
         that.showMenuButtons = true;
       })
@@ -113,6 +119,7 @@
 
         unregisterOnNewProject();
         unregisterOnSelectedPackage();
+        unregisterOnTotalInstalledPkg();
       });
 
       that.chooseProjectDir = chooseProjectDir;
@@ -121,6 +128,7 @@
       that.deleteProject = deleteProject;
       that.updatePackage = updatePackage;
       that.installVersionPackage = installVersionPackage;
+      $rootScope.globally = true;
   };
 
   angular.module('electron.home.controllers', [])

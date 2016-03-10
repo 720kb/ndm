@@ -7,14 +7,12 @@
     </button>
   </form>
 </div>
-<div class="pusher" ng-show="shellDebug">
-  <pre>{{shellDebug}}</pre>
-  <div class="text-right">
-    <button> close</button>
-  </div>
-</div>
-<div ng-hide="loaded" class="table-loader">
+<div ng-hide="loaded" class="row table-loader bg-lighter">
   <img src="img/loading.svg" width="22"/> Loading ...
+  <div class="separator10"></div>
+  <div class="color-muted">
+    <small>Could take some time</small>
+  </div>
 </div>
 <div ng-show="loaded">
   <div class="row table-header">
@@ -32,10 +30,6 @@
         <span ng-if="value.latest !== value.version">{{value.latest}}</span>
       </div>
       <div class="col-xs-2"> {{value.env}}</div>
-    </div>
-    <div ng-show="error && error.length > 5">
-      <br>
-      <pre>{{error}}</pre>
     </div>
     <div ng-show="loaded && !json.dependencies">
       <br>

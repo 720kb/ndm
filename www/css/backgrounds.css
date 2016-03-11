@@ -12,9 +12,9 @@
   background-color: #fefefe;
 }
 .bg-gradient-grey{
-  background: #eeeeee;
-  background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);
-  background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
-  background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+  background: #e5e5e5;
+  background: -moz-linear-gradient(top,  #e5e5e5 28%, #d1d1d1 100%);
+  background: -webkit-linear-gradient(top,  #e5e5e5 28%,#d1d1d1 100%);
+  background: linear-gradient(to bottom,  #e5e5e5 28%,#d1d1d1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#d1d1d1',GradientType=0 );
 }

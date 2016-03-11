@@ -5,7 +5,7 @@
 
   var exec = require('child_process').exec
     , options = {
-      'maxBuffer': 12224
+      'maxBuffer': 2024 * 500
     }
     , NpmFactory = function NpmFactory($rootScope, $window, $log) {
 

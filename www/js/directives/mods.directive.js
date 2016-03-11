@@ -180,7 +180,7 @@
           scope.installVersionPackage = installVersionPackage;
 
           //launch global list
-          $rootScope.$emit('user:selected-global');
+        //  $rootScope.$emit('user:selected-global');
 
           scope.$on('$destroy', function onScopeDestroy() {
 

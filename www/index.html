@@ -33,11 +33,12 @@
   <script src="js/index.js"></script>
 </head>
 <body ng-app="electron" ng-controller="HomeController as home">
+  <span class="title">Npm Manager</span>
   <div class="page">
     <div class="container top-menu bg-gradient-grey">
       <div class="row">
         <div class="col-xs-3">
-          <a>
+          <a class="pull-left">
             <div><i class="fa fa-history"></i></div>
             Update npm
           </a>
@@ -47,7 +48,7 @@
               <i class="fa fa-plus-circle"></i> Add project
             </button>
           </div>
-          <div class="pull-right" ng-show="home.showMenuButtons">
+          <div class="col-xs-6" ng-show="home.showMenuButtons">
             <a class="pull-right" ng-click="home.updatePackage()">
               <div><i class="fa fa-level-up"></i></div>
               Update

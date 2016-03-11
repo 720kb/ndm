@@ -5,6 +5,7 @@ body,html{
   padding:0;
   cursor: default;
   -webkit-user-select: none;
+  font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
 }
 *, *:hover, *:active, *:focus, a, a:hover,a:active, a:focus{
   outline: none;
@@ -27,6 +28,9 @@ button{
 button i{
   font-size:13px;
   vertical-align: middle;
+}
+input:focus{
+  box-shadow: 0 0 4px royalblue;
 }
 input[disabled], button[disabled]{
   opacity: .5;
@@ -57,7 +61,7 @@ input[disabled], button[disabled]{
   padding:2px 0;
 }
 .top-menu a.pull-right{
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .top-menu a i{
   font-size: 24.5px;
@@ -108,11 +112,12 @@ input[disabled], button[disabled]{
   margin: 0;
   line-height: 25px;
   padding: 0 10px;
-  color:#666;
+  color:#676767;
+  text-shadow:  0 1px white;
   cursor: default;
 }
 .left-column h6 {
-  padding: 0 10px;
+  padding: 5px 10px;
   font-size: 11.5px;
   margin-bottom:5px;
 }
@@ -127,13 +132,14 @@ input[disabled], button[disabled]{
   text-overflow: ellipsis;
   width: 100%;
 }
-.left-column a.project:hover,.left-column a.project:active{
+.left-column a:hover,.left-column a:active{
   background-color: rgba(0,0,0, .03);
 }
-.left-column a:active,.left-column a.active, .left-column a.project.active{
+.left-column a:active,.left-column a:active:hover,.left-column a.active, .left-column a.project.active, .left-column a.project.active:hover{
   background: #327DFF;
   cursor: default;
   color:white;
+  text-shadow: none;
 }
 .left-column a.project button{
   display: none;
@@ -146,6 +152,7 @@ input[disabled], button[disabled]{
   z-index:999;
   text-indent: -2px;
   float: right;
+  color:rgba(0,0,0, .28);
 }
 .left-column a.project:hover button{
   display: inherit;
@@ -217,6 +224,7 @@ input[disabled], button[disabled]{
 .table-body{
   max-height: calc(100vh - 108px);
   overflow-y:auto;
+  padding-bottom:13px;
 }
 .table-loader{
   text-align: center;

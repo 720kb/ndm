@@ -1,4 +1,4 @@
-/*global angular*/
+/*global angular require*/
 
 (function withAngular(angular){
   'use strict';
@@ -9,7 +9,10 @@
   }
   , bootstrapFunction = function bootstrapFunction($window, sessionFactory) {
 
-    $window.remote = require('remote')
+    $window.remote = require('remote');
+    //open links in browser and items in folder
+    $window.shell = require('electron').shell;
+
     $window.dialog = $window.remote.require('dialog');
     sessionFactory.initialize();
   };

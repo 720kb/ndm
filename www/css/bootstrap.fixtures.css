@@ -7,6 +7,7 @@ body,html{
   -webkit-user-select: none;
   font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
 }
+
 *, *:hover, *:active, *:focus, a, a:hover,a:active, a:focus{
   outline: none;
   text-decoration: none;
@@ -60,6 +61,9 @@ input[disabled], button[disabled]{
   text-shadow:0 1px rgba(255,255,255,.5);
   padding:2px 0;
 }
+.top-menu a:active i{
+  color: #327DFF;
+}
 .top-menu a.pull-right{
   margin-left: 20px;
 }
@@ -104,7 +108,7 @@ input[disabled], button[disabled]{
   box-shadow: -1px -1px #ddd inset;
   height:100vh;
   max-height:calc(100vh - 84px);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .left-column a{
   width:100%;
@@ -124,7 +128,7 @@ input[disabled], button[disabled]{
 }
 .left-column a div{
   display:inline-flex;
-  max-width: 70%;
+  max-width: 65%;
 }
 .left-column a div b {
   font-weight: normal;
@@ -190,7 +194,7 @@ input[disabled], button[disabled]{
   position: fixed;
   width: 100%;
   padding:0 15px;
-  z-index: 999;
+  z-index: 9;
   bottom:0;
   line-height: 30px;
 }
@@ -220,7 +224,6 @@ input[disabled], button[disabled]{
 }
 .table-row:active, .table-row.active{
   background:  #FCFCEA;
-  color: rgba(0,0,0, .7);
 }
 .table-body{
   max-height: calc(100vh - 108px);

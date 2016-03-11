@@ -62,7 +62,7 @@
             Uninstall
           </a>
         </div>
-        <div class="col-xs-6" ng-class="{'col-xs-6': !home.showMenuButtons, 'col-xs-2': home.showMenuButtons}">
+        <div ng-class="{'col-xs-6': !home.showMenuButtons, 'col-xs-2': home.showMenuButtons}">
           <a class="pull-right install">
             <div><i class="fa fa-cloud-download"></i></div>
             Install Package
@@ -78,7 +78,6 @@
         </a>
         <br>
         <h6 class="col-xs-12" ng-if="projectsList.length > 0">Projects</h6>
-
         <a ng-repeat="item in projectsList" class="row project" ng-class="{'active': home.selectedProject === item}" ng-click="home.selectProject(item, $event)">
           <i class="fa fa-folder-o"></i>
           <div>
@@ -95,8 +94,8 @@
     </div>
   </div>
   <div class="footer bg-footer">
-    © <a href="http://720kb.net" target="_blank">720kb</a>
-    <span class="pull-right"> License - MIT </span>
+    © <a ng-click="home.openBrowserLink('http://720kb.net')">720kb</a>
+    <span class="pull-right"> <a ng-click="home.openBrowserLink('http://github.com/720kb')">Contribute</a> </span>
   </div>
 </body>
 </html>

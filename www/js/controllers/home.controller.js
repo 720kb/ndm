@@ -6,6 +6,9 @@
   var HomeController = function HomeController($rootScope, $scope, $window) {
 
     var that = this
+      , openBrowserLink = function openLink(url) {
+        $window.shell.openExternal(url);
+      }
       , updatePackage = function updatePackage() {
 
         $rootScope.$emit('user:update-package');
@@ -128,6 +131,7 @@
       that.deleteProject = deleteProject;
       that.updatePackage = updatePackage;
       that.installVersionPackage = installVersionPackage;
+      that.openBrowserLink = openBrowserLink;
       $rootScope.globally = true;
   };
 

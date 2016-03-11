@@ -20,18 +20,18 @@
   <div class="row table-header">
     <div class="col-xs-5">Package</div>
     <div class="col-xs-3">Version</div>
-    <div class="col-xs-3">Latest</div>
-    <div class="col-xs-1">Env</div>
+    <div class="col-xs-2">Latest</div>
+    <div class="col-xs-2">Env</div>
   </div>
   <div class="table-body">
     <div class="row table-row" ng-repeat="(key,value) in json.dependencies" ng-class="{'active': selectedPackage.name && selectedPackage.name === key}" ng-click="selectPackage(json.dependencies[key])">
       <div class="col-xs-5">{{key}}</div>
       <div class="col-xs-3">{{value.version}}</div>
-      <div class="col-xs-3">
+      <div class="col-xs-2">
         <b ng-if="value.latest === value.version">{{value.latest}}</b>
         <span ng-if="value.latest !== value.version">{{value.latest}}</span>
       </div>
-      <div class="col-xs-1"> {{value.env}}</div>
+      <div class="col-xs-2"> {{value.env}}</div>
     </div>
     <div ng-show="loaded && !json.dependencies">
       <br>

@@ -12,9 +12,9 @@
   background-color: #fefefe;
 }
 .bg-gradient-grey{
-  background: #e5e5e5;
-  background: -moz-linear-gradient(top,  #e5e5e5 28%, #d1d1d1 100%);
-  background: -webkit-linear-gradient(top,  #e5e5e5 28%,#d1d1d1 100%);
-  background: linear-gradient(to bottom,  #e5e5e5 28%,#d1d1d1 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#d1d1d1',GradientType=0 );
+  background: #e9e7e9;
+  background: -moz-linear-gradient(top,  #e9e7e9 0%, #d1cfd1 100%);
+  background: -webkit-linear-gradient(top,  #e9e7e9 0%,#d1cfd1 100%);
+  background: linear-gradient(to bottom,  #e9e7e9 0%,#d1cfd1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e7e9', endColorstr='#d1cfd1',GradientType=0 );
 }

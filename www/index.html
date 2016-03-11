@@ -43,12 +43,15 @@
             Update npm
           </a>
         </div>
-        <div class="col-xs-3">
+        <div class="col-xs-9">
           <button ng-click="home.chooseProjectDir()">
             <i class="fa fa-plus-circle"></i> Add Project
           </button>
-        </div>
-        <div ng-class="{'col-xs-4': home.showMenuButtons}" ng-show="home.showMenuButtons">
+
+          <a class="pull-right install">
+            <div><i class="fa fa-cloud-download"></i></div>
+            Install Package
+          </a>
           <a class="pull-right" ng-click="home.updatePackage()">
             <div><i class="fa fa-level-up"></i></div>
             Update
@@ -62,15 +65,9 @@
             Uninstall
           </a>
         </div>
-        <div ng-class="{'col-xs-6': !home.showMenuButtons, 'col-xs-2': home.showMenuButtons}">
-          <a class="pull-right install">
-            <div><i class="fa fa-cloud-download"></i></div>
-            Install Package
-          </a>
-        </div>
       </div>
     </div>
-    <div class="col-xs-3 left-column bg-light overflow-x-hidden">
+    <div class="left-column bg-light overflow-x-hidden">
       <div class="row">
         <h6 class="col-xs-12">Packages</h6>
         <a class="row" ng-class="{'active': globally}" ng-click="home.selectGlobal()">
@@ -88,7 +85,7 @@
       </div>
       <br>
     </div>
-    <div class="col-xs-9 right-column overflow-x-hidden">
+    <div class="right-column overflow-x-hidden">
       <mods-installed-directive></mods-installed-directive>
       <br>
     </div>

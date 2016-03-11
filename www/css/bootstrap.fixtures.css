@@ -83,6 +83,7 @@ input[disabled], button[disabled]{
   font-size: 12px;
   line-height: 15px;
   height: 20px;
+  margin-left: 20px;
   text-shadow:0 1px rgba(255,255,255,.5);
 }
 .top-menu button i{
@@ -103,8 +104,13 @@ input[disabled], button[disabled]{
 }
 .right-column{
   padding:0;
+  width: calc(100% - 200px);
+  float: left;
 }
 .left-column{
+  width:200px;
+  float: left;
+  padding:0 15px;
   box-shadow: -1px -1px #ddd inset;
   height:100vh;
   max-height:calc(100vh - 84px);
@@ -128,7 +134,7 @@ input[disabled], button[disabled]{
 }
 .left-column a div{
   display:inline-flex;
-  max-width: 65%;
+  max-width: 120px;
 }
 .left-column a div b {
   font-weight: normal;

@@ -48,7 +48,7 @@
             <i class="fa fa-plus-circle"></i> Add Project
           </button>
         </div>
-        <div class="col-xs-6" ng-show="home.showMenuButtons">
+        <div ng-class="{'col-xs-4': home.showMenuButtons}" ng-show="home.showMenuButtons">
           <a class="pull-right" ng-click="home.updatePackage()">
             <div><i class="fa fa-level-up"></i></div>
             Update
@@ -60,6 +60,12 @@
           <a class="pull-right">
             <div><i class="fa fa-remove"></i></div>
             Uninstall
+          </a>
+        </div>
+        <div class="col-xs-6" ng-class="{'col-xs-6': !home.showMenuButtons, 'col-xs-2': home.showMenuButtons}">
+          <a class="pull-right install">
+            <div><i class="fa fa-cloud-download"></i></div>
+            Install Package
           </a>
         </div>
       </div>

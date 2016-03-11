@@ -27,6 +27,7 @@ app.on('ready', function() {
     'width': 750,
     'height': 500,
     'minWidth': 750,
+    'minHeight': 400,
     'center': true,
     'movable': true,
     'resizable': true,

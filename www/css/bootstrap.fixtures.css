@@ -115,6 +115,7 @@ input[disabled], button[disabled]{
   color:#676767;
   text-shadow:  0 1px white;
   cursor: default;
+  font-size: 13px;
 }
 .left-column h6 {
   padding: 5px 10px;
@@ -210,7 +211,7 @@ input[disabled], button[disabled]{
 }
 .table-row{
   color:#333;
-  font-size: 11.5px;
+  font-size: 12.5px;
   line-height: 23px;
   padding: 0 10px;
 }
@@ -218,13 +219,14 @@ input[disabled], button[disabled]{
   background: #F2FDFF;
 }
 .table-row:active, .table-row.active{
-  background:  #C2E0F9;
+  background:  #FCFCEA;
   color: rgba(0,0,0, .7);
 }
 .table-body{
   max-height: calc(100vh - 108px);
   overflow-y:auto;
-  padding-bottom:13px;
+  overflow-x:hidden;
+  padding-bottom:15px;
 }
 .table-loader{
   text-align: center;

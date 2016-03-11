@@ -86,14 +86,16 @@
           var outputErr = ''
             , process = exec(`npm list ${glob || ''} --json --long --depth=0 ${prefix || ''}`, options, function onList(err, stdout, stderr) {
 
+            if (stdout) {
+
+              resolve(stdout);
+            }
+
             if (err || stderr) {
 
               //$log.error('Error npm list', err, stderr);
               $window.dialog.showErrorBox('npm', err + stderr);
-              reject(err + stderr);
             }
-
-            resolve(stdout);
           });
         });
       }

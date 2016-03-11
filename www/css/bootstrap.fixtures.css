@@ -93,6 +93,9 @@ input[disabled], button[disabled]{
 .page{
   height: calc(100vh - 30px);
 }
+.right-column{
+  padding:0;
+}
 .left-column{
   box-shadow: -1px -1px #ddd inset;
   height:100vh;
@@ -105,7 +108,7 @@ input[disabled], button[disabled]{
   margin: 0;
   line-height: 25px;
   padding: 0 10px;
-  color:#888;
+  color:#666;
   cursor: default;
 }
 .left-column h6 {
@@ -126,7 +129,6 @@ input[disabled], button[disabled]{
 }
 .left-column a.project:hover,.left-column a.project:active{
   background-color: rgba(0,0,0, .03);
-  color:#888;
 }
 .left-column a:active,.left-column a.active, .left-column a.project.active{
   background: #327DFF;
@@ -180,7 +182,7 @@ input[disabled], button[disabled]{
   position: fixed;
   width: 100%;
   padding:0 15px;
-  z-index: 9;
+  z-index: 999;
   bottom:0;
   line-height: 30px;
 }
@@ -193,6 +195,7 @@ input[disabled], button[disabled]{
   color: #222;
   font-size: 11px;
   line-height: 23px;
+  padding: 0 10px;
 }
 .table-header div{
   box-shadow: -1px -1px #eee inset;
@@ -202,6 +205,7 @@ input[disabled], button[disabled]{
   color:#333;
   font-size: 11.5px;
   line-height: 23px;
+  padding: 0 10px;
 }
 .table-row:nth-child(odd){
   background: #F2FDFF;
@@ -211,7 +215,8 @@ input[disabled], button[disabled]{
   color: rgba(0,0,0, .7);
 }
 .table-body{
-  min-height: 100vh;
+  max-height: calc(100vh - 108px);
+  overflow-y:auto;
 }
 .table-loader{
   text-align: center;
@@ -226,7 +231,7 @@ input[disabled], button[disabled]{
   padding: 5px;
   box-shadow: 1px 0.5px 3px rgba(0,0,0, .29), -0.5px 0.5px 0.5px rgba(0,0,0, .2);
   width:50%;
-  background: #D1D1D1;
+  background: #ededed;
   border-radius: 0 0 5px 5px;
 }
 .dialog.prompt input{

@@ -24,9 +24,9 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({
     'title': 'Npm manager',
     'icon': '',
-    'width': 750,
-    'height': 500,
-    'minWidth': 750,
+    'width': 690,
+    'height': 450,
+    'minWidth': 650,
     'minHeight': 400,
     'center': true,
     'movable': true,

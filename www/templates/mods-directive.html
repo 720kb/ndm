@@ -3,7 +3,9 @@
     <input placeholder="Type version" type="text" ng-class="{'color-muted': updating}" ngfx-flash="errorUpdating" ng-focus="errorUpdating = undefined;" ng-model="selectedVersion" ng-value="json.dependencies[selectedPackage].latest"/>
     <button ng-disabled="updating" ng-click="installVersionPackage(selectedVersion)">
       <span ng-show="!updating">OK</span>
-      <span ng-show="updating"><i class="fa fa-spinner fa-spin"></i></span>
+      <span ng-show="updating">
+        <img src="img/loading.svg" width="15"/>
+      </span>
     </button>
   </form>
 </div>
@@ -16,20 +18,20 @@
 </div>
 <div ng-show="loaded">
   <div class="row table-header">
-    <div class="col-xs-4">Package</div>
+    <div class="col-xs-5">Package</div>
     <div class="col-xs-3">Version</div>
     <div class="col-xs-3">Latest</div>
-    <div class="col-xs-2">Env</div>
+    <div class="col-xs-1">Env</div>
   </div>
   <div class="table-body">
     <div class="row table-row" ng-repeat="(key,value) in json.dependencies" ng-class="{'active': selectedPackage.name && selectedPackage.name === key}" ng-click="selectPackage(json.dependencies[key])">
-      <div class="col-xs-4">{{key}}</div>
+      <div class="col-xs-5">{{key}}</div>
       <div class="col-xs-3">{{value.version}}</div>
       <div class="col-xs-3">
         <b ng-if="value.latest === value.version">{{value.latest}}</b>
         <span ng-if="value.latest !== value.version">{{value.latest}}</span>
       </div>
-      <div class="col-xs-2"> {{value.env}}</div>
+      <div class="col-xs-1"> {{value.env}}</div>
     </div>
     <div ng-show="loaded && !json.dependencies">
       <br>

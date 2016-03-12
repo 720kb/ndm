@@ -228,7 +228,7 @@ input[disabled], button[disabled]{
   background: #F2FDFF;
 }
 .table-row:active, .table-row.active{
-  background:  #FCFCEA;
+  background:  #FDFDE6;
 }
 .table-body{
   height: calc(100vh - 122px);

@@ -112,8 +112,7 @@ input[disabled], button[disabled]{
   float: left;
   padding:0 15px;
   box-shadow: -1px -1px #ddd inset;
-  height:100vh;
-  max-height:calc(100vh - 84px);
+  height:calc(100vh - 99px);
   overflow-y: auto;
 }
 .left-column a{
@@ -232,7 +231,7 @@ input[disabled], button[disabled]{
   background:  #FCFCEA;
 }
 .table-body{
-  max-height: calc(100vh - 108px);
+  height: calc(100vh - 122px);
   overflow-y:auto;
   overflow-x:hidden;
   padding-bottom:15px;

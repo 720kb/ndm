@@ -1,0 +1,13 @@
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+.out-of-screen{
+  position: absolute;
+  z-index:-1;
+}
+.separator10{
+  clear:both;
+  width:100%;
+  float:none;
+  min-height:10px;
+}

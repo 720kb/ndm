@@ -1,38 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/colors.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/backgrounds.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/settings.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/utils.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/loading.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/bootstrap.fixtures.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="../node_modules/angular-fx/dist/angular-fx.min.css" media="screen" title="no title" charset="utf-8">
-  <script src="../node_modules/angular/angular.min.js"></script>
-  <script src="../node_modules/angular-route/angular-route.min.js"></script>
-  <script type="text/javascript" src="../node_modules/angular-fx/dist/angular-fx.min.js"></script>
-  <script type="text/javascript" src="../node_modules/angular-local-storage/dist/angular-local-storage.min.js"></script>
 
-  <script src="js/controllers/home.controller.js"></script>
-  <script src="js/controllers/module.js"></script>
-
-  <script src="js/factories/session.factory.js"></script>
-  <script src="js/factories/npm.factory.js"></script>
-  <script src="js/factories/module.js"></script>
-
-  <script src="js/services/loading.service.js"></script>
-  <script src="js/services/module.js"></script>
-
-  <script src="js/directives/mods.directive.js"></script>
-  <script src="js/directives/module.js"></script>
-
-  <script src="js/index.js"></script>
-</head>
-<body ng-app="electron" ng-controller="HomeController as home">
+<body ng-app="electron" ng-controller="">
   <span class="title">Npm Manager</span>
   <div class="page">
     <div class="container top-menu bg-gradient-grey">

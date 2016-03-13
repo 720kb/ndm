@@ -1,19 +1,36 @@
 {
-  "name": "electronapp",
-  "version": "0.0.0",
-  "description": "Just an electron app",
-  "main": "index.js",
+  "name": "npm-ui",
+  "version": "0.0.1",
+  "description": "Just another tool that manages npm",
+  "main": "dist/index.js",
   "author": "720kb",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.5.0",
     "angular-fx": "^1.1.0",
     "angular-local-storage": "^0.2.6",
-    "angular-route": "^1.5.0",
     "bootstrap": "^3.3.6",
-    "font-awesome": "^4.5.0"
+    "font-awesome": "^4.5.0",
+    "systemjs": "^0.19.24"
   },
   "devDependencies": {
-    "lodash": "^0.1.0"
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "del": "^2.2.0",
+    "electron-prebuilt": "^0.37.0",
+    "eslint": "^2.4.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-haml": "^0.1.6",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-ng-annotate": "^2.0.0",
+    "jscs": "^2.11.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "require-dir": "^0.3.0",
+    "rollup": "^0.25.4",
+    "rollup-plugin-babel": "^2.4.0",
+    "rollup-plugin-json": "^2.0.0",
+    "run-sequence": "^1.1.5"
   }
 }

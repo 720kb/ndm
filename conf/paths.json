@@ -1,0 +1,5 @@
+{
+  "tmp": ".tmp/",
+  "lib": "lib/",
+  "dist": "dist/"
+}

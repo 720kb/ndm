@@ -3,6 +3,7 @@
   "laxcomma": true,
   "curly": true,
   "eqeqeq": true,
+  "esnext": true,
   "forin": true,
   "freeze": true,
   "futurehostile": true,
@@ -13,7 +14,6 @@
   "nonew": true,
   "notypeof": true,
   "singleGroups": true,
-  "strict": true,
   "undef": true,
   "unused": true,
   "plusplus": true

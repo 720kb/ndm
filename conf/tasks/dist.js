@@ -12,8 +12,6 @@
       'copy-transpiled-js-files',
       'copy-css-files',
       'copy-img-files',
-      'copy-tmpl-files',
-      'copy-haml-file'
     ], done);
   });
 
@@ -33,17 +31,5 @@
 
     return gulp.src(`${paths.lib}img/**/*`)
       .pipe(gulp.dest(`${paths.dist}img`));
-  });
-
-  gulp.task('copy-tmpl-files', () => {
-
-    return gulp.src(`${paths.lib}templates/**/*`)
-      .pipe(gulp.dest(`${paths.dist}templates`));
-  });
-
-  gulp.task('copy-haml-file', () => {
-
-    return gulp.src(`${paths.lib}**/*.haml`)
-      .pipe(gulp.dest(`${paths.dist}`));
   });
 }());

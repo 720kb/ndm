@@ -8,7 +8,7 @@
     , rollupBabel = require('rollup-plugin-babel')
     , paths = require('../paths.json');
 
-  gulp.task('es6-build', ['haml', 'scss'], () => {
+  gulp.task('es6-build', ['front-end'], () => {
     const toProcess = [
       rollup({
         'entry': `${paths.lib}index.js`,
@@ -48,7 +48,7 @@
         });
 
         bundles[1].write({
-          'format': 'cjs',
+          'format': 'iife',
           'moduleId': 'npm-ui-ng',
           'moduleName': 'npm-ui-ng',
           'sourceMap': true,

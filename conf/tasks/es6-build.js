@@ -8,7 +8,7 @@
     , rollupBabel = require('rollup-plugin-babel')
     , paths = require('../paths.json');
 
-  gulp.task('es6-build', ['haml'], () => {
+  gulp.task('es6-build', ['haml', 'scss'], () => {
     const toProcess = [
       rollup({
         'entry': `${paths.lib}index.js`,

@@ -1,4 +1,4 @@
-body, html
+body, html {
   height: 100vh
   overflow: hidden
   margin: 0 auto
@@ -6,8 +6,9 @@ body, html
   cursor: default
   -webkit-user-select: none
   font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif
+}
 
-*
+* {
   outline: none
   text-decoration: none
   cursor: default
@@ -15,8 +16,9 @@ body, html
     outline: none
     text-decoration: none
     cursor: default
+}
 
-a
+a {
   outline: none
   text-decoration: none
   cursor: default
@@ -24,7 +26,7 @@ a
     outline: none
     text-decoration: none
     cursor: default
-
+}
 small
   font-size: 11.5px
   *

@@ -10,8 +10,7 @@
     "angular-fx": "^1.1.0",
     "angular-local-storage": "^0.2.6",
     "bootstrap": "^3.3.6",
-    "font-awesome": "^4.5.0",
-    "systemjs": "^0.19.24"
+    "font-awesome": "^4.5.0"
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
@@ -24,6 +23,9 @@
     "gulp-jscs": "^3.0.2",
     "gulp-jshint": "^2.0.0",
     "gulp-ng-annotate": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
     "jscs": "^2.11.0",
     "jshint": "^2.9.1",
     "jshint-stylish": "^2.1.0",

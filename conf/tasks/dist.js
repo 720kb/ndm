@@ -10,8 +10,7 @@
 
     runSequence([
       'copy-transpiled-js-files',
-      'copy-css-files',
-      'copy-img-files',
+      'copy-img-files'
     ], done);
   });
 
@@ -19,12 +18,6 @@
 
     return gulp.src(`${paths.tmp}**/*`)
       .pipe(gulp.dest(`${paths.dist}`));
-  });
-
-  gulp.task('copy-css-files', () => {
-
-    return gulp.src(`${paths.lib}css/**/*`)
-      .pipe(gulp.dest(`${paths.dist}css`));
   });
 
   gulp.task('copy-img-files', () => {

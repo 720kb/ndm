@@ -1,0 +1,33 @@
+.dialog.prompt{"ngfx-fade-in-down" => "showVersionDialog", "ngfx-speed" => "fast"}
+  %form{"ng-submit" => "installVersionPackage(selectedVersion)"}
+    %input{"ng-class" => "{'color-muted': updating}", "ng-focus" => "errorUpdating = undefined;", "ng-model" => "selectedVersion", "ng-value" => "json.dependencies[selectedPackage].latest", "ngfx-flash" => "errorUpdating", :placeholder => "Type version", :type => "text"}/
+    %button{"ng-click" => "installVersionPackage(selectedVersion)", "ng-disabled" => "updating"}
+      %span{"ng-show" => "!updating"} OK
+      %span{"ng-show" => "updating"}
+        %img{:src => "img/loading.svg", :width => "15"}/
+.row.table-loader.bg-lighter{"ng-hide" => "loaded"}
+  %img{:src => "img/loading.svg", :width => "22"}/
+  Loading ...
+  .separator10
+  .color-muted
+    %small May take some time
+%div{"ng-show" => "loaded"}
+  .row.table-header
+    .col-xs-5 Package
+    .col-xs-3 Version
+    .col-xs-2 Latest
+    .col-xs-2 Env
+  .table-body
+    .row.table-row{"ng-class" => "{'active': selectedPackage.name  selectedPackage.name === key}", "ng-click" => "selectPackage(json.dependencies[key])", "ng-repeat" => "(key,value) in json.dependencies"}
+      .col-xs-5
+      .col-xs-3
+      .col-xs-2
+        %b{"ng-if" => "value.latest === value.version"}
+        %span{"ng-if" => "value.latest !== value.version"}
+      .col-xs-2
+    %div{"ng-show" => "loaded  !json.dependencies"}
+      %br
+        %span{"ng-show" => "error  error.length > 5"}
+          %i.fa.fa-warning
+          Issues ,
+        0 packages found

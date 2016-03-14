@@ -1,7 +1,69 @@
-body
-  font-size: 12.5px
-  color: #666
+* {
+  outline: none;
+  text-decoration: none;
+  cursor: default;
+  &:hover, &:active, &:focus {
+    outline: none;
+    text-decoration: none;
+    cursor: default;
+  }
+}
 
-h1, h2, h3, h4, h5, h6
-  color: #777
-  font-weight: bold
+body, html {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  cursor: default;
+  -webkit-user-select: none;
+  font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 12.5px;
+  color: #666;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  cursor: default;
+  &:hover, &:active, &:focus {
+    outline: none;
+    text-decoration: none;
+    cursor: default;
+  }
+}
+small{
+  font-size: 11.5px;
+  * {
+    font-size: 11.5px;
+  }
+}
+pre{
+  border: none;
+  line-height: 20px;
+  font-size: 11.5px;
+}
+button {
+  background: none;
+  border: none;
+  border-radius: 20px;
+  i {
+    font-size: 13px;
+    vertical-align: middle;
+  }
+}
+input{
+  &:focus {
+    box-shadow: 0 0 4px royalblue;
+  }
+  &[disabled] {
+    opacity: .5;
+  }
+}
+button[disabled] {
+  opacity: .5;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: #777;
+  font-weight: bold;
+}

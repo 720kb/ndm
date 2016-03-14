@@ -1,0 +1,65 @@
+.title {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 26px;
+  margin: 0 auto;
+  float: none;
+}
+
+.top-menu {
+  padding: 20px 10px 3px 10px;
+  width: 100%;
+  box-shadow: 0 -1px #bbbbbb inset, 0 -1px #cccccc inset;
+  a {
+    display: block;
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    padding: 2px 0;
+    &:active i {
+      color: #327dff;
+    }
+    &.pull-right {
+      margin-left: 11px;
+    }
+    i {
+      font-size: 24.5px;
+      line-height: 0;
+      margin-top: 13px;
+      position: relative;
+      bottom: -2px;
+      text-shadow: 0 1px rgba(255, 255, 255, 0.7);
+    }
+    &:active {
+      color: #444444;
+    }
+  }
+  button {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    height: 20px;
+    margin-left: 20px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    i {
+      color: #327dff;
+      text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+      font-size: 15px;
+      vertical-align: text-bottom;
+    }
+    &:active {
+      background: rgba(0, 0, 0, 0.05);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) inset;
+      text-shadow: none;
+      i {
+        text-shadow: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.table-header {
+  color: #222222;
+  font-size: 11px;
+  line-height: 23px;
+  padding: 0 10px;
+  div {
+    box-shadow: -1px -1px #dddddd inset;
+    background: #fefefe;
+  }
+}
+
+.table-row {
+  color: #333333;
+  font-size: 12.5px;
+  line-height: 23px;
+  padding: 0 10px;
+  &:nth-child(odd) {
+    background: #f2fdff;
+  }
+  &:active, &.active {
+    background: #fdfde6;
+  }
+}
+
+.table-body {
+  height: calc(100vh - 122px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 15px;
+}
+
+.table-loader {
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 30vh;
+}

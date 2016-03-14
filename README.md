@@ -1,7 +1,7 @@
-#requirements
+#install
 
-`npm install -g electron`
+`npm install`
 
-#launch
+#launch app
 
-`cd repo/ && electron .`
+`./node_modules/.bin/electron .`

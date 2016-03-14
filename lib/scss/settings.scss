@@ -1,64 +1,75 @@
 * {
+  cursor: default;
   outline: none;
   text-decoration: none;
-  cursor: default;
+
   &:hover, &:active, &:focus {
+    cursor: default;
     outline: none;
     text-decoration: none;
-    cursor: default;
   }
 }
 
 body, html {
-  height: 100vh;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 0;
-  cursor: default;
   -webkit-user-select: none;
-  font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 12.5px;
   color: #666;
+  cursor: default;
+  font-family: $default-font-family;
+  font-size: 12.5px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
 }
 
 a {
+  cursor: default;
   outline: none;
   text-decoration: none;
-  cursor: default;
+
   &:hover, &:active, &:focus {
+    cursor: default;
     outline: none;
     text-decoration: none;
-    cursor: default;
   }
 }
-small{
+
+small {
   font-size: 11.5px;
+
   * {
     font-size: 11.5px;
   }
 }
-pre{
+
+pre {
+  font-size: 11.5px;
   border: none;
   line-height: 20px;
-  font-size: 11.5px;
 }
+
 button {
   background: none;
   border: none;
   border-radius: 20px;
+
   i {
     font-size: 13px;
     vertical-align: middle;
   }
 }
+
 input{
+
   &:focus {
     box-shadow: 0 0 4px royalblue;
   }
+
   &[disabled] {
     opacity: .5;
   }
 }
+
 button[disabled] {
   opacity: .5;
 }

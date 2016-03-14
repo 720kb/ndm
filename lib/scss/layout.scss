@@ -3,38 +3,43 @@
 }
 
 .right-column {
+  float: left;
   padding: 0;
   width: calc(100% - 200px);
-  float: left;
 }
 
 .left-column {
-  width: 200px;
+  box-shadow: -1px -1px #ddd inset;
   float: left;
-  padding: 0 15px;
-  box-shadow: -1px -1px #dddddd inset;
   height: calc(100vh - 99px);
   overflow-y: auto;
+  padding: 0 15px;
+  width: 200px;
+
   a {
+    color: #676767;
     width: 100%;
     display: inline-block;
     margin: 0;
     line-height: 25px;
     padding: 0 10px;
-    color: #676767;
     text-shadow: 0 1px white;
     cursor: default;
     font-size: 13px;
   }
+
   h6 {
     padding: 5px 10px;
     font-size: 11.5px;
     margin-bottom: 5px;
   }
+
   a {
+
     div {
       display: inline-flex;
       max-width: 120px;
+
       b {
         font-weight: normal;
         white-space: nowrap;
@@ -43,15 +48,18 @@
         width: 100%;
       }
     }
+
     &:hover {
-      background-color: rgba(0, 0, 0, 0.03);
+      @include bg-rgba-black(.03);
     }
+
     &:active {
-      background-color: rgba(0, 0, 0, 0.03);
+      @include bg-rgba-black(.03);
       background: #327dff;
       cursor: default;
       color: white;
       text-shadow: none;
+
       &:hover {
         background: #327dff;
         cursor: default;
@@ -59,6 +67,7 @@
         text-shadow: none;
       }
     }
+
     &.active {
       background: #327dff;
       cursor: default;
@@ -89,15 +98,15 @@
         z-index: 999;
         text-indent: -2px;
         float: right;
-        color: rgba(0, 0, 0, 0.28);
+        color: rgba(0, 0, 0, .28);
       }
       &:hover button {
         display: inherit;
       }
     }
     &:active span, &.active span {
-      background: rgba(0, 0, 0, 0.2);
-      box-shadow: 0px -2px rgba(0, 0, 0, 0.1) inset;
+      @include bg-rgba-black(.2);
+      box-shadow: 0px -2px rgba(0, 0, 0, .1) inset;
       color: white;
     }
     i {
@@ -111,7 +120,7 @@
       display: inline-block;
       float: right;
       text-indent: 0.5px;
-      background: rgba(0, 0, 0, 0.23);
+      @include bg-rgba-black(.23);
       text-shadow: 0 1px rgba(0, 0, 0, 0.2);
       font-size: 11px;
       color: white;

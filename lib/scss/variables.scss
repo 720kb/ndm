@@ -1,4 +1,10 @@
-/*Backgrounds*/
+/*
+Fonts
+*/
+$default-font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
+/*
+Backgrounds
+*/
 $bg-light: #f4f6f6;
 $bg-lighter: #fefefe;
 $bg-ultralight: #f4f4f4;
@@ -7,6 +13,7 @@ $bg-lightgrey: #e9e7e9;
 $bg-smoke: #d1cfd1;
 $bg-gradient-footer: -webkit-linear-gradient(top, $bg-ultralight 0%, $bg-mediumlight 100%), linear-gradient(to bottom, $bg-ultralight 0%, $bg-mediumlight 100%);
 $bg-gradient-grey: -webkit-linear-gradient(top, $bg-lightgrey 0%, $bg-smoke 100%), linear-gradient(to bottom, $bg-lightgrey 0%, $bg-smoke 100%);
-
-/*Colors*/
+/*
+Colors
+*/
 $color-muted: rgba(0, 0, 0, .4);

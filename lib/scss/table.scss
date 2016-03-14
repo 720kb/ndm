@@ -1,36 +1,39 @@
 .table-header {
-  color: #222222;
+  color: $color-222;
   font-size: 11px;
   line-height: 23px;
   padding: 0 10px;
+
   div {
-    box-shadow: -1px -1px #dddddd inset;
-    background: #fefefe;
+    background: $bg-lighter;
+    box-shadow: -1px -1px $color-ddd inset;
   }
 }
 
 .table-row {
-  color: #333333;
+  color: $color-333;
   font-size: 12.5px;
   line-height: 23px;
   padding: 0 10px;
+
   &:nth-child(odd) {
-    background: #f2fdff;
+    background: $bg-table-row;
   }
+
   &:active, &.active {
-    background: #fdfde6;
+    background: $bg-table-row-highlight;
   }
 }
 
 .table-body {
   height: calc(100vh - 122px);
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: auto;
   padding-bottom: 15px;
 }
 
 .table-loader {
-  text-align: center;
   min-height: 100vh;
   padding-top: 30vh;
+  text-align: center;
 }

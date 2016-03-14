@@ -11,9 +11,22 @@ $bg-ultralight: #f4f4f4;
 $bg-mediumlight: #f2f2f2;
 $bg-lightgrey: #e9e7e9;
 $bg-smoke: #d1cfd1;
+$bg-table-row: #f2fdff;
+$bg-dialog: #ededed;
+$bg-table-row-highlight: #fdfde6;
 $bg-gradient-footer: -webkit-linear-gradient(top, $bg-ultralight 0%, $bg-mediumlight 100%), linear-gradient(to bottom, $bg-ultralight 0%, $bg-mediumlight 100%);
 $bg-gradient-grey: -webkit-linear-gradient(top, $bg-lightgrey 0%, $bg-smoke 100%), linear-gradient(to bottom, $bg-lightgrey 0%, $bg-smoke 100%);
 /*
 Colors
 */
 $color-muted: rgba(0, 0, 0, .4);
+$color-royalblue: royalblue;
+$color-999: #999;
+$color-777: #777;
+$color-666: #666;
+$color-444: #444;
+$color-333: #333;
+$color-222: #222;
+$color-ddd: #ddd;
+$color-bbb: #bbb;
+$color-ccc: #ccc;

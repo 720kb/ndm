@@ -18,20 +18,20 @@
 
   a {
     color: #676767;
-    width: 100%;
+    cursor: default;
     display: inline-block;
-    margin: 0;
+    font-size: 13px;
     line-height: 25px;
+    margin: 0;
     padding: 0 10px;
     text-shadow: 0 1px white;
-    cursor: default;
-    font-size: 13px;
+    width: 100%;
   }
 
   h6 {
-    padding: 5px 10px;
     font-size: 11.5px;
     margin-bottom: 5px;
+    padding: 5px 10px;
   }
 
   a {
@@ -42,9 +42,9 @@
 
       b {
         font-weight: normal;
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
         width: 100%;
       }
     }
@@ -56,80 +56,88 @@
     &:active {
       @include bg-rgba-black(.03);
       background: #327dff;
-      cursor: default;
       color: white;
+      cursor: default;
       text-shadow: none;
 
       &:hover {
         background: #327dff;
-        cursor: default;
         color: white;
+        cursor: default;
         text-shadow: none;
       }
     }
 
     &.active {
       background: #327dff;
-      cursor: default;
       color: white;
+      cursor: default;
       text-shadow: none;
     }
+
     &.project {
+
       &.active {
         background: #327dff;
-        cursor: default;
         color: white;
+        cursor: default;
         text-shadow: none;
+
         &:hover {
           background: #327dff;
-          cursor: default;
           color: white;
+          cursor: default;
           text-shadow: none;
         }
       }
+
       button {
+        color: rgba(0, 0, 0, .28);
         display: none;
-        width: 50%;
-        min-width: 8px;
-        max-width: 19px;
+        float: right;
         line-height: 0;
         margin-top: 2px;
+        max-width: 19px;
+        min-width: 8px;
         position: relative;
-        z-index: 999;
         text-indent: -2px;
-        float: right;
-        color: rgba(0, 0, 0, .28);
+        width: 50%;
+        z-index: 999;
       }
+
       &:hover button {
         display: inherit;
       }
     }
+
     &:active span, &.active span {
       @include bg-rgba-black(.2);
-      box-shadow: 0px -2px rgba(0, 0, 0, .1) inset;
+      box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
       color: white;
     }
+
     i {
       font-size: 15px;
+      margin-right: 5px;
       position: relative;
       top: 1px;
-      margin-right: 5px;
     }
+
     span {
+      @include bg-rgba-black(.23);
       border-radius: 10px;
+      color: white;
       display: inline-block;
       float: right;
-      text-indent: 0.5px;
-      @include bg-rgba-black(.23);
-      text-shadow: 0 1px rgba(0, 0, 0, 0.2);
       font-size: 11px;
-      color: white;
-      min-width: 23px;
-      text-align: center;
       font-weight: 500;
-      padding: 0 7px 1px 7px;
       line-height: 15px;
       margin-top: 4px;
+      min-width: 23px;
+      padding: 0 7px 1px 7px;
+      text-align: center;
+      text-indent: .5px;
+      text-shadow: 0 1px rgba(0, 0, 0, .2);
     }
   }
 }

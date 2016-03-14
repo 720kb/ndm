@@ -12,7 +12,7 @@
 
 body, html {
   -webkit-user-select: none;
-  color: #666;
+  color: $color-666;
   cursor: default;
   font-family: $default-font-family;
   font-size: 12.5px;
@@ -43,8 +43,8 @@ small {
 }
 
 pre {
-  font-size: 11.5px;
   border: none;
+  font-size: 11.5px;
   line-height: 20px;
 }
 
@@ -57,12 +57,16 @@ button {
     font-size: 13px;
     vertical-align: middle;
   }
+
+  &[disabled] {
+    opacity: .5;
+  }
 }
 
-input{
+input {
 
   &:focus {
-    box-shadow: 0 0 4px royalblue;
+    box-shadow: 0 0 4px $color-royalblue;
   }
 
   &[disabled] {
@@ -70,11 +74,7 @@ input{
   }
 }
 
-button[disabled] {
-  opacity: .5;
-}
-
-h1, h2, h3, h4, h5, h6{
-  color: #777;
+h1, h2, h3, h4, h5, h6 {
+  color: $color-777;
   font-weight: bold;
 }

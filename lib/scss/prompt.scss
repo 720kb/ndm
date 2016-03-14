@@ -1,43 +1,48 @@
 .dialog {
-  float: none;
-  position: absolute;
-  z-index: 99;
-  right: 10px;
-  padding: 5px;
-  box-shadow: 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
-  width: 300px;
-  background: #ededed;
+  background: $bg-dialog;
   border-radius: 0 0 5px 5px;
+  box-shadow: 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
+  float: none;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  width: 300px;
+  z-index: 99;
+
   &.prompt {
+
     input {
-      text-indent: 5px;
-      width: 85%;
       border: none;
       border-radius: 4px;
       box-shadow: 0 1px 1px rgba(0, 0, 0, .2) inset;
+      font-size: 11px;
       height: 20px;
       line-height: 20px;
-      font-size: 11px;
+      text-indent: 5px;
+      width: 85%;
     }
+
     button {
-      font-size: 9.5px;
-      vertical-align: middle;
-      font-weight: 500;
-      width: 13%;
-      height: 19px;
+      background: $bg-lighter;
       border-radius: 3px;
-      line-height: 15px;
-      background: #fefefe;
-      color: #777;
-      margin-top: -0.5px;
-      text-shadow: 0 1px white;
       box-shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 1px 1px rgba(0, 0, 0, .1);
+      color: $color-777;
+      font-size: 9.5px;
+      font-weight: 500;
+      height: 19px;
+      line-height: 15px;
+      margin-top: -.5px;
+      text-shadow: 0 1px white;
+      vertical-align: middle;
+      width: 13%;
+
       &:active {
         background: rgba(0, 0, 0, .04);
-        text-shadow: none;
         box-shadow: 1px 1px 2px rgba(0, 0, 0, .09) inset, 0 1px rgba(0, 0, 0, .09) inset;
-        color: #999;
+        color: $color-999;
+        text-shadow: none;
       }
+
       i {
         position: relative;
         top: -1px;

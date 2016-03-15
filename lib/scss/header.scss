@@ -58,6 +58,7 @@
     i {
       color: #327dff;
       font-size: 15px;
+      margin-right: 5px;
       text-shadow: 0 1px rgba(255, 255, 255, .5);
       vertical-align: text-bottom;
     }
@@ -66,7 +67,6 @@
       @include bg-rgba-black(.05);
       box-shadow: 0 1px 1px rgba(0, 0, 0, .15) inset;
       text-shadow: none;
-
       i {
         text-shadow: none;
       }

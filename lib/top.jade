@@ -1,0 +1,28 @@
+.container.top-menu.bg-gradient-grey(ng-controller='TopMenuController as topMenu')
+  .row
+    .col-xs-3
+      a.pull-left(ng-click='shell.updateNpm()')
+        i.fa.fa-history 
+        div
+        | Update npm
+    .col-xs-9
+      button(ng-click='shell.chooseProjectDir()') 
+        i.fa.fa-plus-circle 
+        | Add Project
+      a.pull-right.install
+        i.fa.fa-cloud-download 
+        div
+        | Install Package
+      span(ng-show='shell.showMenuButtons')
+        a.pull-right(ng-click='shell.updatePackage()')
+          i.fa.fa-level-up 
+          div
+          | Update
+        a.pull-right(ng-click='shell.installVersionPackage()')
+          i.fa.fa-at 
+          div
+          | Install release
+        a.pull-right
+          i.fa.fa-remove 
+          div
+          | Uninstall

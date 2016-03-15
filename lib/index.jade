@@ -12,58 +12,13 @@ html
     script(type='text/javascript', src='../node_modules/angular-fx/dist/angular-fx.min.js')
     script(type='text/javascript', src='../node_modules/angular-local-storage/dist/angular-local-storage.min.js')
     
-    script(src='js/index.js')
-  body(ng-app='electron')
+    script(type='text/javascript', src='js/index.js')
+  body(ng-app='ndm', ng-controller='ShellController as shell')
     span.title Npm Manager
     .page
-      .container.top-menu.bg-gradient-grey
-        .row
-          .col-xs-3
-            a.pull-left
-              i.fa.fa-history 
-              div
-              | Update npm
-          .col-xs-9
-            button(ng-click='shell.chooseProjectDir()') 
-              i.fa.fa-plus-circle 
-              | Add Project
-            a.pull-right.install
-              i.fa.fa-cloud-download 
-              div
-              | Install Package
-            span(ng-show='shell.showMenuButtons')
-              a.pull-right(ng-click='shell.updatePackage()')
-                i.fa.fa-level-up 
-                div
-                | Update
-              a.pull-right(ng-click='shell.installVersionPackage()')
-                i.fa.fa-at 
-                div
-                | Install release
-              a.pull-right
-                i.fa.fa-remove 
-                div
-                | Uninstall
-      .left-column.bg-light.overflow-x-hidden
-        .row
-          h6.col-xs-12 
-            | Packages
-          a.row(ng-class="{'active': globally}", ng-click='shell.selectGlobal()')
-            i.fa.fa-globe 
-            | Globals 
-            span {{globalInstalledCount || 0}}
-          br
-          h6.col-xs-12(ng-if='projectsList.length > 0') Projects
-          a.row.project(ng-repeat='item in projectsList', ng-class="{'active': shell.selectedProject === item}", ng-click='shell.selectProject(item, $event)')
-            i.fa.fa-folder-o
-            div
-              b {{item.name}}
-            button(ng-click='shell.deleteProject(item, $event)')
-              i.fa.fa-times-circle-o
-        br
-      .right-column.overflow-x-hidden
-        mods-installed-directive
-        br
+      include ./top.jade
+      include ./left.jade
+      include ./content.jade
     .footer.bg-footer © 
       a(ng-click="shell.openBrowserLink('http://720kb.net')") 720kb
       span.pull-right

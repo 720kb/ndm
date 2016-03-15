@@ -26,15 +26,6 @@
     padding: 0 10px;
     text-shadow: 0 1px white;
     width: 100%;
-  }
-
-  h6 {
-    font-size: 11.5px;
-    margin-bottom: 5px;
-    padding: 5px 10px;
-  }
-
-  a {
 
     div {
       display: inline-flex;
@@ -105,15 +96,21 @@
         z-index: 999;
       }
 
-      &:hover button {
-        display: inherit;
+      &:hover {
+
+        & button {
+          display: inherit;
+        }
       }
     }
 
-    &:active span, &.active span {
-      @include bg-rgba-black(.2);
-      box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
-      color: white;
+    &:active, &.active {
+
+      & span {
+        @include bg-rgba-black(.2);
+        box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+        color: white;
+      }
     }
 
     i {
@@ -139,5 +136,11 @@
       text-indent: .5px;
       text-shadow: 0 1px rgba(0, 0, 0, .2);
     }
+  }
+
+  h6 {
+    font-size: 11.5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
   }
 }

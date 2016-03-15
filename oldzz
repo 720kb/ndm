@@ -1,20 +1,35 @@
 import angular from 'angular';
+const moduleName = 'npm-ui.shell';
 
-angular.module('npm-ui.shell', [])
-  .controller('ShellController', /*@ngInject*/ function HomeController($rootScope, $scope, $window) {
+angular.module(moduleName, [])
+  .controller('ShellController', /*@ngInject*/ function HomeController($log, $rootScope, $scope, $window, npmFactory, loadingService) {
 
-    const openBrowserLink = url => {
+    const installVersionPackage = () => {
 
-      $window.shell.openExternal(url);
-    }
-    , updatePackage = () => {
+      this.errorUpdating = undefined;
+      this.updating = true;
+      loadingService.loading();
+      npmFactory.update(this.selectedPackage.name, this.projectPath, this.selectedVersion, this.selectedEnv)
+      .then(() => {
 
-      $rootScope.$emit('user:update-package');
-    }
-    , installVersionPackage = () => {
+        $scope.$evalAsync(() => {
+          this.showVersionDialog = undefined;
+          this.updating = undefined;
+          this.errorUpdating = undefined;
+          loadingService.finished();
+        });
+      }).catch((err) => {
 
-      $rootScope.$emit('user:install-version-package');
-    }
+        $log.error('Error updating lib', err);
+
+        $scope.$evalAsync(() => {
+          this.errorUpdating = true;
+          this.updating = undefined;
+          loadingService.finished();
+        });
+      });
+    };
+
     , selectGlobal = () => {
 
       $rootScope.globally = true;
@@ -110,14 +125,14 @@ angular.module('npm-ui.shell', [])
     , unregisterOnNewProject = $rootScope.$on('user:added-new-project', (eventInfo, data) => {
 
       this.showMenuButtons = undefined;
-      $scope.$evalAsync(() => {
+      $this.$evalAsync(() => {
 
         $rootScope.projectsList.unshift(data);
         selectProject(data);
       });
     });
 
-    $scope.$on('$destroy', () => {
+    $this.$on('$destroy', () => {
 
       unregisterOnNewProject();
       unregisterOnSelectedPackage();
@@ -128,10 +143,35 @@ angular.module('npm-ui.shell', [])
     this.selectGlobal = selectGlobal;
     this.selectProject = selectProject;
     this.deleteProject = deleteProject;
-    this.updatePackage = updatePackage;
-    this.installVersionPackage = installVersionPackage;
-    this.openBrowserLink = openBrowserLink;
+
+    this.updatePackage = () => {
+
+      if (this.selectedPackage &&
+        this.selectedPackage.latest) {
+
+        this.selectedVersion = this.selectedPackage.latest;
+
+        installVersionPackage();
+      } else {
+
+        $window.dialog.showErrorBox('npm', 'The package is already up to latest version');
+      }
+    };
+
+    this.installVersionPackage = () => {
+
+      this.errorUpdating = undefined;
+      this.updating = undefined;
+      this.showVersionDialog = true;
+      loadingService.finished();
+    };
+
+    this.openBrowserLink = url => {
+
+      $window.shell.openExternal(url);
+    };
+
     $rootScope.globally = true;
   });
 
-export default 'npm-ui.shell';
+export default moduleName;

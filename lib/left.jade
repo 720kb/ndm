@@ -1,0 +1,17 @@
+.left-column.bg-light.overflow-x-hidden(ng-controller='LeftBarController as leftBar')
+  .row
+    h6.col-xs-12
+      | Packages
+    a.row(ng-class="{'active': globally}", ng-click='shell.selectGlobal()')
+      i.fa.fa-globe
+      | Globals
+      span {{globalInstalledCount || 0}}
+    br
+    h6.col-xs-12(ng-if='projectsList.length > 0') Projects
+    a.row.project(ng-repeat='item in projectsList', ng-class="{'active': shell.selectedProject === item}", ng-click='shell.selectProject(item, $event)')
+      i.fa.fa-folder-o
+      div
+        b {{item.name}}
+      button(ng-click='shell.deleteProject(item, $event)')
+        i.fa.fa-times-circle-o
+  br

@@ -2,16 +2,16 @@
   .row
     h6.col-xs-12
       | Packages
-    a.row(ng-class="{'active': globally}", ng-click='shell.selectGlobal()')
+    a.row(ng-class="{'active': globally}", ng-click='leftBar.selectGlobal()')
       i.fa.fa-globe
       | Globals
       span {{globalInstalledCount || 0}}
     br
     h6.col-xs-12(ng-if='projectsList.length > 0') Projects
-    a.row.project(ng-repeat='item in projectsList', ng-class="{'active': shell.selectedProject === item}", ng-click='shell.selectProject(item, $event)')
+    a.row.project(ng-repeat='item in shell.projects', ng-class="{'active': leftBar.selectedProject === item}", ng-click='leftBar.selectProject(item, $event)')
       i.fa.fa-folder-o
       div
-        b {{item.name}}
-      button(ng-click='shell.deleteProject(item, $event)')
+        b {{ item.dirName }}
+      button(ng-click='leftBar.deleteProject(item, $event)')
         i.fa.fa-times-circle-o
   br

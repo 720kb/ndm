@@ -13,16 +13,16 @@
         i.fa.fa-cloud-download 
         div
         | Install Package
-      span(ng-show='shell.showMenuButtons')
-        a.pull-right(ng-click='shell.updatePackage()')
+      span(ng-show='topMenu.showMenuButtons')
+        a.pull-right(ng-click='topMenu.updatePackage()')
           i.fa.fa-level-up 
           div
           | Update
-        a.pull-right(ng-click='shell.installVersionPackage()')
+        a.pull-right(ng-click='topMenu.installVersionPackage()')
           i.fa.fa-at 
           div
           | Install release
-        a.pull-right
+        a.pull-right(ng-click='topMenu.uninstallPackage()')
           i.fa.fa-remove 
           div
           | Uninstall

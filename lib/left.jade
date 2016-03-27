@@ -5,9 +5,9 @@
     a.row(ng-class="{'active': globally}", ng-click='leftBar.selectGlobal()')
       i.fa.fa-globe
       | Globals
-      span {{globalInstalledCount || 0}}
+      span {{ globalInstalledCount || 0 }}
     br
-    h6.col-xs-12(ng-if='projectsList.length > 0') Projects
+    h6.col-xs-12(ng-if='shell.projects.length > 0') Projects
     a.row.project(ng-repeat='item in shell.projects', ng-class="{'active': leftBar.selectedProject === item}", ng-click='leftBar.selectProject(item, $event)')
       i.fa.fa-folder-o
       div

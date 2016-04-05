@@ -1,4 +1,5 @@
 .container.top-menu.bg-gradient-grey(ng-controller='TopMenuController as topMenu')
+  input#choose-file(type='file' nwdirectory onchange="angular.element(this).scope().shell.chooseProjectDir(this.files)")
   .row
     .col-xs-3
       a.pull-left(ng-click='shell.updateNpm()')
@@ -6,7 +7,7 @@
         div
         | Update npm
     .col-xs-9
-      button(ng-click='shell.chooseProjectDir()') 
+      a(ng-click="shell.openChooser()")
         i.fa.fa-plus-circle 
         | Add Project
       a.pull-right.install

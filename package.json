@@ -2,21 +2,36 @@
   "name": "npm-ui",
   "version": "0.0.1",
   "description": "Just another tool that manages npm",
-  "main": "dist/index.js",
+  "main": "dist/index.html",
   "author": "720kb",
   "license": "MIT",
+  "scripts": {
+    "start": "nw"
+  },
+  "window": {
+    "toolbar": true,
+    "frame": true,
+    "position": "center",
+    "min_width": 1024,
+    "min_height": 768,
+    "width": 1024,
+    "height": 768,
+    "max_width": 1680,
+    "max_height": 1050
+  },
   "dependencies": {
     "angular": "^1.5.0",
     "angular-fx": "^1.1.0",
     "angular-local-storage": "^0.2.6",
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.5.0",
-    "npm": "^3.8.5"
+    "freshy": "^1.0.2",
+    "npm": "^3.8.5",
+    "nw": "^0.12.3"
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
     "del": "^2.2.0",
-    "electron-prebuilt": "^0.37.0",
     "eslint": "^2.4.0",
     "gulp": "^3.9.1",
     "gulp-eslint": "^2.0.0",

@@ -6,30 +6,23 @@
         span(ng-show='!updating') OK
         span(ng-show='updating')
           img(src='img/loading.svg', width='15')
-  .row.table-loader.bg-lighter(ng-hide='loaded')
+  .row.table-loader.bg-lighter(ng-hide='content.loaded')
     img(src='img/loading.svg', width='22') 
     | Loading ...
     .separator10
     .color-muted
       small May take some time
-  div(ng-show='loaded')
+  div(ng-show='content.loaded')
     .row.table-header
-      .col-xs-5 Package
-      .col-xs-3 Version
+      .col-xs-4 Package
+      .col-xs-2 Current
+      .col-xs-2 Wanted
       .col-xs-2 Latest
       .col-xs-2 Env
     .table-body
-      .row.table-row(ng-repeat='(key,value) in json.dependencies', ng-class="{'active': selectedPackage.name && selectedPackage.name === key}", ng-click='selectPackage(json.dependencies[key])')
-        .col-xs-5 {{key}}
-        .col-xs-3 {{value.version}}
-        .col-xs-2
-          b(ng-if='value.latest === value.version') {{value.latest}}
-          span(ng-if='value.latest !== value.version') {{value.latest}}
-        .col-xs-2  
-          | {{value.env}}
-      div(ng-show='loaded && !json.dependencies')
-        br
-        span(ng-show='error && error.length > 5')
-          i.fa.fa-warning 
-          | Issues , 0 packages found
-  br
+      .row.table-row(ng-repeat='aPackage in content.packageInformations', ng-class="{ 'active': aPackage.name === shell.currentSelectedPackage.name }", ng-click='shell.selectPackage(aPackage)')
+        .col-xs-4 {{ aPackage.name }}
+        .col-xs-2 {{ aPackage.current }}
+        .col-xs-2 {{ aPackage.wanted }}
+        .col-xs-2 {{ aPackage.latest}}
+        .col-xs-2 {{ aPackage.kind }}

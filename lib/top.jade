@@ -6,15 +6,15 @@
         div
         | Update npm
     .col-xs-9
-      button(ng-click="shell.openChooser()")
+      button
         i.fa.fa-plus-circle 
         | Add Project
-        input#choose-file(type='file' nwdirectory onchange="angular.element(this).scope().shell.chooseProjectDir(this.files)")
+        input(type='file' nwdirectory onchange="angular.element(this).scope().shell.chooseProjectDir(this.files)")
       a.pull-right.install
         i.fa.fa-cloud-download 
         div
         | Install Package
-      span(ng-show='topMenu.showMenuButtons')
+      span(ng-show='shell.showMenuButtons')
         a.pull-right(ng-click='topMenu.updatePackage()')
           i.fa.fa-level-up 
           div
@@ -23,7 +23,7 @@
           i.fa.fa-at 
           div
           | Install release
-        a.pull-right(ng-click='topMenu.uninstallPackage()')
+        a.pull-right(ng-click='topMenu.uninstallPackage(shell.currentSelectedPackage)')
           i.fa.fa-remove 
           div
           | Uninstall

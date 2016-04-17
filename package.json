@@ -6,11 +6,10 @@
   "author": "720kb",
   "license": "MIT",
   "scripts": {
+    "prestart": "npm install && gulp dist",
     "start": "nw"
   },
   "window": {
-    "toolbar": true,
-    "frame": true,
     "position": "center",
     "min_width": 1024,
     "min_height": 768,
@@ -26,8 +25,8 @@
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.5.0",
     "freshy": "^1.0.2",
-    "npm": "^3.8.5",
-    "nw": "^0.12.3"
+    "npm": "^3.8.6",
+    "nw": "^0.14.0-sdk-1"
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",

@@ -1,5 +1,5 @@
-.DS_Store
-.npm-debug.log
 node_modules/
 .tmp/
 dist/
+.DS_Store
+.npm-debug.log

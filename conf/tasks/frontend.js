@@ -3,7 +3,7 @@
   'use strict';
 
   const gulp = require('gulp')
-    , gulpJade = require('gulp-jade')
+    , gulpPug = require('gulp-pug')
     , plumber = require('gulp-plumber')
     , runSequence = require('run-sequence')
     , sourcemaps = require('gulp-sourcemaps')
@@ -14,7 +14,7 @@
 
     return runSequence([
       'scss',
-      'jade'
+      'pug'
     ], done);
   });
 
@@ -28,10 +28,10 @@
       .pipe(gulp.dest(`${paths.tmp}/css`));
   });
 
-  gulp.task('jade', () => {
+  gulp.task('pug', () => {
 
-    return gulp.src(`${paths.lib}**/*.jade`)
-      .pipe(gulpJade())
+    return gulp.src(`${paths.lib}**/*.pug`)
+      .pipe(gulpPug())
       .pipe(gulp.dest(`${paths.tmp}`));
   });
 }());

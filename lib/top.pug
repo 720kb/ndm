@@ -18,7 +18,11 @@
           i.fa.fa-level-up
           div
           | Update
-        a.pull-right(ng-click='topMenu.updateVersionPackage(shell.currentSelectedPackage)')
+        a.pull-right(ng-click='topMenu.installLatest(shell.currentSelectedPackage)')
+          i.fa.fa-at
+          div
+          | Install latest release
+        a.pull-right(ng-click='topMenu.installVersionPackage(shell.currentSelectedPackage)')
           i.fa.fa-at
           div
           | Install release

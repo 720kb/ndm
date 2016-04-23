@@ -2,12 +2,12 @@
   "name": "npm-ui",
   "version": "0.0.1",
   "description": "Just another tool that manages npm",
-  "main": "dist/index.html",
+  "main": "index.js",
   "author": "720kb",
   "license": "MIT",
   "scripts": {
     "prestart": "npm install && gulp dist",
-    "start": "nw"
+    "start": "electron ."
   },
   "window": {
     "position": "center",
@@ -26,7 +26,7 @@
     "font-awesome": "^4.5.0",
     "freshy": "^1.0.2",
     "npm": "^3.8.8",
-    "nw": "0.14.0-sdk-1"
+    "electron-prebuilt": "0.37.7"
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",

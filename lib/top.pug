@@ -6,10 +6,9 @@
         div
         | Update npm
     .col-xs-9
-      button
+      a(ng-click="shell.openChooser()")
         i.fa.fa-plus-circle
         | Add Project
-        input(type='file' nwdirectory onchange="angular.element(this).scope().shell.chooseProjectDir(this.files)")
       a.pull-right.install
         i.fa.fa-cloud-download
         div

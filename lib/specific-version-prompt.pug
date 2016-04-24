@@ -1,0 +1,7 @@
+div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down='topMenu.showSpecificVersionPrompt')
+  form(ng-submit='topMenu.installVersionPackage(shell.currentSelectedPackage, topMenu.specificVersion)')
+    input(placeholder='Type version',
+      type='text',
+      ng-model='topMenu.specificVersion')
+    button
+      span OK

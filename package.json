@@ -6,17 +6,8 @@
   "author": "720kb",
   "license": "MIT",
   "scripts": {
-    "prestart": "npm install && gulp dist",
+    "prestart": "gulp dist",
     "start": "electron ."
-  },
-  "window": {
-    "position": "center",
-    "min_width": 1024,
-    "min_height": 768,
-    "width": 1024,
-    "height": 768,
-    "max_width": 1680,
-    "max_height": 1050
   },
   "dependencies": {
     "angular": "^1.5.0",

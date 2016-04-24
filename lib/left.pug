@@ -2,10 +2,9 @@
   .row
     h6.col-xs-12
       | Packages
-    a.row(ng-class="{'active': globally}", ng-click='leftBar.selectGlobal()')
+    a.row(ng-class="{'active': leftBar.global}", ng-click='leftBar.selectGlobal()')
       i.fa.fa-globe
       | Globals
-      span {{ globalInstalledCount || 0 }}
     br
     h6.col-xs-12(ng-if='shell.projects.length > 0') Projects
     a.row.project(ng-repeat='item in shell.projects', ng-class="{'active': leftBar.selectedProject === item}", ng-click='leftBar.selectProject(item, $event)')

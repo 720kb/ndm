@@ -24,8 +24,21 @@
   app.on('ready', () => {
     // Create the browser window.
     mainWindow = new BrowserWindow({
+      'title': 'ndm',
+      'icon': '',
       'width': 800,
-      'height': 600
+      'height': 600,
+      'minWidth': 650,
+      'minHeight': 400,
+      'center': true,
+      'movable': true,
+      'resizable': true,
+      'minimizable': true,
+      'maximizable': true,
+      'closable': true,
+      'fullscreenable': true,
+      'dragable': true,
+      'titleBarStyle': 'hidden'
     });
 
     // and load the index.html of the app.

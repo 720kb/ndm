@@ -1,8 +1,12 @@
 div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down='topMenu.showSpecificVersionPrompt')
   form(ng-submit='topMenu.installVersionPackage(shell.currentSelectedPackage, topMenu.specificVersion)')
-    input(placeholder='Type version',
+    input(placeholder='Package name',
       type='text',
-      ng-model='topMenu.specificVersion')
+      ng-model='topMenu.packageName')
+    = " "
+    input(placeholder='@version',
+      type='text',
+      ng-model='topMenu.packageVersion')
     = " " 
     input(type="checkbox", ng-model="topMenu.packageKind")
     = " "

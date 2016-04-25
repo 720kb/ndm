@@ -16,6 +16,7 @@
     top:68.5px;
 
     input {
+
       &[type='text'] {
       border: none;
       border-radius: 4px;
@@ -24,7 +25,13 @@
       height: 20px;
       line-height: 20px;
       text-indent: 5px;
-      width: 68%;
+      width:18%;
+      margin-right:2%;
+
+        &:first-child{
+          width: 48%;
+          margin-right:0;
+        }
       }
 
       &[type='checkbox']{

@@ -277,13 +277,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .table-row {
   color: #333;
-  font-size: 12px;
-  line-height: 23px;
+  font-size: 11.5px;
+  line-height: 21px;
   padding: 0 10px; }
   .table-row:nth-child(odd) {
     background: #f2fdff; }
   .table-row:active, .table-row.active {
-    background: #fdfde6; }
+    background: #FCFCC9; }
 
 .table-body {
   height: calc(100vh - 122px);
@@ -326,39 +326,49 @@ h1, h2, h3, h4, h5, h6 {
   float: none;
   padding: 5px;
   position: absolute;
-  right: 10px;
-  width: 300px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 400px;
   z-index: 99; }
-  .dialog.prompt input {
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
-    font-size: 11px;
-    height: 20px;
-    line-height: 20px;
-    text-indent: 5px;
-    width: 85%; }
-  .dialog.prompt button {
-    background: #fefefe;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.1);
-    color: #777;
-    font-size: 9.5px;
-    font-weight: 500;
-    height: 19px;
-    line-height: 15px;
-    margin-top: -.5px;
-    text-shadow: 0 1px white;
-    vertical-align: middle;
-    width: 13%; }
-    .dialog.prompt button:active {
-      background: rgba(0, 0, 0, 0.04);
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.09) inset, 0 1px rgba(0, 0, 0, 0.09) inset;
-      color: #999;
-      text-shadow: none; }
-    .dialog.prompt button i {
-      position: relative;
-      top: -1px; }
+  .dialog.prompt {
+    top: 68.5px; }
+    .dialog.prompt input[type='text'] {
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
+      font-size: 11px;
+      height: 20px;
+      line-height: 20px;
+      text-indent: 5px;
+      width: 18%;
+      margin-right: 2%; }
+      .dialog.prompt input[type='text']:first-child {
+        width: 48%;
+        margin-right: 0; }
+    .dialog.prompt input[type='checkbox'] {
+      border-color: rgba(0, 0, 0, 0.2); }
+    .dialog.prompt button {
+      background: #fefefe;
+      border-radius: 3px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.1);
+      color: #777;
+      font-size: 9.5px;
+      font-weight: 500;
+      height: 19px;
+      line-height: 15px;
+      margin-top: -.5px;
+      text-shadow: 0 1px white;
+      vertical-align: middle;
+      width: 13%; }
+      .dialog.prompt button:active {
+        background: rgba(0, 0, 0, 0.04);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.09) inset, 0 1px rgba(0, 0, 0, 0.09) inset;
+        color: #999;
+        text-shadow: none; }
+      .dialog.prompt button i {
+        position: relative;
+        top: -1px; }
 
 body .loading {
   pointer-events: none; }

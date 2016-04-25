@@ -57,14 +57,16 @@
     overflow: hidden;
     text-shadow: 0 1px rgba(255, 255, 255, .5);
 
-    input[type="file"] {
-      height: 40px;
-      left: -15px;
-      max-width: 100px;
-      min-width: 100%;
-      opacity: 0;
-      position: relative;
-      top: -20px;
+    input {
+      &[type='file'] {
+        height: 40px;
+        left: -15px;
+        max-width: 100px;
+        min-width: 100%;
+        opacity: 0;
+        position: relative;
+        top: -20px;
+      }
     }
 
     i {

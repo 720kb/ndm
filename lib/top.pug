@@ -8,13 +8,13 @@
         div
         | Update npm
     .col-xs-9
-      a(class='pull-left', ng-click="shell.openChooser()")
+      button(class="pull-left", ng-click="shell.openChooser()")
         i.fa.fa-plus-circle
         | Add Project
       a.pull-right(ng-show="topMenu.projectPath", ng-click="topMenu.showPackageInstallPrompt = true")
         i.fa.fa-cloud-download
-          div
-            | Install Package
+        div
+          | Install Package
       span(ng-show='shell.showMenuButtons')
         a.pull-right(ng-click='topMenu.updatePackage(shell.currentSelectedPackage)')
           i.fa.fa-level-up
@@ -23,7 +23,7 @@
         a.pull-right(ng-click='topMenu.installLatest(shell.currentSelectedPackage)')
           i.fa.fa-at
           div
-          | Install latest release
+          | Install latest
         a.pull-right(ng-click='topMenu.showSpecificVersionPrompt = true')
           i.fa.fa-at
           div

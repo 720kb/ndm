@@ -20,8 +20,8 @@
     color: #676767;
     cursor: default;
     display: inline-block;
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 12.5px;
+    line-height: 24px;
     margin: 0;
     padding: 0 10px;
     text-shadow: 0 1px white;
@@ -87,7 +87,7 @@
         display: none;
         float: right;
         line-height: 0;
-        margin-top: 2px;
+        margin-top: 1px;
         max-width: 19px;
         min-width: 8px;
         position: relative;
@@ -117,7 +117,7 @@
       font-size: 15px;
       margin-right: 5px;
       position: relative;
-      top: 1px;
+      top: .5px;
     }
 
     span {

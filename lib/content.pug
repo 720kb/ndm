@@ -24,5 +24,7 @@
         .col-xs-4 {{ aPackage.name }}
         .col-xs-2 {{ aPackage.current }}
         .col-xs-2 {{ aPackage.wanted }}
-        .col-xs-2 {{ aPackage.latest}}
+        .col-xs-2 
+          b(ng-if="aPackage.latest")
+            | {{ aPackage.latest}}
         .col-xs-2 {{ aPackage.kind }}

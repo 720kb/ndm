@@ -113,8 +113,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #676767;
     cursor: default;
     display: inline-block;
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 12.5px;
+    line-height: 24px;
     margin: 0;
     padding: 0 10px;
     text-shadow: 0 1px white;
@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
       display: none;
       float: right;
       line-height: 0;
-      margin-top: 2px;
+      margin-top: 1px;
       max-width: 19px;
       min-width: 8px;
       position: relative;
@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 15px;
       margin-right: 5px;
       position: relative;
-      top: 1px; }
+      top: .5px; }
     .left-column a span {
       background-color: rgba(0, 0, 0, 0.23);
       border-radius: 10px;
@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 100px;
     overflow: hidden;
     text-shadow: 0 1px rgba(255, 255, 255, 0.5); }
-    .top-menu button input[type="file"] {
+    .top-menu button input[type='file'] {
       height: 40px;
       left: -15px;
       max-width: 100px;
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 .table-header {
   color: #222;
   font-size: 11px;
-  line-height: 23px;
+  line-height: 20px;
   padding: 0 10px; }
   .table-header div {
     background: #fefefe;
@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .table-row {
   color: #333;
-  font-size: 12.5px;
+  font-size: 12px;
   line-height: 23px;
   padding: 0 10px; }
   .table-row:nth-child(odd) {

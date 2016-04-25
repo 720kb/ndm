@@ -5,13 +5,18 @@
   float: none;
   padding: 5px;
   position: absolute;
-  right: 10px;
-  width: 300px;
+  right:0;
+  left:0;
+  margin:0 auto;
+  width: 370px;
   z-index: 99;
 
   &.prompt {
 
+    top:68.5px;
+
     input {
+      &[type='text'] {
       border: none;
       border-radius: 4px;
       box-shadow: 0 1px 1px rgba(0, 0, 0, .2) inset;
@@ -19,7 +24,12 @@
       height: 20px;
       line-height: 20px;
       text-indent: 5px;
-      width: 85%;
+      width: 68%;
+      }
+
+      &[type='checkbox']{
+        border-color:rgba(0, 0, 0, .2);
+      }
     }
 
     button {

@@ -3,7 +3,11 @@ div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down='topMenu.showPackageInsta
     input(placeholder='Type package name',
       type='text',
       ng-model='topMenu.packageName')
+    = " " 
     input(type="checkbox", ng-model='topMenu.packageKind')
+    = " "
+    = " " 
     | dev
+    = " "   
     button
       span OK

@@ -3,5 +3,7 @@ div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down='topMenu.showSpecificVers
     input(placeholder='Type version',
       type='text',
       ng-model='topMenu.specificVersion')
+    input(type="checkbox", ng-model="topMenu.packageKind") 
+    | dev
     button
       span OK

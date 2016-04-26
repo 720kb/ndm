@@ -25,11 +25,11 @@
     text-align: center;
     text-shadow: 0 1px rgba(255, 255, 255, .5);
 
-    &:active {
+    &:active, &.active {
       color: $color-444;
 
       i {
-        color: #327dff;
+        color: $color-primary;
       }
     }
 
@@ -70,7 +70,7 @@
     }
 
     i {
-      color: #327dff;
+      color: $color-primary;
       font-size: 15px;
       margin-right: 5px;
       text-shadow: 0 1px rgba(255, 255, 255, .5);

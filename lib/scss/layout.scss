@@ -46,13 +46,13 @@
 
     &:active {
       @include bg-rgba-black(.03);
-      background: #327dff;
+      background: $bg-primary;
       color: white;
       cursor: default;
       text-shadow: none;
 
       &:hover {
-        background: #327dff;
+        background: $bg-primary;
         color: white;
         cursor: default;
         text-shadow: none;
@@ -60,7 +60,7 @@
     }
 
     &.active {
-      background: #327dff;
+      background: $bg-primary;
       color: white;
       cursor: default;
       text-shadow: none;
@@ -69,13 +69,13 @@
     &.project {
 
       &.active {
-        background: #327dff;
+        background: $bg-primary;
         color: white;
         cursor: default;
         text-shadow: none;
 
         &:hover {
-          background: #327dff;
+          background: $bg-primary;
           color: white;
           cursor: default;
           text-shadow: none;

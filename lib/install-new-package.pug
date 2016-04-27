@@ -1,4 +1,4 @@
-div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down='topMenu.showPackageInstallPrompt')
+div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down="topMenu.activeLink === '1'")
   form(ng-submit='topMenu.installPackage(topMenu.packageName, topMenu.packageKind)')
     input(placeholder='Package name',
       type='text',
@@ -15,3 +15,6 @@ div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down='topMenu.showPackageInsta
     = " "   
     button
       span OK
+    = " "
+    = " "
+    i(class="fa fa-times-circle-o", ng-click="topMenu.activeLink = undefined")

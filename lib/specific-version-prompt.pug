@@ -1,4 +1,4 @@
-div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down='topMenu.showSpecificVersionPrompt')
+div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down="topMenu.activeLink === '4'")
   form(ng-submit='topMenu.installVersionPackage(shell.currentSelectedPackage, topMenu.specificVersion)')
     input(placeholder='Package name',
       type='text',
@@ -15,3 +15,6 @@ div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down='topMenu.showSpecificVers
     = " "
     button
       span OK
+    = " "
+    = " "
+    i(class="fa fa-times-circle-o", ng-click="topMenu.activeLink = undefined;")

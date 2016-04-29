@@ -6,7 +6,10 @@
       a.pull-left(ng-click='shell.updateNpm()')
         i.fa.fa-history(ng-class="{'color-primary': shell.updatingNpm}")
         div
-        | Update npm
+        span(ng-hide="shell.updatingNpm")
+          | Update npm
+        span(ng-show="shell.updatingNpm")
+          | Updating ...
     .col-xs-9
       button(class="pull-left", ng-click="shell.openChooser()")
         i.fa.fa-plus-circle
@@ -16,19 +19,19 @@
         div
           | Install Package
       span(ng-show='shell.showMenuButtons')
-        a.pull-right(ng-click="topMenu.activeClickedLink('2'); topMenu.updatePackage(shell.currentSelectedPackage)", ng-class="{'active': topMenu.activeLink === '2'}")
+        a.pull-right(ng-click="topMenu.activeClickedLink('2'); topMenu.updatePackage(shell.currentSelectedPackage)", ng-class="{'active': shell.currentSelectedPackage && topMenu.activeLink === '2'}")
           i.fa.fa-level-up
           div
           | Update
-        a.pull-right(ng-click="topMenu.activeClickedLink('3'); topMenu.installLatest(shell.currentSelectedPackage)", ng-class="{'active': topMenu.activeLink === '3'}")
+        a.pull-right(ng-click="topMenu.activeClickedLink('3'); topMenu.installLatest(shell.currentSelectedPackage)", ng-class="{'active': shell.currentSelectedPackage && topMenu.activeLink === '3'}")
           i.fa.fa-rocket
           div
           | Install latest
-        a.pull-right(ng-click="topMenu.activeClickedLink('4'); topMenu.showPackageInstallPrompt = undefined; topMenu.showSpecificVersionPrompt = true", ng-class="{'active': topMenu.activeLink === '4'}")
+        a.pull-right(ng-click="topMenu.activeClickedLink('4'); topMenu.showPackageInstallPrompt = undefined; topMenu.showSpecificVersionPrompt = true", ng-class="{'active': shell.currentSelectedPackage && topMenu.activeLink === '4'}")
           i.fa.fa-at
           div
           | Install release
-        a.pull-right(ng-click="topMenu.activeClickedLink('5'); topMenu.uninstallPackage(shell.currentSelectedPackage)", ng-class="{'active': topMenu.activeLink === '5'}")
+        a.pull-right(ng-click="topMenu.activeClickedLink('5'); topMenu.uninstallPackage(shell.currentSelectedPackage)", ng-class="{'active': shell.currentSelectedPackage && topMenu.activeLink === '5'}")
           i.fa.fa-remove
           div
           | Uninstall

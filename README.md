@@ -1,12 +1,15 @@
 #install
 
-`npm install`
+`git checkout nw && npm install`
 
 #launch app
 
-`./node_modules/.bin/electron .`
+`gulp dist && ./node_modules/.bin/electron .`
 
-=======NEXT for release
+=======
+NEXT for release
+=======
+
 [LOGO IMG]
 
 [DOWNLOAD ZIP BADGE]

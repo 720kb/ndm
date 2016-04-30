@@ -30,7 +30,8 @@ Of course, we all love it too.
 
 The Shell command line, is obviously very powerful.
 
-However, not all the people know how to use it sometimes, often can not for intern/office/job reasons, or are not willing to use it.
+However, not all the people know how to use it from the scratch. 
+Sometimes and often, they can not use the Command line for intern/office/job reasons, or are not willing to use it at all.
 
 Forget not that, using an app, does not mean you can no longer use the Command line.
 

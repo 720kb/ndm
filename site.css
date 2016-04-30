@@ -27,8 +27,19 @@ small , small *{
   float:none;
   margin:0 auto;
 }
-.logo{
+.top-menu a {
 
+  letter-spacing: .2px;
+  text-shadow: 0 1px 0 rgba(0,0,0, .6);
+  line-height: 40px;
+  margin-right:20px;
+}
+.top-menu a i{
+  font-size: 17px;
+  vertical-align: text-bottom;
+  margin: 0 3px;
+}
+.logo{
   text-shadow: 0 1px 0 rgba(0,0,0, .6);
   font-size: 16px;
 }

@@ -2,6 +2,7 @@
   "name": "ndm-site",
   "private": "true",
   "dependencies": {
-    "csshelper": "^1.0.1"
+    "csshelper": "^1.0.1",
+    "font-awesome": "fontawesome#^4.6.1"
   }
 }

@@ -1,0 +1,31 @@
+{
+  "name": "csshelper",
+  "version": "1.0.1",
+  "description": "A css helper to forget traditional frameworks approach.",
+  "authors": [
+    "Dario Andrei <wouldgo84@gmail.com>",
+    "Filippo Oretti <filippo.oretti@gmail.com"
+  ],
+  "keywords": [
+    "css",
+    "helper",
+    "css3",
+    "responsive",
+    "mobile"
+  ],
+  "main": [
+    "./dist/helper.min.css"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/720kb/csshelper",
+  "bugs": {
+    "url": "http://github.com/720kb/csshelper/issues"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

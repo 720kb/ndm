@@ -1,0 +1,7 @@
+{
+  "name": "ndm-site",
+  "private": "true",
+  "dependencies": {
+    "csshelper": "^1.0.1"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "csshelper",
+  "version": "1.0.1",
+  "description": "A css helper to forget traditional frameworks approach.",
+  "license": "MIT",
+  "homepage": "https://github.com/720kb/csshelper",
+  "author": {
+    "name" : "Filippo Oretti",
+    "email" : "filippo.oretti@gmail.com",
+    "url" : "http://github.com/45kb"
+  },
+  "contributors": [
+    {
+      "name" : "Dario Andrei",
+      "email" : "wouldgo84@gmail.com",
+      "url" : "http://github.com/wouldgo"
+    }
+  ],
+  "keywords": [
+    "css",
+    "helper",
+    "css3",
+    "responsive",
+    "mobile"
+  ],
+  "bugs": {
+    "url": "http://github.com/720kb/csshelper/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/720kb/csshelper.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-csslint": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-header": "^1.0.0"
+  }
+}

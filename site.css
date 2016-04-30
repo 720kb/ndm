@@ -1,4 +1,12 @@
-
+a, a *{
+  transition: .2s linear;
+}
+*{
+  letter-spacing: normal;
+}
+small , small *{
+  font-size: 12px;
+}
 .header{
   background: -webkit-linear-gradient(274deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
     background: linear-gradient(176deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
@@ -9,11 +17,12 @@
 
 .line-max{
   max-width: 950px;
+  width:90%;
   float:none;
   margin:0 auto;
 }
 .logo{
-  letter-spacing: 1px;
+
   text-shadow: 0 1px 0 rgba(0,0,0, .6);
   font-size: 16px;
 }
@@ -24,7 +33,6 @@
   font-family: 'Lato', sans-serif;
 }
 .font-big{
-  letter-spacing:1px;
   font-size: 35px;
 }
 .font-handwritten{

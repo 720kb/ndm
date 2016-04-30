@@ -18,7 +18,7 @@ NEXT for release
 
 **ndm** is the client _"npm desktop manager"_ app for MacOSX (at the moment).
 
-With ndm you can easily manage your npm and npm packages directly from the couch, without any worries, it is based on the [npmi-cli](https://github.com/npm/npmi-cli) lib and developed over [electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
+With **ndm** you can easily manage npm and npm packages directly from the couch, without any worries, it is based on the [npmi-cli](https://github.com/npm/npmi-cli) lib and developed over [electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
 
 ndm is developed and mantained by [720kb](http://720kb.net)
 

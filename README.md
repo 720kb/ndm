@@ -20,7 +20,7 @@ NEXT for release
 
 With **ndm** you can easily manage npm and npm packages directly from the couch, without any worries, it is based on the [npmi-cli](https://github.com/npm/npmi-cli) lib and developed over [electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
 
-ndm is developed and mantained by [720kb](http://720kb.net)
+**ndm** is developed and mantained by [720kb](http://720kb.net)
 
 Feel free to reach us for any info/question, or to support us for the project.
 

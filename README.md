@@ -22,7 +22,7 @@ With **ndm** you can easily manage npm and npm packages directly from the couch,
 
 **ndm** is developed and mantained by [720kb](http://720kb.net)
 
-Feel free to reach us for any info/question, or to support us for the project.
+Feel free to reach us for any info/question, or to support us for the project, will be with you.
 
 ###I love the Shell, why use an app?
 

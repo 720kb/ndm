@@ -81,15 +81,15 @@
     margin: 0 auto;
     float: none;
     padding: 5px;
-    height: 150px;
+    height: 180px;
     overflow-y: auto;
     background: white;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 5px;
     box-shadow: 1px 1px rgba(0, 0, 0, .2) inset;
     resize: vertical;
     font-family: $font-terminal;
-    font-size:11px;
+    font-size: 11px;
   }
 
   .logs-window-options {

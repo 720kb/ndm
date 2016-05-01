@@ -2,16 +2,22 @@ div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down="topMenu.activeLink === '
   div(contenteditable="true", class="logs-window")
     b 
       | Started updating 
-      = " "
-      | {{ nowDatetime | date : 'longDate'}}
-      = " "
-      | {{ nowDatetime | date : 'mediumTime'}}
     div 
-      | =============================================>
+      | =============================================
+    | Local time: 
+    = " "
+    | {{ log.nowDatetime | date : 'longDate'}}
+    = " "
+    | {{ log.nowDatetime | date : 'mediumTime'}}
+    div 
+      | =============================================>>>
     div(contenteditable="true", ng-repeat="aLog in log.logs track by $index")
       | {{ aLog }}
   div(class="logs-window-options")
-    img(ng-show="!logsFinished", src='img/loading.svg', width='13')
+    img(ng-show="!log.logsFinished", src='img/loading.svg', width='13')
     | {{logging}}
-    button(ng-show="logsFinished", ng-click="topMenu.activeLink = false")
+    small.color-muted(ng-show="log.logsFinished")
+      i.fa.fa-success
+      | finished
+    button(ng-show="log.logsFinished", ng-click="topMenu.activeLink = false")
       | Close

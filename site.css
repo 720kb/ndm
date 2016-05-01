@@ -84,8 +84,8 @@ margin:0;
 .download-link:hover{
   border-bottom-color:cyan;
 }
-.download-link:hover i{
-  transform:scale(1.1)
+.download-link:active{
+  transform: scale(.989)
 }
 .download-link.disabled{
   opacity:.5;

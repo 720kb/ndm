@@ -52,9 +52,36 @@ small , small *{
 .font-big{
   font-size: 35px;
 }
-.font-handwritten{
-font-family: 'Kalam', cursive;
+.font-handwritten {
+font-family: 'Kalam';
+letter-spacing:1px;
+word-spacing: -1px;
 }
 .description {
   color: #89DAF9;
+}
+.download-link{
+  border-radius:6px;
+  width: 130px;
+  height:34px;
+  padding:4px 0;
+  display:inline-block;
+  margin:0 2%;
+  background:#1B7AEE;
+  line-height: 110%;
+}
+.download-link:hover{
+  border-bottom-color:cyan;
+}
+.download-link:hover i{
+  transform:scale(1.1)
+}
+.download-link.disabled{
+  opacity:.5;
+  pointer-events:none;
+}
+.download-link i{
+
+  font-size:28px;
+  margin-top:3px;
 }

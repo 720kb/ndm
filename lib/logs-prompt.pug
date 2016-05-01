@@ -10,14 +10,12 @@ div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down="topMenu.activeLink === '
     = " "
     | {{ log.nowDatetime | date : 'mediumTime'}}
     div 
-      | =============================================>>>
+      | =============================================
+    | Output >>>
     div(contenteditable="true", ng-repeat="aLog in log.logs track by $index")
       | {{ aLog }}
   div(class="logs-window-options")
     img(ng-show="!log.logsFinished", src='img/loading.svg', width='13')
-    | {{logging}}
-    small.color-muted(ng-show="log.logsFinished")
-      i.fa.fa-success
-      | finished
+    i(class="fa fa-check color-muted", ng-show="log.logsFinished")
     button(ng-show="log.logsFinished", ng-click="topMenu.activeLink = false")
       | Close

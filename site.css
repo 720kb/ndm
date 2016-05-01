@@ -85,3 +85,7 @@ word-spacing: -1px;
   font-size:28px;
   margin-top:3px;
 }
+iframe > .button, .count{
+  background: none !important;
+  color:white;
+}

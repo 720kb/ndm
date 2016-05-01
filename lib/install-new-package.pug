@@ -1,4 +1,4 @@
-div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down="topMenu.activeLink === '1'")
+div.dialog.prompt(ng-show="topMenu.activeLink === '1'")
   form(ng-submit='topMenu.installPackage(topMenu.packageName, topMenu.packageKind)')
     input(placeholder='Package name',
       type='text',
@@ -7,12 +7,12 @@ div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down="topMenu.activeLink === '
     input(placeholder='@version',
       type='text',
       ng-model='topMenu.packageVersion')
-    = " " 
+    = " "
     input(type="checkbox", ng-model='topMenu.packageKind')
     = " "
-    = " " 
+    = " "
     | dev
-    = " "   
+    = " "
     button
       span OK
     = " "

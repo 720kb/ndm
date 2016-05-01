@@ -1,6 +1,13 @@
 div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down="topMenu.activeLink === 'update'")
   div(contenteditable="true", class="logs-window")
-    b Started updating
+    b 
+      | Started updating 
+      = " "
+      | {{ nowDatetime | date : 'longDate'}}
+      = " "
+      | {{ nowDatetime | date : 'mediumTime'}}
+    div 
+      | =============================================>
     div(contenteditable="true", ng-repeat="aLog in log.logs track by $index")
       | {{ aLog }}
   div(class="logs-window-options")

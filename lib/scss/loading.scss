@@ -1,8 +1,13 @@
 body {
 
   &.loading  {
-    * {
 
+    &:hover {
+      cursor: wait;
+    }
+
+    * {
+      cursor: wait;
       pointer-events: none;
     }
     .dialog {

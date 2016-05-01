@@ -5,12 +5,10 @@
   .row
     .col-xs-3
       a.pull-left(ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()")
-        i.fa.fa-history(ng-class="{'color-primary': shell.updatingNpm}")
+        i.fa.fa-history(ng-class="{'color-primary': topMenu.activeLink === 'update'}")
         div
-        span(ng-hide="shell.updatingNpm")
+        span
           | Update npm
-        span(ng-show="shell.updatingNpm")
-          | Updating ...
     .col-xs-9
       button(class="pull-left", ng-click="shell.openChooser()")
         i.fa.fa-plus-circle

@@ -9,11 +9,11 @@
   right: 0;
   margin: 0 auto;
   width: 460px;
-  z-index: 99;
+  z-index: 9999;
 
   &.prompt {
 
-    top: 68.5px;
+    top: 69px;
 
     i {
 
@@ -37,14 +37,14 @@
         width: 18%;
         margin-right: 2%;
 
-        &:first-child{
+        &:first-child {
           width: 48%;
-          margin-right:0;
+          margin-right: 0;
         }
       }
 
-      &[type='checkbox']{
-        border-color:rgba(0, 0, 0, .2);
+      &[type='checkbox'] {
+        border-color: rgba(0, 0, 0, .2);
       }
     }
 
@@ -75,16 +75,30 @@
       }
     }
   }
-}
-.logs-dialog {
-  width: calc(100% - 10px);
-  margin: 0 auto;
-  float: none;
-  padding: 5px;
-  height: 150px;
-  overflow-y: auto;
-  background: white;
-  margin-bottom: 10px;
-  margin-top:10px;
-  box-shadow: 1px 1px rgba(0, 0, 0, .2) inset;
+
+  .logs-window {
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    float: none;
+    padding: 5px;
+    height: 150px;
+    overflow-y: auto;
+    background: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 1px 1px rgba(0, 0, 0, .2) inset;
+    resize: vertical;
+  }
+
+  .logs-window-options {
+
+    img {
+      margin-left: 5px;
+    }
+
+    button {
+      float: right;
+      margin-right: 5px;
+    }
+  }
 }

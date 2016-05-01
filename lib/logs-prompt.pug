@@ -1,5 +1,10 @@
 div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down="topMenu.activeLink === 'update'")
-  div.logs-dialog
-    div(ng-repeat="aLog in log.logs track by $index")
+  Processing
+  div(contenteditable="true", class="logs-window")
+    | Starting updating npm ...
+    div(contenteditable="true", ng-repeat="aLog in log.logs track by $index")
       | {{ aLog }}
-  button(ng-click="topMenu.activeLink = false")
+  div(class="logs-window-options")
+    img(src='img/loading.svg', width='13')
+    button(ng-click="topMenu.activeLink = false")
+      | Close

@@ -1,7 +1,14 @@
 body {
 
-  .loading {
+  &.loading  {
+    * {
 
-    pointer-events: none;
+      pointer-events: none;
+    }
+    .dialog {
+      * {
+        pointer-events: all;
+      }
+    }
   }
 }

@@ -3,39 +3,39 @@
   border-radius: 0 0 5px 5px;
   box-shadow: 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
+  left: 0;
   padding: 5px;
   position: absolute;
-  right:0;
-  left:0;
-  margin:0 auto;
+  right: 0;
+  margin: 0 auto;
   width: 460px;
   z-index: 99;
 
   &.prompt {
 
-    top:68.5px;
+    top: 68.5px;
 
     i {
 
       float: right;
-      line-height:0;
-      margin-left:15px;
-      position:relative;
-      top:-10px;
+      line-height: 0;
+      margin-left: 15px;
+      position: relative;
+      top: -10px;
     }
 
     input {
 
       &[type='text'] {
-      border: none;
-      border-radius: 4px;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, .2) inset;
-      font-size: 11px;
-      height: 20px;
-      line-height: 20px;
-      text-indent: 5px;
-      width:18%;
-      margin-right:2%;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .2) inset;
+        font-size: 11px;
+        height: 20px;
+        line-height: 20px;
+        text-indent: 5px;
+        width: 18%;
+        margin-right: 2%;
 
         &:first-child{
           width: 48%;
@@ -78,9 +78,9 @@
 }
 .logs-dialog {
   width: calc(100% - 10px);
-  margin:0 auto;
-  float:none;
-  padding:5px;
+  margin: 0 auto;
+  float: none;
+  padding: 5px;
   height: 150px;
   overflow-y: auto;
   background: white;

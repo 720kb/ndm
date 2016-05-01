@@ -1,3 +1,4 @@
+
 a, a *{
   transition: .2s linear;
 }
@@ -92,7 +93,18 @@ margin:0;
   pointer-events:none;
 }
 .download-link i{
-
   font-size:28px;
   margin-top:3px;
+}
+.bottom-shuttle{
+  background:#FDF362;
+  width:90%;
+  max-width:350px;
+  height:250px;
+  position: relative;
+  bottom:-100px;
+  border-radius: 5px 5px 0 0;
+}
+.footer{
+  overflow: hidden;
 }

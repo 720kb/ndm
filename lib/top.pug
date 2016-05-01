@@ -1,10 +1,10 @@
 .container.top-menu.bg-gradient-grey(ng-controller='TopMenuController as topMenu')
-  include ./logs-prompt.pug
+  span(npm-loading)
   include ./specific-version-prompt.pug
   include ./install-new-package.pug
   .row
     .col-xs-3
-      a.pull-left(ng-click='shell.updateNpm()')
+      a.pull-left(ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()")
         i.fa.fa-history(ng-class="{'color-primary': shell.updatingNpm}")
         div
         span(ng-hide="shell.updatingNpm")

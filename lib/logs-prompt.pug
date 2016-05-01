@@ -1,3 +1,5 @@
-div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down="true", npm-loading)
- div.logs-dialog
-  | {{log.logs}}
+div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down="topMenu.activeLink === 'update'")
+  div.logs-dialog
+    div(ng-repeat="aLog in log.logs track by $index")
+      | {{ aLog }}
+  button(ng-click="topMenu.activeLink = false")

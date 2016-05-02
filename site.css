@@ -97,7 +97,7 @@ margin:0;
   margin-top:3px;
 }
 .bottom-shuttle{
-  background:#FDF362;
+  color:rgba(0,0,0, .5);
   width:90%;
   max-width:280px;
   height:250px;
@@ -110,4 +110,7 @@ margin:0;
 }
 .color-twitter{
   color: #1882FC;
+}
+.bg-cyan {
+  background: #8AFCF8;
 }

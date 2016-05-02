@@ -4,7 +4,7 @@ a, a *{
 *{
   letter-spacing: normal;
 }
-small , small *{
+small , small *, *.font-small{
   font-size: 12px;
 }
 .header{
@@ -78,11 +78,15 @@ margin:0;
   padding:4px 0;
   display:inline-block;
   margin:0 2%;
-  background:#1B7AEE;
+  background: rgb(41,121,232);
+  background: -moz-linear-gradient(45deg,  rgba(41,121,232,1) 0%, rgba(27,122,238,1) 100%);
+  background: -webkit-linear-gradient(45deg,  rgba(41,121,232,1) 0%,rgba(27,122,238,1) 100%);
+  background: linear-gradient(45deg,  rgba(41,121,232,1) 0%,rgba(27,122,238,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2979e8', endColorstr='#1b7aee',GradientType=1 );
   line-height: 110%;
 }
 .download-link:hover{
-  border-bottom-color:cyan;
+  box-shadow: 0 5px 10px rgba(0,0,0, .1);
 }
 .download-link:active{
   transform: scale(.989)
@@ -96,7 +100,8 @@ margin:0;
   margin-top:3px;
 }
 .bottom-shuttle{
-  color:rgba(0,0,0, .5);
+  text-shadow: 0 1px rgba(255, 255, 255, .3);
+  color:rgba(0,0,0, .56);
   width:90%;
   max-width:280px;
   height:250px;
@@ -104,16 +109,23 @@ margin:0;
   bottom:-100px;
   border-radius: 5px 5px 0 0;
 }
+.bottom-shuttle a.github-button{
+  color:rgba(0,0,0,0);
+}
 .bottom-shuttle i{
-  font-size: 60px;
-  color: rgba(0,0,0, .2);
+  font-size: 18px;
+  vertical-align: middle;
 }
 .footer{
+  margin-bottom:-40px;
   overflow: hidden;
 }
 .color-twitter{
   color: #1882FC;
 }
-.bg-cyan {
-  background: #8AFCF8;
+.bg-cyan {/*
+  border: 1px solid #8AFCF8;
+  box-shadow: 0 10px 10px #8AFCF8;*/
+  border: 3px dashed #8AFCF8;
+  border-bottom:none;
 }

@@ -1,11 +1,4 @@
 .right-column.overflow-x-hidden(ng-controller='ContentController as content')
-  .dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down='showVersionDialog')
-    form(ng-submit='installVersionPackage(selectedVersion)')
-      input(placeholder='Type version', type='text', ng-class="{'color-muted': updating}", ngfx-flash='errorUpdating', ng-focus='errorUpdating = undefined;', ng-model='selectedVersion', ng-value='json.dependencies[selectedPackage].latest')
-      button(ng-disabled='updating', ng-click='installVersionPackage(selectedVersion)')
-        span(ng-show='!updating') OK
-        span(ng-show='updating')
-          img(src='img/loading.svg', width='15')
   .row.home.bg-ultralight(ng-hide="content.loading || content.packageInformations")
     div
       | Welcome
@@ -17,7 +10,7 @@
       button.home-button(ng-click="shell.openChooser()")
         | Add project
   .row.table-loader.bg-lighter(ng-show="content.loading", ng-hide='!content.loading || content.loaded')
-    img(src='img/loading.svg', width='22') 
+    img(src='img/loading.svg', width='22')
     | Loading ...
     .separator10
     .color-muted
@@ -32,11 +25,11 @@
     .table-body
       .row.table-row.table-row-loading(ng-repeat='aPackage in content.packageInformations', ng-class="{ 'active': aPackage.name === shell.currentSelectedPackage.name }", ng-click='shell.selectPackage(aPackage)')
         .col-xs-4 {{ aPackage.name }}
-        .col-xs-2 
+        .col-xs-2
           span(ng-class="{'color-primary font-medium': !aPackage.wanted && !aPackage.latest}")
             | {{ aPackage.current }}
         .col-xs-2 {{ aPackage.wanted }}
-        .col-xs-2 
+        .col-xs-2
           b(ng-if="aPackage.latest")
             | {{ aPackage.latest}}
         .col-xs-2 {{ aPackage.kind }}

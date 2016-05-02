@@ -31,7 +31,7 @@ small , small *, *.font-small{
   letter-spacing: .2px;
   text-shadow: 0 1px 0 rgba(0,0,0, .6);
   line-height: 40px;
-  padding: 0 15px;
+  margin-left: 15px;
 }
 .top-menu a i{
   font-size: 17px;
@@ -49,6 +49,9 @@ small , small *, *.font-small{
 .top-menu .star-button i{
 font-size: 15px;
 margin:0;
+}
+.content{
+  box-shadow: 0 -2px 6px rgba(0,0,0, .1);
 }
 .logo{
   text-shadow: 0 1px 0 rgba(0,0,0, .6);

@@ -72,6 +72,10 @@ input {
   &[disabled] {
     opacity: .5;
   }
+
+  &[readonly] {
+    cursor: not-allowed;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

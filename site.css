@@ -1,4 +1,3 @@
-
 a, a *{
   transition: .2s linear;
 }
@@ -32,7 +31,7 @@ small , small *{
   letter-spacing: .2px;
   text-shadow: 0 1px 0 rgba(0,0,0, .6);
   line-height: 40px;
-  margin-right:20px;
+  padding: 0 15px;
 }
 .top-menu a i{
   font-size: 17px;

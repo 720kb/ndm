@@ -17,8 +17,8 @@ small , small *{
   overflow: hidden;
 }
 .screenshot {
-  width:70%;
-  max-width: 850px;
+  width:90%;
+  max-width: 900px;
   bottom:-30px;
   position: relative;
 }

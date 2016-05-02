@@ -105,6 +105,10 @@ margin:0;
   bottom:-100px;
   border-radius: 5px 5px 0 0;
 }
+.bottom-shuttle i{
+  font-size: 60px;
+  color: rgba(0,0,0, .2);
+}
 .footer{
   overflow: hidden;
 }

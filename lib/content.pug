@@ -1,5 +1,5 @@
 .right-column.overflow-x-hidden(ng-controller='ContentController as content')
-  .row.home.bg-ultralight(ng-hide="content.loading || content.packageInformations")
+  .row.home.bg-ultralight(ng-hide="content.loading || content.packageInformations", ng-show="content.goBackHome")
     div
       | Welcome
       .separator10
@@ -15,7 +15,7 @@
     .separator10
     .color-muted
       small May take some time
-  div(ng-show='content.loaded')
+  div(ng-show='content.loaded && !content.goBackHome')
     .row.table-header
       .col-xs-4 Package
       .col-xs-2 Current
@@ -23,7 +23,7 @@
       .col-xs-2 Latest
       .col-xs-2 Env
     .table-body
-      .row.table-row.table-row-loading(ng-repeat='aPackage in content.packageInformations', ng-class="{ 'active': aPackage.name === shell.currentSelectedPackage.name }", ng-click='shell.selectPackage(aPackage)')
+      .row.table-row(ng-repeat='aPackage in content.packageInformations', ng-class="{ 'active': aPackage.name === shell.currentSelectedPackage.name }", ng-click='shell.selectPackage(aPackage)')
         .col-xs-4 {{ aPackage.name }}
         .col-xs-2
           span(ng-class="{'color-primary font-medium': !aPackage.wanted && !aPackage.latest}")

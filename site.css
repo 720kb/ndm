@@ -135,3 +135,10 @@ margin:0;
   border: 3px dashed #ddd;
   border-bottom:none;
 }
+/*tablet*/
+  @media screen and (max-width:800px){
+  /*put in here all tablet rules*/
+    .hide-mobile-tablet {
+      display: none;
+    }
+  }

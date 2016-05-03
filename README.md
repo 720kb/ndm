@@ -51,7 +51,9 @@ License here....
 ###FAQ
 **_Is ndm stable?_**
 
-Give it time, these are the first releases, if you wish and you can, please contribute by Forking, PR and creating issues.
+The first releases are not granted to be very stable.
+
+Just give it time, have some patience and, if you would, please contribute by forking, PR and/or creating issues, your help is always appreciated.
 
 **_Do i have to worry about anything when using ndm?_**
 

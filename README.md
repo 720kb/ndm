@@ -1,18 +1,8 @@
-#install
+[IMG BANNER]
 
-`git checkout master && npm install`
 
-#launch app
+[![Download ndm](http://i.imgur.com/3iyIIjF.png)](https://720kb.github.io/ndm)
 
-`npm start`
-
-=======
-NEXT for release
-=======
-
-[IMG]
-
-[DOWNLOAD ZIP BADGE]
 
 ###What is this ?
 
@@ -35,14 +25,25 @@ Sometimes and often, they can not use the Command line for intern/office/job rea
 
 Forget not that, using an app, does not mean you can no longer use the Command line.
 
-###Download
-
-link etc...
-
 ###Installation
 anything... !?
 
+###Develop
+
+_Setup_
+
+`git checkout master && npm install`
+
+_Run app_
+
+`npm start`
+
 ###Contribute
+
+We will be much grateful if you help us making this project to grow up. 
+Feel free to contribute by forking, opening issues, pull requests etc.
+
+Doors are open wide.
 
 ###License
 License here....

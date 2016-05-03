@@ -26,7 +26,7 @@
       .row.table-row(ng-repeat='aPackage in content.packageInformations', ng-class="{ 'active': aPackage.name === shell.currentSelectedPackage.name,'table-row-loading': shell.currentSelectedPackage.name === aPackage.name && content.showLoadingSelectedRow}", ng-click='shell.selectPackage(aPackage)')
         .col-xs-4 {{ aPackage.name }}
         .col-xs-2
-          span(ng-class="{'color-primary font-medium': !aPackage.wanted && !aPackage.latest}")
+          span(ng-class="{'color-greeny font-medium': !aPackage.wanted && !aPackage.latest}")
             | {{ aPackage.current }}
         .col-xs-2 {{ aPackage.wanted }}
         .col-xs-2

@@ -10,7 +10,7 @@
 NEXT for release
 =======
 
-[LOGO IMG]
+[IMG]
 
 [DOWNLOAD ZIP BADGE]
 
@@ -48,16 +48,16 @@ anything... !?
 License here....
 
 ###FAQ
-_Is ndm stable?_
+**_Is ndm stable?_**
 
 Give it time, these are the first releases, if you wish and you can, please contribute by Forking, PR and creating issues.
 
-_Do i have to worry about anything when using ndm?_
+**_Do i have to worry about anything when using ndm?_**
 
 Actually not, not really.
 ndm does not run any malicious or env/system breaking commands in background.
 
-_Why is so slow on my pc?_
+**_Why is so slow on my pc?_**
 
 ndm speed depends exclusively on your pc/device specs and npm commands speed.
 We can't do much to speed up npm commands and charge at the moment.

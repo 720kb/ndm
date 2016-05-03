@@ -90,14 +90,16 @@ margin:0;
   line-height: 110%;
 }
 .download-link:hover{
-  box-shadow: 0 5px 10px rgba(0,0,0, .1);
+  box-shadow: 0 5px 10px rgba(0,0,0, .05);
 }
 .download-link:active{
   transform: scale(.989)
 }
-.download-link.disabled{
-  opacity:.5;
-  pointer-events:none;
+.download-link.disabled,.download-link.disabled:hover{
+  opacity:.8;
+  cursor: not-allowed;
+  background: #ddd;
+  box-shadow:none;
 }
 .download-link i{
   font-size:28px;
@@ -130,6 +132,6 @@ margin:0;
 .bg-cyan {/*
   border: 1px solid #8AFCF8;
   box-shadow: 0 10px 10px #8AFCF8;*/
-  border: 3px dashed #8AFCF8;
+  border: 3px dashed #ddd;
   border-bottom:none;
 }

@@ -38,7 +38,7 @@
   text-align: center;
 }
 
-.table-row-loading {
+.table-row-loading, .table-row-loading.active {
   background: none;
   background-image: -webkit-repeating-linear-gradient(135deg, $color-stripes-one, $color-stripes-one 5px, $color-stripes-two 5px, $color-stripes-two 10px);
   animation: loadingStripes  1.5s linear infinite;

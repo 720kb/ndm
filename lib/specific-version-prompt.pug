@@ -1,5 +1,5 @@
 div.dialog.prompt(ng-show="topMenu.activeLink === '4'")
-  form(ng-submit='topMenu.installVersionPackage(shell.currentSelectedPackage, topMenu.specificVersion)')
+  form(ng-submit='topMenu.installVersionPackage(shell.currentSelectedPackage, topMenu.versionPackageVersion)')
     input(placeholder='Package name',
       type='text',
       readonly,
@@ -7,9 +7,9 @@ div.dialog.prompt(ng-show="topMenu.activeLink === '4'")
     = " "
     input(placeholder='@version',
       type='text',
-      ng-model='topMenu.packageVersion')
+      ng-model='topMenu.versionPackageVersion')
     = " "
-    input(type="checkbox", ng-model="topMenu.packageKind")
+    input(type="checkbox", ng-model="topMenu.versionPackageKind")
     = " "
     = " "
     | dev

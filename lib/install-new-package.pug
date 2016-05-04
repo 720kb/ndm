@@ -13,8 +13,11 @@ div.dialog.prompt(ng-show="topMenu.activeLink === '1'")
     = " "
     | dev
     = " "
-    button
-      span OK
+    button(ng-class="{'disabled': topMenu.installingPackage}")
+      span(ng-show="!topMenu.installingPackage")
+        | OK
+      span(ng-show="topMenu.installingPackage")
+        img(src="img/loading.svg", width="13")
     = " "
     = " "
     i(class="fa fa-times-circle-o", ng-click="topMenu.activeLink = undefined")

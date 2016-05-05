@@ -25,7 +25,24 @@ Sometimes and often, they can not use the Command line for intern/office/job rea
 Forget not that, using an app, does not mean you can no longer use the Command line.
 
 ###Installation
-anything... !?
+
+Download the executable for your OS at this link: [https://720kb.github.io/ndm](https://720kb.github.io/ndm) 
+
+If you want to install a newer version or the same repo version (which may not be released yet), you can run these commands:
+
+```bash
+git clone git@github.com:720kb/ndm.git ndm
+
+cd ndm
+
+git checkout master
+
+npm install
+
+npm start
+```
+
+Then if you want to make your own executable, all you have to do is to use [electron-packager](https://github.com/electron-userland/electron-packager)
 
 ###Develop
 
@@ -39,7 +56,7 @@ _Run app_
 
 ###Contribute
 
-We will be much grateful if you help us making this project to grow up. 
+We'll be much grateful if you help us making this project to grow up. 
 Feel free to contribute by forking, opening issues, pull requests etc.
 
 Doors are open wide.

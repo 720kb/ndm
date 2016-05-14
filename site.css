@@ -14,6 +14,7 @@ small , small *, *.font-small{
   background: radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
   background-repeat: no-repeat;
   overflow: hidden;
+
 }
 .screenshot {
   width:90%;
@@ -21,7 +22,7 @@ small , small *, *.font-small{
   bottom:-30px;
   position: relative;
 }
-.line-max{
+.line-max {
   max-width: 1100px;
   width:90%;
   float:none;
@@ -106,14 +107,16 @@ margin:0;
   margin-top:3px;
 }
 .bottom-shuttle{
+  margin-top: 100px;
   text-shadow: 0 1px rgba(255, 255, 255, .3);
   color:rgba(0,0,0, .56);
   width:90%;
   max-width:280px;
-  height:250px;
-  position: relative;
-  bottom:-100px;
   border-radius: 5px 5px 0 0;
+  border-bottom: 20px solid white;
+  bottom:-3px;
+  position: relative;
+  background: white;
 }
 .bottom-shuttle a.github-button{
   color:rgba(0,0,0,0);
@@ -123,15 +126,12 @@ margin:0;
   vertical-align: middle;
 }
 .footer{
-  margin-bottom:-40px;
-  overflow: hidden;
+  border-top: 3px dashed #ddd;
 }
 .color-twitter{
   color: #1882FC;
 }
-.bg-cyan {/*
-  border: 1px solid #8AFCF8;
-  box-shadow: 0 10px 10px #8AFCF8;*/
+.bg-cyan {
   border: 3px dashed #ddd;
   border-bottom:none;
 }

@@ -8,7 +8,7 @@ div.dialog.prompt(ng-show="topMenu.activeLink === '1'")
       type='text',
       ng-model='topMenu.newPackageVersion')
     = " "
-    input(type="checkbox", ng-model='topMenu.newPackageKind')
+    input(type="checkbox", ng-model='topMenu.newPackageKind', ng-disabled='shell.globalSelected')
     = " "
     = " "
     | dev

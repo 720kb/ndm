@@ -23,7 +23,7 @@
       .col-xs-2 Latest
       .col-xs-2 Env
     .table-body
-      .row.table-row(ng-repeat='aPackage in content.packageInformations', ng-class="{ 'active': aPackage.name === shell.currentSelectedPackage.name && aPackage.kind === shell.currentSelectedPackage.kind,'table-row-loading': shell.currentSelectedPackage.name === aPackage.name && content.showLoadingSelectedRow}", ng-click='shell.selectPackage(aPackage)')
+      .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: \'name\'', ng-class="{ 'active': aPackage.name === shell.currentSelectedPackage.name && aPackage.kind === shell.currentSelectedPackage.kind,'table-row-loading': shell.currentSelectedPackage.name === aPackage.name && content.showLoadingSelectedRow}", ng-click='shell.selectPackage(aPackage)')
         .col-xs-4 {{ aPackage.name }}
         .col-xs-2
           span(ng-class="{'color-positive font-light': !aPackage.wanted && !aPackage.latest}")

@@ -9,7 +9,7 @@ div.dialog.prompt(ng-show="topMenu.activeLink === '4'")
       type='text',
       ng-model='topMenu.versionPackageVersion')
     = " "
-    input(type="checkbox", disabled, ng-checked="shell.currentSelectedPackage.kind.length > 0")
+    input(type="checkbox", disabled, ng-checked="shell.currentSelectedPackage.kind.length > 0", ng-disabled='shell.globalSelected')
     = " "
     = " "
     | dev

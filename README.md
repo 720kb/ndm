@@ -1,18 +1,7 @@
-#install
+![github-banner.png](https://bitbucket.org/repo/84zgAd/images/786620377-github-banner.png)
 
-`git checkout master && npm install`
+[![Download ndm](http://i.imgur.com/z68cq3y.png)](https://720kb.github.io/ndm)
 
-#launch app
-
-`npm start`
-
-=======
-NEXT for release
-=======
-
-[LOGO IMG]
-
-[DOWNLOAD ZIP BADGE]
 
 ###What is this ?
 
@@ -35,14 +24,68 @@ Sometimes and often, they can not use the Command line for intern/office/job rea
 
 Forget not that, using an app, does not mean you can no longer use the Command line.
 
-###Download
-
-link etc...
-
 ###Installation
-anything... !?
+
+Download the executable for your OS at this link: [https://720kb.github.io/ndm](https://720kb.github.io/ndm) 
+
+If you want to install a newer version or the same repo version (which may not be released yet), you can run these commands:
+
+```bash
+git clone git@github.com:720kb/ndm.git ndm
+
+cd ndm
+
+git checkout master
+
+npm install
+
+npm start
+```
+
+Then if you want to make your own executable, all you have to do is to use [electron-packager](https://github.com/electron-userland/electron-packager)
+
+###Develop
+
+_Setup_
+
+`git checkout master && npm install`
+
+_Run app_
+
+`npm start`
 
 ###Contribute
 
+We'll be much grateful if you help us making this project to grow up. 
+Feel free to contribute by forking, opening issues, pull requests etc.
+
+Doors are open wide.
+
 ###License
-License here....
+The MIT License (MIT)
+
+Copyright (c) 2015 Filippo Oretti, Dario Andrei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+###FAQ
+**_Is ndm stable?_**
+
+The first releases are not guaranteed to be very stable, some problem/bug may happen.
+
+Just give it time, have some patience and, if you would, please contribute by forking, PR and/or creating issues, your help is always appreciated.
+
+**_Do i have to worry about anything when using ndm?_**
+
+Actually not, not really.
+ndm does not run any malicious or env/system breaking commands in background.
+
+**_Why is so slow on my pc?_**
+
+ndm speed depends exclusively on your pc/device specs and npm commands speed.
+We can't do much to speed up npm commands and charge at the moment.
+Wishing npm will be faster in the next releases.

@@ -25,11 +25,10 @@
     // Create the browser window.
     mainWindow = new BrowserWindow({
       'title': 'ndm',
-      'icon': '',
-      'width': 800,
-      'height': 600,
-      'minWidth': 650,
-      'minHeight': 400,
+      'width': 720,
+      'height': 480,
+      'minWidth': 720,
+      'minHeight': 460,
       'center': true,
       'movable': true,
       'resizable': true,
@@ -43,9 +42,6 @@
 
     // and load the index.html of the app.
     mainWindow.loadURL(`file://'${__dirname}/dist/index.html`);
-
-    // Open the DevTools.
-    mainWindow.webContents.openDevTools();
 
     // Emitted when the window is closed.
     mainWindow.on('closed', () => {

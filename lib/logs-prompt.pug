@@ -1,5 +1,21 @@
-div.dialog.prompt(ngfx-speed='fast', ngfx-fade-in-down="topMenu.activeLink === 'update'")
-  div.logs-dialog
-    div(ng-repeat="aLog in log.logs track by $index")
+div.dialog.prompt(ng-show="topMenu.activeLink === 'update'")
+  div(contenteditable="true", class="logs-window")
+    b 
+      | Started updating 
+    div 
+      | =============================================
+    | Local time: 
+    = " "
+    | {{ log.nowDatetime | date : 'longDate'}}
+    = " "
+    | {{ log.nowDatetime | date : 'mediumTime'}}
+    div 
+      | =============================================
+    | Output >>>
+    div(contenteditable="true", ng-repeat="aLog in log.logs track by $index")
       | {{ aLog }}
-  button(ng-click="topMenu.activeLink = false")
+  div(class="logs-window-options")
+    img(ng-show="!log.logsFinished", src='img/loading.svg', width='13')
+    i(class="fa fa-check color-muted", ng-show="log.logsFinished")
+    button(ng-show="log.logsFinished", ng-click="topMenu.activeLink = false")
+      | Close

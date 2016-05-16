@@ -21,7 +21,7 @@
       line-height: 0;
       margin-left: 15px;
       position: relative;
-      top: -10px;
+      top: -9px;
     }
 
     input {
@@ -46,6 +46,11 @@
       &[type='checkbox'] {
         border-color: rgba(0, 0, 0, .2);
       }
+    }
+
+    .prompt-kind {
+      position: relative;
+      bottom: -1px;
     }
 
     button {

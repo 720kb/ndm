@@ -9,11 +9,12 @@ div.dialog.prompt(ng-show="topMenu.activeLink === '4'")
       type='text',
       ng-model='topMenu.versionPackageVersion')
     = " "
-    input(type="checkbox", disabled, ng-checked="shell.currentSelectedPackage.kind.length > 0", ng-disabled='shell.globalSelected')
-    = " "
-    = " "
-    | dev
-    = " "
+    span(class="prompt-kind")
+      input(type="checkbox", disabled, ng-checked="shell.currentSelectedPackage.kind.length > 0", ng-disabled='shell.globalSelected')
+      = " "
+      = " "
+      | dev
+      = " "
     button(ng-class="{'disabled': topMenu.installingPackageVersion}")
       span(ng-show="!topMenu.installingPackageVersion")
         | OK

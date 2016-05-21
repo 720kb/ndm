@@ -1,7 +1,7 @@
 {
   "name": "ndm",
   "version": "0.0.1",
-  "description": "Just another tool that manages npm",
+  "description": "Npm Desktop Manager, GUI client for npm",
   "main": "index.js",
   "author": "720kb",
   "license": "MIT",

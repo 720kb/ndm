@@ -4,7 +4,7 @@
   include ./install-new-package.pug
   .row
     .col-xs-3
-      a.pull-left(ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()")
+      a.pull-left(ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()", ng-disabled='shell.globalDisabled')
         i.fa.fa-history(ng-class="{'color-primary': topMenu.activeLink === 'update'}")
         div
         span

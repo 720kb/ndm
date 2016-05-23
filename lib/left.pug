@@ -1,8 +1,8 @@
 .left-column.bg-light.overflow-x-hidden(ng-controller='LeftBarController as leftBar')
   .row
-    h6.col-xs-12
+    h5.col-xs-12
       | Packages
-    a.row(ng-class="{'active': leftBar.global}", ng-click='leftBar.selectGlobal()')
+    a.row(ng-class="{'active': leftBar.global}", ng-disabled='shell.globalDisabled', ng-click='leftBar.selectGlobal()')
       i.fa.fa-globe
       | Globals
     br

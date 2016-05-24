@@ -2,7 +2,7 @@
   .row
     h5.col-xs-12
       | Packages
-    a.row(ng-class="{'active': leftBar.global}", ng-disabled='shell.globalDisabled', ng-click='leftBar.selectGlobal()')
+    a.row.action-link-disabled(ng-class="{'active': leftBar.global, 'action-link-disabled': shell.globalDisabled, 'action-link-enabled': !shell.globalDisabled}", ng-click='leftBar.selectGlobal()')
       i.fa.fa-globe
       | Globals
     br

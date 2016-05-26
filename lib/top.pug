@@ -11,7 +11,7 @@
           | Update npm
       = " "
       = " "
-      span.button-global.pull-right(ng-click="shell.enableGlobal()")
+      span.button-global.pull-right(ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
         i.fa.fa-globe.color-primary
         = " "
         | Enable

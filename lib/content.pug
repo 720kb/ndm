@@ -17,14 +17,14 @@
       small May take some time
   div(ng-show='content.loaded && !content.goBackHome')
     .row.table-header
-      .col-xs-5 Package
+      .col-xs-4 Package
       .col-xs-2 Current
       .col-xs-2 Wanted
       .col-xs-2 Latest
-      .col-xs-1 Env
+      .col-xs-2 Env
     .table-body
       .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: \'name\'', ng-class="{ 'active': aPackage.name === shell.currentSelectedPackage.name && aPackage.kind === shell.currentSelectedPackage.kind,'table-row-loading': shell.currentSelectedPackage.name === aPackage.name && content.showLoadingSelectedRow}", ng-click='shell.selectPackage(aPackage)')
-        .col-xs-5 {{ aPackage.name }}
+        .col-xs-4 {{ aPackage.name }}
         .col-xs-2
           span(ng-class="{'color-positive font-light': !aPackage.wanted && !aPackage.latest}")
             | {{ aPackage.current }}
@@ -32,4 +32,4 @@
         .col-xs-2
           b(ng-if="aPackage.latest")
             | {{ aPackage.latest}}
-        .col-xs-1 {{ aPackage.kind }}
+        .col-xs-2 {{ aPackage.kind }}

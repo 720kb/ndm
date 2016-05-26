@@ -9,6 +9,12 @@
         div
         span
           | Update npm
+      = " "
+      = " "
+      span.button-global.pull-right(ng-show="shell.globalDisabled")
+        i.fa.fa-globe.color-primary(ng-click="shell.enableGlobal()")
+        = " "
+        | Enable
     .col-xs-9
       button(class="pull-left", ng-click="shell.openChooser()")
         i.fa.fa-plus-circle

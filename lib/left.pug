@@ -7,7 +7,7 @@
       | Globals
     br
     h6.col-xs-12(ng-if='shell.projects.length > 0') Projects
-    a.row.project(ng-repeat='item in shell.projects', ng-class="{'active': leftBar.selectedProject === item && !leftBar.global}", ng-click='leftBar.selectProject(item, $event)')
+    a.row.project(ng-repeat='item in shell.projects track by $index', ng-class="{'active': leftBar.selectedProject === item && !leftBar.global}", ng-click='leftBar.selectProject(item, $event)')
       i.fa.fa-folder-o
       div
         b {{ item.dirName }}

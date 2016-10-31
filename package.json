@@ -15,11 +15,11 @@
     "angular-local-storage": "^0.2.6",
     "animate.css": "^3.5.1",
     "bootstrap": "^3.3.6",
-    "electron-prebuilt": "0.37.7",
+    "electron-prebuilt": "^1.3.8",
     "electron-sudo": "^3.0.5",
     "font-awesome": "^4.5.0",
     "freshy": "^1.0.2",
-    "npm": "^3.8.8"
+    "npm": "^3.10.9"
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",

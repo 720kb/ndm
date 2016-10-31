@@ -12,6 +12,7 @@
 }
 
 .top-menu {
+  -webkit-app-region: drag;
   background: $bg-lightgrey,  $bg-gradient-grey;
   box-shadow: 0 -1px $color-bbb inset, 0 -1px $color-ccc inset;
   padding: 20px 10px 3px 10px;

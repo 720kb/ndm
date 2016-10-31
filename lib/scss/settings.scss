@@ -22,6 +22,10 @@ body, html {
   padding: 0;
 }
 
+body {
+  -webkit-app-region: drag;
+}
+
 a {
   cursor: default;
   outline: none;

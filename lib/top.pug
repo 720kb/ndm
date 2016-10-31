@@ -9,7 +9,10 @@
         div
         span
           | Update npm
-          span(class="badge-version color-white bg-badge-positive", ngfx-bounce-in="topMenu.npmVersionBadge", ngfx-default="hidden", ng-bind="topMenu.npmVersionBadge")
+          span(class="badge-version color-white bg-badge-positive", ngfx-bounce-in="topMenu.npmVersionBadge", ngfx-default="hidden")
+            i.fa.fa-caret-up.color-white
+            = " "
+            | {{topMenu.npmVersionBadge}}
       = " "
       = " "
       span.button-global.pull-right(ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")

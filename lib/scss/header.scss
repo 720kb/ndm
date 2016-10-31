@@ -58,6 +58,11 @@
     position: absolute;
     text-shadow: 0 1px rgba(0,0,0, .3);
   }
+  .badge-version i{
+    margin: 0;
+    bottom: 0;
+    font-size: 11px;
+  }
 
   .button-global {
     background: $bg-lighter;

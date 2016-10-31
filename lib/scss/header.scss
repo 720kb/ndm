@@ -48,15 +48,15 @@
   }
 
   .badge-version {
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 10px;
     height: 13px;
     line-height: 8px;
     margin-left: -20px;
-    margin-top: -10px;
+    margin-top: -18px;
     padding: 2px 4px;
     position: absolute;
-    text-shadow: none;
+    text-shadow: 0 1px rgba(0,0,0, .3);
   }
 
   .button-global {

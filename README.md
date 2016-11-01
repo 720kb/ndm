@@ -67,4 +67,4 @@ ndm does not run any malicious or env/system breaking commands in background.
 **_Why is so slow on my pc?_**
 
 ndm speed depends exclusively on your pc/device specs and npm commands speed.
-We can't do much to speed up npm native commands, hoping npm will be faster on each new release.
+We can't do much to speed up npm native commands, hoping npm to be faster on each new release.

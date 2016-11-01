@@ -25,7 +25,7 @@ Forget not that: using an app, does not mean you can no longer use the Command l
 
 ###Installation
 
-**Download** the executable for your OS at this link: [https://720kb.github.io/ndm](https://720kb.github.io/ndm)
+Download the executable for your OS at this link: [DOWNLOAD](https://720kb.github.io/ndm)
 
 ###Develop
 

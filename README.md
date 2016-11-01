@@ -25,23 +25,7 @@ Forget not that, using an app, does not mean you can no longer use the Command l
 
 ###Installation
 
-Download the executable for your OS at this link: [https://720kb.github.io/ndm](https://720kb.github.io/ndm)
-
-If you want to use a newer version or the same repo version (which may not be released yet), you can run these commands:
-
-```bash
-git clone git@github.com:720kb/ndm.git ndm
-
-cd ndm
-
-git checkout master
-
-npm install
-
-npm start
-```
-
-Then if you want to make your own executable, all you have to do is to use [electron-packager](https://github.com/electron-userland/electron-packager)
+**Download** the executable for your OS at this link: [https://720kb.github.io/ndm](https://720kb.github.io/ndm)
 
 ###Develop
 
@@ -52,6 +36,11 @@ _Setup_
 _Run app_
 
 `npm start`
+
+
+###Build
+
+If you want to make your own executable, all you have to do is to use [electron-packager](https://github.com/electron-userland/electron-packager), follow how it works, it's simple.
 
 ###Contribute
 

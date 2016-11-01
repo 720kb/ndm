@@ -16,12 +16,12 @@ Feel free to reach us for any info/question, or to support us for the project, w
 
 Of course, we all love it too.
 
-The Shell command line, is obviously very powerful.
+The Shell is obviously very powerful.
 
-However, not all the people know how to use it from the scratch.
-Sometimes and often, they can not use the Command line for intern/office/job reasons, or are not willing to use it at all.
+However: not all the people know how to use it from the scratch.
+Sometimes and very often, they can not use the Command line for intern/office/job reasons, or are not willing to use it at all.
 
-Forget not that, using an app, does not mean you can no longer use the Command line.
+Forget not that: using an app, does not mean you can no longer use the Command line.
 
 ###Installation
 
@@ -44,10 +44,9 @@ If you want to make your own executable, all you have to do is to use [electron-
 
 ###Contribute
 
-We'll be much grateful if you help us making this project to grow up.
-Feel free to contribute by forking, opening issues, pull requests etc.
-
-Doors are open wide!
+We'll be much grateful if you help and contribute on the project, in any way.
+Feel free to contribute by forking, opening issues, pull requests and so on.
+Doors are wide open!
 
 ###License
 

@@ -15,12 +15,12 @@
             | {{topMenu.npmVersionBadge}}
       = " "
       = " "
-      span.button-global.pull-right(ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
+      span.button-global.pull-right(title="Enable ndm in global folder", ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
         i.fa.fa-globe.color-primary
         = " "
         | Enable
     .col-xs-9
-      button(class="pull-left", ng-click="shell.openChooser()")
+      button(title="Add project to be managed", class="pull-left", ng-click="shell.openChooser()")
         i.fa.fa-plus-circle
         | Add Project
       a.pull-right(ng-show="topMenu.projectPath", ng-click="topMenu.activeClickedLink('1');", ng-class="{'active': topMenu.activeLink === '1'}")

@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
+  <meta name="viewport" content="initial-scale=1, width=device-width"/>
   <meta http-equiv="cache-control" content="max-age=86400" />
   <meta name="robots" content="index,follow" />
   <meta name="audience" content="all" />
@@ -15,9 +15,9 @@
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="ndm"/>
   <meta property="og:image" content="https://720kb.github.io/ndm/img/social-icon.png"/>
-  <meta property="og:description" content="Manage your npm from the couch with ndm client GUI"/>
-  <meta name="description" content='ndm is the npm client GUI to manage npm and npm packages, formally "npm desktop manager".'/>
-  <meta name="keywords" content="npm, client, gui, desktop, manager, ndm, npm, app, tool, atom, electron, open source, mac, osx, linux"/>
+  <meta property="og:description" content="Manage npm from the couch with the ndm client GUI"/>
+  <meta name="description" content='ndm is the npm client GUI for npm, formally "npm desktop manager".'/>
+  <meta name="keywords" content="npm, client, gui, app, desktop, manager, tool, download, atom, electron, ndm, open source, mac, osx, linux"/>
   <title> The Client GUI for npm - ndm</title>
   <link rel="icon" href="/favicon.ico?v=9888"/>
   <link href="bower_components/csshelper/dist/helper.min.css" rel='stylesheet' type='text/css'/>
@@ -40,13 +40,19 @@
       <div class="top-menu col6 right-content">
         <a href="//github.com/720kb/ndm" target="_blank" class="color-white toggle-opacity-hover"> <i class="fa fa-github"></i> Github</a>
         <a href="//720kb.net" rel="index, follow" target="_blank" class="color-white toggle-opacity-hover hide-mobile-tablet">Who</a>
-        <a href="//github.com/720kb/ndm" target="_blank" class="star-button"><i class="fa fa-star"></i> Star</a>
+        <span class="push-right">
+          <div class="separator5"></div>
+            <div class="separator3"></div>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/720kb/ndm" data-icon="octicon-star"  data-count-href="/720kb/ndm/stargazers" data-count-api="/repos/720kb/ndm#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star 720kb/ndm on GitHub">Star</a>
+      </span>
       </div>
       <div class="separator50"></div>
       <div class="separator10"></div>
       <h1 class="font-one font-medium font-big line-compress center-content color-white">Manage <b>npm</b> from the couch</h1>
       <div class="separator10"></div>
       <h3 class="description font-light color-muted-inverse">The Electron GUI for managing npm, formally <span class="font-handwritten">npm desktop manager</span></h3>
+
     </div>
     <div class="line center-content">
     <img class="screenshot" src="img/screenshot.png"/>

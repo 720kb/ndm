@@ -9,10 +9,13 @@
         div
         span
           | Update npm
-          span(class="badge-version color-white bg-badge-positive", ngfx-bounce-in="topMenu.npmVersionBadge", ngfx-default="hidden")
-            i.fa.fa-caret-up.color-white
+          span(class="badge-version color-white", ng-class="{'bg-badge-positive': topMenu.npmCurrentVersionBadge !== topMenu.npmLatestVersionBadge }")
+            i.fa.fa-caret-up.color-white(ng-show="topMenu.npmCurrentVersionBadge !== topMenu.npmLatestVersionBadge")
             = " "
-            | {{topMenu.npmVersionBadge}}
+            b(ng-show="topMenu.npmCurrentVersionBadge !== topMenu.npmLatestVersionBadge")
+              | {{topMenu.npmLatestVersionBadge}}
+            b(ng-show="topMenu.npmCurrentVersionBadge === topMenu.npmLatestVersionBadge")
+              | {{topMenu.npmCurrentVersionBadge}}
       = " "
       = " "
       span.button-global.pull-right(title="Enable ndm in global folder", ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")

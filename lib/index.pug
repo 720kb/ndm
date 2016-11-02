@@ -19,14 +19,19 @@ html
       include ./left.pug
       include ./content.pug
     .footer.bg-footer ©
-      a(ng-click="shell.openBrowserLink('http://720kb.net')") 720kb
+      a(ng-click="shell.openBrowserLink('http://720kb.net')")
+        = " "
+        | 720kb
+      span.pull-right
+        a(ng-click="shell.openBrowserLink('http://github.com/720kb/ndm/blob/master/LICENSE.md')")
+          | GNU License
       span.pull-right
         a(ng-click="shell.openBrowserLink('http://twitter.com/720kb_')")
           i.fa.fa-twitter
           = " "
           | Follow
       span.pull-right
-        a(ng-click="shell.openBrowserLink('http://720kb.net')")
+        a(ng-click="shell.openBrowserLink('http://github.com/720kb/ndm/issues')")
           | Support
       span.pull-right
         a(ng-click="shell.openBrowserLink('http://github.com/720kb/ndm')")

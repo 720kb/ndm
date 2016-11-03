@@ -7,10 +7,11 @@
       | Globals
     br
     h6.col-xs-12(ng-if='shell.projects.length > 0') Projects
-    a.row.project(ng-repeat='item in shell.projects track by $index', ng-class="{'active': leftBar.selectedProject === item && !leftBar.global}", ng-click='leftBar.selectProject(item, $event)')
+    a.row.project( ng-repeat='item in shell.projects track by $index', ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
       i.fa.fa-folder-o
       div
         b {{ item.dirName }}
+        | {{leftBar.rightClickedProject}}
       button(ng-click='leftBar.deleteProject(item, $event)')
         i.fa.fa-times-circle-o
   br

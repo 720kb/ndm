@@ -15,3 +15,5 @@
       button(ng-click='leftBar.deleteProject(item, $event)')
         i.fa.fa-times-circle-o
   br
+  .bottom-notifier.bg-positive.notifier-loading.color-white(ngfx-default="hidden", ngfx-slide-in-up="leftBar.npmInstallingProject")
+    | Running <b>npm install</b> in project {{leftBar.npmInstallingProject.path.dirName}}/

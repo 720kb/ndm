@@ -1,0 +1,16 @@
+.bottom-notifier {
+  bottom: 30px;
+  font-size: 12px;
+  left: 0;
+  line-height: 20px;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  padding: 0 1.5%;
+
+  &.notifier-loading {
+    background: none;
+    background-image: -webkit-repeating-linear-gradient(135deg, #d35, #d35 5px, red 5px, red 10px);
+    animation: loadingStripes  1.5s linear infinite;
+  }
+}

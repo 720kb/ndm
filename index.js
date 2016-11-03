@@ -38,8 +38,7 @@
       'closable': true,
       'fullscreenable': true,
       'dragable': true,
-      'titleBarStyle': 'hidden',
-      'backgroundColor': '#eee'
+      'titleBarStyle': 'hidden'
     });
     // and load the index.html of the app.
     mainWindow.loadURL(`file://'${__dirname}/dist/index.html`);

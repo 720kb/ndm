@@ -40,23 +40,8 @@
       }
     }
 
-    &:hover {
+    &:hover, &:focus {
       @include bg-rgba-black(.03);
-    }
-
-    &:active {
-      @include bg-rgba-black(.03);
-      background: $bg-primary;
-      color: white;
-      cursor: default;
-      text-shadow: none;
-
-      &:hover {
-        background: $bg-primary;
-        color: white;
-        cursor: default;
-        text-shadow: none;
-      }
     }
 
     &.active {

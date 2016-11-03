@@ -1,12 +1,16 @@
-.bottom-notifier {
+.bottom-notification-center {
   bottom: 30px;
-  font-size: 12px;
   left: 0;
-  line-height: 20px;
   position: fixed;
-  right: 0;
+  width: 100%;
+}
+
+.bottom-notifier {
+  font-size: 12px;
+  line-height: 20px;
   width: 100%;
   padding: 0 1.5%;
+  border-bottom: 1px solid $color-muted;
 
   &.notifier-loading {
     background: none;

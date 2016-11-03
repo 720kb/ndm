@@ -1,19 +1,21 @@
-.left-column.bg-light.overflow-x-hidden(ng-controller='LeftBarController as leftBar')
-  .row
-    h6.col-xs-12
-      | Packages
-    a.row.action-link-disabled(ng-class="{'active': leftBar.global, 'action-link-disabled': shell.globalDisabled, 'action-link-enabled': !shell.globalDisabled}", ng-click='leftBar.selectGlobal()')
-      i.fa.fa-globe
-      | Globals
+div(ng-controller='LeftBarController as leftBar')
+  .left-column.bg-light.overflow-x-hidden
+    .row
+      h6.col-xs-12
+        | Packages
+      a.row.action-link-disabled(ng-class="{'active': leftBar.global, 'action-link-disabled': shell.globalDisabled, 'action-link-enabled': !shell.globalDisabled}", ng-click='leftBar.selectGlobal()')
+        i.fa.fa-globe
+        | Globals
+      br
+      h6.col-xs-12(ng-if='shell.projects.length > 0') Projects
+      a.row.project( ng-repeat='item in shell.projects track by $index', ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
+        i.fa.fa-folder-o
+        div
+          b {{ item.dirName }}
+          | {{leftBar.rightClickedProject}}
+        button(ng-click='leftBar.deleteProject(item, $event)')
+          i.fa.fa-times-circle-o
     br
-    h6.col-xs-12(ng-if='shell.projects.length > 0') Projects
-    a.row.project( ng-repeat='item in shell.projects track by $index', ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
-      i.fa.fa-folder-o
-      div
-        b {{ item.dirName }}
-        | {{leftBar.rightClickedProject}}
-      button(ng-click='leftBar.deleteProject(item, $event)')
-        i.fa.fa-times-circle-o
-  br
-  .bottom-notifier.bg-positive.notifier-loading.color-white(ngfx-default="hidden", ngfx-slide-in-up="leftBar.npmInstallingProject")
-    | Running <b>npm install</b> in project {{leftBar.npmInstallingProject.path.dirName}}/
+  .bottom-notification-center
+    .bottom-notifier.bg-positive.notifier-loading.color-white(ng-repeat='item in shell.projects track by $index', ng-show="leftBar.npmInstallingProjects[item]")
+      | Running <b>npm install</b> in project {{leftBar.npmInstallingProjects[item].path.dirName}}/

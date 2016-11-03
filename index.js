@@ -28,6 +28,7 @@
       'width': 720,
       'height': 480,
       'minWidth': 720,
+      'show': false,
       'minHeight': 460,
       'center': true,
       'movable': true,
@@ -37,15 +38,17 @@
       'closable': true,
       'fullscreenable': true,
       'dragable': true,
-      'titleBarStyle': 'hidden'
+      'titleBarStyle': 'hidden',
+      'backgroundColor': '#eee'
     });
-
     // and load the index.html of the app.
     mainWindow.loadURL(`file://'${__dirname}/dist/index.html`);
+    mainWindow.on('ready-to-show', () => {
 
+      mainWindow.show();
+    });
     // Emitted when the window is closed.
     mainWindow.on('closed', () => {
-
       // Dereference the window object, usually you would store windows
       // in an array if your app supports multi windows, this is the time
       // when you should delete the corresponding element.

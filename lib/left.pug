@@ -17,5 +17,5 @@ div(ng-controller='LeftBarController as leftBar')
           i.fa.fa-times-circle-o
     br
   .bottom-notification-center
-    .bottom-notifier.bg-positive.notifier-loading.color-white(ng-repeat='item in shell.projects track by $index', ng-show="leftBar.npmInstallingProjects[item]")
-      | Running <b>npm install</b> in project {{leftBar.npmInstallingProjects[item].path.dirName}}/
+    .bottom-notifier.bg-positive.notifier-loading.color-white(ng-repeat='item in shell.projects track by $index', ng-show="leftBar.npmInstallingProjects[item.dirName]")
+      | Running <b>npm install</b> in project <b>{{item.dirName}}/</b>

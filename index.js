@@ -1,14 +1,10 @@
 /*global require,process,__dirname*/
 (function withNode() {
 
-  const electron = require('electron')
-    , app = electron.app // Module to control application life.
-    , BrowserWindow = electron.BrowserWindow; // Module to create native browser window.
-
+  const {app, Menu, BrowserWindow} = require('electron');
   // Keep a global reference of the window object, if you don't, the window will
   // be closed automatically when the JavaScript object is garbage collected.
   let mainWindow = null;
-
   // Quit when all windows are closed.
   app.on('window-all-closed', () => {
     // On OS X it is common for applications and their menu bar
@@ -22,6 +18,204 @@
   // This method will be called when Electron has finished
   // initialization and is ready to create browser windows.
   app.on('ready', () => {
+    if (Menu.getApplicationMenu()) {
+      return;
+    }
+
+      const template = [
+        {
+          label: 'Edit',
+          submenu: [
+            {
+              role: 'undo'
+            },
+            {
+              role: 'redo'
+            },
+            {
+              type: 'separator'
+            },
+            {
+              role: 'cut'
+            },
+            {
+              role: 'copy'
+            },
+            {
+              role: 'paste'
+            },
+            {
+              role: 'pasteandmatchstyle'
+            },
+            {
+              role: 'delete'
+            },
+            {
+              role: 'selectall'
+            }
+          ]
+        },
+        {
+          label: 'View',
+          submenu: [
+            {
+              label: 'Reload',
+              accelerator: 'CmdOrCtrl+R',
+              click (item, focusedWindow) {
+                if (focusedWindow) focusedWindow.reload()
+              }
+            },
+            {
+              label: 'Toggle Developer Tools',
+              accelerator: process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
+              click (item, focusedWindow) {
+                if (focusedWindow) focusedWindow.toggleDevTools()
+              }
+            },
+            {
+              type: 'separator'
+            },
+            {
+              role: 'resetzoom'
+            },
+            {
+              role: 'zoomin'
+            },
+            {
+              role: 'zoomout'
+            },
+            {
+              type: 'separator'
+            },
+            {
+              role: 'togglefullscreen'
+            }
+          ]
+        },
+        {
+          role: 'window',
+          submenu: [
+            {
+              role: 'minimize'
+            },
+            {
+              role: 'close'
+            }
+          ]
+        },
+        {
+          role: 'help',
+          submenu: [
+            {
+              label: 'Learn More',
+              click () {
+                shell.openExternal('http://electron.atom.io')
+              }
+            },
+            {
+              label: 'Documentation',
+              click () {
+                shell.openExternal(
+                  `https://github.com/electron/electron/tree/v${process.versions.electron}/docs#readme`
+                )
+              }
+            },
+            {
+              label: 'Community Discussions',
+              click () {
+                shell.openExternal('https://discuss.atom.io/c/electron')
+              }
+            },
+            {
+              label: 'Search Issues',
+              click () {
+                shell.openExternal('https://github.com/electron/electron/issues')
+              }
+            }
+          ]
+        }
+      ]
+
+      if (process.platform === 'darwin') {
+        template.unshift({
+          label: 'Electron',
+          submenu: [
+            {
+              role: 'about'
+            },
+            {
+              type: 'separator'
+            },
+            {
+              role: 'services',
+              submenu: []
+            },
+            {
+              type: 'separator'
+            },
+            {
+              role: 'hide'
+            },
+            {
+              role: 'hideothers'
+            },
+            {
+              role: 'unhide'
+            },
+            {
+              type: 'separator'
+            },
+            {
+              role: 'quit'
+            }
+          ]
+        })
+        template[1].submenu.push(
+          {
+            type: 'separator'
+          },
+          {
+            label: 'Speech',
+            submenu: [
+              {
+                role: 'startspeaking'
+              },
+              {
+                role: 'stopspeaking'
+              }
+            ]
+          }
+        )
+        template[3].submenu = [
+          {
+            role: 'close'
+          },
+          {
+            role: 'minimize'
+          },
+          {
+            role: 'zoom'
+          },
+          {
+            type: 'separator'
+          },
+          {
+            role: 'front'
+          }
+        ]
+      } else {
+        template.unshift({
+          label: 'File',
+          submenu: [
+            {
+              role: 'quit'
+            }
+          ]
+        })
+      }
+
+      const menu = Menu.buildFromTemplate(template);
+      Menu.setApplicationMenu(menu);
     // Create the browser window.
     mainWindow = new BrowserWindow({
       'title': 'ndm',
@@ -42,8 +236,8 @@
     });
     // and load the index.html of the app.
     mainWindow.loadURL(`file://'${__dirname}/dist/index.html`);
-    mainWindow.on('ready-to-show', () => {
 
+    mainWindow.on('ready-to-show', () => {
       mainWindow.show();
     });
     // Emitted when the window is closed.

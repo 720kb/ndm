@@ -30,16 +30,24 @@ Download the executable for your OS at this link: [DOWNLOAD](https://720kb.githu
 
 _Setup_
 
-`git checkout master && npm install`
+`$ git clone <repo> && cd <repo>`
+
+`$ npm install`
 
 _Run app_
 
-`npm start`
+`$ npm start`
 
 
 ###Build
 
-If you want to make your own executable, all you have to do is to use [electron-packager](https://github.com/electron-userland/electron-packager), follow how it works, it's simple.
+If you want to make your own executable:
+
+`$ git checkout master`
+
+`$ npm install`
+
+`$ npm run build`
 
 ###Contribute
 

@@ -30,7 +30,7 @@ Download the executable for your OS at this link: [DOWNLOAD](https://720kb.githu
 
 _Setup_
 
-`$ git clone <repo> && cd <repo>`
+`$ git clone <repo> && cd ndm`
 
 `$ npm install`
 
@@ -43,7 +43,7 @@ _Run app_
 
 If you want to make your own executable:
 
-`$ git clone <repo> && cd <repo>`
+`$ git clone <repo> && cd ndm`
 
 `$ npm install`
 

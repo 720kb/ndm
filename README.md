@@ -43,7 +43,7 @@ _Run app_
 
 If you want to make your own executable:
 
-`$ git checkout master`
+`$ git clone <repo> && cd <repo>`
 
 `$ npm install`
 

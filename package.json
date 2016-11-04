@@ -15,7 +15,7 @@
   "scripts": {
     "prestart": "gulp dist",
     "start": "electron .",
-    "build": "build"
+    "build": "gulp dist && build"
   },
   "build": {
     "appId": "net.720kb.ndm",

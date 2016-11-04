@@ -18,9 +18,6 @@
   // This method will be called when Electron has finished
   // initialization and is ready to create browser windows.
   app.on('ready', () => {
-    if (Menu.getApplicationMenu()) {
-      return;
-    }
 
       const template = [
         {

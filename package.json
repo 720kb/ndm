@@ -10,7 +10,7 @@
     "Filippo Oretti",
     "Dario Andrei"
   ],
-  "license": "GNU GPLv3",
+  "license": "GNU",
   "copyright": "© 720kb - Filippo Oretti - Dario Andrei",
   "scripts": {
     "prestart": "gulp dist",

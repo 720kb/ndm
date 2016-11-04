@@ -5,3 +5,5 @@ dist/
 npm-debug.log
 *.zip
 *.dmg
+releases/
+releases/*

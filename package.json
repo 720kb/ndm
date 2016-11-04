@@ -4,6 +4,7 @@
   "description": "Npm Desktop Manager, GUI client for npm",
   "main": "index.js",
   "homepage": "https://720kb.github.io/ndm",
+  "author": "720kb",
   "authors": [
     "720kb",
     "Filippo Oretti",
@@ -23,7 +24,13 @@
     "productName": "ndm",
     "category": "public.app-category.productivity",
     "target": "dmg",
-    "icon": "icon.icns"
+    "icon": "icon.icns",
+    "dmg": {
+      "backgroundColor": "#ccc"
+    }
+  },
+  "directories": {
+    "output": "./releases"
   },
   "dependencies": {
     "angular": "^1.5.0",

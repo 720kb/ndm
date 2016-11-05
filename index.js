@@ -1,6 +1,6 @@
 /*global require process __dirname*/
 (function withNode() {
-  process.env.PATH = process.env.PATH + ':/usr/local/bin';
+  process.env.PATH = require('shell-path').sync();
 
   const {app, Menu, BrowserWindow} = require('electron')
     , shell = app.shell

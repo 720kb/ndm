@@ -41,7 +41,8 @@
     "electron-sudo": "^3.0.5",
     "font-awesome": "^4.5.0",
     "freshy": "^1.0.2",
-    "npm": "^3.10.9"
+    "npm": "^3.10.9",
+    "shell-path": "^2.0.0"
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",

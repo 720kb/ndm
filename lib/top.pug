@@ -9,12 +9,12 @@
         div
         span
           | Update npm
-          span(ng-show="!shell.globalDisabled", class="badge-version color-white", ng-class="{'bg-badge-positive': topMenu.npmCurrentVersionBadge !== topMenu.npmLatestVersionBadge }")
-            i.fa.fa-caret-up.color-white(ng-show="topMenu.npmCurrentVersionBadge !== topMenu.npmLatestVersionBadge")
+          span(ng-show="!shell.globalDisabled", class="badge-version color-black")
+            i.fa.fa-caret-up(ng-show="topMenu.npmCurrentVersionBadge !== topMenu.npmLatestVersionBadge")
             = " "
-            b(ng-show="topMenu.npmCurrentVersionBadge !== topMenu.npmLatestVersionBadge")
+            b(title="New version available", ng-show="topMenu.npmCurrentVersionBadge !== topMenu.npmLatestVersionBadge")
               | {{topMenu.npmLatestVersionBadge}}
-            b(ng-show="topMenu.npmCurrentVersionBadge === topMenu.npmLatestVersionBadge")
+            b(title="Current Npm version", ng-show="topMenu.npmCurrentVersionBadge === topMenu.npmLatestVersionBadge")
               | {{topMenu.npmCurrentVersionBadge}}
       = " "
       = " "

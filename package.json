@@ -24,7 +24,6 @@
     "productName": "ndm",
     "category": "public.app-category.productivity",
     "target": "dmg",
-    "icon": "icon.icns",
     "dmg": {
       "backgroundColor": "#cdcdcd"
     }

@@ -2,8 +2,7 @@
 (function withNode() {
   process.env.PATH = require('shell-path').sync();
 
-  const {app, Menu, BrowserWindow} = require('electron')
-    , shell = app.shell
+  const {app, Menu, BrowserWindow, shell} = require('electron')
     , packageJSON = require('./package.json')
     , template = [
       {
@@ -42,16 +41,7 @@
         'label': 'View',
         'submenu': [
           {
-            'label': 'Reload',
-            'accelerator': 'CmdOrCtrl+R',
-            click(item, focusedWindow) {
-              if (focusedWindow) {
-                focusedWindow.reload();
-              }
-            }
-          },
-          {
-            'label': 'Toggle Developer Tools',
+            'label': 'Dev Tools',
             'accelerator': process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
             click(item, focusedWindow) {
               if (focusedWindow) {
@@ -158,6 +148,17 @@
           },
           {
             'role': 'unhide'
+          },
+          {
+            'type': 'separator'
+          },
+          {
+            'label': 'Restart',
+            'accelerator': 'CmdOrCtrl+R',
+            click() {
+              app.relaunch();
+              app.quit();
+            }
           },
           {
             'type': 'separator'

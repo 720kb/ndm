@@ -10,10 +10,11 @@
 
   gulp.task('distify', ['dist'], done => {
 
-    runSequence([
+    /*runSequence([
       'dist-minify-css',
       'dist-minify-js'
-    ]);
+    ]);*/
+    return;
   });
 
   gulp.task('dist-minify-css', () => {

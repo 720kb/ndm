@@ -21,7 +21,7 @@ If you want to make your own executable:
 
 `$ npm run build`
 
-_executables will be output inside `ndm/releases/` dir_
+Executables will be output in `ndm/releases/` directory
 
 
 ###License

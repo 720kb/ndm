@@ -20,13 +20,13 @@
 
   &.notifier-loading-orange {
     background: none;
-    background-image: -webkit-repeating-linear-gradient(135deg, #E07D04, #E07D04 5px, #F58A07 5px, #F58A07 10px);
+    background-image: -webkit-repeating-linear-gradient(135deg, #E07D04, #E07D04 5px, #D97511 5px, #D97511 10px);
     animation: loadingStripes  1.5s linear infinite;
   }
 
   &.notifier-loading-green {
     background: none;
-    background-image: -webkit-repeating-linear-gradient(135deg, #018A1D, #018A1D 5px, #06BD2A 5px, #06BD2A 10px);
+    background-image: -webkit-repeating-linear-gradient(135deg, #3AB315, #3AB315 5px, #06BD2A 5px, #06BD2A 10px);
     animation: loadingStripes  1.5s linear infinite;
   }
 

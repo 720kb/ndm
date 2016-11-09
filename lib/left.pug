@@ -19,7 +19,7 @@ div(ng-controller='LeftBarController as leftBar')
   .bottom-notification-center
     .bottom-notifier.notifier-loading-red.color-white(ng-repeat='item in shell.projects track by $index', ng-show="leftBar.npmInstallingProjects[item.dirName]")
       | Running <b>$ npm install</b> in project <b>{{item.dirName}}/</b>
-    .bottom-notifier.notifier-loading-yellow.color-white(ng-repeat='item in shell.projects track by $index', ng-show="leftBar.npmPruningProjects[item.dirName]")
+    .bottom-notifier.notifier-loading-orange.color-white(ng-repeat='item in shell.projects track by $index', ng-show="leftBar.npmPruningProjects[item.dirName]")
       | Running <b>$ npm prune</b> in project <b>{{item.dirName}}/</b>
     .bottom-notifier.notifier-loading-green.color-white(ng-repeat='item in shell.projects track by $index', ng-show="leftBar.npmDedupingProjects[item.dirName]")
       | Running <b>$ npm dedupe</b> in project <b>{{item.dirName}}/</b>

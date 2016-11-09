@@ -18,15 +18,15 @@
     animation: loadingStripes  1.5s linear infinite;
   }
 
-  &.notifier-loading-yellow {
+  &.notifier-loading-orange {
     background: none;
-    background-image: -webkit-repeating-linear-gradient(135deg, brown, brown 5px, gold 5px, gold 10px);
+    background-image: -webkit-repeating-linear-gradient(135deg, #E07D04, #E07D04 5px, #F58A07 5px, #F58A07 10px);
     animation: loadingStripes  1.5s linear infinite;
   }
 
   &.notifier-loading-green {
     background: none;
-    background-image: -webkit-repeating-linear-gradient(135deg, lime, lime 5px, green 5px, green 10px);
+    background-image: -webkit-repeating-linear-gradient(135deg, #018A1D, #018A1D 5px, #06BD2A 5px, #06BD2A 10px);
     animation: loadingStripes  1.5s linear infinite;
   }
 

@@ -12,9 +12,22 @@
   padding: 0 1.5%;
   border-bottom: 1px solid $color-muted;
 
-  &.notifier-loading {
+  &.notifier-loading-red {
     background: none;
     background-image: -webkit-repeating-linear-gradient(135deg, #d35, #d35 5px, red 5px, red 10px);
     animation: loadingStripes  1.5s linear infinite;
   }
+
+  &.notifier-loading-yellow {
+    background: none;
+    background-image: -webkit-repeating-linear-gradient(135deg, brown, brown 5px, gold 5px, gold 10px);
+    animation: loadingStripes  1.5s linear infinite;
+  }
+
+  &.notifier-loading-green {
+    background: none;
+    background-image: -webkit-repeating-linear-gradient(135deg, lime, lime 5px, green 5px, green 10px);
+    animation: loadingStripes  1.5s linear infinite;
+  }
+
 }

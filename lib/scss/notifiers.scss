@@ -1,34 +1,32 @@
 .bottom-notification-center {
-  bottom: 30px;
+  bottom: 31px;
   left: 0;
   position: fixed;
   width: 100%;
 }
 
 .bottom-notifier {
+  animation: loadingStripes  1.5s linear infinite;
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, .18);
   font-size: 12px;
   line-height: 20px;
-  width: 100%;
   padding: 0 1.5%;
-  border-bottom: 1px solid $color-muted;
   text-shadow: 0 1px rgba(0, 0, 0, .3);
+  width: 100%;
 
   &.notifier-loading-red {
     background: none;
-    background-image: -webkit-repeating-linear-gradient(135deg, #d35, #d35 5px, red 5px, red 10px);
-    animation: loadingStripes  1.5s linear infinite;
+    background-image: $bg-stripes-red;
   }
 
   &.notifier-loading-orange {
     background: none;
-    background-image: -webkit-repeating-linear-gradient(135deg, #E07D04, #E07D04 5px, #D97511 5px, #D97511 10px);
-    animation: loadingStripes  1.5s linear infinite;
+    background-image: $bg-stripes-orange;
   }
 
   &.notifier-loading-green {
     background: none;
-    background-image: -webkit-repeating-linear-gradient(135deg, #3AB315, #3AB315 5px, #06BD2A 5px, #06BD2A 10px);
-    animation: loadingStripes  1.5s linear infinite;
+    background-image: $bg-stripes-green;
   }
 
 }

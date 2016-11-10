@@ -1,10 +1,10 @@
 /*
-Fonts
+fonts
 */
-$default-font-family: 'BlinkMacSystemFont', 'Helvetica Neue', Helvetica, sans-serif;
-$font-terminal: 'Monaco';
+$default-font-family: 'blinkmacsystemfont', 'helvetica neue', helvetica, sans-serif;
+$font-terminal: 'monaco';
 /*
-Backgrounds
+backgrounds
 */
 $bg-primary: #327dff;
 $bg-light: #f4f6f6;
@@ -18,10 +18,14 @@ $bg-table-row: #f2fdff;
 $bg-dialog: #ededed;
 $bg-positive: royalblue;
 $bg-table-row-highlight: #fcfcc9;
-$bg-gradient-footer: -webkit-linear-gradient(top, $bg-ultralight 0%, $bg-mediumlight 100%), linear-gradient(to bottom, $bg-ultralight 0%, $bg-mediumlight 100%);
-$bg-gradient-grey: -webkit-linear-gradient(top, $bg-lightgrey 0%, $bg-smoke 100%), linear-gradient(to bottom, $bg-lightgrey 0%, $bg-smoke 100%);
+$bg-gradient-footer: linear-gradient(to bottom, $bg-ultralight 0%, $bg-mediumlight 100%);
+$bg-gradient-grey: linear-gradient(to bottom, $bg-lightgrey 0%, $bg-smoke 100%);
+$bg-stripes-red: repeating-linear-gradient(135deg, #e01212, #e01212 5px, red 5px, red 10px);
+$bg-stripes-green: repeating-linear-gradient(135deg, #3ab315, #3ab315 5px, #06bd2a 5px, #06bd2a 10px);
+$bg-stripes-orange: repeating-linear-gradient(135deg, #e07d04, #e07d04 5px, #d97511 5px, #d97511 10px);
+
 /*
-Colors
+colors
 */
 $color-positive: #36a9b1;
 $color-stripes-one: rgba(55, 255, 255, .4);

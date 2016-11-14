@@ -20,7 +20,7 @@
     background: $bg-table-row;
   }
 
-  &:active, &.active {
+  &:active, &.active, &[active] {
     background: $bg-table-row-highlight;
   }
 }

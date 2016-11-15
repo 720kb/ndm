@@ -40,6 +40,7 @@
 
 .table-row-loading, .table-row-loading.active {
   background: none;
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, .08);
   background-image: -webkit-repeating-linear-gradient(135deg, $color-stripes-one, $color-stripes-one 5px, $color-stripes-two 5px, $color-stripes-two 10px);
   animation: loadingStripes  1.5s linear infinite;
 }

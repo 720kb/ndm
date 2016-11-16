@@ -29,11 +29,11 @@
       "backgroundColor": "#cdcdcd"
     },
     "files": [
-     "node_modules",
-     "dist",
-     "index.js",
-     "LICENSE.md"
-   ]
+      "node_modules",
+      "dist",
+      "index.js",
+      "LICENSE.md"
+    ]
   },
   "directories": {
     "output": "./releases"
@@ -55,7 +55,7 @@
     "babel-preset-es2015-rollup": "^1.1.1",
     "del": "^2.2.0",
     "electron-builder": "^8.6.0",
-    "electron-prebuilt": "^1.4.7",
+    "electron-prebuilt": "^1.4.6",
     "eslint": "^2.4.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",

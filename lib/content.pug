@@ -1,9 +1,8 @@
 .right-column.overflow-x-hidden(ng-controller='ContentController as content')
   .row.home.bg-ultralight(ng-hide="content.loading || content.packageInformations", ng-show="content.goBackHome")
     div
-      | Welcome
       .separator10
-      small.color-muted
+      small.color-black
         | Select an npm project folder to start
       .separator10
       .separator10
@@ -13,7 +12,7 @@
     img(src='img/loading.svg', width='22')
     | Loading ...
     .separator10
-    .color-muted
+    .color-black
       small May take some time
   div(ng-show='content.loaded && !content.goBackHome')
     .row.table-header

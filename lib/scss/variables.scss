@@ -15,7 +15,6 @@ $bg-lightgrey: #e9e7e9;
 $bg-smoke: #d1cfd1;
 $bg-muted: rgba(0, 0, 0, .35);
 $bg-table-row: #f2fdff;
-$bg-dialog: #ededed;
 $bg-positive: royalblue;
 $bg-table-row-highlight: #fcfcc9;
 $bg-gradient-footer: linear-gradient(to bottom, $bg-ultralight 0%, $bg-mediumlight 100%);
@@ -23,7 +22,7 @@ $bg-gradient-grey: linear-gradient(to bottom, $bg-lightgrey 0%, $bg-smoke 100%);
 $bg-stripes-red: repeating-linear-gradient(135deg, red, red 5px, #e01212 5px, #e01212 10px);
 $bg-stripes-purple: repeating-linear-gradient(135deg, #8b2bd2, #8b2bd2 5px, #8104e0 5px, #8104e0 10px);
 $bg-stripes-orange: repeating-linear-gradient(135deg, #e07d04, #e07d04 5px, #d97511 5px, #d97511 10px);
-
+$bg-dialog: $bg-lightgrey;
 /*
 colors
 */

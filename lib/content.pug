@@ -3,11 +3,11 @@
     div
       .separator10
       small.color-black
-        | Select an npm project folder to start
+        | Select npm projects folder to start
       .separator10
       .separator10
       button.home-button(ng-click="shell.openChooser()")
-        | Add project
+        | Add projects
   .row.table-loader.bg-lighter(ng-show="content.loading", ng-hide='!content.loading || content.loaded')
     img(src='img/loading.svg', width='22')
     | Loading ...

@@ -26,7 +26,13 @@
     "target": "dmg",
     "dmg": {
       "backgroundColor": "#cdcdcd"
-    }
+    },
+    "files": [
+     "node_modules",
+     "dist",
+     "index.js",
+     "LICENSE.md"
+   ]
   },
   "directories": {
     "output": "./releases"

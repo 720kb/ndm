@@ -54,8 +54,8 @@
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
     "del": "^2.2.0",
+    "electron": "^1.4.7",
     "electron-builder": "^8.6.0",
-    "electron-prebuilt": "^1.4.6",
     "eslint": "^2.4.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",

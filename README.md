@@ -1,4 +1,4 @@
-![github-banner.png](https://bitbucket.org/repo/84zgAd/images/3176385413-github-banner.png)
+![github-banner.png](http://i.imgur.com/ZxOCrmo.png)
 [![Download ndm](http://i.imgur.com/z68cq3y.png)](https://github.com/720kb/ndm/releases/download/0.0.1/ndm-0.0.1.dmg)
 
 ###What is this ?

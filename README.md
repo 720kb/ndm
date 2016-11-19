@@ -18,7 +18,7 @@ Of course, we all love it too.
 The Shell is obviously very powerful.
 
 However: not all the people know how to use it from the scratch.
-Sometimes and very often, they can not use the Command line for intern/office/job reasons, or are not willing to use it at all.
+Sometimes and very often, they can not use the Command line for intern/office/job reasons, or they are not willing to use it at all.
 
 Forget not that: using ndm, does not mean you can no longer use the Command line and viceversa.
 
@@ -54,10 +54,10 @@ Adjust `package.json` file [build](https://github.com/720kb/ndm/blob/master/pack
 
 ###Contribute
 
-We'll be much grateful if you help and contribute to the project, in any way you wish.
-Feel free to contribute by forking, opening issues, pull requests and so on.
+We'll be much grateful if you help and contribute to the project, in any way you can or wish.
+Feel free to contribute by forking, opening issues, pull requests and whatever you think it's important for the project.
 
-Doors are open!
+Doors are wide open!
 
 ###License
 

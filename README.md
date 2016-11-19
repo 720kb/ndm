@@ -74,13 +74,13 @@ Just give it time, have some patience and, if you would, please contribute by fo
 
 Actually not, not really.
 ndm does not run any malicious or env/system breaking commands in background.
-If you want to be 100% sure about this, just look at the source code, which is clear and very readable at all.
+If you want to be 100% sure about this, just look at the source code, which is clear and very readable.
 
 **_Why is so slow on my pc?_**
 
-ndm speed depends exclusively on your pc/device specs and npm commands speed.
+ndm speed depends exclusively on your pc/device specs and [npm-cli](https://docs.npmjs.com/cli/npm) speed.
 We can't do much to speed up your computer or the npm native commands.
-Hoping npm to be faster on each new release.
+Hoping npm will be faster on every new release.
 
 **_Why Mac only?_**
 

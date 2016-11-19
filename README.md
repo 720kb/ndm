@@ -82,9 +82,10 @@ ndm speed depends exclusively on your pc/device specs and npm commands speed.
 We can't do much to speed up your computer or the npm native commands.
 Hoping npm to be faster on each new release.
 
-**_Why MacOSX only?_**
+**_Why Mac only?_**
 
-For the moment we focus on one Os only to test certain features and the best app behaviors.
+For the moment we focus on one OS but the app is developed keeping in mind that it will have to run also on other OSes. We do not put too much meat on fire, because it is important to obtain an OS-abstracted and stable version (first of all).
+
 As soon as we are sure that the project is stable, we do not think it will be difficult to take on other OS.
 
 **_Yarn?_**

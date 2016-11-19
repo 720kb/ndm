@@ -89,7 +89,7 @@ As soon as we are sure that the project is stable, it will be delivered to the o
 
 **Yarn?**
 
-Yarn is a great tool: we are looking forward to see what happens, also because yarn is on first releases. Said that: if you have any idea or suggestion: you're welcome to share them!
+Yarn is a great tool: we are looking forward to see what happens, also because it is still on first releases and many things could change in the meantime. Said that: if you have any idea or suggestion: you're welcome to share them!
 
 **Support?**
 

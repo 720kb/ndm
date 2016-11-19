@@ -7,7 +7,7 @@
 
 With **ndm** you can easily manage npm and npm packages directly from the couch, without any worries.
 
-It is based on the [npm-cli](https://docs.npmjs.com/cli/npm) and developed over [electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
+It is based on the [npm-cli](https://docs.npmjs.com/cli/npm) and developed over [Electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
 
 Feel free to reach any of us for any info/question, or to support the project in any way you wish.
 

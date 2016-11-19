@@ -18,9 +18,9 @@ Of course, we all love it too.
 The Shell is obviously very powerful.
 
 However: not all the people know how to use it from the scratch.
-Sometimes and very often, they can not use the Command line for intern/office/job reasons, or they are not willing to use it at all.
+Sometimes and very often, they can not use the Shell for intern/office/job reasons, or they are not willing to use it at all.
 
-Forget not that: using ndm, does not mean you can no longer use the Command line and viceversa.
+Forget not that: using ndm, does not mean you can no longer use the Shell and viceversa.
 
 ###Installation
 

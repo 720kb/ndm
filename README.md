@@ -1,6 +1,4 @@
 ![github-banner.png](http://i.imgur.com/ZxOCrmo.png)
-[![Download ndm](http://i.imgur.com/z68cq3y.png)](https://github.com/720kb/ndm/releases/download/0.0.1/ndm-0.0.1.dmg)
-
 
 <p align="center" style="text-align:center">
 
@@ -33,9 +31,9 @@ Sometimes and very often, they can not use the Shell for intern/office/job reaso
 
 Forget not that: using ndm, does not mean you can no longer use the Shell and viceversa.
 
-###Installation
+###Download
 
-Download the executable for your OS at this link: [DOWNLOAD](https://github.com/720kb/ndm/releases/)
+Download *ndm* at this link: [DOWNLOAD](https://github.com/720kb/ndm/releases/)
 
 ###Develop
 

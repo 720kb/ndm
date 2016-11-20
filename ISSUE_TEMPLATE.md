@@ -1,7 +1,6 @@
 <!--
-Thanks for opening an issue!
-Please fill this little form below before everything.
-Thank you.
+Fill the form below, if you are reporting a bug or a malfunction or a strange behavior or a problem in general.
+Thank you!
 -->
 
 * OS:

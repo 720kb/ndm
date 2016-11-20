@@ -55,7 +55,7 @@ return this.each( function(k,v) {
   var sparkle = new Sparkle( $this, settings );
 
   $this.on({
-    "mouseover focus" : function(e) {
+    "mouseover focus click mouseenter mousemove" : function(e) {
       sparkle.over();
     },
     "mouseout blur" : function(e) {

@@ -33,7 +33,7 @@ Forget not that: using ndm, does not mean you can no longer use the Shell and vi
 
 ###Download
 
-Download *ndm* at this link: **[DOWNLOAD](https://github.com/720kb/ndm/releases/)**
+Download **ndm** at this link: **[DOWNLOAD](https://github.com/720kb/ndm/releases/)**
 
 ###Develop
 

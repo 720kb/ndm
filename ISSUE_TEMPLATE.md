@@ -8,4 +8,4 @@ Thank you!
 * ndm version:
 * node version:
 * npm version:
-* node by (brew, nvm, pkg, other) which one:
+* node by (brew, nvm, pkg, other, ...):

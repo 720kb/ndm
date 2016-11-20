@@ -1,6 +1,17 @@
 ![github-banner.png](http://i.imgur.com/ZxOCrmo.png)
 [![Download ndm](http://i.imgur.com/z68cq3y.png)](https://github.com/720kb/ndm/releases/download/0.0.1/ndm-0.0.1.dmg)
 
+
+<p align="center" style="text-align:center">
+
+<a href="https://github.com/720kb/ndm/blob/master/LICENSE.md" target="_blank">
+<img src="https://img.shields.io/dub/l/vibe-d.svg"/>
+</a>
+<a href="https://gitter.im/720kb/ndm" target="_blank">
+<img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>
+</a>
+</p>
+
 ###What is this ?
 
 **ndm** formally _"npm desktop manager"_ is the client GUI for npm (MacOSX only for the moment).

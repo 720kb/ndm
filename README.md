@@ -5,7 +5,7 @@
 <p align="center" style="text-align:center">
 
 <a href="https://github.com/720kb/ndm/blob/master/LICENSE.md" target="_blank">
-<img src="https://img.shields.io/dub/l/vibe-d.svg"/>
+<img src="https://img.shields.io/aur/license/yaourt.svg"/>
 </a>
 <a href="https://gitter.im/720kb/ndm" target="_blank">
 <img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>

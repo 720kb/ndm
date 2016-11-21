@@ -10,15 +10,26 @@ body {
       cursor: wait;
       pointer-events: none;
     }
+
     .dialog {
       * {
         pointer-events: all;
       }
     }
+
     .footer {
       * {
         pointer-events: all;
       }
+    }
+  }
+
+  &.freezed {
+
+    opacity: .5;
+
+    * {
+      pointer-events: none;
     }
   }
 }

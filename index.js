@@ -41,7 +41,7 @@
         'label': 'View',
         'submenu': [
           {
-            'label': 'Dev Tools',
+            'label': 'Toggle Devtools',
             'accelerator': process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
             click(item, focusedWindow) {
               if (focusedWindow) {

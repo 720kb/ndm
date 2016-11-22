@@ -29,7 +29,7 @@
       &[type='text'] {
         border: none;
         border-radius: 4px;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, .2) inset;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .35) inset;
         font-size: 11px;
         height: 20px;
         line-height: 20px;
@@ -44,7 +44,7 @@
       }
 
       &[type='checkbox'] {
-        border-color: rgba(0, 0, 0, .2);
+        border-color: rgba(0, 0, 0, .35);
       }
     }
 

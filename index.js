@@ -4,7 +4,8 @@
 
   const {app, Menu, BrowserWindow, shell} = require('electron')
     , packageJSON = require('./package.json')
-    , template = [
+    , applicationTemplate = require('./conf/application.json')
+    , menuTemplate = [
       {
         'label': 'Edit',
         'submenu': [
@@ -41,7 +42,7 @@
         'label': 'View',
         'submenu': [
           {
-            'label': 'Toggle Devtools',
+            'label': 'Dev Tools',
             'accelerator': process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
             click(item, focusedWindow) {
               if (focusedWindow) {
@@ -124,7 +125,7 @@
   app.on('ready', () => {
 
     if (process.platform === 'darwin') {
-      template.unshift({
+      menuTemplate.unshift({
         'label': 'Electron',
         'submenu': [
           {
@@ -168,7 +169,7 @@
           }
         ]
       });
-      template[1].submenu.push(
+      menuTemplate[1].submenu.push(
         {
           'type': 'separator'
         },
@@ -183,7 +184,7 @@
             }
           ]
         });
-        template[3].submenu = [
+        menuTemplate[3].submenu = [
           {
             'role': 'close'
           },
@@ -201,7 +202,7 @@
           }
         ];
       } else {
-        template.unshift({
+        menuTemplate.unshift({
           'label': 'File',
           'submenu': [
             {
@@ -211,25 +212,9 @@
         });
       }
 
-    Menu.setApplicationMenu(Menu.buildFromTemplate(template));
+    Menu.setApplicationMenu(Menu.buildFromTemplate(menuTemplate));
     // Create the browser window.
-    mainWindow = new BrowserWindow({
-      'title': 'ndm',
-      'width': 720,
-      'height': 480,
-      'minWidth': 720,
-      'show': false,
-      'minHeight': 460,
-      'center': true,
-      'movable': true,
-      'resizable': true,
-      'minimizable': true,
-      'maximizable': true,
-      'closable': true,
-      'fullscreenable': true,
-      'dragable': true,
-      'titleBarStyle': 'hidden'
-    });
+    mainWindow = new BrowserWindow(applicationTemplate);
     // and load the index.html of the app.
     mainWindow.loadURL(`file://'${__dirname}/dist/index.html`);
 

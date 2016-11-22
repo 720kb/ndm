@@ -32,7 +32,9 @@
       "node_modules",
       "dist",
       "index.js",
-      "LICENSE.md"
+      "LICENSE.md",
+      "conf",
+      "!conf/tasks"
     ]
   },
   "directories": {

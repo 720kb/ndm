@@ -1,5 +1,6 @@
 node_modules/
 .tmp/
+etc/
 dist/
 .DS_Store
 npm-debug.log

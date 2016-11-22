@@ -82,14 +82,14 @@ margin:0;
 }
 .download-link{
   border-radius:4px;
-  width: 140px;
+  width: 190px;
   height:34px;
-  padding:4px 0;
+  padding:8px 3px;
   display:inline-block;
   margin:0 2%;
   background: #2979E8;
   transition: none;
-  line-height: 110%;
+  line-height: 32px;
 }
 
 .download-link:hover{
@@ -145,6 +145,10 @@ margin:0;
     }
     .header {
       min-height: 600px;
+    }
+
+    .download-link{
+      width: 250px;
     }
   }
   /*mobile*/

@@ -1,5 +1,5 @@
 div.dialog.prompt(ng-show="topMenu.activeLink === 'update'")
-  div(contenteditable="true", class="logs-window")
+  div(contenteditable="true", class="prompt-window")
     b
       | Updating npm
     div
@@ -14,7 +14,7 @@ div.dialog.prompt(ng-show="topMenu.activeLink === 'update'")
     | Output >>>
     div(contenteditable="true", ng-repeat="aLog in log.logs track by $index")
       | {{ aLog }}
-  div(class="logs-window-options")
+  div(class="prompt-window-options")
     img(ng-show="!log.logsFinished", src='img/loading.svg', width='13')
     i(class="fa fa-check color-primary", ng-show="log.logsFinished")
     button(ng-show="log.logsFinished", ng-click="topMenu.activeLink = false")

@@ -41,6 +41,7 @@
     "output": "./releases"
   },
   "dependencies": {
+    "ace-builds": "^1.2.5",
     "angular": "^1.5.0",
     "angular-local-storage": "^0.2.6",
     "bootstrap": "^3.3.6",

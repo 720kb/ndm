@@ -118,6 +118,17 @@
     width: 100%;
   }
 
+  .prompt-editor-linter {
+    position: absolute;
+    margin: 0 auto;
+    color: white;
+    z-index: 9;
+    background: $bg-error;
+    margin-top: -40px;
+    width: calc(100% - 20px);
+    padding: 5px;
+  }
+
   .prompt-window-options {
     margin-left: 5px;
     margin-right: 5px;

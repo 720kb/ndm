@@ -1,13 +1,8 @@
-div.dialog.prompt(ng-show="leftBar.editorFilePath", ng-ace-editor, ng-ace-editor-mode="javascript", ng-ace-file="{{leftBar.editorFilePath}}" ng-model="aceFileModel")
+div.dialog.prompt(ng-show="leftBar.editorFilePath", ng-ace-editor, ng-ace-editor-theme="xcode" ng-ace-editor-mode="json", ng-ace-file="{{leftBar.editorFilePath}}" ng-model="aceFileModel")
   div(class="prompt-window editor" autofocus)
-    div(class="prompt-editor ng-ace-editor", ng-keyup="lintJSON()")
-    div(class="prompt-editor-linter", ng-show="lintedJSON.error")
-      div
-        | Error on line <b>{{lintedJSON.line}}</b>
-      div
-        | &#8627; {{lintedJSON.error}}
+    div(class="prompt-editor ng-ace-editor")
   div(class="prompt-window-options")
-    img(src='img/loading.svg', width='13', ng-show="(savingFile && !savedFile) || loadingFile")
+    img(src="img/loading.svg", width="13", ng-show="(savingFile && !savedFile) || loadingFile")
     i(class="fa fa-check color-primary", ng-show="savedFile && !savingFile")
     button(ng-click="saveFile()")
       | Save

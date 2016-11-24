@@ -48,7 +48,6 @@
     "electron-sudo": "^3.0.5",
     "font-awesome": "^4.5.0",
     "freshy": "^1.0.2",
-    "json-lint": "^0.1.0",
     "npm": "^3.10.9",
     "selection-model": "^0.11.0",
     "shell-path": "^2.0.0"

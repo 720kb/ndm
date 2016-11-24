@@ -1,0 +1,9 @@
+//Leave !important to override ace-editor default which is rendered later
+.ace_tooltip {
+  background: $bg-error !important;
+  padding: 1.5px 4px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  font-size: 11px !important;
+  color: white !important;
+}

@@ -3,6 +3,7 @@ fonts
 */
 $default-font-family: 'BlinkMacSystemFont', 'Helvetica Neue', Helvetica, sans-serif;
 $font-terminal: 'Monaco';
+$font-icon: 'FontAwesome';
 /*
 backgrounds
 */
@@ -14,6 +15,7 @@ $bg-mediumlight: #f2f2f2;
 $bg-lightgrey: #e9e7e9;
 $bg-smoke: #d1cfd1;
 $bg-muted: rgba(0, 0, 0, .35);
+$bg-muted-more: rgba(0, 0, 0, .15);
 $bg-table-row: #f2fdff;
 $bg-positive: royalblue;
 $bg-error: #e81616;
@@ -28,6 +30,7 @@ $bg-dialog: $bg-lightgrey;
 colors
 */
 $color-positive: #36a9b1;
+$color-error: #e81616;
 $color-stripes-one: rgba(55, 255, 255, .4);
 $color-stripes-two: rgba(155, 255, 255, .5);
 $color-primary: #327dff;

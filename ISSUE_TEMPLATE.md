@@ -1,11 +1,12 @@
 <!--
-Fill the informations below if you are reporting a bug or a malfunction or a strange behavior or a problem in general.
+Fill the informations below if you are reporting a bug OR malfunction OR strange behaviors OR a problem in general.
 Thank you!
 -->
 
 * OS:
 * OS version:
-* ndm version:
-* node version:
-* npm version:
-* node by (brew, nvm, pkg, other, ...):
+* Ndm version:
+* Node version:
+* Npm version:
+* Node by (brew, nvm, pkg, other, ...):
+* How to replicate the bug/issue, if you know:

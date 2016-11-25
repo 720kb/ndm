@@ -15,7 +15,7 @@
   "scripts": {
     "prestart": "gulp distify",
     "start": "electron .",
-    "build": "rm -Rf node_modules/ && npm install && gulp dist && build"
+    "build": "npm install && npm prune && gulp dist && build"
   },
   "build": {
     "appId": "net.720kb.ndm",

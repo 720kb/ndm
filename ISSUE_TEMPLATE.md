@@ -3,10 +3,11 @@ Fill the informations below if you are reporting a bug OR malfunction OR strange
 Thank you!
 -->
 
-* OS:
-* OS version:
-* Ndm version:
+* OS: 
+* OS version: 
+* Ndm version: 
 * Node version:
 * Npm version:
-* Node by (brew, nvm, pkg, other, ...):
+* Npm permissions (fixed, not-fixed)(see https://docs.npmjs.com/getting-started/fixing-npm-permissions):
+* Node installed via (brew, nvm, pkg, other ...):
 * How to replicate the bug/issue, if you know:

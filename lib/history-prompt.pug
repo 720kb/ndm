@@ -1,12 +1,15 @@
 div.dialog.prompt(ng-show="leftBar.showHistoryPrompt")
   div(class="prompt-window history")
-    div(class="row prompt-history-item", ng-repeat="item in leftBar.projectHistory | orderBy : 'datetime' : -1")
-      i(class="fa fa-database")
+    div(class="prompt-history-item", ng-repeat="item in leftBar.projectHistory | orderBy : 'datetime' : -1", ng-click="leftBar.selectedSnapshot = item;", ng-class="{'active': leftBar.selectedSnapshot === item}")
+      i(class="fa fa-database color-primary")
+      = " "
       | {{item.datetime}}
   div(class="prompt-window-options")
     img(src="img/loading.svg", width="13")
     i(class="fa fa-check color-primary")
     button(ng-click="")
       | Restore
+    button(ng-click="")
+      | Delete
     button(ng-click="leftBar.showHistoryPrompt = undefined;")
       | Close

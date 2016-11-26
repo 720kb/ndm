@@ -109,12 +109,21 @@
     }
 
     &.history {
+      padding: 0;
 
       .prompt-history-item {
-        padding: 3px 2%;
-        font-size: 14px;
-        line-height: 25px;
-        border-bottom: 1px solid rgba(0,0,0, .15);
+        line-height: 18px;
+        width: calc(100% - .35%);
+        margin: 0 .5px;
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
+
+        &.active {
+          background-color: $bg-table-row-highlight;
+        }
+
+        i {
+          font-size: 12.5px;
+        }
       }
     }
   }

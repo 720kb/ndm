@@ -14,7 +14,6 @@ div(ng-controller='LeftBarController as leftBar')
         i.fa.fa-folder-o
         div
           b {{ item.dirName }}
-          | {{leftBar.rightClickedProject}}
         button(ng-click='leftBar.deleteProject(item, $event)')
           i.fa.fa-times-circle-o
     br

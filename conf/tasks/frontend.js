@@ -23,7 +23,9 @@
     return gulp.src(`${paths.lib}scss/index.scss`)
       .pipe(plumber())
       .pipe(sourcemaps.init())
-      .pipe(gulpSass({}))
+      .pipe(gulpSass({
+        'outputStyle': 'compressed'
+       }))
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(`${paths.tmp}/css`));
   });

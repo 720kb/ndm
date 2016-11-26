@@ -112,10 +112,13 @@
       padding: 0;
 
       .prompt-history-item {
-        line-height: 18px;
+        line-height: 20px;
         width: calc(100% - .35%);
         margin: 0 .5px;
-        border-bottom: 1px solid rgba(0, 0, 0, .05);
+
+        &:nth-child(odd) {
+          background: $bg-table-row;
+        }
 
         &.active {
           background-color: $bg-table-row-highlight;

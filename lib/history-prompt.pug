@@ -1,0 +1,9 @@
+div.dialog.prompt(ng-show="leftBar.showHistoryPrompt")
+  div(class="prompt-window")
+  div(class="prompt-window-options")
+    img(src="img/loading.svg", width="13")
+    i(class="fa fa-check color-primary")
+    button(ng-click="")
+      | Restore
+    button(ng-click="leftBar.showHistoryPrompt = undefined;")
+      | Close

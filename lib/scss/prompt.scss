@@ -61,7 +61,8 @@
       margin-top: -.5px;
       text-shadow: 0 1px white;
       vertical-align: middle;
-      width: 13%;
+      min-width: 13%;
+      width: auto;
       margin-left: 6px;
 
       &:active {
@@ -112,7 +113,7 @@
       padding: 0;
 
       .prompt-history-item {
-        line-height: 20px;
+        line-height: 22px;
         width: calc(100% - .35%);
         margin: 0 .5px;
 

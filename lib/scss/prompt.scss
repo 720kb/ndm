@@ -107,6 +107,16 @@
       padding: 0 0 0 0;
       max-height: auto;
     }
+
+    &.history {
+
+      .prompt-history-item {
+        padding: 3px 2%;
+        font-size: 14px;
+        line-height: 25px;
+        border-bottom: 1px solid rgba(0,0,0, .15);
+      }
+    }
   }
 
   .prompt-editor {

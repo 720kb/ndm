@@ -1,5 +1,8 @@
 div.dialog.prompt(ng-show="leftBar.showHistoryPrompt")
-  div(class="prompt-window")
+  div(class="prompt-window history")
+    div(class="row prompt-history-item", ng-repeat="item in leftBar.projectHistory | orderBy : 'datetime' : -1")
+      i(class="fa fa-database")
+      | {{item.datetime}}
   div(class="prompt-window-options")
     img(src="img/loading.svg", width="13")
     i(class="fa fa-check color-primary")

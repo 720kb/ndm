@@ -114,8 +114,8 @@
 
       .prompt-history-item {
         line-height: 22px;
-        width: calc(100% - .35%);
-        margin: 0 .5px;
+        width: calc(100% - 2px);
+        margin: 1px 1px 0 1px;
 
         &:nth-child(odd) {
           background: $bg-table-row;
@@ -144,10 +144,11 @@
 
   .prompt-window-infos {
     font-size: 11.5px;
-    width: 200px;
+    max-width: 200px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: inline-block;
   }
 
   .prompt-window-options {

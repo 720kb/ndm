@@ -2,12 +2,12 @@ div.dialog.prompt(ng-show="leftBar.showHistoryPrompt", ng-init="leftBar.showSnap
   div(class="prompt-window history")
     div(class="prompt-window-holder", ng-if="!leftBar.projectHistory || leftBar.projectHistory && leftBar.projectHistory.length <= 0")
       | You have no snapshots for this project.
-    div(ng-repeat="item in leftBar.projectHistory | orderBy : $index : -1", ng-click="leftBar.selectedSnapshot = item;")
-      div(class="prompt-history-item", ng-class="{'active': leftBar.selectedSnapshot === item}")
+    div(class="prompt-history-item", ng-class="{'active': leftBar.selectedSnapshot === item}", ng-repeat="item in leftBar.projectHistory | orderBy : $index : -1", ng-click="leftBar.selectedSnapshot = item;")
+      div
         a(ng-dblclick="leftBar.showSnapshotStatus[item.datetime] = true;", ng-show="!leftBar.showSnapshotStatus[item.datetime]")
-          i(class="fa fa-caret-right")
+          i(class="fa fa-caret-right color-black")
         a(ng-dblclick="leftBar.showSnapshotStatus[item.datetime] = false;", ng-show="leftBar.showSnapshotStatus[item.datetime]")
-          i(class="fa fa-caret-down")
+          i(class="fa fa-caret-down color-black")
         i(class="fa fa-database color-primary")
         = " "
         | {{item.datetime}}

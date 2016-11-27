@@ -110,12 +110,12 @@
     }
 
     &.history {
-      padding: 0;
+      padding: 1px 0 0 0;
 
       .prompt-history-item {
         line-height: 22px;
         width: calc(100% - 2px);
-        margin: 1px 1px 0 1px;
+        margin: 0 1px 0 1px;
 
         &:nth-child(odd) {
           background: $bg-table-row;

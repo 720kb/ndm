@@ -7,7 +7,9 @@
   font-size: 11px !important;
   color: white !important;
 }
-
+.ace_gutter {
+  background: none !important;
+}
 .ace_gutter-cell {
 
   &.ace_error {

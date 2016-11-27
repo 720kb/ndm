@@ -1,5 +1,6 @@
 div(ng-controller='LeftBarController as leftBar')
   include ./editor-prompt.pug
+  include ./history-prompt.pug
   .left-column.bg-light.overflow-x-hidden
     .row
       h6.col-xs-12
@@ -12,8 +13,7 @@ div(ng-controller='LeftBarController as leftBar')
       a.row.project( ng-repeat='item in shell.projects track by $index', ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
         i.fa.fa-folder-o
         div
-          b {{ item.dirName }}
-          | {{leftBar.rightClickedProject}}
+          b {{item.dirName}}
         button(ng-click='leftBar.deleteProject(item, $event)')
           i.fa.fa-times-circle-o
     br

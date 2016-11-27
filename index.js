@@ -7,81 +7,6 @@
     , applicationTemplate = require('./conf/application.json')
     , menuTemplate = [
       {
-        'label': 'Edit',
-        'submenu': [
-          {
-            'role': 'undo'
-          },
-          {
-            'role': 'redo'
-          },
-          {
-            'type': 'separator'
-          },
-          {
-            'role': 'cut'
-          },
-          {
-            'role': 'copy'
-          },
-          {
-            'role': 'paste'
-          },
-          {
-            'role': 'pasteandmatchstyle'
-          },
-          {
-            'role': 'delete'
-          },
-          {
-            'role': 'selectall'
-          }
-        ]
-      },
-      {
-        'label': 'View',
-        'submenu': [
-          {
-            'label': 'Dev Tools',
-            'accelerator': process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
-            click(item, focusedWindow) {
-              if (focusedWindow) {
-                focusedWindow.toggleDevTools();
-              }
-            }
-          },
-          {
-            'type': 'separator'
-          },
-          {
-            'role': 'resetzoom'
-          },
-          {
-            'role': 'zoomin'
-          },
-          {
-            'role': 'zoomout'
-          },
-          {
-            'type': 'separator'
-          },
-          {
-            'role': 'togglefullscreen'
-          }
-        ]
-      },
-      {
-        'role': 'window',
-        'submenu': [
-          {
-            'role': 'minimize'
-          },
-          {
-            'role': 'close'
-          }
-        ]
-      },
-      {
         'role': 'help',
         'submenu': [
           {
@@ -93,13 +18,13 @@
           {
             'label': 'Documentation',
             click() {
-              shell.openExternal(`${packageJSON.homepage}/#readme`);
+              shell.openExternal(`${packageJSON.github}`);
             }
           },
           {
             'label': 'Report issues',
             click() {
-              shell.openExternal(`${packageJSON.homepage}/issues`);
+              shell.openExternal(`${packageJSON.bugs.url}`);
             }
           }
         ]
@@ -135,10 +60,6 @@
             'type': 'separator'
           },
           {
-            'role': 'services',
-            'submenu': []
-          },
-          {
             'type': 'separator'
           },
           {
@@ -169,38 +90,6 @@
           }
         ]
       });
-      menuTemplate[1].submenu.push(
-        {
-          'type': 'separator'
-        },
-        {
-          'label': 'Speech',
-          'submenu': [
-            {
-              'role': 'startspeaking'
-            },
-            {
-              'role': 'stopspeaking'
-            }
-          ]
-        });
-        menuTemplate[3].submenu = [
-          {
-            'role': 'close'
-          },
-          {
-            'role': 'minimize'
-          },
-          {
-            'role': 'zoom'
-          },
-          {
-            'type': 'separator'
-          },
-          {
-            'role': 'front'
-          }
-        ];
       } else {
         menuTemplate.unshift({
           'label': 'File',

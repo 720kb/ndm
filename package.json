@@ -4,18 +4,29 @@
   "description": "Npm Desktop Manager, GUI client for npm",
   "main": "index.js",
   "homepage": "https://720kb.github.io/ndm",
+  "github": "https://github.com/720kb/ndm",
   "author": "720kb",
   "authors": [
     "720kb",
     "Filippo Oretti",
     "Dario Andrei"
   ],
-  "license": "GNU",
+  "repository": {
+    "type" : "git",
+     "url" : "https://github.com/720kb/ndm.git"
+  },
   "copyright": "© 720kb - Filippo Oretti - Dario Andrei",
   "scripts": {
     "prestart": "gulp distify",
     "start": "electron .",
     "build": "npm install && npm prune && gulp dist && build"
+  },
+  "bugs": {
+    "url": "https://github.com/720kb/ndm/issues"
+  },
+  "license": {
+    "type": "GPL-3.0",
+    "url": "https://github.com/720kb/ndm/blob/master/LICENSE.md"
   },
   "build": {
     "appId": "net.720kb.ndm",

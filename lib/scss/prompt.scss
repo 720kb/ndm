@@ -129,6 +129,13 @@
           font-size: 12.5px;
         }
       }
+
+      .prompt-history-status {
+
+        .ng-ace-editor {
+          min-height: 100vh;
+        }
+      }
     }
   }
 

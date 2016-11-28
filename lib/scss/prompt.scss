@@ -10,10 +10,13 @@
   margin: 0 auto;
   width: 460px;
   z-index: 9999;
+  height: 250px;
 
   &.prompt {
 
     top: 69px;
+    overflow: hidden;
+    padding-bottom: 30px;
 
     i {
       margin-left: 12px;
@@ -89,20 +92,17 @@
     margin: 0 auto;
     float: none;
     padding: 5px;
-    height: 250px;
+    height: 100vh;
     overflow-y: auto;
     background: white;
     margin-bottom: 5px;
     margin-top: 5px;
     box-shadow: 1px 1px rgba(0, 0, 0, .25) inset, -1px -1px rgba(0, 0, 0, .13) inset;
-    resize: vertical;
     font-family: $font-terminal;
     font-size: 11px;
     color: $color-black;
-    max-height: 75vh;
 
     &.editor {
-      height: 330px;
       margin: 0 auto;
       margin-bottom: 5px;
       padding: 0 0 0 0;
@@ -159,8 +159,27 @@
   }
 
   .prompt-window-options {
+    position: absolute;
+    bottom: 0;
+    padding: 7px 1.5px 5px 1.5px;
+    width: 96%;
+    float: none;
     margin-left: 5px;
-    margin-right: 5px;
+    background: $bg-dialog;
+    z-index: inherit;
+
+    .prompt-resize-holder {
+      width: 130%;
+      height: 15px;
+      z-index: -1;
+      position: absolute;
+      bottom: 0;
+      left: -5%;
+
+      &:hover, &:focus {
+        cursor: ns-resize;
+      }
+    }
 
     i {
       float: left;

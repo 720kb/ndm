@@ -1,4 +1,4 @@
-div.dialog.prompt(ng-show="topMenu.activeLink === 'update'")
+div.dialog.prompt(ng-show="topMenu.activeLink === 'update'", ng-resizable)
   div(contenteditable="true", class="prompt-window")
     b
       | Updating npm
@@ -11,7 +11,7 @@ div.dialog.prompt(ng-show="topMenu.activeLink === 'update'")
     | {{ log.nowDatetime | date : 'mediumTime'}}
     div
       | =============================================
-    | Output >>>
+    | Output:
     div(contenteditable="true", ng-repeat="aLog in log.logs track by $index")
       | {{ aLog }}
   div(class="prompt-window-options")
@@ -19,3 +19,4 @@ div.dialog.prompt(ng-show="topMenu.activeLink === 'update'")
     i(class="fa fa-check color-primary", ng-show="log.logsFinished")
     button(ng-show="log.logsFinished", ng-click="topMenu.activeLink = false")
       | Close
+  div.prompt-resize-holder

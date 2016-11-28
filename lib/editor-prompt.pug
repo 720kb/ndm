@@ -1,4 +1,4 @@
-div.dialog.prompt(ng-show="leftBar.editorFilePath", ng-ace-editor, ng-ace-editor-theme="xcode", ng-ace-editor-mode="json", ng-ace-file="{{leftBar.editorFilePath}}" ng-model="aceFileModel")
+div.dialog.prompt(ng-show="leftBar.editorFilePath", ng-resizable, ng-ace-editor, ng-ace-editor-theme="xcode", ng-ace-editor-mode="json", ng-ace-file="{{leftBar.editorFilePath}}" ng-model="aceFileModel")
   div(class="prompt-window editor" autofocus)
     div(class="prompt-editor ng-ace-editor")
   div(class="prompt-window-options")
@@ -8,3 +8,4 @@ div.dialog.prompt(ng-show="leftBar.editorFilePath", ng-ace-editor, ng-ace-editor
       | Save
     button(ng-click="leftBar.editorFilePath = undefined; aceFileModel = undefined;")
       | Close
+    div.prompt-resize-holder

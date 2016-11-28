@@ -19,9 +19,18 @@ div(ng-controller='LeftBarController as leftBar')
             i.fa.fa-times-circle-o
         div
           .left-progress.color-white(ng-show="leftBar.npmInstallingProjects[item.dirName]")
-            | npm <b>install</b>
+            b
+             | npm
+            = " "
+            | install
           .left-progress.color-white(ng-show="leftBar.npmPruningProjects[item.dirName]")
-            | npm <b>prune</b>
+            b
+             | npm
+            = " "
+            | prune
           .left-progress.color-white(ng-show="leftBar.npmDedupingProjects[item.dirName]")
-            | npm <b>dedupe</b>
+            b
+             | npm
+            = " "
+            | dedupe
     br

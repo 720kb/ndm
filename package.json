@@ -12,8 +12,8 @@
     "Dario Andrei"
   ],
   "repository": {
-    "type" : "git",
-     "url" : "https://github.com/720kb/ndm.git"
+    "type": "git",
+    "url": "https://github.com/720kb/ndm.git"
   },
   "copyright": "© 720kb - Filippo Oretti - Dario Andrei",
   "scripts": {

@@ -1,101 +1,96 @@
 /*global require process __dirname*/
 (function withNode() {
   process.env.PATH = require('shell-path').sync();
-
   const {app, Menu, BrowserWindow, shell} = require('electron')
     , packageJSON = require('./package.json')
     , applicationTemplate = packageJSON.appTemplate;
   // Keep a global reference of the window object, if you don't, the window will
   // be closed automatically when the JavaScript object is garbage collected.
-
   let mainWindow = null;
 
   // Quit when all windows are closed.
   app.on('window-all-closed', () => {
-    // On OS X it is common for applications and their menu bar
-    // to stay active until the user quits explicitly with Cmd + Q
-    if (process.platform !== 'darwin') {
-
-      app.quit();
-    }
+    app.quit();
   });
 
   // This method will be called when Electron has finished
   // initialization and is ready to create browser windows.
   app.on('ready', () => {
-
-      const menuTemplate = [{
-        'label': 'Electron',
-        'submenu': [
-          {
-            'role': 'about'
-          },
-          {
-            'type': 'separator'
-          },
-          {
-            'type': 'separator'
-          },
-          {
-            'role': 'hide'
-          },
-          {
-            'role': 'hideothers'
-          },
-          {
-            'role': 'unhide'
-          },
-          {
-            'type': 'separator'
-          },
-          {
-            'label': 'Debug',
-              click(item, focusedWindow) {
-              if (focusedWindow) {
-                focusedWindow.toggleDevTools();
-              }
-            }
-          },
-          {
-            'type': 'separator'
-          },
-          {
-            'label': 'Homepage',
-            click() {
-              shell.openExternal(packageJSON.homepage);
-            }
-          },
-          {
-            'label': 'Documentation',
-            click() {
-              shell.openExternal(`${packageJSON.github}`);
-            }
-          },
-          {
-            'label': 'Report issues',
-            click() {
-              shell.openExternal(`${packageJSON.bugs.url}`);
-            }
-          },
-          {
-            'type': 'separator'
-          },
-          {
-            'label': 'Restart',
-            'accelerator': 'CmdOrCtrl+R',
-            click() {
-              app.relaunch();
-              app.quit();
-            }
-          },
-          {
-            'type': 'separator'
-          },
-          {
-            'role': 'quit'
+    const menuTemplate = [{
+      'label': packageJSON.name,
+      'submenu': [
+        {
+          'role': 'about'
+        },
+        {
+          'type': 'separator'
+        },
+        {
+          'type': 'separator'
+        },
+        {
+          'role': 'hide'
+        },
+        {
+          'role': 'hideothers'
+        },
+        {
+          'role': 'unhide'
+        },
+        {
+          'type': 'separator'
+        },
+        {
+          'label': 'Homepage',
+          click() {
+            shell.openExternal(packageJSON.homepage);
           }
-        ]
-      }];
+        },
+        {
+          'type': 'separator'
+        },
+        {
+          'label': 'Debug',
+            click(item, focusedWindow) {
+            if (focusedWindow) {
+              focusedWindow.openDevTools();
+            }
+          }
+        },
+        {
+          'type': 'separator'
+        },
+        {
+          'label': 'Documentation',
+          click() {
+            shell.openExternal(`${packageJSON.github}`);
+          }
+        },
+        {
+          'label': 'Report issues',
+          click() {
+            shell.openExternal(`${packageJSON.bugs.url}`);
+          }
+        },
+        {
+          'type': 'separator'
+        },
+        {
+          'label': 'Restart',
+          'accelerator': 'CmdOrCtrl+R',
+          click() {
+            app.relaunch();
+            app.quit();
+          }
+        },
+        {
+          'type': 'separator'
+        },
+        {
+          'role': 'quit'
+        }
+      ]
+    }];
 
     Menu.setApplicationMenu(Menu.buildFromTemplate(menuTemplate));
     // Create the browser window.

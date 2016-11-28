@@ -43,10 +43,25 @@
       "node_modules",
       "dist",
       "index.js",
-      "LICENSE.md",
-      "conf",
-      "!conf/tasks"
+      "LICENSE.md"
     ]
+  },
+  "appTemplate": {
+    "title": "ndm",
+    "width": 720,
+    "height": 480,
+    "minWidth": 720,
+    "show": false,
+    "minHeight": 460,
+    "center": true,
+    "movable": true,
+    "resizable": true,
+    "minimizable": true,
+    "maximizable": true,
+    "closable": true,
+    "fullscreenable": true,
+    "dragable": true,
+    "titleBarStyle": "hidden"
   },
   "directories": {
     "output": "./releases"

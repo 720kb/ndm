@@ -4,32 +4,7 @@
 
   const {app, Menu, BrowserWindow, shell} = require('electron')
     , packageJSON = require('./package.json')
-    , applicationTemplate = require('./conf/application.json')
-    , menuTemplate = [
-      {
-        'role': 'help',
-        'submenu': [
-          {
-            'label': 'Learn More',
-            click() {
-              shell.openExternal(packageJSON.homepage);
-            }
-          },
-          {
-            'label': 'Documentation',
-            click() {
-              shell.openExternal(`${packageJSON.github}`);
-            }
-          },
-          {
-            'label': 'Report issues',
-            click() {
-              shell.openExternal(`${packageJSON.bugs.url}`);
-            }
-          }
-        ]
-      }
-    ];
+    , applicationTemplate = packageJSON.appTemplate;
   // Keep a global reference of the window object, if you don't, the window will
   // be closed automatically when the JavaScript object is garbage collected.
 
@@ -49,8 +24,7 @@
   // initialization and is ready to create browser windows.
   app.on('ready', () => {
 
-    if (process.platform === 'darwin') {
-      menuTemplate.unshift({
+      const menuTemplate = [{
         'label': 'Electron',
         'submenu': [
           {
@@ -75,6 +49,38 @@
             'type': 'separator'
           },
           {
+            'label': 'Debug',
+              click(item, focusedWindow) {
+              if (focusedWindow) {
+                focusedWindow.toggleDevTools();
+              }
+            }
+          },
+          {
+            'type': 'separator'
+          },
+          {
+            'label': 'Homepage',
+            click() {
+              shell.openExternal(packageJSON.homepage);
+            }
+          },
+          {
+            'label': 'Documentation',
+            click() {
+              shell.openExternal(`${packageJSON.github}`);
+            }
+          },
+          {
+            'label': 'Report issues',
+            click() {
+              shell.openExternal(`${packageJSON.bugs.url}`);
+            }
+          },
+          {
+            'type': 'separator'
+          },
+          {
             'label': 'Restart',
             'accelerator': 'CmdOrCtrl+R',
             click() {
@@ -89,17 +95,7 @@
             'role': 'quit'
           }
         ]
-      });
-      } else {
-        menuTemplate.unshift({
-          'label': 'File',
-          'submenu': [
-            {
-              'role': 'quit'
-            }
-          ]
-        });
-      }
+      }];
 
     Menu.setApplicationMenu(Menu.buildFromTemplate(menuTemplate));
     // Create the browser window.

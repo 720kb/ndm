@@ -10,17 +10,18 @@ div(ng-controller='LeftBarController as leftBar')
         | Globals
       br
       h6.col-xs-12(ng-if='shell.projects.length > 0') Projects
-      a.row.project( ng-repeat='item in shell.projects track by $index', ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
-        i.fa.fa-folder-o
+      div(ng-repeat='item in shell.projects track by $index')
+        a.row.project( ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
+          i.fa.fa-folder-o
+          div
+            b {{item.dirName}}
+          button(ng-click='leftBar.deleteProject(item, $event)')
+            i.fa.fa-times-circle-o
         div
-          b {{item.dirName}}
-        button(ng-click='leftBar.deleteProject(item, $event)')
-          i.fa.fa-times-circle-o
+          .bottom-notifier.notifier-loading-red.color-white(ng-show="leftBar.npmInstallingProjects[item.dirName]")
+            | Running <b>install</b>
+          .bottom-notifier.notifier-loading-orange.color-white(ng-show="leftBar.npmPruningProjects[item.dirName]")
+            | Running <b>prune</b>
+          .bottom-notifier.notifier-loading-purple.color-white(ng-show="leftBar.npmDedupingProjects[item.dirName]")
+            | Running <b>dedupe</b>
     br
-  .bottom-notification-center
-    .bottom-notifier.notifier-loading-red.color-white(ng-repeat='item in shell.projects track by $index', ng-show="leftBar.npmInstallingProjects[item.dirName]")
-      | Running <b>$ npm install</b> in project <b>{{item.dirName}}/</b>
-    .bottom-notifier.notifier-loading-orange.color-white(ng-repeat='item in shell.projects track by $index', ng-show="leftBar.npmPruningProjects[item.dirName]")
-      | Running <b>$ npm prune</b> in project <b>{{item.dirName}}/</b>
-    .bottom-notifier.notifier-loading-purple.color-white(ng-repeat='item in shell.projects track by $index', ng-show="leftBar.npmDedupingProjects[item.dirName]")
-      | Running <b>$ npm dedupe</b> in project <b>{{item.dirName}}/</b>

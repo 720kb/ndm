@@ -1,18 +1,10 @@
-.bottom-notification-center {
-  bottom: 31px;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-}
-
 .bottom-notifier {
   animation: loadingStripes  1.5s linear infinite;
   box-shadow: 0 -1px 20px rgba(0, 0, 0, .18);
-  font-size: 11px;
-  line-height: 20px;
+  font-size: 9.5px;
+  line-height: 15px;
   padding: 0 1.5%;
-  text-shadow: 0 1px rgba(0, 0, 0, .3);
+  text-shadow: 0 1px rgba(0, 0, 0, .1);
   width: 100%;
 
   &.notifier-loading-red {

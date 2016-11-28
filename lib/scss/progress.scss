@@ -1,0 +1,11 @@
+.left-progress {
+  animation: loadingStripes  1.5s linear infinite;
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, .18);
+  font-size: 10px;
+  line-height: 15px;
+  padding: 0 1.5%;
+  text-shadow: 0 1px rgba(0, 0, 0, .1);
+  width: 100%;
+  background: $bg-progress-secondary;
+  text-indent: 7px;
+}

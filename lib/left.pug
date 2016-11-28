@@ -18,10 +18,10 @@ div(ng-controller='LeftBarController as leftBar')
           button(ng-click='leftBar.deleteProject(item, $event)')
             i.fa.fa-times-circle-o
         div
-          .bottom-notifier.notifier-loading-red.color-white(ng-show="leftBar.npmInstallingProjects[item.dirName]")
-            | Running <b>install</b>
-          .bottom-notifier.notifier-loading-orange.color-white(ng-show="leftBar.npmPruningProjects[item.dirName]")
-            | Running <b>prune</b>
-          .bottom-notifier.notifier-loading-purple.color-white(ng-show="leftBar.npmDedupingProjects[item.dirName]")
-            | Running <b>dedupe</b>
+          .left-progress.color-white(ng-show="leftBar.npmInstallingProjects[item.dirName]")
+            | npm <b>install</b>
+          .left-progress.color-white(ng-show="leftBar.npmPruningProjects[item.dirName]")
+            | npm <b>prune</b>
+          .left-progress.color-white(ng-show="leftBar.npmDedupingProjects[item.dirName]")
+            | npm <b>dedupe</b>
     br

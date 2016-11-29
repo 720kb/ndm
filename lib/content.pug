@@ -44,7 +44,10 @@
             b
               | Homepage:
             = " "
-            | {{content.packageViewInfos.homepage || '-'}}
+            a(ng-if="content.packageViewInfos.homepage", ng-click="shell.openBrowserLink(content.packageViewInfos.homepage)")
+              | content.packageViewInfos.homepage
+            span(ng-if="!content.packageViewInfos.homepage")
+              | -
           div.information
             b
               | Repository:
@@ -61,7 +64,8 @@
               | Issues:
             = " "
             a(ng-if="content.packageViewInfos.bugs.url", ng-click="shell.openBrowserLink(content.packageViewInfos.bugs.url)")
-            span(ng-if="!content.packageViewInfos.bugs.url")
+              | content.packageViewInfos.homepage
+            span(ng-if="!content.packageViewInfos.bugs || !content.packageViewInfos.bugs.url")
               | -
           div.information
             b

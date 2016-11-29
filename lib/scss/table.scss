@@ -62,6 +62,10 @@
 
     a {
       color: $color-primary;
+
+      &:hover {
+        background: $bg-muted-invisible;
+      }
     }
   }
 }

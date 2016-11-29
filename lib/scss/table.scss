@@ -57,7 +57,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    user-select: text;
+    -webkit-user-select: text;
     width: 100%;
     b {
       color: $color-muted;

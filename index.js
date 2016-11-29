@@ -16,7 +16,8 @@
   // This method will be called when Electron has finished
   // initialization and is ready to create browser windows.
   app.on('ready', () => {
-    const menuTemplate = [{
+    const menuTemplate = [
+      {
       'label': packageJSON.name,
       'submenu': [
         {
@@ -51,7 +52,7 @@
         },
         {
           'label': 'Debug',
-            click(item, focusedWindow) {
+          click(item, focusedWindow) {
             if (focusedWindow) {
               focusedWindow.openDevTools();
             }
@@ -88,6 +89,38 @@
         },
         {
           'role': 'quit'
+        }
+      ]
+    },
+    {
+      'label': 'Edit',
+      'submenu': [
+        {
+          'role': 'undo'
+        },
+        {
+          'role': 'redo'
+        },
+        {
+          'type': 'separator'
+        },
+        {
+          'role': 'cut'
+        },
+        {
+          'role': 'copy'
+        },
+        {
+          'role': 'paste'
+        },
+        {
+          'role': 'pasteandmatchstyle'
+        },
+        {
+          'role': 'delete'
+        },
+        {
+          'role': 'selectall'
         }
       ]
     }];

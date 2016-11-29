@@ -26,7 +26,7 @@
 }
 
 .table-body {
-  height: calc(100vh - 122px);
+  max-height: calc(70vh);
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 15px;

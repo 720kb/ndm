@@ -60,7 +60,9 @@
             b
               | Issues:
             = " "
-            | {{content.packageViewInfos.bugs.url || '-'}}
+            a(ng-if="content.packageViewInfos.bugs.url", ng-click="shell.openBrowserLink(content.packageViewInfos.bugs.url)")
+            span(ng-if="!content.packageViewInfos.bugs.url")
+              | -
           div.information
             b
               | License:

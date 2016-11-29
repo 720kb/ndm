@@ -59,5 +59,9 @@
     white-space: nowrap;
     user-select: text;
     width: 100%;
+
+    a {
+      color: $color-primary;
+    }
   }
 }

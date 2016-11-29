@@ -10,13 +10,15 @@
   margin: 0 auto;
   width: 460px;
   z-index: 9999;
-  height: 250px;
 
+  &.editor-prompt, &.history-prompt, &.logs-prompt{
+    height: 250px;
+  }
+  
   &.prompt {
 
     top: 69px;
     overflow: hidden;
-    padding-bottom: 30px;
 
     i {
       margin-left: 12px;

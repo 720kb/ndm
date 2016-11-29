@@ -45,7 +45,7 @@
               | Homepage:
             = " "
             a(ng-if="content.packageViewInfos.homepage", ng-click="shell.openBrowserLink(content.packageViewInfos.homepage)")
-              | content.packageViewInfos.homepage
+              | {{ content.packageViewInfos.homepage }}
             span(ng-if="!content.packageViewInfos.homepage")
               | -
           div.information
@@ -53,7 +53,6 @@
               | Repository:
             = " "
             | {{content.packageViewInfos.repository.url || '-'}}
-        div.col-xs-6
           div.information
             b
               | Author:
@@ -64,14 +63,21 @@
               | Issues:
             = " "
             a(ng-if="content.packageViewInfos.bugs.url", ng-click="shell.openBrowserLink(content.packageViewInfos.bugs.url)")
-              | content.packageViewInfos.homepage
+              | {{content.packageViewInfos.bugs.url}}
             span(ng-if="!content.packageViewInfos.bugs || !content.packageViewInfos.bugs.url")
               | -
           div.information
             b
               | License:
             = " "
-            | {{content.packageViewInfos.license}} {{content.packageViewInfos.license.url}}
+            span(ng-if="content.packageViewInfos.license && !content.packageViewInfos.license.type")
+              | {{content.packageViewInfos.license}}
+            span(ng-if="content.packageViewInfos.license.type")
+              | {{content.packageViewInfos.license.type}}
+            a(ng-if="content.packageViewInfos.license.url", ng-click="shell.openBrowserLink(content.packageViewInfos.license.url)")
+              | content.packageViewInfos.homepage
+            span(ng-if="!content.packageViewInfos.license && !content.packageViewInfos.license.url && !content.packageViewInfos.license.type")
+              | -
           div.information
             b
               | Description:

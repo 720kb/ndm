@@ -59,7 +59,10 @@
     white-space: nowrap;
     user-select: text;
     width: 100%;
-
+    b {
+      color: $color-muted;
+      font-weight: 500;
+    }
     a {
       color: $color-primary;
 

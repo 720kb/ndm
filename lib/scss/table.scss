@@ -26,7 +26,8 @@
 }
 
 .table-body {
-  max-height: calc(70vh);
+  //table - header - table-infos to calculate height
+  height: calc(100vh - 120px - 150px);
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 15px;
@@ -42,4 +43,21 @@
   background: $bg-progress;
   box-shadow: 0 -1px 16px rgba(0, 0, 0, .08) inset;
   animation: loadingStripes  1.5s linear infinite;
+}
+
+.table-infos {
+  height: 150px;
+  font-size: 10.5px;
+  padding: 0 2%;
+  background: $bg-light;
+  box-shadow: 0 -1px $bg-muted-more;
+
+  .information {
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    user-select: text;
+    width: 100%;
+  }
 }

@@ -32,6 +32,42 @@
           b(ng-if="aPackage.latest")
             | {{ aPackage.latest}}
         .col-xs-2 {{ aPackage.kind }}
-    div
-      | {{content.packageViewInfos}}
-      | {{content.packageViewInfos.name}}
+    div.table-infos
+      div.row
+        div.col-md-12
+          div.information
+            b
+              | Name:
+            = " "
+            | {{content.packageViewInfos.name || '-'}}
+          div.information
+            b
+              | Homepage:
+            = " "
+            | {{content.packageViewInfos.homepage || '-'}}
+          div.information
+            b
+              | Repository:
+            = " "
+            | {{content.packageViewInfos.repository.url || '-'}}
+        div.col-xs-6
+          div.information
+            b
+              | Author:
+            = " "
+            | {{content.packageViewInfos.author || '-'}}
+          div.information
+            b
+              | Issues:
+            = " "
+            | {{content.packageViewInfos.bugs.url || '-'}}
+          div.information
+            b
+              | License:
+            = " "
+            | {{content.packageViewInfos.license}} {{content.packageViewInfos.license.url}}
+          div.information
+            b
+              | Description:
+            = " "
+            | {{content.packageViewInfos.description || '-'}}

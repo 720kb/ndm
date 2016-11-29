@@ -11,7 +11,7 @@
 }
 
 body, html {
-  -webkit-user-select: none;
+  user-select: none;
   color: $color-444;
   cursor: default;
   font-family: $default-font-family;

@@ -76,6 +76,7 @@
     "font-awesome": "^4.5.0",
     "freshy": "^1.0.2",
     "npm": "^3.10.9",
+    "rimraf": "^2.5.4",
     "selection-model": "^0.11.0",
     "shell-path": "^2.0.0"
   },

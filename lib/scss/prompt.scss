@@ -10,11 +10,7 @@
   margin: 0 auto;
   width: 460px;
   z-index: 9999;
-  height: 250px;
-
-  &.prompt {
-
-    top: 69px;
+  top: 69px;
 
     i {
       margin-left: 12px;
@@ -83,27 +79,95 @@
         top: -1px;
       }
     }
+
+    &.dialog-window {
+      height:330px;
+    }
+
+    .window {
+      float: none;
+      margin:0 auto;
+      height: calc(100% - 30px);
+      overflow: auto;
+      box-shadow: 1px 1px rgba(0, 0, 0, .25) inset, -1px -1px rgba(0, 0, 0, .13) inset;
+      background: white;
+      margin-top:5px;
+      margin-bottom:5px;
+
+      .ng-ace-editor {
+        height: 100%;
+      }
+    }
+}
+
+.prompt-history-item {
+  line-height: 22px;
+  width: calc(100% - 2px);
+  margin: 0 1px 0 1px;
+
+  &:nth-child(odd) {
+    background: $bg-table-row;
   }
 
-  .prompt-window {
-    width: calc(100% - 10px);
-    margin: 0 auto;
-    float: none;
-    padding: 5px;
-    height: 100%;
-    overflow: hidden;
-    overflow-y: auto;
-    background: white;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    box-shadow: 1px 1px rgba(0, 0, 0, .25) inset, -1px -1px rgba(0, 0, 0, .13) inset;
-    font-family: $font-terminal;
-    font-size: 11px;
-    color: $color-black;
+  &.active {
+    background-color: $bg-table-row-highlight;
+  }
 
-    &.editor {
-      padding: 0 0 0 0;
+  i {
+    font-size: 12.5px;
+  }
+}
+
+.prompt-history-status {
+  width:100%;
+  margin:0 auto;
+  float:none;
+  height: 300px;
+  overflow: auto;
+}
+
+.prompt-window-infos {
+  font-size: 11.5px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.prompt-window-options {
+  padding: 1.5px;
+  
+  .prompt-resize-holder {
+    width: 130%;
+    height: 30px;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+
+    &:hover, &:focus, &:active {
+      cursor: ns-resize;
     }
+  }
+
+  i {
+    float: left;
+    position: relative;
+    top: 5px;
+    left: -13px;
+  }
+
+  button {
+    font-size: 10.5px;
+    float: right;
+  }
+}
+/*
+  .prompt-window {
+
+
+
     &.history {
       padding: 1px 0 0 0;
 
@@ -146,7 +210,6 @@
   }
 
   .prompt-window-options {
-    position: absolute;
     bottom: 0;
     padding: 7px 1.5px 5px 1.5px;
     width: 96%;
@@ -180,4 +243,4 @@
       float: right;
     }
   }
-}
+*/

@@ -1,5 +1,5 @@
-div.dialog.prompt(ng-show="leftBar.editorFilePath", ng-resizable, ng-ace-editor, ng-ace-editor-theme="xcode", ng-ace-editor-mode="json", ng-ace-file="{{leftBar.editorFilePath}}" ng-model="aceFileModel")
-  div(class="prompt-window editor")
+div.dialog.dialog-window(ng-show="leftBar.editorFilePath", ng-resizable, ng-ace-editor, ng-ace-editor-theme="xcode", ng-ace-editor-mode="json", ng-ace-file="{{leftBar.editorFilePath}}" ng-model="aceFileModel")
+  div(class="window")
     div(class="ng-ace-editor" autofocus)
   div(class="prompt-window-options")
     img(src="img/loading.svg", width="13", ng-show="(savingFile && !savedFile) || loadingFile")

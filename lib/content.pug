@@ -44,7 +44,7 @@
             b
               | Homepage:
             = " "
-            a(ng-if="content.packageViewInfos.homepage", ng-click="shell.openBrowserLink(content.packageViewInfos.homepage)")
+            a(title="Open in browser", ng-if="content.packageViewInfos.homepage", ng-click="shell.openBrowserLink(content.packageViewInfos.homepage)")
               | {{ content.packageViewInfos.homepage }}
             span(ng-if="!content.packageViewInfos.homepage")
               | -
@@ -62,7 +62,7 @@
             b
               | Issues:
             = " "
-            a(ng-if="content.packageViewInfos.bugs.url", ng-click="shell.openBrowserLink(content.packageViewInfos.bugs.url)")
+            a(title="Open in browser", ng-if="content.packageViewInfos.bugs.url", ng-click="shell.openBrowserLink(content.packageViewInfos.bugs.url)")
               | {{content.packageViewInfos.bugs.url}}
             span(ng-if="!content.packageViewInfos.bugs || !content.packageViewInfos.bugs.url")
               | -
@@ -74,7 +74,7 @@
               | {{content.packageViewInfos.license}}
             span(ng-if="content.packageViewInfos.license.type")
               | {{content.packageViewInfos.license.type}}
-            a(ng-if="content.packageViewInfos.license.url", ng-click="shell.openBrowserLink(content.packageViewInfos.license.url)")
+            a(title="Open in browser", ng-if="content.packageViewInfos.license.url", ng-click="shell.openBrowserLink(content.packageViewInfos.license.url)")
               | content.packageViewInfos.homepage
             span(ng-if="!content.packageViewInfos.license && !content.packageViewInfos.license.url && !content.packageViewInfos.license.type")
               | -

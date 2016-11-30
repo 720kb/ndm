@@ -10,15 +10,11 @@
   margin: 0 auto;
   width: 460px;
   z-index: 9999;
-
-  &.editor-prompt, &.history-prompt, &.logs-prompt{
-    height: 250px;
-  }
+  height: 250px;
 
   &.prompt {
 
     top: 69px;
-    overflow: hidden;
 
     i {
       margin-left: 12px;
@@ -94,7 +90,8 @@
     margin: 0 auto;
     float: none;
     padding: 5px;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden;
     overflow-y: auto;
     background: white;
     margin-bottom: 5px;
@@ -105,12 +102,8 @@
     color: $color-black;
 
     &.editor {
-      margin: 0 auto;
-      margin-bottom: 5px;
       padding: 0 0 0 0;
-      max-height: auto;
     }
-
     &.history {
       padding: 1px 0 0 0;
 
@@ -133,17 +126,9 @@
       }
 
       .prompt-history-status {
-
-        .ng-ace-editor {
-          min-height: 100vh;
-        }
+        height: 100vh;
       }
     }
-  }
-
-  .prompt-editor {
-    height: inherit;
-    width: 100%;
   }
 
   .prompt-window-holder {

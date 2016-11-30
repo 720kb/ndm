@@ -78,7 +78,7 @@
               | content.packageViewInfos.homepage
             span(ng-if="!content.packageViewInfos.license && !content.packageViewInfos.license.url && !content.packageViewInfos.license.type")
               | -
-          div.information
+          div.information(title="{{content.packageViewInfos.description}}")
             b
               | Description:
             = " "

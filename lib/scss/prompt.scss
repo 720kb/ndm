@@ -81,7 +81,7 @@
     }
 
     &.dialog-window {
-      height:330px;
+      height: 250px;
     }
 
     .window {
@@ -134,10 +134,13 @@
   text-overflow: ellipsis;
   display: inline-block;
 }
-
+.prompt-window-holder {
+  line-height: 100px;
+  text-align: center;
+}
 .prompt-window-options {
   padding: 1.5px;
-  
+
   .prompt-resize-holder {
     width: 130%;
     height: 30px;
@@ -163,84 +166,3 @@
     float: right;
   }
 }
-/*
-  .prompt-window {
-
-
-
-    &.history {
-      padding: 1px 0 0 0;
-
-      .prompt-history-item {
-        line-height: 22px;
-        width: calc(100% - 2px);
-        margin: 0 1px 0 1px;
-
-        &:nth-child(odd) {
-          background: $bg-table-row;
-        }
-
-        &.active {
-          background-color: $bg-table-row-highlight;
-        }
-
-        i {
-          font-size: 12.5px;
-        }
-      }
-
-      .prompt-history-status {
-        height: 100vh;
-      }
-    }
-  }
-
-  .prompt-window-holder {
-    line-height: 100px;
-    text-align: center;
-  }
-
-  .prompt-window-infos {
-    font-size: 11.5px;
-    max-width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-  }
-
-  .prompt-window-options {
-    bottom: 0;
-    padding: 7px 1.5px 5px 1.5px;
-    width: 96%;
-    float: none;
-    margin-left: 5px;
-    background: $bg-dialog;
-    z-index: inherit;
-
-    .prompt-resize-holder {
-      width: 130%;
-      height: 30px;
-      z-index: -1;
-      position: absolute;
-      bottom: 0;
-      left: -5%;
-
-      &:hover, &:focus {
-        cursor: ns-resize;
-      }
-    }
-
-    i {
-      float: left;
-      position: relative;
-      top: 5px;
-      left: -13px;
-    }
-
-    button {
-      font-size: 10.5px;
-      float: right;
-    }
-  }
-*/

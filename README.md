@@ -68,7 +68,8 @@ Feel free to contribute by forking, opening issues, pull requests and whatever y
 
 Doors are wide open!
 
-Here are the few guidelines to follow, just that!
+Below are the few guidelines to follow, in case, just that!
+
 [Contributing Guidelines](https://github.com/720kb/ndm/blob/master/CONTRIBUTING.md)
 
 ###License

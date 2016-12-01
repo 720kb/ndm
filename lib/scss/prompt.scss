@@ -1,7 +1,7 @@
 .dialog {
   background: $bg-dialog;
   border-radius: 0 0 5px 5px;
-  box-shadow: 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
+  box-shadow: 0 -20px 20px rgba(0,0,0, .04) inset, 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
   left: 0;
   padding: 5px;
@@ -85,17 +85,17 @@
     }
 
     .window {
+      margin: 5px 3px;
       float: none;
-      margin:0 auto;
       height: calc(100% - 30px);
       overflow: auto;
-      box-shadow: 1px 1px rgba(0, 0, 0, .25) inset, -1px -1px rgba(0, 0, 0, .13) inset;
+      box-shadow: 0 0 5px rgba(0,0,0, .3), 1px 1px rgba(0, 0, 0, .25) inset, -1px -1px rgba(0, 0, 0, .13) inset;
       background: white;
-      margin-top:5px;
-      margin-bottom:5px;
+      border-radius: .5px;
 
       .ng-ace-editor {
         height: 100%;
+        margin: 1px;
       }
     }
 }
@@ -139,7 +139,7 @@
   text-align: center;
 }
 .prompt-window-options {
-  padding: 1.5px;
+  padding: 1.5px 4px;
 
   .prompt-resize-holder {
     width: 130%;
@@ -157,8 +157,10 @@
   i {
     float: left;
     position: relative;
-    top: 5px;
+    top: 4px;
     left: -13px;
+    color: $color-777;
+    text-shadow: 0 1px white;
   }
 
   button {

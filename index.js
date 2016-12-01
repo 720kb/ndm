@@ -132,9 +132,7 @@
     mainWindow.loadURL(`file://'${__dirname}/dist/index.html`);
 
     mainWindow.on('ready-to-show', () => {
-      setTimeout(() => {
-        mainWindow.show();
-      }, 1000);
+      mainWindow.show();
     });
     // Emitted when the window is closed.
     mainWindow.on('closed', () => {

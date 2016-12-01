@@ -105,6 +105,10 @@
   width: calc(100% - 2px);
   margin: 0 1px 0 1px;
 
+  &:first-child {
+      margin-top: 1px;
+  }
+
   &:nth-child(odd) {
     background: $bg-table-row;
   }

@@ -61,7 +61,8 @@
     "closable": true,
     "fullscreenable": true,
     "dragable": true,
-    "titleBarStyle": "hidden"
+    "titleBarStyle": "hidden",
+    "offscreen": true
   },
   "directories": {
     "output": "./releases"

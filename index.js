@@ -1,4 +1,4 @@
-/*global require process __dirname*/
+/*global require process setTimeout __dirname*/
 (function withNode() {
   process.env.PATH = require('shell-path').sync();
   const {app, Menu, BrowserWindow, shell} = require('electron')
@@ -132,7 +132,9 @@
     mainWindow.loadURL(`file://'${__dirname}/dist/index.html`);
 
     mainWindow.on('ready-to-show', () => {
-      mainWindow.show();
+      setTimeout(() => {
+        mainWindow.show();
+      }, 1000);
     });
     // Emitted when the window is closed.
     mainWindow.on('closed', () => {

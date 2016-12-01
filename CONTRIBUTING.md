@@ -15,5 +15,7 @@ If you are so kind to help and support us, please consider following these guide
   
 - Be sure to always update your node and npm global version before starting coding your changes/fixs
 
+- If you are not sure or you have any doubt about what you are doing/changing: consider opening an issue and ask before going to PR or commit
+
 
 Thank you!

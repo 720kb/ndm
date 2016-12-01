@@ -76,6 +76,12 @@ Below are the few guidelines to follow, in case, just that!
 
 GNU GPLv3 [License](LICENSE.md).
 
+###Recommendations
+
+- Is highly recommended to install node and npm via Brew or Nvm
+- Is highly recommended to not start the app with sudo (WRONG! `sudo npm start`)
+- We reccomend to not rename `node_modules/` folder in your projects
+
 ###FAQ
 **Is ndm stable?**
 

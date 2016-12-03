@@ -1,11 +1,21 @@
 .left-progress {
-  animation: loadingStripes  1.5s linear infinite;
-  box-shadow: 0 -1px 20px rgba(0, 0, 0, .18);
+  animation: loadingStripes  1.3s linear infinite;
   font-size: 10px;
-  line-height: 15px;
+  margin: 0 auto;
+  line-height: 6px;
   padding: 0 1.5%;
-  text-shadow: 0 1px rgba(0, 0, 0, .1);
-  width: 100%;
+  margin-top: 20px;
+  width: 90%;
   background: $bg-progress-secondary;
-  text-indent: 7px;
+  border-radius: 20px;
+
+  &:first-child {
+    margin-top: 13px;
+  }
+
+  div {
+    color: $color-444;
+    position: relative;
+    top: -13px;
+  }
 }

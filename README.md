@@ -10,6 +10,10 @@
 </a>
 </p>
 
+###Screenshot
+<p align="center" style="text-align:center">
+  <img src="http://i.imgur.com/bnxdjg9.png"/>
+</p>
 ###What is this ?
 
 **ndm** formally _"Npm Desktop Manager"_ is the desktop GUI for npm.

@@ -82,7 +82,7 @@ GNU GPLv3 [License](LICENSE.md).
 ###Recommendations
 
 - Is highly recommended to install node and npm via Brew or Nvm
-- Is highly recommended to not start the app with sudo (WRONG! `sudo npm start`)
+- Is highly recommended to not start the app with `sudo` when developing or testing (WRONG! `sudo npm start`)
 - We reccomend to not rename `node_modules/` folder in your projects
 - We reccomend to snapshot projects inside ndm (Right click on a project -> snapshot) so that: any change or edit to the project can be reverted from the project History (Right click on a project -> History)
 
@@ -112,7 +112,7 @@ As soon as we are sure that the project is stable, it will be delivered to the o
 
 **Yarn?**
 
-Yarn is a great tool: we are looking forward to see what happens, also because it is still on first releases and many things could change in the meantime. Said that: if you have any idea or suggestion: you're welcome to share them!
+Yarn is a great tool: we are looking forward to see what happens, also because it is a brand new project and many things could change in the meantime. That said: if you have any idea or suggestion: here you're welcome to share and discuss!
 
 **Support?**
 

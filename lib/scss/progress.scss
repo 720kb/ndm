@@ -10,12 +10,16 @@
   border-radius: 20px;
 
   &:first-child {
-    margin-top: 13px;
+    margin-top: 16px;
   }
 
   div {
     color: $color-444;
     position: relative;
-    top: -13px;
+    top: -11px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
   }
 }

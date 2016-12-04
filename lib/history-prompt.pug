@@ -1,4 +1,4 @@
-div.dialog.dialog-window(ng-show="leftBar.showHistoryPrompt", ng-resizable, ng-init="leftBar.showSnapshotStatus = []")
+div.dialog.dialog-window(ng-if="leftBar.showHistoryPrompt", ng-resizable, ng-init="leftBar.showSnapshotStatus = []")
   div(class="window")
     div(class="prompt-window-holder", ng-if="!leftBar.projectHistory || leftBar.projectHistory && leftBar.projectHistory.length <= 0")
       | You have no snapshots for this project.

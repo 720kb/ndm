@@ -1,4 +1,4 @@
-div.dialog.dialog-window(ng-show="leftBar.editorFilePath", ng-resizable, ng-ace-editor, ng-ace-editor-theme="xcode", ng-ace-editor-mode="json", ng-ace-file="{{leftBar.editorFilePath}}" ng-model="aceFileModel")
+div.dialog.dialog-window(ng-if="leftBar.editorFilePath", ng-resizable, ng-ace-editor, ng-ace-editor-theme="xcode", ng-ace-editor-mode="json", ng-ace-file="{{leftBar.editorFilePath}}" ng-model="aceFileModel")
   div(class="window")
     div(class="ng-ace-editor" autofocus)
   div(class="prompt-window-options")

@@ -1,4 +1,4 @@
-div.dialog.prompt(ng-show="topMenu.activeLink === '4'")
+div.dialog.prompt(ng-if="topMenu.activeLink === '4'")
   form(ng-submit='topMenu.installVersionPackage(shell.currentSelectedPackages[0], topMenu.versionPackageVersion)')
     input(placeholder='Package name',
       type='text',

@@ -1,4 +1,4 @@
-div.dialog.prompt(ng-show="topMenu.activeLink === '1'")
+div.dialog.prompt(ng-if="topMenu.activeLink === '1'")
   form(ng-submit='topMenu.installPackage(topMenu.packageName, topMenu.newPackageKind)')
     input(placeholder='Package name',
       autofocus,

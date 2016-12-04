@@ -12,9 +12,9 @@
 
 ###What is this ?
 
-**ndm** formally _"npm desktop manager"_ is the client GUI for npm (MacOSX only for the moment).
+**ndm** formally _"Npm Desktop Manager"_ is the desktop GUI for npm.
 
-With **ndm** you can easily manage npm and npm packages directly from the couch, without any worries.
+With **ndm** you can easily manage npm and npm packages directly straight from the couch, without any worries.
 
 It is based on the [npm-cli](https://docs.npmjs.com/cli/npm) and developed over [Electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
 
@@ -29,7 +29,7 @@ The Shell is obviously very powerful.
 However: not all the people know how to use it from the scratch.
 Sometimes and very often, they can not use the Shell for intern/office/job reasons, or they are not willing to use it at all.
 
-Forget not that: using ndm, does not mean you can no longer use the Shell and viceversa.
+Forget not that: using ndm doesn't mean you can no longer use the Shell and viceversa.
 
 ###Download
 

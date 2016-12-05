@@ -1,4 +1,4 @@
-![github-banner.png](http://i.imgur.com/eC2Nidu.png)
+![github-banner.png](http://i.imgur.com/61OLE5Z.png)
 <p align="center" style="text-align:center">
   <img src="http://i.imgur.com/bnxdjg9.png"/>
 </p>

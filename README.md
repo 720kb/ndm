@@ -62,7 +62,7 @@ If you want to make your own executable:
 
 `$ npm install`
 
-Adjust `package.json` file [build](https://github.com/720kb/ndm/blob/master/package.json#L20) section to your needs, then run:
+Adjust `package.json` file [build](https://github.com/720kb/ndm/blob/master/package.json) field to your needs, then run:
 
 `$ npm run build`
 

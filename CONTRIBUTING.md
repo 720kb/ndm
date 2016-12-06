@@ -34,5 +34,6 @@ If you are so kind to help and support us, please consider following these guide
    - rewrote js file/s for a 50% and up
    - .... others to come, but these are mostly very important changes
 
+These guidelines are not imperative, it's just the simplest method to be synced with you, you can PR any file in the repo, and this same file too :ok_hand:
 
 Thank you!

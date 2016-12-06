@@ -86,8 +86,8 @@ GNU GPLv3 [License](LICENSE.md).
 
 - Is highly recommended to install node and npm via Brew or Nvm
 - Is highly recommended to not start the app with `sudo` when developing or testing (WRONG! `sudo npm start`)
-- We reccomend to not rename `node_modules/` folder in your projects
-- We reccomend to snapshot projects inside ndm (Right click on a project -> snapshot) so that: any change or edit to the project can be reverted from the project History (Right click on a project -> History)
+- We recommend to not rename `node_modules/` folder in your projects
+- We recommend to snapshot projects inside ndm (Right click on a project -> snapshot) so that: any change or edit to the project can be reverted from the project History (Right click on a project -> History)
 
 ###FAQ
 **Is ndm stable?**

@@ -6,6 +6,10 @@ If you are so kind to help and support us, please consider following these guide
 
 - No formatting errors (if you use [Atom](https://atom.io/) you just have to use the IDE default settings for formatting code and you are synced)
 
+- Use ONLY English language for all (everywhere in the code and outside the code)
+
+- No English typos (it can happen of course, just try avoid them as much as possible)
+
 - Just use .filerc files in your IDE (don't remove or disable the linters: .eslintrc, .jscslint and so on)
 
 - Just do not disable linters with inline comments (or at least remove comments as you want to PR) but be sure there are no errors in the end.

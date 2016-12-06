@@ -28,7 +28,7 @@ If you are so kind to help and support us, please consider following these guide
    - changed the HTML|CSS layout
    - changed UI and UX behavior
    - changed logo or icons or graphics in general
-   - changed package.json or changed dependencies
+   - changed package.json by changing | updating | removing dependencies
    - added new js files to the folder structure
    - changed the folders structure
    - rewrote js file/s for a 50% and up

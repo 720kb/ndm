@@ -17,5 +17,15 @@ If you are so kind to help and support us, please consider following these guide
 
 - If you are not sure or you have any doubt about what you are doing/changing: consider opening an issue and ask before going to PR or commit
 
+- If your changes are radicals, please open an issue or contact us [here](https://gitter.im/720kb/ndm), so that we can discuss it togheter before everything goes on. By radicals we can list for example: 
+   - created new tasks
+   - changed the HTML|CSS layout
+   - changed UI and UX behavior
+   - changed logo or icons or graphics in general
+   - changed package.json or changed dependencies
+   - added new js files to the folder structure
+   - rewrote js file/s for a 50% and up
+   - .... others to come, but these are mostly very important changes
+
 
 Thank you!

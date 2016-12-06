@@ -39,7 +39,7 @@ Forget not that: using ndm doesn't mean you can no longer use the Shell and vice
 
 ###Download
 
-Download **ndm** at this link: **[DOWNLOAD](https://github.com/720kb/ndm/releases/)**
+Download the latest **ndm** release **[here](https://github.com/720kb/ndm/releases/)**
 
 ###Develop
 
@@ -62,7 +62,7 @@ If you want to make your own executable:
 
 `$ npm install`
 
-Adjust `package.json` file [build](https://github.com/720kb/ndm/blob/master/package.json) field to your needs, then run:
+Adjust `package.json`  "[build](https://github.com/720kb/ndm/blob/master/package.json)" field to your needs, then run:
 
 `$ npm run build`
 

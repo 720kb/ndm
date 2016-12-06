@@ -24,6 +24,7 @@ If you are so kind to help and support us, please consider following these guide
    - changed logo or icons or graphics in general
    - changed package.json or changed dependencies
    - added new js files to the folder structure
+   - changed the folders structure
    - rewrote js file/s for a 50% and up
    - .... others to come, but these are mostly very important changes
 

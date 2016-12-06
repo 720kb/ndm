@@ -8,7 +8,7 @@ If you are so kind to help and support us, please consider following these guide
 
 - Use ONLY English language for all (everywhere in the code and outside the code)
 
-- No English typos (it can happen of course, just try avoid them as much as possible)
+- No English typos (it can happen of course, just try to avoid them as much as possible)
 
 - Just use .filerc files in your IDE (don't remove or disable the linters: .eslintrc, .jscslint and so on)
 

@@ -107,15 +107,16 @@ If you want to be 100% sure about this, just look at the source code, which is c
 ndm speed depends exclusively on your pc/device specs and [npm-cli](https://docs.npmjs.com/cli/npm) speed.
 We can't do much to speed up your computer or the npm commands.
 
-**Why Mac only?**
-
-We now focus on one OS but the app is developed keeping in mind that it will have to run also on other OSes. We won't _put too much meat on bbq_ for the moment, it is now very important to obtain an OS-abstracted and stable app.
-
-As soon as we are sure that the project is stable, it will be delivered to the other OSes.
-
 **Yarn?**
 
 Yarn is a great tool: we are looking forward to see what happens, also because it is a brand new project and many things could change in the meantime. That said: if you have any idea or suggestion: here you're welcome to share and discuss!
+
+
+**Why Mac only?**
+
+We now focus on one OS but the app is developed keeping in mind that it will have to run also on other OSs. We won't _put too much meat on bbq_ for the moment, it is now very important to obtain an OS-abstracted and stable app.
+
+As soon as we are sure that the project is stable, it will be delivered to the other OSs.
 
 **Support?**
 

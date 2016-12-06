@@ -12,7 +12,7 @@ If you are so kind to help and support us, please consider following these guide
 
 - No comments inside the code
 
-- Just use .filerc files in your IDE (don't remove or disable the linters: .eslintrc, .jscslint and so on)
+- Just use .lint files in your IDE (don't remove or disable the linters: .eslintrc, .jscslint and so on)
 
 - Just do not disable linters with inline comments (or at least remove comments as you want to PR) but be sure there are no errors in the end.
 

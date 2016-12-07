@@ -1,4 +1,4 @@
-div.dialog.dialog-window(ng-if="leftBar.showHistoryPrompt", ng-resizable, ng-init="leftBar.showSnapshotStatus = []")
+div.dialog.dialog-window(ng-if="leftBar.showHistoryPrompt", ng-init="leftBar.selectedSnapshot = false", ng-resizable, ng-init="leftBar.showSnapshotStatus = []")
   div(class="window")
     div(class="prompt-window-holder", ng-if="!leftBar.projectHistory || leftBar.projectHistory && leftBar.projectHistory.length <= 0")
       | You have no snapshots for this project.
@@ -15,16 +15,16 @@ div.dialog.dialog-window(ng-if="leftBar.showHistoryPrompt", ng-resizable, ng-ini
           div(class="ng-ace-editor")
   div(class="prompt-window-options")
     span(class="prompt-window-infos", title="{{leftBar.rightClickedProject.path}}")
-      img(src="img/loading.svg", width="13", ng-show="leftBar.restoringSnapshot && !leftBar.restoredSnapshot")
+      img(src="img/loading.svg", width="13", ng-show="leftBar.restoringSnapshot[leftBar.rightClickedProject.path] && !leftBar.restoredSnapshot[leftBar.rightClickedProject.path]")
       = " "
       | {{leftBar.rightClickedProject.dirName}}/
     button(ng-click="leftBar.showHistoryPrompt = undefined;")
       | Close
     button(ng-click="leftBar.deleteSnapshot()")
       | Delete
-    button(ng-click="leftBar.restoreSnapshot()", ng-disabled="leftBar.restoringSnapshot")
-      span(ng-show="!leftBar.restoringSnapshot")
+    button(ng-if="leftBar.projectHistory && leftBar.projectHistory.length > 0 && leftBar.selectedSnapshot", ng-click="leftBar.restoreSnapshot()", ng-disabled="leftBar.restoringSnapshot[leftBar.rightClickedProject.path]")
+      span(ng-show="!leftBar.restoringSnapshot[leftBar.rightClickedProject.path]")
         | Restore
-      span(ng-show="leftBar.restoringSnapshot")
+      span(ng-show="leftBar.restoringSnapshot[leftBar.rightClickedProject.path]")
         | Restoring
     div.prompt-resize-holder

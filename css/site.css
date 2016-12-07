@@ -108,25 +108,6 @@ margin:0;
   font-size:28px;
   margin-top:3px;
 }
-.bottom-shuttle{
-  margin-top: 100px;
-  text-shadow: 0 1px rgba(255, 255, 255, .3);
-  color:rgba(0,0,0, .56);
-  width:90%;
-  max-width:280px;
-  border-radius: 5px 5px 0 0;
-  border-bottom: 20px solid white;
-  bottom:-3px;
-  position: relative;
-  background: white;
-}
-.bottom-shuttle a.github-button{
-  color:rgba(0,0,0,0);
-}
-.bottom-shuttle i{
-  font-size: 18px;
-  vertical-align: middle;
-}
 .footer{
   border-top: 2px dashed #ddd;
 }

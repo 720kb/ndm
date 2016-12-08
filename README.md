@@ -88,7 +88,7 @@ GNU GPLv3 [License](LICENSE.md).
 - Is highly recommended to not start the app with `sudo` when developing or testing (WRONG! `sudo npm start`)
 - We recommend to not rename `node_modules/` folder in your projects
 - We recommend to snapshot projects inside ndm (Right click on a project -> snapshot) so that: any change or edit to the project can be reverted from the project History (Right click on a project -> History)
-- We reccomend to manage only `.git` projects with ndm (so that everything can be reverted to it's previous status)
+- We recommend to manage only `.git` projects with ndm (so that everything can be reverted to it's previous status)
 
 ###FAQ
 **Is ndm stable?**

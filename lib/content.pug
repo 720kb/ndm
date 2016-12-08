@@ -32,7 +32,7 @@
           b(ng-if="aPackage.latest")
             | {{ aPackage.latest}}
         .col-xs-2 {{ aPackage.kind }}
-    div.table-infos
+    div.table-infos(ng-if="content.packageInformations && content.packageInformations.length > 0")
       div.row
         div.col-md-12
           div.information

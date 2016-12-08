@@ -62,7 +62,7 @@ If you want to make your own executable:
 
 `$ npm install`
 
-Adjust `package.json`  "[build](https://github.com/720kb/ndm/blob/master/package.json)" field to your needs, then run:
+Adjust `package.json`  "[build](https://github.com/720kb/ndm/blob/master/package.json)" field according on how [electron-builder](https://github.com/electron-userland/electron-builder) works, then just run:
 
 `$ npm run build`
 

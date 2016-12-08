@@ -110,7 +110,7 @@ We can't do much to speed up your computer or the npm commands.
 
 **Yarn?**
 
-Yarn is a great tool: we are looking forward to see what happens, also because it is a brand new project and many things could change in the meantime. That said: if you have any idea or suggestion: here you're welcome to share and discuss!
+Yarn is a great tool: we are looking forward to seeing what happens, also because it is a brand new project and many things could change in the meantime. That said: if you have any idea or suggestion: here you're welcome to share and discuss!
 
 
 **Why Mac only?**

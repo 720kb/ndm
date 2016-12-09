@@ -42,7 +42,11 @@ You don't have to struggle with multiple terminal tabs or to go through the shel
 
 You get notified as a process has finished.
 
-You can edit project package.json in-place, "Snapshot" projects to try some changes (i.e: update pkgs, install new pkgs, delete pkgs, and so on..).
+You can list all the packages inside a project in a friendly way; see the common informations about every single package installed in one click.
+
+You can edit project package.json in-place, "Snapshot" projects and revert them from the "History" to try any changes before the time (i.e: update pkgs, install new pkgs, delete pkgs, and so on..).
+
+Commit after commit, PR after PR, this list will get bigger we think.
 
 Forget not that: using ndm doesn't mean you can no longer use the Shell and viceversa.
 

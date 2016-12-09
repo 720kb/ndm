@@ -33,7 +33,16 @@ Of course, we all love it too.
 The Shell is obviously very powerful.
 
 However: not all the people know how to use it from the scratch.
+
 Sometimes and very often, they can not use the Shell for intern/office/job reasons, or they are not willing to use it at all.
+
+Some of the value added of **ndm** we believe:
+
+You don't have to struggle with multiple terminal tabs or to go through the shell logs for checking warnigs and errors. You have all your projects, logs, errors, warnings, informations, in one single intuitive interface.
+
+You get notified as a process has finished.
+
+You can edit project package.json in-place, "Snapshot" projects to try some changes (i.e: update pkgs, install new pkgs, delete pkgs, and so on..).
 
 Forget not that: using ndm doesn't mean you can no longer use the Shell and viceversa.
 

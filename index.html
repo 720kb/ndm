@@ -67,13 +67,16 @@
   <div class="line center-content bg-white content">
     <div class="separator50"></div>
     <div class="separator10"></div>
-    <h3 class="color-muted font-one font-light line-compress center-content">
+    <h3 class="color-muted font-one font-medium line-compress center-content">
       At the moment ndm is available only for Mac.
     </h3>
     <div class="separator10"></div>
     <div class="separator10"></div>
     <h1 class="font-one font-medium line-compress color-muted center-content">
-      Latest Release: {{site.github.releases[0]['tag_name']}}
+      Latest Release:
+      <a class="font-one color-muted font-medium toggle-opacity-inverse-hover" href="{{site.github.releases[0]['url']}}">
+        v{{site.github.releases[0]['tag_name']}}
+      </a>
     </h1>
     <div class="separator50"></div>
     <a class="hide">

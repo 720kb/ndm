@@ -7,6 +7,9 @@ a, a *{
 small , small *, *.font-small{
   font-size: 12px;
 }
+h1, h1 * {
+  font-size: 23px;
+}
 .header{
   background: -webkit-linear-gradient(274deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
   background: linear-gradient(176deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
@@ -50,10 +53,12 @@ small , small *, *.font-small{
   box-shadow: 0 -2px 6px rgba(0,0,0, .1);
   border-top:1px solid #f4f6f6;
 }
+.logo, .logo * {
+  font-size: 14px;
+}
 .logo{
   margin-top:3px;
   text-shadow: 0 1px 0 rgba(0,0,0, .6);
-  font-size: 14px;
 }
 .logo img{
   margin-right: 10px;

@@ -2,3 +2,4 @@ node_modules/
 .tmp/
 .DS_Store
 dist/
+releases/

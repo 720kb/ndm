@@ -48,7 +48,7 @@ You can edit project package.json in-place, "Snapshot" projects and revert them 
 
 Commit after commit, PR after PR, this list will get bigger we think.
 
-Forget not that: using ndm doesn't mean you can no longer use the Shell and viceversa.
+**Forget not that:** using ndm doesn't mean you can no longer use the Shell and viceversa.
 
 ###Download
 

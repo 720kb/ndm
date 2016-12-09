@@ -38,17 +38,17 @@ Sometimes and very often, they can not use the Shell for intern/office/job reaso
 
 Some of the value added of **ndm** we believe:
 
-You don't have to struggle with multiple terminal tabs or to go through the shell logs for checking warnigs and errors. You have all your projects, logs, errors, warnings, informations, in one single intuitive interface.
+You don't have to struggle with multiple terminal tabs or to go through the shell logs for checking warnigs and errors; You have all your projects, logs, errors, warnings, informations, in one single intuitive interface.
 
 You get notified as a process has finished.
 
-You can list all the packages inside a project in a friendly way; see the common informations about every single package installed in one click.
+You can list all the packages inside a project in a friendly way; You can see the common informations about every single package installed in one click.
 
-You can edit project package.json in-place, "Snapshot" projects and revert them from the "History" to try any changes before the time (i.e: update pkgs, install new pkgs, delete pkgs, and so on..).
+You can edit project package.json in-place, "Snapshot" projects and revert them from the "History" prompt: this makes more easy to try any changes before the time (i.e: update pkgs, install new pkgs, delete pkgs, and so on..).
 
 Commit after commit, PR after PR, this list will get bigger we think.
 
-**Forget not that:** using ndm doesn't mean you can no longer use the Shell and viceversa.
+**Forget not that:** using ndm doesn't mean you can no longer use the CLI and viceversa.
 
 ###Download
 
@@ -69,7 +69,7 @@ _Run app_
 
 ###Build
 
-If you want to make your own executable:
+If you want to build your own executable:
 
 `$ git clone <repo> && cd ndm`
 

@@ -1,6 +1,8 @@
-/*global require process setTimeout __dirname*/
+/*global require process __dirname*/
 (function withNode() {
+
   process.env.PATH = require('shell-path').sync();
+
   const {app, Menu, BrowserWindow, shell} = require('electron')
     , packageJSON = require('./package.json')
     , applicationTemplate = packageJSON.appTemplate;
@@ -24,6 +26,13 @@
           'role': 'about'
         },
         {
+          'label': 'Check for Updates',
+          click() {
+            //***!!DEPRECATED this method will be remove ***!!, must be an autoupdater to check for this
+            mainWindow.webContents.send('menu:check-for-updates', packageJSON.version);
+          }
+        },
+        {
           'type': 'separator'
         },
         {
@@ -42,7 +51,7 @@
           'type': 'separator'
         },
         {
-          'label': 'Homepage',
+          'label': 'Website',
           click() {
             shell.openExternal(packageJSON.homepage);
           }

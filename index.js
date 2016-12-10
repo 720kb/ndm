@@ -26,6 +26,9 @@
           'role': 'about'
         },
         {
+          'type': 'separator'
+        },
+        {
           'label': 'Check for Updates',
           click() {
             //***!!DEPRECATED this method will be remove ***!!, must be an autoupdater to check for this

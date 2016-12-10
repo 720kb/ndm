@@ -7,9 +7,6 @@ a, a *{
 small , small *, *.font-small{
   font-size: 12px;
 }
-h1, h1 * {
-  font-size: 23px;
-}
 .header{
   background: -webkit-linear-gradient(274deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
   background: linear-gradient(176deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);

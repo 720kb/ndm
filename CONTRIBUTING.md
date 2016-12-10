@@ -6,7 +6,7 @@ If you are so kind to help and support us, please consider following these guide
 
 - No formatting errors (if you use [Atom](https://atom.io/) you just have to use the IDE default settings for formatting code and you are synced)
 
-- Use ONLY English language for all (everywhere in the code and outside the code)
+- Use ONLY English language (everywhere in the code and outside the code)
 
 - No English typos (it can happen of course, just try to avoid them as much as possible)
 

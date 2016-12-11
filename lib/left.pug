@@ -9,7 +9,8 @@ div(ng-controller='LeftBarController as leftBar')
         i.fa.fa-globe
         | Globals
       br
-      h6.col-xs-12(ng-if='shell.projects.length > 0') Projects
+      h6.col-xs-12(ng-if='shell.projects.length > 0')
+        | Projects
       div(ng-repeat='item in shell.projects track by $index')
         a.row.project( ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
           i.fa.fa-folder-o
@@ -18,22 +19,25 @@ div(ng-controller='LeftBarController as leftBar')
           button(ng-click='leftBar.deleteProject(item, $event)')
             i.fa.fa-times-circle-o
         div
+          .left-progress.left-progress-minor.color-white(ng-repeat="runningScript in leftBar.npmRunningScriptsProject[item.path] track by $index")
+            div
+              | &#8627; Running: {{runningScript}}
           .left-progress.color-white(ng-show="leftBar.npmInstallingProjects[item.dirName]")
             div
-              | &#8627; Installing ...
+              | &#8627; Installing
           .left-progress.color-white(ng-show="leftBar.npmReinstallingProjects[item.dirName]")
             div
-              | &#8627; Reinstalling ...
+              | &#8627; Reinstalling
           .left-progress.color-white(ng-show="leftBar.npmBuildingProjects[item.dirName]")
             div
-              | &#8627; Building ...
+              | &#8627; Building
           .left-progress.color-white(ng-show="leftBar.npmRebuildingProjects[item.dirName]")
             div
-              | &#8627; Rebuilding ...
+              | &#8627; Rebuilding
           .left-progress.color-white(ng-show="leftBar.npmPruningProjects[item.dirName]")
             div
-              | &#8627; Pruning ...
+              | &#8627; Pruning
           .left-progress.color-white(ng-show="leftBar.npmDedupingProjects[item.dirName]")
             div
-              | &#8627; Deduping ...
+              | &#8627; Deduping
     br

@@ -59,11 +59,13 @@ You can edit project package.json in-place, "Snapshot" projects and revert them 
 
 ### Download
 
-Download the latest **ndm** release **[here](https://github.com/720kb/ndm/releases/)**
+Download the latest **ndm** release **[here](https://github.com/720kb/ndm/releases/)** (MacOS only)
 
 ### Run locally 
 
-Only the MacOS version is available at the moment, but you can build/run `ndm` on your machine following these steps (A or B)
+Only the MacOS version is available at the moment to download, but you can build/run `ndm` on your machine following these easy steps 
+
+Choose A (easiest) or B (more convenient - you build the desktop app electron package):
 
 
 ### A. Run 

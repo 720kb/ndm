@@ -170,7 +170,7 @@ Just open an issue we'll be in touch.
 
 ### Contributors list
 
-contribute and edit the Readme to you to this list:
+Contribute and edit the Readme to you to this list:
 
 - [@45kb](https://github.com/45kb)
 - [@makevoid](https://github.com/makevoid)

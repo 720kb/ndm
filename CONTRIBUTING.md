@@ -2,7 +2,7 @@
 
 If you are so kind to help and support us, please consider following these guidelines before sending PRs or commits:
 
-- No lint errors (eslint, jscs, scss, pug etc ...)
+- No lint errors (eslint, jscs, scss, pug etc ...) if accidentally you find some then feel free to fix it as you go.
 
 - No formatting errors (if you use [Atom](https://atom.io/) you just have to use the IDE default settings for formatting code and you are synced)
 

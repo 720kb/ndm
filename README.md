@@ -66,7 +66,7 @@ Download the latest **ndm** release **[here](https://github.com/720kb/ndm/releas
 Only the MacOS version is available at the moment, but you can build/run `ndm` on your machine following these steps (A or B)
 
 
-### A. Run locally 
+### A. Run 
 
 #### (development mode - easiest)
 
@@ -83,7 +83,7 @@ _Run app_
 `$ npm start`
 
 
-### B. Build and run the application file
+### B. Build the application 
 
 #### (generates a Desktop application - the most convenient way)
 
@@ -96,6 +96,8 @@ If you want to build your own executable:
 Adjust `package.json`  "[build](https://github.com/720kb/ndm/blob/master/package.json)" field according on how [electron-builder](https://github.com/electron-userland/electron-builder) works, then just run:
 
 `$ npm run build`
+
+This will create the executable wich you can run whitout needing to open the terminal.
 
 
 ### Contribute

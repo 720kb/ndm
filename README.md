@@ -16,45 +16,61 @@
 
 </p>
 
-###What is this ?
+### What's ndm ?
 
 **ndm** formally _"Npm Desktop Manager"_ is the desktop GUI for npm.
 
-With **ndm** you can easily manage npm and npm packages directly from the couch, without any worries.
+With **ndm** you can easily manage npm and npm modules directly from the couch, without opening the a shell terminal.
 
-It is based on the [npm-cli](https://docs.npmjs.com/cli/npm) and developed over [Electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
+`ndm` is based on the [npm-cli](https://docs.npmjs.com/cli/npm) and packed up thanks to [Electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
 
 Feel free to reach any of us for any info/question, or to support the project in any way you wish.
 
-###I love the Shell, why use an app?
+### I love the Shell, why use an app?
 
 Of course, we all love it too.
 
 The Shell is obviously very powerful.
 
-However: not all the people know how to use it from the scratch.
+However, not all the people know how to use it from the scratch.
 
-Sometimes and very often, they can not use the Shell for intern/office/job reasons, or they are not willing to use it at all.
+Usually novice programmers or web designers can not use the Shell, so we thought we could build an alternative experience to `npm` dependencies management.
 
-Some of the value added of **ndm** we believe:
+Also sometimes we're just lazy, and we want to do everything with few clicks on a nice User Interface. 
 
-You don't have to struggle with multiple terminal tabs or to go through the shell logs for checking warnigs and errors; You have all your projects, logs, errors, warnings, informations, in one single intuitive interface.
 
-You get notified as a process has finished.
+Some of the added values of **ndm**:
 
-You can list all the packages inside a project in a friendly way; You can see the common informations about every single package installed in one click.
+- Less struggling with multiple terminal tabs
+- Long terminal logs and scrolling to find warnings and errors are a things of the past now
+- All your projects are "on the same page"
+- For every project you can check npm logs, errors, info 
+- Intuitive interface (no doc required)
+- Notifications (when your long long npm install finishes)
+- Check every package npm info with two clicks 
 
-You can edit project package.json in-place, "Snapshot" projects and revert them from the "History" prompt: this makes more easy to try any changes before the time (i.e: update pkgs, install new pkgs, delete pkgs, and so on..).
+More features:
 
-Commit after commit, PR after PR, this list will get bigger we think.
+You can edit project package.json in-place, "Snapshot" projects and revert them from the "History" prompt - this makes easier to try any changes before relasing them (i.e: update pkgs, install new pkgs, delete pkgs, and so on..)
 
-**Forget not that:** using ndm doesn't mean you can no longer use the CLI and viceversa.
 
-###Download
+**Note that:** using ndm doesn't mean you can no longer use the CLI - The power of the Shell is strong! Use it, young Padawan! :D
+
+
+### Download
 
 Download the latest **ndm** release **[here](https://github.com/720kb/ndm/releases/)**
 
-###Develop
+### Run locally 
+
+Only the MacOS version is available at the moment, but you can build/run `ndm` on your machine following these steps (A or B)
+
+
+### A. Run 
+
+#### (development mode - easiest)
+
+Build and run locally in development
 
 _Setup_
 
@@ -67,7 +83,9 @@ _Run app_
 `$ npm start`
 
 
-###Build
+### B. Build the application 
+
+#### (generates a Desktop application - the most convenient way)
 
 If you want to build your own executable:
 
@@ -79,10 +97,12 @@ Adjust `package.json`  "[build](https://github.com/720kb/ndm/blob/master/package
 
 `$ npm run build`
 
+This will create the executable wich you can run whitout needing to open the terminal.
 
-###Contribute
 
-We'll be much grateful if you help and contribute to the project, in any way you can or wish.
+### Contribute
+
+We'll be much grateful if you help and contribute to the project, in any way, even a feature request.
 Feel free to contribute by forking, opening issues, pull requests and whatever you think it's important for the project.
 
 Doors are wide open!
@@ -104,12 +124,14 @@ GNU GPLv3 [License](LICENSE.md).
 - Is recommended to manage only `.git` projects with ndm (so that everything can be reverted to it's previous status)
 - Is recommended to install and use always the LTS nodejs version
 
-###FAQ
+### FAQ
+
 **Is ndm stable?**
 
 The first releases are not guaranteed to be very stable, some problem/bug may happen.
 
 Just give it time, have some patience and, if you would, please contribute by forking, PR and/or creating issues, your help is always appreciated.
+
 
 **Do i have to worry about anything when using ndm?**
 
@@ -117,10 +139,12 @@ Actually not, not really.
 ndm does not run any malicious or env/system breaking commands in background, and it doesn't run anything outside npm native commands.
 If you want to be 100% sure about this, just look at the source code, which is clear and very readable.
 
+
 **Why is so slow on my pc?**
 
 ndm speed depends exclusively on your pc/device specs and [npm-cli](https://docs.npmjs.com/cli/npm) speed.
 We can't do much to speed up your computer or the npm commands.
+
 
 **Yarn?**
 
@@ -133,10 +157,21 @@ We now focus on one OS but the app is developed keeping in mind that it will hav
 
 As soon as we are sure that the project is stable, it will be delivered to the other OSs.
 
+
 **Support?**
 
 Just open an issue we'll be in touch.
 
-###Who we are
+
+### Core team
 
 [720kb](https://720kb.net)
+
+
+### Contributors list
+
+Contribute and edit the Readme to you to this list:
+
+- [@wouldgo](https://github.com/wouldgo)
+- [@45kb](https://github.com/45kb)
+- [@makevoid](https://github.com/makevoid)

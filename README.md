@@ -172,5 +172,6 @@ Just open an issue we'll be in touch.
 
 Contribute and edit the Readme to you to this list:
 
+- [@wouldgo](https://github.com/wouldgo)
 - [@45kb](https://github.com/45kb)
 - [@makevoid](https://github.com/makevoid)

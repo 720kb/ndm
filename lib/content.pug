@@ -27,11 +27,15 @@
         .col-xs-2
           span(ng-class="{'color-positive font-light': !aPackage.wanted && !aPackage.latest}")
             | {{ aPackage.current }}
-        .col-xs-2 {{ aPackage.wanted }}
+        .col-xs-2
+          i(class="fa fa-check", ng-if="!aPackage.wanted && !aPackage.latest")
+          | {{ aPackage.wanted }}
         .col-xs-2
           b(ng-if="aPackage.latest")
-            | {{ aPackage.latest}}
-        .col-xs-2 {{ aPackage.kind }}
+            | {{ aPackage.latest }}
+          i(class="fa fa-check color-positive", ng-if="!aPackage.wanted && !aPackage.latest")
+        .col-xs-2
+          | {{ aPackage.kind }}
     div.table-infos(ng-if="content.packageInformations && content.packageInformations.length > 0")
       div.row
         div.col-md-12

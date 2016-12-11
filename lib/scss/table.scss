@@ -23,6 +23,10 @@
   &:active, &.active {
     background: $bg-table-row-highlight;
   }
+
+  i {
+    color: $color-table-light-icons;
+  }
 }
 
 .table-body {

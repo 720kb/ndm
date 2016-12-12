@@ -18,7 +18,7 @@
     .row.table-header
       .col-xs-4.clickable(ng-click="content.sortTableBy('name')")
         | Package
-        i(class="fa", ng-class="{'fa-sort': !content.tableOrderBy.includes('-name') || !content.tableOrderBy.includes('name'), 'fa-sort-down': content.tableOrderBy.includes('name'), 'fa-sort-up': content.tableOrderBy.includes('-name')}")
+        i(class="fa", ng-class="{'fa-sort': !content.tableOrderBy.includes('-name') || !content.tableOrderBy.includes('name'), 'fa-sort-down': content.tableOrderBy.includes('-name'), 'fa-sort-up': content.tableOrderBy.includes('name')}")
       .col-xs-2
         | Current
       .col-xs-2
@@ -27,7 +27,7 @@
         | Latest
       .col-xs-2.clickable(ng-click="content.sortTableBy('kind')")
         | Env
-        i(class="fa", ng-class="{'fa-sort': !content.tableOrderBy.includes('-name') || !content.tableOrderBy.includes('kind'), 'fa-sort-down': content.tableOrderBy.includes('kind'), 'fa-sort-up': content.tableOrderBy.includes('-kind')}")
+        i(class="fa", ng-class="{'fa-sort': !content.tableOrderBy.includes('-kind') || !content.tableOrderBy.includes('kind'), 'fa-sort-down': content.tableOrderBy.includes('-kind'), 'fa-sort-up': content.tableOrderBy.includes('kind')}")
     .table-body
       .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: content.tableOrderBy', selection-model, selection-model-mode="'multiple'", selection-model-selected-items="content.selectedPackages", ng-click="shell.selectPackages(content.selectedPackages)", ng-class="{'active': content.selectedPackages.includes(aPackage), 'table-row-loading': shell.currentSelectedPackages.includes(aPackage) && content.showLoadingSelectedRow}")
         .col-xs-4 {{ aPackage.name }}
@@ -44,53 +44,4 @@
         .col-xs-2
           | {{ aPackage.kind }}
     div.table-infos(ng-show="content.packageInformations && content.packageInformations.length > 0")
-      div.row
-        div.col-md-12
-          div.information
-            b
-              | Name:
-            = " "
-            | {{content.packageViewInfos.name || '-'}}
-          div.information
-            b
-              | Homepage:
-            = " "
-            a(title="Open in browser", ng-if="content.packageViewInfos.homepage", ng-click="shell.openBrowserLink(content.packageViewInfos.homepage)")
-              | {{ content.packageViewInfos.homepage }}
-            span(ng-if="!content.packageViewInfos.homepage")
-              | -
-          div.information
-            b
-              | Repository:
-            = " "
-            | {{content.packageViewInfos.repository.url || '-'}}
-          div.information
-            b
-              | Author:
-            = " "
-            | {{content.packageViewInfos.author || '-'}}
-          div.information
-            b
-              | Issues:
-            = " "
-            a(title="Open in browser", ng-if="content.packageViewInfos.bugs.url", ng-click="shell.openBrowserLink(content.packageViewInfos.bugs.url)")
-              | {{content.packageViewInfos.bugs.url}}
-            span(ng-if="!content.packageViewInfos.bugs || !content.packageViewInfos.bugs.url")
-              | -
-          div.information
-            b
-              | License:
-            = " "
-            span(ng-if="content.packageViewInfos.license && !content.packageViewInfos.license.type")
-              | {{content.packageViewInfos.license}}
-            span(ng-if="content.packageViewInfos.license.type")
-              | {{content.packageViewInfos.license.type}}
-            a(title="Open in browser", ng-if="content.packageViewInfos.license.url", ng-click="shell.openBrowserLink(content.packageViewInfos.license.url)")
-              | content.packageViewInfos.homepage
-            span(ng-if="!content.packageViewInfos.license && !content.packageViewInfos.license.url && !content.packageViewInfos.license.type")
-              | -
-          div.information(title="{{content.packageViewInfos.description}}")
-            b
-              | Description:
-            = " "
-            | {{content.packageViewInfos.description || '-'}}
+      include ./package-informations.pug

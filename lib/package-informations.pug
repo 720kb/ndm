@@ -1,0 +1,50 @@
+div.row
+  div.col-md-12
+    div.information
+      b
+        | Name:
+      = " "
+      | {{content.packageViewInfos.name || '-'}}
+    div.information
+      b
+        | Homepage:
+      = " "
+      a(title="Open in browser", ng-if="content.packageViewInfos.homepage", ng-click="shell.openBrowserLink(content.packageViewInfos.homepage)")
+        | {{ content.packageViewInfos.homepage }}
+      span(ng-if="!content.packageViewInfos.homepage")
+        | -
+    div.information
+      b
+        | Repository:
+      = " "
+      | {{content.packageViewInfos.repository.url || '-'}}
+    div.information
+      b
+        | Author:
+      = " "
+      | {{content.packageViewInfos.author || '-'}}
+    div.information
+      b
+        | Issues:
+      = " "
+      a(title="Open in browser", ng-if="content.packageViewInfos.bugs.url", ng-click="shell.openBrowserLink(content.packageViewInfos.bugs.url)")
+        | {{content.packageViewInfos.bugs.url}}
+      span(ng-if="!content.packageViewInfos.bugs || !content.packageViewInfos.bugs.url")
+        | -
+    div.information
+      b
+        | License:
+      = " "
+      span(ng-if="content.packageViewInfos.license && !content.packageViewInfos.license.type")
+        | {{content.packageViewInfos.license}}
+      span(ng-if="content.packageViewInfos.license.type")
+        | {{content.packageViewInfos.license.type}}
+      a(title="Open in browser", ng-if="content.packageViewInfos.license.url", ng-click="shell.openBrowserLink(content.packageViewInfos.license.url)")
+        | content.packageViewInfos.homepage
+      span(ng-if="!content.packageViewInfos.license && !content.packageViewInfos.license.url && !content.packageViewInfos.license.type")
+        | -
+    div.information(title="{{content.packageViewInfos.description}}")
+      b
+        | Description:
+      = " "
+      | {{content.packageViewInfos.description || '-'}}

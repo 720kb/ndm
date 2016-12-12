@@ -54,7 +54,7 @@
           'type': 'separator'
         },
         {
-          'label': 'Website',
+          'label': 'Visit Website',
           click() {
             shell.openExternal(packageJSON.homepage);
           }

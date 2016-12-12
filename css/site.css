@@ -19,7 +19,7 @@ small , small *, *.font-small{
 .screenshot {
   width:90%;
   max-width: 900px;
-  bottom:-30px;
+  bottom:-10px;
   position: absolute;
   z-index:999;
   left:0;

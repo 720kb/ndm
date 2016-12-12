@@ -34,7 +34,7 @@
 
 .table-row {
   color: $color-333;
-  font-size: 11.5px;
+  font-size: 12px;
   line-height: 21px;
   padding: 0 10px;
 
@@ -73,18 +73,23 @@
 
 .table-infos {
   height: 150px;
-  font-size: 10.5px;
+  font-size: 11.5px;
   padding: 0 2%;
   background: $bg-light;
   box-shadow: 0 -1px $bg-muted-more;
 
   .information {
-    margin-top: 5px;
+    margin-top: 3px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     -webkit-user-select: text;
     width: 100%;
+
+    &:first-child {
+      margin-top: 8px;
+    }
+
     b {
       color: $color-muted;
       font-weight: 500;

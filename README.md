@@ -162,13 +162,13 @@ As soon as we are sure that the project is stable, it will be delivered to the o
 
 Just open an issue we'll be in touch.
 
-###License
-
-GNU GPLv3 [License](LICENSE.md).
-
 ### Core team
 
 [720kb](https://720kb.net)
+
+###License
+
+GNU GPLv3 [License](LICENSE.md).
 
 
 ### Contributors list

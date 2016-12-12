@@ -4,9 +4,18 @@
   line-height: 20px;
   padding: 0 10px;
 
+  .clickable:active {
+    opacity: .7;
+  }
   div {
     background: $bg-lighter;
     box-shadow: -1px -1px $color-ddd inset;
+  }
+
+  i {
+    bottom: -5px;
+    float: right;
+    position: relative;
   }
 }
 

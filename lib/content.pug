@@ -16,13 +16,21 @@
       small May take some time
   div(ng-show='content.loaded && !content.goBackHome')
     .row.table-header
-      .col-xs-4 Package
-      .col-xs-2 Current
-      .col-xs-2 Wanted
-      .col-xs-2 Latest
-      .col-xs-2 Env
+      .col-xs-4.clickable(ng-click="content.sortTableBy('name')")
+        | Package
+        i(class="fa", ng-class="{'fa-sort': !content.tableOrderBy.includes('-name') || !content.tableOrderBy.includes('name'), 'fa-sort-down': content.tableOrderBy.includes('name'), 'fa-sort-up': content.tableOrderBy.includes('-name')}")
+      .col-xs-2
+        | Current
+      .col-xs-2
+        | Wanted
+      .col-xs-2
+        | Latest
+      .col-xs-2.clickable(ng-click="content.sortTableBy('kind')")
+        | Env
+        i(class="fa", ng-class="{'fa-sort': !content.tableOrderBy.includes('-name') || !content.tableOrderBy.includes('kind'), 'fa-sort-down': content.tableOrderBy.includes('kind'), 'fa-sort-up': content.tableOrderBy.includes('-kind')}")
     .table-body
-      .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: \'name\'', selection-model, selection-model-mode="'multiple'", selection-model-selected-items="content.selectedPackages", ng-click="shell.selectPackages(content.selectedPackages)", ng-class="{'active': content.selectedPackages.includes(aPackage), 'table-row-loading': shell.currentSelectedPackages.includes(aPackage) && content.showLoadingSelectedRow}")
+      | {{content.tableOrderBy}}
+      .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: content.tableOrderBy', selection-model, selection-model-mode="'multiple'", selection-model-selected-items="content.selectedPackages", ng-click="shell.selectPackages(content.selectedPackages)", ng-class="{'active': content.selectedPackages.includes(aPackage), 'table-row-loading': shell.currentSelectedPackages.includes(aPackage) && content.showLoadingSelectedRow}")
         .col-xs-4 {{ aPackage.name }}
         .col-xs-2
           span(ng-class="{'color-positive font-light': !aPackage.wanted && !aPackage.latest}")

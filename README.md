@@ -113,10 +113,6 @@ Below are the few guidelines to follow, in case, just that!
 
 [Contributing Guidelines](https://github.com/720kb/ndm/blob/master/CONTRIBUTING.md)
 
-###License
-
-GNU GPLv3 [License](LICENSE.md).
-
 ###Recommendations
 
 - Is highly recommended to install node and npm via Brew or Nvm or N
@@ -166,6 +162,9 @@ As soon as we are sure that the project is stable, it will be delivered to the o
 
 Just open an issue we'll be in touch.
 
+###License
+
+GNU GPLv3 [License](LICENSE.md).
 
 ### Core team
 

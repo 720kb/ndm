@@ -3,20 +3,33 @@
   font-size: 11px;
   line-height: 20px;
   padding: 0 10px;
+  transition: opacity .3s linear;
 
-  .clickable:active {
-    opacity: .7;
+  .clickable {
+    &:active {
+      opacity: .7;
+    }
   }
+
   div {
     background: $bg-lighter;
     box-shadow: -1px -1px $color-ddd inset;
   }
 
   i {
-    bottom: -5px;
     float: right;
     position: relative;
+    &.fa-sort {
+      bottom: -5px;
+    }
+    &.fa-sort-up {
+      bottom: -8px;
+    }
+    &.fa-sort-down {
+      bottom: -3px;
+    }
   }
+
 }
 
 .table-row {

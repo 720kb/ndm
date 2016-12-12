@@ -29,7 +29,6 @@
         | Env
         i(class="fa", ng-class="{'fa-sort': !content.tableOrderBy.includes('-name') || !content.tableOrderBy.includes('kind'), 'fa-sort-down': content.tableOrderBy.includes('kind'), 'fa-sort-up': content.tableOrderBy.includes('-kind')}")
     .table-body
-      | {{content.tableOrderBy}}
       .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: content.tableOrderBy', selection-model, selection-model-mode="'multiple'", selection-model-selected-items="content.selectedPackages", ng-click="shell.selectPackages(content.selectedPackages)", ng-class="{'active': content.selectedPackages.includes(aPackage), 'table-row-loading': shell.currentSelectedPackages.includes(aPackage) && content.showLoadingSelectedRow}")
         .col-xs-4 {{ aPackage.name }}
         .col-xs-2
@@ -44,7 +43,7 @@
           i(class="fa fa-check color-positive", ng-if="!aPackage.wanted && !aPackage.latest")
         .col-xs-2
           | {{ aPackage.kind }}
-    div.table-infos(ng-if="content.packageInformations && content.packageInformations.length > 0")
+    div.table-infos(ng-show="content.packageInformations && content.packageInformations.length > 0")
       div.row
         div.col-md-12
           div.information

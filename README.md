@@ -44,10 +44,10 @@ Some of the added values of **ndm**:
 - Less struggling with multiple terminal tabs
 - Long terminal logs and scrolling to find warnings and errors are a things of the past now
 - All your projects are "on the same page"
-- For every project you can check npm logs, errors, info 
 - Intuitive interface (no doc required)
 - Notifications (when your long long npm install finishes)
-- Check every package npm info with two clicks 
+- Check every package npm informations with two clicks
+- Run npm commands and scripts in two clicks
 
 More features:
 

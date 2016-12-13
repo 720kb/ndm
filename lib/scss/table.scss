@@ -52,8 +52,8 @@
 }
 
 .table-body {
-  //table - header - table-infos to calculate height
-  height: calc(100vh - 120px - 150px);
+  //(table - header - table-infos) to calculate height
+  height: calc(100vh - 120px - 140px);
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 20px;

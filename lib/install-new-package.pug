@@ -15,9 +15,9 @@ div.dialog.prompt(ng-if="topMenu.activeLink === '1'")
       = " "
       | dev
       = " "
-    button(ng-class="{'disabled': topMenu.installingPackage}")
+    button(ng-class="{'disabled': topMenu.installingPackage || !topMenu.packageName}")
       span(ng-show="!topMenu.installingPackage")
-        | OK
+        | Install
       span(ng-show="topMenu.installingPackage")
         img(src="img/loading.svg", width="13")
     = " "

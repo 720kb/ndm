@@ -54,7 +54,7 @@ More features:
 You can edit project package.json in-place, "Snapshot" projects and revert them from the "History" prompt - this makes easier to try any changes before releasing them (i.e: update pkgs, install new pkgs, delete pkgs, and so on..)
 
 
-**Note that:** using ndm doesn't mean you can no longer use the CLI - The power of the Shell is strong! Use it, young Padawan! :D
+**Note that:** using **ndm** doesn't mean you can no longer use the CLI - The power of the Shell is strong! Use it, young Padawan! :D
 
 
 ### Download

@@ -22,7 +22,7 @@
 
 With **ndm** you can easily manage npm and npm modules directly from the couch, without opening the a shell terminal.
 
-`ndm` uses the [npm-cli](https://docs.npmjs.com/cli/npm) ( ```require('npm')``` ) and packed up thanks to [Electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
+`ndm` uses the [npm-cli](https://docs.npmjs.com/cli/npm) ( ``require('npm')`` ) and packed up thanks to [Electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
 
 Feel free to reach any of us for any info/question, or to support the project in any way you wish.
 

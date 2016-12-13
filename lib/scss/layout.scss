@@ -1,5 +1,5 @@
 .page {
-  height: calc(100vh - 30px);
+  height: calc(100vh - 23px);
 }
 
 .right-column {
@@ -11,7 +11,7 @@
 .left-column {
   box-shadow: -1px -1px #ddd inset;
   float: left;
-  height: calc(100vh - 99px);
+  height: calc(100vh - 92px);
   overflow-y: auto;
   padding: 0 15px;
   width: 200px;
@@ -69,7 +69,7 @@
       }
 
       button {
-        color: rgba(0, 0, 0, .28);
+        color: $color-muted-more;
         display: none;
         float: right;
         line-height: 0;
@@ -77,9 +77,13 @@
         max-width: 19px;
         min-width: 8px;
         position: relative;
-        text-indent: -2px;
+        transition: color .11s linear;
         width: 50%;
         z-index: 999;
+
+        &:hover {
+          color: $color-muted-less;
+        }
       }
 
       &:hover {

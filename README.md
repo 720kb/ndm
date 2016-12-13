@@ -18,7 +18,7 @@
 
 ### What's ndm ?
 
-**ndm** formally _"Npm Desktop Manager"_ is the desktop GUI for npm.
+**ndm** formally _"Npm Desktop Manager"_ is the desktop GUI for [npm](https://npmjs.com/).
 
 With **ndm** you can easily manage npm and npm modules directly from the couch, without opening the a shell terminal.
 

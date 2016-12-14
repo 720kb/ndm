@@ -17,14 +17,13 @@
   width: 200px;
 
   a {
-    color: $color-444;
+    color: $color-555;
     cursor: default;
     display: inline-block;
     font-size: 12.5px;
     line-height: 22px;
     margin: 0;
     padding: 0 9px;
-    text-shadow: 0 1px white;
     width: 100%;
 
     div {
@@ -58,13 +57,11 @@
         background: $bg-primary;
         color: white;
         cursor: default;
-        text-shadow: none;
 
         &:hover {
           background: $bg-primary;
           color: white;
           cursor: default;
-          text-shadow: none;
         }
       }
 

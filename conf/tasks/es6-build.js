@@ -8,7 +8,7 @@
     , rollupBabel = require('rollup-plugin-babel')
     , paths = require('../paths.json');
 
-  gulp.task('es6-build', ['front-end'], () => {
+  gulp.task('es6-build', ['annotate', 'front-end'], () => {
 
     rollup({
       'entry': `${paths.lib}js/index.js`,

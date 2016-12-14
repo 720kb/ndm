@@ -21,9 +21,9 @@
     cursor: default;
     display: inline-block;
     font-size: 12.5px;
-    line-height: 24px;
+    line-height: 22px;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 9px;
     text-shadow: 0 1px white;
     width: 100%;
 
@@ -69,11 +69,11 @@
       }
 
       button {
+        bottom: -2px;
         color: $color-muted-more;
         display: none;
         float: right;
         line-height: 0;
-        margin-top: 3px;
         max-width: 19px;
         min-width: 8px;
         position: relative;

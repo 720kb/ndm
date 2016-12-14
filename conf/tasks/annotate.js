@@ -6,7 +6,7 @@
     , ngAnnotate = require('gulp-ng-annotate')
     , paths = require('../paths.json');
 
-  gulp.task('annotate', () => {
+  gulp.task('annotate', ['es6-build'], () => {
 
     return gulp.src(`${paths.tmp}**/*.js`)
       .pipe(ngAnnotate({

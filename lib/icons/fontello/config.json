@@ -107,6 +107,12 @@
       "css": "caret-down",
       "code": 59398,
       "src": "fontawesome"
+    },
+    {
+      "uid": "12f4ece88e46abd864e40b35e05b11cd",
+      "css": "check",
+      "code": 59399,
+      "src": "fontawesome"
     }
   ]
 }

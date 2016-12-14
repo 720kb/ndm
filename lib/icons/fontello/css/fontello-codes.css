@@ -6,6 +6,7 @@
 .fa-remove:before { content: '\e804'; } /* '' */
 .fa-caret-right:before { content: '\e805'; } /* '' */
 .fa-caret-down:before { content: '\e806'; } /* '' */
+.fa-check:before { content: '\e807'; } /* '' */
 .fa-sort:before { content: '\f0dc'; } /* '' */
 .fa-sort-down:before { content: '\f0dd'; } /* '' */
 .fa-sort-up:before { content: '\f0de'; } /* '' */

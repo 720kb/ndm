@@ -26,13 +26,23 @@
           'role': 'about'
         },
         {
-          'type': 'separator'
+          'label': `Version ${packageJSON.version}`,
+          'enabled': false
         },
         {
-          'label': 'Check for Updates',
+          'label': 'Check for Updates...',
           click() {
             //***!!DEPRECATED this method will be remove ***!!, must be an autoupdater to check for this
             mainWindow.webContents.send('menu:check-for-updates', packageJSON.version);
+          }
+        },
+        {
+          'type': 'separator'
+        },
+        {
+          'label': 'Visit Website',
+          click() {
+            shell.openExternal(packageJSON.homepage);
           }
         },
         {
@@ -54,38 +64,6 @@
           'type': 'separator'
         },
         {
-          'label': 'Visit Website',
-          click() {
-            shell.openExternal(packageJSON.homepage);
-          }
-        },
-        {
-          'type': 'separator'
-        },
-        {
-          'label': 'Debug',
-          click(item, focusedWindow) {
-            if (focusedWindow) {
-              focusedWindow.openDevTools();
-            }
-          }
-        },
-        {
-          'type': 'separator'
-        },
-        {
-          'label': 'Documentation',
-          click() {
-            shell.openExternal(`${packageJSON.github}`);
-          }
-        },
-        {
-          'label': 'Report issues',
-          click() {
-            shell.openExternal(`${packageJSON.bugs.url}`);
-          }
-        },
-        {
           'type': 'separator'
         },
         {
@@ -95,9 +73,6 @@
             app.relaunch();
             app.quit();
           }
-        },
-        {
-          'type': 'separator'
         },
         {
           'role': 'quit'
@@ -133,6 +108,65 @@
         },
         {
           'role': 'selectall'
+        }
+      ]
+    },
+    {
+      'label': 'View',
+      'submenu': [
+        {
+        'label': 'Developer',
+        'submenu': [{
+            'label': 'Open DevTools',
+            click(item, focusedWindow) {
+              if (focusedWindow) {
+                focusedWindow.openDevTools();
+              }
+            }
+          }]
+        },
+        {
+          'type': 'separator'
+        },
+        {
+          'role': 'togglefullscreen'
+        }
+      ]
+    },
+    {
+      'role': 'window',
+      'submenu': [
+        {
+          'role': 'minimize'
+        },
+        {
+          'role': 'close'
+        }
+      ]
+    },
+    {
+      'role': 'help',
+      'submenu': [
+        {
+          'label': 'Documentation',
+          click() {
+            shell.openExternal(`${packageJSON.github}`);
+          }
+        },
+        {
+          'label': 'Report an issue',
+          click() {
+            shell.openExternal(`${packageJSON.bugs.url}`);
+          }
+        },
+        {
+          'type': 'separator'
+        },
+        {
+          'role': 'minimize'
+        },
+        {
+          'role': 'close'
         }
       ]
     }];

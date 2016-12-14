@@ -64,7 +64,7 @@ You can edit project package.json in-place, "Snapshot" projects and revert them 
 
 ### Run it locally 
 
-You can build/run `ndm` on your machine, OS doesn't matter since electron is cross-platform, just follow these easy steps:
+You can build and run `ndm` on Linux, Windows and MacOS, just follow these easy steps:
 
 Choose A (easiest) or B (more convenient):
 

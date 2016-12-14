@@ -74,12 +74,14 @@
         display: none;
         float: right;
         line-height: 0;
-        max-width: 19px;
+        padding-right: 5px;
+        max-width: 21px;
         min-width: 8px;
         position: relative;
         transition: color .11s linear;
         width: 50%;
         z-index: 999;
+        text-indent: -3px;
 
         &:hover {
           color: $color-muted-less;

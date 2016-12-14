@@ -16,6 +16,12 @@
 
 </p>
 
+### Download
+
+Download the latest **ndm** release **[here](https://720kb.github.io/ndm)**
+
+_You can browse all the releases at (https://github.com/720kb/ndm/releases)[https://github.com/720kb/ndm/releases]_
+
 ### What's ndm ?
 
 **ndm** formally _"Npm Desktop Manager"_ is the desktop GUI for [npm](https://npmjs.com/).
@@ -56,21 +62,16 @@ You can edit project package.json in-place, "Snapshot" projects and revert them 
 
 **Note that:** using **ndm** doesn't mean you can no longer use the CLI - The power of the Shell is strong! Use it, young Padawan! :D
 
+### Run it locally 
 
-### Download
-
-Download the latest **ndm** release **[here](https://github.com/720kb/ndm/releases/)** (MacOS only)
-
-### Run locally 
-
-Only the MacOS version is available at the moment to download, but you can build/run `ndm` on your machine following these easy steps 
+Only the MacOS version is available at the moment to download, but you can build/run `ndm` on your machine following these easy steps:
 
 Choose A (easiest) or B (more convenient - you build the desktop app electron package):
 
 
 ### A. Run 
 
-#### (development mode - easiest)
+_Development mode - easiest_
 
 Build and run locally in development
 
@@ -87,7 +88,7 @@ _Run app_
 
 ### B. Build the application 
 
-#### (generates a Desktop application - the most convenient way)
+_generate a Desktop application - the most convenient way_
 
 If you want to build your own executable:
 

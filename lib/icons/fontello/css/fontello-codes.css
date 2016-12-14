@@ -1,0 +1,16 @@
+
+.fa-times-circle-o:before { content: '\e800'; } /* '' */
+.fa-attention-circled:before { content: '\e801'; } /* '' */
+.fa-globe:before { content: '\e802'; } /* '' */
+.fa-plus-circle:before { content: '\e803'; } /* '' */
+.fa-remove:before { content: '\e804'; } /* '' */
+.fa-sort:before { content: '\f0dc'; } /* '' */
+.fa-sort-down:before { content: '\f0dd'; } /* '' */
+.fa-sort-up:before { content: '\f0de'; } /* '' */
+.fa-cloud-download:before { content: '\f0ed'; } /* '' */
+.fa-folder-o:before { content: '\f114'; } /* '' */
+.fa-rocket:before { content: '\f135'; } /* '' */
+.fa-level-up:before { content: '\f148'; } /* '' */
+.fa-database:before { content: '\f1c0'; } /* '' */
+.fa-history:before { content: '\f1da'; } /* '' */
+.fa-at:before { content: '\f1fa'; } /* '' */

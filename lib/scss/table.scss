@@ -19,14 +19,12 @@
   i {
     float: right;
     position: relative;
-    &.fa-sort {
-      bottom: -5px;
-    }
+
     &.fa-sort-up {
-      bottom: -8px;
+      top: 3px;
     }
     &.fa-sort-down {
-      bottom: -3px;
+      bottom: 2px;
     }
   }
 

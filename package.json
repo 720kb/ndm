@@ -74,7 +74,6 @@
     "bootstrap": "^3.3.6",
     "electron-storage": "^1.0.6",
     "electron-sudo": "^4.0.12",
-    "font-awesome": "^4.5.0",
     "freshy": "^1.0.2",
     "npm": "^4.0.3",
     "rimraf": "^2.5.4",

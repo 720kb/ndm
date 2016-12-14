@@ -168,7 +168,7 @@ Just open an issue we'll be in touch.
 
 ###License
 
-GNU GPLv3 [License](LICENSE.md).
+[GNU GPLv3](LICENSE.md).
 
 
 ### Contributors list

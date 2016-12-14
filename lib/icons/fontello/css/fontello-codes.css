@@ -4,6 +4,8 @@
 .fa-globe:before { content: '\e802'; } /* '' */
 .fa-plus-circle:before { content: '\e803'; } /* '' */
 .fa-remove:before { content: '\e804'; } /* '' */
+.fa-caret-right:before { content: '\e805'; } /* '' */
+.fa-caret-down:before { content: '\e806'; } /* '' */
 .fa-sort:before { content: '\f0dc'; } /* '' */
 .fa-sort-down:before { content: '\f0dd'; } /* '' */
 .fa-sort-up:before { content: '\f0de'; } /* '' */

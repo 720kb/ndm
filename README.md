@@ -64,16 +64,16 @@ You can edit project package.json in-place, "Snapshot" projects and revert them 
 
 ### Run it locally 
 
-Only the MacOS version is available at the moment to download, but you can build/run `ndm` on your machine following these easy steps:
+You can build/run `ndm` on your machine, OS doesn't matter since electron is cross-platform, just follow these easy steps:
 
-Choose A (easiest) or B (more convenient - you build the desktop app electron package):
+Choose A (easiest) or B (more convenient):
 
 
 ### A. Run 
 
 _Development mode - easiest_
 
-Build and run locally in development
+Build and run the app locally in development mode
 
 _Setup_
 
@@ -88,9 +88,9 @@ _Run app_
 
 ### B. Build the application 
 
-_generate a Desktop application - the most convenient way_
+_Generate the Desktop application - the most convenient way_
 
-If you want to build your own executable:
+To build your own executable:
 
 `$ git clone <repo> && cd ndm`
 
@@ -100,8 +100,7 @@ Adjust `package.json`  "[build](https://github.com/720kb/ndm/blob/master/package
 
 `$ npm run build`
 
-This will create the executable wich you can run whitout needing to open the terminal.
-
+This will create the executable which you can run whitout needing to open the terminal.
 
 ### Contribute
 

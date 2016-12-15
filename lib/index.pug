@@ -27,7 +27,7 @@ html
         img(src="img/npm-logo-black.svg")
         = " "
         | status:&nbsp;
-        b(class="active", ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
+        b(ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
           | available
         b(ng-show="!shell.loadingRegistryStatus && !shell.registryStatus")
           | unavailable

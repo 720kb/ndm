@@ -21,3 +21,15 @@ html
     .footer.bg-footer
       a(ng-click="shell.openBrowserLink('http://720kb.net')")
         | © 720kb
+      span(class="loader", ng-class="{'invisible': !shell.loadingRegistryStatus}")
+        img(src="img/loading.svg", width="16")
+      span(class="npm-status", ng-init="shell.checkRegistryStatus()", ng-mouseenter="shell.checkRegistryStatus()")
+        img(src="img/npm-logo-black.svg")
+        = " "
+        | status:&nbsp;
+        b(class="active", ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
+          | available
+        b(ng-show="!shell.loadingRegistryStatus && !shell.registryStatus")
+          | unavailable
+        b(ng-show="shell.loadingRegistryStatus")
+          | checking

@@ -7,12 +7,44 @@
   font-size: 10px;
   font-weight: 100;
   height: 24px;
-  line-height: 23px;
+  line-height: 22.5px;
   padding: 0 15px;
   position: fixed;
   width: 100%;
   z-index: 9;
 
+  span {
+    float: right;
+    position: relative;
+    right: -5px;
+
+    img {
+      vertical-align: middle;
+      width: 25px;
+    }
+
+    &.npm-status {
+      min-width: 108px;
+      img {
+        opacity: .7;
+      }
+      .active {
+        color: $color-primary;
+      }
+      
+      b {
+
+        font-weight: 500;
+      }
+    }
+
+    &.loader {
+
+      img {
+        width: 16px;
+      }
+    }
+  }
   a {
     color: $color-666;
     opacity: .75;
@@ -21,6 +53,5 @@
     &:active {
       opacity: 1;
     }
-
   }
 }

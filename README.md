@@ -129,6 +129,7 @@ Below are the few guidelines to follow, in case, just that!
 - Is recommended to snapshot projects inside ndm (Right click on a project -> snapshot) so that: any change or edit to the project can be reverted from the project History (Right click on a project -> History)
 - Is recommended to manage only `.git` projects with ndm (so that everything can be reverted to it's previous status)
 - Is recommended to install and use always the LTS nodejs version
+- Is highly reccomended to not Uninstall or Install npm globally using ndm if yo don't know what you are doing. (this should be up to tools such as nvm, brew, etc..)
 
 ### FAQ
 

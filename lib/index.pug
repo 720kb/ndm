@@ -26,7 +26,7 @@ html
       span(class="npm-status", ng-init="shell.checkRegistryStatus()", ng-mouseenter="shell.checkRegistryStatus()")
         img(src="img/npm-logo-black.svg")
         = " "
-        | status:&nbsp;
+        | registry:&nbsp;
         b(ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
           | available
         b(ng-show="!shell.loadingRegistryStatus && !shell.registryStatus")

@@ -19,7 +19,7 @@
 ### Download
 **[Download the latest release](https://720kb.github.io/ndm)**
 
-_You can browse all the releases at [github.com/720kb/ndm/releases](https://github.com/720kb/ndm/releases)_
+###### You can browse all the releases at [github.com/720kb/ndm/releases](https://github.com/720kb/ndm/releases)
 
 
 ### Homebrew

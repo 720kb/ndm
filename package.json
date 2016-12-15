@@ -46,6 +46,14 @@
       "LICENSE.md"
     ]
   },
+  "social": {
+    "twitter": {
+      "url": "https://twitter.com/720kb_"
+    },
+    "gitter": {
+      "url": "https://gitter.im/720kb/ndm"
+    }
+  },
   "appTemplate": {
     "title": "ndm",
     "width": 720,

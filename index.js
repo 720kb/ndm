@@ -163,6 +163,21 @@
           'type': 'separator'
         },
         {
+          'label': 'Join Chat',
+          click() {
+            shell.openExternal(`${packageJSON.social.gitter.url}`);
+          }
+        },
+        {
+          'label': 'Follow on Twitter',
+          click() {
+            shell.openExternal(`${packageJSON.social.twitter.url}`);
+          }
+        },
+        {
+          'type': 'separator'
+        },
+        {
           'role': 'minimize'
         },
         {

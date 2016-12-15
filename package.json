@@ -89,7 +89,7 @@
     "shell-path": "^2.0.0"
   },
   "devDependencies": {
-    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
     "del": "^2.2.0",
     "electron": "^1.4.10",
     "electron-builder": "^10.6.1",

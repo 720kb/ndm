@@ -3,7 +3,7 @@
   background: $bg-gradient-footer;
   border-top: 1px solid $color-ccc;
   bottom: 0;
-  color: $color-777;
+  color: $color-555;
   font-size: 10px;
   font-weight: 100;
   height: 24px;
@@ -27,7 +27,7 @@
       min-width: 108px;
 
       img {
-        opacity: .52;
+        opacity: .63;
       }
 
       b {
@@ -43,7 +43,7 @@
     }
   }
   a {
-    color: $color-666;
+    color: $color-444;
     opacity: .75;
 
     &:hover,

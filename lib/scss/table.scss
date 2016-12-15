@@ -47,6 +47,16 @@
   i {
     color: $color-table-light-icons;
   }
+
+  &.disabled {
+    background: $bg-light;
+    opacity: .5;
+
+    &:active, &:focus {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
 }
 
 .table-body {

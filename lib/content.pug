@@ -29,7 +29,7 @@
         | Env
         i(class="fa", ng-class="{'fa-sort': !content.tableOrderBy.includes('-kind') || !content.tableOrderBy.includes('kind'), 'fa-sort-down': content.tableOrderBy.includes('-kind'), 'fa-sort-up': content.tableOrderBy.includes('kind')}")
     .table-body
-      .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: content.tableOrderBy', selection-model, selection-model-mode="'multiple'", selection-model-selected-items="content.selectedPackages", ng-click="shell.selectPackages(content.selectedPackages)", ng-class="{'active': content.selectedPackages.includes(aPackage), 'table-row-loading': shell.currentSelectedPackages.includes(aPackage) && content.showLoadingSelectedRow}")
+      .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: content.tableOrderBy', title="", ng-attr-title="{{content.isGlobalProject && aPackage.name === 'npm' ? 'Do not perform npm global actions from here': ''}}", selection-model, selection-model-mode="'multiple'", selection-model-selected-items="content.selectedPackages", ng-click="shell.selectPackages(content.selectedPackages)", ng-class="{'disabled': content.isGlobalProject && aPackage.name === 'npm', 'active': content.selectedPackages.includes(aPackage), 'table-row-loading': shell.currentSelectedPackages.includes(aPackage) && content.showLoadingSelectedRow}")
         .col-xs-4 {{ aPackage.name }}
         .col-xs-2
           span(ng-class="{'color-positive font-light': !aPackage.wanted && !aPackage.latest}")

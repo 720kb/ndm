@@ -24,7 +24,6 @@
     }
 
     &.npm-status {
-      min-width: 108px;
 
       img {
         opacity: .63;
@@ -36,9 +35,20 @@
     }
 
     &.loader {
-
+      min-width: 22px;
+      text-align: right;
       img {
         width: 16px;
+      }
+
+      i {
+        position:relative;
+        bottom:-.5px;
+        color: $color-666;
+
+        &.active {
+          color: $color-green;
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "name": "ndm",
-  "version": "0.0.4-beta",
+  "version": "0.0.5-beta",
   "description": "Npm Desktop Manager, GUI client for npm",
   "main": "index.js",
   "homepage": "https://720kb.github.io/ndm",

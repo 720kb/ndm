@@ -37,14 +37,15 @@
       content: attr(placeholder);
     }
     br {
-      display:none;
+      display: none;
     }
     * {
-      display:inline;
-      white-space:nowrap;
+      display: inline;
+      white-space: nowrap;
     }
     span {
       background: yellow;
+      padding: 0 3px;
     }
   }
 

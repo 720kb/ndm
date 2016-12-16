@@ -24,7 +24,8 @@
     }
 
     &.npm-status {
-
+      min-width: 108px;
+      
       img {
         opacity: .63;
       }
@@ -35,8 +36,9 @@
     }
 
     &.loader {
-      min-width: 22px;
+      min-width: 18px;
       text-align: right;
+
       img {
         width: 16px;
       }

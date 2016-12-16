@@ -16,6 +16,10 @@ small , small *, *.font-small{
   overflow: hidden;
   min-height: 700px;
 }
+.slogan {
+  position: relative;
+  bottom: -10px;
+}
 .screenshot {
   width:90%;
   max-width: 900px;
@@ -26,6 +30,7 @@ small , small *, *.font-small{
   right:0;
 }
 .line-max {
+  max-width: 1050px;
   width:92%;
   float:none;
   margin:0 auto;

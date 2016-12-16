@@ -76,7 +76,7 @@ small , small *, *.font-small{
 }
 .download-link{
   border-radius:4px;
-  width: 190px;
+  min-width: 190px;
   height:34px;
   padding:8px 3px;
   display:inline-block;

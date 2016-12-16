@@ -85,18 +85,14 @@ small , small *, *.font-small{
   transition: none;
   line-height: 32px;
 }
-
+.download-link.linux {
+  background: #eee;
+}
 .download-link:hover{
   box-shadow: 0 5px 10px rgba(0,0,0, .2);
 }
-.download-link:active,.download-link:hover:active{
-  box-shadow: 0 0 0;
-}
 .download-link.disabled,.download-link.disabled:hover{
-  opacity:.8;
   cursor: not-allowed;
-  background: #ddd;
-  box-shadow:none;
 }
 .download-link i{
   font-size:28px;

@@ -26,15 +26,15 @@ small , small *, *.font-small{
   right:0;
 }
 .line-max {
-  width:90%;
+  width:92%;
   float:none;
   margin:0 auto;
 }
 .top-menu a {
   letter-spacing: .2px;
   text-shadow: 0 1px 0 rgba(0,0,0, .6);
-  line-height: 40px;
-  margin-right: 2%;
+  line-height: 45px;
+  margin-right: 3%;
 }
 .top-menu a i{
   font-size: 17px;

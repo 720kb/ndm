@@ -1,0 +1,136 @@
+.title {
+  float: none;
+  left: 0;
+  line-height: 26px;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.top-menu {
+  -webkit-app-region: drag;
+  background: $bg-lightgrey,  $bg-gradient-grey;
+  box-shadow: 0 -1px $color-bbb inset, 0 -1px $color-ccc inset;
+  padding: 20px 10px 3px 10px;
+  width: 100%;
+
+  a {
+    color: $color-444;
+    display: block;
+    font-size: 12px;
+    padding: 2px 0;
+    text-align: center;
+    text-shadow: 0 1px rgba(255, 255, 255, .5);
+
+    &:active, &.active {
+      color: $color-444;
+
+      i {
+        color: $color-primary;
+      }
+    }
+
+    &.pull-right {
+      margin-left: 11px;
+    }
+
+    i {
+      bottom: -2px;
+      font-size: 24.5px;
+      line-height: 0;
+      margin-top: 13px;
+      position: relative;
+      text-shadow: 0 1px rgba(255, 255, 255, .7);
+    }
+  }
+
+  .badge-version {
+    font-size: 10px;
+    height: 13px;
+    line-height: 8px;
+    margin-left: -20px;
+    margin-top: -18px;
+    padding: 2px 4px;
+    position: absolute;
+    text-shadow: 0 1px rgba(255, 255, 255, .3);
+    color: $color-666;
+
+    i {
+      margin: 0;
+      bottom: 0;
+      font-size: 11px;
+      color: $color-primary;
+    }
+  }
+
+  .button-global {
+    background: $bg-lighter;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 1px 1px rgba(0, 0, 0, .1);
+    font-size: 12px;
+    position: relative;
+    bottom: -14px;
+    right: -30px;
+    padding: 2px 4px;
+    text-shadow: 0 1px white;
+
+    i {
+      font-size: 14px;
+      position: relative;
+      bottom: -.5px;
+      margin-right: -2px;
+    }
+
+    &:active {
+      background: rgba(0, 0, 0, .04);
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, .09) inset, 0 1px rgba(0, 0, 0, .09) inset;
+      color: $color-999;
+      text-shadow: none;
+    }
+  }
+
+  button {
+    font-size: 12px;
+    height: 20px;
+    line-height: 15px;
+    margin-top: 15px;
+    max-width: 100px;
+    overflow: hidden;
+    text-shadow: 0 1px rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    text-indent: -2px;
+
+    input {
+      &[type='file'] {
+        height: 40px;
+        left: -15px;
+        max-width: 100px;
+        min-width: 100%;
+        opacity: 0;
+        position: relative;
+        top: -20px;
+      }
+    }
+
+    i {
+      color: $color-primary;
+      font-size: 15px;
+      text-shadow: 0 1px rgba(255, 255, 255, .5);
+      vertical-align: text-bottom;
+    }
+
+    &:active {
+      @include bg-rgba-black(.05);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .15) inset;
+      text-shadow: none;
+
+      i {
+        text-shadow: none;
+      }
+    }
+  }
+}

@@ -1,106 +1,143 @@
 .dialog {
   background: $bg-dialog;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 -20px 20px rgba(0,0,0, .04) inset, 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
+  border-radius: $border-radius-prompt;
+  box-shadow: 0 -20px 20px rgba(0, 0, 0, .04) inset, 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
   left: 0;
-  padding: 5px;
+  padding: 3px 5px;
   position: absolute;
   right: 0;
   margin: 0 auto;
   width: 460px;
   z-index: 9999;
-  top: 69px;
+  top: 68.5px;
+  font-size: 11px;
+
+  i {
+    margin-left: 8px;
+    vertical-align: middle;
+    font-size: 13px;
+  }
+
+  .tags-input {
+    line-height: initial;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
+    font-size: 11px;
+    padding: 3px 4px 3.5px 4px;
+    width: calc(70.5% - 8px);
+    background: white;
+    white-space: nowrap;
+    overflow: hidden;
+    float:left;
+    margin-right:2%;
+    //placeholder for contenteditable input
+    &:empty:before {
+      color: $color-muted;
+      content: attr(placeholder);
+    }
+    br {
+      display: none;
+    }
+    * {
+      display: inline;
+      white-space: nowrap;
+    }
+    b {
+      font-weight: normal;
+    }
+    span {
+      background: $bg-tags;
+      border-radius: $border-radius-tags;
+      border: $border-tags;
+      padding: 0 3px 1.5px 3px;
+    }
+  }
+
+  input {
+
+    &[type='text'] {
+      border: none;
+      line-height: initial;
+      border-radius: $border-radius-inputs;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
+      font-size: 11px;
+      padding: 3px 4px 3.5px 4px;
+      width: 18%;
+      margin-right: 2%;
+
+      &:first-child {
+        width: 48%;
+        margin-right: 0;
+      }
+    }
+
+    &[type='checkbox'] {
+      border-color: rgba(0, 0, 0, .35);
+    }
+  }
+
+  .prompt-kind {
+    position: relative;
+    bottom: -1px;
+  }
+
+  button {
+    background: $bg-lighter;
+    border-radius: $border-radius-button;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 1px 1px rgba(0, 0, 0, .1);
+    color: $color-666;
+    font-weight: 500;
+    font-size: 11px;
+    height: 19px;
+    line-height: 14px;
+    margin-top: -.5px;
+    text-shadow: 0 1px white;
+    vertical-align: middle;
+    min-width: 13%;
+    width: auto;
+    margin-left: 6px;
+
+    &:active {
+      background: rgba(0, 0, 0, .04);
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, .09) inset, 0 1px rgba(0, 0, 0, .09) inset;
+      color: $color-999;
+      text-shadow: none;
+    }
+
+    &.disabled {
+      box-shadow: none;
+      opacity: .5;
+    }
 
     i {
-      margin-left: 8px;
-      vertical-align: middle;
-    }
-
-    input {
-
-      &[type='text'] {
-        border: none;
-        border-radius: 4px;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, .35) inset;
-        font-size: 11px;
-        height: 20px;
-        line-height: 20px;
-        text-indent: 5px;
-        width: 18%;
-        margin-right: 2%;
-
-        &:first-child {
-          width: 48%;
-          margin-right: 0;
-        }
-      }
-
-      &[type='checkbox'] {
-        border-color: rgba(0, 0, 0, .35);
-      }
-    }
-
-    .prompt-kind {
       position: relative;
-      bottom: -1px;
+      top: -1px;
     }
+  }
 
-    button {
-      background: $bg-lighter;
-      border-radius: 3px;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 1px 1px rgba(0, 0, 0, .1);
-      color: $color-666;
-      font-size: 9.5px;
-      font-weight: 500;
-      height: 19px;
-      line-height: 15px;
-      margin-top: -.5px;
-      text-shadow: 0 1px white;
-      vertical-align: middle;
-      min-width: 13%;
-      width: auto;
-      margin-left: 6px;
+  &.dialog-window {
+    height: 250px;
+  }
 
-      &:active {
-        background: rgba(0, 0, 0, .04);
-        box-shadow: 1px 1px 2px rgba(0, 0, 0, .09) inset, 0 1px rgba(0, 0, 0, .09) inset;
-        color: $color-999;
-        text-shadow: none;
-      }
+  .window {
+    margin: 5px 3px;
+    float: none;
+    height: calc(100% - 30px);
+    overflow: auto;
+    box-shadow: 1px 1px rgba(0, 0, 0, .25) inset, -1px -1px rgba(0, 0, 0, .13) inset;
+    background: white;
+    border-radius: .5px;
+    font-size: 12.5px;
 
-      &.disabled {
-        box-shadow: none;
-        opacity: .5;
-      }
-
-      i {
-        position: relative;
-        top: -1px;
-      }
+    .logs {
+      padding: 6px;
     }
-
-    &.dialog-window {
-      height: 250px;
+    .ng-ace-editor {
+      height: 100%;
+      margin: 1px;
     }
-
-    .window {
-      margin: 5px 3px;
-      float: none;
-      height: calc(100% - 30px);
-      overflow: auto;
-      box-shadow: 1px 1px rgba(0, 0, 0, .25) inset, -1px -1px rgba(0, 0, 0, .13) inset;
-      background: white;
-      border-radius: .5px;
-
-      .logs {
-        padding: 6px;
-      }
-      .ng-ace-editor {
-        height: 100%;
-        margin: 1px;
-      }
-    }
+  }
 }
 
 .prompt-history-item {
@@ -109,7 +146,7 @@
   margin: 0 1px 0 1px;
 
   &:first-child {
-      margin-top: 1px;
+    margin-top: 1px;
   }
 
   &:nth-child(odd) {
@@ -164,14 +201,12 @@
   i {
     float: left;
     position: relative;
-    top: 4px;
     left: -13px;
     color: $color-777;
     text-shadow: 0 1px white;
   }
 
   button {
-    font-size: 10.5px;
     float: right;
   }
 }

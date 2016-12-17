@@ -1,13 +1,7 @@
 div.dialog.prompt(ng-if="topMenu.activeLink === '1'")
   form(ng-submit='topMenu.installPackage(topMenu.packageName, topMenu.newPackageKind)')
-    input(placeholder='Package name',
-      ng-autofocus,
-      type='text',
-      ng-model='topMenu.packageName')
-    = " "
-    input(placeholder='@version',
-      type='text',
-      ng-model='topMenu.newPackageVersion')
+    <!--do not remove placeholder even if it's not an input-->
+    div(class="tags-input", ng-model="topMenu.packageName", contenteditable="true", placeholder="package<@version> ..." ng-tag-input, ng-autofocus)
     = " "
     span(class="prompt-kind")
       input(type="checkbox", ng-model='topMenu.newPackageKind', ng-disabled='shell.globalSelected')
@@ -15,7 +9,8 @@ div.dialog.prompt(ng-if="topMenu.activeLink === '1'")
       = " "
       | dev
       = " "
-    button(ng-class="{'disabled': topMenu.installingPackage || !topMenu.packageName}")
+    <!--do not remove id="" from the button-->
+    button(id="install-new-packages-button", ng-class="{'disabled': topMenu.installingPackage || !topMenu.packageName}")
       span(ng-show="!topMenu.installingPackage")
         | Install
       span(ng-show="topMenu.installingPackage")

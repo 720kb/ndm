@@ -53,3 +53,11 @@ $bg-progress: repeating-linear-gradient(135deg, $color-stripes-one, $color-strip
 $bg-progress-secondary: repeating-linear-gradient(135deg, $color-primary, $color-primary 5px, #147ada 5px, #147ada 10px);
 $bg-progress-minor: repeating-linear-gradient(135deg, $color-error, $color-error 5px, #c71212 5px, #c71212 10px);
 $bg-dialog: $bg-lightgrey;
+$bg-tags: #e5ebf1;
+/*border-radius*/
+$border-radius-inputs: 3px;
+$border-radius-button: 3px;
+$border-radius-tags: 4px;
+$border-radius-prompt: 0 0 5px 5px;
+/*border-color*/
+$border-tags: 1px solid #d0d9e4;

@@ -7,7 +7,6 @@
   background: $bg-primary;
   padding: 5px 10px 3px 10px;
   width: 100%;
-  text-shadow: 0 1px black;
   font-weight: bold;
 
   a {
@@ -21,7 +20,7 @@
       color: $color-ccc;
 
       i {
-        color: $color-primary;
+        color: $color-777;
       }
     }
 
@@ -30,12 +29,10 @@
     }
 
     i {
-      bottom: -2px;
       font-size: 24.5px;
       line-height: 0;
       margin-top: 13px;
       position: relative;
-      text-shadow: 0 1px rgba(255, 255, 255, .7);
     }
   }
 

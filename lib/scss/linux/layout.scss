@@ -15,7 +15,7 @@
   padding: 0 15px;
   width: 200px;
   background: #e7e5e4;
-  font-weight: bold;
+  font-weight: 500;
 
   a {
     color: #4c4c4c;
@@ -32,10 +32,12 @@
       margin-bottom: 20px;
     }
     div {
+      height: 30px;
       display: inline-flex;
       max-width: 120px;
 
       b {
+        font-weight: 500;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -55,18 +57,6 @@
     }
 
     &.project {
-
-      &.active {
-        background: $bg-primary;
-        color: white;
-        cursor: default;
-
-        &:hover {
-          background: $bg-primary;
-          color: white;
-          cursor: default;
-        }
-      }
 
       button {
         bottom: -1.5px;

@@ -4,7 +4,7 @@
   include ./install-new-package.pug
   .row
     .col-xs-3
-      a.action-link-disabled.pull-left(ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()", ng-class="{'action-link-disabled': shell.globalDisabled, 'action-link-enabled': !shell.globalDisabled}")
+      a.action-link-disabled.pull-left(title="Update npm", ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()", ng-class="{'action-link-disabled': shell.globalDisabled, 'action-link-enabled': !shell.globalDisabled}")
         i.fa.fa-history(ng-class="{'color-primary': topMenu.activeLink === 'update'}")
         div
         span
@@ -24,24 +24,24 @@
       button(title="Add project to be managed", class="pull-left", ng-click="shell.openChooser()")
         i.fa.fa-plus-circle
         | Add Project
-      a.pull-right(ng-show="topMenu.projectPath", ng-click="topMenu.activeClickedLink('1');", ng-class="{'active': topMenu.activeLink === '1'}")
+      a.pull-right(title="Install Packages", ng-show="topMenu.projectPath", ng-click="topMenu.activeClickedLink('1');", ng-class="{'active': topMenu.activeLink === '1'}")
         i.fa.fa-cloud-download
         div
           | Install Packages
       span(ng-show='shell.showMenuButtons')
-        a.pull-right(ng-click="topMenu.activeClickedLink('2'); topMenu.updatePackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '2'}")
+        a.pull-right(title="Update", ng-click="topMenu.activeClickedLink('2'); topMenu.updatePackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '2'}")
           i.fa.fa-level-up
           div
-          | Update
-        a.pull-right(ng-click="topMenu.activeClickedLink('3'); topMenu.installLatest(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '3'}")
+            | Update
+        a.pull-right(title="Install Latest", ng-click="topMenu.activeClickedLink('3'); topMenu.installLatest(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '3'}")
           i.fa.fa-rocket
           div
-          | Install latest
-        a.pull-right(ng-show="shell.currentSelectedPackages.length === 1", ng-click="topMenu.activeClickedLink('4'); topMenu.showPackageInstallPrompt = undefined; topMenu.showSpecificVersionPrompt = true", ng-class="{'active': topMenu.activeLink === '4'}")
+            | Install latest
+        a.pull-right(title="Install Release", ng-show="shell.currentSelectedPackages.length === 1", ng-click="topMenu.activeClickedLink('4'); topMenu.showPackageInstallPrompt = undefined; topMenu.showSpecificVersionPrompt = true", ng-class="{'active': topMenu.activeLink === '4'}")
           i.fa.fa-at
           div
-          | Install release
-        a.pull-right(ng-click="topMenu.activeClickedLink('5'); topMenu.uninstallPackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '5'}")
+            | Install release
+        a.pull-right(title="Uninstall", ng-click="topMenu.activeClickedLink('5'); topMenu.uninstallPackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '5'}")
           i.fa.fa-remove
           div
-          | Uninstall
+            | Uninstall

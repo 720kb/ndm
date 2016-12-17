@@ -5,9 +5,9 @@
 .top-menu {
   -webkit-app-region: drag;
   background: $bg-primary;
-  padding: 5px 10px 3px 10px;
+  padding: 10px 10px 5px 10px;
   width: 100%;
-  font-weight: bold;
+  font-weight: 500;
 
   a {
     color: $color-white;
@@ -16,6 +16,9 @@
     padding: 2px 0;
     text-align: center;
 
+    span, div {
+      display: none;
+    }
     &:active, &.active {
       color: $color-ccc;
 
@@ -82,15 +85,11 @@
   }
 
   button {
-    font-size: 12px;
-    height: 20px;
-    line-height: 15px;
-    margin-top: 15px;
-    max-width: 100px;
-    overflow: hidden;
-    text-shadow: 0 1px rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    text-indent: -2px;
+    font-size: 14px;
+    line-height: 25px;
+    text-shadow: 0 -1px rgba(255, 255, 255, .5);
+    border-radius: 3px;
+    color: $color-white;
 
     input {
       &[type='file'] {
@@ -105,10 +104,7 @@
     }
 
     i {
-      color: $color-primary;
-      font-size: 15px;
-      text-shadow: 0 1px rgba(255, 255, 255, .5);
-      vertical-align: text-bottom;
+      display:none;
     }
 
     &:active {

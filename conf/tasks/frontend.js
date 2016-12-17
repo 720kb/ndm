@@ -14,9 +14,9 @@
 
   if (!platform) {
     platform = 'mac';
-    console.info('No pltform specified, starting app for MAC');
+    console.warn('No platform specified, starting app for MAC');
   } else {
-    console.log(`Starting app for ${platform}`);
+    console.info(`Starting app for ${platform}`);
   }
 
   gulp.task('front-end', ['clean'], done => {

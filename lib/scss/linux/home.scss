@@ -6,10 +6,10 @@
 }
 
 .home-button {
-  background: white;
+  background: $bg-primary;
   border-radius: 3px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .095), 0 0 1px rgba(0, 0, 0, .45);
-  color: $color-777;
+  color: $color-white;
   font-size: 11px;
   line-height: 16px;
   text-shadow: 0 1px white;

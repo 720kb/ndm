@@ -1,17 +1,17 @@
 /*
 fonts
 */
-$default-font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
-$font-terminal: 'Ubuntu';
+$default-font-family: 'Ubuntu Regular', 'Helvetica Neue', Helvetica, sans-serif;
+$font-terminal: 'Ubuntu Regular';
 $font-icon: 'fontello';
 /*
 colors
 */
-$color-positive: #36a9b1;
+$color-positive: #ed793c;
 $color-error: #e81616;
 $color-stripes-one: rgba(55, 255, 255, .4);
 $color-stripes-two: rgba(155, 255, 255, .5);
-$color-primary: #327dff;
+$color-primary: #ed793c;
 $color-muted: rgba(0, 0, 0, .4);
 $color-muted-more: rgba(0, 0, 0, .28);
 $color-muted-less: rgba(0, 0, 0, .5);
@@ -27,17 +27,17 @@ $color-222: #222;
 $color-ddd: #ddd;
 $color-bbb: #bbb;
 $color-ccc: #ccc;
-$color-white: #fff;
+$color-white: #dfdbd0;
 $color-black: black;
 $color-table-light-icons: #d6e7e8;
 /*
 backgrounds
 */
-$bg-primary: #327dff;
-$bg-light: #f4f6f6;
-$bg-lighter: #fefefe;
-$bg-ultralight: #f4f4f4;
-$bg-mediumlight: #f2f2f2;
+$bg-primary: #41403b;
+$bg-light: #666;
+$bg-lighter: #999;
+$bg-ultralight: #58564e;
+$bg-mediumlight: #333;
 $bg-lightgrey: #e9e7e9;
 $bg-smoke: #d1cfd1;
 $bg-muted: rgba(0, 0, 0, .35);

@@ -19,8 +19,8 @@
   "scripts": {
     "prestart": "gulp dist --platform=mac",
     "start": "electron .",
-    "mac": "gulp dist --platform=mac && npm start",
-    "linux": "gulp dist --platform=linux && npm start",
+    "mac": "gulp dist --platform=mac && electron .",
+    "linux": "gulp dist --platform=linux && electron .",
     "build": "npm install && npm prune && gulp dist --platform=mac && build"
   },
   "bugs": {

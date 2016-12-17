@@ -1,33 +1,24 @@
 .title {
-  float: none;
-  left: 0;
-  line-height: 26px;
-  margin: 0 auto;
-  position: fixed;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 100%;
-  z-index: 999;
+  display:none;
 }
 
 .top-menu {
   -webkit-app-region: drag;
-  background: $bg-lightgrey,  $bg-gradient-grey;
-  box-shadow: 0 -1px $color-bbb inset, 0 -1px $color-ccc inset;
-  padding: 20px 10px 3px 10px;
+  background: $bg-primary;
+  padding: 5px 10px 3px 10px;
   width: 100%;
+  text-shadow: 0 1px black;
+  font-weight: bold;
 
   a {
-    color: $color-444;
+    color: $color-white;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
     padding: 2px 0;
     text-align: center;
-    text-shadow: 0 1px rgba(255, 255, 255, .5);
 
     &:active, &.active {
-      color: $color-444;
+      color: $color-ccc;
 
       i {
         color: $color-primary;
@@ -56,8 +47,8 @@
     margin-top: -18px;
     padding: 2px 4px;
     position: absolute;
-    text-shadow: 0 1px rgba(255, 255, 255, .3);
-    color: $color-666;
+    text-shadow: 0 1px black;
+    color: $color-ccc;
 
     i {
       margin: 0;

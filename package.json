@@ -19,9 +19,9 @@
   "scripts": {
     "prestart": "gulp dist --platform=mac",
     "start": "electron .",
-    "mac": "gulp dist --platform=linux && npm start",
+    "mac": "gulp dist --platform=mac && npm start",
     "linux": "gulp dist --platform=linux && npm start",
-    "build": "npm install && npm prune && npm dist --platform=mac && build"
+    "build": "npm install && npm prune && npm dist && build"
   },
   "bugs": {
     "url": "https://github.com/720kb/ndm/issues"

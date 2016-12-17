@@ -27,7 +27,7 @@
       a.pull-right(ng-show="topMenu.projectPath", ng-click="topMenu.activeClickedLink('1');", ng-class="{'active': topMenu.activeLink === '1'}")
         i.fa.fa-cloud-download
         div
-          | Install Package
+          | Install Packages
       span(ng-show='shell.showMenuButtons')
         a.pull-right(ng-click="topMenu.activeClickedLink('2'); topMenu.updatePackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '2'}")
           i.fa.fa-level-up

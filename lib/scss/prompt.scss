@@ -1,10 +1,10 @@
 .dialog {
   background: $bg-dialog;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 -20px 20px rgba(0,0,0, .04) inset, 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
+  border-radius: $border-radius-prompt;
+  box-shadow: 0 -20px 20px rgba(0, 0, 0, .04) inset, 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
   left: 0;
-  padding: 5px;
+  padding: 3px 5px;
   position: absolute;
   right: 0;
   margin: 0 auto;
@@ -43,10 +43,14 @@
       display: inline;
       white-space: nowrap;
     }
+    b {
+      font-weight: normal;
+    }
     span {
-      background: yellow;
-      padding: 0 1px;
-      margin:0 3px;
+      background: $bg-tags;
+      border-radius: $border-radius-tags;
+      border: $border-tags;
+      padding: 0 3px 1.5px 3px;
     }
   }
 
@@ -55,7 +59,7 @@
     &[type='text'] {
       border: none;
       line-height: initial;
-      border-radius: 3px;
+      border-radius: $border-radius-inputs;
       box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
       font-size: 11px;
       padding: 3px 4px 3.5px 4px;
@@ -80,7 +84,7 @@
 
   button {
     background: $bg-lighter;
-    border-radius: 3px;
+    border-radius: $border-radius-button;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 1px 1px rgba(0, 0, 0, .1);
     color: $color-666;
     font-weight: 500;

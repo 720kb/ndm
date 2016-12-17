@@ -43,9 +43,13 @@
       display: inline;
       white-space: nowrap;
     }
+
     b {
       font-weight: normal;
+      position: relative;
+      bottom: -1px;
     }
+    
     span {
       background: $bg-tags;
       border-radius: $border-radius-tags;

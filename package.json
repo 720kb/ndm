@@ -17,9 +17,11 @@
   },
   "copyright": "©720kb, Filippo Oretti, Dario Andrei",
   "scripts": {
-    "prestart": "gulp distify",
+    "prestart": "gulp dist --platform=mac",
     "start": "electron .",
-    "build": "npm install && npm prune && gulp dist && build"
+    "mac": "gulp dist --platform=linux && npm start",
+    "linux": "gulp dist --platform=linux && npm start",
+    "build": "npm install && npm prune && npm dist --platform=mac && build"
   },
   "bugs": {
     "url": "https://github.com/720kb/ndm/issues"
@@ -113,6 +115,7 @@
     "rollup": "^0.36.4",
     "rollup-plugin-babel": "^2.4.0",
     "rollup-plugin-json": "^2.0.0",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "yargs": "^6.5.0"
   }
 }

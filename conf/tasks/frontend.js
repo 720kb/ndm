@@ -8,7 +8,16 @@
     , runSequence = require('run-sequence')
     , sourcemaps = require('gulp-sourcemaps')
     , gulpSass = require('gulp-sass')
-    , paths = require('../paths.json');
+    , paths = require('../paths.json')
+    , argv = require('yargs').argv
+    , platform = argv.platform;
+
+  if (!platform) {
+    platform = 'mac';
+    console.info('No pltform specified, starting app for MAC');
+  } else {
+    console.log(`Starting app for ${platform}`);
+  }
 
   gulp.task('front-end', ['clean'], done => {
 
@@ -20,7 +29,7 @@
 
   gulp.task('scss', () => {
 
-    return gulp.src(`${paths.lib}scss/index.scss`)
+    return gulp.src(`${paths.lib}scss/${platform}/index.scss`)
       .pipe(plumber())
       .pipe(sourcemaps.init())
       .pipe(gulpSass({

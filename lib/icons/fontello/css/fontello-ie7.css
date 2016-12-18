@@ -17,13 +17,11 @@
 .fa-remove { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;'); }
 .fa-caret-right { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe805;&nbsp;'); }
 .fa-caret-down { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe806;&nbsp;'); }
-.fa-check { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe807;&nbsp;'); }
+.fa-folder-o { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe807;&nbsp;'); }
 .fa-sort { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0dc;&nbsp;'); }
 .fa-sort-down { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0dd;&nbsp;'); }
 .fa-sort-up { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0de;&nbsp;'); }
 .fa-cloud-download { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ed;&nbsp;'); }
-.fa-circle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf111;&nbsp;'); }
-.fa-folder-o { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf114;&nbsp;'); }
 .fa-rocket { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf135;&nbsp;'); }
 .fa-level-up { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf148;&nbsp;'); }
 .fa-database { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c0;&nbsp;'); }

@@ -7,11 +7,11 @@ $font-icon: 'fontello';
 /*
 colors
 */
-$color-positive: #36a9b1;
 $color-error: #e81616;
 $color-stripes-one: rgba(55, 255, 255, .4);
 $color-stripes-two: rgba(155, 255, 255, .5);
 $color-primary: #327dff;
+$color-positive: $color-primary;
 $color-muted: rgba(0, 0, 0, .4);
 $color-muted-more: rgba(0, 0, 0, .28);
 $color-muted-less: rgba(0, 0, 0, .5);

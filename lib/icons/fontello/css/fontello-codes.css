@@ -6,13 +6,11 @@
 .fa-remove:before { content: '\e804'; } /* '' */
 .fa-caret-right:before { content: '\e805'; } /* '' */
 .fa-caret-down:before { content: '\e806'; } /* '' */
-.fa-check:before { content: '\e807'; } /* '' */
+.fa-folder-o:before { content: '\e807'; } /* '' */
 .fa-sort:before { content: '\f0dc'; } /* '' */
 .fa-sort-down:before { content: '\f0dd'; } /* '' */
 .fa-sort-up:before { content: '\f0de'; } /* '' */
 .fa-cloud-download:before { content: '\f0ed'; } /* '' */
-.fa-circle:before { content: '\f111'; } /* '' */
-.fa-folder-o:before { content: '\f114'; } /* '' */
 .fa-rocket:before { content: '\f135'; } /* '' */
 .fa-level-up:before { content: '\f148'; } /* '' */
 .fa-database:before { content: '\f1c0'; } /* '' */

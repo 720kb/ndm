@@ -17,6 +17,21 @@
   width: 200px;
   background: #f0f0f0;
 
+  .fa-folder-o,
+  .fa-folder-o::before,
+  .fa-globe,
+  .fa-globe::before {
+    background-image: linear-gradient(to bottom,  #dde2e7 22%, #b7bcc1 34%, #b7bcc1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, .89);
+  }
+  .fa-globe,
+  .fa-globe::before {
+    -webkit-text-stroke-width: 0;
+    background-image: linear-gradient(to bottom, #5b6065 100%, #5b6065 100%);
+  }
   a {
     color: $color-555;
     cursor: default;
@@ -40,27 +55,19 @@
       }
     }
 
-    &:hover, &:focus {
-      @include bg-rgba-black(.03);
-    }
-
     &.active {
-      background: $bg-primary;
-      color: white;
+      background: $bg-muted-invisible;
       cursor: default;
       text-shadow: none;
     }
 
     &.project {
 
-      &.active {
-        background: $bg-primary;
-        color: white;
+      &.active, &:focus {
+        background: $bg-muted-invisible;
         cursor: default;
 
         &:hover {
-          background: $bg-primary;
-          color: white;
           cursor: default;
         }
       }
@@ -103,12 +110,11 @@
     }
 
     i {
-      font-size: 15px;
+      font-size: 16.5px;
       left: -1px;
       position: relative;
       top: .5px;
     }
-
     span {
       @include bg-rgba-black(.23);
       border-radius: 10px;

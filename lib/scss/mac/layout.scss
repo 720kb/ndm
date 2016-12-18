@@ -57,7 +57,7 @@
     }
 
     &.active {
-      background: $bg-muted-invisible;
+      background: $bg-muted-invisible-more;
       cursor: default;
       text-shadow: none;
     }
@@ -65,7 +65,7 @@
     &.project {
 
       &.active, &:focus {
-        background: $bg-muted-invisible;
+        background: $bg-muted-invisible-more;
         cursor: default;
 
         &:hover {

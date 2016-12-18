@@ -9,7 +9,7 @@
 }
 
 .left-column {
-  box-shadow: -1px -1px #ddd inset;
+  box-shadow: -1px -1px $color-ccc inset;
   float: left;
   height: calc(100vh - 90px);
   overflow-y: auto;

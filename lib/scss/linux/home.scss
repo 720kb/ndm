@@ -1,8 +1,13 @@
 .home {
-  background: #e7e5e4;
+  background: white;
+  font-weight: bold;
   min-height: 100vh;
   padding-top: 30vh;
   text-align: center;
+
+  small {
+    font-size: 18px;
+  }
 }
 
 .home-button {

@@ -1,13 +1,12 @@
 .footer {
   -webkit-app-region: drag;
-  background: $bg-gradient-footer;
-  border-top: 1px solid $color-ccc;
+  background: #e7e5e4;
   bottom: 0;
-  color: $color-white;
-  font-size: 11.5px;
-  font-weight: 100;
-  height: 24px;
-  line-height: 22.5px;
+  color: $color-777;
+  font-size: 13px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 28px;
   padding: 0 15px;
   position: fixed;
   width: 100%;
@@ -26,7 +25,7 @@
     }
 
     &.npm-status {
-      min-width: 115px;
+      min-width: 125px;
 
       img {
         opacity: .63;
@@ -57,7 +56,7 @@
     }
   }
   a {
-    color: $color-white;
+    color: $color-777;
     opacity: .75;
 
     &:hover,

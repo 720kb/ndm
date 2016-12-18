@@ -1,6 +1,5 @@
 .table-header {
-  color: $color-white;
-  line-height: 20px;
+  line-height: 27px;
   padding: 0 10px;
   transition: opacity .3s linear;
 
@@ -11,7 +10,6 @@
   }
 
   div {
-    background: $bg-lighter;
     box-shadow: -1px -1px $color-ddd inset;
   }
 
@@ -30,16 +28,16 @@
 }
 
 .table-row {
-  color: $color-333;
   line-height: 21px;
   padding: 0 10px;
 
   &:nth-child(odd) {
-    background: $bg-table-row;
+    background: $bg-muted;
   }
 
   &:focus, &:active, &.active {
-    background: $bg-table-row-highlight;
+    background: $bg-primary;
+    color: $color-white;
   }
 
   i {
@@ -47,7 +45,6 @@
   }
 
   &.disabled {
-    background: $bg-light;
     opacity: .5;
 
     &:active, &:focus {
@@ -83,7 +80,7 @@
 .table-infos {
   height: 150px;
   padding: 0 2%;
-  background: $bg-light;
+  background: #e7e5e4;
   box-shadow: 0 -1px $bg-muted-more;
 
   .information {

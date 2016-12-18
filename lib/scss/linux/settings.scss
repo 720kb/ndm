@@ -15,11 +15,12 @@ body, html {
   color: $color-333;
   cursor: default;
   font-family: $default-font-family;
-  font-size: 13px;
+  font-size: 14px;
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
+  background: $color-white;
 }
 
 a {

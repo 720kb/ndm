@@ -6,7 +6,6 @@
   float: left;
   padding: 0;
   width: calc(100% - 200px);
-  background: $color-white;
 }
 
 .left-column {
@@ -16,8 +15,11 @@
   padding: 0 15px;
   width: 200px;
   background: #e7e5e4;
-  font-weight: 500;
   box-shadow: -3.5px -3.5px rgba(0,0,0, .1) inset;
+
+  * {
+    font-weight: 300;
+  }
 
   .fa-folder-o,
   .fa-folder-o::before,
@@ -49,7 +51,6 @@
       max-width: 120px;
 
       b {
-        font-weight: 500;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;

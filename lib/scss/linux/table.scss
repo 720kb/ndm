@@ -52,7 +52,7 @@
 
 .table-body {
   //(table - header - table-infos) to calculate height
-  height: calc(100vh - 120px - 135px);
+  height: calc(100vh - 120px - 130px);
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 20px;
@@ -78,7 +78,7 @@
   height: 150px;
   padding: 0 2%;
   background: #e7e5e4;
-  box-shadow: 0 -1px $bg-muted-more;
+  box-shadow: 0 -1px 3px #d0cfce;
 
   .information {
     margin-top: 3px;

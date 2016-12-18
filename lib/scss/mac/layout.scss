@@ -37,7 +37,8 @@
     cursor: default;
     display: inline-block;
     font-size: 12.5px;
-    line-height: 22px;
+    line-height: 21px;
+    height: 25px;
     margin: 0;
     padding: 0 9px;
     width: 100%;
@@ -73,7 +74,7 @@
       }
 
       button {
-        bottom: -1.5px;
+        bottom: -2px;
         color: $color-muted-more;
         display: none;
         float: right;

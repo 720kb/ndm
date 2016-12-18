@@ -1,6 +1,5 @@
 .table-header {
   color: $color-white;
-  font-size: 11px;
   line-height: 20px;
   padding: 0 10px;
   transition: opacity .3s linear;
@@ -32,7 +31,6 @@
 
 .table-row {
   color: $color-333;
-  font-size: 12px;
   line-height: 21px;
   padding: 0 10px;
 
@@ -84,7 +82,6 @@
 
 .table-infos {
   height: 150px;
-  font-size: 11.5px;
   padding: 0 2%;
   background: $bg-light;
   box-shadow: 0 -1px $bg-muted-more;

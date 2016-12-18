@@ -17,6 +17,17 @@
   background: #e7e5e4;
   font-weight: 500;
 
+  .fa-folder-o,
+  .fa-folder-o::before,
+  .fa-globe,
+  .fa-globe::before {
+    background-image: linear-gradient(to bottom,  $color-secondary 36%, $color-primary 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-size: .5px;
+    -webkit-text-fill-color: $color-primary;
+  }
+
   div {
     height: 30px;
   }
@@ -25,7 +36,8 @@
     cursor: default;
     display: inline-block;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 28px;
+    height: 30px;
     margin: 0;
     padding: 0 9px;
     width: 100%;
@@ -61,15 +73,15 @@
       }
 
       button {
-        bottom: -1.5px;
+        bottom: -3px;
         color: $color-muted-more;
         display: none;
         float: right;
-        line-height: 0;
+        height: 30px;
+        line-height: 20px;
         padding-right: 5px;
-        max-width: 21px;
+        max-width: 30px;
         min-width: 8px;
-        position: relative;
         transition: color .11s linear;
         width: 50%;
         z-index: 999;
@@ -98,7 +110,7 @@
     }
 
     i {
-      font-size: 17px;
+      font-size: 18px;
       left: -1px;
       margin-right: 5px;
       position: relative;

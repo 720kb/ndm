@@ -4,7 +4,7 @@
   border-top: 1px solid $color-ccc;
   bottom: 0;
   color: $color-white;
-  font-size: 10px;
+  font-size: 11.5px;
   font-weight: 100;
   height: 24px;
   line-height: 22.5px;
@@ -20,11 +20,13 @@
 
     img {
       vertical-align: middle;
-      width: 25px;
+      position: relative;
+      bottom: -.5px;
+      width: 30px;
     }
 
     &.npm-status {
-      min-width: 108px;
+      min-width: 115px;
 
       img {
         opacity: .63;
@@ -55,7 +57,7 @@
     }
   }
   a {
-    color: $color-444;
+    color: $color-white;
     opacity: .75;
 
     &:hover,

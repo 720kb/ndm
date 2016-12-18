@@ -8,6 +8,7 @@
     img(src="img/npm-logo-black.svg")
     = " "
     | status:
+    = " "
     b(ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
       | available
     b(ng-show="!shell.loadingRegistryStatus && !shell.registryStatus")

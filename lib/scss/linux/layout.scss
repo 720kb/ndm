@@ -17,11 +17,6 @@
   background: #e7e5e4;
   box-shadow: -3.5px -3.5px rgba(0,0,0, .1) inset;
 
-  * {
-    font-weight: 400;
-    color: $color-default;
-  }
-
   div {
     height: 30px;
   }
@@ -34,7 +29,8 @@
     height: 30px;
     margin: 0;
     padding: 0 9px;
-    width: 100%;
+    width: calc(100% - 3.5px);
+    color: $color-default;
 
     div {
       display: inline-flex;
@@ -54,7 +50,7 @@
 
     &.active {
       background: $color-primary;
-      color: $color-white;
+      color: white;
       cursor: default;
       text-shadow: none;
     }

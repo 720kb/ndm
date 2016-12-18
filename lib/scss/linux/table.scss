@@ -28,16 +28,16 @@
 }
 
 .table-row {
-  line-height: 21px;
+  line-height: 30px;
   padding: 0 10px;
 
   &:focus, &:active, &.active {
-    background: $bg-primary;
-    color: $color-white;
+    background: $color-primary;
+    color: white;
   }
 
   i {
-    color: $color-table-light-icons;
+    color: $color-primary;
   }
 
   &.disabled {
@@ -92,9 +92,6 @@
       margin-top: 8px;
     }
 
-    b {
-      font-weight: 500;
-    }
     a {
       color: $color-primary;
       &:hover {

@@ -16,6 +16,7 @@ body, html {
   cursor: default;
   font-family: $default-font-family;
   font-size: 14px;
+  font-weight: 400;
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
@@ -89,5 +90,5 @@ h1, h2, h3, h4, h5, h6 {
 
 b, strong {
 
-  font-weight: 600;
+  font-weight: 400;
 }

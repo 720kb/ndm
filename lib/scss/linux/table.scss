@@ -24,7 +24,6 @@
       bottom: 2px;
     }
   }
-
 }
 
 .table-row {
@@ -55,7 +54,7 @@
 
 .table-body {
   //(table - header - table-infos) to calculate height
-  height: calc(100vh - 120px - 145px);
+  height: calc(100vh - 85px - 175px);
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 20px;
@@ -66,6 +65,7 @@
   padding-top: 30vh;
   text-align: center;
   background: $bg-white;
+  font-size: 18px;
 }
 
 .table-row-loading,
@@ -78,13 +78,14 @@
 }
 
 .table-infos {
-  height: 150px;
+  line-height: 20px;
+  height: 160px;
   padding: 0 2%;
+  font-size: 13px;
   background: #e7e5e4;
   box-shadow: 0 -1px 3px #d0cfce;
 
   .information {
-    margin-top: 3px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

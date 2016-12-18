@@ -1,5 +1,4 @@
 .home {
-  font-weight: bold;
   min-height: 100vh;
   padding-top: 30vh;
   text-align: center;
@@ -10,9 +9,9 @@
 }
 
 .home-button {
-  background: $color-primary;
+  background: $bg-primary;
   border-radius: 3px;
-  line-height: 25px;
+  line-height: 24px;
   color: $color-white;
   text-shadow: 0 -1px rgba(0,0,0, .3);
   width: 120px;
@@ -20,7 +19,7 @@
   &:active {
     background: rgba(0, 0, 0, .04);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .09) inset, 0 1px rgba(0, 0, 0, .09) inset;
-    color: $color-999;
+    color: white;
     text-shadow: none;
   }
 }

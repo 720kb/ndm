@@ -2,7 +2,6 @@
   -webkit-app-region: drag;
   background: #e7e5e4;
   bottom: 0;
-  color: $color-777;
   font-size: 13px;
   font-weight: bold;
   height: 30px;
@@ -11,6 +10,7 @@
   position: fixed;
   width: 100%;
   z-index: 9;
+  box-shadow: 0 3px #d0cfce inset;
 
   span {
     float: right;
@@ -20,12 +20,11 @@
     img {
       vertical-align: middle;
       position: relative;
-      bottom: -.5px;
       width: 30px;
     }
 
     &.npm-status {
-      min-width: 125px;
+      min-width: 135px;
 
       img {
         opacity: .63;
@@ -47,7 +46,6 @@
       i {
         position:relative;
         bottom:-.5px;
-        color: $color-666;
 
         &.active {
           color: $color-green;
@@ -56,9 +54,8 @@
     }
   }
   a {
-    color: $color-777;
     opacity: .75;
-
+    color: $color-default;
     &:hover,
     &:active {
       opacity: 1;

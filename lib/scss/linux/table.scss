@@ -1,5 +1,5 @@
 .table-header {
-  line-height: 27px;
+  line-height: 30px;
   padding: 0 10px;
   transition: opacity .3s linear;
 
@@ -33,7 +33,10 @@
 
   &:focus, &:active, &.active {
     background: $color-primary;
-    color: white;
+
+    * {
+      color: white;
+    }
   }
 
   i {

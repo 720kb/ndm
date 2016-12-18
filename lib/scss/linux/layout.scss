@@ -16,6 +16,7 @@
   width: 200px;
   background: #e7e5e4;
   box-shadow: -3.5px -3.5px rgba(0,0,0, .1) inset;
+  text-shadow: -1px 1px rgba(255, 255, 255, .5);
 
   div {
     height: 30px;
@@ -49,10 +50,11 @@
     }
 
     &.active {
-      background: $color-primary;
+      background: linear-gradient(to bottom, $color-primary 0%, #f58151 100%);
       color: white;
       cursor: default;
       text-shadow: none;
+      text-shadow: -1px 1px rgba(0, 0, 0, .25);
     }
 
     &.project {

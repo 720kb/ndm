@@ -56,16 +56,16 @@ Also sometimes we're just lazy, and we want to do everything with few clicks on 
 Some of the added values of **ndm**:
 
 - Less struggling with multiple terminal tabs
-- Long terminal logs and scrolling to find warnings and errors are a things of the past now
-- All your projects are "on the same page"
+- Less struggling with long terminal logs, scrolling to find warnings and errors are a things of the past now
+- All your projects are on the same view
 - Intuitive interface (no doc required)
-- Notifications (when your long long npm install finishes)
-- Check every package npm informations with two clicks
+- Notifications (specially when your long long npm install finishes)
+- Check npm packages informations with two clicks (such as repository, author, license and so on...)
 - Run npm commands and scripts in two clicks
 
 More features:
 
-You can edit project package.json in-place, "Snapshot" projects and revert them from the "History" prompt - this makes easier to try any changes before releasing them (i.e: update pkgs, install new pkgs, delete pkgs, and so on..)
+You can edit project package.json in-place, "Snapshot" projects and revert them from the "History" prompt in two clicks - this makes easier to try any changes before releasing them (i.e: update pkgs, install new pkgs, delete pkgs, and so on..)
 
 
 **Note that:** using **ndm** doesn't mean you can no longer use the CLI - The power of the Shell is strong! Use it, young Padawan! :D
@@ -98,7 +98,7 @@ _Run app_
 
 _Generate the Desktop application - the most convenient way_
 
-To build your own executable:
+Create the executables which you can run whitout needing to open the terminal:
 
 `$ git clone <repo> && cd ndm`
 
@@ -108,7 +108,6 @@ Adjust `package.json`  "[build](https://github.com/720kb/ndm/blob/master/package
 
 `$ npm run build`
 
-This will create the executable which you can run whitout needing to open the terminal.
 
 ### Contribute
 
@@ -117,7 +116,7 @@ Feel free to contribute by forking, opening issues, pull requests and whatever y
 
 Doors are wide open!
 
-Below are the few guidelines to follow, in case, just that!
+Below are the few guidelines to follow in case, just that!
 
 [Contributing Guidelines](https://github.com/720kb/ndm/blob/master/CONTRIBUTING.md)
 
@@ -146,26 +145,23 @@ Actually not, not really.
 ndm does not run any malicious or env/system breaking commands in background, and it doesn't run anything outside npm native commands.
 If you want to be 100% sure about this, just look at the source code, which is clear and very readable.
 
-
 **Why is so slow on my pc?**
 
 ndm speed depends exclusively on your pc/device specs and [npm-cli](https://docs.npmjs.com/cli/npm) speed.
-We can't do much to speed up your computer or the npm commands.
-
+We can't do much to speed up your machine or the npm commands.
 
 **Yarn?**
 
-This project was born several months before Yarn was out.
+**ndm** was born several months before Yarn was out.
 Yarn is a great tool, we are looking forward to seeing what happens.
-Yarn is still quite a brand new project and many things could change in the meantime. That said: if you have any idea or suggestion: here you're welcome to share and discuss!
-
+Many things could change in the meantime. 
+That said: if you have any idea or suggestion, here you are welcome to share and discuss!
 
 **Why Mac only?**
 
 We now focus on one OS but the app is developed keeping in mind that it will have to run also on other OSs. We won't _put too much meat on bbq_ for the moment, it is now very important to obtain an OS-abstracted and stable app.
 
 As soon as we are sure that the project is stable, it will be delivered to the other OSs.
-
 
 **Support?**
 

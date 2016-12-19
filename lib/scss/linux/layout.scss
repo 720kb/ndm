@@ -14,9 +14,8 @@
   overflow-y: auto;
   padding: 0 15px;
   width: 200px;
-  background: #e7e5e4;
   box-shadow: -3.5px -3.5px rgba(0,0,0, .1) inset;
-  text-shadow: -1px 1px rgba(255, 255, 255, .5);
+  text-shadow: -1px 1px rgba(0, 0, 0, .35);
 
   div {
     height: 30px;
@@ -31,7 +30,7 @@
     margin: 0;
     padding: 0 9px;
     width: calc(100% - 3.5px);
-    color: $color-default;
+    color: $color-white;
 
     div {
       display: inline-flex;

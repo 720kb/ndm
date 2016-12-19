@@ -12,7 +12,7 @@
 
 body, html {
   -webkit-user-select: none;
-  color: $color-default;
+  color: $color-white;
   cursor: default;
   font-family: $default-font-family;
   font-size: 14px;
@@ -21,7 +21,7 @@ body, html {
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
-  background: $bg-white;
+  background: $color-default;
 }
 
 a {

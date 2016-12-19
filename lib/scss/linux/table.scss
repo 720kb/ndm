@@ -10,7 +10,7 @@
   }
 
   div {
-    box-shadow: -1px -1px $color-ddd inset;
+    box-shadow: -3.5px -3.5px rgba(0,0,0, .1) inset;
   }
 
   i {
@@ -58,14 +58,15 @@
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 20px;
+  background: $bg-muted-invisible;
 }
 
 .table-loader {
   min-height: 100vh;
   padding-top: 30vh;
   text-align: center;
-  background: $bg-white;
   font-size: 18px;
+  background: $color-default;
 }
 
 .table-row-loading,
@@ -82,8 +83,6 @@
   height: 160px;
   padding: 0 2%;
   font-size: 13px;
-  background: #e7e5e4;
-  box-shadow: 0 1px 3px #d0cfce inset;
 
   .information {
     overflow: hidden;

@@ -47,9 +47,10 @@
     b {
       font-weight: normal;
       position: relative;
-      bottom: -1px;
+      bottom: -1.5px;
+      line-height: 10px;
     }
-    
+
     span {
       background: $bg-tags;
       border-radius: $border-radius-tags;

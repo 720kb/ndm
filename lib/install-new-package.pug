@@ -1,7 +1,7 @@
 div.dialog.prompt(ng-if="topMenu.activeLink === '1'")
   form(ng-submit='topMenu.installPackage(topMenu.packageName, topMenu.newPackageKind)')
     <!--do not remove placeholder even if it's not an input-->
-    div(class="tags-input", ng-model="topMenu.packageName", contenteditable="true", placeholder="package<@version> ..." ng-tag-input, ng-autofocus)
+    div(class="tags-input", ng-model="topMenu.packageName", contenteditable="true", ng-attr-disabled="{{topMenu.installingPackage ? 'disabled' : ''}}" placeholder="package<@version> ..." ng-tag-input, ng-autofocus)
     = " "
     span(class="prompt-kind")
       input(type="checkbox", ng-model='topMenu.newPackageKind', ng-disabled='shell.globalSelected')

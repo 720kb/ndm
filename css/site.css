@@ -103,21 +103,32 @@ small , small *, *.font-small{
   background: #0d70ff;
   transition: none;
   line-height: 44px;
-}
-.download-link.linux {
-  background: #eee;
+  box-shadow: 0 1px 3px rgba(0,0,0, .2);
 }
 .download-link:hover{
-  box-shadow: 0 5px 10px rgba(0,0,0, .2);
+  box-shadow: 0 3px 6px rgba(0,0,0, .2);
 }
-.download-link.disabled,.download-link.disabled:hover{
-  cursor: not-allowed;
+.download-link:active, .download-link:active:hover {
+  box-shadow: 0 0 0 ;
 }
 .download-link i{
   font-size:28px;
   margin-top:3px;
 }
-
+.infos {
+  max-width: 600px;
+  font-size: 18px;
+  width: 90%;
+  float: none;
+  margin: 0 auto;
+}
+.infos i {
+  margin: 5%;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.14);
+}
 .color-twitter{
   color: #1882FC;
 }

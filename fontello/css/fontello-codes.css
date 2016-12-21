@@ -1,0 +1,6 @@
+
+.fa-download:before { content: '\e800'; } /* '' */
+.fa-twitter:before { content: '\e801'; } /* '' */
+.fa-apple:before { content: '\f179'; } /* '' */
+.fa-linux:before { content: '\f17c'; } /* '' */
+.fa-windows:before { content: '\f325'; } /* '' */

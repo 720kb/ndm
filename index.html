@@ -20,145 +20,149 @@
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="ndm"/>
   <meta property="og:image" content="https://720kb.github.io/ndm/img/social-icon.png"/>
-  <meta property="og:description" content='ndm - "npm desktop manager"'/>
-  <meta name="description" content='ndm - "npm desktop manager"'/>
+  <meta property="og:description" content='npm desktop manager'/>
+  <meta name="description" content='npm desktop manager'/>
   <meta name="keywords" content="npm, client, gui, app, desktop, manager, tool, download, atom, electron, ndm, open source, mac, osx, linux"/>
-  <title>Npm Desktop Manager</title>
-  <link href="bower_components/csshelper/dist/helper.min.css" rel='stylesheet' type='text/css'/>
-  <link href="css/site.css" rel='stylesheet' type='text/css'/>
-  <link href="bower_components/font-awesome/css/font-awesome.min.css" rel='stylesheet' type='text/css'/>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300|Kalam' rel='stylesheet' type='text/css'/>
+  <title>ndm</title>
+  <link href="bower_components/csshelper/dist/helper.min.css" rel="stylesheet" type="text/css"/>
+  <link href="css/site.css" rel="stylesheet" type="text/css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  <link href="fontello/css/fontello-embedded.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.4.0/balloon.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300|Kalam" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.sparkles.js"></script>
 </head>
 <body>
-  <div class="line header sparkley">
+  <div class="line header sparkley bg-gradient mac">
     <div class="separator50"></div>
-    <div class="line-compress line-max center-content">
-      <div class="col2 left-content">
+    <div class="top line-compress line-max ">
+      <div class="col4 left-content">
         <h1 class="logo color-white">
           <a target="_blank" class="color-white" href="https://github.com/720kb/ndm">
             <img class="v-middle" width="50" src="img/logo.png"/>
-            <span class="hide-mobile-tablet">ndm</span>
+            <span>ndm</span>
           </a>
         </h1>
       </div>
-      <div class="top-menu col8 right-content">
-        <a href="https://github.com/720kb/ndm/#readme" target="_blank" class="color-white toggle-opacity-hover"> About</a>
-        <a href="https://github.com/720kb/ndm/issues" target="_blank" class="color-white toggle-opacity-hover"> Support</a>
+      <div class="top-menu col6 right-content">
+        <a href="https://github.com/720kb/ndm/issues" target="_blank" class="color-white toggle-opacity-hover"> About</a>
         <a href="https://github.com/720kb/ndm#contribute" target="_blank" class="color-white toggle-opacity-hover"> Contribute</a>
         <a href="https://gitter.im/720kb/ndm" target="_blank" class="color-white toggle-opacity-hover"> <span class="desktop">Join</span> Chat</a>
       </div>
-      <div class="separator30"></div>
-      <div class="separator10"></div>
-      <div class="slogan">
-      <h1 class="font-one font-medium font-big line-compress center-content color-white">Manage <b>npm</b> straight from the couch</h1>
-      <div class="separator10"></div>
-      <h3 class="description font-light color-muted-inverse">The npm desktop GUI, formally <span class="font-handwritten">"npm desktop manager"</span></h3>
     </div>
-    </div>
-    <div class="line center-content">
-    <img class="screenshot" src="img/screenshot.png"/>
-    </div>
-  </div>
-  <div class="line center-content bg-white content">
-    <div class="separator50"></div>
-    <div class="separator10"></div>
-    <h3 class="color-muted font-one font-medium line-compress center-content">
-      At the moment ndm is available only for Mac.
-    </h3>
-    <div class="separator10"></div>
-    <div class="center-content">
-      <a class="font-one color-muted font-medium toggle-opacity-inverse-hover" href="https://github.com/720kb/ndm/releases/">
-      Latest Release: v{{site.github.releases[0]['tag_name']}}
-    </a>
-    </div>
-    <div class="separator10"></div>
-    <div class="separator10"></div>
-    <div class="separator30"></div>
-    <a class="hide">
-      <div class="col3">
-        <i class="fa fa-windows color-white"></i>
-      </div>
-      <div class="col7 font-light left-content">
-        <div class="separator3"></div>
-        Download for Win
-      </div>
-    </a>
-    <div class="separator10 tablet mobile"></div>
-    <a class="download-link color-muted linux disabled" title="Soon!">
-      <div class="col3">
-        <i class="fa fa-linux color-muted"></i>
-      </div>
-      <div class="col7 font-light left-content">
-        <div class="separator3"></div>
-        Download for Linux
-      </div>
-    </a>
-    <div class="separator10 tablet mobile"></div>
-    <a class="download-link color-white" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
-      <div class="col3">
-        <i class="fa fa-apple color-white"></i>
-      </div>
-      <div class="col7 font-light left-content">
-        <div class="separator3"></div>
-        Download for Mac
-      </div>
-    </a>
-    <div class="separator10"></div>
-    <div class="separator10"></div>
-    <div class="line">
-
-        <div class="separator50"></div>
-      <!-- Place this tag where you want the button to render. -->
-      <a class="github-button color-white" href="https://github.com/720kb/ndm" data-icon="octicon-star"  data-count-href="/720kb/ndm/stargazers" data-count-api="/repos/720kb/ndm#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star 720kb/ndm on GitHub">Star</a>
-      <!-- Place this tag where you want the button to render. -->
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <!-- Place this tag where you want the button to render. -->
-      <!-- Place this tag where you want the button to render. -->
-      <a class="github-button color-white" href="https://github.com/720kb/ndm/subscription" data-icon="octicon-eye" data-count-href="/720kb/ndm/watchers" data-count-api="/repos/720kb/ndm#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch 720kb/ndm on GitHub">Watch</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="github-button color-white" href="https://github.com/720kb/ndm/fork" data-icon="octicon-repo-forked"  data-count-href="/720kb/ndm/network" data-count-api="/repos/720kb/ndm#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork 720kb/ndm on GitHub">Fork</a>
-      <div class="separator30 mobile tablet"></div>
-      <a class="color-black toggle-opacity-hover mobile tablet" href="//720kb.net" rel="index,follow" target="_blank">
-        <i class="fa fa-twitter color-twitter"></i> Follow
-      <div class="separator30"></div>
-    </a>
-    </div>
-  </div>
-  <div class="separator50"></div>
-  <div class="line footer desktop bg-white">
     <div class="line line-max">
-    <div class="separator10"></div>
-    <div class="separator5"></div>
-    <div class="col6 line-tablet color-muted">
-        Copyright ©
-        <a class="color-black toggle-opacity-hover" href="//720kb.net" rel="index,follow" target="_blank">720kb</a>
-       -
-      <a href="//github.com/720kb/ndm/blob/master/LICENSE.md" target="_blank" class="color-black toggle-opacity-hover">
-         License
-      </a>
+
+      <div class="separator50"></div>
+      <div class="line line-max center-content-tablet">
+        <div class="left-column line-tablet">
+          <div class="separator10"></div>
+          <div class="slogan">
+            <div class="separator30 desktop"></div>
+            <h1 class="line desktop font-big font-one font-medium color-white">
+              Manage <b>npm</b> straight from the couch.
+            </h1>
+            <div class="separator10"></div>
+            <h3 class="description font-bold color-white font-handwritten">"npm desktop manager"</h3>
+          </div>
+          <div class="separator50"></div>
+          <div>
+            <div class="separator10"></div>
+            <span class="switcher">
+              <a class="active" href="">
+                <i class="fa fa-apple"></i> Mac
+              </a>
+              <a href="javascript:void(0)" class="cursor-disabled" data-balloon-length="small" data-balloon="Soon available!" data-balloon-pos="up">
+                <i class="fa fa-linux"></i> Linux
+              </a>
+              <a href="javascript:void(0)" class="cursor-disabled" data-balloon-length="small" data-balloon="Soon available!" data-balloon-pos="up">
+                <i class="fa fa-windows"></i> Windows
+              </a>
+            </span>
+            <div class="separator30"></div>
+            <a class="download-link line color-white center-content" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
+              <i class="fa fa-download"></i> Download
+            </a>
+            <div class="separator30 desktop"></div>
+            <div class="separator10"></div>
+            <div>
+              <a class=" color-white  toggle-opacity-inverse-hover" href="https://github.com/720kb/ndm/releases/">
+                <small>Latest Release: v{{site.github.releases[0]['tag_name']}}</small>
+              </a>
+
+              <div class="separator30 mobile"></div>
+            </div>
+          </div>
+        </div>
+        <div class="right-column line-tablet center-content-tablet">
+          <img class="screenshot" src="img/screenshot-mac.png"/>
+        </div>
+      </div>
     </div>
-    <div class="col4 line-tablet right-content center-content-tablet">
-      <a class="color-black toggle-opacity-hover" href="//720kb.net" rel="noindex,follow" target="_blank">
-      <i class="fa fa-twitter color-twitter"></i> Follow @720kb_
-    </a>
-    </div>
+  </div>
+  <div class="line bg-white center-content">
+    <div class="separator50"></div>
+  </div>
+
+</div>
+<div class="separator50"></div>
+<div class="line bg-gradient-grey center-content">
+  <h1 class="font-light  color-muted">
+    Built with <a href="//electron.atom.io/" target="_blank" class="link">Electron</a>
+  </h1>
     <div class="separator10"></div>
-    <div class="separator5"></div>
+  <h1 class="font-light  color-muted">Soon for your Linux and Windows.</h1>
+  <div class="separator50"></div>
+  <div class="line footer">
+    <div class="line line-max center-content color-muted">
+      ©
+      <a class="color-black toggle-opacity-hover" href="//720kb.net" target="_blank">720kb</a>
+      &nbsp;
+      <a class="color-black toggle-opacity-hover" href="https://twitter.com/720kb_" target="_blank"><i class="color-twitter fa fa-twitter"></i> Follow</a>
+      <div class="separator30"></div>
+    </div>
   </div>
-  </div>
-  <!-- Place this tag right after the last button or just before your close body tag. -->
-  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-  <script>
-  //jscs:disable
-  //g analytics
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-77169435-1', 'auto');
-  ga('send', 'pageview');
-  </script>
+  <!-- Place this tag where you want the button to render. -->
+  <a class="github-button color-white" href="https://github.com/720kb/ndm" data-icon="octicon-star"  data-count-href="/720kb/ndm/stargazers" data-count-api="/repos/720kb/ndm#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star 720kb/ndm on GitHub">Star</a>
+  <!-- Place this tag where you want the button to render. -->
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <!-- Place this tag where you want the button to render. -->
+  <!-- Place this tag where you want the button to render. -->
+  <a class="github-button color-white" href="https://github.com/720kb/ndm/subscription" data-icon="octicon-eye" data-count-href="/720kb/ndm/watchers" data-count-api="/repos/720kb/ndm#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch 720kb/ndm on GitHub">Watch</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="github-button color-white" href="https://github.com/720kb/ndm/fork" data-icon="octicon-repo-forked"  data-count-href="/720kb/ndm/network" data-count-api="/repos/720kb/ndm#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork 720kb/ndm on GitHub">Fork</a>
+  <div class="separator50"></div>
+  <div class="separator30"></div>
+  <div class="separator50"></div>
+</div>
+</div>
+<div class="separator50"></div>
+<!-- Place this tag right after the last button or just before your close body tag. -->
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+<script>
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+  t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+  return t;
+}(document, "script", "twitter-wjs"));
+</script>
+<script>
+//g analytics
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-77169435-1', 'auto');
+ga('send', 'pageview');
+</script>
 </body>
 </html>

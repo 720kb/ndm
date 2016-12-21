@@ -29,6 +29,7 @@ small , small *, *.font-small{
   position: relative;
   max-width: 774px;
   margin-top: -30px;
+  bottom:-5px;
   left: -20%;
 }
 .left-column {

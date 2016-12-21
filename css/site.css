@@ -5,8 +5,18 @@ body {
 a, a *{
   transition: .15s linear;
 }
-*{
+.link {
+  color: #0D70FF;
+}
+.link:hover {
+ color: royalblue;
+}
+* {
   letter-spacing: normal;
+}
+* a, * a:hover {
+  font-size: inherit;
+  font-weight: inherit;
 }
 small , small *, *.font-small{
   font-size: 12px;
@@ -116,8 +126,6 @@ small , small *, *.font-small{
   margin-top:3px;
 }
 .infos {
-  max-width: 1200px;
-  width: 90%;
   float: none;
   margin: 0 auto;
 }
@@ -129,7 +137,7 @@ small , small *, *.font-small{
   border-radius: 10px;
 }
 .inf {
-  width: 33%;
+  width: 25%;
   float: left;
 }
 .color-twitter{
@@ -174,9 +182,14 @@ small , small *, *.font-small{
       width: 110%;
       min-width: 300px;
     }
-    .inf {
-    width: 50%;
-    }
+  }
+  .bg-gradient-grey {
+    background: #f9f9f9;
+background: -moz-linear-gradient(top,  #f9f9f9 0%, #f4f6f6 100%);
+background: -webkit-linear-gradient(top,  #f9f9f9 0%,#f4f6f6 100%);
+background: linear-gradient(to bottom,  #f9f9f9 0%,#f4f6f6 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f4f6f6',GradientType=0 );
+
   }
   /*mobile*/
     @media screen and (max-width:500px){

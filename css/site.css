@@ -24,16 +24,12 @@ small , small *, *.font-small{
 .cursor-disabled, .cursor-disabled:hover {
   cursor:not-allowed;
 }
-.header{
-
-
-}
 .screenshot {
   z-index: 9999;
   position: relative;
-  min-width: 650px;
-  margin-top: -8%;
-  left: -18%;
+  max-width: 774px;
+  margin-top: -30px;
+  left: -20%;
 }
 .left-column {
   width: 44%;
@@ -131,7 +127,7 @@ small , small *, *.font-small{
   color: #89DAF9;
 }
 /*tablet*/
-  @media screen and (max-width:1050px){
+  @media screen and (max-width:1090px){
   /*put in here all tablet rules*/
     .hide-mobile-tablet {
       display: none;
@@ -141,10 +137,13 @@ small , small *, *.font-small{
       width: 100%;
     }
     .download-link{
-      width: 250px;
+      min-width: 285px;
       margin:0 auto;
       float: none;
       display: block;
+    }
+    .slogan h3 {
+      font-size: 36px;
     }
     .center-content-tablet {
       text-align: center;
@@ -160,8 +159,9 @@ small , small *, *.font-small{
       left:0;
       right:0;
       margin: 0 auto;
-      max-width: 100%;
-      min-width: 0;
+      margin-top: 20px;
+      max-width: 774px;
+      width: 100%;
     }
     .slogan h1 {
       font-size: 30px;
@@ -189,7 +189,17 @@ small , small *, *.font-small{
         width: 100%;
         max-width: 280px;
       }
+      .screenshot {
+        margin-top: 0;
+      }
       .slogan h1 {
         font-size: 20px;
       }
+
+      .slogan h3 {
+        font-size: 26px;
+      }
     }
+[data-balloon]:after, [data-balloon]:before{
+  background: red;
+}

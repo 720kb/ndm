@@ -21,23 +21,23 @@ small , small *, *.font-small{
   background: radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
   background-repeat: no-repeat;
   overflow: hidden;
-  max-height: 500px;
+  max-height: 550px;
 }
 .screenshot {
   z-index: 9999;
   position: relative;
   width:125%;
   min-width: 500px;
-  margin-top: -2%;
+  margin-top: -5%;
   margin-bottom:-50px;
   left: -18%;
 }
 .left-column {
-  width: 45%;
+  width: 44%;
   float: left;
 }
 .right-column {
-  width: 55%;
+  width: 56%;
   float: left;
 }
 .line-max {
@@ -116,18 +116,21 @@ small , small *, *.font-small{
   margin-top:3px;
 }
 .infos {
-  max-width: 600px;
-  font-size: 18px;
+  max-width: 1200px;
   width: 90%;
   float: none;
   margin: 0 auto;
 }
 .infos i {
+  color: lightblue;
   margin: 5%;
   padding: 20px;
+  font-size: 70px;
   border-radius: 10px;
-  background: rgba(0,0,0,.1);
-  border: 1px solid rgba(0,0,0,.14);
+}
+.inf {
+  width: 33%;
+  float: left;
 }
 .color-twitter{
   color: #1882FC;
@@ -170,6 +173,9 @@ small , small *, *.font-small{
       margin: 0 auto;
       width: 110%;
       min-width: 300px;
+    }
+    .inf {
+    width: 50%;
     }
   }
   /*mobile*/

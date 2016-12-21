@@ -27,6 +27,7 @@
   <link href="bower_components/csshelper/dist/helper.min.css" rel="stylesheet" type="text/css"/>
   <link href="css/site.css" rel="stylesheet" type="text/css"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  <link href="fontello/css/fontello-embedded.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.4.0/balloon.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300|Kalam" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
@@ -36,7 +37,7 @@
   <div class="line header sparkley bg-gradient mac">
     <div class="separator50"></div>
     <div class="top line-compress line-max ">
-      <div class="col3 left-content">
+      <div class="col4 left-content">
         <h1 class="logo color-white">
           <a target="_blank" class="color-white" href="https://github.com/720kb/ndm">
             <img class="v-middle" width="50" src="img/logo.png"/>
@@ -44,7 +45,7 @@
           </a>
         </h1>
       </div>
-      <div class="top-menu col7 right-content">
+      <div class="top-menu col6 right-content">
         <a href="https://github.com/720kb/ndm/issues" target="_blank" class="color-white toggle-opacity-hover"> About</a>
         <a href="https://github.com/720kb/ndm#contribute" target="_blank" class="color-white toggle-opacity-hover"> Contribute</a>
         <a href="https://gitter.im/720kb/ndm" target="_blank" class="color-white toggle-opacity-hover"> <span class="desktop">Join</span> Chat</a>
@@ -69,20 +70,20 @@
             <div class="separator10"></div>
             <span class="switcher">
               <a class="active" href="">
-                <i class="fa fa-apple"></i> &nbsp;Mac
+                <i class="fa fa-apple"></i> Mac
               </a>
               <a href="javascript:void(0)" class="cursor-disabled" data-balloon-length="small" data-balloon="Soon available!" data-balloon-pos="up">
-                <i class="fa fa-linux"></i> &nbsp;Linux
+                <i class="fa fa-linux"></i> Linux
               </a>
               <a href="javascript:void(0)" class="cursor-disabled" data-balloon-length="small" data-balloon="Soon available!" data-balloon-pos="up">
-                <i class="fa fa-windows"></i> &nbsp;Windows
+                <i class="fa fa-windows"></i> Windows
               </a>
             </span>
             <div class="separator30"></div>
             <a class="download-link line color-white center-content" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
-              Download
+              <i class="fa fa-download"></i> Download
             </a>
-            <div class="separator10"></div>
+            <div class="separator30"></div>
             <div>
               <a class=" color-white  toggle-opacity-inverse-hover" href="https://github.com/720kb/ndm/releases/">
                 <small>Latest Release: v{{site.github.releases[0]['tag_name']}}</small>
@@ -102,7 +103,6 @@
 
 </div>
 <div class="separator50"></div>
-<div class="separator50 desktop"></div>
 <div class="line bg-gradient-grey center-content">
   <h1 class="font-light  color-muted">
     Built with <a href="" class="link">Electron</a>

@@ -90,8 +90,7 @@ small , small *, *.font-small{
   color: white;
   font-size: 14px;
   width: 100%;
-  margin-right: 1%;
-  padding: 3px 10px;
+  padding: 3.5px 15px;
   border-radius: 3px;
 }
 .switcher a.active{
@@ -101,7 +100,7 @@ small , small *, *.font-small{
 .download-link{
   border-radius:4px;
   width: 100%;
-  max-width: 240px;
+  max-width: 270px;
   font-size: 15px;
   background: #0d70ff;
   transition: none;
@@ -113,10 +112,6 @@ small , small *, *.font-small{
 }
 .download-link:active, .download-link:active:hover {
   box-shadow: 0 0 0 ;
-}
-.download-link i{
-  font-size:28px;
-  margin-top:3px;
 }
 .infos {
   float: none;
@@ -171,6 +166,9 @@ small , small *, *.font-small{
     .slogan h1 {
       font-size: 30px;
     }
+    .desktop {
+      display:none;
+    }
   }
   .bg-gradient.mac {
     background: -webkit-linear-gradient(274deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
@@ -182,9 +180,15 @@ small , small *, *.font-small{
   /*mobile*/
     @media screen and (max-width:500px){
       .top {
-        max-width: 80%;
+        max-width: 82%;
       }
-
+      .top-menu a {
+        margin-left: 5px;
+      }
+      .download-link {
+        width: 100%;
+        max-width: 280px;
+      }
       .slogan h1 {
         font-size: 20px;
       }

@@ -11,19 +11,23 @@ a, a *{
 small , small *, *.font-small{
   font-size: 12px;
 }
+.cursor-disabled, .cursor-disabled:hover {
+  cursor:not-allowed;
+}
 .header{
   background: -webkit-linear-gradient(274deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
   background: linear-gradient(176deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
   background: -webkit-radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
   background: radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
   background-repeat: no-repeat;
-  max-height: 500px;
-  overflow:hidden;
+  max-height: 450px;
+  overflow: hidden;
 }
 .screenshot {
   z-index: 9999;
   position: relative;
   width: 110%;
+  max-width: 700px;
   left:-5%;
 }
 .line-max {
@@ -85,9 +89,9 @@ small , small *, *.font-small{
 .download-link{
   border-radius:4px;
   width: 100%;
-  max-width: 230px;
+  max-width: 240px;
   font-size: 15px;
-  background: rgba(255,255,255, .3);
+  background: rgba(0,0,0, .1);
   transition: none;
   line-height: 44px;
 }

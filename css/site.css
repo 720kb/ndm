@@ -14,7 +14,7 @@ a, a *{
 * {
   letter-spacing: normal;
 }
-* a, * a:hover {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -25,20 +25,15 @@ small , small *, *.font-small{
   cursor:not-allowed;
 }
 .header{
-  background: -webkit-linear-gradient(274deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
-  background: linear-gradient(176deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
-  background: -webkit-radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
-  background: radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
-  background-repeat: no-repeat;
   overflow: hidden;
-  max-height: 550px;
+  max-height: 500px;
 }
 .screenshot {
   z-index: 9999;
   position: relative;
   width:125%;
   min-width: 500px;
-  margin-top: -5%;
+  margin-top: -8%;
   margin-bottom:-50px;
   left: -18%;
 }
@@ -105,6 +100,9 @@ small , small *, *.font-small{
   background: rgba(0,0,0,.16);
   color: white;
 }
+.switcher a.active i {
+  color: #0d70ff;
+}
 .download-link{
   border-radius:4px;
   width: 100%;
@@ -129,12 +127,8 @@ small , small *, *.font-small{
   float: none;
   margin: 0 auto;
 }
-.infos i {
-  color: lightblue;
-  margin: 5%;
-  padding: 20px;
-  font-size: 70px;
-  border-radius: 10px;
+.infos img {
+  width: 60px;
 }
 .inf {
   width: 25%;
@@ -183,13 +177,12 @@ small , small *, *.font-small{
       min-width: 300px;
     }
   }
-  .bg-gradient-grey {
-    background: #f9f9f9;
-background: -moz-linear-gradient(top,  #f9f9f9 0%, #f4f6f6 100%);
-background: -webkit-linear-gradient(top,  #f9f9f9 0%,#f4f6f6 100%);
-background: linear-gradient(to bottom,  #f9f9f9 0%,#f4f6f6 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f4f6f6',GradientType=0 );
-
+  .bg-gradient.mac {
+    background: -webkit-linear-gradient(274deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
+    background: linear-gradient(176deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
+    background: -webkit-radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
+    background: radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
+    background-repeat: no-repeat;
   }
   /*mobile*/
     @media screen and (max-width:500px){

@@ -25,15 +25,14 @@ small , small *, *.font-small{
   cursor:not-allowed;
 }
 .header{
-  overflow: hidden;
-  max-height: 500px;
+
+
 }
 .screenshot {
   z-index: 9999;
   position: relative;
   min-width: 650px;
   margin-top: -8%;
-  margin-bottom:-50px;
   left: -18%;
 }
 .left-column {
@@ -137,7 +136,7 @@ small , small *, *.font-small{
   color: #89DAF9;
 }
 /*tablet*/
-  @media screen and (max-width:950px){
+  @media screen and (max-width:1050px){
   /*put in here all tablet rules*/
     .hide-mobile-tablet {
       display: none;
@@ -161,16 +160,16 @@ small , small *, *.font-small{
     .right-content-tablet {
       text-align: right;
     }
-    .header {
-      max-height: 900px;
-    }
     .screenshot {
       float:none;
-      left:-5%;
+      left:0;
       right:0;
       margin: 0 auto;
-      width: 110%;
-      min-width: 300px;
+      max-width: 100%;
+      min-width: 0;
+    }
+    .slogan h1 {
+      font-size: 30px;
     }
   }
   .bg-gradient.mac {
@@ -182,10 +181,11 @@ small , small *, *.font-small{
   }
   /*mobile*/
     @media screen and (max-width:500px){
-      .header {
-        max-height: 600px;
-      }
       .top {
         max-width: 80%;
+      }
+
+      .slogan h1 {
+        font-size: 20px;
       }
     }

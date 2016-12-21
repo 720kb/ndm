@@ -31,8 +31,7 @@ small , small *, *.font-small{
 .screenshot {
   z-index: 9999;
   position: relative;
-  width:125%;
-  min-width: 500px;
+  min-width: 650px;
   margin-top: -8%;
   margin-bottom:-50px;
   left: -18%;
@@ -99,9 +98,6 @@ small , small *, *.font-small{
 .switcher a.active{
   background: rgba(0,0,0,.16);
   color: white;
-}
-.switcher a.active i {
-  color: #0d70ff;
 }
 .download-link{
   border-radius:4px;

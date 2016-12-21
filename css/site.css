@@ -20,15 +20,16 @@ small , small *, *.font-small{
   background: -webkit-radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
   background: radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
   background-repeat: no-repeat;
-  max-height: 450px;
+  max-height: 550px;
   overflow: hidden;
 }
 .screenshot {
   z-index: 9999;
   position: relative;
-  width: 110%;
-  max-width: 700px;
+  width: 130%;
+  max-width: 800px;
   left:-5%;
+  top: -15px;
 }
 .line-max {
   max-width: 1200px;
@@ -78,12 +79,11 @@ small , small *, *.font-small{
   font-size: 14px;
   width: 100%;
   margin-right: 1%;
-  padding: 2px 10px;
+  padding: 3px 10px;
   border-radius: 3px;
-
 }
 .switcher a.active{
-  background: rgba(0,0,0, .3);
+  background: rgba(0,0,0,.16);
   color: white;
 }
 .download-link{
@@ -91,7 +91,7 @@ small , small *, *.font-small{
   width: 100%;
   max-width: 240px;
   font-size: 15px;
-  background: rgba(0,0,0, .1);
+  background: #0d70ff;
   transition: none;
   line-height: 44px;
 }

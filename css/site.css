@@ -70,23 +70,24 @@ small , small *, *.font-small{
   word-spacing: -1px;
 }
 .switcher a {
-  color: rgba(255, 255, 255, .8);
-  font-size: 16px;
+  color: white;
+  font-size: 14px;
   width: 100%;
-  line-height: 35px;
-  margin-right: 6%;
+  margin-right: 1%;
+  padding: 2px 10px;
+  border-radius: 3px;
 
 }
 .switcher a.active{
-  background: rgba();
+  background: rgba(0,0,0, .3);
+  color: white;
 }
 .download-link{
   border-radius:4px;
   width: 100%;
   max-width: 230px;
   font-size: 15px;
-  margin:0 1%;
-  background: red;
+  background: rgba(255,255,255, .3);
   transition: none;
   line-height: 44px;
 }
@@ -103,18 +104,12 @@ small , small *, *.font-small{
   font-size:28px;
   margin-top:3px;
 }
-.footer{
-  border-top: 2px dashed #ddd;
-}
+
 .color-twitter{
   color: #1882FC;
 }
 .color-cyan {
   color: #89DAF9;
-}
-.bg-cyan {
-  border: 2px dashed #ddd;
-  border-bottom:none;
 }
 /*tablet*/
   @media screen and (max-width:800px){

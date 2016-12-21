@@ -20,16 +20,12 @@ if (!isEdge && !isSafari) {
 
 $(function() {
 // default is varying levels of transparent white sparkles
-$(".sparkley:first").sparkleh();
+$(".sparkley:first, .sparkley:last").sparkleh();
 
 // rainbow as a color generates random rainbow colros
 // count determines number of sparkles
 // overlap allows sparkles to migrate... watch out for other dom elements though.
-$(".sparkley:last").sparkleh({
-  color: "rainbow",
-  count: 80,
-  overlap: 10
-});
+
 // an array can be passed, too for colours
 // for an image, the image needs to be fully loaded to set
 // the canvas to it's height/width.
@@ -46,19 +42,19 @@ return this.each( function(k,v) {
   var settings = $.extend({
     width: $this.outerWidth(),
     height: $this.outerHeight(),
-    color: "#FFFFFF",
-    count: 30,
-    overlap: 0,
+    color: "rainbow",
+    count: 50,
+    overlap: 10,
     speed: 1
   }, options );
 
   var sparkle = new Sparkle( $this, settings );
 
   $this.on({
-    "mouseover focus click mouseenter mousemove" : function(e) {
+    "mousemove" : function(e) {
       sparkle.over();
     },
-    "mouseout blur" : function(e) {
+    "mouseleave mouseout blur" : function(e) {
       sparkle.out();
     }
   });

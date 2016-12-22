@@ -14,15 +14,14 @@
 
   i {
     margin-left: 8px;
-    vertical-align: middle;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .tags-input {
     line-height: initial;
     border-radius: 3px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
-    font-size: 11px;
+    font-size: 13px;
     padding: 3.5px 4px 4px 4px;
     width: calc(70.5% - 8px);
     background: white;
@@ -64,7 +63,7 @@
       line-height: initial;
       border-radius: $border-radius-inputs;
       box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
-      font-size: 11px;
+      font-size: 13px;
       padding: 3.5px 4px 4px 4px;
       width: 18%;
       margin-right: 2%;
@@ -80,17 +79,12 @@
     }
   }
 
-  .prompt-kind {
-    position: relative;
-    bottom: -1px;
-  }
-
   button {
     font-weight: 500;
     font-size: 12px;
     height: 22px;
     line-height: 16px;
-    margin-top: -3px;
+    margin-top: -.3%;
     vertical-align: middle;
     min-width: 13%;
     width: auto;

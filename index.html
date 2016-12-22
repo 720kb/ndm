@@ -23,7 +23,7 @@
   <meta property="og:description" content='npm desktop manager'/>
   <meta name="description" content='npm desktop manager'/>
   <meta name="keywords" content="npm, client, gui, app, desktop, manager, tool, download, atom, electron, ndm, open source, mac, osx, linux"/>
-  <title>ndm</title>
+  <title>npm desktop manager</title>
   <link href="bower_components/csshelper/dist/helper.min.css" rel="stylesheet" type="text/css"/>
   <link href="css/site.css" rel="stylesheet" type="text/css"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
@@ -32,6 +32,24 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300|Kalam" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.sparkles.js"></script>
+  <script type="text/javascript">
+    $('document').ready(function onDOM() {
+      $('.switcher a').on('click', function onClickSwitcher () {
+        var platform = $(this).attr('id').toString().trim();
+        console.log('switch to platform', platform);
+        if (platform === 'mac') {
+            setTimeout(function () {
+              $('.linux, .win').addClass(platform).removeClass('win linux');
+            }, 0);
+          }
+        if (platform === 'linux') {
+            setTimeout(function () {
+              $('.mac, .win').addClass(platform).removeClass('mac win');
+            }, 0);
+          }
+      });
+    });
+  </script>
 </head>
 <body>
   <div class="line header sparkley bg-gradient mac">
@@ -69,18 +87,18 @@
           <div>
             <div class="separator10"></div>
             <span class="switcher">
-              <a class="active" href="">
+              <a class="active" href="javascript:void(0)" id="mac">
                 <i class="fa fa-apple"></i> Mac
               </a>
-              <a href="javascript:void(0)" class="cursor-disabled" data-balloon-length="small" data-balloon="Soon available!" data-balloon-pos="up">
+              <a id="linux" href="javascript:void(0)" class="cursor-disabled" data-balloon-length="small" data-balloon="Soon available!" data-balloon-pos="up">
                 <i class="fa fa-linux"></i> Linux
               </a>
-              <a href="javascript:void(0)" class="cursor-disabled" data-balloon-length="small" data-balloon="Soon available!" data-balloon-pos="up">
+              <a id="win" href="javascript:void(0)" class="cursor-disabled" data-balloon-length="small" data-balloon="Soon available!" data-balloon-pos="up">
                 <i class="fa fa-windows"></i> Windows
               </a>
             </span>
             <div class="separator30"></div>
-            <a class="download-link line color-white center-content" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
+            <a class="download-link line color-white center-content mac" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
               <i class="fa fa-download"></i> Download
             </a>
             <div class="separator30 desktop"></div>
@@ -95,7 +113,7 @@
           </div>
         </div>
         <div class="right-column line-tablet center-content-tablet">
-          <img class="screenshot" src="img/screenshot-mac.png"/>
+          <img class="screenshot mac" src="img/screenshot-mac.png"/>
         </div>
       </div>
     </div>

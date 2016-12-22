@@ -24,6 +24,9 @@ small , small *, *.font-small{
 .cursor-disabled, .cursor-disabled:hover {
   cursor:not-allowed;
 }
+.bg-gradient {
+  transition: all 20s linear;
+}
 .screenshot {
   z-index: 9999;
   position: relative;
@@ -110,6 +113,9 @@ small , small *, *.font-small{
 .download-link:active, .download-link:active:hover {
   box-shadow: 0 0 0 ;
 }
+.download-link.linux {
+  background: #f34425;
+}
 .infos {
   float: none;
   margin: 0 auto;
@@ -178,6 +184,13 @@ small , small *, *.font-small{
     background: radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
     background-repeat: no-repeat;
   }
+  .bg-gradient.linux {
+    background: #4f1b3c;
+  background: -moz-linear-gradient(top,  #4f1b3c 0, #b7264f 48%, #e85237 100%);
+  background: -webkit-linear-gradient(top,  #4f1b3c 0,#b7264f 48%,#e85237 100%);
+  background: linear-gradient(to bottom,  #4f1b3c 0,#b7264f 48%,#e85237 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f1b3c', endColorstr='#e85237',GradientType=0 );
+}
   /*mobile*/
     @media screen and (max-width:500px){
       .top {

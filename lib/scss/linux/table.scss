@@ -69,7 +69,6 @@
 .table-row-loading.active:active,
 .table-row-loading.active:focus {
   background: $bg-progress;
-  box-shadow: 0 -1px 16px rgba(0, 0, 0, .08) inset;
   animation: loadingStripes  1.5s linear infinite;
 }
 

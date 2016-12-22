@@ -17,10 +17,6 @@
   box-shadow: -3.5px -3.5px rgba(0, 0, 0, .1) inset;
   text-shadow: -1px 1px rgba(255, 255, 255, .3);
 
-  div:not(.left-progress, .left-progress div) {
-    height: 30px;
-  }
-
   a {
     cursor: default;
     display: inline-block;
@@ -31,6 +27,11 @@
     padding: 0 9px;
     width: calc(100% - 3.5px);
     color: $color-default;
+
+    &:not(.project) {
+
+      margin-bottom: 15px;
+    }
 
     i {
       font-size: 18px;
@@ -76,10 +77,6 @@
 
     &.project {
 
-      &:first-child {
-        margin-top: 15px;
-      }
-
       button {
         bottom: -3px;
         color: $color-default;
@@ -111,8 +108,6 @@
         }
       }
     }
-
-
   }
 
   h6 {

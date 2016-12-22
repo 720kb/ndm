@@ -16,12 +16,14 @@ If you are so kind to help and support us, please consider following these guide
 
 - Just do not disable linters with inline comments (or at least remove comments as you want to PR) but be sure there are no errors in the end.
 
+- If you are editing the GUI style (CSS) do not change or edit .pug/.html files to fit your style; CSS must fit the html structure and not the opposite.
+
 - As you finished to code your changes always make a new clean install (`rm -Rf node_modules/ && npm install`)
   , Then run the app and test all your changes deeply (`npm start`)
   
 - Be sure to always update your node and npm global version before starting coding your changes/fixs
 
-- If you are not sure or you have any doubt about what you are doing/changing: consider opening an issue and ask before going to PR or commit
+- If you are not sure or you have doubts about what you are doing/changing: consider opening an issue and ask, before to go PR or commit
 
 - If your changes are radicals, please open an issue or contact us [here](https://gitter.im/720kb/ndm), so that we can discuss it togheter before everything goes on. By radicals we can list for example: 
    - created new tasks

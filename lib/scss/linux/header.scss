@@ -58,21 +58,18 @@
   }
 
   .button-global {
-    background: $bg-lighter;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 1px 1px rgba(0, 0, 0, .1);
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    text-shadow: 0 -1px rgba(0, 0, 0, .5);
+    border-radius: $border-radius-button;
+    color: $color-white;
+    border: 1px solid rgba(0,0,0, .25);
     position: relative;
-    bottom: -14px;
     right: -30px;
-    padding: 2px 4px;
-    text-shadow: 0 1px white;
 
     i {
       font-size: 14px;
-      position: relative;
-      bottom: -.5px;
-      margin-right: -2px;
+      vertical-align: middle;
     }
 
     &:active {
@@ -85,10 +82,11 @@
 
   button {
     font-size: 14px;
-    line-height: 25px;
-    text-shadow: 0 -1px rgba(255, 255, 255, .5);
-    border-radius: 3px;
+    line-height: 20px;
+    text-shadow: 0 -1px rgba(0, 0, 0, .5);
+    border-radius: $border-radius-button;
     color: $color-white;
+    border: 1px solid rgba(0,0,0, .25);
 
     input {
       &[type='file'] {

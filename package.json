@@ -1,11 +1,15 @@
 {
   "name": "ndm",
   "version": "0.0.6-beta",
-  "description": "Npm Desktop Manager, GUI client for npm",
+  "description": "npm desktop manager",
   "main": "index.js",
   "homepage": "https://720kb.github.io/ndm",
   "github": "https://github.com/720kb/ndm",
-  "author": "720kb",
+  "author": {
+    "name" : "720kb"
+,   "email" : "tech@720kb.net"
+,   "url" : "http://720kb.net"
+  },
   "authors": [
     "720kb",
     "Filippo Oretti",
@@ -21,7 +25,8 @@
     "start": "electron .",
     "mac": "gulp dist --platform=mac && electron .",
     "linux": "gulp dist --platform=linux && electron .",
-    "build": "npm install && npm prune && gulp dist --platform=mac && build"
+    "build": "gulp dist --platform=mac && build",
+    "build-linux": "gulp dist --platform=linux && build --linux"
   },
   "bugs": {
     "url": "https://github.com/720kb/ndm/issues"
@@ -35,11 +40,28 @@
     "copyright": "© 720kb - Filippo Oretti - Dario Andrei",
     "asar": false,
     "productName": "ndm",
-    "category": "public.app-category.productivity",
-    "target": "dmg",
-    "icon": "icon.icns",
+    "mac": {
+      "icon": "icon.icns",
+      "category": "public.app-category.productivity",
+      "target": "dmg"
+    },
     "dmg": {
       "backgroundColor": "#cdcdcd"
+    },
+    "linux": {
+      "maintainer": "720kb.net",
+      "category": "Utility",
+      "description": "npm desktop manager",
+      "packageCategory": "Utility",
+      "arch": [
+        "ia32",
+        "x64"
+      ],
+      "target": [
+        "deb",
+        "AppImage",
+        "rpm"
+      ]
     },
     "files": [
       "node_modules",

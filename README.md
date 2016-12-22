@@ -32,13 +32,11 @@ $ brew cask install ndm
 ```
 ### What's ndm ?
 
-**ndm** formally _"Npm Desktop Manager"_ is the desktop GUI for [npm](https://npmjs.com/).
+**ndm** formally _"npm desktop manager"_ is the desktop GUI for [npm](https://npmjs.com/).
 
-With **ndm** you can easily manage npm and npm modules directly from the couch, without opening the a shell terminal.
+With **ndm** you can manage npm, npm projects and npm packages with ease.
 
-**ndm** uses the [npm-cli](https://docs.npmjs.com/cli/npm) - ```require('npm');```- and is packed up thanks to [Electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
-
-Feel free to reach any of us for any info/question, or to support the project in any way you wish.
+**ndm** is built with web technologies, it uses the [npm-cli](https://docs.npmjs.com/cli/npm) - ```require('npm');```- and it is packed up thanks to [Electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
 
 ### I love the Shell, why use an app?
 
@@ -46,35 +44,25 @@ Of course, we all love it too.
 
 The Shell is obviously very powerful.
 
-However, not all the people know how to use it from the scratch.
-
-Usually novice programmers or web designers can not use the Shell, so we thought we could build an alternative experience to `npm` dependencies management.
-
-Also sometimes we're just lazy, and we want to do everything with few clicks on a nice User Interface. 
-
-
-Some of the added values of **ndm**:
+We wanted to build an alternative experience to the `npmCLI` and here is all the GUI pros we think you should not miss:
 
 - Less struggling with multiple terminal tabs
 - Less struggling with long terminal logs, scrolling to find warnings and errors are a things of the past now
 - All your projects are on the same view
-- Intuitive interface (no doc required)
+- Intuitive interface.
 - Notifications (specially when your long long npm install finishes)
 - Check npm packages informations with two clicks (such as repository, author, license and so on...)
 - Run npm commands and scripts in two clicks
 
-More features:
+Also, sometimes we are just lazy and a GUI makes it more handy.
 
-You can edit project package.json in-place, "Snapshot" projects and revert them from the "History" prompt in two clicks - this makes easier to try any changes before releasing them (i.e: update pkgs, install new pkgs, delete pkgs, and so on..)
-
-
-**Note that:** using **ndm** doesn't mean you can no longer use the CLI - The power of the Shell is strong! Use it, young Padawan! :D
+**Note that:** using **ndm** doesn't mean you can no longer use the CLI - The power of the Shell is strong! Keep using it, young Padawan! :D
 
 ### Run it locally 
 
 You can build and run `ndm` on Linux, Windows and MacOS, just follow these easy steps:
 
-Choose A (easiest) or B (more convenient):
+Choose **A** (easiest) or **B** (more convenient):
 
 
 ### A. Run 
@@ -152,9 +140,9 @@ We can't do much to speed up your machine or the npm commands.
 
 **Yarn?**
 
-**ndm** was born several months before Yarn was out.
-Yarn is a great tool, we are looking forward to seeing what happens.
-Many things could change in the meantime. 
+Premise: **ndm** was born several months before Yarn was out.
+Yarn is a great tool, we are looking forward to seeing what happens both on the Yarn and the npm side.
+Many things could change in the meantime.
 That said: if you have any idea or suggestion, here you are welcome to share and discuss!
 
 **Why Mac only?**
@@ -165,7 +153,7 @@ As soon as we are sure that the project is stable, it will be delivered to the o
 
 **Support?**
 
-Just open an issue we'll be in touch.
+Just open an issue, we'll be in touch.
 
 ### Core team
 

@@ -7,7 +7,7 @@ $font-icon: 'fontello';
 /*
 colors
 */
-$color-default: #4c4c4c;
+$color-default: #41403b;
 $color-positive: #ed793c;
 $color-error: #e81616;
 $color-stripes-one: rgba(55, 255, 255, .4);
@@ -50,6 +50,7 @@ $bg-table-row: #f2fdff;
 $bg-positive: royalblue;
 $bg-error: #e81616;
 $bg-table-row-highlight: #fcfcc9;
+$bg-gradient-header: linear-gradient(to bottom, #3e3d38 21%,#54524a 100%);
 $bg-gradient-footer: linear-gradient(to bottom, $bg-ultralight 0%, $bg-mediumlight 100%);
 $bg-gradient-grey: linear-gradient(to bottom, $bg-lightgrey 0%, $bg-smoke 100%);
 $bg-progress: repeating-linear-gradient(135deg, $color-secondary, $color-secondary 5px, $color-primary 5px, $color-primary 10px);

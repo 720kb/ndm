@@ -16,7 +16,7 @@
             b(title="Current Npm version", ng-bind="topMenu.npmCurrentVersionBadge" ng-show="topMenu.npmCurrentVersionBadge && (!topMenu.npmLatestVersionBadge || (topMenu.npmLatestVersionBadge === topMenu.npmCurrentVersionBadge))")
       = " "
       = " "
-      span.button-global(title="Enable ndm in global folder",  ng-click="shell.enableGlobal()")
+      span.button-global(title="Enable ndm in global folder", ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
         i.fa.fa-globe.color-primary
         = " "
         | Enable

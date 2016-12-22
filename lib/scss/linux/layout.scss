@@ -17,7 +17,7 @@
   box-shadow: -3.5px -3.5px rgba(0, 0, 0, .1) inset;
   text-shadow: -1px 1px rgba(255, 255, 255, .3);
 
-  div {
+  div:not(.left-progress, .left-progress div) {
     height: 30px;
   }
 

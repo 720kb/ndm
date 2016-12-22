@@ -19,8 +19,7 @@
 
   .tags-input {
     line-height: initial;
-    border-radius: 3px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
+    border-radius: $border-radius-inputs;
     font-size: 13px;
     padding: 3.5px 4px 4px 4px;
     width: calc(70.5% - 8px);
@@ -29,6 +28,8 @@
     overflow: hidden;
     float:left;
     margin-right:2%;
+    box-shadow: 0 1px rgba(0, 0, 0, .25);
+
     //placeholder for contenteditable input
     &:empty:before {
       color: $color-muted;
@@ -53,8 +54,8 @@
       border-radius: $border-radius-tags;
       border: $border-tags;
       padding: 0 4px 1.5px 4px;
-      color: $color-white;
-      text-shadow: 0 -1px rgba(255, 255, 255, .5);
+      color: white;
+      text-shadow: 0 -1px rgba(0, 0, 0, .2);
     }
   }
 
@@ -64,7 +65,7 @@
       border: none;
       line-height: initial;
       border-radius: $border-radius-inputs;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
+      box-shadow: 0 1px rgba(0, 0, 0, .25);
       font-size: 13px;
       padding: 3.5px 4px 4px 4px;
       width: 18%;

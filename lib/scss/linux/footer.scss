@@ -10,6 +10,7 @@
   position: fixed;
   width: 100%;
   z-index: 9;
+  box-shadow: 0 -1px 10px rgba(0,0,0, .1) inset;
 
   span {
     float: right;

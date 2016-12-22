@@ -2,6 +2,11 @@
   line-height: 30px;
   padding: 0 10px;
   transition: opacity .3s linear;
+  background: $bg-secondary;
+
+  div {
+    box-shadow: -1px -1px rgba(0, 0, 0, .15) inset;
+  }
 
   i {
     float: right;

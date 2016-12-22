@@ -164,7 +164,7 @@ Just open an issue, we'll be in touch.
 [GNU GPLv3](LICENSE.md).
 
 
-### Contributors list
+### Contributors
 
 Contribute and edit the Readme to you to this list:
 

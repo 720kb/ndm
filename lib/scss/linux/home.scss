@@ -19,9 +19,10 @@
   color: $color-default;
   border: .5px solid rgba(0, 0, 0, .2);
 
+  &:hover, &:active {
+    background: $bg-button-secondary-active;
+  }
   &:active {
     text-shadow: none;
-    box-shadow: 0 0 0;
-    text-shadow: 0 -1px rgba(255, 255, 255, .5);
   }
 }

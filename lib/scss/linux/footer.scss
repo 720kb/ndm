@@ -1,4 +1,5 @@
 .footer {
+  background: $bg-primary;
   -webkit-app-region: drag;
   bottom: 0;
   font-size: 13px;
@@ -9,7 +10,6 @@
   position: fixed;
   width: 100%;
   z-index: 9;
-  background: $color-default;
 
   span {
     float: right;

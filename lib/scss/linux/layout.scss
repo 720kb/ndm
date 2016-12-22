@@ -14,8 +14,8 @@
   overflow-y: auto;
   padding: 0 15px;
   width: 200px;
-  box-shadow: -3.5px -3.5px rgba(0,0,0, .1) inset;
-  text-shadow: -1px 1px rgba(0, 0, 0, .35);
+  box-shadow: -3.5px -3.5px rgba(0, 0, 0, .1) inset;
+  text-shadow: -1px 1px rgba(255, 255, 255, .3);
 
   div {
     height: 30px;
@@ -30,7 +30,7 @@
     margin: 0;
     padding: 0 9px;
     width: calc(100% - 3.5px);
-    color: $color-white;
+    color: $color-default;
 
     div {
       display: inline-flex;
@@ -64,7 +64,7 @@
 
       button {
         bottom: -3px;
-        color: $color-muted-more;
+        color: $color-default;
         display: none;
         float: right;
         height: 30px;

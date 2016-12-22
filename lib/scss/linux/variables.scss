@@ -35,8 +35,8 @@ $color-table-light-icons: #d6e7e8;
 /*
 backgrounds
 */
-$bg-white: #f0f0f0;
-$bg-primary: #41403b;
+$bg-white: #fff;
+$bg-primary: #f2f1f0;
 $bg-light: #666;
 $bg-lighter: #999;
 $bg-ultralight: #58564e;
@@ -57,6 +57,7 @@ $bg-progress-secondary: repeating-linear-gradient(135deg, $color-primary, $color
 $bg-progress-minor: repeating-linear-gradient(135deg, $color-error, $color-error 5px, #c71212 5px, #c71212 10px);
 $bg-dialog: $bg-lightgrey;
 $bg-tags: #e5ebf1;
+$bg-button-secondary: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, #fe9674 3%, #fe9674 6%, #fc8c6a 100%);
 /*border-radius*/
 $border-radius-inputs: 3px;
 $border-radius-button: 3px;

@@ -3,16 +3,6 @@
   padding: 0 10px;
   transition: opacity .3s linear;
 
-  .clickable {
-    &:active {
-      opacity: .7;
-    }
-  }
-
-  div {
-    box-shadow: -3.5px -3.5px rgba(0,0,0, .1) inset;
-  }
-
   i {
     float: right;
     position: relative;
@@ -58,7 +48,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 20px;
-  background: $bg-muted-invisible;
+  background: $bg-white;
 }
 
 .table-loader {
@@ -66,7 +56,7 @@
   padding-top: 30vh;
   text-align: center;
   font-size: 18px;
-  background: $color-default;
+  background: $bg-primary;
 }
 
 .table-row-loading,

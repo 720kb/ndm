@@ -22,10 +22,10 @@ div(ng-controller='LeftBarController as leftBar')
           .left-progress.left-progress-minor.color-white(ng-repeat="runningScript in leftBar.npmRunningScriptsProject[item.path] track by $index")
             div
               | &#8627; Running: {{runningScript}}
-          .left-progress.color-white()
+          .left-progress.color-white(ng-show="leftBar.npmInstallingProjects[item.dirName]")
             div
               | &#8627; Installing
-          .left-progress.left-progress-minor.color-white()
+          .left-progress.color-white(ng-show="leftBar.npmReinstallingProjects[item.dirName]")
             div
               | &#8627; Reinstalling
           .left-progress.color-white(ng-show="leftBar.npmBuildingProjects[item.dirName]")

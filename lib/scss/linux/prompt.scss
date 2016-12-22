@@ -52,7 +52,9 @@
       background: $bg-tags;
       border-radius: $border-radius-tags;
       border: $border-tags;
-      padding: 0 3px 1.5px 3px;
+      padding: 0 4px 1.5px 4px;
+      color: $color-white;
+      text-shadow: 0 -1px rgba(255, 255, 255, .5);
     }
   }
 

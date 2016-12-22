@@ -5,8 +5,9 @@
 .top-menu {
   -webkit-app-region: drag;
   background: $bg-gradient-header;
-  padding: 8px 10px 5px 10px;
+  padding: 10px 10px 5px 10px;
   width: 100%;
+  box-shadow: 0 1px rgba(0, 0, 0, .15) inset;
 
   a {
     color: $color-white;

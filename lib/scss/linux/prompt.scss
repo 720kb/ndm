@@ -4,14 +4,13 @@
   box-shadow: 0 -20px 20px rgba(0, 0, 0, .04) inset, 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
   left: 0;
-  padding: 3px 5px;
+  padding: 4px 8px;
   position: absolute;
   right: 0;
+  top: 40px;
   margin: 0 auto;
-  width: 460px;
+  width: 520px;
   z-index: 9999;
-  top: 55px;
-  font-size: 11px;
 
   i {
     margin-left: 8px;
@@ -87,31 +86,32 @@
   }
 
   button {
-    background: $color-default;
-    border-radius: $border-radius-button;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 1px 1px rgba(0, 0, 0, .1);
-    color: $color-666;
     font-weight: 500;
-    font-size: 11px;
-    height: 19px;
-    line-height: 14px;
-    margin-top: -.5px;
-    text-shadow: 0 1px white;
+    font-size: 12px;
+    height: 22px;
+    line-height: 16px;
+    margin-top: -3px;
     vertical-align: middle;
     min-width: 13%;
     width: auto;
     margin-left: 6px;
+    border-radius: $border-radius-button;
+    text-shadow: 0 1px rgba(255, 255, 255, .5);
+    background: $bg-button-secondary;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+    color: $color-default;
+    border: .5px solid rgba(0, 0, 0, .2);
 
     &:active {
-      background: rgba(0, 0, 0, .04);
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, .09) inset, 0 1px rgba(0, 0, 0, .09) inset;
-      color: $color-999;
       text-shadow: none;
+      box-shadow: 0 0 0;
+      text-shadow: 0 -1px rgba(255, 255, 255, .5);
     }
 
     &.disabled {
       box-shadow: none;
       opacity: .5;
+      text-shadow: none;
     }
 
     i {
@@ -129,8 +129,8 @@
     float: none;
     height: calc(100% - 30px);
     overflow: auto;
-    box-shadow: 1px 1px rgba(0, 0, 0, .25) inset, -1px -1px rgba(0, 0, 0, .13) inset;
-    background: white;
+    box-shadow: 0 0 1px red inset;
+    background: $bg-primary;
     border-radius: .5px;
     font-size: 12.5px;
 
@@ -145,7 +145,7 @@
 }
 
 .prompt-history-item {
-  line-height: 22px;
+  line-height: 23px;
   width: calc(100% - 2px);
   margin: 0 1px 0 1px;
 
@@ -153,16 +153,13 @@
     margin-top: 1px;
   }
 
-  &:nth-child(odd) {
-    background: $bg-table-row;
-  }
-
   &.active {
     background-color: $bg-table-row-highlight;
   }
-
   i {
-    font-size: 12.5px;
+    font-size: 14px;
+    margin-left: 5px;
+    vertical-align: initial;
   }
 }
 

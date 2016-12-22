@@ -57,11 +57,11 @@ $bg-progress-secondary: repeating-linear-gradient(135deg, $color-primary, $color
 $bg-progress-minor: repeating-linear-gradient(135deg, $color-error, $color-error 5px, #c71212 5px, #c71212 10px);
 $bg-dialog: $bg-lightgrey;
 $bg-tags: #e5ebf1;
-$bg-button-secondary: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, #fe9674 3%, #fe9674 6%, #fc8c6a 100%);
+$bg-button-secondary: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, #fe9674 3%, #f99477 6%, #fc8c6a 100%);
 /*border-radius*/
-$border-radius-inputs: 3px;
-$border-radius-button: 3px;
-$border-radius-tags: 4px;
+$border-radius-inputs: 1px;
+$border-radius-button: 5px;
+$border-radius-tags: 5px;
 $border-radius-prompt: 0 0 5px 5px;
 /*border-color*/
 $border-tags: 1px solid #d0d9e4;

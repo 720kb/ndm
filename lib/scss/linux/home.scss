@@ -10,17 +10,18 @@
 }
 
 .home-button {
-  border-radius: 5px;
   line-height: 18px;
-  text-shadow: 0 1px rgba(255, 255, 255, .5);
   width: 110px;
+  border-radius: $border-radius-button;
+  text-shadow: 0 1px rgba(255, 255, 255, .5);
   background: $bg-button-secondary;
   box-shadow: 0 0 1px rgba(0, 0, 0, .3);
-  color: rgba(0, 0, 0, .65);
+  color: $color-default;
   border: .5px solid rgba(0, 0, 0, .2);
 
   &:active {
-    color: white;
     text-shadow: none;
+    box-shadow: 0 0 0;
+    text-shadow: 0 -1px rgba(255, 255, 255, .5);
   }
 }

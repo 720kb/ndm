@@ -191,10 +191,10 @@
 
   .prompt-resize-holder {
     width: 130%;
-    height: 30px;
+    height: 40px;
     z-index: -1;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: -5%;
 
     &:hover, &:focus, &:active {

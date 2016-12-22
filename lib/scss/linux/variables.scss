@@ -62,9 +62,11 @@ $bg-tags: $color-positive;
 $bg-button-secondary: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, #fe9674 3%, #f99477 6%, #fc8c6a 100%);
 $bg-button-secondary-active: linear-gradient(to bottom, #f99477 6%, #fc8c6a 100%);
 /*border-radius*/
-$border-radius-inputs: 1px;
+$border-radius-inputs: 4px;
 $border-radius-button: 5px;
 $border-radius-tags: 5px;
 $border-radius-prompt: 0 0 1px 1px;
 /*border-color*/
 $border-tags: 1px solid $color-positive;
+/*shadows*/
+$box-shadow-inputs: 0 0 2px $color-positive inset;

@@ -33,7 +33,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.sparkles.js"></script>
   <script type="text/javascript">
-  <!--{{site.github.releases[0]}}-->
+  <!--{% for asset in site.github.releases[0].assets %} {{asset.name}} {% endfor %}-->
     /*UNCOMMENT WHEN LINUX IS READY
     $('document').ready(function onDOM() {
       $('.switcher a').on('click', function onClickSwitcher () {

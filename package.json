@@ -27,7 +27,7 @@
     "linux": "gulp dist --platform=linux && electron .",
     "build": "gulp dist --platform=mac && build",
     "build-mac": "gulp dist --platform=mac && build --mac",
-    "build-linux": "gulp dist --platform=linux && build --linux && echo '1) If you get a GM SPAWN ERROR -> probably you have not installed graphickmagick lib on your machine. Just install it in case. 2) If you get an ERROR/WARNING when building .deb probably you have to install gnu-tar. 3) If you get an ERROR/WARNING when building .rpm you have to install rpm lib.'"
+    "build-linux": "gulp dist --platform=linux && build --linux && echo '1) If you get a gm ERROR  you must install  graphicsmagick lib on your machine. 2) If you get an ERROR/WARNING when building .deb probably you have to install gnu-tar. 3) If you get an ERROR/WARNING when building .rpm you have to install rpm lib. 4) If you get an icns2png ERROR you have to install icnsutils lib.'"
   },
   "bugs": {
     "url": "https://github.com/720kb/ndm/issues"

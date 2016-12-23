@@ -11,6 +11,9 @@ a, a *{
 .link:hover {
  color: royalblue;
 }
+*.hide {
+  display:none !important;
+}
 * {
   letter-spacing: normal;
 }

@@ -33,18 +33,28 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.sparkles.js"></script>
   <script type="text/javascript">
-    /*$('document').ready(function onDOM() {
+    /*UNCOMMENT WHEN LINUX IS READY
+    $('document').ready(function onDOM() {
       $('.switcher a').on('click', function onClickSwitcher () {
         var platform = $(this).attr('id').toString().trim();
         console.log('switch to platform', platform);
         if (platform === 'mac') {
             setTimeout(function () {
-              $('.linux, .win').addClass(platform).removeClass('win linux');
+              //things to hide
+              $('img.linux, img.win, .download-link.linux, .downloadlink.win').removeClass('show').addClass('hide');
+              //things to show
+              $('img.mac, .download-link.mac').addClass('show').removeClass('hide');
+              $('.linux, .win').not('img, .download-link').addClass(platform).removeClass('win linux');
             }, 0);
           }
         if (platform === 'linux') {
             setTimeout(function () {
-              $('.mac, .win').addClass(platform).removeClass('mac win');
+                //this to hide
+                $('img.mac, img.win, .download-link.mac, .downloadlink.win').removeClass('show').addClass('hide');
+                //things to show
+                $('img.linux, .download-link.linux').addClass('show').removeClass('hide');
+                $('.mac, .win').not('img, .download-link').addClass(platform).removeClass('mac win');
+
             }, 0);
           }
       });
@@ -101,11 +111,24 @@
             <a class="download-link line color-white center-content mac" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
               <i class="fa fa-download"></i> Download
             </a>
-            <div class="separator30 desktop"></div>
+            <a class="download-link line color-white center-content linux hide" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
+              <i class="fa fa-download"></i> .deb
+            </a>
+            <a class="download-link line color-white center-content linux hide" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
+              <i class="fa fa-download"></i> .rpm
+            </a>
+            <a class="download-link line color-white center-content linux hide bigger" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
+              <i class="fa fa-download"></i> AppImage
+            </a>
+            <div class="separator10 desktop"></div>
             <div class="separator10"></div>
             <div>
               <a class=" color-white  toggle-opacity-inverse-hover" href="https://github.com/720kb/ndm/releases/">
-                <small>Latest Release: v{{site.github.releases[0]['tag_name']}}</small>
+                <small>Latest v0.0.6-beta</small>
+              </a>
+              <span class="color-white">-</span>
+              <a class=" color-white  toggle-opacity-inverse-hover" href="https://github.com/720kb/ndm/releases/">
+                <small>Other downloads</small>
               </a>
 
               <div class="separator30 mobile"></div>
@@ -114,6 +137,7 @@
         </div>
         <div class="right-column line-tablet center-content-tablet">
           <img class="screenshot mac" src="img/screenshot-mac.png"/>
+          <img class="screenshot linux hide" src="img/screenshot-linux.png"/>
         </div>
       </div>
     </div>
@@ -129,7 +153,7 @@
     Built with <a href="//electron.atom.io/" target="_blank" class="link">Electron</a>
   </h1>
     <div class="separator10"></div>
-  <h1 class="font-light  color-muted">Soon for your Linux and Windows.</h1>
+  <h1 class="font-light  color-muted">Soon for all your platforms.</h1>
   <div class="separator50"></div>
   <div class="line footer">
     <div class="line line-max center-content color-muted">

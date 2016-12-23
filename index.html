@@ -33,7 +33,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.sparkles.js"></script>
   <script type="text/javascript">
-  <!--{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".zip" %}{{asset.name}} {% endif %}{% endfor %}-->
+  <!--{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".dmg" %}{{asset.browser_download_url}} {% endif %}{% endfor %}-->
     /*UNCOMMENT WHEN LINUX IS READY
     $('document').ready(function onDOM() {
       $('.switcher a').on('click', function onClickSwitcher () {
@@ -112,13 +112,13 @@
             <a class="download-link line color-white center-content mac" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
               <i class="fa fa-download"></i> Download
             </a>
-            <a class="download-link line color-white center-content linux hide" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
+            <a class="download-link line color-white center-content linux hide" href=href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".deb" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
               <i class="fa fa-download"></i> .deb
             </a>
-            <a class="download-link line color-white center-content linux hide" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
+            <a class="download-link line color-white center-content linux hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".rpm" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
               <i class="fa fa-download"></i> .rpm
             </a>
-            <a class="download-link line color-white center-content linux hide bigger" href="https://github.com/720kb/ndm/releases/download/{{site.github.releases[0]['tag_name']}}/ndm-{{site.github.releases[0]['tag_name']}}.dmg">
+            <a class="download-link line color-white center-content linux hide bigger" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".AppImage" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
               <i class="fa fa-download"></i> AppImage
             </a>
             <div class="separator10 desktop"></div>

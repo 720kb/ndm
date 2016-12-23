@@ -6,9 +6,9 @@
   "homepage": "https://720kb.github.io/ndm",
   "github": "https://github.com/720kb/ndm",
   "author": {
-    "name" : "720kb"
-,   "email" : "tech@720kb.net"
-,   "url" : "http://720kb.net"
+    "name": "720kb",
+    "email": "tech@720kb.net",
+    "url": "http://720kb.net"
   },
   "authors": [
     "720kb",
@@ -26,7 +26,8 @@
     "mac": "gulp dist --platform=mac && electron .",
     "linux": "gulp dist --platform=linux && electron .",
     "build": "gulp dist --platform=mac && build",
-    "build-linux": "gulp dist --platform=linux && build --linux"
+    "build-mac": "gulp dist --platform=mac && build --mac",
+    "build-linux": "gulp dist --platform=linux && build --linux && echo '1) If you get a GM SPAWN ERROR -> probably you have not installed graphickmagick lib on your machine. Just install it in case. 2) If you get an ERROR/WARNING when building .deb probably you have to install gnu-tar. 3) If you get an ERROR/WARNING when building .rpm you have to install rpm lib.'"
   },
   "bugs": {
     "url": "https://github.com/720kb/ndm/issues"
@@ -40,8 +41,8 @@
     "copyright": "© 720kb - Filippo Oretti - Dario Andrei",
     "asar": false,
     "productName": "ndm",
+    "icon": "icon.icns",
     "mac": {
-      "icon": "icon.icns",
       "category": "public.app-category.productivity",
       "target": "dmg"
     },
@@ -58,8 +59,8 @@
         "x64"
       ],
       "target": [
-        "deb",
         "AppImage",
+        "deb",
         "rpm"
       ]
     },
@@ -116,7 +117,7 @@
     "babel-preset-es2015-rollup": "^3.0.0",
     "del": "^2.2.0",
     "electron": "^1.4.10",
-    "electron-builder": "^10.6.1",
+    "electron-builder": "^10.9.3",
     "eslint": "^3.11.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.2.0",

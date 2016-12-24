@@ -122,4 +122,8 @@
       }
     }
   }
+  //disable active color on top-menu update icon
+  .fa.fa-history.color-primary {
+    color: $color-777;
+  }
 }

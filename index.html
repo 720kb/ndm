@@ -33,15 +33,17 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.sparkles.js"></script>
   <script type="text/javascript">
-    /*UNCOMMENT WHEN LINUX IS READY
+/*UNCOMMENT WHEN PLATFORMS ARE RELEASED
     $('document').ready(function onDOM() {
       $('.switcher a').on('click', function onClickSwitcher () {
         var platform = $(this).attr('id').toString().trim();
+        $('.switcher a').removeClass('active');
+        $(this).addClass('active');
         console.log('switch to platform', platform);
         if (platform === 'mac') {
             setTimeout(function () {
               //things to hide
-              $('img.linux, img.win, .download-link.linux, .downloadlink.win').removeClass('show').addClass('hide');
+              $('img.linux, img.win, .download-link.linux, .download-link.win').removeClass('show').addClass('hide');
               //things to show
               $('img.mac, .download-link.mac').addClass('show').removeClass('hide');
               $('.linux, .win').not('img, .download-link').addClass(platform).removeClass('win linux');
@@ -49,14 +51,24 @@
           }
         if (platform === 'linux') {
             setTimeout(function () {
-                //this to hide
-                $('img.mac, img.win, .download-link.mac, .downloadlink.win').removeClass('show').addClass('hide');
+                //things to hide
+                $('img.mac, img.win, .download-link.mac, .download-link.win').removeClass('show').addClass('hide');
                 //things to show
                 $('img.linux, .download-link.linux').addClass('show').removeClass('hide');
                 $('.mac, .win').not('img, .download-link').addClass(platform).removeClass('mac win');
 
             }, 0);
           }
+          if (platform === 'win') {
+              setTimeout(function () {
+                  //things to hide
+                  $('img.mac, img.linux, .download-link.mac, .download-link.linux').removeClass('show').addClass('hide');
+                  //things to show
+                  $('img.win, .download-link.win').addClass('show').removeClass('hide');
+                  $('.mac, .linux').not('img, .download-link').addClass(platform).removeClass('mac linux');
+
+              }, 0);
+            }
       });
     });*/
   </script>
@@ -108,7 +120,8 @@
               </a>
             </span>
             <div class="separator30"></div>
-            <a class="download-link line color-white center-content mac" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".dmg" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
+            <div class="line downloads center-content-tablet">
+              <a class="download-link line color-white center-content mac" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".dmg" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
               <i class="fa fa-download"></i> Download
             </a>
             <a class="download-link line color-white center-content linux hide" href=href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".deb" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
@@ -120,6 +133,11 @@
             <a class="download-link line color-white center-content linux hide bigger" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".AppImage" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
               <i class="fa fa-download"></i> AppImage
             </a>
+
+            <a class="download-link line color-white center-content win hide" href=href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".exe" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
+              <i class="fa fa-download"></i> Download
+            </a>
+          </div>
             <div class="separator10 desktop"></div>
             <div class="separator10"></div>
             <div>
@@ -138,6 +156,7 @@
         <div class="right-column line-tablet center-content-tablet">
           <img class="screenshot mac" src="img/screenshot-mac.png"/>
           <img class="screenshot linux hide" src="img/screenshot-linux.png"/>
+          <!--<img class="screenshot win hide" src="img/screenshot-win.png"/>-->
         </div>
       </div>
     </div>

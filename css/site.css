@@ -109,7 +109,6 @@ small , small *, *.font-small{
   max-width: 270px;
   font-size: 15px;
   background: #0d70ff;
-  transition: none;
   line-height: 44px;
   box-shadow: 0 1px 3px rgba(0,0,0, .2);
 }
@@ -118,6 +117,9 @@ small , small *, *.font-small{
 }
 .download-link:active, .download-link:active:hover {
   box-shadow: 0 0 0 ;
+}
+.download-link.win {
+  background: #5c6077;
 }
 .download-link.linux {
   background: #ff4444;
@@ -155,11 +157,16 @@ small , small *, *.font-small{
       margin:0 auto;
       width: 100%;
     }
-    .download-link{
-      min-width: 270px;
+    .downloads {
       margin:0 auto;
       float: none;
-      display: block;
+      max-width: 260px;
+    }
+    .download-link {
+      min-width: 100%;
+    }
+    .download-link.linux {
+      margin-top: 5px;
     }
     .slogan h3 {
       font-size: 36px;
@@ -202,6 +209,13 @@ small , small *, *.font-small{
     background: -webkit-linear-gradient(top,  #6b2544 0%,#7f2c58 33%,#e85237 100%);
     background: linear-gradient(to bottom,  #6b2544 0%,#7f2c58 33%,#e85237 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b2544', endColorstr='#e85237',GradientType=0 );
+}
+.bg-gradient.win {
+  background: #1c1b2d;
+background: -moz-linear-gradient(top,  #1c1b2d 0%, #2a2a3d 51%, #3c4156 100%);
+background: -webkit-linear-gradient(top,  #1c1b2d 0%,#2a2a3d 51%,#3c4156 100%);
+background: linear-gradient(to bottom,  #1c1b2d 0%,#2a2a3d 51%,#3c4156 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1b2d', endColorstr='#3c4156',GradientType=0 );
 }
   /*mobile*/
     @media screen and (max-width:500px){

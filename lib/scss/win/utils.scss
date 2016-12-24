@@ -1,0 +1,25 @@
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.out-of-screen {
+  position: absolute;
+  z-index: -1;
+}
+
+.separator10 {
+  clear: both;
+  float: none;
+  min-height: 10px;
+  width: 100%;
+}
+
+.action-link-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.action-link-enabled {
+  opacity: inherit;
+  pointer-events: all;
+}

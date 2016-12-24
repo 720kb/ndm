@@ -1,0 +1,115 @@
+.table-header {
+  color: $color-222;
+  font-size: 11px;
+  line-height: 20px;
+  padding: 0 10px;
+  transition: opacity .3s linear;
+
+  .clickable {
+    &:active {
+      opacity: .7;
+    }
+  }
+
+  div {
+    background: $bg-lighter;
+    box-shadow: -1px -1px $color-ddd inset;
+  }
+
+  i {
+    float: right;
+    position: relative;
+
+    &.fa-sort-up {
+      top: 3px;
+    }
+    &.fa-sort-down {
+      bottom: 2px;
+    }
+  }
+
+}
+
+.table-row {
+  color: $color-333;
+  font-size: 12px;
+  line-height: 21px;
+  padding: 0 10px;
+
+  &:nth-child(odd) {
+    background: $bg-table-row;
+  }
+
+  &:focus, &:active, &.active {
+    background: $bg-table-row-highlight;
+  }
+
+  i {
+    color: $color-table-light-icons;
+  }
+
+  &.disabled {
+    background: $bg-light;
+    opacity: .5;
+
+    &:active, &:focus {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+}
+
+.table-body {
+  //(table - header - table-infos) to calculate height
+  height: calc(100vh - 120px - 140px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.table-loader {
+  min-height: 100vh;
+  padding-top: 30vh;
+  text-align: center;
+}
+
+.table-row-loading,
+.table-row-loading.active,
+.table-row-loading.active:active,
+.table-row-loading.active:focus {
+  background: $bg-progress;
+  animation: loadingStripes  1.5s linear infinite;
+}
+
+.table-infos {
+  height: 150px;
+  font-size: 11.5px;
+  padding: 0 2%;
+  background: #f0f0f0;
+  box-shadow: 0 -1px $bg-muted-more;
+
+  .information {
+    margin-top: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-user-select: text;
+    width: 100%;
+
+    &:first-child {
+      margin-top: 8px;
+    }
+
+    b {
+      color: $color-muted;
+      font-weight: 500;
+    }
+    a {
+      color: $color-primary;
+
+      &:hover {
+        background: $bg-muted-invisible;
+      }
+    }
+  }
+}

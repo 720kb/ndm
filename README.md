@@ -12,9 +12,6 @@
 <a href="https://720kb.github.io/ndm/" target="_blank">
 <img src="https://img.shields.io/github/downloads/720kb/ndm/total.svg"/>
 </a>
-<a href="https://720kb.github.io/ndm/" target="_blank">
-<img src="https://img.shields.io/github/contributors/720kb/ndm.svg"/>
-</a>
 <a href="https://gitter.im/720kb/ndm" target="_blank">
 <img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>
 </a>

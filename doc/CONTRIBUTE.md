@@ -18,7 +18,7 @@ Doors are wide open!
 
 Languages you need to know in order to contribute are simply: javascript and Sass (CSS)
 
-Below are some Contribution Guidelines, you just have to read them and take notice, just that!
+Below are some Contribution Guidelines, consider reading these before to contribute, just that!
 
 [Contributing Guidelines](https://github.com/720kb/ndm/blob/master/CONTRIBUTING.md)
 

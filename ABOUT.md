@@ -1,3 +1,5 @@
+## About ndm
+
 ### What's ndm ?
 
 **ndm** formally _"npm desktop manager"_ is the desktop GUI for [npm](https://npmjs.com/).

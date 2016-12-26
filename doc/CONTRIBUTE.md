@@ -9,10 +9,13 @@ Doors are wide open!
 ### How to contribute
 
 - Fork this repository
+- open the project folder in your IDE
 - Make your changes to the files you intend to change
 - Commit the changes to your forked repo
 - Create a Pull request
 - Done!
+
+To run the app while developing [is this simple](https://github.com/720kb/ndm/blob/master/doc/DEVELOP.md)
 
 ### Which programming languages
 

@@ -16,13 +16,13 @@
 
 </p>
 
-### Download
+## Download
 **[Download the latest release](https://720kb.github.io/ndm)**
 
 ###### You can browse all the releases at [github.com/720kb/ndm/releases](https://github.com/720kb/ndm/releases)
 
 
-### Homebrew
+## Homebrew
 
 Alternatively, you can install **ndm** with [Homebrew Cask](https://caskroom.github.io/):
 

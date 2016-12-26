@@ -1,6 +1,9 @@
 ![github-banner.png](http://i.imgur.com/BDRLm0O.png)
 
 <p align="center">
+<b><i>"npm desktop manager"</i></b>
+</p>
+<p align="center">
 The desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with web technologies.
 </p>
 

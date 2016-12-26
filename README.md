@@ -1,20 +1,5 @@
 ![github-banner.png](http://i.imgur.com/61OLE5Z.png)
 
-<p align="center">
-<b><a href="https://github.com/720kb/ndm/blob/master/ABOUT.md">About ndm</a></b> &nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/DEVELOP.md">Develop</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/ABOUT.md">Reccomendations</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/FAQ.md">FAQ</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
-  </p>
-  
-  <br>
 
 <p align="center" style="text-align:center">
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
@@ -28,7 +13,22 @@
 </a>
 
 </p>
-
+ <br>
+<p align="center">
+<b><a href="https://github.com/720kb/ndm/blob/master/ABOUT.md">About ndm</a></b> &nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/DEVELOP.md">Develop</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/RECOMMENDATIONS.md">Recommendations</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/FAQ.md">FAQ</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
+  </p>
+  
+  <br>
 ## Download
 **[Download the latest release](https://720kb.github.io/ndm)**
 

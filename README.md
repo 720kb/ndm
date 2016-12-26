@@ -37,7 +37,7 @@ $ brew cask install ndm
 - contribute and edit the Readme to you to this list!
 
 
-<p align="center">
+<p>
 <b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 
   |
   &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/DEVELOP.md">Develop</a></b>&nbsp;  |

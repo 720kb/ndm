@@ -1,7 +1,4 @@
 ![github-banner.png](http://i.imgur.com/61OLE5Z.png)
-<p align="center" style="text-align:center">
-  <img src="http://i.imgur.com/bnxdjg9.png"/>
-</p>
 
 <p align="center" style="text-align:center">
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
@@ -30,6 +27,21 @@ Alternatively, you can install **ndm** with [Homebrew Cask](https://caskroom.git
 $ brew update
 $ brew cask install ndm
 ```
+
+<br><br><br>
+<a href="#installation">About **ndm**</a></b> &nbsp; 
+  |
+  &nbsp; <b><a href="">Develop</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="">Contribute</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="">Reccomendations</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="">FAQ</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="">License</a></b>
+
+
 ### What's ndm ?
 
 **ndm** formally _"npm desktop manager"_ is the desktop GUI for [npm](https://npmjs.com/).

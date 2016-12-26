@@ -6,7 +6,7 @@ Feel free to contribute by forking, opening issues, pull requests and whatever y
 Doors are wide open!
 
 
-##How to contribute
+### How to contribute
 
 - Fork this repository
 - Make your changes to the files you intend to change
@@ -14,7 +14,7 @@ Doors are wide open!
 - Create a Pull request
 - Done!
 
-## Which programming languages
+### Which programming languages
 
 Languages you need to know in order to contribute are simply: javascript and Sass (CSS)
 

@@ -1,7 +1,7 @@
 ![github-banner.png](http://i.imgur.com/61OLE5Z.png)
 
 <p align="center">
-<a href="#installation">About **ndm**</a></b> &nbsp; 
+<b><a href="#installation">About ndm</a></b> &nbsp; 
   |
   &nbsp; <b><a href="">Develop</a></b>&nbsp; 
   |

@@ -1,12 +1,12 @@
 ![github-banner.png](http://i.imgur.com/BDRLm0O.png)
 
 <p align="center">
-<b><i>"npm desktop manager"</i></b>
+<i>"npm desktop manager"</i>
 </p>
 <p align="center">
 The desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with web technologies.
 </p>
-
+<br>
 <p align="center" style="text-align:center">
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
 <img src="https://img.shields.io/github/release/720kb/ndm.svg"/>
@@ -17,8 +17,8 @@ The desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built w
 <a href="https://gitter.im/720kb/ndm" target="_blank">
 <img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>
 </a>
-
 </p>
+<br>
 ## Download
 **[Download the latest release](https://720kb.github.io/ndm)**
 

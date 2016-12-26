@@ -54,5 +54,5 @@ Adjust `package.json`  "[build](https://github.com/720kb/ndm/blob/master/package
 
 `$ npm run build-win`
 
-The executables will be generated inside the `/resources` folder
+The executables will be generated inside the `/releases` folder
 

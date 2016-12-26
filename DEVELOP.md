@@ -20,7 +20,14 @@ _Setup_
 
 _Run app_
 
-`$ npm start`
+#### Run on Linux
+`$ npm run linux`
+
+#### Run on Mac
+`$ npm run mac`
+
+#### Run on Windows
+`$ npm run win`
 
 
 ### B. Build 

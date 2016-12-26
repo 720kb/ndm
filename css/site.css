@@ -96,8 +96,11 @@ small , small *, *.font-small{
   color: white;
   font-size: 14px;
   width: 100%;
-  padding: 3.5px 13px;
+  padding: 5px 10px;
   border-radius: 3px;
+}
+.switcher a i{
+  font-size: 16px;
 }
 .switcher a.active{
   background: rgba(0,0,0,.16);

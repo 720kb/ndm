@@ -1,7 +1,7 @@
 ![github-banner.png](http://i.imgur.com/61OLE5Z.png)
 
 <p align="center">
-<b>ndm</b> formally _"npm desktop manager"_ is the desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with web technologies.
+The desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with web technologies.
 </p>
 
 <p align="center" style="text-align:center">

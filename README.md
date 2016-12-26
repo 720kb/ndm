@@ -33,9 +33,8 @@ $ brew cask install ndm
 ```
 
 **Core team** [720kb](https://720kb.net) 
-**Contributors** [@wouldgo](https://github.com/wouldgo), [@45kb](https://github.com/45kb), [@makevoid](https://github.com/makevoid) 
-- contribute and edit the Readme to you to this list!
-
+**Contributors** [@wouldgo](https://github.com/wouldgo), [@45kb](https://github.com/45kb), [@makevoid](https://github.com/makevoid) _- contribute and edit the Readme to you to this list!_
+<br>
 
 <p>
 <b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 

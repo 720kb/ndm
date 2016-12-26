@@ -4,7 +4,7 @@
 <i>"npm desktop manager"</i>
 </p>
 <p align="center">
-The desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with web technologies.
+Desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with web technologies.
 </p>
 <br>
 <p align="center" style="text-align:center">

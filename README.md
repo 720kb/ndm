@@ -1,17 +1,17 @@
 ![github-banner.png](http://i.imgur.com/61OLE5Z.png)
 
 <p align="center">
-<b><a href="#installation">About ndm</a></b> &nbsp; 
+<b><a href="https://github.com/720kb/ndm/blob/master/ABOUT.md">About ndm</a></b> &nbsp; 
   |
-  &nbsp; <b><a href="">Develop</a></b>&nbsp; 
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/DEVELOP.md">Develop</a></b>&nbsp; 
   |
-  &nbsp; <b><a href="">Contribute</a></b>&nbsp; 
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
   |
-  &nbsp; <b><a href="">Reccomendations</a></b>&nbsp; 
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/ABOUT.md">Reccomendations</a></b>&nbsp; 
   |
-  &nbsp; <b><a href="">FAQ</a></b>&nbsp; 
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/FAQ.md">FAQ</a></b>&nbsp; 
   |
-  &nbsp; <b><a href="">License</a></b>
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
   </p>
   
   <br>

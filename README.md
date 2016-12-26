@@ -18,7 +18,7 @@ The desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built w
 <img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>
 </a>
 </p>
-<br>
+
 ## Download
 **[Download the latest release](https://720kb.github.io/ndm)**
 

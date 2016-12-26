@@ -10,7 +10,7 @@ Choose **A** (easiest) or **B** (more convenient):
 
 _Development mode - easiest_
 
-Build and run the app locally in development mode
+Run the app locally in development mode
 
 _Setup_
 
@@ -42,15 +42,17 @@ Create the executables which you can run whitout needing to open the terminal:
 
 Adjust `package.json`  "[build](https://github.com/720kb/ndm/blob/master/package.json)" field according on how [electron-builder](https://github.com/electron-userland/electron-builder) works, then just run:
 
-#### Executables for Mac
+#### Builds for Mac
 
 `$ npm run build-mac`
 
-#### Executables for Linux
+#### Builds for Linux
 
 `$ npm run build-linux`
 
-#### Executables for Windows
+#### Builds for Windows
 
 `$ npm run build-win`
+
+The executables will be generated inside the `/resources` folder
 

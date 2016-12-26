@@ -1,5 +1,21 @@
 ![github-banner.png](http://i.imgur.com/61OLE5Z.png)
 
+<p align="center">
+<a href="#installation">About **ndm**</a></b> &nbsp; 
+  |
+  &nbsp; <b><a href="">Develop</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="">Contribute</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="">Reccomendations</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="">FAQ</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="">License</a></b>
+  </p>
+  
+  <br>
+
 <p align="center" style="text-align:center">
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
 <img src="https://img.shields.io/github/release/720kb/ndm.svg"/>
@@ -27,18 +43,6 @@ Alternatively, you can install **ndm** with [Homebrew Cask](https://caskroom.git
 $ brew update
 $ brew cask install ndm
 ```
-
-<a href="#installation">About **ndm**</a></b> &nbsp; 
-  |
-  &nbsp; <b><a href="">Develop</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="">Contribute</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="">Reccomendations</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="">FAQ</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="">License</a></b>
 
 ## Core team
 

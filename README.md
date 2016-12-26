@@ -49,14 +49,4 @@ $ brew update
 $ brew cask install ndm
 ```
 
-## Core team
-
-[720kb](https://720kb.net)
-
-## Contributors
-
-Contribute and edit the Readme to you to this list:
-
-- [@wouldgo](https://github.com/wouldgo)
-- [@45kb](https://github.com/45kb)
-- [@makevoid](https://github.com/makevoid)
+**Core team** [720kb](https://720kb.net) **Contributors** [@wouldgo](https://github.com/wouldgo), [@45kb](https://github.com/45kb), [@makevoid](https://github.com/makevoid) - contribute and edit the Readme to you to this list!

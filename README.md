@@ -40,18 +40,11 @@ $ brew cask install ndm
   |
   &nbsp; <b><a href="">License</a></b>
 
-
-
-### Core team
+## Core team
 
 [720kb](https://720kb.net)
 
-###License
-
-[GNU GPLv3](LICENSE.md).
-
-
-### Contributors
+## Contributors
 
 Contribute and edit the Readme to you to this list:
 

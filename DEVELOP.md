@@ -40,8 +40,6 @@ Create the executables which you can run whitout needing to open the terminal:
 
 `$ npm install`
 
-Adjust `package.json`  "[build](https://github.com/720kb/ndm/blob/master/package.json)" field according on how [electron-builder](https://github.com/electron-userland/electron-builder) works, then just run:
-
 #### Builds for Mac
 
 `$ npm run build-mac`
@@ -54,5 +52,7 @@ Adjust `package.json`  "[build](https://github.com/720kb/ndm/blob/master/package
 
 `$ npm run build-win`
 
-The executables will be generated inside the `/releases` folder
+The builds are generated thanks to the [electron-builder](https://github.com/electron-userland/electron-builder), if you want you can change the build settings to your needs, just follow their documentation.
+
+The executables will be generated inside the `/releases` folder.
 

@@ -15,17 +15,18 @@
 </p>
  <br>
 <p align="center">
-<b><a href="https://github.com/720kb/ndm/blob/master/ABOUT.md">About ndm</a></b> &nbsp; 
+<b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 
   |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/DEVELOP.md">Develop</a></b>&nbsp; 
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/DEVELOP.md">Develop</a></b>&nbsp;  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/BUILD.md">Build</a></b>&nbsp; 
   |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
   |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/RECOMMENDATIONS.md">Recommendations</a></b>&nbsp; 
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/RECOMMENDATIONS.md">Recommendations</a></b>&nbsp; 
   |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/FAQ.md">FAQ</a></b>&nbsp; 
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/FAQ.md">FAQ</a></b>&nbsp; 
   |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/LICENSE.md">License</a></b>
   </p>
   
   <br>

@@ -119,6 +119,12 @@
       "css": "folder-o",
       "code": 59400,
       "src": "entypo"
+    },
+    {
+      "uid": "80cd1022bd9ea151d554bec1fa05f2de",
+      "css": "caret-up",
+      "code": 59401,
+      "src": "fontawesome"
     }
   ]
 }

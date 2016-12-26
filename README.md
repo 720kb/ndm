@@ -52,6 +52,6 @@ $ brew cask install ndm
   |
   &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/FAQ.md">FAQ</a></b>&nbsp; 
   |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/LICENSE.md">License</a></b>
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
   </p>
   

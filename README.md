@@ -1,5 +1,8 @@
 ![github-banner.png](http://i.imgur.com/61OLE5Z.png)
-![github-banner.png](http://i.imgur.com/l1VJfXZ.png)
+
+<p align="center" style="text-align:center">
+<img src="http://i.imgur.com/l1VJfXZ.png2"/>
+</p>
 
 
 <p align="center" style="text-align:center">

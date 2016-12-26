@@ -22,7 +22,7 @@ The desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built w
 ## Download
 **[Download the latest release](https://720kb.github.io/ndm)**
 
-__You can browse all the releases at [github.com/720kb/ndm/releases](https://github.com/720kb/ndm/releases)__
+<i>You can browse all the releases from <a href="(https://github.com/720kb/ndm/releases">here</a></i>
 
 
 ## Homebrew

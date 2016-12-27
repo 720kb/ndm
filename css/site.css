@@ -72,9 +72,15 @@ small , small *, *.font-small{
   box-shadow:  0 1px 2px rgba(0,0,0, .2);
   margin-bottom: 20px;
 }
+.article.mac b {
+
+  background: #0D70FF;
+}
+.article.linux b {
+  background: #FF4444;
+}
 .article b {
   padding: 1px 5px;
-  background: red;
   line-height: 10px;
   color: white;
   border-radius:3px;

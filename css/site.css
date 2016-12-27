@@ -57,14 +57,13 @@ small , small *, *.font-small{
   margin:0 auto;
 }
 .article span {
-  max-width: 200px;
+  max-width: 220px;
   display: block;
 }
 .article i {
-
   margin-top: 50px;
   border-radius: 30px;
-  padding:35px 30px;
+  padding:17px 10px;
   color: #555;
   font-size: 45px;
   text-shadow: 0 1px white;
@@ -73,7 +72,7 @@ small , small *, *.font-small{
   margin-bottom: 30px;
 }
 .article.mac b {
-
+  display: none;
   background: #0D70FF;
 }
 .article.linux b {

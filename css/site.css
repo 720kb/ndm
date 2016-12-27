@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Lato';
+
 }
 a, a *{
   transition: .15s linear;

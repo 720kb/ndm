@@ -72,7 +72,6 @@ small , small *, *.font-small{
   margin-bottom: 30px;
 }
 .article.mac b {
-  display: none;
   background: #0D70FF;
 }
 .article.linux b {

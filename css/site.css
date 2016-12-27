@@ -55,6 +55,52 @@ small , small *, *.font-small{
   float:none;
   margin:0 auto;
 }
+.article {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 57%, rgba(0,0,0,0) 65%);
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 65%);
+background: linear-gradient(to bottom,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 65%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d000000', endColorstr='#00000000',GradientType=0 );
+
+}
+.article span {
+  max-width: 90%;
+  display: block;
+  margin-top: 10px;
+}
+.article i {
+  border-radius: 30px;
+  padding:39px 0;
+  width: 100%;
+  color: #555;
+  font-size: 45px;
+  text-shadow: 0 1px white;
+  vertical-align: middle;
+  box-shadow:  0 1px 3px rgba(0,0,0, .2) inset;
+  border: 3px solid white;
+  background: rgba(0,0,0, .01);
+  margin-bottom: 20px;
+}
+.article b {
+  padding: 1px 5px;
+  background: red;
+  line-height: 10px;
+  color: white;
+  border-radius:3px;
+  font-weight: normal;
+  font-size: 13px;
+  margin-right:5px;
+  text-indent: -.5px;
+  top: -2px;
+  position: relative;
+}
+.article span div {
+  color: #999;
+  line-height: 18px;
+}
+.article span span {
+  font-size: 18px;
+  margin-bottom:10px;
+}
 .top-menu a {
   letter-spacing: .2px;
   text-shadow: 0 1px 0 rgba(0,0,0, .6);
@@ -95,12 +141,12 @@ small , small *, *.font-small{
 .switcher a {
   color: white;
   font-size: 14px;
-  width: 100%;
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 3px;
 }
 .switcher a i{
   font-size: 16px;
+  margin-right:5px;
 }
 .switcher a.active{
   background: rgba(0,0,0,.16);
@@ -143,6 +189,9 @@ small , small *, *.font-small{
 .inf {
   width: 25%;
   float: left;
+}
+.footer .github-button {
+  vertical-align: text-bottom;
 }
 .color-twitter{
   color: #1882FC;
@@ -198,6 +247,9 @@ small , small *, *.font-small{
     .desktop {
       display:none;
     }
+  }
+  .bg-muted-more {
+    background: rgba(0,0,0, .03);
   }
   .bg-gradient.mac {
     background: -webkit-linear-gradient(274deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);

@@ -1,6 +1,13 @@
 
-.fa-download:before { content: '\e800'; } /* '' */
-.fa-twitter:before { content: '\e801'; } /* '' */
-.fa-apple:before { content: '\f179'; } /* '' */
-.fa-linux:before { content: '\f17c'; } /* '' */
-.fa-windows:before { content: '\f325'; } /* '' */
+.fo-download:before { content: '\e800'; } /* '' */
+.fo-twitter:before { content: '\e801'; } /* '' */
+.fo-settings:before { content: '\e802'; } /* '' */
+.fo-database:before { content: '\e803'; } /* '' */
+.fo-eye:before { content: '\e804'; } /* '' */
+.fo-cup:before { content: '\e805'; } /* '' */
+.fo-tv:before { content: '\e806'; } /* '' */
+.fo-megaphone:before { content: '\e807'; } /* '' */
+.fo-doc:before { content: '\e808'; } /* '' */
+.fo-apple:before { content: '\f179'; } /* '' */
+.fo-linux:before { content: '\f17c'; } /* '' */
+.fo-windows:before { content: '\f325'; } /* '' */

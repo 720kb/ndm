@@ -19,6 +19,15 @@ Font license info
    Homepage:  http://typicons.com/
 
 
+## Linecons
+
+   Copyright (C) 2013 by Designmodo
+
+   Author:    Designmodo for Smashing Magazine
+   License:   CC BY ()
+   Homepage:  http://designmodo.com/linecons-free/
+
+
 ## Font Awesome
 
    Copyright (C) 2016 by Dave Gandy

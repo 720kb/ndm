@@ -33,44 +33,44 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.sparkles.js"></script>
   <script type="text/javascript">
-    /*$('document').ready(function onDOM() {
-      $('.switcher a').on('click', function onClickSwitcher () {
-        var platform = $(this).attr('id').toString().trim();
-        $('.switcher a').removeClass('active');
-        $(this).addClass('active');
-        console.log('switch to platform', platform);
-        if (platform === 'mac') {
-            setTimeout(function () {
-              //things to hide
-              $('img.linux, img.win, .download-link.linux, .download-link.win').removeClass('show').addClass('hide');
-              //things to show
-              $('img.mac, .download-link.mac').addClass('show').removeClass('hide');
-              $('.linux, .win').not('img, .download-link').addClass(platform).removeClass('win linux');
-            }, 0);
-          }
-        if (platform === 'linux') {
-            setTimeout(function () {
-                //things to hide
-                $('img.mac, img.win, .download-link.mac, .download-link.win').removeClass('show').addClass('hide');
-                //things to show
-                $('img.linux, .download-link.linux').addClass('show').removeClass('hide');
-                $('.mac, .win').not('img, .download-link').addClass(platform).removeClass('mac win');
+  /*$('document').ready(function onDOM() {
+  $('.switcher a').on('click', function onClickSwitcher () {
+  var platform = $(this).attr('id').toString().trim();
+  $('.switcher a').removeClass('active');
+  $(this).addClass('active');
+  console.log('switch to platform', platform);
+  if (platform === 'mac') {
+  setTimeout(function () {
+  //things to hide
+  $('img.linux, img.win, .download-link.linux, .download-link.win').removeClass('show').addClass('hide');
+  //things to show
+  $('img.mac, .download-link.mac').addClass('show').removeClass('hide');
+  $('.linux, .win').not('img, .download-link').addClass(platform).removeClass('win linux');
+}, 0);
+}
+if (platform === 'linux') {
+setTimeout(function () {
+//things to hide
+$('img.mac, img.win, .download-link.mac, .download-link.win').removeClass('show').addClass('hide');
+//things to show
+$('img.linux, .download-link.linux').addClass('show').removeClass('hide');
+$('.mac, .win').not('img, .download-link').addClass(platform).removeClass('mac win');
 
-            }, 0);
-          }
-          if (platform === 'win') {
-              setTimeout(function () {
-                  //things to hide
-                  $('img.mac, img.linux, .download-link.mac, .download-link.linux').removeClass('show').addClass('hide');
-                  //things to show
-                  $('img.win, .download-link.win').addClass('show').removeClass('hide');
-                  $('.mac, .linux').not('img, .download-link').addClass(platform).removeClass('mac linux');
+}, 0);
+}
+if (platform === 'win') {
+setTimeout(function () {
+//things to hide
+$('img.mac, img.linux, .download-link.mac, .download-link.linux').removeClass('show').addClass('hide');
+//things to show
+$('img.win, .download-link.win').addClass('show').removeClass('hide');
+$('.mac, .linux').not('img, .download-link').addClass(platform).removeClass('mac linux');
 
-              }, 0);
-            }
-      });
-    });*/
-  </script>
+}, 0);
+}
+});
+});*/
+</script>
 </head>
 <body>
   <div class="line header sparkley bg-gradient mac">
@@ -91,7 +91,6 @@
       </div>
     </div>
     <div class="line line-max">
-
       <div class="separator50"></div>
       <div class="line line-max center-content-tablet">
         <div class="left-column line-tablet">
@@ -121,22 +120,21 @@
             <div class="separator30"></div>
             <div class="line downloads center-content-tablet">
               <a class="download-link line color-white center-content mac" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".dmg" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-              <i class="fa fa-download"></i> Download
-            </a>
-            <a class="download-link line color-white center-content linux hide" href=href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".deb" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-              <i class="fa fa-download"></i> .deb
-            </a>
-            <a class="download-link line color-white center-content linux hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".rpm" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-              <i class="fa fa-download"></i> .rpm
-            </a>
-            <a class="download-link line color-white center-content linux hide bigger" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".AppImage" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-              <i class="fa fa-download"></i> AppImage
-            </a>
-
-            <a class="download-link line color-white center-content win hide" href=href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".exe" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-              <i class="fa fa-download"></i> Download
-            </a>
-          </div>
+                <i class="fa fa-download"></i> Download
+              </a>
+              <a class="download-link line color-white center-content linux hide" href=href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".deb" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
+                <i class="fa fa-download"></i> .deb
+              </a>
+              <a class="download-link line color-white center-content linux hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".rpm" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
+                <i class="fa fa-download"></i> .rpm
+              </a>
+              <a class="download-link line color-white center-content linux hide bigger" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".AppImage" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
+                <i class="fa fa-download"></i> AppImage
+              </a>
+              <a class="download-link line color-white center-content win hide" href=href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".exe" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
+                <i class="fa fa-download"></i> Download
+              </a>
+            </div>
             <div class="separator10 desktop"></div>
             <div class="separator10"></div>
             <div>
@@ -147,7 +145,6 @@
               <a class=" color-white  toggle-opacity-hover" href="https://github.com/720kb/ndm/releases/">
                 <small>More downloads</small>
               </a>
-
               <div class="separator30 mobile"></div>
             </div>
           </div>
@@ -160,72 +157,68 @@
       </div>
     </div>
   </div>
-
 </div>
 <div class="article mac line left-content center-content-tablet">
   <div class="separator30"></div>
-<div class="line line-max">
-  <div class="col5 line-tablet">
-  <div class="col5">
-    <span>
-      <i class="fa fo-settings "></i>
-      <div class="left-content center-content-tablet"><span class="font-bold color-black"><b>A</b> Manage npm</span>  <div class="separator10"></div>Add, remove, update global and local packages with ease.</div>
-    </span>
-  </div>
-  <div class="col5">
-    <span>
-      <i class="fa fo-database "></i>
-      <div class="left-content center-content-tablet">
-        <span class="font-bold color-black"><b>B</b> Edit Projects</span><div class="separator10"></div>  Edit projects in place, use snapshots and projects history.</div>
-    </span>
-  </div>
-</div>
-  <div class="col5 line-tablet">
-    <div class="separator30 tablet"></div>
-    <div class="col5">
-      <span>
-        <i class="fa fo-cup "></i>
-        <div class="left-content center-content-tablet"><span class="font-bold color-black"><b>C</b> Get Notified </span><div class="separator10"></div>Launch npm tasks and scripts, doesn't matter if you're outside.</div>
-      </span>
+  <div class="line line-max">
+    <div class="col5 line-tablet">
+      <div class="col5">
+        <span>
+          <i class="fa fo-settings "></i>
+          <div class="left-content center-content-tablet"><span class="font-bold color-black"><b>A</b> Manage npm</span>  <div class="separator10"></div>Add, remove, update global and local packages with ease.</div>
+        </span>
+      </div>
+      <div class="col5">
+        <span>
+          <i class="fa fo-database "></i>
+          <div class="left-content center-content-tablet">
+            <span class="font-bold color-black"><b>B</b> Edit Projects</span><div class="separator10"></div>  Edit projects in place, use snapshots and projects history.</div>
+          </span>
+        </div>
+      </div>
+      <div class="col5 line-tablet">
+        <div class="separator30 tablet"></div>
+        <div class="col5">
+          <span>
+            <i class="fa fo-cup "></i>
+            <div class="left-content center-content-tablet"><span class="font-bold color-black"><b>C</b> Get Notified </span><div class="separator10"></div>Launch npm tasks and scripts, doesn't matter if you're outside.</div>
+          </span>
+        </div>
+        <div class="col5">
+          <span>
+            <i class="fa fo-eye "></i>
+            <div class="left-content center-content-tablet"><span class="font-bold color-black"><b>D</b> One Click</span> <div class="separator10"></div>Useful packages informations and live npm registry status.</div>
+          </span>
+        </div>
+      </div>
     </div>
-    <div class="col5">
-      <span>
-        <i class="fa fo-eye "></i>
-        <div class="left-content center-content-tablet"><span class="font-bold color-black"><b>D</b> One Click</span> <div class="separator10"></div>Useful packages informations and live npm registry status.</div>
-      </span>
+  </div>
+  <div class="separator50"></div>
+  <div class="separator50"></div>
+  <div class="separator50"></div>
+  <div class="line footer ">
+    <div class="line line-max left-content color-muted">
+      <div class="col5 line-tablet center-content-tablet">
+        ©
+        <a class="color-black toggle-opacity-hover" href="http://720kb.net" target="_blank">720kb</a>
+        &nbsp;
+        <a class="color-black toggle-opacity-hover" href="https://twitter.com/720kb_" target="_blank"><i class="color-twitter fa fa-twitter"></i> Follow</a>
+        - Built with <a href="http://electron.atom.io/" target="_blank" class="link">Electron.</a> Soon for all your platforms.
+      </div>
+      <div class="separator50 tablet"></div>
+      <div class="col5 line-tablet center-content-tablet right-content">
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button color-white" href="https://github.com/720kb/ndm" data-icon="octicon-star"  data-count-href="/720kb/ndm/stargazers" data-count-api="/repos/720kb/ndm#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star 720kb/ndm on GitHub">Star</a>
+        <!-- Place this tag where you want the button to render. -->
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- Place this tag where you want the button to render. -->
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button color-white" href="https://github.com/720kb/ndm/subscription" data-icon="octicon-eye" data-count-href="/720kb/ndm/watchers" data-count-api="/repos/720kb/ndm#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch 720kb/ndm on GitHub">Watch</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="github-button color-white" href="https://github.com/720kb/ndm/fork" data-icon="octicon-repo-forked"  data-count-href="/720kb/ndm/network" data-count-api="/repos/720kb/ndm#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork 720kb/ndm on GitHub">Fork</a>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
-<div class="separator50"></div>
-<div class="separator50"></div>
-<div class="separator50"></div>
-<div class="line footer ">
-  <div class="line line-max left-content color-muted">
-    <div class="col5 line-tablet center-content-tablet">
-    ©
-    <a class="color-black toggle-opacity-hover" href="http://720kb.net" target="_blank">720kb</a>
-    &nbsp;
-    <a class="color-black toggle-opacity-hover" href="https://twitter.com/720kb_" target="_blank"><i class="color-twitter fa fa-twitter"></i> Follow</a>
-     - Built with <a href="http://electron.atom.io/" target="_blank" class="link">Electron.</a> Soon for all your platforms.
-  </div>
-
-  <div class="separator50 tablet"></div>
-  <div class="col5 line-tablet center-content-tablet right-content">
-    <!-- Place this tag where you want the button to render. -->
-    <a class="github-button color-white" href="https://github.com/720kb/ndm" data-icon="octicon-star"  data-count-href="/720kb/ndm/stargazers" data-count-api="/repos/720kb/ndm#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star 720kb/ndm on GitHub">Star</a>
-    <!-- Place this tag where you want the button to render. -->
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <!-- Place this tag where you want the button to render. -->
-    <!-- Place this tag where you want the button to render. -->
-    <a class="github-button color-white" href="https://github.com/720kb/ndm/subscription" data-icon="octicon-eye" data-count-href="/720kb/ndm/watchers" data-count-api="/repos/720kb/ndm#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch 720kb/ndm on GitHub">Watch</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <a class="github-button color-white" href="https://github.com/720kb/ndm/fork" data-icon="octicon-repo-forked"  data-count-href="/720kb/ndm/network" data-count-api="/repos/720kb/ndm#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork 720kb/ndm on GitHub">Fork</a>
-
-  </div>
-  </div>
-</div>
 </div>
 <div class="separator30"></div>
 <!-- Place this tag right after the last button or just before your close body tag. -->

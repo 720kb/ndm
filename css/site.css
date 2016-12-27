@@ -57,15 +57,14 @@ small , small *, *.font-small{
   margin:0 auto;
 }
 .article span {
-  max-width: 170px;
+  max-width: 200px;
   display: block;
   margin-top: 10px;
 }
 .article i {
-    max-width: 130px;
+
   border-radius: 30px;
-  padding:39px 0;
-  width: 100%;
+  padding:35px 30px;
   color: #555;
   font-size: 45px;
   text-shadow: 0 1px white;

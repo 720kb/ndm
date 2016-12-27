@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Lato';
+  background: white;
 }
 a, a *{
   transition: .15s linear;
@@ -69,7 +70,6 @@ small , small *, *.font-small{
   text-shadow: 0 1px white;
   vertical-align: middle;
   box-shadow:  0 1px 3px rgba(0,0,0, .2) inset;
-  background: rgba(0,0,0, .01);
   margin-bottom: 20px;
 }
 .article b {
@@ -181,6 +181,9 @@ small , small *, *.font-small{
 .inf {
   width: 25%;
   float: left;
+}
+.footer {
+
 }
 .footer .github-button {
   vertical-align: text-bottom;

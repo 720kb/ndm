@@ -63,7 +63,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d000000', e
 
 }
 .article span {
-  max-width: 90%;
+  max-width: 180px;
   display: block;
   margin-top: 10px;
 }

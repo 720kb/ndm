@@ -1,0 +1,9 @@
+os: osx
+osx_image: xcode8.2
+language: node_js
+before_install:
+  - brew update
+  - brew install gnu-tar graphicsmagick rpm
+node_js:
+  - "6"
+script: npm run build-mac && npm run build-linux

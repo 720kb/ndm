@@ -6,7 +6,6 @@ addons:
     packages:
       - graphicsmagick
       - gnu-tar
-      - rpm
       - icnsutils
 node_js:
   - "6"

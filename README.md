@@ -17,6 +17,7 @@ Desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with 
 <a href="https://gitter.im/720kb/ndm" target="_blank">
 <img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>
 </a>
+<img src="https://img.shields.io/travis/720kb/ndm.svg"/>
 </p>
 
 ## Download

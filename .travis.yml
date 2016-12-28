@@ -5,7 +5,6 @@ addons:
   apt:
     packages:
       - graphicsmagick
-      - gnu-tar
       - icnsutils
 node_js:
   - "6"

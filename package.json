@@ -1,6 +1,6 @@
 {
   "name": "ndm",
-  "version": "0.0.6-beta",
+  "version": "0.0.5",
   "description": "npm desktop manager",
   "main": "index.js",
   "homepage": "https://720kb.github.io/ndm",
@@ -26,7 +26,7 @@
     "mac": "gulp dist --platform=mac && electron .",
     "linux": "gulp dist --platform=linux && electron .",
     "win": "gulp dist --platform=win && electron .",
-    "build": "gulp dist --platform=mac && build",
+    "build": "npm run build-mac && npm run build-linux",
     "build-mac": "gulp dist --platform=mac && build --mac",
     "build-win": "gulp dist --platform=win && build --win",
     "build-linux": "gulp dist --platform=linux && build --linux && echo '1) If you get a gm ERROR  you must install  graphicsmagick lib on your machine. 2) If you get an ERROR/WARNING when building .deb probably you have to install gnu-tar. 3) If you get an ERROR/WARNING when building .rpm you have to install rpm lib. 4) If you get an icns2png ERROR you have to install icnsutils lib.'",

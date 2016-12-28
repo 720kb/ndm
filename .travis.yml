@@ -7,3 +7,15 @@ before_install:
 node_js:
   - "6"
 script: npm run build-mac && npm run build-linux
+before_deploy: "VERSION=$(jq .version package.json | tr -d \"\\\"\")"
+deploy:
+  provider: releases
+  api_key: $GITHUB_ACCESS_TOKEN
+  file:
+    - "releases/mac/ndm_$(echo $VERSION).dmg"
+    - "releases/ndm_$(echo $VERSION)_amd64.deb"
+    - "releases/ndm-$(echo $VERSION)-x86_64.AppImage"
+    - "releases/ndm-$(echo $VERSION).rpm"
+  skip_cleanup: true
+  on:
+    tags: true

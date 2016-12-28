@@ -59,17 +59,15 @@ small , small *, *.font-small{
 .article span {
   max-width: 250px;
   display: block;
+  color:#454545;
 }
 .article i {
-  margin-top: 50px;
-  border-radius: 30px;
-  padding:17px 10px;
-  color: #555;
-  font-size: 45px;
+  color: #454545;
+  font-size: 35px;
   text-shadow: 0 1px white;
   vertical-align: middle;
   position: relative;
-  top:-25px;
+  top: -4px;
 }
 .article.mac b {
   background: #0D70FF;
@@ -77,25 +75,14 @@ small , small *, *.font-small{
 .article.linux b {
   background: #FF4444;
 }
-.article b {
-  padding: 1px 5px;
-  line-height: 10px;
-  color: white;
-  border-radius:3px;
-  font-weight: normal;
-  font-size: 13px;
-  margin-right:5px;
-  text-indent: -.5px;
-  top: -2px;
-  position: relative;
-}
+
 .article span div {
   color: #999;
   line-height: 18px;
+  margin-top: 20px;
 }
 .article span span {
   font-size: 18px;
-  margin-bottom:-10px;
 }
 .top-menu a {
   letter-spacing: .2px;
@@ -185,9 +172,6 @@ small , small *, *.font-small{
 .inf {
   width: 25%;
   float: left;
-}
-.footer {
-
 }
 .footer .github-button {
   vertical-align: text-bottom;

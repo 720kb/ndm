@@ -30,7 +30,8 @@
     "build-mac": "gulp dist --platform=mac && build --mac",
     "build-win": "gulp dist --platform=win && build --win",
     "build-linux": "gulp dist --platform=linux && build --linux && echo '1) If you get a gm ERROR  you must install  graphicsmagick lib on your machine. 2) If you get an ERROR/WARNING when building .deb probably you have to install gnu-tar. 3) If you get an ERROR/WARNING when building .rpm you have to install rpm lib. 4) If you get an icns2png ERROR you have to install icnsutils lib.'",
-    "build-linux-deb": "gulp dist --platform=linux && build --linux deb && echo '1) If you get a gm ERROR  you must install  graphicsmagick lib on your machine. 2) If you get an ERROR/WARNING when building .deb probably you have to install gnu-tar. 3) If you get an ERROR/WARNING when building .rpm you have to install rpm lib. 4) If you get an icns2png ERROR you have to install icnsutils lib.'"
+    "build-linux-deb": "gulp dist --platform=linux && build --linux deb && echo '1) If you get a gm ERROR  you must install  graphicsmagick lib on your machine. 2) If you get an ERROR/WARNING when building .deb probably you have to install gnu-tar. 3) If you get an ERROR/WARNING when building .rpm you have to install rpm lib. 4) If you get an icns2png ERROR you have to install icnsutils lib.'",
+    "postversion": "git push && git push --tags"
   },
   "bugs": {
     "url": "https://github.com/720kb/ndm/issues"

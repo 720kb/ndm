@@ -1,0 +1,13 @@
+sudo: required
+dist: trusty
+language: node_js
+addons:
+  apt:
+    packages:
+      - graphicsmagick
+      - gnu-tar
+      - rpm
+      - icnsutils
+node_js:
+  - "6"
+script: npm run build-mac && npm run build-linux

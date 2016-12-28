@@ -6,7 +6,7 @@ before_install:
   - brew install gnu-tar graphicsmagick rpm
 node_js:
   - "6"
-script: "echo done"
+script: "echo build done"
 before_deploy: npm run build-mac && npm run build-linux
 deploy:
   provider: releases

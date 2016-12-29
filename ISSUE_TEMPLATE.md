@@ -5,11 +5,12 @@ Thank you!
 
 * OS: 
 * OS version: 
-* Ndm version: 
-* Node version:
-* Npm version:
-* $ which node:
-* $ which npm:
-* Npm permissions (fixed, not-fixed)(see https://docs.npmjs.com/getting-started/fixing-npm-permissions):
-* Node installed via (brew, n, nvm, pkg, other ...):
-* How to replicate the bug/issue, if you know:
+* ndm version: 
+* node version:
+* npm version:
+* [OPTIONAL] $ which node:
+* [OPTIONAL] $ which npm:
+* npm permissions (fixed, not-fixed)(see https://docs.npmjs.com/getting-started/fixing-npm-permissions):
+* node installed via (brew, n, nvm, pkg, other ...):
+* How to replicate the bug/issue, if you know it:
+* [APPRECIATED] Make a screenshot or paste the devtools console full log (open the console: OS Menu -> View -> Developer -> Open DevTools):

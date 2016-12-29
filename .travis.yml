@@ -6,9 +6,9 @@ before_install:
   - brew install gnu-tar graphicsmagick rpm
 node_js:
   - "6"
+script: "echo build done && echo pwd"
 before_deploy:
   - npm run build
-  - "echo build done && echo pwd"
   - export VERSION=$(echo $TRAVIS_TAG | tr -d "v")
 deploy:
   provider: releases

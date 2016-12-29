@@ -6,15 +6,18 @@ before_install:
   - brew install gnu-tar graphicsmagick rpm
 node_js:
   - "6"
-script: "echo build done && pwd"
+script: "echo build done"
 before_deploy:
-  - npm run build-mac
+  - npm run build
   - export VERSION=$(echo $TRAVIS_TAG | tr -d "v")
 deploy:
   provider: releases
   api_key: $GITHUB_ACCESS_TOKEN
   file:
     - "releases/mac/ndm-$(echo $VERSION).dmg"
+    - "releases/ndm_$(echo $VERSION)_amd64.deb"
+    - "releases/ndm-$(echo $VERSION)-x86_64.AppImage"
+    - "releases/ndm-$(echo $VERSION).rpm"
   skip_cleanup: true
   on:
     tags: true

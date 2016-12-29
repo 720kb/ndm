@@ -1,12 +1,12 @@
 ## FAQ
 
-**I love the Shell, why use an app?**
+**I use the CLI, why use an app?**
 
-Of course, we all love it too.
+Of course, we all love the npm CLI, no jokes.
 
-The Shell is obviously very powerful.
+It is obviously very powerful.
 
-We wanted to build an alternative experience to the `npmCLI` and here is all the GUI pros we think you should not miss:
+ndm is an alternative experience to the `npmCLI` and here is all the pros we think you should not miss:
 
 - Less struggling with multiple terminal tabs
 - Less struggling with long terminal logs, scrolling to find warnings and errors are a things of the past now
@@ -44,12 +44,6 @@ Premise: **ndm** was born several months before Yarn was out.
 Yarn is a great tool, we are looking forward to seeing what happens both on the Yarn and the npm side.
 Many things could change in the meantime.
 That said: if you have any idea or suggestion, here you are welcome to share and discuss!
-
-**Why Mac only?**
-
-We now focus on one OS but the app is developed keeping in mind that it will have to run also on other OSs. We won't _put too much meat on bbq_ for the moment, it is now very important to obtain an OS-abstracted and stable app.
-
-As soon as we are sure that the project is stable, it will be delivered to the other OSs.
 
 **Support?**
 

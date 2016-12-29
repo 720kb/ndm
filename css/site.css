@@ -43,7 +43,6 @@ small , small *, *.font-small{
   position: relative;
   max-width: 774px;
   margin-top: -60px;
-  bottom:0;
   left: -20%;
 }
 .screenshot.show{

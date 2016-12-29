@@ -33,43 +33,66 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.sparkles.js"></script>
   <script type="text/javascript">
-  /*$('document').ready(function onDOM() {
-  $('.switcher a').on('click', function onClickSwitcher () {
-  var platform = $(this).attr('id').toString().trim();
-  $('.switcher a').removeClass('active');
-  $(this).addClass('active');
-  console.log('switch to platform', platform);
-  if (platform === 'mac') {
-  setTimeout(function () {
-  //things to hide
-  $('img.linux, img.win, .download-link.linux, .download-link.win').removeClass('show').addClass('hide');
-  //things to show
-  $('img.mac, .download-link.mac').addClass('show').removeClass('hide');
-  $('.linux, .win').not('img, .download-link').addClass(platform).removeClass('win linux');
-}, 0);
-}
-if (platform === 'linux') {
-setTimeout(function () {
-//things to hide
-$('img.mac, img.win, .download-link.mac, .download-link.win').removeClass('show').addClass('hide');
-//things to show
-$('img.linux, .download-link.linux').addClass('show').removeClass('hide');
-$('.mac, .win').not('img, .download-link').addClass(platform).removeClass('mac win');
+  var hashtag = window.document.URL.substr(window.document.URL.indexOf('#') + 1);
 
-}, 0);
-}
-if (platform === 'win') {
-setTimeout(function () {
-//things to hide
-$('img.mac, img.linux, .download-link.mac, .download-link.linux').removeClass('show').addClass('hide');
-//things to show
-$('img.win, .download-link.win').addClass('show').removeClass('hide');
-$('.mac, .linux').not('img, .download-link').addClass(platform).removeClass('mac linux');
+  $('document').ready(function onDOM() {
+    var showMac = function showMac (platform) {
+      //things to hide
+      $('img.linux, img.win, .download-link.linux, .download-link.win').removeClass('show').addClass('hide');
+      //things to show
+      $('img.mac, .download-link.mac').addClass('show').removeClass('hide');
+      $('.linux, .win').not('img, .download-link').addClass(platform).removeClass('win linux');
+    }
+    , showWin = function showWin (platform) {
+      //things to hide
+      $('img.mac, img.linux, .download-link.mac, .download-link.linux').removeClass('show').addClass('hide');
+      //things to show
+      $('img.win, .download-link.win').addClass('show').removeClass('hide');
+      $('.mac, .linux').not('img, .download-link').addClass(platform).removeClass('mac linux');
+    }
+    , showLinux = function showLinux (platform) {
+      //things to hide
+      $('img.mac, img.win, .download-link.mac, .download-link.win').removeClass('show').addClass('hide');
+      //things to show
+      $('img.linux, .download-link.linux').addClass('show').removeClass('hide');
+      $('.mac, .win').not('img, .download-link').addClass(platform).removeClass('mac win');
+    };
 
-}, 0);
-}
-});
-});*/
+    $('.switcher a').on('click', function onClickSwitcher () {
+      var platform = $(this).attr('data-platform').toString().trim();
+
+      $('.switcher a').removeClass('active');
+      $(this).addClass('active');
+
+      window.console.log('switch to platform', platform);
+
+      if (platform === 'mac') {
+        setTimeout(function () {
+          showMac(platform);
+        }, 0);
+      }
+      if (platform === 'linux') {
+        setTimeout(function () {
+          showLinux(platform);
+        }, 0);
+      }
+      /*UNCOMMENT ON WIN RELEASE READY ----
+      if (platform === 'win') {
+        setTimeout(function () {
+          showWin(platform);
+        }, 0);
+      }*/
+    });
+
+    if (hashtag === 'linux') {
+      $('body').scrollTop(0);
+      $('.switcher a[data-platform="linux"]').trigger('click');
+    }
+    if (hashtag === 'mac') {
+      $('body').scrollTop(0);
+      $('.switcher a[data-platform="mac"]').trigger('click');
+    }
+  });
 </script>
 </head>
 <body>
@@ -107,15 +130,17 @@ $('.mac, .linux').not('img, .download-link').addClass(platform).removeClass('mac
           <div>
             <div class="separator10"></div>
             <span class="switcher">
-              <a class="active" href="javascript:void(0)" id="mac">
+              <a data-platform="mac" class="active" href="javascript:void(0)">
                 <i class="fa fa-apple"></i> Mac
               </a>
-              <a id="linux" href="javascript:void(0)" class="cursor-disabled" data-balloon-length="small" data-balloon="Available soon." data-balloon-pos="up">
+              <a data-platform="linux" href="javascript:void(0)">
                 <i class="fa fa-linux"></i> Linux
               </a>
-              <a id="win" href="javascript:void(0)" class="cursor-disabled" data-balloon-length="small" data-balloon="Available soon." data-balloon-pos="up">
+              <span data-balloon-length="small" data-balloon="Available soon." data-balloon-pos="up">
+              <a data-platform="win" href="javascript:void(0)" class="cursor-disabled">
                 <i class="fa fa-windows"></i> Windows
               </a>
+            </span>
             </span>
             <div class="separator30"></div>
             <div class="line downloads center-content-tablet">
@@ -139,7 +164,7 @@ $('.mac, .linux').not('img, .download-link').addClass(platform).removeClass('mac
             <div class="separator10"></div>
             <div>
               <a class=" color-white  toggle-opacity-inverse-hover" href="https://github.com/720kb/ndm/releases/">
-                <small>Latest v0.0.6-beta</small>
+                <small>Latest {{site.github.releases[0].tag_name}}</small>
               </a>
               <span class="color-white">-</span>
               <a class=" color-white  toggle-opacity-hover" href="https://github.com/720kb/ndm/releases/">

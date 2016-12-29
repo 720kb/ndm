@@ -27,6 +27,7 @@ small , small *, *.font-small{
 }
 .cursor-disabled, .cursor-disabled:hover {
   cursor:not-allowed;
+  pointer-events: none;
 }
 .bg-gradient {
   transition: all 20s linear;
@@ -46,7 +47,7 @@ small , small *, *.font-small{
   left: -20%;
 }
 .screenshot.show{
-  animation: fadeImgEffect .4s ease-in-out;
+  animation: fadeImgEffect .2s ease-in-out;
 }
 .left-column {
   width: 44%;
@@ -293,10 +294,10 @@ small , small *, *.font-small{
 @-webkit-keyframes fadeImgEffect{
   0% {
 
-    opacity: .85;
+    opacity: 1;
   }
   80% {
-    opacity: .85;
+    opacity: .95;
   }
   100% {
     opacity: 1;

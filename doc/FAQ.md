@@ -6,7 +6,7 @@ Of course, we all love the npm CLI, no jokes.
 
 It is obviously very powerful.
 
-ndm is an alternative experience to the `npmCLI` and here is all the pros we think you should not miss:
+*ndm* is an alternative experience to the `npmCLI` and here is all the pros we think you should not miss:
 
 - Less struggling with multiple terminal tabs
 - Less struggling with long terminal logs, scrolling to find warnings and errors are a things of the past now

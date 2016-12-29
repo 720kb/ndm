@@ -1,4 +1,4 @@
-## Come Contribute!
+## :tada: Come Contribute! :tada:
 
 We'll be much grateful if you help and contribute to the project, in any way, even a feature request.
 Feel free to contribute by forking, opening issues, pull requests and whatever you think it's important for the project.
@@ -6,7 +6,7 @@ Feel free to contribute by forking, opening issues, pull requests and whatever y
 Doors are wide open!
 
 
-### How to contribute
+### How to contribute 
 
 - Fork this repository
 - Open the repository folder in your IDE

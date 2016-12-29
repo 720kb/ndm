@@ -21,7 +21,7 @@ Desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with 
 </p>
 
 ## Download
-**[Download the latest release](https://720kb.github.io/ndm)**
+**[Download for MacOS](https://720kb.github.io/ndm#mac)**   **[Download for Linux](https://720kb.github.io/ndm#linux)**
 
 ###### You can browse all the releases at [github.com/720kb/ndm/releases](https://github.com/720kb/ndm/releases)
 

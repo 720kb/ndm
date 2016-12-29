@@ -44,6 +44,7 @@ small , small *, *.font-small{
   max-width: 774px;
   margin-top: -60px;
   left: -20%;
+  bottom: -2px;
 }
 .screenshot.show{
   animation: fadeImgEffect .2s ease-in-out;

@@ -1,24 +1,29 @@
 .home {
-  background: $bg-lighter;
   min-height: 100vh;
   padding-top: 30vh;
   text-align: center;
+  background: $bg-primary;
+
+  small {
+    font-size: 18px;
+  }
 }
 
 .home-button {
-  background: white;
-  border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .095), 0 0 1px rgba(0, 0, 0, .45);
-  color: $color-777;
-  font-size: 11px;
-  line-height: 16px;
-  text-shadow: 0 1px white;
-  width: 100px;
+  line-height: 22px;
+  width: 110px;
+  border-radius: $border-radius-button;
+  text-shadow: 0 1px rgba(255, 255, 255, .5);
+  background: $bg-button-secondary;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+  color: $color-default;
+  border: .5px solid rgba(0, 0, 0, .2);
+
+  &:hover, &:active {
+    background: $bg-button-secondary-active;
+  }
 
   &:active {
-    background: rgba(0, 0, 0, .04);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, .09) inset, 0 1px rgba(0, 0, 0, .09) inset;
-    color: $color-999;
     text-shadow: none;
   }
 }

@@ -1,24 +1,26 @@
 .left-progress {
   animation: loadingStripes  1.3s linear infinite;
   background: $bg-progress-secondary;
-  border-radius: 20px;
+  border-radius: 2px;
   width: 90%;
-  font-size: 10px;
+  font-size: 11.5px;
   margin: 0 auto;
-  line-height: 6px;
+  line-height:5px;
   padding: 0 1.5%;
   margin-top: 20px;
+  text-indent: -4px;
+  height: 8px;
 
   &.left-progress-minor {
     background: $bg-progress-minor;
   }
 
   &:first-child {
-    margin-top: 16px;
+    margin-top: 19px;
   }
 
   div {
-    color: $color-444;
+    color: $color-default;
     position: relative;
     top: -11px;
 

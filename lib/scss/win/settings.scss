@@ -12,14 +12,16 @@
 
 body, html {
   -webkit-user-select: none;
-  color: $color-333;
+  color: $color-default;
   cursor: default;
   font-family: $default-font-family;
-  font-size: 12.5px;
+  font-size: 14px;
+  font-weight: 400;
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
+  background: $bg-primary;
 }
 
 a {
@@ -69,7 +71,7 @@ button {
 input {
 
   &:focus {
-    box-shadow: 0 0 4px $color-royalblue;
+    box-shadow: 0 0 4px $color-primary;
   }
 
   &[disabled] {
@@ -82,11 +84,11 @@ input {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $color-666;
+  color: $color-white;
   font-weight: bold;
 }
 
 b, strong {
 
-  font-weight: 600;
+  font-weight: 400;
 }

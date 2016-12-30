@@ -68,6 +68,9 @@
         "rpm"
       ]
     },
+    "win": {
+      "icon": "icon.ico"
+    },
     "files": [
       "node_modules",
       "dist",

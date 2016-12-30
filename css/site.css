@@ -38,6 +38,9 @@ small , small *, *.font-small{
 .color-red {
   color: #ff7a7a;
 }
+.header {
+  overflow: hidden;
+}
 .screenshot {
   z-index: 9999;
   position: relative;

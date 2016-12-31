@@ -2,13 +2,14 @@
   -webkit-app-region: drag;
   bottom: 0;
   font-size: 13px;
-  font-weight: bold;
   height: 32px;
   line-height: 32px;
   padding: 0 15px;
   position: fixed;
   width: 100%;
   z-index: 9;
+  background: $color-secondary;
+  color: white;
 
   span {
     float: right;

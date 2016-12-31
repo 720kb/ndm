@@ -1,8 +1,12 @@
 .table-header {
-  line-height: 20px;
+  line-height: 24px;
   padding: 0 10px;
   transition: opacity .3s linear;
-  background: lightyellow;
+  color: $color-secondary;
+
+  div {
+    background: lightgrey;
+  }
 
   i {
     float: right;
@@ -69,10 +73,11 @@
 
 .table-infos {
   line-height: 20px;
-  height: 160px;
+  height: 165px;
   padding: 0 2%;
   font-size: 13px;
-  background: lightyellow;
+  background: lightgrey;
+  color: $color-muted;
 
   .information {
     overflow: hidden;

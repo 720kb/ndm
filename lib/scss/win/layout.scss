@@ -7,7 +7,7 @@
   padding: 0;
   width: calc(100% - 200px);
   height: calc(100vh - 1.5px);
-  box-shadow: 0 1px $color-secondary inset;
+  box-shadow: 0 -3px $color-secondary;
 }
 
 .left-column {
@@ -15,8 +15,8 @@
   height: 90vh;
   overflow-y: auto;
   padding: 0 15px;
-  width: 198.5px;
-  border-right: 1.5px solid $color-secondary;
+  width: 200px;
+  box-shadow: -3px -3px $color-secondary inset;
 
   a {
     cursor: default;
@@ -55,7 +55,7 @@
     }
 
     &:hover, &:focus {
-      @include bg-rgba-black(.03);
+      background: $bg-muted-invisible;
     }
 
     &.active {

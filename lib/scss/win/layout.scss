@@ -60,7 +60,7 @@
     }
 
     &.active {
-      background: linear-gradient(to bottom, $color-primary 0%, #f58151 100%);
+      background: $color-primary;
       color: white;
       cursor: default;
       text-shadow: none;

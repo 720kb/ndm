@@ -24,10 +24,6 @@
     background: $bg-muted-invisible;
   }
 
-  &:nth-child(even) {
-    background: rgba(0,0,0, .085);
-  }
-
   &:focus, &:active, &.active {
     background: white;
     * {

@@ -7,7 +7,7 @@
   padding: 0;
   width: calc(100% - 200px);
   height: calc(100vh - 1.5px);
-  border-top: 1.5px solid $color-secondary;
+  box-shadow: 0 1px $color-secondary inset;
 }
 
 .left-column {

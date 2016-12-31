@@ -3,10 +3,6 @@
   padding: 0 10px;
   transition: opacity .3s linear;
 
-  div {
-    background: lightgrey;
-  }
-
   i {
     float: right;
     position: relative;
@@ -25,10 +21,10 @@
   padding: 0 10px;
 
   &:focus, &:active, &.active {
-    background: $color-primary;
+    box-shadow: -1.5px -1.5px $color-secondary inset
 
     * {
-      color: white;
+      color: black;
     }
   }
 
@@ -52,6 +48,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 20px;
+  background: $bg-muted-invisible;
 }
 
 .table-loader {
@@ -75,8 +72,6 @@
   height: 165px;
   padding: 0 2%;
   font-size: 13px;
-  background: lightgrey;
-  color: $color-muted;
 
   .information {
     overflow: hidden;

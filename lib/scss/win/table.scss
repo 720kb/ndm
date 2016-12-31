@@ -1,5 +1,5 @@
 .table-header {
-  line-height: 30px;
+  line-height: 20px;
   padding: 0 10px;
   transition: opacity .3s linear;
   background: $bg-secondary;
@@ -22,7 +22,7 @@
 }
 
 .table-row {
-  line-height: 30px;
+  line-height: 20px;
   padding: 0 10px;
 
   &:focus, &:active, &.active {
@@ -59,7 +59,7 @@
   min-height: 100vh;
   padding-top: 30vh;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   background: $bg-primary;
 }
 

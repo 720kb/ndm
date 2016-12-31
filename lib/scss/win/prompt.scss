@@ -1,7 +1,6 @@
 .dialog {
   background: $bg-primary;
   border-radius: $border-radius-prompt;
-  box-shadow: 0 -20px 20px rgba(0, 0, 0, .04) inset, 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
   left: 0;
   padding: 4px 8px;
@@ -55,7 +54,6 @@
       border: $border-tags;
       padding: 0 4px 1.5px 4px;
       color: white;
-      text-shadow: 0 -1px rgba(0, 0, 0, .2);
     }
   }
 
@@ -65,7 +63,6 @@
       border: none;
       line-height: initial;
       border-radius: $border-radius-inputs;
-      box-shadow: $box-shadow-inputs;
       font-size: 13px;
       padding: 3.5px 4px 4px 4px;
       width: 18%;
@@ -94,9 +91,7 @@
     width: auto;
     margin-left: 6px;
     border-radius: $border-radius-button;
-    text-shadow: 0 1px rgba(255, 255, 255, .5);
     background: $bg-button-secondary;
-    box-shadow: 0 0 1px rgba(0, 0, 0, .3);
     color: $color-default;
     border: .5px solid rgba(0, 0, 0, .2);
 
@@ -104,14 +99,9 @@
       background: $bg-button-secondary-active;
     }
 
-    &:active {
-      text-shadow: none;
-    }
-
     &.disabled {
       box-shadow: none;
       opacity: .5;
-      text-shadow: none;
     }
 
     i {
@@ -207,7 +197,6 @@
     position: relative;
     left: -13px;
     color: $color-777;
-    text-shadow: 0 1px white;
   }
 
   button {

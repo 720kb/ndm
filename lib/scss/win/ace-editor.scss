@@ -1,6 +1,6 @@
 //Leave the !important to override ace-editor default which is rendered later
 .ace_editor {
-  font-size: 15px !important;
+  font-size: 13px !important;
 }
 .ace_tooltip {
   background: $bg-error !important;
@@ -29,7 +29,6 @@
       font-family: $font-icon;
       font-size: 14.5px;
       margin: 1px 5px;
-      text-shadow: 0 1px rgba(255, 255, 255, .75);
     }
   }
 }

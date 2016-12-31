@@ -59,8 +59,8 @@ $bg-progress-secondary: $bg-progress;
 $bg-progress-minor: repeating-linear-gradient(90deg, $color-error, $color-error 5px, red 5px, red 10px);
 $bg-dialog: $bg-lightgrey;
 $bg-tags: $color-positive;
-$bg-button-secondary: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, lightgrey 3%, grey 6%, #fc8c6a 100%);
-$bg-button-secondary-active: linear-gradient(to bottom, lightgrey 6%, lightgrey 100%);
+$bg-button-secondary: grey;
+$bg-button-secondary-active: lightgrey;
 /*border-radius*/
 $border-radius-inputs: 1.5px;
 $border-radius-button: 1.5px;

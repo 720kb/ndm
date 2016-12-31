@@ -10,12 +10,11 @@
   box-shadow: 0 1px rgba(0, 0, 0, .15) inset;
 
   a {
-    color: $color-white;
+    color: $color-primary;
     display: block;
     font-size: 13px;
     padding: 2px 0;
     text-align: center;
-    text-shadow: 0 -1px rgba(0, 0, 0, .5);
 
     &:first-child {
       margin-left: -5px;
@@ -24,11 +23,12 @@
     span, div {
       display: none;
     }
+
     &:active, &.active {
-      color: $color-ccc;
+      color: $color-secondary;
 
       i {
-        color: $color-777;
+        color: $color-secondary;
       }
     }
 
@@ -37,7 +37,7 @@
     }
 
     i {
-      font-size: 24.5px;
+      font-size: 20px;
       line-height: 0;
       margin-top: 13px;
       position: relative;
@@ -53,7 +53,6 @@
     margin-top: -18px;
     padding: 2px 4px;
     position: absolute;
-    text-shadow: 0 -1px rgba(0, 0, 0, .5);
     color: $color-ccc;
 
     i {
@@ -67,10 +66,8 @@
   .button-global {
     font-size: 14px;
     line-height: 20px;
-    text-shadow: 0 -1px rgba(0, 0, 0, .5);
     border-radius: $border-radius-button;
-    color: $color-white;
-    border: 1px solid rgba(0,0,0, .25);
+    color: $color-primary;
     position: relative;
     right: -40px;
     padding: 4px 6px;
@@ -83,19 +80,16 @@
 
     &:active {
       background: rgba(0, 0, 0, .04);
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, .09) inset, 0 1px rgba(0, 0, 0, .09) inset;
-      color: $color-999;
-      text-shadow: none;
+      color: $color-secondary;
     }
   }
 
   button {
     font-size: 14px;
     line-height: 20px;
-    text-shadow: 0 -1px rgba(0, 0, 0, .5);
     border-radius: $border-radius-button;
     color: $color-white;
-    border: 1px solid rgba(0,0,0, .25);
+    background: $bg-button-secondary;
 
     input {
       &[type='file'] {
@@ -115,12 +109,6 @@
 
     &:active {
       @include bg-rgba-black(.05);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, .15) inset;
-      text-shadow: none;
-
-      i {
-        text-shadow: none;
-      }
     }
   }
   //disable active color on top-menu update icon

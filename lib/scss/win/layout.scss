@@ -16,17 +16,15 @@
   overflow-y: auto;
   padding: 0 15px;
   width: 200px;
-  box-shadow: -3.5px -3.5px rgba(0, 0, 0, .1) inset;
-  text-shadow: -1px 1px rgba(255, 255, 255, .3);
 
   a {
     cursor: default;
     display: inline-block;
-    font-size: 15px;
-    line-height: 28px;
-    height: 30px;
+    font-size: 13px;
+    line-height: 25px;
+    height: 25px;
     margin: 0;
-    padding: 0 9px;
+    padding: 0 4px;
     width: calc(100% - 3.5px);
     color: $color-default;
 
@@ -36,16 +34,16 @@
     }
 
     i {
-      font-size: 18px;
+      font-size: 15px;
       left: -1px;
-      margin-right: 5px;
+      margin-right: 3px;
       position: relative;
       color: rgba(0,0,0, .65);
     }
 
     div {
       display: inline-flex;
-      max-width: 120px;
+      max-width: 130px;
 
       b {
         overflow: hidden;
@@ -63,8 +61,6 @@
       background: $color-primary;
       color: white;
       cursor: default;
-      text-shadow: none;
-      text-shadow: -1px 1px rgba(0, 0, 0, .25);
 
       i {
         color: white;

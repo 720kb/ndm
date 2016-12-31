@@ -15,7 +15,7 @@ body, html {
   color: $color-default;
   cursor: default;
   font-family: $default-font-family;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   height: 100vh;
   margin: 0 auto;
@@ -71,7 +71,7 @@ button {
 input {
 
   &:focus {
-    box-shadow: 0 0 4px $color-primary;
+    box-shadow: 0 0 1px $color-primary;
   }
 
   &[disabled] {

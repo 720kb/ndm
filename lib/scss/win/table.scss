@@ -2,11 +2,7 @@
   line-height: 20px;
   padding: 0 10px;
   transition: opacity .3s linear;
-  background: $bg-secondary;
-
-  div {
-    box-shadow: -1px -1px rgba(0, 0, 0, .15) inset;
-  }
+  background: lightyellow;
 
   i {
     float: right;
@@ -76,7 +72,7 @@
   height: 160px;
   padding: 0 2%;
   font-size: 13px;
-  background: $bg-primary;
+  background: lightyellow;
 
   .information {
     overflow: hidden;

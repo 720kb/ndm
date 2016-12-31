@@ -17,12 +17,11 @@
 }
 
 .table-row {
-  line-height: 20px;
+  line-height: 24px;
   padding: 0 10px;
 
   &:focus, &:active, &.active {
-    box-shadow: -1.5px -1.5px $color-secondary inset
-
+    background: white;
     * {
       color: black;
     }

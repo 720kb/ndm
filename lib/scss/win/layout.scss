@@ -5,7 +5,7 @@
 .right-column {
   float: left;
   padding: 0;
-  width: calc(100% - 200px);
+  width: calc(100% - 200px); //100% - left col
   height: 100vh;
   box-shadow: 0 -3px $color-secondary;
 }
@@ -17,6 +17,7 @@
   padding: 0 15px;
   width: 200px;
   box-shadow: -3px -3px $color-secondary inset;
+  margin-top: -3px;
 
   a {
     cursor: default;

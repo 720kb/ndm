@@ -52,16 +52,13 @@ $ brew cask install ndm
   &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
   </p>
 
-## More
+## Core team 
 
-**Core team** [720kb](https://720kb.net) 
+[720kb](https://720kb.net) 
 
-**Contributors** [@wouldgo](https://github.com/wouldgo), [@45kb](https://github.com/45kb), [@makevoid](https://github.com/makevoid) _- contribute and edit the Readme to you to this list!_
-<br><br>
+## Contributors
 
-
-<img src="https://opencollective.com/ndm/backers/badge.svg"(#backers)/> 
-<img src="https://opencollective.com/ndm/sponsors/badge.svg"(#sponsors)/> 
+[@wouldgo](https://github.com/wouldgo), [@45kb](https://github.com/45kb), [@makevoid](https://github.com/makevoid) _- contribute and edit the Readme to you to this list!_
 
 **Backers**
 
@@ -134,3 +131,5 @@ Become a sponsor and get your logo on our README on Github with a link to your s
 <a href="https://opencollective.com/ndm/sponsor/29/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/29/avatar.svg"></a>
 
   
+<img src="https://opencollective.com/ndm/backers/badge.svg"(#backers)/> 
+<img src="https://opencollective.com/ndm/sponsors/badge.svg"(#sponsors)/> 

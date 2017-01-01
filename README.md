@@ -55,7 +55,7 @@ $ brew cask install ndm
 
 **Contributors** 
 
-@wouldgo, @45kb, @makevoid - contribute and edit this list to you!
+[@wouldgo](https://github.com/wouldgo), [@45kb](https://github.com/45kb), [@makevoid](https://github.com/makevoid) _- contribute and edit the Readme to you to this list!_
 
 **Backers** 
 

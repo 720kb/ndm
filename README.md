@@ -1,12 +1,26 @@
 ![github-banner.png](http://i.imgur.com/BDRLm0O.png)
 
 <p align="center">
-<i>"npm desktop manager"</i>
-</p>
-<p align="center">
 Desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with web technologies.
 </p>
+
+<p align="center">
+<b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/DEVELOP.md">Develop</a></b>&nbsp;  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/BUILD.md">Build</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/RECOMMENDATIONS.md">Recommendations</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/FAQ.md">FAQ</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
+  </p>
+## 
 <br>
+
 <p align="center" style="text-align:center">
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
 <img src="https://img.shields.io/github/release/720kb/ndm.svg"/>
@@ -35,28 +49,12 @@ Alternatively, you can install **ndm** with [Homebrew Cask](https://caskroom.git
 $ brew update
 $ brew cask install ndm
 ```
-## Menu
 
-<p>
-<b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/DEVELOP.md">Develop</a></b>&nbsp;  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/BUILD.md">Build</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/RECOMMENDATIONS.md">Recommendations</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/FAQ.md">FAQ</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
-  </p>
-
-## Core team 
+**Core team** 
 
 [720kb](https://720kb.net) 
 
-## Contributors
+**Contributors**
 
 [@wouldgo](https://github.com/wouldgo), [@45kb](https://github.com/45kb), [@makevoid](https://github.com/makevoid) _- contribute and edit the Readme to you to this list!_
 

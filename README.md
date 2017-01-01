@@ -50,42 +50,13 @@ $ brew cask install ndm
   </p>
 <hr>
 
-**Core team** [720kb](https://720kb.net) 
+**Core team** 
+[720kb](https://720kb.net) 
 
 **Contributors** 
 
-Contribute to the project and help us continue our activities. [[See all the contributors](https://opencollective.com/ndm#contributors)]
+@wouldgo, @45kb, @makevoid - contribute and edit this list to you!
 
-<a href="https://opencollective.com/ndm/contributor/0/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/0/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/1/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/1/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/2/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/2/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/3/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/3/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/4/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/4/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/5/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/5/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/6/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/6/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/7/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/7/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/8/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/8/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/9/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/9/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/10/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/10/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/11/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/11/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/12/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/12/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/13/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/13/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/14/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/14/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/15/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/15/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/16/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/16/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/17/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/17/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/18/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/18/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/19/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/19/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/20/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/20/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/21/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/21/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/22/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/22/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/23/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/23/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/24/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/24/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/25/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/25/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/26/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/26/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/27/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/27/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/28/website" target="_blank"><img src="https://opencollective.com/ndm/contributor/28/avatar.svg"></a>
-<a href="https://opencollective.com/ndm/contributor/29/website" target="_blank"><img src="https://opencollective.com/ndm/backer/29/avatar.svg"></a>
 **Backers** 
 
 Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/ndm#backer)]

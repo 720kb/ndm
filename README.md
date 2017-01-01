@@ -18,8 +18,6 @@ Desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with 
 <img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>
 </a>
 <img src="https://img.shields.io/travis/720kb/ndm.svg"/>
-<img src="https://opencollective.com/ndm/backers/badge.svg"(#backers)/> 
-<img src="https://opencollective.com/ndm/sponsors/badge.svg"(#sponsors)/> 
 </p>
 
 ## Download
@@ -37,11 +35,33 @@ Alternatively, you can install **ndm** with [Homebrew Cask](https://caskroom.git
 $ brew update
 $ brew cask install ndm
 ```
+## Menu
+
+<p>
+<b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/DEVELOP.md">Develop</a></b>&nbsp;  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/BUILD.md">Build</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/RECOMMENDATIONS.md">Recommendations</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/FAQ.md">FAQ</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
+  </p>
+
+## More
 
 **Core team** [720kb](https://720kb.net) 
 
 **Contributors** [@wouldgo](https://github.com/wouldgo), [@45kb](https://github.com/45kb), [@makevoid](https://github.com/makevoid) _- contribute and edit the Readme to you to this list!_
 <br><br>
+
+
+<img src="https://opencollective.com/ndm/backers/badge.svg"(#backers)/> 
+<img src="https://opencollective.com/ndm/sponsors/badge.svg"(#sponsors)/> 
 
 **Backers**
 
@@ -113,18 +133,4 @@ Become a sponsor and get your logo on our README on Github with a link to your s
 <a href="https://opencollective.com/ndm/sponsor/28/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/28/avatar.svg"></a>
 <a href="https://opencollective.com/ndm/sponsor/29/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/29/avatar.svg"></a>
 
-<p>
-<b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/DEVELOP.md">Develop</a></b>&nbsp;  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/BUILD.md">Build</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/RECOMMENDATIONS.md">Recommendations</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/FAQ.md">FAQ</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
-  </p>
   

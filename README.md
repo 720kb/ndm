@@ -18,7 +18,7 @@ Desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with 
   |
   &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
   </p>
-##.
+
 <br><br>
 
 <p align="center" style="text-align:center">

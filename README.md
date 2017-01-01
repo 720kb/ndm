@@ -1,10 +1,10 @@
 ![github-banner.png](http://i.imgur.com/BDRLm0O.png)
 
 <p align="center">
-The desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with web technologies.
+Desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with web technologies.
 </p>
 
-
+<br>
 <p align="center" style="text-align:center">
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
 <img src="https://img.shields.io/github/release/720kb/ndm.svg"/>
@@ -17,6 +17,8 @@ The desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built w
 </a>
 <img src="https://img.shields.io/travis/720kb/ndm.svg"/>
 </p>
+
+<br>
 
 ## Download
 **[Download for MacOS](https://720kb.github.io/ndm#mac)**  &nbsp; | &nbsp;**[Download for Linux](https://720kb.github.io/ndm#linux)** &nbsp; | &nbsp; **Download for Windows (soon)**

@@ -59,8 +59,6 @@ $ brew cask install ndm
 
 [@wouldgo](https://github.com/wouldgo), [@45kb](https://github.com/45kb), [@makevoid](https://github.com/makevoid) _- contribute and edit the Readme to you to this list!_
 
-[[Become a backer](https://opencollective.com/ndm#backer)]
-
 <a href="https://opencollective.com/ndm/backer/0/website" target="_blank"><img src="https://opencollective.com/ndm/backer/0/avatar.svg"></a>
 <a href="https://opencollective.com/ndm/backer/1/website" target="_blank"><img src="https://opencollective.com/ndm/backer/1/avatar.svg"></a>
 <a href="https://opencollective.com/ndm/backer/2/website" target="_blank"><img src="https://opencollective.com/ndm/backer/2/avatar.svg"></a>
@@ -91,8 +89,6 @@ $ brew cask install ndm
 <a href="https://opencollective.com/ndm/backer/27/website" target="_blank"><img src="https://opencollective.com/ndm/backer/27/avatar.svg"></a>
 <a href="https://opencollective.com/ndm/backer/28/website" target="_blank"><img src="https://opencollective.com/ndm/backer/28/avatar.svg"></a>
 <a href="https://opencollective.com/ndm/backer/29/website" target="_blank"><img src="https://opencollective.com/ndm/backer/29/avatar.svg"></a>
-
-**Sponsors** 
 
 <a href="https://opencollective.com/ndm/sponsor/0/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/0/avatar.svg"></a>
 <a href="https://opencollective.com/ndm/sponsor/1/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/1/avatar.svg"></a>

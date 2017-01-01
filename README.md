@@ -3,23 +3,7 @@
 <p align="center">
 The desktop GUI for <a href="https://npmjs.com/" target="_blank">npm</a> built with web technologies.
 </p>
-<br>
-<p align="center">
-<b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/DEVELOP.md">Develop</a></b>&nbsp;  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/BUILD.md">Build</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/RECOMMENDATIONS.md">Recommendations</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/FAQ.md">FAQ</a></b>&nbsp; 
-  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
-  </p>
 
-<br>
 
 <p align="center" style="text-align:center">
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
@@ -49,6 +33,22 @@ Alternatively, you can install **ndm** with [Homebrew Cask](https://caskroom.git
 $ brew update
 $ brew cask install ndm
 ```
+<hr>
+<p align="">
+<b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/DEVELOP.md">Develop</a></b>&nbsp;  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/BUILD.md">Build</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/RECOMMENDATIONS.md">Recommendations</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/FAQ.md">FAQ</a></b>&nbsp; 
+  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/LICENSE.md">License</a></b>
+  </p>
+<hr>
 
 **Core team** [720kb](https://720kb.net) 
 

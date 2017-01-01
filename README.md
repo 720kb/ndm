@@ -1,7 +1,7 @@
 ![github-banner.png](http://i.imgur.com/BDRLm0O.png)
 
 <p align="center">
-"npm desktop manager"
+<i>"npm desktop manager"</i>
 </p>
 
 <p align="center">

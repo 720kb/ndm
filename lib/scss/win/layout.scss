@@ -30,10 +30,6 @@
     width: calc(100% - 3px);
     color: $color-default;
 
-    &:not(.project) {
-      margin-bottom: 15px;
-    }
-
     i {
       font-size: 15px;
       left: -1px;
@@ -109,6 +105,11 @@
   }
 
   h6 {
-    display: none;
+    color: $color-muted-less;
+    font-size: 14px;
+    text-indent: -8px;
+    font-weight: normal;
+    background: lightgrey;
+    line-height: 23px;
   }
 }

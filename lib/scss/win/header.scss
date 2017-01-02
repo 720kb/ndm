@@ -7,6 +7,7 @@
   padding: 10px 10px 5px 10px;
   width: 100%;
   background: none;
+  background: $bg-lightgrey;
 
   a {
     color: $color-secondary;
@@ -68,7 +69,7 @@
     position: relative;
     right: -80px;
     bottom: -5px;
-    padding: 3.5px 5px 4px 5px;
+    padding: 1.5px 5px 1px 5px;
     background: $bg-button-secondary;
     color: $color-default;
 
@@ -88,7 +89,7 @@
     line-height: 16px;
     margin-left: 5px;
     margin-top: 5px;
-    padding: 3px 5px 5px 5px;
+    padding: 1px 5px 1px 5px;
     background: $bg-button-secondary;
     color: $color-default;
 

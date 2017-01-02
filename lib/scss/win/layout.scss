@@ -7,24 +7,22 @@
   padding: 0;
   width: calc(100% - 200px); //100% - left col
   height: 100vh;
-  box-shadow: 0 -3px lightgrey;
 }
 
 .left-column {
   float: left;
-  height: 90vh;
+  height: 100vh;
   overflow-y: auto;
-  padding: 0 15px;
+  padding: 15px;
   width: 200px;
-  box-shadow: -3px -3px lightgrey inset;
-  margin-top: -3px;
+  box-shadow: -3px -3px $bg-lightgrey inset;
 
   a {
     cursor: default;
     display: inline-block;
     font-size: 13.5px;
-    line-height: 23px;
-    height: 25px;
+    line-height: 25px;
+    height: 26px;
     margin: 0;
     padding: 0 4px;
     width: calc(100% - 3px);
@@ -35,11 +33,11 @@
     }
 
     i {
-      font-size: 15px;
+      font-size: 17px;
       left: -1px;
       margin-right: 3px;
       position: relative;
-      color: rgba(0, 0, 0, .65);
+      color: rgba(0, 0, 0, .35);
     }
 
     div {
@@ -59,19 +57,8 @@
     }
 
     &.active {
-      background: $color-secondary;
-      color: white;
+      background: $bg-lightgrey;
       cursor: default;
-
-      i {
-        color: white;
-      }
-
-      button {
-        i {
-          color: rgba(0, 0, 0, .5);
-        }
-      }
     }
 
     &.project {
@@ -89,10 +76,6 @@
         transition: color .11s linear;
         width: 50%;
         z-index: 999;
-
-        i {
-          top: -3px;
-        }
 
         &:hover {
           color: $color-muted-less;

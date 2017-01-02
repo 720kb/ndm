@@ -9,11 +9,11 @@ colors
 */
 $color-default: #41403b;
 $color-positive: #dc4343;
+$color-primary: $color-positive;
+$color-secondary: $color-positive;
 $color-error: grey;
 $color-stripes-one: rgba(55, 255, 255, .4);
 $color-stripes-two: rgba(155, 255, 255, .5);
-$color-primary: $color-positive;
-$color-secondary: $color-positive;
 $color-muted: rgba(0, 0, 0, .4);
 $color-muted-more: rgba(0, 0, 0, .28);
 $color-muted-less: rgba(0, 0, 0, .5);

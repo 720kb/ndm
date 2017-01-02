@@ -81,7 +81,7 @@
         color: $color-default;
         display: none;
         float: right;
-        height: 30px;
+        height: 25px;
         line-height: 20px;
         padding-right: 5px;
         max-width: 30px;
@@ -89,10 +89,9 @@
         transition: color .11s linear;
         width: 50%;
         z-index: 999;
-        text-indent: -3px;
 
         i {
-          top: -1.5px;
+          top: -3px;
         }
 
         &:hover {

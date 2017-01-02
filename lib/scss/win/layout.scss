@@ -14,7 +14,7 @@
   float: left;
   height: 90vh;
   overflow-y: auto;
-  padding: 0 15px;
+  padding: 15px 15px;
   width: 200px;
   box-shadow: -3px -3px lightgrey inset;
   margin-top: -3px;
@@ -27,11 +27,10 @@
     height: 25px;
     margin: 0;
     padding: 0 4px;
-    width: 100%;
+    width: calc(100% - 3px);
     color: $color-default;
 
     &:not(.project) {
-
       margin-bottom: 15px;
     }
 
@@ -40,7 +39,7 @@
       left: -1px;
       margin-right: 3px;
       position: relative;
-      color: rgba(0,0,0, .65);
+      color: rgba(0, 0, 0, .65);
     }
 
     div {

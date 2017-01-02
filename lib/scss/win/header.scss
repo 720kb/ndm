@@ -68,23 +68,18 @@
     position: relative;
     right: -80px;
     bottom: -5px;
-    padding: 1.5px 5px 2px 5px;
+    padding: 3.5px 5px 4px 5px;
     background: $bg-button-secondary;
     color: $color-default;
 
-    &:hover, &:active {
-      background: $bg-button-secondary-active;
-    }
-
     &:active {
-      background: $bg-button-secondary;
-      color: $color-muted;
+      background: $bg-button-secondary-active;
     }
 
     i {
       font-size: 12px;
       vertical-align: text-bottom;
-      color: $color-primary;
+      color: $color-default;
     }
   }
 
@@ -93,24 +88,19 @@
     line-height: 16px;
     margin-left: 5px;
     margin-top: 5px;
-    padding: 1px 5px 2px 5px;
+    padding: 3px 5px 5px 5px;
     background: $bg-button-secondary;
     color: $color-default;
 
-    &:hover, &:active {
-      background: $bg-button-secondary-active;
-    }
-
     &:active {
-      color: $color-muted;
-      background: $bg-button-secondary;
+      background: $bg-button-secondary-active;
     }
 
     i {
       font-size: 12px;
       padding-right: 3px;
       vertical-align: text-bottom;
-      color: $color-primary;
+      color: $color-default;
     }
 
     input {

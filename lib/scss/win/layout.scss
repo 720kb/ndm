@@ -30,6 +30,10 @@
     width: calc(100% - 3px);
     color: $color-default;
 
+    &:not(.project) {
+      margin-bottom: 15px;
+    }
+
     i {
       font-size: 15px;
       left: -1px;

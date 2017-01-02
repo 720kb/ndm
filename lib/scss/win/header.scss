@@ -4,13 +4,13 @@
 
 .top-menu {
   -webkit-app-region: drag;
-  padding: 10px 10px 5px 10px;
+  padding: 5px 6px;
   width: 100%;
   background: none;
-  background: $bg-lightgrey;
+  background: $bg-white;
 
   a {
-    color: $color-muted;
+    color: $color-888;
     display: block;
     font-size: 13px;
     padding: 2px 0;
@@ -24,23 +24,14 @@
       display: none;
     }
 
-    &:active, &.active {
-
-      i {
-        color: $color-muted-more;
-      }
-    }
-
     &.pull-right {
       margin-left: 11px;
     }
 
     i {
-      font-size: 23px;
+      font-size: 20px;
       line-height: 0;
-      margin-top: 13px;
       position: relative;
-      color: $color-muted;
     }
   }
 
@@ -53,13 +44,13 @@
     margin-top: -18px;
     padding: 2px 4px;
     position: absolute;
-    color: $color-ccc;
+    color: $color-default;
 
     i {
       margin: 0;
       bottom: 0;
-      font-size: 12.5px;
-      color: $color-muted;
+      font-size: 10px;
+      color: $color-888;
     }
   }
 
@@ -77,8 +68,7 @@
     }
 
     i {
-      vertical-align: text-bottom;
-      color: $color-default;
+      display: none;
     }
   }
 
@@ -114,6 +104,6 @@
   }
   //disable active color on top-menu update icon
   .fa.fa-history.color-primary {
-    color: $color-777;
+    color: $color-888;
   }
 }

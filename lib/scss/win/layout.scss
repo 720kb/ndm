@@ -15,20 +15,15 @@
   overflow-y: auto;
   padding: 0 15px 20px 15px;
   width: 200px;
-  background: $bg-lightgrey;
-
-  * {
-    font-weight: bold;
-  }
+  box-shadow: -1px -1px 0 $color-border inset;
 
   a {
-    cursor: default;
     display: inline-block;
     line-height: 25px;
     height: 26px;
     margin: 0;
     padding: 0 4px;
-    width: 100%;
+    width: calc(100% - 3px);
     color: $color-default;
 
     &:not(.project) {
@@ -56,12 +51,13 @@
     }
 
     &:hover, &:focus {
-      background: $bg-white;
+      background: $color-lightblue;
+      cursor: pointer;
     }
 
     &.active {
-      background: $bg-white;
-      cursor: default;
+      background: $color-lightblue;
+      cursor: pointer;
     }
 
     &.project {

@@ -18,14 +18,14 @@
 
 .table-row {
   line-height: 24px;
-  padding: 0 10px;
+  margin: 0 auto;
 
   * {
     font-weight: normal;
   }
 
   &:focus, &:active, &.active {
-    background: white;
+    background: $color-lightblue;
   }
 
   i {
@@ -47,7 +47,8 @@
   height: calc(100vh - 85px - 175px);
   overflow-x: hidden;
   overflow-y: auto;
-  padding-bottom: 20px;
+  padding: 20px 10px;
+  padding-top: 0;
 }
 
 .table-loader {
@@ -70,8 +71,7 @@
   line-height: 20px;
   height: 165px;
   padding: 0 2%;
-  font-size: 13px;
-  box-shadow: 0 3px $bg-lightgrey inset;
+  box-shadow: 0 1px  $color-border inset;
 
   .information {
     overflow: hidden;

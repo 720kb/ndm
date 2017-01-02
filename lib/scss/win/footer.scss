@@ -1,15 +1,12 @@
 .footer {
   -webkit-app-region: drag;
   bottom: 0;
-  font-size: 13px;
   height: 32px;
   line-height: 32px;
   padding: 0 15px;
   position: fixed;
   width: 100%;
   z-index: 9;
-  background: $color-secondary;
-  color: white;
 
   span {
     float: right;
@@ -19,8 +16,7 @@
     img {
       vertical-align: middle;
       position: relative;
-      width: 32.5px;
-      bottom: -.5px;
+      width: 25px;
     }
 
     &.npm-status {
@@ -31,7 +27,7 @@
       }
 
       b {
-        font-weight: 300;
+        font-weight: normal;
       }
     }
 

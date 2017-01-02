@@ -14,7 +14,7 @@
   float: left;
   height: 90vh;
   overflow-y: auto;
-  padding: 15px 15px;
+  padding: 0 15px;
   width: 200px;
   box-shadow: -3px -3px lightgrey inset;
   margin-top: -3px;
@@ -111,6 +111,8 @@
     margin-left: -3px;
     font-weight: normal;
     line-height: 23px;
-    margin-bottom: 0;
+    background: $bg-muted-invisible;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
 }

@@ -12,8 +12,8 @@ $color-positive: #dc4343;
 $color-error: grey;
 $color-stripes-one: rgba(55, 255, 255, .4);
 $color-stripes-two: rgba(155, 255, 255, .5);
-$color-primary: #ef4a4a;
-$color-secondary: #ef4a4a;
+$color-primary: $color-positive;
+$color-secondary: $color-positive;
 $color-muted: rgba(0, 0, 0, .4);
 $color-muted-more: rgba(0, 0, 0, .28);
 $color-muted-less: rgba(0, 0, 0, .5);
@@ -37,7 +37,7 @@ backgrounds
 */
 $bg-white: #fff;
 $bg-primary: #fff;
-$bg-secondary: #dc4343;
+$bg-secondary: #f2f1f0;
 $bg-light: #666;
 $bg-lighter: #999;
 $bg-ultralight: #58564e;

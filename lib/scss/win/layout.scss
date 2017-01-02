@@ -105,11 +105,13 @@
   }
 
   h6 {
-    color: $color-muted-less;
+    color: $color-default;
     font-size: 14px;
-    text-indent: -8px;
+    text-indent: -5px;
+    margin-left: -3px;
     font-weight: normal;
-    border-top: 1px solid lightgrey;
+    background: #eee;
     line-height: 23px;
+    margin-bottom: 0;
   }
 }

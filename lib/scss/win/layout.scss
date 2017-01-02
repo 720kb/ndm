@@ -13,9 +13,13 @@
   float: left;
   height: 100vh;
   overflow-y: auto;
-  padding: 15px;
+  padding: 0 15px 20px 15px;
   width: 200px;
-  box-shadow: -3px -3px $bg-lightgrey inset;
+  background: $bg-lightgrey;
+
+  * {
+    font-weight: bold;
+  }
 
   a {
     cursor: default;
@@ -24,7 +28,7 @@
     height: 26px;
     margin: 0;
     padding: 0 4px;
-    width: calc(100% - 3px);
+    width: 100%;
     color: $color-default;
 
     &:not(.project) {
@@ -36,7 +40,7 @@
       left: -1px;
       margin-right: 3px;
       position: relative;
-      color: rgba(0, 0, 0, .35);
+      color: $color-muted;
     }
 
     div {
@@ -52,15 +56,22 @@
     }
 
     &:hover, &:focus {
-      background: $bg-muted-invisible;
+      background: $bg-white;
     }
 
     &.active {
-      background: $bg-lightgrey;
+      background: $bg-white;
       cursor: default;
     }
 
     &.project {
+
+      &:hover {
+
+        & button {
+          display: inherit;
+        }
+      }
 
       button {
         bottom: -3px;
@@ -78,13 +89,6 @@
 
         &:hover {
           color: $color-muted-less;
-        }
-      }
-
-      &:hover {
-
-        & button {
-          display: inherit;
         }
       }
     }

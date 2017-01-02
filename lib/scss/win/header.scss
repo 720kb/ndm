@@ -10,7 +10,7 @@
   background: $bg-lightgrey;
 
   a {
-    color: $color-secondary;
+    color: $color-muted;
     display: block;
     font-size: 13px;
     padding: 2px 0;
@@ -25,10 +25,9 @@
     }
 
     &:active, &.active {
-      color: $color-secondary;
 
       i {
-        color: $color-secondary;
+        color: $color-muted-more;
       }
     }
 
@@ -41,6 +40,7 @@
       line-height: 0;
       margin-top: 13px;
       position: relative;
+      color: $color-muted;
     }
   }
 
@@ -59,7 +59,7 @@
       margin: 0;
       bottom: 0;
       font-size: 12.5px;
-      color: $color-primary;
+      color: $color-muted;
     }
   }
 
@@ -69,11 +69,11 @@
     right: -80px;
     bottom: -5px;
     padding: 1.5px 5px 1px 5px;
-    background: $bg-muted-invisible;
+    background: $bg-white;
     color: $color-default;
 
     &:active {
-      background: $bg-button-secondary-active;
+      color: $color-muted;
     }
 
     i {
@@ -86,12 +86,12 @@
     line-height: 16px;
     margin-left: 5px;
     margin-top: 5px;
-    padding: 1px 5px 1px 5px;
-    background: $bg-button-secondary;
+    padding: 2px 5px 1px 5px;
+    background: $bg-white;
     color: $color-default;
 
     &:active {
-      background: $bg-button-secondary-active;
+      color: $color-muted;
     }
 
     i {

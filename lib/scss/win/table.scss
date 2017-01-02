@@ -20,6 +20,10 @@
   line-height: 24px;
   padding: 0 10px;
 
+  * {
+    font-weight: normal;
+  }
+
   &:focus, &:active, &.active {
     background: white;
   }
@@ -44,7 +48,6 @@
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 20px;
-  background: $bg-muted-invisible;
 }
 
 .table-loader {

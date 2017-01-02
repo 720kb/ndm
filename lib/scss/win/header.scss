@@ -58,19 +58,18 @@
     i {
       margin: 0;
       bottom: 0;
-      font-size: 11px;
+      font-size: 12.5px;
       color: $color-primary;
     }
   }
 
   .button-global {
-    font-size: 12px;
     line-height: 16px;
     position: relative;
     right: -80px;
     bottom: -5px;
     padding: 1.5px 5px 1px 5px;
-    background: $bg-button-secondary;
+    background: $bg-muted-invisible;
     color: $color-default;
 
     &:active {
@@ -78,14 +77,12 @@
     }
 
     i {
-      font-size: 12px;
       vertical-align: text-bottom;
       color: $color-default;
     }
   }
 
   button {
-    font-size: 12px;
     line-height: 16px;
     margin-left: 5px;
     margin-top: 5px;
@@ -98,7 +95,6 @@
     }
 
     i {
-      font-size: 12px;
       padding-right: 3px;
       vertical-align: text-bottom;
       color: $color-default;

@@ -105,14 +105,6 @@
   }
 
   h6 {
-    color: $color-default;
-    font-size: 13px;
-    text-indent: -5px;
-    margin-left: -3px;
-    font-weight: 600;
-    line-height: 24px;
-    background: $bg-button-secondary;
-    margin-top: 0;
-    margin-bottom: 0;
+    display: none;
   }
 }

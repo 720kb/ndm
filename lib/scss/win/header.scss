@@ -63,32 +63,52 @@
   }
 
   .button-global {
-    line-height: 20px;
-    border-radius: $border-radius-button;
-    color: $color-primary;
+    font-size: 12px;
+    line-height: 16px;
     position: relative;
     right: -40px;
-    padding: 2px 6px;
-    bottom: -3px;
+    padding: 1.5px 5px 2px 5px;
+    background: $bg-button-secondary;
+    color: $color-default;
 
-    i {
-      font-size: 14px;
-      vertical-align: middle;
+    &:hover, &:active {
+      background: $bg-button-secondary-active;
     }
 
     &:active {
-      background: rgba(0, 0, 0, .04);
-      color: $color-secondary;
+      background: $bg-button-secondary;
+      color: $color-muted;
+    }
+
+    i {
+      font-size: 12px;
+      vertical-align: text-bottom;
+      color: $color-muted;
     }
   }
 
   button {
-    line-height: 18px;
-    border-radius: $border-radius-button;
-    color: $color-white;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 1px 5px 3px 5px;
     background: $bg-button-secondary;
-    border: 1px solid $bg-muted-invisible;
-    padding: 0 10px;
+    color: $color-default;
+
+    &:hover, &:active {
+      background: $bg-button-secondary-active;
+    }
+
+    &:active {
+      color: $color-muted;
+      background: $bg-button-secondary;
+    }
+
+    i {
+      font-size: 12px;
+      padding-right: 3px;
+      vertical-align: text-bottom;
+      color: $color-muted;
+    }
 
     input {
       &[type='file'] {
@@ -100,14 +120,6 @@
         position: relative;
         top: -20px;
       }
-    }
-
-    i {
-      color: $color-secondary;
-    }
-
-    &:active {
-      @include bg-rgba-black(.05);
     }
   }
   //disable active color on top-menu update icon

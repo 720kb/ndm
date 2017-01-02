@@ -18,7 +18,7 @@ $color-muted: rgba(0, 0, 0, .4);
 $color-muted-more: rgba(0, 0, 0, .28);
 $color-muted-less: rgba(0, 0, 0, .5);
 $color-royalblue: royalblue;
-$color-green: #00d842;
+$color-green: white;
 $color-999: #999;
 $color-777: #777;
 $color-666: #666;
@@ -59,8 +59,8 @@ $bg-progress-secondary: $bg-progress;
 $bg-progress-minor: repeating-linear-gradient(90deg, $color-error, $color-error 5px, red 5px, red 10px);
 $bg-dialog: $bg-lightgrey;
 $bg-tags: $color-positive;
-$bg-button-secondary: grey;
-$bg-button-secondary-active: lightgrey;
+$bg-button-secondary: lightgrey;
+$bg-button-secondary-active: #ccc;
 /*border-radius*/
 $border-radius-inputs: 1.5px;
 $border-radius-button: 1.5px;
@@ -69,4 +69,4 @@ $border-radius-prompt: 0;
 /*border-color*/
 $border-tags: 0;
 /*shadows*/
-$box-shadow-inputs: 0 0 1px $color-positive inset;
+$box-shadow-inputs: 0;

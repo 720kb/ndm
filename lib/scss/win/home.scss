@@ -11,7 +11,6 @@
 .home-button {
   line-height: 22px;
   width: 110px;
-  border-radius: $border-radius-button;
   background: $bg-button-secondary;
   color: $color-default;
 
@@ -20,6 +19,7 @@
   }
 
   &:active {
-    text-shadow: none;
+    color: $color-muted;
+    background: $bg-button-secondary;
   }
 }

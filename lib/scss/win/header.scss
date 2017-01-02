@@ -66,7 +66,7 @@
     font-size: 12px;
     line-height: 16px;
     position: relative;
-    right: -40px;
+    right: -80px;
     padding: 1.5px 5px 2px 5px;
     background: $bg-button-secondary;
     color: $color-default;
@@ -90,7 +90,8 @@
   button {
     font-size: 12px;
     line-height: 16px;
-    padding: 1px 5px 3px 5px;
+    margin-left: 5px;
+    padding: 1px 5px 2px 5px;
     background: $bg-button-secondary;
     color: $color-default;
 

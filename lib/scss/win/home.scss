@@ -13,8 +13,12 @@
   width: 105px;
   background: lightgrey;
   color: $color-default;
+  cursor: pointer;
 
-  &:hover, &:active {
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
     background: $bg-button-secondary-active;
   }
 

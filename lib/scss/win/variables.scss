@@ -8,8 +8,8 @@ $font-icon: 'fontello';
 colors
 */
 $color-default: #555;
-$color-positive: red;
-$color-primary: $color-positive;
+$color-positive: #c61317;
+$color-primary: #26a0da;
 $color-secondary: $color-positive;
 $color-error: grey;
 $color-border: #f7f7f7;
@@ -21,7 +21,7 @@ $color-muted-more: rgba(0, 0, 0, .28);
 $color-muted-less: rgba(0, 0, 0, .5);
 $color-lightblue: #cde8ff;
 $color-royalblue: royalblue;
-$color-green: lightgreen;
+$color-green: $color-primary;
 $color-999: #999;
 $color-888: #888;
 $color-777: #777;

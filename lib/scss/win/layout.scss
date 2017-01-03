@@ -29,6 +29,7 @@
     padding: 0 4px;
     width: calc(100% - 3px);
     color: $color-default;
+    border: 1px solid transparent;
 
     &:not(.project) {
       margin-bottom: 15px;
@@ -58,8 +59,10 @@
       background: $color-lightblue;
     }
 
-    &.active {
+    &.active,
+    &.active:hover {
       background: $color-lightblue;
+      border: 1px solid $color-primary;
     }
 
     &.project {

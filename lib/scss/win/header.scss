@@ -12,11 +12,13 @@
   border-bottom: 1px solid $color-border-dark;
 
   a {
-    color: $color-positive;
+    color: $color-primary;
     display: block;
     font-size: 13px;
     padding: 2px 0;
     text-align: center;
+    cursor: pointer;
+
     &:hover, &:focus, &:active {
       cursor: pointer;
     }
@@ -34,12 +36,14 @@
     }
 
     i {
-      &:hover, &:focus, &:active {
-        cursor: pointer;
-      }
+      cursor: pointer;
       font-size: 19px;
       line-height: 0;
       position: relative;
+
+      &:hover, &:focus, &:active {
+        cursor: pointer;
+      }
     }
   }
 

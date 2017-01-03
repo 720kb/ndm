@@ -52,10 +52,8 @@
     height: 27px;
     position: relative;
     right: -80px;
-    color: $color-default;
-    border: 1px solid $color-border-dark;
-    border-top: 0;
-    border-bottom: 0;
+    padding: 5px 10px;
+    color: $color-primary;
 
     &:hover, &:focus, &:active {
       background: $bg-muted-invisible;

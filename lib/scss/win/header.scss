@@ -5,11 +5,11 @@
 .top-menu {
   -webkit-app-region: drag;
   padding: 0 6px;
-  height: 30px;
+  height: 27px;
   width: 100%;
   background: none;
   background: $bg-white;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid $color-border-dark;
 
   a {
     color: $color-positive;
@@ -44,21 +44,23 @@
   }
 
   .button-global {
-    line-height: 30px;
-    height: 30px;
+    line-height: 27px;
+    height: 27px;
     position: relative;
     right: -80px;
     color: $color-default;
-    border: 1px solid $color-border;
+    border: 1px solid $color-border-dark;
     border-top: 0;
     border-bottom: 0;
 
     &:hover, &:focus, &:active {
+      background: $bg-muted-invisible;
       cursor: pointer;
     }
 
     &:active {
-      color: $color-muted;
+      background: $color-primary;
+      color: white;
     }
 
     i {
@@ -67,21 +69,23 @@
   }
 
   button {
-    line-height: 30px;
-    height: 30px;
+    line-height: 27px;
+    height: 27px;
     margin-left: 7px;
     padding: 0 10px 0 10px;
     color: $color-default;
-    border: 1px solid $color-border;
+    border: 1px solid $color-border-dark;
     border-top: 0;
     border-bottom: 0;
 
     &:hover, &:focus, &:active {
+      background: $bg-muted-invisible;
       cursor: pointer;
     }
 
     &:active {
-      color: $color-muted;
+      background: $color-primary;
+      color: white;
     }
 
     i {

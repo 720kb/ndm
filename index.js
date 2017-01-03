@@ -4,6 +4,7 @@
   process.env.PATH = require('shell-path').sync();
 
   const {app, Menu, BrowserWindow, shell} = require('electron')
+    , path = require('path')
     , packageJSON = require('./package.json')
     , applicationTemplate = packageJSON.appTemplate;
   // Keep a global reference of the window object, if you don't, the window will
@@ -190,7 +191,8 @@
     // Create the browser window.
     mainWindow = new BrowserWindow(applicationTemplate);
     // and load the index.html of the app.
-    mainWindow.loadURL(`file://'${__dirname}/dist/index.html`);
+    //path.join() necessary for windows
+    mainWindow.loadURL(path.join('file://', __dirname, '/dist/index.html'));
 
     mainWindow.on('ready-to-show', () => {
       mainWindow.show();

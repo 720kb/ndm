@@ -17,6 +17,10 @@
   width: 200px;
   box-shadow: -1px -1px 0 $color-border inset;
 
+  *, *:hover, *:focus {
+    cursor: pointer;
+  }
+
   a {
     display: inline-block;
     line-height: 25px;
@@ -52,12 +56,10 @@
 
     &:hover, &:focus {
       background: $color-lightblue;
-      cursor: pointer;
     }
 
     &.active {
       background: $color-lightblue;
-      cursor: pointer;
     }
 
     &.project {

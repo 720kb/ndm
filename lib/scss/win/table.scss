@@ -1,15 +1,33 @@
 .table-header {
   line-height: 24px;
-  padding: 0 10px;
+  padding: 0 20px;
   transition: opacity .3s linear;
 
+  div {
+    box-shadow: 1px 0 $color-border-dark inset;
+
+    &:first-child {
+      box-shadow: none;
+    }
+  }
+
+  .clickable {
+    cursor: pointer;
+    *:hover, *:focus, *:active {
+      cursor: pointer;
+    }
+  }
+
   i {
+    font-size: 14px;
+    color: $color-border-dark;
     float: right;
     position: relative;
 
     &.fa-sort-up {
       top: 3px;
     }
+
     &.fa-sort-down {
       bottom: 2px;
     }
@@ -24,7 +42,7 @@
     font-weight: normal;
   }
 
-  &:focus, &:active, &.active {
+  &:focus, &:hover, &:active, &.active {
     background: $color-lightblue;
   }
 
@@ -86,7 +104,8 @@
 
     a {
       color: $color-primary;
-      &:hover {
+      &:hover, &:active, &:focus {
+        cursor:pointer;
         background: $bg-muted-invisible;
       }
     }

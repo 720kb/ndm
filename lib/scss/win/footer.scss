@@ -17,11 +17,11 @@
     img {
       vertical-align: middle;
       position: relative;
-      width: 25px;
+      width: 26px;
     }
 
     &.npm-status {
-      min-width: 135px;
+      min-width: 115px;
 
       img {
         opacity: .8;
@@ -51,7 +51,7 @@
     }
   }
   a {
-    opacity: .75;
+    cursor:pointer;
     color: inherit;
     &:hover,
     &:active {

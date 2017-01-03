@@ -9,8 +9,12 @@
   background: none;
   background: $bg-white;
 
+  *, *:hover, *:focus {
+    cursor: pointer;
+  }
+
   a {
-    color: $color-888;
+    color: $color-positive;
     display: block;
     font-size: 13px;
     padding: 2px 0;
@@ -29,7 +33,7 @@
     }
 
     i {
-      font-size: 20px;
+      font-size: 17px;
       line-height: 0;
       position: relative;
     }

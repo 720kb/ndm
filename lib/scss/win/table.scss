@@ -13,15 +13,21 @@
 
   .clickable {
     cursor: pointer;
-    *:hover, *:focus, *:active {
+
+    &:hover {
+      opacity: .8;
+    }
+
+    *:hover,
+    *:focus,
+    *:active {
       cursor: pointer;
     }
   }
 
   i {
-    font-size: 14px;
-    color: $color-border-dark;
     float: right;
+    font-size: 14px;
     position: relative;
 
     &.fa-sort-up {
@@ -89,7 +95,7 @@
   line-height: 20px;
   height: 165px;
   padding: 0 2%;
-  box-shadow: 0 1px  $color-border inset;
+  box-shadow: 0 1px  $color-border-dark inset;
 
   .information {
     overflow: hidden;
@@ -106,7 +112,7 @@
       color: $color-primary;
       &:hover, &:active, &:focus {
         cursor:pointer;
-        background: $bg-muted-invisible;
+        text-decoration: underline;
       }
     }
   }

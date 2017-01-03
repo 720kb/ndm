@@ -145,19 +145,19 @@
             <div class="separator30"></div>
             <div class="line downloads center-content-tablet">
               <a class="download-link line color-white center-content mac" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".dmg" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-                <i class="fa fa-download"></i> Download
+                <i class="fa fa-download"></i>&nbsp;Download
               </a>
               <a class="download-link line color-white center-content linux hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".deb" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-                <i class="fa fa-download"></i> .deb
+                <i class="fa fa-download"></i>&nbsp;.deb
               </a>
               <a class="download-link line color-white center-content linux hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".rpm" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-                <i class="fa fa-download"></i> .rpm
+                <i class="fa fa-download"></i>&nbsp;.rpm
               </a>
               <a class="download-link line color-white center-content linux hide bigger" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".AppImage" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-                <i class="fa fa-download"></i> AppImage
+                <i class="fa fa-download"></i>&nbsp;.AppImage
               </a>
               <a class="download-link line color-white center-content win hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".exe" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-                <i class="fa fa-download"></i> Download
+                <i class="fa fa-download"></i>&nbsp;Download
               </a>
             </div>
             <div class="separator10 desktop"></div>

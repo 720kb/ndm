@@ -4,14 +4,12 @@
 
 .top-menu {
   -webkit-app-region: drag;
-  padding: 5px 6px;
+  padding: 0 6px;
+  height: 30px;
   width: 100%;
   background: none;
   background: $bg-white;
-
-  *, *:hover, *:focus {
-    cursor: pointer;
-  }
+  border-bottom: 1px solid $color-border;
 
   a {
     color: $color-positive;
@@ -19,6 +17,9 @@
     font-size: 13px;
     padding: 2px 0;
     text-align: center;
+    &:hover, &:focus, &:active {
+      cursor: pointer;
+    }
 
     &:first-child {
       margin-left: -5px;
@@ -33,39 +34,28 @@
     }
 
     i {
+      &:hover, &:focus, &:active {
+        cursor: pointer;
+      }
       font-size: 19px;
       line-height: 0;
       position: relative;
     }
   }
 
-  .badge-version {
-    display: initial;
-    font-size: 10px;
-    height: 13px;
-    line-height: 8px;
-    margin-left: -20px;
-    margin-top: -18px;
-    padding: 2px 4px;
-    position: absolute;
-    color: $color-default;
-
-    i {
-      margin: 0;
-      bottom: 0;
-      font-size: 10px;
-      color: $color-888;
-    }
-  }
-
   .button-global {
-    line-height: 16px;
+    line-height: 30px;
+    height: 30px;
     position: relative;
     right: -80px;
-    bottom: -5px;
-    padding: 1.5px 5px 1px 5px;
-    background: $bg-white;
     color: $color-default;
+    border: 1px solid $color-border;
+    border-top: 0;
+    border-bottom: 0;
+
+    &:hover, &:focus, &:active {
+      cursor: pointer;
+    }
 
     &:active {
       color: $color-muted;
@@ -77,12 +67,18 @@
   }
 
   button {
-    line-height: 16px;
-    margin-left: 5px;
-    margin-top: 5px;
-    padding: 2px 5px 1px 5px;
-    background: $bg-white;
+    line-height: 30px;
+    height: 30px;
+    margin-left: 7px;
+    padding: 0 10px 0 10px;
     color: $color-default;
+    border: 1px solid $color-border;
+    border-top: 0;
+    border-bottom: 0;
+
+    &:hover, &:focus, &:active {
+      cursor: pointer;
+    }
 
     &:active {
       color: $color-muted;
@@ -102,6 +98,25 @@
         position: relative;
         top: -20px;
       }
+    }
+  }
+
+  .badge-version {
+    display: initial;
+    font-size: 10px;
+    height: 13px;
+    line-height: 8px;
+    margin-left: -20px;
+    margin-top: -18px;
+    padding: 2px 4px;
+    position: absolute;
+    color: $color-default;
+
+    i {
+      margin: 0;
+      bottom: 0;
+      font-size: 10px;
+      color: $color-888;
     }
   }
   //disable active color on top-menu update icon

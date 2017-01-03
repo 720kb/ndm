@@ -23,7 +23,7 @@
 
   a {
     display: inline-block;
-    line-height: 25px;
+    line-height: 22px;
     height: 26px;
     margin: 0;
     padding: 0 4px;
@@ -36,11 +36,11 @@
     }
 
     i {
-      font-size: 17px;
+      font-size: 15px;
       left: -1px;
       margin-right: 3px;
       position: relative;
-      color: $color-muted;
+      color: $color-primary;
     }
 
     div {
@@ -75,18 +75,21 @@
       }
 
       button {
-        bottom: -3px;
-        color: $color-default;
         display: none;
         float: right;
         height: 25px;
-        line-height: 20px;
+        line-height: 22px;
         padding-right: 5px;
         max-width: 30px;
         min-width: 8px;
         transition: color .11s linear;
         width: 50%;
         z-index: 999;
+
+        i {
+          color: $color-primary;
+          top: -3.5px;
+        }
 
         &:hover {
           color: $color-muted-less;

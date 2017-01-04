@@ -56,12 +56,16 @@
     background: $bg-light;
     opacity: .5;
     cursor: not-allowed;
+    color: $color-333;
 
     &:active, &:hover, &.active, &:focus {
       opacity: .5;
       cursor: not-allowed;
       pointer-events: none;
-      color: $color-333;
+      * {
+        cursor: not-allowed;
+        color: $color-333;
+      }
     }
   }
 }

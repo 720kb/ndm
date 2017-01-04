@@ -59,11 +59,9 @@
       "description": "npm desktop manager",
       "packageCategory": "Utility",
       "arch": [
-        "ia32",
         "x64"
       ],
       "target": [
-        "AppImage",
         "deb",
         "rpm"
       ]

@@ -7,13 +7,13 @@
       a.action-link-disabled.pull-left(title="Update npm", ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()", ng-class="{'action-link-disabled': shell.globalDisabled, 'action-link-enabled': !shell.globalDisabled}")
         i.fa.fa-history(ng-class="{'color-primary': topMenu.activeLink === 'update'}")
         div
+        span(ng-show="!shell.globalDisabled", class="badge-version color-black")
+          i.fa.fa-caret-up(ng-show="topMenu.npmLatestVersionBadge && (topMenu.npmLatestVersionBadge !== topMenu.npmCurrentVersionBadge)")
+          = " "
+          b(title="New version available", ng-bind="topMenu.npmLatestVersionBadge", ng-show="topMenu.npmLatestVersionBadge && (topMenu.npmLatestVersionBadge !== topMenu.npmCurrentVersionBadge)")
+          b(title="Current Npm version", ng-bind="topMenu.npmCurrentVersionBadge" ng-show="topMenu.npmCurrentVersionBadge && (!topMenu.npmLatestVersionBadge || (topMenu.npmLatestVersionBadge === topMenu.npmCurrentVersionBadge))")
         span
           | Update npm
-          span(ng-show="!shell.globalDisabled", class="badge-version color-black")
-            i.fa.fa-caret-up(ng-show="topMenu.npmLatestVersionBadge && (topMenu.npmLatestVersionBadge !== topMenu.npmCurrentVersionBadge)")
-            = " "
-            b(title="New version available", ng-bind="topMenu.npmLatestVersionBadge", ng-show="topMenu.npmLatestVersionBadge && (topMenu.npmLatestVersionBadge !== topMenu.npmCurrentVersionBadge)")
-            b(title="Current Npm version", ng-bind="topMenu.npmCurrentVersionBadge" ng-show="topMenu.npmCurrentVersionBadge && (!topMenu.npmLatestVersionBadge || (topMenu.npmLatestVersionBadge === topMenu.npmCurrentVersionBadge))")
       = " "
       = " "
       span.button-global(title="Enable ndm in global folder",  ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")

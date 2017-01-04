@@ -7,6 +7,7 @@
   padding: 0 6px;
   height: 27px;
   width: 100%;
+  overflow-y: hidden;
   background: none;
   background: $bg-white;
   border-bottom: 1px solid $color-border-dark;
@@ -76,7 +77,7 @@
   button {
     line-height: 27px;
     height: 27px;
-    margin-left: 7px;
+    margin-left: 8.5px;
     padding: 0 10px 0 10px;
     color: $color-default;
     border: 1px solid $color-border-dark;

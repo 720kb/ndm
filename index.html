@@ -153,9 +153,6 @@
               <a class="download-link line color-white center-content linux hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".rpm" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
                 <i class="fa fa-download"></i>&nbsp;.rpm
               </a>
-              <a class="download-link line color-white center-content linux hide bigger" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".AppImage" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-                <i class="fa fa-download"></i>&nbsp;.AppImage
-              </a>
               <a class="download-link line color-white center-content win hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".exe" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
                 <i class="fa fa-download"></i>&nbsp;Download
               </a>

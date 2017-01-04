@@ -161,12 +161,9 @@ small , small *, *.font-small{
 }
 .download-link.linux {
   background: #ff4444;
-  max-width: 120px;
   margin-right: 1%;
-  width: 80px;
-}
-.download-link.bigger.linux {
-  width: 120px;
+  max-width: 132px;
+  width: 50%;
 }
 .infos {
   float: none;

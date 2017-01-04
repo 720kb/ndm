@@ -25,10 +25,6 @@
       display: none;
     }
 
-    span span {
-      display: inherit;
-    }
-
     &:active, &.active {
       color: $color-ccc;
 

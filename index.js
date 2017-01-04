@@ -164,19 +164,19 @@
         aboutMenuItem.submenu.unshift({
           'role': 'about'
         });
+        aboutMenuItem.submenu.push({
+          'role': 'hide'
+        });
+        aboutMenuItem.submenu.push({
+          'role': 'hideothers'
+        });
+        aboutMenuItem.submenu.push({
+          'role': 'unhide'
+        });
+        aboutMenuItem.submenu.push({
+          'type': 'separator'
+        });
       }
-      aboutMenuItem.submenu.push({
-        'role': 'hide'
-      });
-      aboutMenuItem.submenu.push({
-        'role': 'hideothers'
-      });
-      aboutMenuItem.submenu.push({
-        'role': 'unhide'
-      });
-      aboutMenuItem.submenu.push({
-        'type': 'separator'
-      });
     } else {
       aboutMenuItem.label = 'About';
     }

@@ -72,8 +72,8 @@
     color: $color-white;
     border: 1px solid rgba(0,0,0, .25);
     position: relative;
-    right: -40px;
-    padding: 4px 6px;
+    right: -33px;
+    padding: 3px 6px;
     bottom: -3px;
 
     i {
@@ -96,6 +96,7 @@
     border-radius: $border-radius-button;
     color: $color-white;
     border: 1px solid rgba(0,0,0, .25);
+    margin-left: 5px;
 
     input {
       &[type='file'] {

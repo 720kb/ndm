@@ -6,9 +6,9 @@
   padding: 4px 8px;
   position: absolute;
   right: 0;
-  top: 43px;
+  top: 27px;
   margin: 0 auto;
-  width: 520px;
+  width: 700px;
   z-index: 9999;
 
   i {
@@ -27,7 +27,10 @@
     overflow: hidden;
     float:left;
     margin-right:2%;
-    box-shadow: $box-shadow-inputs;
+
+    &:focus {
+      box-shadow: $box-shadow-inputs;
+    }
 
     //placeholder for contenteditable input
     &:empty:before {
@@ -62,11 +65,14 @@
     &[type='text'] {
       border: none;
       line-height: initial;
-      border-radius: $border-radius-inputs;
       font-size: 13px;
       padding: 3.5px 4px 4px 4px;
       width: 18%;
       margin-right: 2%;
+
+      &:focus {
+        box-shadow: $box-shadow-inputs;
+      }
 
       &:first-child {
         width: 48%;
@@ -83,8 +89,8 @@
   button {
     font-weight: 500;
     font-size: 12px;
-    height: 22px;
-    line-height: 16px;
+    height: 23px;
+    line-height: 14px;
     margin-top: -.3%;
     vertical-align: middle;
     min-width: 13%;
@@ -119,11 +125,13 @@
     float: none;
     height: calc(100% - 30px);
     overflow: auto;
-    box-shadow: 0 0 1px red inset;
     background: $bg-white;
     border-radius: .5px;
     font-size: 13.5px;
 
+    &:focus {
+      box-shadow: $box-shadow-inputs;
+    }
     .logs {
       padding: 6px;
     }

@@ -19,13 +19,9 @@
   // This method will be called when Electron has finished
   // initialization and is ready to create browser windows.
   app.on('ready', () => {
-    const menuTemplate = [
-      {
-      'label': packageJSON.name,
+
+    const aboutMenuItem = {
       'submenu': [
-        {
-          'role': 'about'
-        },
         {
           'label': `Version ${packageJSON.version}`,
           'enabled': false
@@ -48,39 +44,10 @@
         },
         {
           'type': 'separator'
-        },
-        {
-          'type': 'separator'
-        },
-        {
-          'role': 'hide'
-        },
-        {
-          'role': 'hideothers'
-        },
-        {
-          'role': 'unhide'
-        },
-        {
-          'type': 'separator'
-        },
-        {
-          'type': 'separator'
-        },
-        {
-          'label': 'Restart',
-          'accelerator': 'CmdOrCtrl+R',
-          click() {
-            app.relaunch();
-            app.quit();
-          }
-        },
-        {
-          'role': 'quit'
         }
       ]
-    },
-    {
+    }
+    , editMenuItem = {
       'label': 'Edit',
       'submenu': [
         {
@@ -111,13 +78,13 @@
           'role': 'selectall'
         }
       ]
-    },
-    {
+    }
+    , viewMenuItem = {
       'label': 'View',
       'submenu': [
         {
-        'label': 'Developer',
-        'submenu': [{
+          'label': 'Developer',
+          'submenu': [{
             'label': 'Open DevTools',
             click(item, focusedWindow) {
               if (focusedWindow) {
@@ -133,8 +100,8 @@
           'role': 'togglefullscreen'
         }
       ]
-    },
-    {
+    }
+    , windowMenuItem = {
       'role': 'window',
       'submenu': [
         {
@@ -144,8 +111,8 @@
           'role': 'close'
         }
       ]
-    },
-    {
+    }
+    , helpMenuItem = {
       'role': 'help',
       'submenu': [
         {
@@ -185,7 +152,52 @@
           'role': 'close'
         }
       ]
-    }];
+    };
+
+    //now push OS menu items for linux and mac
+    if (process.platform &&
+      process.platform !== 'win32') {
+      //if mac
+      aboutMenuItem.label = packageJSON.name;
+
+      aboutMenuItem.submenu.unshift({
+        'role': 'about'
+      });
+      aboutMenuItem.submenu.push({
+        'role': 'hide'
+      });
+      aboutMenuItem.submenu.push({
+        'role': 'hideothers'
+      });
+      aboutMenuItem.submenu.push({
+        'role': 'unhide'
+      });
+      aboutMenuItem.submenu.push({
+        'type': 'separator'
+      });
+    } else {
+      aboutMenuItem.label = 'About';
+    }
+
+    aboutMenuItem.submenu.push({
+      'label': 'Restart',
+      'accelerator': 'CmdOrCtrl+R',
+      click() {
+        app.relaunch();
+        app.quit();
+      }
+    });
+    aboutMenuItem.submenu.push({
+      'role': 'quit'
+    });
+
+    let menuTemplate = [
+      aboutMenuItem,
+      editMenuItem,
+      viewMenuItem,
+      windowMenuItem,
+      helpMenuItem
+    ];
 
     Menu.setApplicationMenu(Menu.buildFromTemplate(menuTemplate));
     // Create the browser window.

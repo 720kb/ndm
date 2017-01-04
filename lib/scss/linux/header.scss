@@ -21,7 +21,7 @@
       margin-left: -5px;
     }
 
-    span {
+    span, div {
 
       &:not(.badge-version) {
         display: none;

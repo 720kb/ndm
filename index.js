@@ -157,12 +157,14 @@
     //now push OS menu items for linux and mac
     if (process.platform &&
       process.platform !== 'win32') {
-      //if mac
+      //if mac or linux
       aboutMenuItem.label = packageJSON.name;
-
-      aboutMenuItem.submenu.unshift({
-        'role': 'about'
-      });
+      //if mac only
+      if (process.platform === 'darwin') {
+        aboutMenuItem.submenu.unshift({
+          'role': 'about'
+        });
+      }
       aboutMenuItem.submenu.push({
         'role': 'hide'
       });

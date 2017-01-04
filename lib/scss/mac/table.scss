@@ -41,6 +41,10 @@
   }
 
   &:focus, &:active, &.active {
+    *:not(i) {
+      color: white;
+    }
+
     background: $bg-table-row-highlight;
   }
 
@@ -51,10 +55,13 @@
   &.disabled {
     background: $bg-light;
     opacity: .5;
+    cursor: not-allowed;
 
-    &:active, &:focus {
+    &:active, &:hover, &.active, &:focus {
+      opacity: .5;
       cursor: not-allowed;
       pointer-events: none;
+      color: $color-333;
     }
   }
 }

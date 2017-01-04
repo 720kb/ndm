@@ -29,7 +29,23 @@
         | Env
         i(class="fa", ng-class="{'fa-sort': !content.tableOrderBy.includes('-kind') || !content.tableOrderBy.includes('kind'), 'fa-sort-down': content.tableOrderBy.includes('-kind'), 'fa-sort-up': content.tableOrderBy.includes('kind')}")
     .table-body
-      .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: content.tableOrderBy', title="", ng-attr-title="{{content.isGlobalProject && aPackage.name === 'npm' ? 'Do not perform npm global actions from here': ''}}", selection-model, selection-model-mode="'multiple'", selection-model-selected-items="content.selectedPackages", ng-click="shell.selectPackages(content.selectedPackages)", ng-class="{'disabled': content.isGlobalProject && aPackage.name === 'npm', 'active': content.selectedPackages.includes(aPackage), 'table-row-loading': shell.currentSelectedPackages.includes(aPackage) && content.showLoadingSelectedRow}")
+      <!-- show disabled npm global row if in globals-->
+      .row.table-row.disabled(ng-repeat='aPackage in content.packageInformations', ng-if="content.isGlobalProject && aPackage.name === 'npm'", title="Do not perform npm global actions from here")
+        .col-xs-4 {{ aPackage.name }}
+        .col-xs-2
+          span(ng-class="{'color-positive font-light': !aPackage.wanted && !aPackage.latest}")
+            | {{ aPackage.current }}
+        .col-xs-2
+          i(class="fa fa-check", ng-if="!aPackage.wanted && !aPackage.latest")
+          | {{ aPackage.wanted }}
+        .col-xs-2
+          b(ng-if="aPackage.latest")
+            | {{ aPackage.latest }}
+          i(class="fa fa-check color-positive", ng-if="!aPackage.wanted && !aPackage.latest")
+        .col-xs-2
+          | {{ aPackage.kind }}
+      <!-- show all packages except for npm global-->
+      .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: content.tableOrderBy', ng-hide="content.isGlobalProject && aPackage.name === 'npm'", ng-attr-title="{{content.isGlobalProject && aPackage.name === 'npm' ? 'Do not perform npm global actions from here': ''}}", selection-model, selection-model-mode="'multiple'", selection-model-selected-items="content.selectedPackages", ng-click="shell.selectPackages(content.selectedPackages)", ng-class="{'active': content.selectedPackages.includes(aPackage), 'table-row-loading': shell.currentSelectedPackages.includes(aPackage) && content.showLoadingSelectedRow}")
         .col-xs-4 {{ aPackage.name }}
         .col-xs-2
           span(ng-class="{'color-positive font-light': !aPackage.wanted && !aPackage.latest}")

@@ -46,7 +46,7 @@ $bg-muted-invisible: rgba(0, 0, 0, .065);
 $bg-table-row: #f2fdff;
 $bg-positive: royalblue;
 $bg-error: #e81616;
-$bg-table-row-highlight: #fcfcc9;
+$bg-table-row-highlight: $color-positive;
 $bg-gradient-footer: linear-gradient(to bottom, $bg-lightgrey 0%, $bg-smoke 100%);
 $bg-gradient-grey: linear-gradient(to bottom, $bg-lightgrey 0%, $bg-smoke 100%);
 $bg-progress: repeating-linear-gradient(135deg, $color-stripes-one, $color-stripes-one 5px, $color-stripes-two 5px, $color-stripes-two 10px);

@@ -51,24 +51,19 @@
 
   .button-global {
     line-height: 27px;
-    height: 27px;
     position: relative;
-    right: -80px;
-    padding: 0 10px;
-    color: $color-primary;
+    right: -60px;
+    padding: 5px 10px;
+    background: $color-primary;
+    color: white;
+    text-indent: -5px;
 
     &:hover, &:focus, &:active {
-      background: $bg-muted-invisible;
       cursor: pointer;
     }
 
-    &:active {
-      background: $color-primary;
-      color: white;
-    }
-
     i {
-      display: none;
+      color: white;
     }
   }
 
@@ -114,7 +109,6 @@
     font-size: 10px;
     height: 13px;
     line-height: 8px;
-    margin-top: 5px;
     padding: 2px 4px;
     position: absolute;
     color: $color-default;
@@ -123,7 +117,7 @@
       margin: 0;
       bottom: 0;
       font-size: 10px;
-      color: $color-888;
+      color: $color-primary;
     }
   }
   //disable active color on top-menu update icon

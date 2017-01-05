@@ -5,11 +5,10 @@
 .top-menu {
   -webkit-app-region: drag;
   padding: 0 6px;
-  height: 27px;
   width: 100%;
   background: none;
   background: $bg-white;
-  border-bottom: 1px solid $color-border-dark;
+  box-shadow: 0 -1px $color-border-dark inset;
 
   a {
     color: $color-primary;

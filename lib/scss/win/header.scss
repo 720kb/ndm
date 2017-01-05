@@ -7,7 +7,6 @@
   padding: 0 6px;
   height: 27px;
   width: 100%;
-  overflow-y: hidden;
   background: none;
   background: $bg-white;
   border-bottom: 1px solid $color-border-dark;
@@ -56,7 +55,7 @@
     height: 27px;
     position: relative;
     right: -80px;
-    padding: 5px 10px;
+    padding: 0 10px;
     color: $color-primary;
 
     &:hover, &:focus, &:active {
@@ -78,7 +77,7 @@
     line-height: 27px;
     height: 27px;
     margin-left: 8.5px;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
     color: $color-default;
     border: 1px solid $color-border-dark;
     border-top: 0;

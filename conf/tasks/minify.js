@@ -7,12 +7,12 @@
     , paths = require('../paths.json')
     , minifyJS = require('gulp-uglify');
 
-  gulp.task('distify', ['dist'], done => {
+  gulp.task('distify', done => {
 
-    /*runSequence([
-      'dist-minify-js'
-    ]);
-    return;*/
+    runSequence(
+      'dist',
+      'dist-minify-js',
+      done);
   });
 
   gulp.task('dist-minify-js', () => {

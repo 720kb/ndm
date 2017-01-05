@@ -9,9 +9,7 @@
   gulp.task('annotate', ['es6-build'], () => {
 
     return gulp.src(`${paths.tmp}**/*.js`)
-      .pipe(ngAnnotate({
-        'gulpWarnings': false
-      }))
+      .pipe(ngAnnotate())
       .pipe(gulp.dest(`${paths.tmp}`));
   });
 }());

@@ -10,7 +10,7 @@
 
   gulp.task('es6-build', ['front-end'], () => {
 
-    rollup({
+    return rollup({
       'entry': `${paths.lib}js/index.js`,
       'plugins': [
         rollupJSON(),
@@ -22,7 +22,7 @@
       ]
     }).then(bundle => {
 
-      bundle.write({
+      return bundle.write({
         'format': 'iife',
         'moduleId': 'npm-ui-ng',
         'moduleName': 'npm-ui-ng',

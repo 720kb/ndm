@@ -39,9 +39,14 @@
 
     i {
       cursor: pointer;
-      font-size: 18.5px;
+      font-size: 19px;
       line-height: 0;
       position: relative;
+      color: $color-333;
+
+      &.color-primary {
+       color: $color-333 !important;
+      }
 
       &:hover, &:focus, &:active {
         cursor: pointer;

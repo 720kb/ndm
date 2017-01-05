@@ -40,12 +40,12 @@
       left: -1px;
       margin-right: 5px;
       position: relative;
-      color: rgba(0,0,0, .65);
+      color: rgba(0, 0, 0, .65);
     }
 
     div {
       display: inline-flex;
-      max-width: 150px;
+      max-width: 146px;
 
       b {
         overflow: hidden;
@@ -69,43 +69,12 @@
       i {
         color: white;
       }
-
-      button {
-        display: none;
-      }
     }
 
     &.project {
 
       button {
-        bottom: -3px;
-        color: $color-default;
         display: none;
-        float: right;
-        height: 30px;
-        line-height: 20px;
-        padding-right: 5px;
-        max-width: 30px;
-        min-width: 8px;
-        transition: color .11s linear;
-        width: 50%;
-        z-index: 999;
-        text-indent: -3px;
-
-        i {
-          top: -1.5px;
-        }
-
-        &:hover {
-          color: $color-muted-less;
-        }
-      }
-
-      &:hover {
-
-        & button {
-          display: inherit;
-        }
       }
     }
   }

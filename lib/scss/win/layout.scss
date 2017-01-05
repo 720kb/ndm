@@ -41,10 +41,7 @@
       left: -1px;
       margin-right: 3px;
       position: relative;
-      color: $color-default;
-      &.color-primary {
-        color: $color-default !important;
-      }
+      color: $color-primary;
     }
 
     div {

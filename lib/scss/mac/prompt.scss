@@ -153,12 +153,8 @@
     margin-top: 1px;
   }
 
-  &:nth-child(odd) {
-    background: $bg-table-row;
-  }
-
   &.active {
-    background-color: $bg-table-row-highlight;
+    background-color: $bg-muted-invisible;
   }
 
   i {

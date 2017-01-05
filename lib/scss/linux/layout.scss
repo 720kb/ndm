@@ -12,7 +12,7 @@
 
 .left-column {
   float: left;
-  height: 100vh;
+  height: calc(100vh - 72px);
   overflow-y: auto;
   padding: 0 15px;
   width: 200px;

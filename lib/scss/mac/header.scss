@@ -49,10 +49,10 @@
   }
 
   .badge-version {
-    font-size: 10px;
+    font-size: 9.5px;
     height: 13px;
     line-height: 8px;
-    margin-left: 55px;
+    margin-left: 40px;
     margin-top: -18px;
     position: absolute;
     text-shadow: 0 1px rgba(255, 255, 255, .3);
@@ -61,7 +61,7 @@
     i {
       margin: 0;
       bottom: 0;
-      right: -2px;
+      right: -4px;
       font-size: 11px;
       color: $color-primary;
     }
@@ -75,7 +75,7 @@
     position: relative;
     bottom: -14px;
     right: -30px;
-    padding: 2px 4px;
+    padding: 2px 3px 2px 1px;
     text-shadow: 0 1px white;
 
     i {

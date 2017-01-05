@@ -86,9 +86,9 @@
   },
   "appTemplate": {
     "title": "ndm",
-    "width": 650,
+    "width": 640,
     "height": 440,
-    "minWidth": 650,
+    "minWidth": 640,
     "show": false,
     "minHeight": 440,
     "center": true,

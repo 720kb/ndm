@@ -41,8 +41,10 @@
   }
 
   &:focus, &:active, &.active {
-    *:not(i) {
-      color: white;
+    &:not(.table-row-loading) {
+      *:not(i) {
+        color: white;
+      }
     }
 
     background: $bg-table-row-highlight;

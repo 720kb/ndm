@@ -27,10 +27,10 @@
     "linux": "gulp dist --platform=linux && electron .",
     "win": "gulp dist --platform=win && electron .",
     "build": "npm run build-mac && npm run build-linux",
-    "build-mac": "gulp dist --platform=mac && build --mac",
-    "build-win": "gulp dist --platform=win && build --win",
-    "build-linux": "gulp dist --platform=linux && build --linux && echo '1) If you get a gm ERROR  you must install  graphicsmagick lib on your machine. 2) If you get an ERROR/WARNING when building .deb probably you have to install gnu-tar. 3) If you get an ERROR/WARNING when building .rpm you have to install rpm lib. 4) If you get an icns2png ERROR you have to install icnsutils lib.'",
-    "build-linux-deb": "gulp dist --platform=linux && build --linux deb && echo '1) If you get a gm ERROR  you must install  graphicsmagick lib on your machine. 2) If you get an ERROR/WARNING when building .deb probably you have to install gnu-tar. 3) If you get an ERROR/WARNING when building .rpm you have to install rpm lib. 4) If you get an icns2png ERROR you have to install icnsutils lib.'",
+    "build-mac": "gulp dist --platform=mac && build --mac && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-win": "gulp dist --platform=win && build --win && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-linux": "gulp dist --platform=linux && build --linux && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-linux-deb": "gulp dist --platform=linux && build --linux deb && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
     "postversion": "git push && git push --tags"
   },
   "bugs": {

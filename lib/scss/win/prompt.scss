@@ -103,15 +103,23 @@
     color: $color-white;
 
     &:hover {
-      background:
       background: $color-primary;
     }
 
-    &:active{
+    &:active {
       color: rgba(255, 255, 255, .7);
     }
+
     &.disabled {
       opacity: .5;
+      background: $color-primary;
+      color: $color-white;
+
+      &:active, &:focus, &:hover {
+        opacity: .5;
+        background: $color-primary;
+        color: $color-white;
+      }
     }
 
     i {

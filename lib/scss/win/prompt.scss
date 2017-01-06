@@ -21,7 +21,7 @@
   .tags-input {
     line-height: initial;
     border-radius: $border-radius-inputs;
-    padding: 3.5px 4px 4px 4px;
+    padding: 2.5px 4px 4px 4px;
     width: calc(70.5% - 8px);
     background: white;
     white-space: nowrap;
@@ -66,7 +66,7 @@
     &[type='text'] {
       border: none;
       line-height: initial;
-      padding: 3.5px 4px 4px 4px;
+      padding: 2.5px 4px 4px 4px;
       width: 18%;
       margin-right: 2%;
 
@@ -90,7 +90,7 @@
     font-weight: 500;
     height: 22px;
     line-height: 14px;
-    margin-top: -.3%;
+    margin-top: -.5%;
     vertical-align: middle;
     min-width: 13%;
     width: auto;
@@ -115,6 +115,11 @@
       opacity: .9;
     }
 
+    img {
+      width: 15px;
+      -webkit-filter: invert(1);
+    }
+    
     i {
       position: relative;
       top: -1px;

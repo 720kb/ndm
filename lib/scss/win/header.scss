@@ -20,7 +20,11 @@
     &:hover, &:focus, &:active {
       cursor: pointer;
     }
-
+    &.active {
+      i {
+        color: $color-primary;
+      }
+    }
     &:first-child {
       margin-left: -5px;
     }
@@ -45,10 +49,6 @@
 
       &:hover, &:focus, &:active {
         cursor: pointer;
-      }
-
-      &.active {
-        color: $color-primary;
       }
     }
   }

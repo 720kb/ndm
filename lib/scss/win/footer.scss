@@ -2,12 +2,13 @@
   -webkit-app-region: drag;
   bottom: 0;
   height: 32px;
-  line-height: 32px;
+  line-height: 34px;
   padding: 0 15px;
   position: fixed;
   width: 100%;
   z-index: 9;
   font-size: 11px;
+  overflow: hidden;
 
   span {
     float: right;
@@ -42,10 +43,9 @@
 
       i {
         position: relative;
-        bottom: -.5px;
 
         &.active {
-          color: $color-green;
+          color: $color-primary;
         }
       }
     }

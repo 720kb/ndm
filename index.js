@@ -116,7 +116,7 @@
       'role': 'help',
       'submenu': [
         {
-          'label': 'Documentation',
+          'label': 'More About',
           click() {
             shell.openExternal(`${packageJSON.github}`);
           }

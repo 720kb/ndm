@@ -42,8 +42,10 @@
 
   &:focus, &:active, &.active {
     &:not(.table-row-loading) {
-      *:not(i) {
-        color: white;
+      &:not(.disabled) {
+        *:not(i) {
+          color: white;
+        }
       }
     }
 
@@ -58,7 +60,10 @@
     background: $bg-light;
     opacity: .5;
     cursor: not-allowed;
-    color: $color-333;
+
+    * {
+      color: $color-333;
+    }
 
     &:active, &:hover, &.active, &:focus {
       opacity: .5;

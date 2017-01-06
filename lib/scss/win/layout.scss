@@ -46,7 +46,7 @@
 
     div {
       display: inline-flex;
-      max-width: 130px;
+      max-width: 140px;
 
       b {
         overflow: hidden;
@@ -88,8 +88,7 @@
         z-index: 999;
 
         i {
-          color: $color-primary;
-          top: -3px;
+          display: none;
         }
 
         &:hover {

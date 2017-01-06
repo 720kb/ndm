@@ -15,6 +15,7 @@ It is obviously very powerful.
 - Notifications (specially when your long long npm install finishes)
 - Check npm packages informations with two clicks (such as repository, author, license and so on...)
 - Run npm commands and scripts in two clicks
+- Guidance: enabling and disabling parts/sections of the GUI in order to be sure you are running commands at the right time and not concurrently or when it's not the time or isn't necessary, literally.
 
 Also, sometimes we are just lazy and a GUI makes it more handy.
 

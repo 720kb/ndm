@@ -119,7 +119,7 @@
       width: 15px;
       -webkit-filter: invert(1);
     }
-    
+
     i {
       position: relative;
       top: -1px;
@@ -204,7 +204,7 @@
   padding: 1.5px 4px;
 
   img {
-    width: 18px;
+    width: 16px;
   }
   .prompt-resize-holder {
     width: 130%;
@@ -222,8 +222,9 @@
   i {
     float: left;
     position: relative;
-    left: -13px;
-    color: $color-777;
+    left: -10px;
+    color: $color-primary;
+    font-size: 12px;
   }
 
   button {

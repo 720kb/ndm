@@ -101,27 +101,17 @@
     border-radius: $border-radius-button;
     background: $color-primary;
     color: $color-white;
+    border: 0;
+    box-shadow: none;
 
-    &:hover {
-      background: $color-primary;
-    }
-
-    &:active {
-      color: rgba(255, 255, 255, .7);
-    }
-
-    &.disabled {
-      opacity: .5;
+    &:active, &:focus, &:hover {
       background: $color-primary;
       color: $color-white;
-
-      &:active, &:focus, &:hover {
-        opacity: .5;
-        background: $color-primary;
-        color: $color-white;
-      }
     }
-
+    img {
+      font-size: 15px;
+      -webkit-filter: invert();
+    }
     i {
       position: relative;
       top: -1px;

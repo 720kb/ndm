@@ -16,6 +16,7 @@
   i {
     margin-left: 8px;
     font-size: 15px;
+    color: $color-positive;
   }
 
   .tags-input {
@@ -36,7 +37,7 @@
 
     //placeholder for contenteditable input
     &:empty:before {
-      color: $color-muted;
+      color: $color-999;
       content: attr(placeholder);
     }
     br {

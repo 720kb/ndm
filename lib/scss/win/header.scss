@@ -43,12 +43,12 @@
       position: relative;
       color: $color-666;
 
-      &.color-primary {
-       color: $color-666 !important;
-      }
-
       &:hover, &:focus, &:active {
         cursor: pointer;
+      }
+
+      &.active {
+        color: $color-primary;
       }
     }
   }
@@ -57,17 +57,22 @@
     line-height: 27px;
     position: relative;
     right: -60px;
-    padding: 5px 10px;
-    background: $color-primary;
-    color: white;
+    padding: 5.5px 10px;
+    color: $color-primary;
     text-indent: -5px;
+
+    i {
+      color: $color-primary;
+    }
 
     &:hover, &:focus, &:active {
       cursor: pointer;
-    }
-
-    i {
       color: white;
+      background: $color-primary;
+
+      i {
+        color: white;
+      }
     }
   }
 

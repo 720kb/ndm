@@ -50,7 +50,10 @@
   }
 
   &:focus, &:hover, &:active, &.active {
+
+    &:not(.disabled) {
     background: $color-lightblue;
+    }
   }
 
   i {

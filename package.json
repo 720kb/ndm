@@ -63,7 +63,8 @@
       ],
       "target": [
         "deb",
-        "rpm"
+        "rpm",
+        "zip"
       ]
     },
     "win": {

@@ -99,16 +99,18 @@
     width: auto;
     margin-left: 6px;
     border-radius: $border-radius-button;
-    background: $bg-button-secondary;
-    color: $color-default;
-    border: .5px solid rgba(0, 0, 0, .2);
+    background: $color-primary;
+    color: $color-white;
 
-    &:hover, &:active {
-      background: $bg-button-secondary-active;
+    &:hover {
+      background:
+      background: $color-primary;
     }
 
+    &:active{
+      color: rgba(255, 255, 255, .7);
+    }
     &.disabled {
-      box-shadow: none;
       opacity: .5;
     }
 

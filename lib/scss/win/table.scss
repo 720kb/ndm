@@ -80,8 +80,12 @@
   min-height: 100vh;
   padding-top: 30vh;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   background: $bg-primary;
+
+  img {
+    display: none;
+  }
 }
 
 .table-row-loading,

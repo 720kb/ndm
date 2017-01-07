@@ -99,6 +99,10 @@
 .table-row-loading.active:focus {
   background: $bg-progress-secondary;
   animation: loadingStripes  6s linear infinite;
+  box-shadow: 0 -1px $color-ccc inset;
+   * {
+     color: white;
+   }
 }
 
 .table-infos {

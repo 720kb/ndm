@@ -123,6 +123,7 @@
 
   &.dialog-window {
     height: 250px;
+    animation: promptWindowSliding .15s ease-in;
   }
 
   .window {

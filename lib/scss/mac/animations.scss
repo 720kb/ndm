@@ -16,3 +16,12 @@
     transform: translateY(0);
   }
 }
+@keyframes promptWindowSliding {
+  0% {
+    height: 200px;
+
+  }
+  100% {
+    height: 250px;
+  }
+}

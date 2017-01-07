@@ -1,35 +1,31 @@
 /*global require*/
-(function buildTask() {
-  'use strict';
+const gulp = require('gulp')
+  , runSequence = require('run-sequence')
+  , paths = require('../paths.json');
 
-  const gulp = require('gulp')
-    , runSequence = require('run-sequence')
-    , paths = require('../paths.json');
+gulp.task('dist', ['annotate'], done => {
 
-  gulp.task('dist', ['annotate'], done => {
+  runSequence([
+    'copy-transpiled-js-files',
+    'copy-img-files',
+    'copy-icon-files'
+  ], done);
+});
 
-    runSequence([
-      'copy-transpiled-js-files',
-      'copy-img-files',
-      'copy-icon-files'
-    ], done);
-  });
+gulp.task('copy-transpiled-js-files', () => {
 
-  gulp.task('copy-transpiled-js-files', () => {
+  return gulp.src(`${paths.tmp}**/*`)
+    .pipe(gulp.dest(`${paths.dist}`));
+});
 
-    return gulp.src(`${paths.tmp}**/*`)
-      .pipe(gulp.dest(`${paths.dist}`));
-  });
+gulp.task('copy-img-files', () => {
 
-  gulp.task('copy-img-files', () => {
+  return gulp.src(`${paths.lib}img/**/*`)
+    .pipe(gulp.dest(`${paths.dist}img`));
+});
 
-    return gulp.src(`${paths.lib}img/**/*`)
-      .pipe(gulp.dest(`${paths.dist}img`));
-  });
+gulp.task('copy-icon-files', () => {
 
-  gulp.task('copy-icon-files', () => {
-
-    return gulp.src(`${paths.lib}icons/**/*`)
-      .pipe(gulp.dest(`${paths.dist}icons`));
-  });
-}());
+  return gulp.src(`${paths.lib}icons/**/*`)
+    .pipe(gulp.dest(`${paths.dist}icons`));
+});

@@ -1,16 +1,12 @@
 /*global require*/
-(function buildTask() {
-  'use strict';
+const gulp = require('gulp')
+  , del = require('del')
+  , paths = require('../paths.json');
 
-  const gulp = require('gulp')
-    , del = require('del')
-    , paths = require('../paths.json');
+gulp.task('clean', () => {
 
-  gulp.task('clean', () => {
-
-    return del([
-      paths.tmp,
-      paths.dist
-    ]);
-  });
-}());
+  return del([
+    paths.tmp,
+    paths.dist
+  ]);
+});

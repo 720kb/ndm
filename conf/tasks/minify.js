@@ -1,24 +1,20 @@
 /*global require*/
-(function buildTask() {
-  'use strict';
+const gulp = require('gulp')
+  , runSequence = require('run-sequence')
+  , paths = require('../paths.json')
+  , minifyJS = require('gulp-uglify');
 
-  const gulp = require('gulp')
-    , runSequence = require('run-sequence')
-    , paths = require('../paths.json')
-    , minifyJS = require('gulp-uglify');
+gulp.task('distify', done => {
 
-  gulp.task('distify', done => {
+  runSequence(
+    'dist',
+    'dist-minify-js',
+    done);
+});
 
-    runSequence(
-      'dist',
-      'dist-minify-js',
-      done);
-  });
+gulp.task('dist-minify-js', () => {
 
-  gulp.task('dist-minify-js', () => {
-
-    return gulp.src(`${paths.dist}js/*.js`)
-      .pipe(minifyJS())
-      .pipe(gulp.dest(`${paths.dist}js/`));
-  });
-}());
+  return gulp.src(`${paths.dist}js/*.js`)
+    .pipe(minifyJS())
+    .pipe(gulp.dest(`${paths.dist}js/`));
+});

@@ -1,48 +1,41 @@
-/*global require*/
-(function gulpTask() {
-  'use strict';
+/*global require,console*/
+const gulp = require('gulp')
+  , gulpPug = require('gulp-pug')
+  , plumber = require('gulp-plumber')
+  , runSequence = require('run-sequence')
+  , sourcemaps = require('gulp-sourcemaps')
+  , gulpSass = require('gulp-sass')
+  , paths = require('../paths.json')
+  , argv = require('yargs').argv
+  , platform = argv.platform || 'mac';
 
-  const gulp = require('gulp')
-    , gulpPug = require('gulp-pug')
-    , plumber = require('gulp-plumber')
-    , runSequence = require('run-sequence')
-    , sourcemaps = require('gulp-sourcemaps')
-    , gulpSass = require('gulp-sass')
-    , paths = require('../paths.json')
-    , argv = require('yargs').argv
-    , platform = argv.platform;
+/*eslint-disable no-console */
+console.info(`Setting app for ${platform}`);
+/*eslint-enable*/
 
-  if (!platform) {
-    platform = 'mac';
-    console.warn('No platform specified, setting app for Mac by default');
-  } else {
-    console.info(`Setting app for ${platform}`);
-  }
+gulp.task('front-end', ['clean'], done => {
 
-  gulp.task('front-end', ['clean'], done => {
+  return runSequence([
+    'scss',
+    'pug'
+  ], done);
+});
 
-    return runSequence([
-      'scss',
-      'pug'
-    ], done);
-  });
+gulp.task('scss', () => {
 
-  gulp.task('scss', () => {
+  return gulp.src(`${paths.lib}scss/${platform}/index.scss`)
+    .pipe(plumber())
+    .pipe(sourcemaps.init())
+    .pipe(gulpSass({
+      'outputStyle': 'compressed'
+     }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(`${paths.tmp}/css`));
+});
 
-    return gulp.src(`${paths.lib}scss/${platform}/index.scss`)
-      .pipe(plumber())
-      .pipe(sourcemaps.init())
-      .pipe(gulpSass({
-        'outputStyle': 'compressed'
-       }))
-      .pipe(sourcemaps.write('.'))
-      .pipe(gulp.dest(`${paths.tmp}/css`));
-  });
+gulp.task('pug', () => {
 
-  gulp.task('pug', () => {
-
-    return gulp.src(`${paths.lib}**/*.pug`)
-      .pipe(gulpPug())
-      .pipe(gulp.dest(`${paths.tmp}`));
-  });
-}());
+  return gulp.src(`${paths.lib}**/*.pug`)
+    .pipe(gulpPug())
+    .pipe(gulp.dest(`${paths.tmp}`));
+});

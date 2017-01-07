@@ -24,10 +24,10 @@
       button(title="Add project to be managed", class="pull-left", ng-click="shell.openChooser()")
         i.fa.fa-plus-circle
         | Add Project
-      a.pull-right(title="Install Packages", ng-show="topMenu.projectPath", ng-click="topMenu.activeClickedLink('1');", ng-class="{'active': topMenu.activeLink === '1'}")
+      a.pull-right(title="Add Packages", ng-show="topMenu.projectPath", ng-click="topMenu.activeClickedLink('1');", ng-class="{'active': topMenu.activeLink === '1'}")
         i.fa.fa-cloud-download
         div
-          | Install Packages
+          | Add Packages
       span(ng-show='shell.showMenuButtons')
         a.pull-right(title="Update", ng-click="topMenu.activeClickedLink('2'); topMenu.updatePackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '2'}")
           i.fa.fa-level-up

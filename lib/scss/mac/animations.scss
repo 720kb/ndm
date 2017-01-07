@@ -7,3 +7,12 @@
     background-position: 50px 0;
   }
 }
+@keyframes promptSliding {
+  0% {
+    transform: translateY(-5px);
+
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

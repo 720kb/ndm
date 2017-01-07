@@ -10,8 +10,9 @@
   margin: 0 auto;
   width: 460px;
   z-index: 9999;
-  top: 66.5px;
   font-size: 11px;
+  top: 66px;
+  animation: promptSliding .1s ease-in-out;
 
   i {
     margin-left: 8px;

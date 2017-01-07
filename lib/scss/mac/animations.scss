@@ -19,14 +19,9 @@
 @keyframes promptWindowSliding {
 
   0% {
-    z-index: -1;
     transform: translateY(-35px);
   }
-   90% {
-     z-index: -1;
-   }
   100% {
-    z-index: 999;
     transform: translateY(0);
   }
 }

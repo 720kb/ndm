@@ -10,18 +10,23 @@
 @keyframes promptSliding {
   0% {
     transform: translateY(-5px);
-
   }
+
   100% {
     transform: translateY(0);
   }
 }
 @keyframes promptWindowSliding {
-  0% {
-    height: 200px;
 
+  0% {
+    z-index: -1;
+    transform: translateY(-35px);
   }
+   90% {
+     z-index: -1;
+   }
   100% {
-    height: 250px;
+    z-index: 999;
+    transform: translateY(0);
   }
 }

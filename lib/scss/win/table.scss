@@ -52,7 +52,9 @@
   &:focus, &:hover, &:active, &.active {
 
     &:not(.disabled) {
-    background: $color-lightblue;
+      &:not(.table-row-loading) {
+        background: $color-lightblue;
+      }
     }
   }
 
@@ -95,8 +97,8 @@
 .table-row-loading.active,
 .table-row-loading.active:active,
 .table-row-loading.active:focus {
-  background: $bg-progress;
-  animation: loadingStripes  1.5s linear infinite;
+  background: $bg-progress-secondary;
+  animation: loadingStripes  6s linear infinite;
 }
 
 .table-infos {

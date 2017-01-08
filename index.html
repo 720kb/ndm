@@ -76,12 +76,12 @@
           showLinux(platform);
         }, 0);
       }
-      /*UNCOMMENT ON WIN RELEASE READY ----
+
       if (platform === 'win') {
         setTimeout(function () {
           showWin(platform);
         }, 0);
-      }*/
+      }
     });
 
     if (hashtag === 'linux') {
@@ -91,6 +91,10 @@
     if (hashtag === 'mac') {
       $('body').scrollTop(0);
       $('.switcher a[data-platform="mac"]').trigger('click');
+    }
+    if (hashtag === 'win') {
+      $('body').scrollTop(0);
+      $('.switcher a[data-platform="win"]').trigger('click');
     }
   });
 </script>
@@ -174,7 +178,7 @@
         <div class="right-column line-tablet center-content-tablet">
           <img class="screenshot mac" src="img/screenshot-mac.png"/>
           <img class="screenshot linux hide" src="img/screenshot-linux.png"/>
-          <!--<img class="screenshot win hide" src="img/screenshot-win.png"/>-->
+          <img class="screenshot win hide" src="img/screenshot-win.png"/>
         </div>
       </div>
     </div>

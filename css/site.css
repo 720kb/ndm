@@ -296,13 +296,9 @@ small , small *, *.font-small{
 /*Animations*/
 @-webkit-keyframes fadeImgEffect{
   0% {
-
-    opacity: 1;
-  }
-  80% {
-    opacity: .95;
+    transform: translateY(5px);
   }
   100% {
-    opacity: 1;
+    transform: translateY(0);
   }
 }

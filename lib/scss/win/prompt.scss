@@ -10,7 +10,8 @@
   right: 0;
   top: 0;
   margin: 0 auto;
-  width: 550px;
+  width: 85%;
+  max-width: 700px;
   z-index: 9999;
 
   i {
@@ -88,7 +89,7 @@
 
   button {
     font-weight: 500;
-    height: 22px;
+    height: 23px;
     line-height: 14px;
     margin-top: -.5%;
     vertical-align: middle;
@@ -201,7 +202,7 @@
   text-align: center;
 }
 .prompt-window-options {
-  padding: 1.5px 4px;
+  padding: 1.5px 4px 2px 4px;
 
   img {
     width: 16px;

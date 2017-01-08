@@ -110,7 +110,6 @@
   "dependencies": {
     "ace-builds": "^1.2.5",
     "angular": "^1.6.0",
-    "angular-local-storage": "^0.5.0",
     "bootstrap": "^3.3.6",
     "electron-storage": "^1.0.6",
     "electron-sudo": "^4.0.12",

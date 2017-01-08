@@ -165,6 +165,9 @@ small , small *, *.font-small{
   max-width: 132px;
   width: 50%;
 }
+.download-link i {
+  margin-right:5px;
+}
 .infos {
   float: none;
   margin: 0 auto;

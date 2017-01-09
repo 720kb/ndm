@@ -45,7 +45,7 @@ $ brew cask install ndm
 **Core team** 
 [720kb](https://720kb.net) 
 
-**Contributors** [@wouldgo](https://github.com/wouldgo), [@45kb](https://github.com/45kb), [@makevoid](https://github.com/makevoid) _- contribute and edit the Readme to you to this list!_
+**Contributors** [All the awesome contributors](https://github.com/720kb/ndm/graphs/contributors)
 
 <a href="https://opencollective.com/ndm/backer/0/website" target="_blank"><img src="https://opencollective.com/ndm/backer/0/avatar.svg"></a> <a href="https://opencollective.com/ndm/sponsor/0/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/0/avatar.svg"></a>
 

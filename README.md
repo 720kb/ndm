@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI built with web technologies.
+Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI.
 </p>
 
 <br>

@@ -18,9 +18,6 @@
   margin-top: 15px;
   box-shadow: -1px -1px 0 $color-border inset;
 
-  *, *:hover, *:focus {
-    cursor: pointer;
-  }
 
   a {
     display: inline-block;
@@ -31,7 +28,11 @@
     width: calc(100% - 3px);
     color: $color-default;
     border: 1px solid transparent;
+    cursor: pointer;
 
+    *, *:hover, *:focus {
+      cursor: pointer;
+    }
     &:not(.project) {
       margin-bottom: 15px;
     }

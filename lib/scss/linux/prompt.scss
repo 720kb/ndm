@@ -15,6 +15,13 @@
   i {
     margin-left: 8px;
     font-size: 15px;
+
+    //close button icon
+    &.fa.fa-times-circle-o {
+      position: relative;
+      bottom: -1px;
+      font-size: 15.5px;
+    }
   }
 
   .tags-input {
@@ -87,8 +94,8 @@
     font-weight: 500;
     font-size: 12px;
     height: 22px;
-    line-height: 16px;
-    margin-top: -.3%;
+    line-height: 17px;
+    margin-top: -1px;
     vertical-align: middle;
     min-width: 13%;
     width: auto;

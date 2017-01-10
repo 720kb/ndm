@@ -3,7 +3,7 @@ osx_image: xcode8.2
 language: node_js
 before_install:
   - brew update
-  - brew install gnu-tar graphicsmagick rpm
+  - brew install gnu-tar graphicsmagick rpm wine
 node_js:
   - "6"
 script: "echo build done"

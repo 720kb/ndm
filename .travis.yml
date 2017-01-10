@@ -18,6 +18,7 @@ deploy:
     - "releases/ndm_$(echo $VERSION)_amd64.deb"
     - "releases/ndm-$(echo $VERSION).rpm"
     - "releases/ndm-$(echo $VERSION).zip"
+    - "ndm Setup $(echo $VERSION).exe"
   skip_cleanup: true
   on:
     tags: true

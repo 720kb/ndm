@@ -6,6 +6,8 @@
   const {app, Menu, BrowserWindow, shell} = require('electron')
     , path = require('path')
     , packageJSON = require('./package.json')
+    , analytics = require('universal-analytics')
+    , visitor = analytics('UA-90211405-1')
     , applicationTemplate = packageJSON.appTemplate;
   // Keep a global reference of the window object, if you don't, the window will
   // be closed automatically when the JavaScript object is garbage collected.
@@ -210,6 +212,7 @@
 
     mainWindow.on('ready-to-show', () => {
       mainWindow.show();
+      visitor.pageview('/').send();
     });
     // Emitted when the window is closed.
     mainWindow.on('closed', () => {

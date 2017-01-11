@@ -1,4 +1,4 @@
-/*global require process __dirname*/
+/*global require console process __dirname*/
 (function withNode() {
 
   process.env.PATH = require('shell-path').sync();
@@ -7,7 +7,9 @@
     , path = require('path')
     , packageJSON = require('./package.json')
     , analytics = require('universal-analytics')
-    , visitor = analytics('UA-90211405-1')
+    , uuid = require('uuid/v4')
+    , visitorId = uuid()
+    , visitor = analytics('UA-90211405-1', visitorId)
     , applicationTemplate = packageJSON.appTemplate;
   // Keep a global reference of the window object, if you don't, the window will
   // be closed automatically when the JavaScript object is garbage collected.
@@ -212,7 +214,11 @@
 
     mainWindow.on('ready-to-show', () => {
       mainWindow.show();
-      visitor.pageview('/').send();
+      try {
+        visitor.pageview(`/platform/${process.platform}`).send();
+      } catch (e) {
+        console.warn('Unable to send ga pageview');
+      }
     });
     // Emitted when the window is closed.
     mainWindow.on('closed', () => {

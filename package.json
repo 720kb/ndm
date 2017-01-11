@@ -117,7 +117,8 @@
     "rimraf": "^2.5.4",
     "selection-model": "^0.11.0",
     "shell-path": "^2.0.0",
-    "universal-analytics": "^0.4.8"
+    "universal-analytics": "^0.4.8",
+    "uuid": "^3.0.1"
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^3.0.0",

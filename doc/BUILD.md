@@ -22,6 +22,10 @@ _Generate the Desktop executables which you can run whitout needing to open the 
 
 `$ npm run build-win`
 
+#### Builds all platforms
+
+`$ npm run build`
+
 
 The executables are generated thanks to the [electron-builder](https://github.com/electron-userland/electron-builder), if you want you can change the build settings to your needs, just follow their documentation.
 

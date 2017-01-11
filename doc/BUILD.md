@@ -22,7 +22,7 @@ _Generate the Desktop executables which you can run whitout needing to open the 
 
 `$ npm run build-win`
 
-#### Builds all platforms
+#### Builds for all the platforms
 
 `$ npm run build`
 

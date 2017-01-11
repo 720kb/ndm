@@ -20,3 +20,6 @@ _Run app_
 #### Run on Windows
 `$ npm run win`
 
+
+if you then want to test the executables follow [How to build](https://github.com/720kb/ndm/blob/master/doc/BUILD.md)
+

@@ -3,7 +3,7 @@ osx_image: xcode8.2
 language: node_js
 before_install:
   - brew update
-  - brew install gnu-tar graphicsmagick rpm wine
+  - brew install gnu-tar graphicsmagick rpm
 node_js:
   - "6"
 script: "echo build done"
@@ -18,7 +18,6 @@ deploy:
     - "releases/ndm_$(echo $VERSION)_amd64.deb"
     - "releases/ndm-$(echo $VERSION).rpm"
     - "releases/ndm-$(echo $VERSION).zip"
-    - "ndm Setup $(echo $VERSION).exe"
   skip_cleanup: true
   on:
     tags: true

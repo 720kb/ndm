@@ -7,6 +7,7 @@
 
   const {app, Menu, BrowserWindow, shell} = require('electron')
     , path = require('path')
+    , url = require('url')
     , packageJSON = require('./package.json')
     , analytics = require('universal-analytics')
     , uuid = require('uuid/v4')
@@ -200,14 +201,19 @@
       mainWindow = new BrowserWindow(applicationTemplate);
       // and load the index.html of the app.
       //path.join() necessary for windows
-      mainWindow.loadURL(path.join('file://', __dirname, '/dist/index.html'));
+      mainWindow.loadURL(url.format({
+        'pathname': path.join(__dirname, 'dist', 'index.html'),
+        'protocol': 'file:',
+        'slashes': true
+      }));
+
       mainWindow.on('ready-to-show', () => {
         //show it now to avoid blank page on rendering
         mainWindow.show();
         try {
           visitor.pageview(`/platform/${process.platform}`).send();
         } catch (e) {
-          console.warn('Unable to send ga pageview');
+          console.warn('Unable to send ga pageview', e);
         }
       });
       // Emitted when the window is closed.
@@ -219,6 +225,10 @@
       });
     };
 
+  // This method will be called when Electron has finished
+  // initialization and is ready to create browser windows.
+  app.on('ready', createWindow);
+
   // Quit when all windows are closed.
   app.on('window-all-closed', () => {
     // On OS X it is common for applications and their menu bar
@@ -228,9 +238,6 @@
     }
   });
 
-  // This method will be called when Electron has finished
-  // initialization and is ready to create browser windows.
-  app.on('ready', createWindow);
   app.on('activate', () => {
     // On OS X it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.

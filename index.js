@@ -207,7 +207,7 @@
         'slashes': true
       }));
 
-      mainWindow.on('ready-to-show', () => {
+      mainWindow.webContents.on('dom-ready', () => {
         //show it now to avoid blank page on rendering
         mainWindow.show();
         try {

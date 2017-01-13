@@ -1,4 +1,4 @@
-/*global require console process __dirname*/
+/*global require process __dirname*/
 (function withNode() {
 
   process.env.PATH = require('shell-path').sync();
@@ -9,10 +9,6 @@
     , path = require('path')
     , url = require('url')
     , packageJSON = require('./package.json')
-    , analytics = require('universal-analytics')
-    , uuid = require('uuid/v4')
-    , visitorId = uuid()
-    , visitor = analytics('UA-90211405-1', visitorId)
     , applicationTemplate = packageJSON.appTemplate
     , createWindow = () => {
       const aboutMenuItem = {
@@ -210,11 +206,6 @@
       mainWindow.on('ready-to-show', () => {
         //show it now to avoid blank page on rendering
         mainWindow.show();
-        try {
-          visitor.pageview(`/platform/${process.platform}`).send();
-        } catch (e) {
-          console.warn('Unable to send ga pageview', e);
-        }
       });
       // Emitted when the window is closed.
       mainWindow.on('closed', () => {

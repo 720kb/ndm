@@ -42,7 +42,7 @@ $ brew update
 $ brew cask install ndm
 ```
 
-## Archlinux
+## Arch linux
 
 On linux you can install **ndm** with [yaourt](https://github.com/archlinuxfr/yaourt):
 

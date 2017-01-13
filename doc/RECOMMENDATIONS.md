@@ -1,9 +1,8 @@
-## Recommendations
+## Recommendations :ok_hand:
 
-- It is highly recommended to install node and npm via Brew or nvm or n
-- It is highly recommended to not start the app with `sudo` when developing or testing (WRONG! `sudo npm start`)
-- It is recommended to not rename `node_modules/` folder in your projects
-- It is recommended to use snapshots (Right click on a project -> Snapshot) so that: any change to the project can be reverted from the project history (Right click on a project -> History)
-- It is recommended to manage only `.git` projects with ndm (so that everything can be reverted to it's previous status)
-- It is recommended to install and use always the LTS nodejs version
-- It is highly reccomended to not uninstall or install npm globally using ndm if you don't know what you are doing. (npm global installation should be up to specific tools such as nvm, brew, etc..)
+- It is highly recommended to install node and npm via brew or nvm or n
+- It is highly recommended to not start the app with `sudo` when developing or testing (WRONG! `sudo npm run...`)
+- It is recommended to not rename `node_modules/` folder in your projects (which is a standard naming for node pkgs folder)
+- It is recommended to manage only versioned projects with ndm (git, svn, mercurial etc..) so that everything can be reverted to it's previous/original status
+- It is recommended to install and use always the LTS node version (brew or nvm or n, will help you to manage this with comfort)
+- It is recommended to always run the latest version of ndm

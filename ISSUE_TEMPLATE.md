@@ -14,6 +14,8 @@ node version:
 
 npm version:
 
+node installed via (brew, n, nvm, pkg, other ...): 
+
 ### OPTIONAL
 
 $ which node:
@@ -22,11 +24,9 @@ $ which npm:
 
 ### IMPORTANT
 
-- npm permissions (fixed, not-fixed)(see https://docs.npmjs.com/getting-started/fixing-npm-permissions):
+- npm permissions fixed or not-fixed? (see https://docs.npmjs.com/getting-started/fixing-npm-permissions):
 
-- If you using npm > v4.1.2 then run `npm doctor` and paste the output here:
-
-- node installed via (brew, n, nvm, pkg, other ...): 
+- If you are using npm > v4.1.2 then run `npm doctor` and paste the output here:
 
 - How to replicate the bug/issue, if you know it:
 

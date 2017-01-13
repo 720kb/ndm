@@ -35,11 +35,19 @@ Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI.
 
 ## Homebrew
 
-Alternatively, you can install **ndm** with [Homebrew Cask](https://caskroom.github.io/):
+On MacOS you can install **ndm** with [Homebrew Cask](https://caskroom.github.io/):
 
 ```bash
 $ brew update
 $ brew cask install ndm
+```
+
+## Archlinux
+
+On linux you can install **ndm** with [yaourt](https://github.com/archlinuxfr/yaourt):
+
+```bash
+$ yaourt -S ndm
 ```
 
 **Core team** 

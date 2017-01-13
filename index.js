@@ -14,8 +14,6 @@
   // This method will be called when Electron has finished
   // initialization and is ready to create browser windows.
   app.on('ready', () => {
-    //sync shell path or app will not work, yep.
-    process.env.PATH = require('shell-path').sync();
     // Create the browser window.
     let mainWindow = new BrowserWindow(applicationTemplate)
       , menuTemplate;

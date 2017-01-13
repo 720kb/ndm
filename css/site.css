@@ -162,9 +162,9 @@ small , small *, *.font-small{
 }
 .download-link.linux {
   background: #ff4444;
-  margin-right: 1%;
-  max-width: 132px;
-  width: 50%;
+  margin-right: 2%;
+  max-width: 83px;
+  width: 30%;
 }
 .download-link i {
   margin-right:5px;
@@ -199,6 +199,9 @@ small , small *, *.font-small{
 /*tablet*/
 @media screen and (max-width:1090px){
   /*put in here all tablet rules*/
+  .switcher  a{
+    margin: 0 10px;
+  }
   .hide-mobile-tablet {
     display: none;
   }

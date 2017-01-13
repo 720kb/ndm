@@ -12,5 +12,6 @@ Thank you!
 * [OPTIONAL] $ which npm:
 * npm permissions (fixed, not-fixed)(see https://docs.npmjs.com/getting-started/fixing-npm-permissions):
 * node installed via (brew, n, nvm, pkg, other ...):
-* How to replicate the bug/issue, if you know it:
+* [IMPORTANT] How to replicate the bug/issue, if you know it:
 * [APPRECIATED] Make a screenshot or paste the devtools console full log (open the console: OS Menu -> View -> Developer -> Open DevTools):
+* [APPRECIATED] (if you are on npm > v4.1.2) run `npm doctor` and paste the output:

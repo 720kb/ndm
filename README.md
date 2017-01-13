@@ -44,7 +44,7 @@ $ brew cask install ndm
 
 ## Arch Linux
 
-On Linux you can install **ndm** with [yaourt](https://github.com/archlinuxfr/yaourt):
+On Linux you can install **ndm** like this:
 
 ```bash
 $ yaourt -S ndm

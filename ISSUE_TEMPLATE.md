@@ -14,4 +14,4 @@ Thank you!
 * node installed via (brew, n, nvm, pkg, other ...):
 * [IMPORTANT] How to replicate the bug/issue, if you know it:
 * [APPRECIATED] Make a screenshot or paste the devtools console full log (open the console: OS Menu -> View -> Developer -> Open DevTools):
-* [APPRECIATED] (if you are on npm > v4.1.2) run `npm doctor` and paste the output:
+* [APPRECIATED] if you are on npm > v4.1.2 run `npm doctor` and paste the output:

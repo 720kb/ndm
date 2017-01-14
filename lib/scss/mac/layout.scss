@@ -18,7 +18,6 @@
   background: $bg-light;
 
   a {
-    cursor: default;
     display: inline-block;
     line-height: 21px;
     height: 25px;
@@ -49,18 +48,12 @@
 
     &.active {
       background: $bg-muted-invisible;
-      cursor: default;
     }
 
     &.project {
 
       &.active, &:focus {
         background: $bg-muted-invisible;
-        cursor: default;
-
-        &:hover {
-          cursor: default;
-        }
       }
 
       button {

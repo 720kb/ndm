@@ -1,10 +1,13 @@
 .home {
-  background: $bg-lighter;
+  background: $bg-light;
   min-height: 100vh;
   padding-top: 30vh;
   text-align: center;
 
   button {
     height: 21px;
+  }
+  small {
+    font-size: 13px;
   }
 }

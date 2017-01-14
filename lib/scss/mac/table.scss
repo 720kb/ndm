@@ -1,5 +1,4 @@
 .table-header {
-  color: $color-222;
   font-size: 11px;
   line-height: 20px;
   padding: 0 10px;
@@ -31,7 +30,6 @@
 }
 
 .table-row {
-  color: $color-333;
   font-size: 12px;
   line-height: 21px;
   padding: 0 10px;
@@ -79,13 +77,14 @@
 
 .table-body {
   //(table - header - table-infos) to calculate height
-  height: calc(100vh - 120px - 140px);
+  height: calc(100vh - 120px - 105px);
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 20px;
 }
 
 .table-loader {
+  background: $bg-light;
   min-height: 100vh;
   padding-top: 30vh;
   text-align: center;
@@ -126,6 +125,7 @@
       color: $color-primary;
 
       &:hover {
+        color: $color-primary;
         background: $bg-muted-invisible;
       }
     }

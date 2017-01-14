@@ -1,7 +1,7 @@
 .dialog {
-  background: $bg-dialog;
+  background: $bg-header;
   border-radius: $border-radius-prompt;
-  box-shadow: 0 -20px 20px rgba(0, 0, 0, .04) inset, 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
+  box-shadow: 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
   left: 0;
   padding: 3px 5px;
@@ -10,8 +10,7 @@
   margin: 0 auto;
   width: 460px;
   z-index: 9999;
-  font-size: 11px;
-  top: 66px;
+  top: 0;
   animation: promptSliding .13s ease;
 
   i {
@@ -30,7 +29,7 @@
     background: white;
     white-space: nowrap;
     overflow: hidden;
-    float:left;
+    float: left;
     margin-right:2%;
     //placeholder for contenteditable input
     &:empty:before {
@@ -88,9 +87,6 @@
   }
 
   button {
-    font-size: 11px;
-    height: 19px;
-    vertical-align: middle;
     min-width: 13%;
     width: auto;
     margin-left: 6px;

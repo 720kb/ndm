@@ -18,7 +18,6 @@
   background: $bg-light;
 
   a {
-    color: $color-555;
     cursor: default;
     display: inline-block;
     line-height: 21px;
@@ -27,8 +26,12 @@
     padding: 0 9px;
     width: 100%;
 
-    i.fa-folder{
-      color: $color-primary;
+    i {
+      font-size: 16.5px;
+      margin-right: 2px;
+      &:not(.fa-globe){
+        color: $color-primary;
+      }
     }
 
     div {
@@ -62,7 +65,7 @@
 
       button {
         bottom: -2px;
-        color: $color-muted-more;
+        color: $color-muted;
         display: none;
         float: right;
         line-height: 0;
@@ -97,12 +100,6 @@
       }
     }
 
-    i {
-      font-size: 16.5px;
-      left: -1px;
-      position: relative;
-      top: .5px;
-    }
     span {
       @include bg-rgba-black(.23);
       border-radius: 10px;

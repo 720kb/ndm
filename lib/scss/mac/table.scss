@@ -34,7 +34,7 @@
   padding: 0 6px;
 
   &:nth-child(odd) {
-    background: $bg-lighter;
+    background: $bg-light;
   }
 
   &:focus, &:active, &.active {
@@ -50,16 +50,15 @@
   }
 
   i {
-    color: $color-table-light-icons;
+    color: $color-muted;
   }
 
   &.disabled {
     background: $bg-light;
-    opacity: .5;
     cursor: not-allowed;
 
     * {
-      color: $color-333;
+      color: $color-muted;
     }
 
     &:active, &:hover, &.active, &:focus {
@@ -68,7 +67,7 @@
       pointer-events: none;
       * {
         cursor: not-allowed;
-        color: $color-333;
+        color: $color-muted;
       }
     }
   }

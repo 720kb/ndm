@@ -57,22 +57,22 @@
       }
 
       button {
-        bottom: -2px;
-        color: $color-muted;
+
         display: none;
         float: right;
-        line-height: 0;
-        padding-right: 5px;
         max-width: 21px;
-        min-width: 8px;
-        position: relative;
         transition: color .11s linear;
-        width: 50%;
         z-index: 999;
-        text-indent: -3px;
+        background: none;
+        border: none;
 
-        &:hover {
-          color: $color-muted-less;
+        i {
+          color: $color-muted;
+          margin-left: -7px;
+
+          &:hover {
+            -webkit-filter: saturate(0.6);
+          }
         }
       }
 

@@ -27,6 +27,10 @@
     padding: 0 9px;
     width: 100%;
 
+    i.fa-folder{
+      color: $color-primary;
+    }
+
     div {
       display: inline-flex;
       max-width: 120px;

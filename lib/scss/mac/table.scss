@@ -34,7 +34,7 @@
   padding: 0 6px;
 
   &:nth-child(odd) {
-    background: $bg-muted-invisible;
+    background: $bg-lighter;
   }
 
   &:focus, &:active, &.active {

@@ -40,9 +40,7 @@
   &:focus, &:active, &.active {
     &:not(.table-row-loading) {
       &:not(.disabled) {
-        *:not(i) {
-          color: white;
-        }
+        color: white;
       }
     }
 

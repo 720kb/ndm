@@ -9,7 +9,7 @@
 }
 
 .left-column {
-  box-shadow: -1px -1px $color-ddd inset;
+  box-shadow: -1px -1px $color-ccc inset;
   float: left;
   height: calc(100vh - 51px);
   overflow-y: auto;
@@ -67,12 +67,8 @@
         border: none;
 
         i {
-          color: $color-muted;
+          color: $color-222;
           margin-left: -7px;
-
-          &:hover {
-            -webkit-filter: saturate(0.6);
-          }
         }
       }
 

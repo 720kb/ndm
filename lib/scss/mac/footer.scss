@@ -3,7 +3,6 @@
   background: $bg-gradient-footer;
   border-top: 1px solid $color-ccc;
   bottom: 0;
-  color: $color-555;
   font-size: 11px;
   font-weight: 100;
   height: 24px;
@@ -46,7 +45,6 @@
       i {
         position:relative;
         bottom:-.5px;
-        color: $color-666;
 
         &.active {
           color: $color-green;
@@ -55,7 +53,6 @@
     }
   }
   a {
-    color: $color-444;
     opacity: .75;
 
     &:hover,

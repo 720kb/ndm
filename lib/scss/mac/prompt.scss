@@ -88,36 +88,16 @@
   }
 
   button {
-    background: $bg-lighter;
-    border-radius: $border-radius-button;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 1px 1px rgba(0, 0, 0, .1);
-    color: $color-666;
-    font-weight: 500;
     font-size: 11px;
     height: 19px;
-    line-height: 14px;
-    margin-top: -.5px;
-    text-shadow: 0 1px white;
     vertical-align: middle;
     min-width: 13%;
     width: auto;
     margin-left: 6px;
 
-    &:active {
-      background: rgba(0, 0, 0, .04);
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, .09) inset, 0 1px rgba(0, 0, 0, .09) inset;
-      color: $color-999;
-      text-shadow: none;
-    }
-
     &.disabled {
-      box-shadow: none;
+      pointer-events: none;
       opacity: .5;
-    }
-
-    i {
-      position: relative;
-      top: -1px;
     }
   }
 
@@ -205,11 +185,5 @@
     left: -13px;
     color: $color-777;
     text-shadow: 0 1px white;
-  }
-
-  button {
-    top: -2px;
-    position: relative;
-    float: right;
   }
 }

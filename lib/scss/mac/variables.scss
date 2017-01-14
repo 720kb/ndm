@@ -33,6 +33,7 @@ $color-table-light-icons: #d6e7e8;
 /*
 backgrounds
 */
+$bg-header: #f0f0f0;
 $bg-primary: #327dff;
 $bg-light: #f4f6f6;
 $bg-lighter: #fefefe;
@@ -48,7 +49,6 @@ $bg-positive: royalblue;
 $bg-error: #e81616;
 $bg-table-row-highlight: $color-positive;
 $bg-gradient-footer: linear-gradient(to bottom, $bg-lightgrey 0%, $bg-smoke 100%);
-$bg-gradient-grey: linear-gradient(to bottom, $bg-lightgrey 0%, $bg-smoke 100%);
 $bg-progress: repeating-linear-gradient(135deg, $color-stripes-one, $color-stripes-one 5px, $color-stripes-two 5px, $color-stripes-two 10px);
 $bg-progress-secondary: repeating-linear-gradient(135deg, $color-primary, $color-primary 5px, #147ada 5px, #147ada 10px);
 $bg-progress-minor: repeating-linear-gradient(135deg, $color-error, $color-error 5px, #c71212 5px, #c71212 10px);

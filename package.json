@@ -99,8 +99,7 @@
     "minimizable": true,
     "maximizable": true,
     "closable": true,
-    "fullscreenable": true,
-    "titleBarStyle": "hidden"
+    "fullscreenable": true
   },
   "directories": {
     "output": "./releases"

@@ -1,3 +1,8 @@
+body, html {
+  cursor: default;
+  font-family: 'Ubuntu', 'Arial', 'sans-serif';
+}
+
 * {
   outline: none;
   text-decoration: none;
@@ -8,8 +13,4 @@
     text-decoration: none;
     cursor: default;
   }
-}
-
-body, html {
-  cursor: default;
 }

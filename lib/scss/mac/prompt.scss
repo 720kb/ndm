@@ -23,15 +23,16 @@
     line-height: initial;
     border-radius: 3px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
-    font-size: 11px;
+    font-size: 12.5px;
     padding: 3.5px 4px 4px 4px;
     width: calc(70.5% - 8px);
     background: white;
     white-space: nowrap;
     overflow: hidden;
     float: left;
-    margin-right:2%;
-    //placeholder for contenteditable input
+    margin-right: 2%;
+
+    //placeholder for fake contenteditable input
     &:empty:before {
       color: $color-muted;
       content: attr(placeholder);
@@ -39,6 +40,7 @@
     br {
       display: none;
     }
+
     * {
       display: inline;
       white-space: nowrap;
@@ -85,6 +87,8 @@
     min-width: 13%;
     width: auto;
     margin-left: 6px;
+    height: 20.5px;
+    line-height: 15px;
 
     &.disabled {
       pointer-events: none;
@@ -156,6 +160,11 @@
 }
 .prompt-window-options {
   padding: 1.5px 4px;
+
+  button {
+    float: right;
+    margin-top: -2px;
+  }
 
   .prompt-resize-holder {
     width: 130%;

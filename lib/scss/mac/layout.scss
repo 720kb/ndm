@@ -22,7 +22,8 @@
     margin: 0;
     padding: 0 6px;
     width: 100%;
-    line-height: 25px;
+    line-height: 23px;
+    height: 25px;
 
     i {
       font-size: 16.5px;
@@ -33,6 +34,10 @@
       &:not(.fa-globe){
         color: $color-primary;
       }
+    }
+
+    &:hover {
+      background: $bg-muted-invisible;
     }
 
     div {
@@ -67,6 +72,8 @@
         z-index: 999;
         background: none;
         border: none;
+        position: relative;
+        top: -2px;
 
         i {
           color: $color-222;

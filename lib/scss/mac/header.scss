@@ -14,11 +14,11 @@
     }
 
     &.pull-right {
-      margin-left: 11px;
+      margin-left: 4.5px;
     }
 
     i {
-      font-size: 22px;
+      font-size: 21px;
       line-height: 0;
     }
     div, span {
@@ -46,13 +46,15 @@
       color: $color-primary;
     }
   }
-  
+
   button {
     font-size: 12px;
     background: none;
     border: none;
     padding: 7px 4px 4px 4px;
     margin-left: 20px;
+    margin-left: 28px;
+    text-indent: -1px;
 
     input {
       &[type='file'] {

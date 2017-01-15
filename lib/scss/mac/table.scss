@@ -56,13 +56,12 @@
     cursor: not-allowed;
 
     * {
+      cursor: not-allowed;
       color: $color-muted;
     }
 
     &:active, &:hover, &.active, &:focus {
-      opacity: .5;
       cursor: not-allowed;
-      pointer-events: none;
       * {
         cursor: not-allowed;
         color: $color-muted;

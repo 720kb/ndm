@@ -76,26 +76,12 @@
   }
 
   .button-global {
-    background: $bg-lighter;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 1px 1px rgba(0, 0, 0, .1);
+
     font-size: 12px;
-    position: relative;
-    bottom: -14px;
-    right: -30px;
-    padding: 2px 3px 2px 1px;
+    height: 21px;
 
     i {
       font-size: 14px;
-      position: relative;
-      bottom: -.5px;
-      margin-right: -2px;
-    }
-
-    &:active {
-      background: rgba(0, 0, 0, .04);
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, .09) inset, 0 1px rgba(0, 0, 0, .09) inset;
-      color: $color-999;
     }
   }
 }

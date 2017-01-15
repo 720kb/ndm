@@ -1,7 +1,6 @@
 .table-header {
-  color: $color-222;
-  font-size: 11px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 22px;
   padding: 0 10px;
   transition: opacity .3s linear;
 
@@ -31,19 +30,17 @@
 }
 
 .table-row {
-  color: $color-333;
-  font-size: 12px;
-  line-height: 21px;
-  padding: 0 10px;
+  line-height: 22.5px;
+  padding: 0 6px;
 
   &:nth-child(odd) {
-    background: $bg-table-row;
+    background: $bg-lighter;
   }
 
   &:focus, &:active, &.active {
     &:not(.table-row-loading) {
       &:not(.disabled) {
-        *:not(i) {
+        * {
           color: white;
         }
       }
@@ -53,25 +50,23 @@
   }
 
   i {
-    color: $color-table-light-icons;
+    color: $color-muted;
   }
 
   &.disabled {
     background: $bg-light;
-    opacity: .5;
     cursor: not-allowed;
 
     * {
-      color: $color-333;
+      cursor: not-allowed;
+      color: $color-muted;
     }
 
     &:active, &:hover, &.active, &:focus {
-      opacity: .5;
       cursor: not-allowed;
-      pointer-events: none;
       * {
         cursor: not-allowed;
-        color: $color-333;
+        color: $color-muted;
       }
     }
   }
@@ -79,7 +74,7 @@
 
 .table-body {
   //(table - header - table-infos) to calculate height
-  height: calc(100vh - 120px - 140px);
+  height: calc(100vh - 120px - 105px);
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 20px;
@@ -101,7 +96,7 @@
 
 .table-infos {
   height: 150px;
-  font-size: 11.5px;
+  font-size: 12.5px;
   padding: 0 2%;
   background: #f0f0f0;
   box-shadow: 0 -1px $bg-muted-more;
@@ -126,6 +121,7 @@
       color: $color-primary;
 
       &:hover {
+        color: $color-primary;
         background: $bg-muted-invisible;
       }
     }

@@ -1,0 +1,11 @@
+body, html {
+  cursor: default;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a, button {
+  cursor: pointer;
+  &:hover, &:active, &:focus {
+    cursor: pointer;
+  }
+}

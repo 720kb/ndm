@@ -1,0 +1,82 @@
+.top-menu {
+  -webkit-app-region: drag;
+  padding: 0 5px;
+  width: 100%;
+  background: $bg-header;
+
+  a {
+    padding: 5px 0 4px 0;
+
+    &.pull-right {
+      margin-left: 4.5px;
+    }
+
+    i {
+      font-size: 21px;
+      line-height: 0;
+    }
+
+    span, div {
+
+      &:not(.badge-version) {
+        display: none;
+      }
+    }
+
+    &:active, &.active {
+      i {
+        color: $color-primary;
+      }
+    }
+  }
+
+  .badge-version {
+    font-size: 9.5px;
+    vertical-align: super;
+    color: $color-666;
+    margin-left: -3px;
+
+    i {
+      margin-right: -3px;
+      font-size: 11px;
+      color: $color-primary;
+    }
+  }
+
+  .button-add-project {
+    font-size: 12px;
+    background: none;
+    border: none;
+    padding: 7px 4px 4px 4px;
+    margin-left: 20px;
+    margin-left: 28px;
+    text-indent: -1px;
+
+    i {
+      color: $color-primary;
+      font-size: 14px;
+      position: relative;
+      top: -1px;
+    }
+
+    &:active {
+      @include bg-rgba-black(.05);
+    }
+  }
+
+  .button-global {
+
+    font-size: 12px;
+    height: 20.5px;
+    padding: 0 2px;
+    margin-top: 4.5px;
+    line-height: 21px;
+    margin-left: 7px;
+
+    i {
+      color: $color-primary;
+      position: relative;
+      top: -1px;
+    }
+  }
+}

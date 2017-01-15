@@ -1,61 +1,42 @@
 .dialog {
-  background: $bg-dialog;
+  background: $bg-header;
   border-radius: $border-radius-prompt;
-  box-shadow: 0 -20px 20px rgba(0, 0, 0, .04) inset, 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
+  box-shadow: 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
   left: 0;
   padding: 3px 5px;
   position: absolute;
   right: 0;
   margin: 0 auto;
-  width: 460px;
+  width: 480px;
   z-index: 9999;
-  font-size: 11px;
-  top: 66px;
+  top: 0;
   animation: promptSliding .13s ease;
 
   i {
     margin-left: 8px;
     vertical-align: middle;
-    font-size: 13px;
+    font-size: 15px;
   }
 
-  .tags-input {
-    line-height: initial;
-    border-radius: 3px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
-    font-size: 11px;
-    padding: 3.5px 4px 4px 4px;
-    width: calc(70.5% - 8px);
-    background: white;
-    white-space: nowrap;
-    overflow: hidden;
-    float:left;
-    margin-right:2%;
-    //placeholder for contenteditable input
-    &:empty:before {
-      color: $color-muted;
-      content: attr(placeholder);
-    }
-    br {
-      display: none;
-    }
-    * {
-      display: inline;
-      white-space: nowrap;
-    }
+  button {
+    min-width: 13%;
+    width: auto;
+    margin-left: 6px;
+    line-height: 16px;
+    margin-top: 2px;
 
-    b {
-      font-weight: normal;
-      position: relative;
-      bottom: -.07em;
+    &.disabled {
+      pointer-events: none;
+      opacity: .5;
     }
+  }
 
-    span {
-      background: $bg-tags;
-      border-radius: $border-radius-tags;
-      border: $border-tags;
-      padding: 0 3px 1.5px 3px;
+  .prompt {
+    &:not(.window) {
+      button {
+        width: 56px;
+      }
     }
   }
 
@@ -82,42 +63,44 @@
     }
   }
 
-  .prompt-kind {
-    position: relative;
-    bottom: -1px;
-  }
+  .tags-input {
+    line-height: initial;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
+    font-size: 12.5px;
+    padding: 3.5px 4px 4px 4px;
+    width: calc(70.5% - 15px);
+    background: white;
+    white-space: nowrap;
+    overflow: hidden;
+    float: left;
+    margin-right: 2%;
 
-  button {
-    background: $bg-lighter;
-    border-radius: $border-radius-button;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 1px 1px rgba(0, 0, 0, .1);
-    color: $color-666;
-    font-weight: 500;
-    font-size: 11px;
-    height: 19px;
-    line-height: 14px;
-    margin-top: -.5px;
-    text-shadow: 0 1px white;
-    vertical-align: middle;
-    min-width: 13%;
-    width: auto;
-    margin-left: 6px;
-
-    &:active {
-      background: rgba(0, 0, 0, .04);
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, .09) inset, 0 1px rgba(0, 0, 0, .09) inset;
-      color: $color-999;
-      text-shadow: none;
+    //placeholder for fake contenteditable input
+    &:empty:before {
+      color: $color-muted;
+      content: attr(placeholder);
+    }
+    br {
+      display: none;
     }
 
-    &.disabled {
-      box-shadow: none;
-      opacity: .5;
+    * {
+      display: inline;
+      white-space: nowrap;
     }
 
-    i {
+    b {
+      font-weight: normal;
       position: relative;
-      top: -1px;
+      bottom: -.07em;
+    }
+
+    span {
+      background: $bg-tags;
+      border-radius: $border-radius-tags;
+      border: $border-tags;
+      padding: 0 3px 1.5px 3px;
     }
   }
 
@@ -146,10 +129,15 @@
 }
 
 .prompt-history-item {
-  line-height: 22px;
+  line-height: 23px;
   width: calc(100% - 2px);
   margin: 0 1px 0 1px;
 
+  &:hover {
+    &:not(.active) {
+      background: $bg-lighter;
+    }
+  }
   &:first-child {
     margin-top: 1px;
   }
@@ -159,7 +147,12 @@
   }
 
   i {
-    font-size: 12.5px;
+    font-size: 13px;
+    color: $color-primary;
+
+    &.fa-caret-right {
+      color: $color-222;
+    }
   }
 }
 
@@ -172,7 +165,7 @@
 }
 
 .prompt-window-infos {
-  font-size: 11.5px;
+  font-size: 12.5px;
   max-width: 200px;
   white-space: nowrap;
   overflow: hidden;
@@ -185,6 +178,11 @@
 }
 .prompt-window-options {
   padding: 1.5px 4px;
+
+  button {
+    float: right;
+    margin-top: -3px;
+  }
 
   .prompt-resize-holder {
     width: 130%;
@@ -205,11 +203,5 @@
     left: -13px;
     color: $color-777;
     text-shadow: 0 1px white;
-  }
-
-  button {
-    top: -2px;
-    position: relative;
-    float: right;
   }
 }

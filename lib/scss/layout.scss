@@ -11,41 +11,38 @@
 .left-column {
   box-shadow: -1px -1px $color-ccc inset;
   float: left;
-  height: calc(100vh - 89px);
+  height: calc(100vh - 51px);
   overflow-y: auto;
   padding: 0 15px;
   width: 200px;
-  background: #f0f0f0;
+  background: $bg-light;
 
-  .fa-folder-o,
-  .fa-folder-o::before,
-  .fa-globe,
-  .fa-globe::before {
-    background-image: linear-gradient(to bottom,  #dde2e7 22%, #b7bcc1 34%, #b7bcc1 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: rgba(0, 0, 0, .89);
-  }
-  .fa-globe,
-  .fa-globe::before {
-    -webkit-text-stroke-width: 0;
-    background-image: linear-gradient(to bottom, #5b6065 100%, #5b6065 100%);
-  }
   a {
-    color: $color-555;
-    cursor: default;
     display: inline-block;
-    font-size: 12.5px;
-    line-height: 21px;
-    height: 25px;
     margin: 0;
-    padding: 0 9px;
+    padding: 0 6px;
     width: 100%;
+    line-height: 23px;
+    height: 25px;
+
+    i {
+      font-size: 16.5px;
+      margin-right: 2px;
+      position: relative;
+      bottom: -1px;
+
+      &:not(.fa-globe){
+        color: $color-primary;
+      }
+    }
+
+    &:hover {
+      background: $bg-muted-invisible;
+    }
 
     div {
       display: inline-flex;
-      max-width: 120px;
+      max-width: 140px;
 
       b {
         font-weight: normal;
@@ -58,38 +55,29 @@
 
     &.active {
       background: $bg-muted-invisible;
-      cursor: default;
-      text-shadow: none;
     }
 
     &.project {
 
       &.active, &:focus {
         background: $bg-muted-invisible;
-        cursor: default;
-
-        &:hover {
-          cursor: default;
-        }
       }
 
       button {
-        bottom: -2px;
-        color: $color-muted-more;
+
         display: none;
         float: right;
-        line-height: 0;
-        padding-right: 5px;
         max-width: 21px;
-        min-width: 8px;
-        position: relative;
         transition: color .11s linear;
-        width: 50%;
         z-index: 999;
-        text-indent: -3px;
+        background: none;
+        border: none;
+        line-height: 23px;
 
-        &:hover {
-          color: $color-muted-less;
+        i {
+          color: $color-222;
+          margin-left: -7px;
+          vertical-align: top;
         }
       }
 
@@ -110,33 +98,25 @@
       }
     }
 
-    i {
-      font-size: 16.5px;
-      left: -1px;
-      position: relative;
-      top: .5px;
-    }
     span {
       @include bg-rgba-black(.23);
       border-radius: 10px;
       color: white;
       display: inline-block;
       float: right;
-      font-size: 11px;
-      font-weight: 500;
       line-height: 15px;
       margin-top: 4px;
       min-width: 23px;
       padding: 0 7px 1px 7px;
       text-align: center;
       text-indent: .5px;
-      text-shadow: 0 1px rgba(0, 0, 0, .2);
     }
   }
 
   h6 {
-    font-size: 11.5px;
+    font-weight: 500;
+    font-size: 12px;
     margin-bottom: 5px;
-    padding: 5px 10px;
+    padding: 5px 9px;
   }
 }

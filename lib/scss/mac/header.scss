@@ -7,12 +7,6 @@
   a {
     padding: 5px 0 4px 0;
 
-    &:active, &.active {
-      i {
-        color: $color-primary;
-      }
-    }
-
     &.pull-right {
       margin-left: 4.5px;
     }
@@ -21,27 +15,28 @@
       font-size: 21px;
       line-height: 0;
     }
-    div, span {
+
+    span, div {
+
       &:not(.badge-version) {
         display: none;
+      }
+    }
+
+    &:active, &.active {
+      i {
+        color: $color-primary;
       }
     }
   }
 
   .badge-version {
     font-size: 9.5px;
-    height: 13px;
-    line-height: 8px;
-    margin-left: 42px;
-    margin-top: -18px;
-    min-width: 38px;
-    position: absolute;
+    vertical-align: super;
     color: $color-666;
 
     i {
-      margin: 0;
-      bottom: 0;
-      right: -4px;
+      margin-right: -3px;
       font-size: 11px;
       color: $color-primary;
     }

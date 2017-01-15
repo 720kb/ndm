@@ -17,16 +17,13 @@
     position: relative;
     right: -5px;
 
-    img {
-      vertical-align: middle;
-      width: 25px;
-    }
-
     &.npm-status {
       min-width: 122px;
 
       img {
         opacity: .7;
+        vertical-align: middle;
+        width: 26px;
       }
 
       b {

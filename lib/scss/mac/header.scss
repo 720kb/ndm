@@ -1,6 +1,6 @@
 .top-menu {
   -webkit-app-region: drag;
-  padding: 0 6px;
+  padding: 0 5px;
   width: 100%;
   background: $bg-header;
 
@@ -34,6 +34,7 @@
     font-size: 9.5px;
     vertical-align: super;
     color: $color-666;
+    margin-left: -3px;
 
     i {
       margin-right: -3px;
@@ -67,15 +68,15 @@
 
     font-size: 12px;
     height: 20.5px;
-    padding: 0 4px;
+    padding: 0 2px;
     margin-top: 4px;
     line-height: 21px;
-    margin-right: -15px;
+    margin-left: 7px;
 
     i {
       color: $color-primary;
       position: relative;
-      top: -1.5px;
+      top: -1px;
     }
   }
 }

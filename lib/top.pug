@@ -16,9 +16,8 @@
           | Update npm
       = " "
       = " "
-      button.button-global(type="button", title="Enable ndm in global folder",  ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
+      button.button-global.pull-right(type="button", title="Enable ndm in global folder",  ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
         i.fa.fa-globe.color-primary
-        = " "
         | Enable
     .col-xs-9
       button(title="Add project to be managed",type="button",  class="pull-left button-add-project", ng-click="shell.openChooser()")

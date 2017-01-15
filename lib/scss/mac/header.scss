@@ -42,7 +42,7 @@
     }
   }
 
-  button {
+  .button-add-project {
     font-size: 12px;
     background: none;
     border: none;
@@ -50,18 +50,6 @@
     margin-left: 20px;
     margin-left: 28px;
     text-indent: -1px;
-
-    input {
-      &[type='file'] {
-        height: 40px;
-        left: -15px;
-        max-width: 100px;
-        min-width: 100%;
-        opacity: 0;
-        position: relative;
-        top: -20px;
-      }
-    }
 
     i {
       color: $color-primary;
@@ -78,10 +66,16 @@
   .button-global {
 
     font-size: 12px;
-    height: 21px;
+    height: 20.5px;
+    padding: 0 4px;
+    margin-top: 4px;
+    line-height: 21px;
+    margin-right: -15px;
 
     i {
-      font-size: 14px;
+      color: $color-primary;
+      position: relative;
+      top: -1.5px;
     }
   }
 }

@@ -16,12 +16,12 @@
           | Update npm
       = " "
       = " "
-      span.button-global(title="Enable ndm in global folder",  ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
+      button.button-global(type="button", title="Enable ndm in global folder",  ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
         i.fa.fa-globe.color-primary
         = " "
         | Enable
     .col-xs-9
-      button(title="Add project to be managed", class="pull-left", ng-click="shell.openChooser()")
+      button(title="Add project to be managed",type="button",  class="pull-left button-add-project", ng-click="shell.openChooser()")
         i.fa.fa-plus-circle
         | Add Project
       a.pull-right(title="Add Packages", ng-show="topMenu.projectPath", ng-click="topMenu.activeClickedLink('1');", ng-class="{'active': topMenu.activeLink === '1'}")

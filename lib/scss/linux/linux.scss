@@ -1,0 +1,15 @@
+* {
+  outline: none;
+  text-decoration: none;
+  cursor: default;
+
+  &:hover, &:active, &:focus {
+    outline: none;
+    text-decoration: none;
+    cursor: default;
+  }
+}
+
+body, html {
+  cursor: default;
+}

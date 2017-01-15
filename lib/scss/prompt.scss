@@ -129,10 +129,15 @@
 }
 
 .prompt-history-item {
-  line-height: 22px;
+  line-height: 23px;
   width: calc(100% - 2px);
   margin: 0 1px 0 1px;
 
+  &:hover {
+    &:not(.active) {
+      background: $bg-lighter;
+    }
+  }
   &:first-child {
     margin-top: 1px;
   }
@@ -144,6 +149,10 @@
   i {
     font-size: 13px;
     color: $color-primary;
+
+    &.fa-caret-right {
+      color: $color-222;
+    }
   }
 }
 

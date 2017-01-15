@@ -1,10 +1,8 @@
 * {
-  cursor: default;
   outline: none;
   text-decoration: none;
 
   &:hover, &:active, &:focus {
-    cursor: default;
     outline: none;
     text-decoration: none;
   }
@@ -12,27 +10,26 @@
 
 body, html {
   -webkit-user-select: none;
-  color: $color-default;
-  cursor: default;
+  color: $color-222;
   font-family: $default-font-family;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 13px;
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
-  background: $bg-primary;
 }
 
 a {
   cursor: default;
   outline: none;
+  color: $color-222;
   text-decoration: none;
 
   &:hover, &:active, &:focus {
     cursor: default;
     outline: none;
     text-decoration: none;
+    color: $color-222;
   }
 }
 
@@ -51,8 +48,6 @@ pre {
 }
 
 button {
-  background: none;
-  border: none;
 
   i {
     font-size: 13px;
@@ -71,7 +66,7 @@ button {
 input {
 
   &:focus {
-    box-shadow: 0 0 1px $color-primary;
+    box-shadow: 0 0 4px $color-royalblue;
   }
 
   &[disabled] {
@@ -84,11 +79,13 @@ input {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $color-white;
+  color: $color-666;
   font-weight: bold;
 }
 
 b, strong {
 
-  font-weight: 400;
+  font-weight: 600;
 }
+
+//RESET BUTTONS DUE BOOTSTRAP STYLE

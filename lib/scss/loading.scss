@@ -1,12 +1,17 @@
 body {
   .app-big-loading {
-    position: absolute;
-    top: 40vh;
+    position: fixed;
+    left: 0;
+    top: 0;
     text-align: center;
-    width: 100%;
+    background: $bg-light;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 99999;
 
     img {
       width: 40px;
+      margin-top: 45vh;
       opacity: .6;
     }
   }
@@ -37,7 +42,6 @@ body {
   &.freezed {
     .page {
       opacity: .5;
-      -webkit-filter: blur(3px);
     }
     * {
       pointer-events: none;

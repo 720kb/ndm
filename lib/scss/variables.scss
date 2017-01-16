@@ -33,7 +33,7 @@ $bg-muted-more: rgba(0, 0, 0, .15);
 $bg-muted-invisible: rgba(0, 0, 0, .065);
 $bg-error: #e81616;
 $bg-table-row-highlight: $color-positive;
-$bg-progress: repeating-linear-gradient(135deg, $color-stripes-one, $color-stripes-one 5px, $color-stripes-two 5px, $color-stripes-two 10px);
+$bg-progress: repeating-linear-gradient(90deg, $color-stripes-one, $color-stripes-one 5px, $color-stripes-two 5px, $color-stripes-two 10px);
 $bg-progress-secondary: repeating-linear-gradient(135deg, $color-primary, $color-primary 5px, #147ada 5px, #147ada 10px);
 $bg-progress-minor: repeating-linear-gradient(135deg, $color-error, $color-error 5px, #c71212 5px, #c71212 10px);
 $bg-tags: #d7ebff;

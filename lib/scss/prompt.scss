@@ -31,14 +31,12 @@
       opacity: .5;
     }
   }
-
-  .prompt {
-    &:not(.window) {
-      button {
-        width: 56px;
-      }
+  &:not(.dialog-window) {
+    button {
+      width: 56px;
     }
   }
+
 
   input {
 
@@ -56,10 +54,6 @@
         width: 48%;
         margin-right: 0;
       }
-    }
-
-    &[type='checkbox'] {
-      border-color: rgba(0, 0, 0, .35);
     }
   }
 

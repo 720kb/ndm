@@ -32,11 +32,12 @@
     }
   }
   &:not(.dialog-window) {
+    input {
 
-    i {
-      vertical-align: text-bottom;
+      &[type="checkbox"] {
+        vertical-align: text-bottom;
+      }
     }
-
     button {
       width: 56px;
       vertical-align: bottom;

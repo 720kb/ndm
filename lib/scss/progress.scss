@@ -1,29 +1,34 @@
 .left-progress {
   animation: loadingStripes  1.3s linear infinite;
-  background: $bg-progress-secondary;
-  border-radius: 20px;
   width: 90%;
-  font-size: 10px;
+  font-size: 11px;
   margin: 0 auto;
   line-height: 6px;
-  padding: 0 1.5%;
-  margin-top: 20px;
+  margin-bottom: 9px;
+  transition: opacity .4s linear;
 
-  &.left-progress-minor {
-    background: $bg-progress-minor;
+  small {
+    font-size: 10.5px;
+  }
+  &:hover {
+    opacity: .7;
   }
 
   &:first-child {
-    margin-top: 16px;
+    margin-top: 3px;
   }
 
-  div {
-    color: $color-444;
-    position: relative;
-    top: -11px;
+  .left-progress-loading {
+    height: 6px;
+    margin-top: 6px;
+    background: $bg-progress-secondary;
+    border-radius: 3px;
+  }
 
-    &:last-child {
-      margin-bottom: 10px;
+  &.left-progress-minor {
+
+    .left-progress-loading {
+      background: $bg-progress-minor;
     }
   }
 }

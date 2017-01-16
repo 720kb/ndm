@@ -4,6 +4,11 @@
   width: 100%;
   background: $bg-header;
 
+  img {
+    width: 23px;
+    margin-top: 3px;
+  }
+
   a {
     padding: 5px 0 4px 0;
 
@@ -16,30 +21,10 @@
       line-height: 0;
     }
 
-    span, div {
-
-      &:not(.badge-version) {
-        display: none;
-      }
-    }
-
     &:active, &.active {
       i {
         color: $color-primary;
       }
-    }
-  }
-
-  .badge-version {
-    font-size: 9.5px;
-    vertical-align: super;
-    color: $color-666;
-    margin-left: -3px;
-
-    i {
-      margin-right: -3px;
-      font-size: 11px;
-      color: $color-primary;
     }
   }
 
@@ -64,19 +49,32 @@
     }
   }
 
-  .button-global {
+  .badge-version {
+    font-size: 9.5px;
+    color: $color-666;
+    margin-top: 3px;
+    margin-left: 5%;
 
-    font-size: 12px;
+    i {
+      margin-left: -5px;
+      margin-right: -5px;
+      font-size: 11px;
+      color: $color-primary;
+    }
+  }
+
+  .button-global, .button-update {
+
+    font-size: 11.5px;
     height: 20.5px;
     padding: 0 2px;
     margin-top: 4.5px;
-    line-height: 21px;
-    margin-left: 7px;
+    line-height: 20.5px;
 
     i {
       color: $color-primary;
       position: relative;
-      top: -1px;
+      top: -1.5px;
     }
   }
 }

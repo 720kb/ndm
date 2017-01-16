@@ -9,13 +9,13 @@
         span(ng-show="!shell.globalDisabled", class="badge-version color-black pull-left")
           b(title="New npm version available", ng-show="topMenu.npmLatestVersionBadge && (topMenu.npmLatestVersionBadge !== topMenu.npmCurrentVersionBadge)")
             i.fa.fa-caret-up
-            | {{topMenu.npmLatestVersionBadge}}
+            | v{{topMenu.npmLatestVersionBadge}}
           b(title="Current npm version", ng-show="topMenu.npmCurrentVersionBadge && (!topMenu.npmLatestVersionBadge || (topMenu.npmLatestVersionBadge === topMenu.npmCurrentVersionBadge))")
-            | {{topMenu.npmCurrentVersionBadge}}
+            | v{{topMenu.npmCurrentVersionBadge}}
       button.button-global(type="button", title="Enable ndm in global folder",  ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
         i.fa.fa-globe.color-primary
         | Enable
-      button.button-update(type="button", title="Update npm", ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()",  ng-show="!shell.globalDisabled")
+      button.button-update(type="button", title="Update npm", ng-show="!shell.globalDisabled", ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()")
         i.fa.fa-history
         | Update
     .col-xs-8

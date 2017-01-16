@@ -1,5 +1,15 @@
 body {
+  .app-big-loading {
+    position: absolute;
+    top: 40vh;
+    text-align: center;
+    width: 100%;
 
+    img {
+      width: 40px;
+      opacity: .6;
+    }
+  }
   &.loading  {
 
     &:hover {
@@ -25,11 +35,18 @@ body {
   }
 
   &.freezed {
-
-    opacity: .5;
-
+    .page {
+      opacity: .5;
+      -webkit-filter: blur(3px);
+    }
     * {
       pointer-events: none;
+    }
+  }
+
+  &.ready {
+    .app-big-loading {
+      display: none;
     }
   }
 }

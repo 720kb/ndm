@@ -3,7 +3,7 @@
   include ./install-new-package-version.pug
   include ./install-new-package.pug
   .row
-    .col-xs-3
+    .col-xs-4
       span.action-link-disabled(ng-class="{'action-link-disabled': shell.globalDisabled, 'action-link-enabled': !shell.globalDisabled}")
         img(src="img/npm-logo-square.svg", class="pull-left")
         span(ng-show="!shell.globalDisabled", class="badge-version color-black pull-left")
@@ -12,13 +12,13 @@
             | {{topMenu.npmLatestVersionBadge}}
           b(title="Current npm version", ng-show="topMenu.npmCurrentVersionBadge && (!topMenu.npmLatestVersionBadge || (topMenu.npmLatestVersionBadge === topMenu.npmCurrentVersionBadge))")
             | {{topMenu.npmCurrentVersionBadge}}
-      button.button-global.pull-right(type="button", title="Enable ndm in global folder",  ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
+      button.button-global(type="button", title="Enable ndm in global folder",  ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
         i.fa.fa-globe.color-primary
         | Enable
-      button.button-update.pull-right(type="button", title="Update npm", ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()",  ng-show="!shell.globalDisabled")
+      button.button-update(type="button", title="Update npm", ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()",  ng-show="!shell.globalDisabled")
         i.fa.fa-history
         | Update
-    .col-xs-9
+    .col-xs-8
       button(title="Add project to be managed",type="button",  class="pull-left button-add-project", ng-click="shell.openChooser()")
         i.fa.fa-plus-circle
         | Add project

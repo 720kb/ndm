@@ -3,15 +3,14 @@
   width: 90%;
   font-size: 11px;
   margin: 0 auto;
-  line-height: 6px;
+  line-height: 11px;
   margin-bottom: 9px;
-  transition: opacity .4s linear;
 
   small {
     font-size: 10.5px;
-  }
-  &:hover {
-    opacity: .7;
+    i {
+      font-size: 9px;
+    }
   }
 
   &:first-child {

@@ -12,6 +12,12 @@ a, a *{
 .link:hover {
   color: royalblue;
 }
+.tablet {
+  display: none;
+}
+.show-mobile-tablet {
+  display: none;
+}
 *.hide {
   display:none !important;
 }
@@ -183,6 +189,7 @@ small , small *, *.font-small{
 }
 .github-infos * {
   font-size: 18px;
+  vertical-align: bottom;
 }
 .color-twitter{
   color: #1882FC;
@@ -198,6 +205,9 @@ small , small *, *.font-small{
   }
   .hide-mobile-tablet {
     display: none;
+  }
+  .show-mobile-tablet {
+    display: inherit;
   }
   .line-tablet {
     margin:0 auto;
@@ -241,7 +251,7 @@ small , small *, *.font-small{
     display:none;
   }
   .tablet {
-    display: initial;
+    display: inherit;
   }
 }
 .bg-muted-more {

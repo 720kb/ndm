@@ -38,19 +38,13 @@ small , small *, *.font-small{
 .color-red {
   color: #ff7a7a;
 }
-.header {
-  overflow: hidden;
-}
 .screenshot {
   z-index: 9999;
   position: relative;
   max-width: 774px;
-  margin-top: -60px;
+  margin-top: -30px;
   left: -20%;
-  bottom: -4px;
-}
-.screenshot.show{
-  animation: fadeImgEffect .2s ease-in-out;
+  margin-bottom: -120px;
 }
 .left-column {
   width: 44%;
@@ -282,9 +276,6 @@ small , small *, *.font-small{
   .top-menu a {
     margin-left: 5px;
   }
-  .screenshot {
-    margin-top: 0;
-  }
   .slogan h1 {
     font-size: 20px;
   }
@@ -295,14 +286,4 @@ small , small *, *.font-small{
 }
 [data-balloon]:after, [data-balloon]:before{
   background: red;
-}
-
-/*Animations*/
-@-webkit-keyframes fadeImgEffect{
-  0% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }

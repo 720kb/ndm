@@ -11,6 +11,20 @@
     i {
       font-size: 9px;
     }
+    &.running-end {
+      display: none;
+    }
+  }
+
+  &:hover {
+    small {
+      &.running-name {
+        display: none;
+      }
+      &.running-end {
+        display: inherit;
+      }
+    }
   }
 
   &:first-child {

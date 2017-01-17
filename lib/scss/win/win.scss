@@ -3,7 +3,7 @@ body, html {
   font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
 
-a, button {
+a, button, .fake-link {
   cursor: pointer;
   &:hover, &:active, &:focus {
     cursor: pointer;

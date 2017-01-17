@@ -18,26 +18,54 @@ div(ng-controller='LeftBarController as leftBar')
             b {{item.dirName}}
           button(ng-click='leftBar.deleteProject(item, $event)')
             i.fa.fa-times-circle-o
-        div
-          .left-progress.left-progress-minor.color-white(ng-repeat="runningScript in leftBar.npmRunningScriptsProject[item.path] track by $index")
-            div
+        div(ng-init="leftBar.cancelProgressActionId = false;")
+          .left-progress.left-progress-minor.color-white.fake-link(ng-repeat="runningScript in leftBar.npmRunningScriptsProject[item.path] track by $index")
+            small.running-name
               | &#8627; Running: {{runningScript}}
-          .left-progress.color-white(ng-show="leftBar.npmInstallingProjects[item.dirName]")
-            div
+            small.running-end(ng-click="leftBar.deleteRunningScript(item.path, runningScript)")
+              i.fa.fa-times-circle-o
+              | dismiss
+            .left-progress-loading
+          .left-progress.color-white.fake-link(ng-show="leftBar.npmInstallingProjects[item.dirName]")
+            small.running-name
               | &#8627; Installing
+            small.running-end(ng-click="leftBar.deleteInstallingProjects(item.dirName)")
+              i.fa.fa-times-circle-o
+              | dismiss
+            .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmReinstallingProjects[item.dirName]")
-            div
+            small.running-name
               | &#8627; Reinstalling
+            small.running-end(ng-click="leftBar.deleteReinstallingProjects(item.dirName)")
+              i.fa.fa-times-circle-o
+              | dismiss
+            .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmBuildingProjects[item.dirName]")
-            div
+            small.running-name
               | &#8627; Building
+            small.running-end(ng-click="leftBar.deleteBuildingProjects(item.dirName)")
+              i.fa.fa-times-circle-o
+              | dismiss
+            .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmRebuildingProjects[item.dirName]")
-            div
+            small.running-name
               | &#8627; Rebuilding
+            small.running-end(ng-click="leftBar.deleteRebuildingProjects(item.dirName)")
+              i.fa.fa-times-circle-o
+              | dismiss
+            .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmPruningProjects[item.dirName]")
-            div
-              | &#8627; Pruning
+            small.running-name
+            | &#8627; Pruning
+            small.running-end(ng-click="leftBar.deletePruningProjects(item.dirName)")
+              i.fa.fa-times-circle-o
+              | dismiss
+            .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmDedupingProjects[item.dirName]")
-            div
-              | &#8627; Deduping
+            small.running-name
+            | &#8627; Deduping
+            small.running-end(ng-click="leftBar.deleteDedupingProjects(item.dirName)")
+              i.fa.fa-times-circle-o
+              | dismiss
+            .left-progress-loading
     br

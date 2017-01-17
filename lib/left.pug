@@ -23,49 +23,49 @@ div(ng-controller='LeftBarController as leftBar')
             div(ng-mouseover="leftBar.cancelProgressActionId = runningScript", ng-mouseleave="leftBar.cancelProgressActionId = false;")
               small(ng-show="leftBar.cancelProgressActionId !== runningScript")
                 | &#8627; Running: {{runningScript}}
-              small(ng-click="this.npmRunningScriptsProject[item.dirName].splice(this.npmRunningScriptsProject[item.dirName].indexOf(runningScript), 1);", ng-show="leftBar.cancelProgressActionId === runningScript")
+              small(ng-click="leftBar.deleteRunningScript(item.path, runningScript)", ng-show="leftBar.cancelProgressActionId === runningScript")
                 i.fa.fa-times-circle-o
                 | end
               .left-progress-loading
           .left-progress.color-white.fake-link(ng-show="leftBar.npmInstallingProjects[item.dirName]", ng-mouseover="leftBar.cancelProgressActionId = $index", ng-mouseleave="leftBar.cancelProgressActionId = false;")
             small(ng-show="leftBar.cancelProgressActionId !== $index")
               | &#8627; Installing
-            small(ng-click="delete this.npmInstallingProjects[item.dirName];", ng-show="leftBar.cancelProgressActionId === $index")
+            small(ng-click="leftBar.deleteInstallingProjects(item.dirName)", ng-show="leftBar.cancelProgressActionId === $index")
               i.fa.fa-times-circle-o
               | end
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmReinstallingProjects[item.dirName]", ng-mouseover="leftBar.cancelProgressActionId = $index", ng-mouseleave="leftBar.cancelProgressActionId = false;")
             small(ng-show="leftBar.cancelProgressActionId !== $index")
               | &#8627; Reinstalling
-            small(ng-click="delete this.npmReinstallingProjects[item.dirName];", ng-show="leftBar.cancelProgressActionId === $index")
+            small(ng-click="leftBar.deleteReinstallingProjects(item.dirName)", ng-show="leftBar.cancelProgressActionId === $index")
               i.fa.fa-times-circle-o
               | end
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmBuildingProjects[item.dirName]", ng-mouseover="leftBar.cancelProgressActionId = $index", ng-mouseleave="leftBar.cancelProgressActionId = false;")
             small(ng-show="leftBar.cancelProgressActionId !== $index")
               | &#8627; Building
-            small(ng-click="delete this.npmBuildingProjects[item.dirName];", ng-show="leftBar.cancelProgressActionId === $index")
+            small(ng-click="leftBar.deleteBuildingProjects(item.dirName)", ng-show="leftBar.cancelProgressActionId === $index")
               i.fa.fa-times-circle-o
               | end
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmRebuildingProjects[item.dirName]", ng-mouseover="leftBar.cancelProgressActionId = $index", ng-mouseleave="leftBar.cancelProgressActionId = false;")
             small(ng-show="leftBar.cancelProgressActionId !== $index")
               | &#8627; Rebuilding
-            small(ng-click="delete this.npmRebuildingProjects[item.dirName];", ng-show="leftBar.cancelProgressActionId === $index")
+            small(ng-click="leftBar.deleteRebuildingProjects(item.dirName)", ng-show="leftBar.cancelProgressActionId === $index")
               i.fa.fa-times-circle-o
               | end
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmPruningProjects[item.dirName]", ng-mouseover="leftBar.cancelProgressActionId = $index", ng-mouseleave="leftBar.cancelProgressActionId = false;")
             small(ng-show="leftBar.cancelProgressActionId !== $index")
             | &#8627; Pruning
-            small(ng-click="delete this.npmPruningProjects[item.dirName];", ng-show="leftBar.cancelProgressActionId === $index")
+            small(ng-click="leftBar.deletePruningProjects(item.dirName)", ng-show="leftBar.cancelProgressActionId === $index")
               i.fa.fa-times-circle-o
               | end
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmDedupingProjects[item.dirName]", ng-mouseover="leftBar.cancelProgressActionId = $index", ng-mouseleave="leftBar.cancelProgressActionId = false;")
             small(ng-show="leftBar.cancelProgressActionId !== $index")
             | &#8627; Deduping
-            small(ng-click="delete this.npmDedupingProjects[item.dirName];", ng-show="leftBar.cancelProgressActionId === $index")
+            small(ng-click="leftBar.deleteDedupingProjects(item.dirName)", ng-show="leftBar.cancelProgressActionId === $index")
               i.fa.fa-times-circle-o
               | end
             .left-progress-loading

@@ -1,4 +1,4 @@
-div.dialog.dialog-window(ng-if="topMenu.activeLink === 'update'", ng-resizable)
+div.dialog.dialog-window(ng-if="topMenu.activeLink === 'update' && !shell.globalDisabled", ng-resizable)
   div(contenteditable="true", class="window", ng-autoscroll)
     div(class="col-md-12 logs")
       b
@@ -18,6 +18,6 @@ div.dialog.dialog-window(ng-if="topMenu.activeLink === 'update'", ng-resizable)
   div(class="prompt-window-options")
     img(ng-show="!log.logsFinished", src='img/loading.svg', width='13')
     i(class="fa fa-check color-primary", ng-show="log.logsFinished")
-    button(ng-show="log.logsFinished", ng-click="topMenu.activeLink = false")
+    button(ng-click="topMenu.activeLink = false")
       | Close
     div.prompt-resize-holder

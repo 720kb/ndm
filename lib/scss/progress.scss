@@ -3,14 +3,14 @@
   width: 90%;
   font-size: 11px;
   margin: 0 auto;
-  line-height: 9px;
-  margin-bottom: 9px;
+  line-height: 11px;
+  margin-top: 5px;
 
   small {
-    height: 10px;
-    max-height: 10px;
+    font-size: 11px;
+    line-height: 11px;
+    max-height: 11px;
     overflow: hidden;
-    font-size: 10.5px;
     i {
       font-size: 9px;
     }
@@ -30,8 +30,8 @@
     }
   }
 
-  &:first-child {
-    margin-top: 5px;
+  &:last-child {
+    margin-bottom: 9px;
   }
 
   .left-progress-loading {

@@ -25,6 +25,12 @@
     margin-left: 6px;
     line-height: 16px;
     margin-top: 2px;
+    max-height: 21px;
+
+    img {
+      width: 13px;
+      vertical-align: baseline;
+    }
 
     &.disabled {
       pointer-events: none;
@@ -186,7 +192,7 @@
   }
 
   img {
-    width: 16px;
+    width: 13px;
   }
 
   .prompt-resize-holder {

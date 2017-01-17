@@ -23,7 +23,7 @@ div(ng-controller='LeftBarController as leftBar')
             div(ng-mouseover="leftBar.cancelProgressActionId = runningScript", ng-mouseleave="leftBar.cancelProgressActionId = false;")
               small(ng-show="leftBar.cancelProgressActionId !== runningScript")
                 | &#8627; Running: {{runningScript}}
-              small(ng-show="leftBar.cancelProgressActionId === runningScript")
+              small(ng-click="this.npmRunningScriptsProject[item.dirName].splice(this.npmRunningScriptsProject[item.dirName].indexOf(runningScript), 1);", ng-show="leftBar.cancelProgressActionId === runningScript")
                 i.fa.fa-times-circle-o
                 | end
               .left-progress-loading

@@ -129,8 +129,7 @@
     overflow: auto;
     background: white;
     font-size: 12.5px;
-    margin: 0 0 0 0;
-    margin-top: -4px;
+    margin: 0 auto;
 
     .logs {
       padding: 6px;
@@ -190,17 +189,21 @@
   text-align: center;
 }
 .prompt-window-options {
-  padding: 0 4px;
+  padding: 0 6px;
   width: 100%;
   display: inline-block;
-  background: rgba(0,0,0, .05);
-  margin: 0;
+  background: rgba(0,0,0,0.03);
+  margin: 0 auto;
+  line-height: 25px;
+  float: none;
+  height: 27px;
 
   button {
     height: 20px;
     line-height: 16px;
     font-size: 12.5px;
     float: right;
+    margin-top: 2.5px;
   }
 
   img {

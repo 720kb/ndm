@@ -112,24 +112,26 @@
   }
 
   &.dialog-window {
-    height: calc(100vh - 23px - 30px);
+    height: calc(100vh - 23px - 33px);
     position: fixed;
     left: 200px;
     border: 0;
     box-shadow: none;
-    top: 30px;
+    top: 31px;
     width: calc(100vw - 199px);
     padding: 0;
     border-radius: 0;
+    background: white;
   }
 
   .window {
     float: none;
-    height: calc(100% - 23px);
+    height: calc(100% - 30px);
     overflow: auto;
     background: white;
     font-size: 12.5px;
     margin: 0 auto;
+    margin-top: -4px;
 
     .logs {
       padding: 6px;
@@ -142,16 +144,13 @@
 
 .prompt-history-item {
   line-height: 23px;
-  width: calc(100% - 2px);
-  margin: 0 1px 0 1px;
+  width: 100%;
+  margin: 0 auto;
 
   &:hover {
     &:not(.active) {
       background: $bg-lighter;
     }
-  }
-  &:first-child {
-    margin-top: 1px;
   }
 
   &.active {
@@ -192,7 +191,7 @@
   padding: 0 6px;
   width: 100%;
   display: inline-block;
-  background: rgba(0,0,0,0.03);
+  background: rgba(0, 0, 0, .05);
   margin: 0 auto;
   line-height: 25px;
   float: none;

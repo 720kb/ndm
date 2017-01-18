@@ -1,18 +1,4 @@
-div.dialog.dialog-window(ng-if="leftBar.showHistoryPrompt", ng-resizable, ng-init="leftBar.showSnapshotStatus = []; leftBar.selectedSnapshot = false;")
-  div(class="window")
-    div(class="prompt-window-holder", ng-if="!leftBar.projectHistory || leftBar.projectHistory && leftBar.projectHistory.length <= 0")
-      | You have no snapshots for this project.
-    div(class="prompt-history-item", ng-class="{'active': leftBar.selectedSnapshot === item}", ng-repeat="item in leftBar.projectHistory | orderBy : $index : -1", ng-click="leftBar.selectedSnapshot = item;")
-      div
-        a(ng-click="leftBar.showSnapshotStatus[item.datetime] = true;", ng-show="!leftBar.showSnapshotStatus[item.datetime]")
-          i(class="fa fa-caret-right color-black")
-        a(ng-click="leftBar.showSnapshotStatus[item.datetime] = false;", ng-show="leftBar.showSnapshotStatus[item.datetime]")
-          i(class="fa fa-caret-down color-black")
-        i(class="fa fa-database color-primary")
-        = " "
-        | {{item.datetime}}
-        div(class="prompt-history-status", ng-if="leftBar.showSnapshotStatus[item.datetime]", ng-ace-editor, ng-ace-editor-readonly="true" ng-ace-editor-mode="json", ng-ace-editor-theme="xcode", ng-model="aceFileModel", ng-ace-source="{{item.status}}")
-          div(class="ng-ace-editor")
+div.dialog.dialog-window(ng-if="leftBar.showHistoryPrompt", ng-init="leftBar.showSnapshotStatus = []; leftBar.selectedSnapshot = false;")
   div(class="prompt-window-options")
     span(class="prompt-window-infos", title="{{leftBar.rightClickedProject.path}}")
       img(src="img/loading.svg", width="13", ng-show="leftBar.restoringSnapshot[leftBar.rightClickedProject.path] && !leftBar.restoredSnapshot[leftBar.rightClickedProject.path]")
@@ -27,4 +13,17 @@ div.dialog.dialog-window(ng-if="leftBar.showHistoryPrompt", ng-resizable, ng-ini
         | Restore
       span(ng-show="leftBar.restoringSnapshot[leftBar.rightClickedProject.path]")
         | Restoring
-    div.prompt-resize-holder
+  div(class="window")
+    div(class="prompt-window-holder", ng-if="!leftBar.projectHistory || leftBar.projectHistory && leftBar.projectHistory.length <= 0")
+      | You have no snapshots for this project.
+    div(class="prompt-history-item", ng-class="{'active': leftBar.selectedSnapshot === item}", ng-repeat="item in leftBar.projectHistory | orderBy : $index : -1", ng-click="leftBar.selectedSnapshot = item;")
+      div
+        a(ng-click="leftBar.showSnapshotStatus[item.datetime] = true;", ng-show="!leftBar.showSnapshotStatus[item.datetime]")
+          i(class="fa fa-caret-right color-black")
+        a(ng-click="leftBar.showSnapshotStatus[item.datetime] = false;", ng-show="leftBar.showSnapshotStatus[item.datetime]")
+          i(class="fa fa-caret-down color-black")
+        i(class="fa fa-database color-primary")
+        = " "
+        | {{item.datetime}}
+        div(class="prompt-history-status", ng-if="leftBar.showSnapshotStatus[item.datetime]", ng-ace-editor, ng-ace-editor-readonly="true" ng-ace-editor-mode="json", ng-ace-editor-theme="xcode", ng-model="aceFileModel", ng-ace-source="{{item.status}}")
+          div(class="ng-ace-editor")

@@ -11,7 +11,10 @@
   width: 480px;
   z-index: 9999;
   top: 0;
-  animation: promptSliding .13s ease;
+
+  &:not(.dialog-window) {
+    animation: promptSliding .13s ease;
+  }
 
   i {
     margin-left: 8px;
@@ -112,41 +115,45 @@
   }
 
   &.dialog-window {
-    height: 250px;
+    height: calc(100vh - 23px - 33px);
+    position: fixed;
+    left: 200px;
+    border: 0;
+    box-shadow: none;
+    top: 31px;
+    width: calc(100vw - 199px);
+    padding: 0;
+    border-radius: 0;
+    background: white;
   }
 
   .window {
-    margin: 5px 3px;
     float: none;
-    height: calc(100% - 30px);
+    height: calc(100% - 24px);
     overflow: auto;
-    box-shadow: 1px 1px rgba(0, 0, 0, .25) inset, -1px -1px rgba(0, 0, 0, .13) inset;
     background: white;
-    border-radius: .5px;
     font-size: 12.5px;
+    margin: 0 auto;
+    margin-top: -4px;
 
     .logs {
       padding: 6px;
     }
     .ng-ace-editor {
       height: 100%;
-      margin: 1px;
     }
   }
 }
 
 .prompt-history-item {
   line-height: 23px;
-  width: calc(100% - 2px);
-  margin: 0 1px 0 1px;
+  width: 100%;
+  margin: 0 auto;
 
   &:hover {
     &:not(.active) {
       background: $bg-lighter;
     }
-  }
-  &:first-child {
-    margin-top: 1px;
   }
 
   &.active {
@@ -184,11 +191,28 @@
   text-align: center;
 }
 .prompt-window-options {
-  padding: 1.5px 4px;
+  padding: 0 6px;
+  width: 100%;
+  display: inline-block;
+  background: rgba(0, 0, 0, .05);
+  margin: 0 auto;
+  line-height: 25px;
+  float: none;
+  height: 27px;
+
+  i {
+    margin-left: 0;
+    color: $color-777;
+    margin-right: 5px;
+    font-size: 13px;
+  }
 
   button {
+    height: 20px;
+    line-height: 16px;
+    font-size: 12.5px;
     float: right;
-    margin-top: -3px;
+    margin-top: 2.5px;
   }
 
   img {
@@ -206,13 +230,5 @@
     &:hover, &:focus, &:active {
       cursor: ns-resize;
     }
-  }
-
-  i {
-    float: left;
-    position: relative;
-    left: -13px;
-    color: $color-777;
-    text-shadow: 0 1px white;
   }
 }

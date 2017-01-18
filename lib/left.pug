@@ -56,14 +56,14 @@ div(ng-controller='LeftBarController as leftBar')
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmPruningProjects[item.dirName]")
             small.running-name
-            | &#8627; Pruning
+              | &#8627; Pruning
             small.running-end(ng-click="leftBar.deletePruningProjects(item.dirName)")
               i.fa.fa-times-circle-o
               | dismiss
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmDedupingProjects[item.dirName]")
             small.running-name
-            | &#8627; Deduping
+              | &#8627; Deduping
             small.running-end(ng-click="leftBar.deleteDedupingProjects(item.dirName)")
               i.fa.fa-times-circle-o
               | dismiss

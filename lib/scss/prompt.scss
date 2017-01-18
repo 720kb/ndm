@@ -11,7 +11,10 @@
   width: 480px;
   z-index: 9999;
   top: 0;
-  animation: promptSliding .13s ease;
+
+  &:not(.dialog-window) {
+    animation: promptSliding .13s ease;
+  }
 
   i {
     margin-left: 8px;
@@ -197,6 +200,13 @@
   float: none;
   height: 27px;
 
+  i {
+    margin-left: 0;
+    color: $color-777;
+    margin-right: 5px;
+    font-size: 13px;
+  }
+
   button {
     height: 20px;
     line-height: 16px;
@@ -220,10 +230,5 @@
     &:hover, &:focus, &:active {
       cursor: ns-resize;
     }
-  }
-
-  i {
-    float: left;
-    color: $color-777;
   }
 }

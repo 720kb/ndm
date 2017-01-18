@@ -101,16 +101,31 @@
   background: #f0f0f0;
   box-shadow: 0 -1px $bg-muted-more;
 
+  .row {
+    padding-top: 3px;
+  }
+
   .information {
     margin-top: 3px;
+    height: 17px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     -webkit-user-select: text;
     width: 100%;
+    float: none;
+    clear: both;
 
-    &:first-child {
-      margin-top: 8px;
+    .info-x2 {
+      width: 47%;
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      &:nth-child(even) {
+        margin-left: 3%;
+      }
     }
 
     b {

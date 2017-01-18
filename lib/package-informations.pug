@@ -1,28 +1,38 @@
 div.row
   div.col-md-12
     div.information
+      span.info-x2
+        b
+          | Name:
+        = " "
+        | {{content.packageViewInfos.name || '-'}}
+      span.info-x2
+        b
+          | Homepage:
+        = " "
+        a(title="Open in browser", ng-if="content.packageViewInfos.homepage", ng-click="shell.openBrowserLink(content.packageViewInfos.homepage)")
+          | {{ content.packageViewInfos.homepage }}
+        span(ng-if="!content.packageViewInfos.homepage")
+          | -
+    div.information(title="{{content.packageViewInfos.description}}")
       b
-        | Name:
+        | Description:
       = " "
-      | {{content.packageViewInfos.name || '-'}}
-    div.information
+      | {{content.packageViewInfos.description || '-'}}
+    div.information(title="Package dependencies")
       b
-        | Homepage:
+        | Dependencies:
       = " "
-      a(title="Open in browser", ng-if="content.packageViewInfos.homepage", ng-click="shell.openBrowserLink(content.packageViewInfos.homepage)")
-        | {{ content.packageViewInfos.homepage }}
-      span(ng-if="!content.packageViewInfos.homepage")
+      span(ng-repeat="(dep, value) in content.packageViewInfos.dependencies")
+        | {{ dep }},
+        = " "
+      span(ng-if="!content.packageViewInfos.dependencies || content.packageViewInfos.dependencies.length <= 0")
         | -
-    div.information
+    div.information(title="Package repository url")
       b
         | Repository:
       = " "
       | {{content.packageViewInfos.repository.url || '-'}}
-    div.information
-      b
-        | Author:
-      = " "
-      | {{content.packageViewInfos.author || '-'}}
     div.information
       b
         | Issues:
@@ -33,18 +43,27 @@ div.row
         | -
     div.information
       b
-        | License:
+        | Url:
       = " "
-      span(ng-if="content.packageViewInfos.license && !content.packageViewInfos.license.type")
-        | {{content.packageViewInfos.license}}
+      a(title="Open in browser", ng-init="content.pkgUrlToNpmJsWebsite = 'https://npmjs.com/package/' + content.packageViewInfos.name", ng-if="content.packageViewInfos.name", ng-click="shell.openBrowserLink(content.pkgUrlToNpmJsWebsite)")
+        | {{ content.pkgUrlToNpmJsWebsite }}
+      span(ng-if="!content.packageViewInfos.name")
+        | -
+    div.information
+      span.info-x2(title="Package author")
+        b
+          | Author:
+        = " "
+        | {{content.packageViewInfos.author || '-'}}
+      span.info-x2(title="Package license")
+        b
+          | License:
+        = " "
+        span(ng-if="content.packageViewInfos.license && !content.packageViewInfos.license.type")
+          | {{content.packageViewInfos.license}}
       span(ng-if="content.packageViewInfos.license.type")
         | {{content.packageViewInfos.license.type}}
       a(title="Open in browser", ng-if="content.packageViewInfos.license.url", ng-click="shell.openBrowserLink(content.packageViewInfos.license.url)")
         | content.packageViewInfos.homepage
       span(ng-if="!content.packageViewInfos.license && !content.packageViewInfos.license.url && !content.packageViewInfos.license.type")
         | -
-    div.information(title="{{content.packageViewInfos.description}}")
-      b
-        | Description:
-      = " "
-      | {{content.packageViewInfos.description || '-'}}

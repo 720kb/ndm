@@ -4,7 +4,11 @@
   font-size: 11px;
   margin: 0 auto;
   line-height: 11px;
-  margin-top: 5px;
+  margin-bottom: 5px;
+
+  &:first-child {
+    margin-top: 3px;
+  }
 
   small {
     font-size: 11px;
@@ -28,10 +32,6 @@
         display: inherit;
       }
     }
-  }
-
-  &:last-child {
-    margin-bottom: 9px;
   }
 
   .left-progress-loading {

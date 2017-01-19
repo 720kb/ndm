@@ -12,7 +12,7 @@ div(ng-controller='LeftBarController as leftBar')
       h6.col-xs-12(ng-if='shell.projects.length > 0')
         | Projects
       div(ng-repeat='item in shell.projects track by $index')
-        a.row.project(title="{{ item.shrinkwrap ? 'Shrinkwrap enabled' : item.path }}", ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global, 'shrinkwrapped': item.shrinkwrap || !leftBar.shrinkwrappedProjects[item]}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
+        a.row.project(title="{{ item.shrinkwrap === true ? 'Shrinkwrap enabled' : item.path }}", ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global, 'shrinkwrapped': item.shrinkwrap && item.shrinkwrap === true}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
           i.fa.fa-folder-o
           div
             b {{item.dirName}}

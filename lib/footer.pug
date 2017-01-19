@@ -2,7 +2,7 @@
   span(class="loader")
     img(src="img/loading.svg", width="16", ng-show="shell.loadingRegistryStatus")
     i(class="fa fa-circle", ng-class="{'active': shell.registryStatus}", ng-show="!shell.loadingRegistryStatus")
-  span(class="npm-status", ng-init="shell.checkRegistryStatus()", ng-mouseenter="shell.checkRegistryStatus()")
+  span(class="npm-status", ng-mouseenter="shell.checkRegistryStatus()")
     img(src="img/npm-logo-black.svg")
     = " "
     | status:

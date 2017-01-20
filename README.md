@@ -1,4 +1,4 @@
-![npm desktop manager](http://i.imgur.com/MsvlrRY.png)
+![npm desktop manager](http://i.imgur.com/JGqL4ib.png)
 
 <p align="center">
 <h2 align="center">ndm</h2>

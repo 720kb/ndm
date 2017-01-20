@@ -67,12 +67,12 @@ div(ng-controller='LeftBarController as leftBar')
             small.running-end(ng-click="leftBar.deleteDedupingProjects(item.dirName)")
               i.fa.fa-times-circle-o
               | dismiss
-          .left-progress-loading
-            .left-progress.color-white(ng-show="leftBar.npmShrinkwrappingProjects[item.dirName]")
-              small.running-name
-                | &#8627; Shrinkwrapping
-              small.running-end(ng-click="leftBar.deleteShrinkwrappingProjects(item.dirName)")
-                i.fa.fa-times-circle-o
-                | dismiss
-              .left-progress-loading
+            .left-progress-loading
+          .left-progress.color-white(ng-show="leftBar.npmShrinkwrappingProjects[item.dirName]")
+            small.running-name
+              | &#8627; Shrinkwrapping
+            small.running-end(ng-click="leftBar.deleteShrinkwrappingProjects(item.dirName)")
+              i.fa.fa-times-circle-o
+              | dismiss
+            .left-progress-loading
     br

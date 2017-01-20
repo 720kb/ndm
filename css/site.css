@@ -12,12 +12,6 @@ a, a *{
 .link:hover {
   color: royalblue;
 }
-.tablet {
-  display: none;
-}
-.show-mobile-tablet {
-  display: none;
-}
 *.hide {
   display:none !important;
 }
@@ -44,13 +38,19 @@ small , small *, *.font-small{
 .color-red {
   color: #ff7a7a;
 }
+.header {
+  overflow: hidden;
+}
 .screenshot {
   z-index: 9999;
   position: relative;
   max-width: 774px;
-  margin-top: -30px;
+  margin-top: -60px;
   left: -20%;
-  margin-bottom: -120px;
+  bottom: -4px;
+}
+.screenshot.show{
+  animation: fadeImgEffect .2s ease-in-out;
 }
 .left-column {
   width: 44%;
@@ -154,8 +154,8 @@ small , small *, *.font-small{
 .download-link:hover{
   box-shadow: 0 3px 6px rgba(0,0,0, .2);
 }
-.download-link:active {
-  box-shadow: none;
+.download-link:active, .download-link:active:hover {
+  box-shadow: 0 0 0 ;
 }
 .download-link.win {
   background: #5c6077;
@@ -189,7 +189,6 @@ small , small *, *.font-small{
 }
 .github-infos * {
   font-size: 18px;
-  vertical-align: bottom;
 }
 .color-twitter{
   color: #1882FC;
@@ -205,9 +204,6 @@ small , small *, *.font-small{
   }
   .hide-mobile-tablet {
     display: none;
-  }
-  .show-mobile-tablet {
-    display: inherit;
   }
   .line-tablet {
     margin:0 auto;
@@ -253,7 +249,7 @@ small , small *, *.font-small{
     display:none;
   }
   .tablet {
-    display: inherit;
+    display: initial;
   }
 }
 .bg-muted-more {
@@ -288,6 +284,9 @@ small , small *, *.font-small{
   .top-menu a {
     margin-left: 5px;
   }
+  .screenshot {
+    margin-top: 0;
+  }
   .slogan h1 {
     font-size: 20px;
   }
@@ -298,4 +297,14 @@ small , small *, *.font-small{
 }
 [data-balloon]:after, [data-balloon]:before{
   background: red;
+}
+
+/*Animations*/
+@-webkit-keyframes fadeImgEffect{
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

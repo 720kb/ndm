@@ -241,8 +241,10 @@ small , small *, *.font-small{
     left:0;
     right:0;
     margin: 0 auto;
+    bottom:-60px;
     max-width: 774px;
     width: 100%;
+    margin-top:-40px;
   }
   .slogan h1 {
     font-size: 30px;

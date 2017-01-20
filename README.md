@@ -1,6 +1,6 @@
 ![github-banner.png](http://i.imgur.com/ohCJBER.png)
 
-### ndm
+## ndm
 
 Stands for <i> "npm desktop manager"</i>
 

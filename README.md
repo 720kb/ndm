@@ -7,7 +7,20 @@ Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI,
 
 
 ![ndm-npm-desktop-manager](http://i.imgur.com/1w80457.png)
-
+<p align="center" style="text-align:center">
+<a href="https://github.com/720kb/ndm/releases" target="_blank">
+<img src="https://img.shields.io/github/release/720kb/ndm.svg"/>
+</a>
+<a href="https://720kb.github.io/ndm/" target="_blank">
+<img src="https://img.shields.io/github/downloads/720kb/ndm/total.svg"/>
+</a>
+<a href="https://travis-ci.org/720kb/ndm/builds" target="_blank">
+<img src="https://img.shields.io/travis/720kb/ndm.svg"/>
+</a>
+<a href="https://gitter.im/720kb/ndm" target="_blank">
+<img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>
+</a>
+</p>
 
 ## Download
 **[Download for MacOS](https://720kb.github.io/ndm#mac)**  &nbsp; | &nbsp;**[Download for Linux](https://720kb.github.io/ndm#linux)** &nbsp; | &nbsp; **Download for Windows (soon)**

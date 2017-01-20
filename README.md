@@ -4,10 +4,10 @@
 <h2 align="center">ndm</h2>
 </p>
 <p align="center">
- <i>"npm desktop manager"</i>
+Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI, built with web technologies.
 </p>
 <p align="center">
-Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI, built with web technologies.
+ <i>"npm desktop manager"</i>
 </p>
 
 

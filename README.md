@@ -1,4 +1,4 @@
-![github-banner.png](http://i.imgur.com/VeS5bJp.png)
+<img src="http://electron.atom.io/images/apps/ndm-icon.png" width="130"/>
 
 ## ndm
 

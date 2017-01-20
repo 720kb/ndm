@@ -1,7 +1,5 @@
-<img src="http://electron.atom.io/images/apps/ndm-icon.png" width="130"/>
-
 <h1>
-<img src="http://electron.atom.io/images/apps/ndm-icon.png" width="50" style="vertical-align:sub"/> ndm
+<img src="http://i.imgur.com/0lQ5cOm.png" width="90" style="margin-top: 20px"/> ndm
 </h1>
 
 Stands for _"npm desktop manager"_

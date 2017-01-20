@@ -1,7 +1,10 @@
 ![npm desktop manager](http://i.imgur.com/MsvlrRY.png)
 
 <p align="center">
-<i>"npm desktop manager"</i>
+<h2 align="center">ndm</h2>
+</p>
+<p align="center">
+ <i>"npm desktop manager"</i>
 </p>
 <p align="center">
 Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI, built with web technologies.

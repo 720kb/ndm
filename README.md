@@ -1,25 +1,11 @@
 <img src="http://electron.atom.io/images/apps/ndm-icon.png" width="130"/>
 
-## ndm
+# ndm [![Travis branch](https://img.shields.io/travis/720kb/ndm/master.svg)]()
 
 Stands for <i> "npm desktop manager"</i>
 
 Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI, built with web technologies.
 
-<p>
-<a href="https://github.com/720kb/ndm/releases" target="_blank">
-<img src="https://img.shields.io/github/release/720kb/ndm.svg"/>
-</a>
-<a href="https://720kb.github.io/ndm/" target="_blank">
-<img src="https://img.shields.io/github/downloads/720kb/ndm/total.svg"/>
-</a>
-<a href="https://travis-ci.org/720kb/ndm/builds" target="_blank">
-<img src="https://img.shields.io/travis/720kb/ndm.svg"/>
-</a>
-<a href="https://gitter.im/720kb/ndm" target="_blank">
-<img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>
-</a>
-</p>
 
 ![ndm-npm-desktop-manager](http://i.imgur.com/1w80457.png)
 

@@ -1,7 +1,8 @@
 <img src="http://electron.atom.io/images/apps/ndm-icon.png" width="130"/>
 
-# ndm [![GitHub release](https://img.shields.io/github/release/720kb/ndm.svg)]() [![Github Releases](https://img.shields.io/github/downloads/720kb/ndm/total.svg)]() [![Travis branch](https://img.shields.io/travis/720kb/ndm/master.svg)]() [![Gitter](https://img.shields.io/gitter/room/720kb/ndm.svg)](https://gitter.im/720kb/ndm)
+# ndm 
 
+Stands for _"npm desktop manager"_
 Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI, built with web technologies.
 
 

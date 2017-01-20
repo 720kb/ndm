@@ -1,8 +1,9 @@
-<img src="http://i.imgur.com/0lQ5cOm.png" width="90"/>
+<img src="http://i.imgur.com/0lQ5cOm.png" width="100"/>
 # ndm
 
 
 Stands for _"npm desktop manager"_
+
 Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI, built with web technologies.
 
 

@@ -1,6 +1,8 @@
 <img src="http://electron.atom.io/images/apps/ndm-icon.png" width="130"/>
 
-# ndm 
+<h1>
+<img src="http://electron.atom.io/images/apps/ndm-icon.png" width="50" style="vertical-align:sub"/> ndm
+</h1>
 
 Stands for _"npm desktop manager"_
 Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI, built with web technologies.

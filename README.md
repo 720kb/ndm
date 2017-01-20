@@ -1,6 +1,7 @@
-<img src="http://i.imgur.com/0lQ5cOm.png" width="100"/>
-# ndm
-
+![npm desktop manager](http://i.imgur.com/MsvlrRY.png)
+<p align="center">
+<h1 align="center">ndm</h1>
+</p>
 
 Stands for _"npm desktop manager"_
 

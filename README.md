@@ -11,7 +11,8 @@ Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI,
 </p>
 
 
-![ndm-npm-desktop-manager](http://i.imgur.com/1w80457.png)
+![ndm-npm-desktop-manager](http://i.imgur.com/undefined.png)
+
 <p align="center" style="text-align:center">
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
 <img src="https://img.shields.io/github/release/720kb/ndm.svg"/>

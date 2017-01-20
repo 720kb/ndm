@@ -154,8 +154,8 @@ small , small *, *.font-small{
 .download-link:hover{
   box-shadow: 0 3px 6px rgba(0,0,0, .2);
 }
-.download-link:active, .download-link:active:hover {
-  box-shadow: 0 0 0 ;
+.download-link:active {
+  box-shadow: none;
 }
 .download-link.win {
   background: #5c6077;

@@ -9,14 +9,13 @@ div.dialog.prompt(ng-if="topMenu.activeLink === '4'")
     input(placeholder='@version',
       ng-autofocus,
       type='text',
-      ng-model='topMenu.versionPackageVersion')
+      ng-model='topMenu.versionPackageVersion',
+      value="shell.currentSelectedPackages[0]")
     = " "
     span(class="prompt-kind")
-      input(type="checkbox", disabled, ng-checked="shell.currentSelectedPackages[0].kind.length > 0 && !shell.globalSelected")
-      = " "
-      = " "
-      | dev
-      = " "
+      select
+        option(ng-repeat="version in shell.selectedPackageViewInfos.versions")
+          | {{version}}
     button(ng-class="{'disabled': topMenu.installingPackageVersion || !topMenu.versionPackageVersion}")
       span(ng-show="!topMenu.installingPackageVersion")
         | Install

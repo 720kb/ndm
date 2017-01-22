@@ -28,7 +28,7 @@
       .col-xs-2.clickable(ng-click="content.sortTableBy('kind')")
         | Env
         i(class="fa", ng-class="{'fa-sort': !content.tableOrderBy.includes('-kind') || !content.tableOrderBy.includes('kind'), 'fa-sort-down': content.tableOrderBy.includes('-kind'), 'fa-sort-up': content.tableOrderBy.includes('kind')}")
-    .table-body
+    .table-body(ng-table-keyboard)
       <!-- show disabled npm global row if in globals-->
       .row.table-row.disabled(ng-repeat='aPackage in content.packageInformations', ng-if="content.isGlobalProject && aPackage.name === 'npm'", title="Do not perform npm global actions from here")
         .col-xs-4 {{ aPackage.name }}
@@ -45,7 +45,7 @@
         .col-xs-2
           | {{ aPackage.kind }}
       <!-- show all packages except for npm global-->
-      .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: content.tableOrderBy', ng-if="!content.isGlobalProject ||  content.isGlobalProject && aPackage.name !== 'npm'", selection-model, selection-model-mode="'multiple'", selection-model-selected-items="content.selectedPackages", ng-click="shell.selectPackages(content.selectedPackages)", ng-class="{'active': content.selectedPackages.includes(aPackage), 'table-row-loading': shell.currentSelectedPackages.includes(aPackage) && content.showLoadingSelectedRow}")
+      .row.table-row(ng-repeat='aPackage in content.packageInformations | orderBy: content.tableOrderBy', id="table-item-{{$index}}", ng-table-keyboard-selected-items="content.selectedPackages", ng-if="!content.isGlobalProject ||  content.isGlobalProject && aPackage.name !== 'npm'", selection-model, selection-model-mode="'multiple'", selection-model-selected-items="content.selectedPackages", ng-click="shell.selectPackages(content.selectedPackages)", ng-class="{'active': content.selectedPackages.includes(aPackage), 'table-row-loading': shell.currentSelectedPackages.includes(aPackage) && content.showLoadingSelectedRow}")
         .col-xs-4 {{ aPackage.name }}
         .col-xs-2
           span(ng-class="{'color-positive font-light': !aPackage.wanted && !aPackage.latest}")

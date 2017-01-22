@@ -6,10 +6,8 @@ Thank you!
 -->
 
 #### REQUIRED 
-OS: 
+OS / OS version: 
 
-OS version: 
- 
 ndm version: 
  
 node version:
@@ -28,7 +26,7 @@ $ which npm:
 
 - npm permissions fixed or not-fixed? (see https://docs.npmjs.com/getting-started/fixing-npm-permissions):
 
-- If you are using npm > v4.1.2 then run `npm doctor` and paste the output here:
+- If you are using npm > v4.1.1 then run `npm doctor` and paste the output here:
 
 #### APPRECIATED
 _open the devtools console: OS Menu -> View -> Developer -> Open DevTools_

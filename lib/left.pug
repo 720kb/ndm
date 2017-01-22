@@ -48,13 +48,6 @@ div(ng-controller='LeftBarController as leftBar')
               i.fa.fa-times-circle-o
               | dismiss
             .left-progress-loading
-          .left-progress.color-white(ng-show="leftBar.npmRebuildingProjects[item.dirName]")
-            small.running-name
-              | &#8627; Rebuilding
-            small.running-end(ng-click="leftBar.deleteRebuildingProjects(item.dirName)")
-              i.fa.fa-times-circle-o
-              | dismiss
-            .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmPruningProjects[item.dirName]")
             small.running-name
               | &#8627; Pruning

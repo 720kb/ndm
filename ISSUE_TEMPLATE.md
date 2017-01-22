@@ -30,12 +30,17 @@ $ which npm:
 
 - If you are using npm > v4.1.2 then run `npm doctor` and paste the output here:
 
-- How to replicate the bug/issue, if you know it:
-
 #### APPRECIATED
 _open the devtools console: OS Menu -> View -> Developer -> Open DevTools_
 
-Now make a screenshot of your devtools console or paste the console full log here:
+Now make a screenshot of your devtools console or paste the devtools console full-log in here:
+
+#### THE PROBLEM
+What's the problem you facing,  in few lines:
+
+#### REPRODUCE THE PROBLEM
+How to reproduce the problem in few lines:
+
 
 
 

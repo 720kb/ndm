@@ -14,8 +14,8 @@ div.dialog.prompt(ng-if="topMenu.activeLink === '4'")
     = " "
     span(class="prompt-kind")
       select
-        option(ng-repeat="version in shell.selectedPackageViewInfos.versions")
-          | {{version}}
+        option(ng-repeat="pkgVersion in shell.selectedPackageViewInfos.versions")
+          | {{pkgVersion}}
     button(ng-class="{'disabled': topMenu.installingPackageVersion || !topMenu.versionPackageVersion}")
       span(ng-show="!topMenu.installingPackageVersion")
         | Install

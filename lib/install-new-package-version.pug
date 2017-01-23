@@ -10,13 +10,15 @@ div.dialog.prompt(ng-if="topMenu.activeLink === '4'")
       ng-autofocus,
       type='text',
       ng-model='topMenu.versionPackageVersion',
-      value="shell.currentSelectedPackages[0]")
+      ng-value="pkgVersionModel")
     = " "
     span(class="prompt-kind")
-      select
-        option(ng-repeat="pkgVersion in shell.selectedPackageViewInfos.versions")
+      select(name="packageVersionSelect", ng-model="pkgVersionModel")
+        option(value="", selected)
+          | -
+        option(ng-repeat="pkgVersion in shell.selectedPackageViewInfos.versions | orderBy : pkgVersion : 'reverse' track by $index", ng-value="pkgVersion")
           | {{pkgVersion}}
-    button(ng-class="{'disabled': topMenu.installingPackageVersion || !topMenu.versionPackageVersion}")
+    button
       span(ng-show="!topMenu.installingPackageVersion")
         | Install
       span(ng-show="topMenu.installingPackageVersion")

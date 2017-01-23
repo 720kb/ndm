@@ -3,7 +3,7 @@ div.dialog.prompt(ng-if="topMenu.activeLink === '4'", ng-init="topMenu.versionPa
     input(placeholder='Package name',
       type='text',
       readonly,
-      disabled
+      disabled,
       ng-value="shell.currentSelectedPackages[0].name")
     = " "
     input(placeholder='@version',

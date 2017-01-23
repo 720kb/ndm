@@ -56,6 +56,8 @@
   select {
     width: 65px;
     max-width: 65px;
+    position: relative;
+    margin-top: 1px;
   }
 
   input {
@@ -67,15 +69,11 @@
       box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
       font-size: 11px;
       padding: 3.5px 4px 4px 4px;
-      width: 18%;
+      width: 17%;
       margin-right: 2%;
 
       &:first-child {
         width: 48%;
-        margin-right: 0;
-      }
-      &:last-child {
-        width: 17%;
         margin-right: 0;
       }
     }

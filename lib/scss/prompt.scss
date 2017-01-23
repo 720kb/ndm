@@ -57,7 +57,7 @@
     width: 65px;
     max-width: 65px;
     position: relative;
-    margin-top: 1px;
+    bottom: -.5px;
   }
 
   input {
@@ -73,7 +73,7 @@
       margin-right: 2%;
 
       &:first-child {
-        width: 48%;
+        width: 46%;
         margin-right: 0;
       }
     }

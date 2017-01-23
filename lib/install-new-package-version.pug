@@ -1,4 +1,4 @@
-div.dialog.prompt(ng-if="topMenu.activeLink === '4'")
+div.dialog.prompt(ng-if="topMenu.activeLink === '4'", ng-init="topMenu.versionPackageVersion = undefined")
   form(ng-submit='topMenu.installVersionPackage(shell.currentSelectedPackages[0], topMenu.versionPackageVersion)')
     input(placeholder='Package name',
       type='text',
@@ -10,10 +10,10 @@ div.dialog.prompt(ng-if="topMenu.activeLink === '4'")
       ng-autofocus,
       type='text',
       ng-model='topMenu.versionPackageVersion',
-      ng-value="pkgVersionModel")
+      ng-value="topMenu.versionPackageVersion")
     = " "
     span(class="prompt-kind")
-      select(name="packageVersionSelect", ng-model="pkgVersionModel")
+      select(name="packageVersionSelect", ng-model="topMenu.pkgVersionModel", ng-change="topMenu.versionPackageVersion = topMenu.pkgVersionModel")
         option(value="", selected)
           | -
         option(ng-repeat="pkgVersion in shell.selectedPackageViewInfos.versions | orderBy : pkgVersion : 'reverse' track by $index", ng-value="pkgVersion")

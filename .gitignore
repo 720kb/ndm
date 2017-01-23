@@ -9,3 +9,4 @@ npm-debug*
 *.dmg
 releases/
 releases/*
+npm-shrinkwrap.json

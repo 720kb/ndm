@@ -1,50 +1,54 @@
-.left-progress {
-  animation: loadingStripes  1.3s linear infinite;
-  width: 90%;
-  font-size: 11px;
-  margin: 0 auto;
-  line-height: 11px;
-  margin-bottom: 5px;
+.left-progress-container {
+  margin-top: 3px;
 
-  &:first-child {
-    margin-top: 3px;
-  }
-
-  small {
+  .left-progress {
+    animation: loadingStripes  1.3s linear infinite;
+    width: 90%;
     font-size: 11px;
+    margin: 0 auto;
     line-height: 11px;
-    max-height: 11px;
-    overflow: hidden;
-    i {
-      font-size: 9px;
-    }
-    &.running-end {
-      display: none;
-    }
-  }
+    margin-bottom: 5px;
 
-  &:hover {
+    &:first-child {
+      margin-top: 3px;
+    }
+
     small {
-      &.running-name {
-        display: none;
+      font-size: 11px;
+      line-height: 11px;
+      max-height: 11px;
+      overflow: hidden;
+      i {
+        font-size: 9px;
       }
       &.running-end {
-        display: inherit;
+        display: none;
       }
     }
-  }
 
-  .left-progress-loading {
-    height: 6px;
-    margin-top: 6px;
-    background: $bg-progress-secondary;
-    border-radius: 3px;
-  }
-
-  &.left-progress-minor {
+    &:hover {
+      small {
+        &.running-name {
+          display: none;
+        }
+        &.running-end {
+          display: inherit;
+        }
+      }
+    }
 
     .left-progress-loading {
-      background: $bg-progress-minor;
+      height: 6px;
+      margin-top: 6px;
+      background: $bg-progress-secondary;
+      border-radius: 3px;
+    }
+
+    &.left-progress-minor {
+
+      .left-progress-loading {
+        background: $bg-progress-minor;
+      }
     }
   }
 }

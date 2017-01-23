@@ -19,7 +19,7 @@ div(ng-controller='LeftBarController as leftBar')
             b {{item.dirName}}
           button(ng-click='leftBar.deleteProject(item, $event)')
             i.fa.fa-times-circle-o
-        div(ng-init="leftBar.cancelProgressActionId = false;")
+        div(class="left-progress-container", ng-init="leftBar.cancelProgressActionId = false;")
           .left-progress.left-progress-minor.color-white.fake-link(ng-repeat="runningScript in leftBar.npmRunningScriptsProject[item.path] track by $index")
             small.running-name
               | &#8627; Running: {{runningScript}}

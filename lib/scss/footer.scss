@@ -18,7 +18,6 @@
     right: -5px;
 
     &.npm-status {
-      min-width: 125px;
 
       img {
         opacity: .7;
@@ -32,15 +31,16 @@
     }
 
     &.loader {
-      min-width: 18px;
-      text-align: right;
 
       img {
         width: 16px;
+        margin-left: 5px;
       }
 
       i {
         color: $color-muted-more;
+        vertical-align: middle;
+        margin-left: 6px;
 
         &.active {
           color: $color-green;

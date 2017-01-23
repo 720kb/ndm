@@ -56,8 +56,7 @@
   select {
     width: 65px;
     max-width: 65px;
-    position: relative;
-    bottom: -.5px;
+    vertical-align: middle;
   }
 
   input {
@@ -69,11 +68,10 @@
       box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
       font-size: 11px;
       padding: 3.5px 4px 4px 4px;
-      width: 17%;
-      margin-right: 2%;
+      width: 18%;
 
       &:first-child {
-        width: 46%;
+        width: 47%;
         margin-right: 0;
       }
     }

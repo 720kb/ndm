@@ -8,7 +8,7 @@
   position: absolute;
   right: 0;
   margin: 0 auto;
-  width: 480px;
+  width: 500px;
   z-index: 9999;
   top: 0;
 
@@ -53,6 +53,10 @@
     }
   }
 
+  select {
+    width: 65px;
+    max-width: 65px;
+  }
 
   input {
 
@@ -68,6 +72,10 @@
 
       &:first-child {
         width: 48%;
+        margin-right: 0;
+      }
+      &:last-child {
+        width: 17%;
         margin-right: 0;
       }
     }

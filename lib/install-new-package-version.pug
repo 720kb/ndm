@@ -6,7 +6,8 @@ div.dialog.prompt(ng-if="topMenu.activeLink === '4'", ng-init="topMenu.versionPa
       disabled,
       ng-value="shell.currentSelectedPackages[0].name")
     = " "
-    input(placeholder='@version',
+    input(class="hide",
+      placeholder='@version',
       ng-autofocus,
       type='text',
       ng-model='topMenu.versionPackageVersion',

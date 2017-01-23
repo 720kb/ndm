@@ -48,7 +48,7 @@
       }
     }
     button {
-      width: 56px;
+      width: 84px;
       vertical-align: bottom;
     }
   }
@@ -71,7 +71,7 @@
       width: 18%;
 
       &:first-child {
-        width: 47%;
+        width: 62%;
         margin-right: 0;
       }
     }
@@ -83,7 +83,7 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
     font-size: 12.5px;
     padding: 3.5px 4px 4px 4px;
-    width: calc(70.5% - 15px);
+    width: calc(73% - 15px);
     background: white;
     white-space: nowrap;
     overflow: hidden;

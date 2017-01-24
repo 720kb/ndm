@@ -16,15 +16,19 @@ It is obviously very powerful.
 - Run npm commands and scripts in one maybe two clicks.
 - More features to be finished and to come ...
 
-Also, sometimes we are just lazy and a GUI makes everything more handy.
+Some of the greatest and widely used package managers got their own GUI... brew, apt ... just for example.
+npm got none. That's bad, that doesn't help npm itself and the npm community.
 
-**Note that:** using **ndm** doesn't mean you can no longer use the CLI.
+Here is ndm, give it a try before to say _mmmmm, no, meh, maybe_ :ok_hand:
+
+**Obviously:** using **ndm** doesn't mean you can no longer use the CLI.
 
 **Is ndm stable?**
 
 The first releases are not guaranteed to be very stable, some problem/bug may happen.
 
-Just give it time, have some patience and, if you would coome contribute by forking, PR and/or creating issues, your help is always appreciated.
+Just give it some time, have some patience and if you like ndm project then come contribute! 
+Your help is always appreciated and you are welcome anytime!
 
 
 **Do i have to worry about anything when using ndm?**

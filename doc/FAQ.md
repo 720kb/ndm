@@ -6,26 +6,25 @@ Of course, we all love the npm CLI, no jokes.
 
 It is obviously very powerful.
 
-*ndm* is an alternative experience to the `npmCLI` and here is all the pros we think you should not miss:
+*ndm* is an alternative experience to the `npmCLI` and here are all the pros:
 
-- Less struggling with long terminal logs, scrolling to find warnings and errors are a things of the past now
+- Less struggling with long terminal logs, scrolling to find eventual warnings and/or errors.
 - All your projects are on the same view, no more multiple `cd` to move from a project to another, just drag them all into the app.
-- Intuitive interface, no documentation required.
 - Notifications (specially when your long long npm install finishes)
-- List all your global or local npm installed packages with all the informations you need in one maybe two clicks.
-- Run npm commands and scripts in one or two clicks.
-- Guidance: enabling and disabling parts/sections of the GUI in order to be sure you are running commands at the right time and not concurrently or when it's not the time or isn't necessary, literally.
-- More to be finished and to come, of course! ...
+- List all your global and local npm installed packages with all the informations you need in one maybe two clicks.
+- Cleaner point of view of all your npm projects and dependencies.
+- Run npm commands and scripts in one maybe two clicks.
+- More features to be finished and to come ...
 
-Also, sometimes we are just lazy and a GUI makes it more handy.
+Also, sometimes we are just lazy and a GUI makes everything more handy.
 
-**Note that:** using **ndm** doesn't mean you can no longer use the CLI - The power of the Shell is strong! Keep using it, young Padawan! :D
+**Note that:** using **ndm** doesn't mean you can no longer use the CLI.
 
 **Is ndm stable?**
 
 The first releases are not guaranteed to be very stable, some problem/bug may happen.
 
-Just give it time, have some patience and, if you would, please contribute by forking, PR and/or creating issues, your help is always appreciated.
+Just give it time, have some patience and, if you would coome contribute by forking, PR and/or creating issues, your help is always appreciated.
 
 
 **Do i have to worry about anything when using ndm?**
@@ -48,4 +47,4 @@ That said: if you have any idea or suggestion, here you are welcome to share and
 
 **Support?**
 
-Just open an issue, we'll be in touch.
+Just open an issue, we'll be in touch :ok_hand:

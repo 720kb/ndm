@@ -8,3 +8,6 @@
 - It is highly recommended to fix npm permissions on your machine (if not already fixed). This means no more `sudo`, how to fix them is simple and written here: https://docs.npmjs.com/getting-started/fixing-npm-permissions
 - It is recommended to always run the latest version of ndm
 - It is highly reccomended to not install packages globally if those packages aren't meant/developed to be installed globally. Installing them globally and you might face strange problems when trying to uninstall them and probably other related problems.
+- It is recomended to not change default npm configs and the use of .npmrc are not yet supported by ndm (we will remove this recommandation as soon has these features will be implemented)
+
+Happy npm desktop managing!

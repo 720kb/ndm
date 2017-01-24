@@ -1,4 +1,4 @@
-div.dialog.dialog-window(ng-if="leftBar.showHistoryPrompt", ng-init="leftBar.showSnapshotStatus = []; leftBar.selectedSnapshot = false;")
+div.dialog.dialog-window(ng-if="leftBar.showHistoryPrompt", ng-init="leftBar.showSnapshotStatus = []; leftBar.selectedSnapshot = undefined;")
   div(class="prompt-window-options")
     span(class="prompt-window-infos", title="{{leftBar.rightClickedProject.path}}")
       img(src="img/loading.svg", width="13", ng-show="leftBar.restoringSnapshot[leftBar.rightClickedProject.path] && !leftBar.restoredSnapshot[leftBar.rightClickedProject.path]")
@@ -6,7 +6,7 @@ div.dialog.dialog-window(ng-if="leftBar.showHistoryPrompt", ng-init="leftBar.sho
       | {{leftBar.rightClickedProject.dirName}}/
     button(ng-click="leftBar.showHistoryPrompt = undefined;")
       | Close
-    button(ng-click="leftBar.deleteSnapshot()")
+    button(ng-click="leftBar.deleteSnapshot()", ng-if="leftBar.selectedSnapshot && leftBar.projectHistory && leftBar.projectHistory.length > 0")
       | Delete
     button(ng-if="leftBar.projectHistory && leftBar.projectHistory.length > 0 && leftBar.selectedSnapshot", ng-click="leftBar.restoreSnapshot()", ng-disabled="leftBar.restoringSnapshot[leftBar.rightClickedProject.path]")
       span(ng-show="!leftBar.restoringSnapshot[leftBar.rightClickedProject.path]")

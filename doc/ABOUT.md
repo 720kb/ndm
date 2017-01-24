@@ -1,8 +1,9 @@
 ## About ndm
 
-**ndm** formally _"npm desktop manager"_ is the desktop GUI for [npm](https://npmjs.com/).
+**ndm** stands for _"npm desktop manager"_ , a cross-platform GUI for [npm](https://npmjs.com/) built with web technologies.
 
-With **ndm** you can manage npm, npm projects and npm packages with ease.
+With **ndm** you can manage npm, npm projects and packages straight from the couch.
 
-**ndm** is built with web technologies, it uses the [npm-cli](https://docs.npmjs.com/cli/npm) - ```require('npm');```- and it is packed up thanks to [Electron](https://github.com/electron/electron) with some touch of AngularJS and Sass.
+**ndm** is packed up thanks to [Electron](https://github.com/electron/electron) and developed in HTML/CSS/JS with some touch of AngularJS, Sass and Pug.
+
 

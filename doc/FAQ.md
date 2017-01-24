@@ -19,7 +19,7 @@ It is obviously very powerful.
 Some of the greatest and widely used package managers got their own GUI... brew, apt ... just for example.
 npm got none. That's bad, that doesn't help npm itself and the npm community.
 
-Here is ndm, give it a try before to say "_mmmmm, no, meh, maybe, not really_" :ok_hand:
+Here is ndm, give it a try before to say "_no, mmmmm, no, meh, maybe_" :ok_hand:
 
 **Obviously:** using **ndm** doesn't mean you can no longer use the CLI.
 

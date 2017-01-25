@@ -3,7 +3,7 @@
   include ./install-new-package-version.pug
   include ./install-new-package.pug
   .row
-    .col-xs-4
+    .col-xs-4.top-menu-left
       span.action-link-disabled(ng-class="{'action-link-disabled': shell.globalDisabled, 'action-link-enabled': !shell.globalDisabled}")
         img(src="img/npm-logo-square.svg", class="pull-left")
         span(ng-show="!shell.globalDisabled", class="badge-version color-black pull-left")
@@ -18,7 +18,7 @@
       button.button-update(type="button", title="Update npm", ng-show="!shell.globalDisabled", ng-click="topMenu.activeClickedLink('update'); shell.updateNpm()")
         i.fa.fa-history
         | Update
-    .col-xs-8
+    .col-xs-8.top-menu-right
       button(title="Add project to be managed",type="button",  class="pull-left button-add-project", ng-click="shell.openChooser()")
         i.fa.fa-plus-circle
         | Add project

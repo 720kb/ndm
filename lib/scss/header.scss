@@ -4,6 +4,12 @@
   width: 100%;
   background: $bg-header;
 
+  .top-menu-left {
+    width: 200px;
+  }
+  .top-menu-right {
+    width: calc(100% - 200px);
+  }
   img {
     width: 23px;
     margin-top: 3px;
@@ -34,7 +40,7 @@
     border: none;
     padding: 7px 6px 4px 6px;
     text-indent: -1px;
-    margin-left: -25px;
+    margin-left: -5px;
 
     i {
       color: $color-primary;

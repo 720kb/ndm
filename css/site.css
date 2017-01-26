@@ -47,10 +47,10 @@ small , small *, *.font-small{
 .screenshot {
   z-index: 9999;
   position: relative;
-  max-width: 774px;
-  margin-top: -30px;
+  max-width: 700px;
+  margin-top: -50px;
   left: -20%;
-  margin-bottom: -120px;
+  margin-bottom: -140px;
 }
 .left-column {
   width: 44%;
@@ -61,7 +61,7 @@ small , small *, *.font-small{
   float: left;
 }
 .line-max {
-  max-width: 1100px;
+  max-width: 990px;
   width:95%;
   float:none;
   margin:0 auto;
@@ -241,10 +241,9 @@ small , small *, *.font-small{
     left:0;
     right:0;
     margin: 0 auto;
-    bottom:-60px;
-    max-width: 774px;
+    bottom:-110px;
     width: 100%;
-    margin-top:-40px;
+    margin-top:-120px;
   }
   .slogan h1 {
     font-size: 30px;

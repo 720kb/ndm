@@ -59,11 +59,4 @@ div.row
         b
           | License:
         = " "
-        span(ng-if="content.packageViewInfos.license && !content.packageViewInfos.license.type")
-          | {{content.packageViewInfos.license}}
-      span(ng-if="content.packageViewInfos.license.type")
-        | {{content.packageViewInfos.license.type}}
-      a(title="Open in browser", ng-if="content.packageViewInfos.license.url", ng-click="shell.openBrowserLink(content.packageViewInfos.license.url)")
-        | content.packageViewInfos.homepage
-      span(ng-if="!content.packageViewInfos.license && !content.packageViewInfos.license.url && !content.packageViewInfos.license.type")
-        | -
+        | {{content.packageViewInfos.license.type || content.packageViewInfos.license || '-'}}

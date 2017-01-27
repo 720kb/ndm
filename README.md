@@ -1,19 +1,12 @@
-![npm desktop manager](http://i.imgur.com/JGqL4ib.png)
+## ndm
 
-<p align="center">
-<h2 align="center">ndm</h2>
-</p>
-<p align="center">
+![screenshot-npm-desktop-manager](http://i.imgur.com/GvURtHB.png)
+
+
 Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI, built with web technologies.
-</p>
-<p align="center">
- <i>"npm desktop manager"</i>
-</p>
+It stands for "npm desktop manager"
 
-<p align="center" style="text-align:center">
 <img src="http://i.imgur.com/Gi4gP2i.png" align="center"/>
-</p>
-<p align="center" style="text-align:center">
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
 <img src="https://img.shields.io/github/release/720kb/ndm.svg"/>
 </a>
@@ -26,7 +19,6 @@ Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI,
 <a href="https://gitter.im/720kb/ndm" target="_blank">
 <img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>
 </a>
-</p>
 
 ## Download
 **[Download for MacOS](https://720kb.github.io/ndm#mac)**  &nbsp; | &nbsp;**[Download for Linux](https://720kb.github.io/ndm#linux)** &nbsp; | &nbsp; **Download for Windows (soon)**

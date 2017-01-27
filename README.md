@@ -6,7 +6,6 @@
 Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI, built with web technologies.
 It stands for "npm desktop manager"
 
-<img src="http://i.imgur.com/Gi4gP2i.png" align="center"/>
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
 <img src="https://img.shields.io/github/release/720kb/ndm.svg"/>
 </a>

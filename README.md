@@ -1,10 +1,13 @@
-## ndm
+# ndm
 
 ![screenshot-npm-desktop-manager](http://i.imgur.com/GvURtHB.png)
 
 
-The open source and cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> GUI, it runs on Linux, MacOS and Windows.
-Manage npm straight from the couch with "npm desktop manager".
+The open source <a href="https://npmjs.com/" target="_blank">npm</a> GUI.
+
+Manage npm and npm projects straight from the couch with "npm desktop manager".
+
+Runs on Linux, MacOS and Windows.
 
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
 <img src="https://img.shields.io/github/release/720kb/ndm.svg"/>

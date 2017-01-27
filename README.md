@@ -3,8 +3,8 @@
 ![screenshot-npm-desktop-manager](http://i.imgur.com/GvURtHB.png)
 
 
-Cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI, built with web technologies.
-It stands for "npm desktop manager"
+The open source and cross-platform <a href="https://npmjs.com/" target="_blank">npm</a> GUI, it runs on Linux, MacOS and Windows.
+Manage npm straight from the couch with "npm desktop manager".
 
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
 <img src="https://img.shields.io/github/release/720kb/ndm.svg"/>

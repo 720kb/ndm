@@ -1,0 +1,20 @@
+environment:
+  nodejs_version: "6"
+
+os: unstable
+
+install:
+  - npm install
+
+build:
+  - node run build-win
+
+artifacts:
+  - path: releases\*.exe
+
+deploy:
+  provider: GitHub
+  draft: false
+  prerelease: false
+  on:
+    appveyor_repo_tag: true

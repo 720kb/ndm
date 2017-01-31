@@ -10,11 +10,14 @@ Manage npm and npm projects straight from the couch with "npm desktop manager".
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
 <img src="https://img.shields.io/github/release/720kb/ndm.svg"/>
 </a>
-<a href="https://720kb.github.io/ndm/" target="_blank">
-<img src="https://img.shields.io/github/downloads/720kb/ndm/total.svg"/>
-</a>
 <a href="https://travis-ci.org/720kb/ndm/builds" target="_blank">
 <img src="https://img.shields.io/travis/720kb/ndm.svg"/>
+</a>
+<a href="https://ci.appveyor.com/project/45kb/ndm">
+<img src="https://ci.appveyor.com/api/projects/status/vy3sacfvob6gteek?svg=true"/>
+</a>
+<a href="https://720kb.github.io/ndm/" target="_blank">
+<img src="https://img.shields.io/github/downloads/720kb/ndm/total.svg"/>
 </a>
 <a href="https://gitter.im/720kb/ndm" target="_blank">
 <img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>

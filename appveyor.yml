@@ -1,14 +1,11 @@
 
 os: Visual Studio 2015
 
-init:
-  - npm install
-
 platform:
   - x86
 
 install:
-  - npm run build-win
+  - npm install && npm run build-win
 
 branches:
   only:

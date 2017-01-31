@@ -14,7 +14,7 @@ Manage npm and npm projects straight from the couch with "npm desktop manager".
 <img src="https://img.shields.io/travis/720kb/ndm.svg"/>
 </a>
 <a href="https://ci.appveyor.com/project/45kb/ndm">
-<img src="https://ci.appveyor.com/api/projects/status/vy3sacfvob6gteek?svg=true"/>
+<img src="https://ci.appveyor.com/api/projects/status/ea692y3vabkj9hha/branch/master?svg=true"/>
 </a>
 <a href="https://720kb.github.io/ndm/" target="_blank">
 <img src="https://img.shields.io/github/downloads/720kb/ndm/total.svg"/>

@@ -8,6 +8,7 @@ node_js:
   - "6"
 script: "echo build done"
 before_deploy:
+  - npm run lint
   - npm run build
   - export VERSION=$(echo $TRAVIS_TAG | tr -d "v")
 deploy:

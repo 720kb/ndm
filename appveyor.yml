@@ -1,20 +1,19 @@
-environment:
-  nodejs_version: "6"
 
-os: unstable
+os: Visual Studio 2015
 
-install:
+init:
   - npm install
 
-build:
-  - node run build-win
+platform:
+  - x86
 
-artifacts:
-  - path: releases\*.exe
+install:
+  - npm run build-win
 
-deploy:
-  provider: GitHub
-  draft: false
-  prerelease: false
-  on:
-    appveyor_repo_tag: true
+branches:
+  only:
+    - master
+
+# disable build and test pahses
+build: off
+test: off

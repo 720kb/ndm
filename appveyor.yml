@@ -7,6 +7,9 @@ platform:
 install:
   - npm install && npm run lint && npm run build-win
 
+artifacts:
+  - path: 'releases\*.exe'
+  
 branches:
   only:
     - master

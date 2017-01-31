@@ -6,6 +6,7 @@ platform:
 
 install:
   - npm install
+  
 test_script:
  - npm run lint
 
@@ -18,10 +19,6 @@ artifacts:
 branches:
   only:
     - master
-
-# disable build and test pahses
-build: off
-test: off
 
 deploy:
   provider: GitHub

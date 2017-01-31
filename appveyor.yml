@@ -5,8 +5,13 @@ platform:
   - x86
 
 install:
-  - npm install && npm run lint && npm run build-win
+  - npm install
+test_script:
+ - npm run lint
 
+build_script:
+ - cmd: npm run build-win
+ 
 artifacts:
   - path: 'releases\*.exe'
   
@@ -17,3 +22,14 @@ branches:
 # disable build and test pahses
 build: off
 test: off
+
+deploy:
+  provider: GitHub
+  auth_token: 
+    secure: vpS3QtQEPy/DC+8dYXY5VRd2ZSOCLJRx1/cYZSrs6qAWjokQEhgD3RTxrgbFcRQK
+  artifact: 'releases\*.exe'    
+  draft: false
+  prerelease: false
+  on:
+    branch: master
+    appveyor_repo_tag: true    

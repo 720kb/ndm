@@ -9,20 +9,23 @@ install:
 
 build: off
 test: off
- 
+
 artifacts:
   - path: 'releases\*.exe'
-  
+
 branches:
   only:
     - master
 
 deploy:
   provider: GitHub
-  auth_token: 
-    secure: vpS3QtQEPy/DC+8dYXY5VRd2ZSOCLJRx1/cYZSrs6qAWjokQEhgD3RTxrgbFcRQK   
-  draft: false
-  prerelease: false
+  auth_token:
+    secure: vpS3QtQEPy/DC+8dYXY5VRd2ZSOCLJRx1/cYZSrs6qAWjokQEhgD3RTxrgbFcRQK
   on:
     branch: master
-    appveyor_repo_tag: true    
+
+  provider: GitHub
+  auth_token:
+    secure: vpS3QtQEPy/DC+8dYXY5VRd2ZSOCLJRx1/cYZSrs6qAWjokQEhgD3RTxrgbFcRQK
+  on:
+    appveyor_repo_tag: true

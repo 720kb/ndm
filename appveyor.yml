@@ -22,10 +22,4 @@ deploy:
   auth_token:
     secure: vpS3QtQEPy/DC+8dYXY5VRd2ZSOCLJRx1/cYZSrs6qAWjokQEhgD3RTxrgbFcRQK
   on:
-    branch: master
-
-  provider: GitHub
-  auth_token:
-    secure: vpS3QtQEPy/DC+8dYXY5VRd2ZSOCLJRx1/cYZSrs6qAWjokQEhgD3RTxrgbFcRQK
-  on:
     appveyor_repo_tag: true

@@ -13,11 +13,15 @@ test: off
 branches:
   only:
   - master
-
+  
+artifacts:
+  - releases\*.exe
+  
 deploy:
 - provider: GitHub
-  artifact: releases\*.exe
   auth_token:
-    secure: i18IKlzw8mJ/ypnDh236MBrTPYMfJobcubpxCOIBDMI+fwklx8CPy+Ie9JE/BrohRNzJgSVZmd4D2Y1R3glmZsH/kq17KusYRbYW7Xao59M=
-    branch: master               # release from master branch only
-    appveyor_repo_tag: true       # deploy on tag push only
+    secure: tsButLvk52+UaRqT1htE6Lw8Txzy5fq3pvK21gbLd9NNbYBArjt1GgonfVDccyKr
+  draft: false
+  prerelease: false
+  on:
+    appveyor_repo_tag: true 

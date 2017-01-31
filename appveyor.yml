@@ -21,8 +21,5 @@ deploy:
 - provider: GitHub
   auth_token:
     secure: i18IKlzw8mJ/ypnDh236MBrTPYMfJobcubpxCOIBDMI+fwklx8CPy+Ie9JE/BrohRNzJgSVZmd4D2Y1R3glmZsH/kq17KusYRbYW7Xao59M=
-  draft: true
-  prerelease: true
-  force_update: true
   on:
-    branch: master
+    appveyor_repo_tag: true

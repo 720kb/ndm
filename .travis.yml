@@ -9,7 +9,8 @@ node_js:
 script: "echo build done"
 before_deploy:
   - npm run lint
-  - npm run build
+  - npm run build-mac
+  - npm run build-linux
   - export VERSION=$(echo $TRAVIS_TAG | tr -d "v")
 deploy:
   provider: releases

@@ -52,8 +52,12 @@ $ yaourt -S ndm
 
 **Contributors** [All the awesome contributors](https://github.com/720kb/ndm/graphs/contributors)
 
-<a href="https://opencollective.com/ndm/backer/0/website" target="_blank"><img src="https://opencollective.com/ndm/backer/0/avatar.svg"></a> <a href="https://opencollective.com/ndm/sponsor/0/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/0/avatar.svg"></a>
-
+<a href="https://opencollective.com/ndm/backer/0/website" target="_blank">
+<img src="https://opencollective.com/ndm/backer/0/avatar.svg">
+</a> 
+<a href="https://opencollective.com/ndm/sponsor/0/website" target="_blank">
+<img src="https://opencollective.com/ndm/sponsor/0/avatar.svg">
+</a>
 <p>
 <b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 
   |

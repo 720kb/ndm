@@ -5,13 +5,10 @@ platform:
   - x86
 
 install:
-  - npm install
-  
-test_script:
- - npm run lint
+  - npm install && npm run lint && npm run build-win
 
-build_script:
- - cmd: npm run build-win
+build: off
+test: off
  
 artifacts:
   - path: 'releases\*.exe'
@@ -23,8 +20,7 @@ branches:
 deploy:
   provider: GitHub
   auth_token: 
-    secure: vpS3QtQEPy/DC+8dYXY5VRd2ZSOCLJRx1/cYZSrs6qAWjokQEhgD3RTxrgbFcRQK
-  artifact: 'releases\*.exe'    
+    secure: vpS3QtQEPy/DC+8dYXY5VRd2ZSOCLJRx1/cYZSrs6qAWjokQEhgD3RTxrgbFcRQK   
   draft: false
   prerelease: false
   on:

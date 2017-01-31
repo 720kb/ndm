@@ -13,10 +13,10 @@ test: off
 branches:
   only:
   - master
-  
+
 artifacts:
-  - releases\*.exe
-  
+  path: releases\*.exe
+
 deploy:
 - provider: GitHub
   auth_token:
@@ -24,4 +24,4 @@ deploy:
   draft: false
   prerelease: false
   on:
-    appveyor_repo_tag: true 
+    appveyor_repo_tag: true

@@ -10,7 +10,8 @@ install:
   - echo 'NPM_VERSION' && npm -v
   - npm install
   - npm run build-win
- 
+
+build: off
 test: off
 
 artifacts:

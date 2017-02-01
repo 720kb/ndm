@@ -1,7 +1,6 @@
-os: Visual Studio 2015
-
 environment:
-  nodejs_version: "6"
+  matrix:
+    - nodejs_version: "6"
 
 platform:
   - x86

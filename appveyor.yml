@@ -11,7 +11,7 @@ install:
   - npm install
   - npm run build-win
   - ps: $app_name=Get-Item "releases\*.exe" 
-  - ps: Rename-Item -NewName { $app_name -replace " Setup ","-" }
+  - ps: Rename-Item -NewName { $app_name.Name -replace " Setup ","-" }
 
 build: off
 test: off

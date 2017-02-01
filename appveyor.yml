@@ -20,7 +20,7 @@ artifacts:
 before_deploy:
  - set APP_VERSION=$(node -p -e "require('./package.json').version") #export package.json app version
  - set APP_NAME=$(node -p -e "require('./package.json').name") #export package.json app name
- - rename "releases\%APP_NAME% Setup %APP_VERSION%.exe" releases\%APP_NAME%-%APP_VERSION%.exe
+ - rename "releases\%APP_NAME% Setup %APP_VERSION%.exe" %APP_NAME%-%APP_VERSION%.exe
 
 deploy:
 - provider: GitHub

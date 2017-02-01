@@ -1,5 +1,5 @@
 environment:
-  nodejs_version: '6'
+ # nodejs_version: '6'
   
 platform:
   - x86
@@ -9,7 +9,6 @@ install:
   - echo 'NODE_VERSION' && node -v
   - echo 'NPM_VERSION' && npm -v
   - npm install
-  - npm prune
   - npm run build-win
  
 test: off

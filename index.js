@@ -139,15 +139,6 @@
           click() {
             shell.openExternal(`${packageJSON.social.twitter.url}`);
           }
-        },
-        {
-          'type': 'separator'
-        },
-        {
-          'role': 'minimize'
-        },
-        {
-          'role': 'close'
         }
       ]
     };
@@ -198,6 +189,18 @@
       windowMenuItem,
       helpMenuItem
     ];
+
+    if (process &&
+    process.platform !== 'win32' &&
+    process.platform !== 'darwin') {
+      //if it's linux
+      menuTemplate = [
+        aboutMenuItem,
+        editMenuItem,
+        viewMenuItem,
+        helpMenuItem
+      ];
+    }
 
     Menu.setApplicationMenu(Menu.buildFromTemplate(menuTemplate));
 

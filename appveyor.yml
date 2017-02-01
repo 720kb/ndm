@@ -9,8 +9,6 @@ install:
   - rm -Rf node_modules\
   - echo 'NODE_VERSION' && node -v
   - echo 'NPM_VERSION' && npm -v
-  - set VERSION=$(node -p -e "require('./package.json').version") #export package.json app version
-  - set APP_NAME=$(node -p -e "require('./package.json').name") #export package.json app name
   - npm cache clean
   - npm install
   - npm run lint
@@ -21,7 +19,6 @@ test: off
 
 artifacts:
   path: releases\*.exe
-  name: %APP_NAME%-%VERSION%.exe
 
 deploy:
 - provider: GitHub

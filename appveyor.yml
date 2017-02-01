@@ -5,6 +5,7 @@ install:
   - echo 'NODE_VERSION' && node -v
   - echo 'NPM_VERSION' && npm -v
   - npm cache clean
+  - npm prune
   - npm install
   - npm run lint
   - npm run build-win

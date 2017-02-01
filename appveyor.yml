@@ -15,7 +15,7 @@ install:
   - npm install
   - npm run lint
   - npm run build-win
-  - rename %echo APP_NAME%-Setup-%echo VERSION%.exe %echo APP_NAME%-%echo VERSION%.exe #rename ndm-Setup-<:version>.exe
+  - rename releases\*.exe releases\%echo APP_NAME%-%echo VERSION%.exe #rename ndm-Setup-<:version>.exe
 
 build: off
 test: off

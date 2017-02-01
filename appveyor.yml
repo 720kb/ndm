@@ -1,4 +1,4 @@
-environment:
+#environment:
  # nodejs_version: '6'
   
 platform:

@@ -10,7 +10,7 @@ install:
   - echo 'NPM_VERSION' && npm -v
   - npm install
   - npm run build-win
-  - ps: Get-Item "releases\*.exe" | Rename-Item -newname { $_.name -replace " Setup ","-" }
+  - ps: get-childItem releases\*.exe | rename-item -newname { $_.name -replace " Setup ","-" }
 
 build: off
 test: off

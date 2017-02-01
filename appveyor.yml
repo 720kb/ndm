@@ -9,10 +9,13 @@ install:
   - rm -Rf node_modules\
   - echo 'NODE_VERSION' && node -v
   - echo 'NPM_VERSION' && npm -v
+  - set VERSION=$(node -p -e "require('./package.json').version") #export package.json app version
+  - set APP_NAME=$(node -p -e "require('./package.json').name") #export package.json app name
   - npm cache clean
   - npm install
   - npm run lint
   - npm run build-win
+  - rename "releases\%APP_NAME% Setup %VERSION%.exe" releases\%APP_NAME%-%VERSION%.exe #rename ndm-Setup-<:version>.exe
 
 build: off
 test: off

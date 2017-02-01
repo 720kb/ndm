@@ -10,9 +10,7 @@ install:
   - echo 'NPM_VERSION' && npm -v
   - npm install
   - npm prune
-  
-build:
- - npm run build-win
+  - npm run build-win
  
 test: off
 

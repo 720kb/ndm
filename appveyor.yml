@@ -12,13 +12,14 @@ install:
   - set APP_NAME=$(node -p -e "require('./package.json').name") #export package.json app name
   - npm install
   - npm run build-win
+  - ps: $app_name= Get-Item "releases\*.exe" 
+  - ps: Rename-Item -NewName { $app_name -replace " Setup ","-" }
 
 build: off
 test: off
 
 artifacts:
   path: releases\*.exe
-  name: $(APP_NAME)-$(APP_VERSION).exe
  
 deploy:
 - provider: GitHub

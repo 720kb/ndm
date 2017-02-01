@@ -2,7 +2,6 @@ platform:
   - x86
 
 install:
-  - rm -Rf node_modules\
   - echo 'NODE_VERSION' && node -v
   - echo 'NPM_VERSION' && npm -v
   - npm cache clean

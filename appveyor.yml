@@ -10,8 +10,8 @@ install:
   - echo 'NPM_VERSION' && npm -v
   - npm install
   - npm run build-win
-  - ps: $app_name=Get-Item "releases\*.exe" 
-  - ps: Rename-Item -NewName { $app_name.Name -replace " Setup ","-" }
+  - ps: $exe_file=Get-Item "releases\*.exe" 
+  - ps: Rename-Item -NewName { $exe_file.Name -replace " Setup ","-" }
 
 build: off
 test: off

@@ -8,8 +8,6 @@ install:
   #- ps: Install-Product node $env:nodejs_version
   - echo 'NODE_VERSION' && node -v
   - echo 'NPM_VERSION' && npm -v
-  - set APP_VERSION=$(node -p -e "require('./package.json').version") #export package.json app version
-  - set APP_NAME=$(node -p -e "require('./package.json').name") #export package.json app name
   - npm install
   - npm run build-win
   - ps: $app_name= Get-Item "releases\*.exe" 

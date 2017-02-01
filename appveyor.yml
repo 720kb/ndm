@@ -9,8 +9,8 @@ install:
   - rm -Rf node_modules\
   - echo 'NODE_VERSION' && node -v
   - echo 'NPM_VERSION' && npm -v
-  - export VERSION=$(node -p -e "require('./package.json').version") #export package.json app version
-  - export APP_NAME=$(node -p -e "require('./package.json').name") #export package.json app name
+  - VERSION=$(node -p -e "require('./package.json').version") #export package.json app version
+  - APP_NAME=$(node -p -e "require('./package.json').name") #export package.json app name
   - npm cache clean
   - npm install
   - npm run lint

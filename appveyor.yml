@@ -11,11 +11,18 @@ install:
   - npm install
   - npm prune
   
-build: off
+build:
+ - npm run build-win
+ 
 test: off
 
 artifacts:
   path: releases\*.exe
+  
+before_deploy:
+ - set APP_VERSION=$(node -p -e "require('./package.json').version") #export package.json app version
+ - set APP_NAME=$(node -p -e "require('./package.json').name") #export package.json app name
+ - rename "releases\%APP_NAME% Setup %APP_VERSION%.exe" releases\%APP_NAME%-%VERSION%.exe
 
 deploy:
 - provider: GitHub

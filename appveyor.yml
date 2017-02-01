@@ -1,13 +1,16 @@
+environment:
+  nodejs_version: '6'
+  
 platform:
   - x86
 
 install:
+  - ps: Install-Product node $env:nodejs_version
   - echo 'NODE_VERSION' && node -v
   - echo 'NPM_VERSION' && npm -v
   - npm cache clean
   - npm install
-  - npm run lint
-  - npm run build-win
+  - npm prune
   
 build: off
 test: off

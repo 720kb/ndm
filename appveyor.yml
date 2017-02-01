@@ -15,13 +15,13 @@ install:
   - npm install
   - npm run lint
   - npm run build-win
-  - rename "releases\%APP_NAME% Setup %VERSION%.exe" %APP_NAME%-%VERSION%.exe #rename ndm-Setup-<:version>.exe
-
+  
 build: off
 test: off
 
 artifacts:
   path: releases\*.exe
+  name: %APP_NAME%-%VERSION%.exe
 
 deploy:
 - provider: GitHub

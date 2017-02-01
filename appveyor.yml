@@ -6,8 +6,8 @@ platform:
 
 install:
   #- ps: Install-Product node $env:nodejs_version
-  #- echo 'NODE_VERSION' && node -v
-  #- echo 'NPM_VERSION' && npm -v
+  - echo 'NODE_VERSION' && node -v
+  - echo 'NPM_VERSION' && npm -v
   - npm install
   - npm prune
   - npm run build-win

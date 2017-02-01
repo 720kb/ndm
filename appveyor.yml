@@ -8,7 +8,6 @@ install:
   - ps: Install-Product node $env:nodejs_version
   - echo 'NODE_VERSION' && node -v
   - echo 'NPM_VERSION' && npm -v
-  - npm cache clean
   - npm install
   - npm prune
   

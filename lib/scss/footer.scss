@@ -3,7 +3,7 @@
   background: $bg-light;
   border-top: 1px solid $color-ddd;
   bottom: 0;
-  font-weight: 100;
+  font-weight: normal;
   height: 24px;
   line-height: 22.5px;
   padding: 0 7px;
@@ -12,9 +12,12 @@
   z-index: 9;
   font-size: 11px;
 
+  b {
+    font-weight: normal;
+  }
+
   i {
-    font-size: 16px;
-    color: $color-666;
+    font-size: 15px;
   }
   .loader {
     width: 7px;

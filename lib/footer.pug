@@ -4,15 +4,7 @@
       | npm
     = " "
     small
-      | v{{shell.npmCurrentVersionBadge || ' - - -'}}
-    = " "
-    b
-      | latest
-    = " "
-    = " "
-    = " "
-    small
-      | v{{shell.npmLatestVersionBadge || ' - - -'}}
+      | v{{shell.npmCurrentVersionBadge || ' ...'}}
   span(class="npm-status", ng-mouseenter="shell.checkRegistryStatus()")
     i.fa.fa-disk(title="npm registry is available", ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
     i.fa.fa-disk(title="npm registry checking ...", ng-show="shell.loadingRegistryStatus")

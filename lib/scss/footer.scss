@@ -6,7 +6,7 @@
   font-weight: 100;
   height: 24px;
   line-height: 22.5px;
-  padding: 0 5px;
+  padding: 0 7px;
   position: fixed;
   width: 100%;
   z-index: 9;
@@ -17,12 +17,12 @@
     color: $color-666;
   }
   .loader {
-    width: 10px;
+    width: 7px;
     display: inline-block;
     line-height: 2px;
 
     i {
-      width: 10px;
+      width: 7px;
       min-width: 10px;
       position: relative;
       text-align: center;

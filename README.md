@@ -16,9 +16,13 @@ Manage npm and npm projects straight from the couch with "npm desktop manager".
 <a href="https://ci.appveyor.com/project/45kb/ndm">
 <img src="https://ci.appveyor.com/api/projects/status/da313gnkvdbbvflh?svg=true"/>
 </a>
+<a href="https://snyk.io/test/github/720kb/ndm/09d8e74149402546cdc48a3df11c76496b19e29d">
+<img src="https://snyk.io/test/github/720kb/ndm/09d8e74149402546cdc48a3df11c76496b19e29d/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/720kb/ndm/09d8e74149402546cdc48a3df11c76496b19e29d" style="max-width:100%;"/></a>
+
 <a href="https://720kb.github.io/ndm/" target="_blank">
 <img src="https://img.shields.io/github/downloads/720kb/ndm/total.svg"/>
 </a>
+
 <a href="https://gitter.im/720kb/ndm" target="_blank">
 <img src="https://img.shields.io/gitter/room/ndm/ndm.js.svg"/>
 </a>

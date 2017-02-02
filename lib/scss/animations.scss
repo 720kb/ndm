@@ -16,3 +16,24 @@
     transform: translateY(0);
   }
 }
+
+@keyframes toggleOpacity {
+
+ 0% {
+   opacity: .2;
+ }
+
+ 100% {
+   opacity: 1;
+ }
+}
+@keyframes toggleOpacityInverse {
+
+ 0% {
+   opacity: 1;
+ }
+
+ 100% {
+   opacity: .2;
+ }
+}

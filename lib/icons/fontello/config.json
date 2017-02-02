@@ -109,12 +109,6 @@
       "src": "fontawesome"
     },
     {
-      "uid": "130380e481a7defc690dfb24123a1f0c",
-      "css": "circle",
-      "code": 61713,
-      "src": "fontawesome"
-    },
-    {
       "uid": "0ccb084ddeeae372673793ed0b45bb4a",
       "css": "folder-o",
       "code": 59400,
@@ -124,6 +118,18 @@
       "uid": "80cd1022bd9ea151d554bec1fa05f2de",
       "css": "caret-up",
       "code": 59401,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "795efd07cd5205b589c883916a76cff0",
+      "css": "disk",
+      "code": 61600,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "130380e481a7defc690dfb24123a1f0c",
+      "css": "circle",
+      "code": 61713,
       "src": "fontawesome"
     }
   ]

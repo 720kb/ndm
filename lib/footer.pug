@@ -1,15 +1,6 @@
 .footer.bg-footer
-  span(class="loader")
-    img(src="img/loading.svg", width="16", ng-show="shell.loadingRegistryStatus")
-    i(class="fa fa-circle", ng-class="{'active': shell.registryStatus}", ng-show="!shell.loadingRegistryStatus")
   span(class="npm-status", ng-mouseenter="shell.checkRegistryStatus()")
-    img(src="img/npm-logo-black.svg")
-    = " "
-    | status:
-    = " "
-    b(ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
-      | available
-    b(ng-show="!shell.loadingRegistryStatus && !shell.registryStatus")
-      | unavailable
-    b(ng-show="shell.loadingRegistryStatus")
-      | checking
+    i.fa.fa-disk(title="npm registry status", ng-class="{'available': !shell.loadingRegistryStatus && shell.registryStatus , 'checking': shell.loadingRegistryStatus, 'unavailable': !shell.loadingRegistryStatus && !shell.registryStatus}")
+    div.loader(ng-class="{'loading': shell.loadingRegistryStatus}")
+      i.fa.fa-circle
+      i.fa.fa-circle

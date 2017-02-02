@@ -6,54 +6,49 @@
   font-weight: 100;
   height: 24px;
   line-height: 22.5px;
-  padding: 0 15px;
+  padding: 0 10px;
   position: fixed;
   width: 100%;
   z-index: 9;
   font-size: 12px;
 
-  span {
-    float: right;
-    position: relative;
-    right: -5px;
+  i {
+    font-size: 16px;
+  }
+  .loader {
+    width: 10px;
+    display: inline-block;
+    line-height: 2px;
 
-    &.npm-status {
-
-      img {
-        opacity: .7;
-        vertical-align: middle;
-        width: 26px;
-      }
-
-      b {
-        font-weight: 500;
-      }
+    i {
+      width: 10px;
+      min-width: 10px;
+      position: relative;
+      text-align: center;
+      font-size: 5px;
+      top: -1px;
+      color: $color-muted;
     }
-
-    &.loader {
-
-      img {
-        width: 16px;
-        margin-left: 5px;
-      }
-
+    &.loading {
       i {
-        color: $color-muted-more;
-        vertical-align: middle;
-        margin-left: 6px;
-
-        &.active {
-          color: $color-green;
+        animation: toggleOpacity .1s linear infinite;
+        &:first-child {
+          animation: toggleOpacityInverse .15s linear infinite;
         }
       }
     }
   }
-  a {
-    opacity: .75;
+  span {
+    float: right;
 
-    &:hover,
-    &:active {
-      opacity: 1;
+    &.npm-status {
+      i {
+        color: $color-666;
+
+        &.unavailable {
+          color: $color-error;
+        }
+      }
     }
   }
 }

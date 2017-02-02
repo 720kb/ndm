@@ -6,12 +6,6 @@
     .col-xs-4.top-menu-left
       span.action-link-disabled(ng-class="{'action-link-disabled': shell.globalDisabled, 'action-link-enabled': !shell.globalDisabled}")
         img(src="img/npm-logo-square.svg", class="pull-left")
-        span(ng-show="!shell.globalDisabled", class="badge-version color-black pull-left")
-          b(title="New npm version available", ng-show="topMenu.npmLatestVersionBadge && (topMenu.npmLatestVersionBadge !== topMenu.npmCurrentVersionBadge)")
-            i.fa.fa-caret-up
-            | {{topMenu.npmLatestVersionBadge}}
-          b(title="Current npm version", ng-show="topMenu.npmCurrentVersionBadge && (!topMenu.npmLatestVersionBadge || (topMenu.npmLatestVersionBadge === topMenu.npmCurrentVersionBadge))")
-            | {{topMenu.npmCurrentVersionBadge}}
       button.button-global(type="button", title="Enable ndm in global folder",  ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
         i.fa.fa-globe.color-primary
         | Enable

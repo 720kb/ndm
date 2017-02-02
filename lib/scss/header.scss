@@ -34,7 +34,7 @@
     }
   }
 
-  .button-add-project {
+  .button-add-project, .button-update {
     font-size: 12px;
     background: none;
     border: none;
@@ -53,23 +53,11 @@
       @include bg-rgba-black(.05);
     }
   }
-
-  .badge-version {
-    font-size: 9.5px;
-    color: $color-666;
-    margin-top: 3px;
-    margin-left: 3.5%;
-    position: absolute;
-
-    i {
-      margin-left: -7px;
-      margin-right: -2px;
-      font-size: 11px;
-      color: $color-primary;
-    }
+  .button-update {
+    margin-left: 5px;
   }
 
-  .button-global, .button-update {
+  .button-global {
 
     font-size: 11.5px;
     height: 20.5px;

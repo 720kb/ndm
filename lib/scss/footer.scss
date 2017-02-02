@@ -10,7 +10,7 @@
   position: fixed;
   width: 100%;
   z-index: 9;
-  font-size: 12px;
+  font-size: 11px;
 
   i {
     font-size: 16px;
@@ -48,10 +48,20 @@
       }
     }
   }
-  span {
-    float: right;
 
+  span {
+    &.badge-version {
+      small {
+        font-size: 10px;
+      }
+      i {
+        font-size: 11px;
+        color: $color-positive;
+      }
+    }
     &.npm-status {
+      float: right;
+
       i {
         &.checking {
           color: $color-muted;

@@ -27,13 +27,13 @@
       text-align: center;
       font-size: 5px;
       top: -1px;
-      color: $color-muted;
+      color: $color-666;
     }
     &.loading {
       i {
-        animation: toggleOpacity .1s linear infinite;
+        animation: toggleOpacity .4s linear infinite;
         &:first-child {
-          animation: toggleOpacityInverse .15s linear infinite;
+          animation: toggleOpacityInverse .25s linear infinite;
         }
       }
     }
@@ -43,8 +43,9 @@
 
     &.npm-status {
       i {
-        color: $color-666;
-
+        &.checking {
+          color: $color-muted;
+        }
         &.unavailable {
           color: $color-error;
         }

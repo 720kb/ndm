@@ -14,6 +14,7 @@
 
   i {
     font-size: 16px;
+    color: $color-666;
   }
   .loader {
     width: 10px;
@@ -27,11 +28,20 @@
       text-align: center;
       font-size: 5px;
       top: -1px;
-      color: $color-muted-more;
+
+      &.available {
+        color: $color-green;
+      }
+
+      &.unavailable {
+        color: $color-error;
+      }
     }
     &.loading {
       i {
+
         animation: toggleOpacity .4s linear infinite;
+
         &:first-child {
           animation: toggleOpacityInverse .25s linear infinite;
         }

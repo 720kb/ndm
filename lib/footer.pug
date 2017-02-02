@@ -1,8 +1,8 @@
 .footer.bg-footer
   span(class="npm-status", ng-mouseenter="shell.checkRegistryStatus()")
-    i.fa.fa-disk(class="available", title="npm registry is available", ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
-    i.fa.fa-disk(class="checking", title="npm registry checking ...", ng-show="shell.loadingRegistryStatus")
-    i.fa.fa-disk(class="unavailable", title="npm registry is unavailable", ng-show="!shell.loadingRegistryStatus && !shell.registryStatus")
+    i.fa.fa-disk(title="npm registry is available", ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
+    i.fa.fa-disk(title="npm registry checking ...", ng-show="shell.loadingRegistryStatus")
+    i.fa.fa-disk(title="npm registry is unavailable", ng-show="!shell.loadingRegistryStatus && !shell.registryStatus")
     div.loader(ng-class="{'loading': shell.loadingRegistryStatus}")
-      i.fa.fa-circle
-      i.fa.fa-circle
+      i.fa.fa-circle(ng-class="{'available': !shell.loadingRegistryStatus && shell.registryStatus}")
+      i.fa.fa-circle(ng-class="{'unavailable': !shell.loadingRegistryStatus && !shell.registryStatus}")

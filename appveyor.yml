@@ -1,8 +1,12 @@
 #environment:
  # nodejs_version: '6'
-  
+
 platform:
   - x86
+
+branches:
+  only:
+    - master
 
 install:
   #- ps: Install-Product node $env:nodejs_version
@@ -17,7 +21,7 @@ test: off
 
 artifacts:
   path: releases\*.exe
- 
+
 deploy:
 - provider: GitHub
   auth_token:

@@ -32,7 +32,8 @@
 
     img {
       width: 13px;
-      vertical-align: baseline;
+      position: relative;
+      top: -2px;
     }
 
     &.disabled {

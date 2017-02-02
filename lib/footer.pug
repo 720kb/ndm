@@ -1,13 +1,16 @@
 .footer.bg-footer
-  span(class="badge-version", title="Current npm version")
+  span(class="badge-version", title="Current npm version", ng-mouseover="shell.updateNpmBadgeVersion()")
     b
       | npm
     = " "
-    small(title="New npm version available v{{shell.npmLatestVersionBadge}}", ng-show="shell.npmLatestVersionBadge && (shell.npmLatestVersionBadge !== shell.npmCurrentVersionBadge)")
-      i.fa.fa-caret-up
     small
-      | v{{shell.npmCurrentVersionBadge || '-'}}
+      | v{{shell.npmCurrentVersionBadge || ' - - -'}}
     = " "
+    b
+      | latest
+    = " "
+    small
+      | v{{shell.npmLatestVersionBadge || ' - - -'}}
   span(class="npm-status", ng-mouseenter="shell.checkRegistryStatus()")
     i.fa.fa-disk(title="npm registry is available", ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
     i.fa.fa-disk(title="npm registry checking ...", ng-show="shell.loadingRegistryStatus")

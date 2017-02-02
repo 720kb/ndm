@@ -45,7 +45,7 @@ Manage npm and npm projects straight from the couch with "npm desktop manager".
   
 
 ## Download
-**[Download for MacOS](https://720kb.github.io/ndm#mac)**  &nbsp; | &nbsp;**[Download for Linux](https://720kb.github.io/ndm#linux)** &nbsp; | &nbsp; **Download for Windows (soon)**
+**[Download for MacOS](https://720kb.github.io/ndm#mac)**  &nbsp; | &nbsp;**[Download for Linux](https://720kb.github.io/ndm#linux)** &nbsp; | &nbsp;**[Download for Windows](https://720kb.github.io/ndm#win)** &nbsp;
 
 ###### You can browse all the releases at [github.com/720kb/ndm/releases](https://github.com/720kb/ndm/releases)
 

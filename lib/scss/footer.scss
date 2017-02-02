@@ -31,7 +31,8 @@
       text-align: center;
       font-size: 5px;
       top: -1px;
-
+      color: $color-muted;
+      
       &.available {
         color: $color-green;
       }

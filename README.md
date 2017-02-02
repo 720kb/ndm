@@ -16,4 +16,4 @@ $ git checkout gh-pages
 $ python -m SimpleHTTPServer
 ```
 
-##### -> now open [http://localhost:8000](http://localhost:8000)
+##### -> Now open [http://localhost:8000](http://localhost:8000)

@@ -36,7 +36,7 @@
       'label': 'File',
       'submenu': [
         {
-          'label': 'Add Project ...',
+          'label': 'Add Project...',
           'accelerator': 'CmdOrCtrl+O',
           click() {
             mainWindow.webContents.send('menu:add-project-folder');

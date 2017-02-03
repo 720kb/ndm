@@ -13,9 +13,6 @@
         i.fa.fa-history
         | Update
     .col-xs-8.top-menu-right
-      button(title="Add project to be managed",type="button",  class="pull-left button-add-project", ng-click="shell.openChooser()")
-        i.fa.fa-plus-circle
-        | Project
       a.pull-right(title="Add Packages", ng-show="topMenu.projectPath", ng-click="topMenu.activeClickedLink('1');", ng-class="{'active': topMenu.activeLink === '1'}")
         i.fa.fa-cloud-download
       span(ng-show='shell.showMenuButtons')

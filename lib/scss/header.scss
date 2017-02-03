@@ -34,13 +34,13 @@
     }
   }
 
-  .button-add-project, .button-update {
+  .button-update {
     font-size: 12px;
     background: none;
     border: none;
     padding: 7px 6px 4px 6px;
     text-indent: -1px;
-    margin-left: -6px;
+    margin-left: 6px;
 
     i {
       color: $color-primary;
@@ -52,9 +52,6 @@
     &:active {
       @include bg-rgba-black(.05);
     }
-  }
-  .button-update {
-    margin-left: 6px;
   }
 
   .button-global {

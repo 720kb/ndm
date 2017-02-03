@@ -32,6 +32,18 @@
         }
       ]
     }
+    , fileMenuItem = {
+      'label': 'File',
+      'submenu': [
+        {
+          'label': 'Add Project ...',
+          'accelerator': 'CmdOrCtrl+O',
+          click() {
+            mainWindow.webContents.send('menu:add-project-folder');
+          }
+        }
+      ]
+    }
     , editMenuItem = {
       'label': 'Edit',
       'submenu': [
@@ -171,6 +183,7 @@
 
       menuTemplate = [
         aboutMenuItem,
+        fileMenuItem,
         editMenuItem,
         viewMenuItem,
         windowMenuItem,
@@ -183,6 +196,7 @@
           //if it's linux
           menuTemplate = [
             aboutMenuItem,
+            fileMenuItem,
             editMenuItem,
             viewMenuItem,
             helpMenuItem

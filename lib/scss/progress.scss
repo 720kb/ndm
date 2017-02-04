@@ -1,16 +1,13 @@
 
 .left-progress {
-  animation: loadingStripes  1.3s linear infinite;
-  width: 90%;
+  animation: loadingStripes 1.3s linear infinite;
+  width: 100%;
   font-size: 11px;
   margin: 0 auto;
-  line-height: 11px;
-  margin-bottom: 5px;
-  background: $bg-light;
-
-  &:first-child {
-    margin-top: 10px;
-  }
+  line-height: 0;
+  background: $bg-primary;
+  padding: 5px 10px;
+  border-bottom: 1px solid $color-ccc;
 
   small {
     font-size: 11px;

@@ -14,10 +14,11 @@
   img {
     width: 23px;
     margin-top: 4px;
+    margin-right: 6px;
   }
 
   a {
-    padding: 6px 0 4px 0;
+    padding: 6.5px 0 4px 0;
 
     &.pull-right {
       margin-left: 4.5px;
@@ -35,15 +36,15 @@
     }
   }
 
-  .button-update {
+  .button-update, .button-add-project {
     background: none;
     border: none;
-    padding: 6px 6px 3px 6px;
+    padding: 6.5px 6px 4.5px 6px;
     text-indent: -1px;
-    margin-left: 6px;
 
     i {
-      font-size: 16.5px;
+      font-size: 14px;
+      color: $color-primary;
       position: relative;
       top: -1.5px;
     }
@@ -51,6 +52,10 @@
     &:active {
       @include bg-rgba-black(.05);
     }
+  }
+
+  .button-add-project {
+    margin-left: -6px;
   }
 
   .button-global {

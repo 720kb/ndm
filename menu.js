@@ -128,6 +128,15 @@
           'type': 'separator'
         },
         {
+          'label': 'Donate',
+          click() {
+            shell.openExternal(packageJSON.donate.opencollective);
+          }
+        },
+        {
+          'type': 'separator'
+        },
+        {
           'label': 'Join Chat',
           click() {
             shell.openExternal(`${packageJSON.social.gitter.url}`);
@@ -142,13 +151,10 @@
       ]
     };
 
-    //now push OS menu items for linux and mac
     if (process.platform &&
-      process.platform !== 'win32') {
-        //if mac or linux
+      process.platform === 'darwin') {
         aboutMenuItem.label = packageJSON.name;
-        //if mac only
-        if (process.platform === 'darwin') {
+
           aboutMenuItem.submenu.unshift({
             'role': 'about'
           });
@@ -164,44 +170,37 @@
           aboutMenuItem.submenu.push({
             'type': 'separator'
           });
-        }
-      } else {
-        aboutMenuItem.label = 'About';
-      }
+          aboutMenuItem.submenu.push({
+            'label': 'Restart',
+            'accelerator': 'CmdOrCtrl+R',
+            click() {
+              app.relaunch();
+              app.quit();
+            }
+          });
+          aboutMenuItem.submenu.push({
+            'role': 'quit'
+          });
 
-      aboutMenuItem.submenu.push({
-        'label': 'Restart',
-        'accelerator': 'CmdOrCtrl+R',
-        click() {
-          app.relaunch();
-          app.quit();
-        }
-      });
-      aboutMenuItem.submenu.push({
-        'role': 'quit'
-      });
-
-      menuTemplate = [
-        aboutMenuItem,
-        fileMenuItem,
-        editMenuItem,
-        viewMenuItem,
-        windowMenuItem,
-        helpMenuItem
-      ];
-
-      if (process &&
-        process.platform !== 'win32' &&
-        process.platform !== 'darwin') {
-          //if it's linux
           menuTemplate = [
             aboutMenuItem,
             fileMenuItem,
             editMenuItem,
             viewMenuItem,
+            windowMenuItem,
             helpMenuItem
           ];
-        }
+      } else {
+        aboutMenuItem.label = 'About';
+        menuTemplate = [
+          fileMenuItem,
+          editMenuItem,
+          viewMenuItem,
+          helpMenuItem,
+          aboutMenuItem
+        ];
+      }
+
     return menuTemplate;
   };
 }());

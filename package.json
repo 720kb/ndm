@@ -5,6 +5,9 @@
   "main": "index.js",
   "homepage": "https://720kb.github.io/ndm",
   "github": "https://github.com/720kb/ndm",
+  "donate": {
+    "opencollective": "https://opencollective.com/ndm"
+  },
   "author": {
     "name": "720kb",
     "email": "tech@720kb.net",

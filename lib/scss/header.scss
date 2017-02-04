@@ -17,14 +17,14 @@
   }
 
   a {
-    padding: 5px 0 4px 0;
+    padding: 6px 0 4px 0;
 
     &.pull-right {
       margin-left: 4.5px;
     }
 
     i {
-      font-size: 21px;
+      font-size: 20px;
       line-height: 0;
     }
 
@@ -43,10 +43,9 @@
     margin-left: 6px;
 
     i {
-      color: $color-primary;
       font-size: 16.5px;
       position: relative;
-      top: -2px;
+      top: -1.5px;
     }
 
     &:active {

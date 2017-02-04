@@ -26,9 +26,6 @@
           click() {
             shell.openExternal(packageJSON.homepage);
           }
-        },
-        {
-          'type': 'separator'
         }
       ]
     }
@@ -154,9 +151,11 @@
     if (process.platform &&
       process.platform === 'darwin') {
         aboutMenuItem.label = packageJSON.name;
-
           aboutMenuItem.submenu.unshift({
             'role': 'about'
+          });
+          aboutMenuItem.submenu.push({
+            'type': 'separator'
           });
           aboutMenuItem.submenu.push({
             'role': 'hide'

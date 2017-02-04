@@ -1,19 +1,10 @@
 div.row
   div.col-md-12
     div.information
-      span.info-x2
-        b
-          | Name:
-        = " "
-        | {{content.packageViewInfos.name || '-'}}
-      span.info-x2
-        b
-          | Homepage:
-        = " "
-        a(title="Open in browser", ng-if="content.packageViewInfos.homepage", ng-click="shell.openBrowserLink(content.packageViewInfos.homepage)")
-          | {{ content.packageViewInfos.homepage }}
-        span(ng-if="!content.packageViewInfos.homepage")
-          | -
+      b
+        | Name:
+      = " "
+      | {{content.packageViewInfos.name || '-'}}
     div.information(title="{{content.packageViewInfos.description}}")
       b
         | Description:
@@ -49,14 +40,8 @@ div.row
         | {{ content.pkgUrlToNpmJsWebsite }}
       span(ng-if="!content.packageViewInfos.name")
         | -
-    div.information
-      span.info-x2(title="Package author")
-        b
-          | Author:
-        = " "
-        | {{content.packageViewInfos.author || '-'}}
-      span.info-x2(title="Package license")
-        b
-          | License:
-        = " "
-        | {{content.packageViewInfos.license.type || content.packageViewInfos.license || '-'}}
+    div.information  
+      b
+        | License:
+      = " "
+      | {{content.packageViewInfos.license.type || content.packageViewInfos.license || '-'}}

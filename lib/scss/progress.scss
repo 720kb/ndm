@@ -5,9 +5,7 @@
   font-size: 11px;
   margin: 0 auto;
   line-height: 0;
-  background: $bg-primary;
   padding: 5px 10px;
-  border-bottom: 1px solid $color-ccc;
 
   small {
     font-size: 11px;
@@ -18,6 +16,7 @@
       font-size: 9px;
     }
     &.running-end {
+      text-indent: -2px;
       display: none;
     }
   }

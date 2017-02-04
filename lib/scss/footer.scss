@@ -10,14 +10,14 @@
   position: fixed;
   width: 100%;
   z-index: 9;
-  font-size: 11px;
+  font-size: 12px;
 
   b {
     font-weight: 500;
   }
 
   i {
-    font-size: 15px;
+    font-size: 16px;
   }
   .loader {
     width: 7px;
@@ -32,7 +32,7 @@
       font-size: 5px;
       top: -1px;
       color: $color-muted;
-      
+
       &.available {
         color: $color-green;
       }
@@ -43,7 +43,6 @@
     }
     &.loading {
       i {
-
         animation: toggleOpacity .4s linear infinite;
 
         &:first-child {

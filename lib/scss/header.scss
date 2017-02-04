@@ -36,7 +36,6 @@
   }
 
   .button-update {
-    font-size: 12px;
     background: none;
     border: none;
     padding: 6px 6px 3px 6px;
@@ -47,7 +46,7 @@
       color: $color-primary;
       font-size: 16.5px;
       position: relative;
-      top: -1px;
+      top: -2px;
     }
 
     &:active {

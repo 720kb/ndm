@@ -39,12 +39,13 @@
     font-size: 12px;
     background: none;
     border: none;
-    padding: 7px 6px 4px 6px;
+    padding: 6px 6px 3px 6px;
     text-indent: -1px;
     margin-left: 6px;
 
     i {
-      font-size: 14px;
+      color: $color-primary;
+      font-size: 16.5px;
       position: relative;
       top: -1px;
     }

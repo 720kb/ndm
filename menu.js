@@ -194,7 +194,6 @@
 
         viewMenuItem.submenu.unshift({
           'label': 'Toggle menu',
-          'accelerator': 'Alt',
           click() {
             mainWindow.setAutoHideMenuBar(true);
             if (mainWindow.isMenuBarVisible()) {

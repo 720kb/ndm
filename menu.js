@@ -88,6 +88,15 @@
           }]
         },
         {
+          'role': 'hidemenu'
+        },
+        {
+          'label': 'Hide menu',
+          click() {
+            mainWindow.setMenuBarVisibility(true);
+          }
+        },
+        {
           'type': 'separator'
         },
         {

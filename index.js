@@ -1,4 +1,4 @@
-/*global require __dirname*/
+/*global require process __dirname*/
 (function withNode() {
 
   const {app, Menu, BrowserWindow, shell} = require('electron')
@@ -36,6 +36,10 @@
     });
     // and load the index.html of the app.
     //path.join() necessary for windows
+    if (process.platform !== 'darwin') {
+
+        mainWindow.setAutoHideMenuBar(true);
+    }
     mainWindow.loadURL(url.format({
       'pathname': path.join(__dirname, 'dist', 'index.html'),
       'protocol': 'file:',

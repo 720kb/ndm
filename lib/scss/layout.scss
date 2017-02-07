@@ -28,13 +28,11 @@
     //for when project has npm-shrinkwrap.json inside
     img.shrinkwrap-img {
       position: relative;
-      width: 10px;
+      width: 9px;
       z-index: 99;
       margin-right: -10px;
       left: 9px;
       background: red;
-      border-radius: 0;
-      padding: .5px;
     }
 
     i {

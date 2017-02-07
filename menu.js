@@ -77,6 +77,12 @@
       'label': 'View',
       'submenu': [
         {
+          'role': 'togglefullscreen'
+        },
+        {
+          'type': 'separator'
+        },
+        {
           'label': 'Developer',
           'submenu': [{
             'label': 'Open DevTools',
@@ -86,19 +92,6 @@
               }
             }
           }]
-        },
-        {
-          'label': 'Hide menu',
-          click() {
-
-            mainWindow.setMenuBarVisibility(false);
-          }
-        },
-        {
-          'type': 'separator'
-        },
-        {
-          'role': 'togglefullscreen'
         }
       ]
     }
@@ -198,6 +191,22 @@
           ];
       } else {
         aboutMenuItem.label = 'About';
+
+        viewMenuItem.submenu.unshift({
+          'label': 'Toggle menu',
+          'accelerator': 'Alt',
+          click() {
+            mainWindow.setAutoHideMenuBar(true);
+            if (mainWindow.isMenuBarVisible()) {
+
+              mainWindow.setMenuBarVisibility(false);
+            } else {
+
+              mainWindow.setMenuBarVisibility(true);
+            }
+          }
+        });
+
         menuTemplate = [
           fileMenuItem,
           editMenuItem,

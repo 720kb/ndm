@@ -28,11 +28,13 @@
     //for when project has npm-shrinkwrap.json inside
     img.shrinkwrap-img {
       position: relative;
-      width: 12px;
-      height: 12px;
+      width: 10px;
       z-index: 99;
-      margin-right: -12px;
-      left: 2px;
+      margin-right: -10px;
+      left: 9px;
+      background: red;
+      border-radius: 0;
+      padding: .5px;
     }
 
     i {
@@ -41,8 +43,14 @@
       position: relative;
       bottom: -1px;
 
-      &:not(.fa-globe){
+      &:not(.fa-globe) {
         color: $color-primary;
+      }
+    }
+
+    &.shrinkwrapped {
+      i {
+        color: $color-npm;
       }
     }
 

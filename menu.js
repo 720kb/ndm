@@ -90,7 +90,8 @@
         {
           'label': 'Hide menu',
           click() {
-            mainWindow.setMenuBarVisibility(true);
+
+            mainWindow.setMenuBarVisibility(false);
           }
         },
         {

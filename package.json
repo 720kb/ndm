@@ -103,7 +103,8 @@
     "minimizable": true,
     "maximizable": true,
     "closable": true,
-    "fullscreenable": true
+    "fullscreenable": true,
+    "autoHideMenuBar": true
   },
   "directories": {
     "output": "./releases"

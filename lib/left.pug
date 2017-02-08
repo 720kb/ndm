@@ -3,22 +3,16 @@ div(ng-controller='LeftBarController as leftBar')
   include ./history-prompt.pug
   .left-column.overflow-x-hidden
     .row
-      h6.col-xs-12
-        | Packages
       a.row.action-link-disabled(ng-class="{'active': leftBar.global, 'action-link-disabled': shell.globalDisabled, 'action-link-enabled': !shell.globalDisabled}", ng-click='leftBar.selectGlobal()')
-        i.fa.fa-globe
+        img.global-img(src="img/npm-logo-cube.svg")
         | Globals
-      br
-      h6.col-xs-12(ng-if='shell.projects.length > 0')
-        | Projects
       div(ng-repeat='item in shell.projects track by $index')
         a.row.project(title="{{ item.shrinkwrap ? 'Shrinkwrap enabled' : item.path }}", ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global, 'shrinkwrapped': item.shrinkwrap}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
           img(class="shrinkwrap-img", src="img/lock.svg", ng-if="item.shrinkwrap")
-          i.fa.fa-folder-o
-          div
-            b {{item.dirName}}
           button(ng-click='leftBar.deleteProject(item, $event)')
             i.fa.fa-times-circle-o
+          i.fa.fa-folder-o
+          | {{item.dirName}}
         div(ng-init="leftBar.cancelProgressActionId = false;")
           .left-progress.left-progress-minor.color-white.fake-link(ng-repeat="runningScript in leftBar.npmRunningScriptsProject[item.path] track by $index")
             small.running-name

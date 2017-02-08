@@ -1,8 +1,5 @@
 .top-menu {
-  -webkit-app-region: drag;
-  padding: 0 5px;
   width: 100%;
-  background: $bg-header;
   min-height: 31px;
 
   .top-menu-left {
@@ -17,59 +14,29 @@
     margin-right: 6px;
   }
 
-  a {
-    padding: 6.5px 0 4px 0;
-
-    &.pull-right {
-      margin-left: 4.5px;
-    }
+  a, .button-global, .button-update, .button-add-project {
+    float: left;
+    font-size: 11.5px;
+    height: 20.5px;
+    padding: 0 5px;
+    line-height: 16.5px;
+    -webkit-appearance: button;
 
     i {
-      font-size: 20px;
-      line-height: 0;
+      color: $color-primary;
+      vertical-align: baseline;
+    }
+  }
+
+  a {
+    &.pull-right {
+      margin-left: 4.5px;
     }
 
     &:active, &.active {
       i {
         color: $color-primary;
       }
-    }
-  }
-
-  .button-update, .button-add-project {
-    background: none;
-    border: none;
-    padding: 6.5px 6px 4.5px 6px;
-    text-indent: -1px;
-
-    i {
-      font-size: 14px;
-      color: $color-primary;
-      position: relative;
-      top: -1.5px;
-    }
-
-    &:active {
-      @include bg-rgba-black(.05);
-    }
-  }
-
-  .button-add-project {
-    margin-left: -6px;
-  }
-
-  .button-global {
-
-    font-size: 11.5px;
-    height: 20.5px;
-    padding: 0 2px;
-    margin-top: 4.5px;
-    line-height: 16.5px;
-    margin-left: 10px;
-
-    i {
-      color: $color-primary;
-      vertical-align: baseline;
     }
   }
 }

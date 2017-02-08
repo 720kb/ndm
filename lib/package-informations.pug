@@ -1,47 +1,46 @@
-div.row
-  div.col-md-12
-    div.information
-      b
-        | Name:
+div
+  div.information
+    b
+      | Name:
+    = " "
+    | {{content.packageViewInfos.name || '-'}}
+  div.information(title="{{content.packageViewInfos.description}}")
+    b
+      | Description:
+    = " "
+    | {{content.packageViewInfos.description || '-'}}
+  div.information(title="Package dependencies")
+    b
+      | Dependencies:
+    = " "
+    span(ng-repeat="(dep, value) in content.packageViewInfos.dependencies")
+      | {{ dep }},
       = " "
-      | {{content.packageViewInfos.name || '-'}}
-    div.information(title="{{content.packageViewInfos.description}}")
-      b
-        | Description:
-      = " "
-      | {{content.packageViewInfos.description || '-'}}
-    div.information(title="Package dependencies")
-      b
-        | Dependencies:
-      = " "
-      span(ng-repeat="(dep, value) in content.packageViewInfos.dependencies")
-        | {{ dep }},
-        = " "
-      span(ng-if="!content.packageViewInfos.dependencies || content.packageViewInfos.dependencies.length <= 0")
-        | -
-    div.information(title="Package repository url")
-      b
-        | Repository:
-      = " "
-      | {{content.packageViewInfos.repository.url || '-'}}
-    div.information
-      b
-        | Issues:
-      = " "
-      a(title="Open in browser", ng-if="content.packageViewInfos.bugs.url", ng-click="shell.openBrowserLink(content.packageViewInfos.bugs.url)")
-        | {{content.packageViewInfos.bugs.url}}
-      span(ng-if="!content.packageViewInfos.bugs || !content.packageViewInfos.bugs.url")
-        | -
-    div.information
-      b
-        | Url:
-      = " "
-      a(title="Open in browser", ng-init="content.pkgUrlToNpmJsWebsite = 'https://npmjs.com/package/' + content.packageViewInfos.name", ng-if="content.packageViewInfos.name", ng-click="shell.openBrowserLink(content.pkgUrlToNpmJsWebsite)")
-        | {{ content.pkgUrlToNpmJsWebsite }}
-      span(ng-if="!content.packageViewInfos.name")
-        | -
-    div.information  
-      b
-        | License:
-      = " "
-      | {{content.packageViewInfos.license.type || content.packageViewInfos.license || '-'}}
+    span(ng-if="!content.packageViewInfos.dependencies || content.packageViewInfos.dependencies.length <= 0")
+      | -
+  div.information(title="Package repository url")
+    b
+      | Repository:
+    = " "
+    | {{content.packageViewInfos.repository.url || '-'}}
+  div.information
+    b
+      | Issues:
+    = " "
+    a(title="Open in browser", ng-if="content.packageViewInfos.bugs.url", ng-click="shell.openBrowserLink(content.packageViewInfos.bugs.url)")
+      | {{content.packageViewInfos.bugs.url}}
+    span(ng-if="!content.packageViewInfos.bugs || !content.packageViewInfos.bugs.url")
+      | -
+  div.information
+    b
+      | Url:
+    = " "
+    a(title="Open in browser", ng-init="content.pkgUrlToNpmJsWebsite = 'https://npmjs.com/package/' + content.packageViewInfos.name", ng-if="content.packageViewInfos.name", ng-click="shell.openBrowserLink(content.pkgUrlToNpmJsWebsite)")
+      | {{ content.pkgUrlToNpmJsWebsite }}
+    span(ng-if="!content.packageViewInfos.name")
+      | -
+  div.information
+    b
+      | License:
+    = " "
+    | {{content.packageViewInfos.license.type || content.packageViewInfos.license || '-'}}

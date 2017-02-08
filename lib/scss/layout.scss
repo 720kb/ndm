@@ -3,47 +3,62 @@
 }
 
 .right-column {
+  border-radius: 1.5px;
   float: left;
-  padding: 0;
-  width: calc(100% - 200px);
+  margin: 10px 0;
+  padding: 5px 3px;
+  width: calc(100vw - 225px);
+  height: calc(100vh - 33px);
+  background: white;
+
+  h6 {
+    font-size: 11px;
+    font-weight: 500;
+  }
 }
 
 .left-column {
-  box-shadow: -1px -1px $color-ccc inset;
+  border-radius: 1.5px;
   float: left;
-  height: calc(100vh - 51px);
-  overflow-y: auto;
-  padding: 0 15px;
+  height: calc(100vh - 33px);
+  overflow: auto;
+  margin: 10px 5px 10px 10px;
+  padding: 15px;
   width: 200px;
-  background: $bg-light;
+  background: white;
 
   a {
     display: inline-block;
     margin: 0;
     padding: 0 6px;
-    width: 100%;
-    line-height: 23px;
-    height: 25px;
+    white-space: nowrap;
 
-    //for when project has npm-shrinkwrap.json inside
-    img.shrinkwrap-img {
-      position: relative;
-      width: 9px;
-      z-index: 99;
-      margin-right: -10px;
-      left: 9px;
-      background: red;
+    &:first-child {
+      margin-bottom: 5px;
+    }
+
+    img {
+      &.global-img {
+        width: 20px;
+        margin-right: 3px;
+        margin-top: -3px;
+      }
+      //for when project has npm-shrinkwrap.json inside
+      &.shrinkwrap-img {
+        position: relative;
+        width: 9px;
+        z-index: 99;
+        margin-right: -10px;
+        left: 9px;
+        background: red;
+      }
     }
 
     i {
-      font-size: 16.5px;
+      font-size: 14.5px;
       margin-right: 2px;
-      position: relative;
-      bottom: -1px;
-
-      &:not(.fa-globe) {
-        color: $color-primary;
-      }
+      margin-left: 10px;
+      color: $color-primary;
     }
 
     &.shrinkwrapped {
@@ -56,17 +71,10 @@
       background: $bg-muted-invisible;
     }
 
-    div {
-      display: inline-flex;
-      max-width: 140px;
-
-      b {
-        font-weight: normal;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 100%;
-      }
+    b {
+      font-weight: normal;
+      white-space: nowrap;
+      width: 100%;
     }
 
     &.active {
@@ -80,19 +88,20 @@
       }
 
       button {
-
+        position: absolute;
         display: none;
-        float: right;
+        float: left;
         max-width: 21px;
         transition: color .11s linear;
         z-index: 999;
+        left: -10px;
         background: none;
         border: none;
-        line-height: 23px;
+        line-height: 18px;
 
         i {
           color: $color-222;
-          margin-left: -7px;
+          margin-left: 7px;
           vertical-align: top;
         }
       }

@@ -8,6 +8,9 @@
     const aboutMenuItem = {
       'submenu': [
         {
+          'role': 'about'
+        },
+        {
           'label': `Version ${packageJSON.version}`,
           'enabled': false
         },
@@ -151,9 +154,6 @@
     if (process.platform &&
       process.platform === 'darwin') {
         aboutMenuItem.label = packageJSON.name;
-          aboutMenuItem.submenu.unshift({
-            'role': 'about'
-          });
           aboutMenuItem.submenu.push({
             'type': 'separator'
           });

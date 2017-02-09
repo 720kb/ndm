@@ -1,7 +1,7 @@
 .table-header {
   font-size: 12px;
   line-height: 20px;
-  margin: 0 auto;
+  margin: 0 3px;
   transition: opacity .3s linear;
 
   .clickable {
@@ -36,7 +36,7 @@
   padding: 0 3px;
 
   &:nth-child(odd) {
-    background: $bg-muted-invisible;
+    background: $bg-lighter;
   }
 
   &:focus, &:active, &.active {
@@ -76,12 +76,12 @@
 
 .table-body {
   //(table - header - table-infos) to calculate height
-  height: calc(100vh - 140px - 105px);
+  height: calc(100vh - 143px - 105px);
   overflow-x: hidden;
   padding-bottom: 20px;
   background: white;
   border-radius: 1.5px;
-
+  margin: 0 3px;
   box-shadow: 0 1px .5px $color-ddd inset;
 }
 
@@ -100,17 +100,13 @@
 }
 
 .table-infos {
-  background: $bg-muted-more;
-
-  &.tale-infos-content {
-    max-height: 120px;
+    background: $bg-light;
+    max-height: 139px;
+    padding: 5px;
     overflow-y: auto;
     font-size: 12px;
-    border: 1.5px solid $color-ddd;
-    border-radius: 1.5px;
-    padding: 0 1%;
     color: $color-777;
-  }
+    border-top: 1px solid $color-ccc;
 
   .information {
     margin-top: 3px;

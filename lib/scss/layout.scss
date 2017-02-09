@@ -6,16 +6,17 @@
   border-radius: 2px;
   float: left;
   margin: 10px 0;
-  padding: 5px 3px;
   width: calc(100vw - 225px);
   height: calc(100vh - 33px);
   background: white;
+  overflow-y: hidden;
   border: 1px solid $color-ccc;
 
   h6 {
     font-size: 11px;
     line-height: 10px;
     font-weight: 500;
+    margin: 5px;
   }
 }
 
@@ -54,16 +55,9 @@
         width: 9px;
         z-index: 99;
         margin-right: -10px;
-        left: 9px;
+        left: 16px;
         background: red;
       }
-    }
-
-    i {
-      font-size: 14.5px;
-      margin-right: 2px;
-      margin-left: 10px;
-      color: $color-primary;
     }
 
     &.shrinkwrapped {
@@ -88,6 +82,13 @@
 
     &.project {
 
+      i {
+        font-size: 14.5px;
+        margin-right: 2px;
+        margin-left: 10px;
+        color: $color-primary;
+      }
+
       &.active, &:focus {
         background: $bg-muted-invisible;
       }
@@ -99,15 +100,15 @@
         max-width: 21px;
         transition: color .11s linear;
         z-index: 999;
-        left: 0;
+        left: 6px;
         background: none;
         border: none;
         line-height: 18px;
 
         i {
           color: $color-222;
-          margin-left: 7px;
-          vertical-align: top;
+          margin: 0 auto;
+          font-size: 13px;
         }
       }
 

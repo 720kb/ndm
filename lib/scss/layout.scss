@@ -6,13 +6,11 @@
   border-radius: 2px;
   float: left;
   margin: 10px 0;
-  width: calc(100vw - 229px);
-  height: calc(100vh - 33px);
+  width: calc(100vw - 225px);
+  height: calc(100vh - 40px);
   background: white;
   overflow-y: hidden;
   border: 1px solid $color-ccc;
-  border-right-color: $color-bbb;
-  border-bottom: 0;
 
   h6 {
     font-size: 11px;
@@ -25,15 +23,13 @@
 .left-column {
   border-radius: 2px;
   float: left;
-  height: calc(100vh - 33px);
+  height: calc(100vh - 40px);
   overflow: auto;
   margin: 10px 5px 10px 10px;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
   width: 200px;
   background: white;
   border: 1px solid $color-ccc;
-  border-right-color: $color-bbb;
-  border-bottom-color: $color-bbb;
 
   a {
     display: inline-block;
@@ -42,7 +38,9 @@
     white-space: nowrap;
     width: 100%;
     line-height: 22px;
-
+    &:first-child {
+      line-height: 25px;
+    }
     img {
       &.global-img {
         width: 20px;

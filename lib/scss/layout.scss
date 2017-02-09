@@ -57,7 +57,7 @@
     }
 
     &.shrinkwrapped {
-      i:last-child {
+      i.fa-lock {
         color: $color-npm;
       }
     }

@@ -60,12 +60,6 @@
       }
     }
 
-    &.shrinkwrapped {
-      i {
-        color: $color-npm;
-      }
-    }
-
     &:hover {
       background: $bg-muted-invisible;
     }
@@ -87,6 +81,12 @@
         margin-right: 2px;
         margin-left: 10px;
         color: $color-primary;
+      }
+
+      &.shrinkwrapped {
+        i {
+          color: $color-npm;
+        }
       }
 
       &.active, &:focus {

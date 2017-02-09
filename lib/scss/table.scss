@@ -80,9 +80,11 @@
   overflow-x: hidden;
   padding-bottom: 20px;
   background: white;
-  border-radius: 1.5px;
   margin: 0 3px;
-  box-shadow: 0 1px .5px $color-ddd inset;
+  border-radius: 0 2px 2px 0;
+  margin: 0 3px;
+  border: 1px solid #ccc;
+  border-top: 0;
 }
 
 .table-loader {

@@ -16,49 +16,49 @@ div(ng-controller='LeftBarController as leftBar')
         div(ng-init="leftBar.cancelProgressActionId = false;")
           .left-progress.left-progress-minor.color-white.fake-link(ng-repeat="runningScript in leftBar.npmRunningScriptsProject[item.path] track by $index")
             small.running-name
-              |  running: {{runningScript}}
+              | &#8627; running: {{runningScript}}
             small.running-end(ng-click="leftBar.deleteRunningScript(item.path, runningScript)")
               i.fa.fa-times-circle-o
               | dismiss
             .left-progress-loading
           .left-progress.color-white.fake-link(ng-show="leftBar.npmInstallingProjects[item.dirName]")
             small.running-name
-              |  installing
+              | &#8627; installing
             small.running-end(ng-click="leftBar.deleteInstallingProjects(item.dirName)")
               i.fa.fa-times-circle-o
               | dismiss
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmReinstallingProjects[item.dirName]")
             small.running-name
-              |  reinstalling
+              | &#8627; reinstalling
             small.running-end(ng-click="leftBar.deleteReinstallingProjects(item.dirName)")
               i.fa.fa-times-circle-o
               | dismiss
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmBuildingProjects[item.dirName]")
             small.running-name
-              |  building
+              | &#8627; building
             small.running-end(ng-click="leftBar.deleteBuildingProjects(item.dirName)")
               i.fa.fa-times-circle-o
               | dismiss
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmPruningProjects[item.dirName]")
             small.running-name
-              |  pruning
+              | &#8627; pruning
             small.running-end(ng-click="leftBar.deletePruningProjects(item.dirName)")
               i.fa.fa-times-circle-o
               | dismiss
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmDedupingProjects[item.dirName]")
             small.running-name
-              |  deduping
+              | &#8627; deduping
             small.running-end(ng-click="leftBar.deleteDedupingProjects(item.dirName)")
               i.fa.fa-times-circle-o
               | dismiss
             .left-progress-loading
           .left-progress.color-white(ng-show="leftBar.npmShrinkwrappingProjects[item.dirName]")
             small.running-name
-              |  shrinkwrapping
+              | &#8627; shrinkwrapping
             small.running-end(ng-click="leftBar.deleteShrinkwrappingProjects(item.dirName)")
               i.fa.fa-times-circle-o
               | dismiss

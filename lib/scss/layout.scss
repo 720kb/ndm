@@ -14,9 +14,11 @@
 
   h6 {
     font-size: 11px;
-    line-height: 10px;
+    line-height: 19px;
     font-weight: 500;
-    margin: 5px;
+    padding: 0 5px;
+    border-top: 1px solid $color-ccc;
+    margin: 0;
   }
 }
 

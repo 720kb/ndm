@@ -7,7 +7,7 @@ div(ng-controller='LeftBarController as leftBar')
         img.global-img(src="img/npm-logo-cube.svg")
         | Globals
       div(ng-repeat='item in shell.projects track by $index')
-        a.row.project(title="{{ item.shrinkwrap ? 'Shrinkwrap enabled' : item.path }}", ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global, 'shrinkwrapped': item.shrinkwrap}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
+        a.row.project(title="{{ item.shrinkwrap ? 'Has shrinkwrap' : '' }}", ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global, 'shrinkwrapped': item.shrinkwrap}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
           button(ng-click='leftBar.deleteProject(item, $event)')
             i.fa.fa-times-circle-o
           i.fa.fa-folder-o

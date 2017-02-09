@@ -15,6 +15,7 @@
     i.fa.fa-disk(title="npm registry is available", ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
     i.fa.fa-disk(title="npm registry checking ...", ng-show="shell.loadingRegistryStatus")
     i.fa.fa-disk(title="npm registry is unavailable", ng-show="!shell.loadingRegistryStatus && !shell.registryStatus")
+    | registry
     div.loader(ng-class="{'loading': shell.loadingRegistryStatus}")
       i.fa.fa-circle(ng-class="{'available': !shell.loadingRegistryStatus && shell.registryStatus}")
       i.fa.fa-circle(ng-class="{'unavailable': !shell.loadingRegistryStatus && !shell.registryStatus}")

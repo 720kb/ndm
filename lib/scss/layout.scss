@@ -36,7 +36,7 @@
     margin: 0 auto;
     padding: 0 6px;
     white-space: nowrap;
-    width: 100%;
+    min-width: 100%;
     line-height: 21px;
 
     &:not(.project) {

@@ -1,6 +1,5 @@
 .top-menu {
   width: 100%;
-  min-height: 31px;
   background: $bg-light;
   border-bottom: 1px solid $color-ddd;
 
@@ -24,12 +23,7 @@
     float: right;
     font-size: 12px;
     padding: .5px 5px 1px 0;
-    margin: 5px 3px;
-
-    &:last-child {
-
-      margin-left: 0;
-    }
+    margin: 5px 3px 0 0;
 
     i {
       color: $color-222;
@@ -40,15 +34,15 @@
       float: left;
       border: 0;
       margin: 0 auto;
-      padding: 5px 6px 5px 5px;
-      background: $bg-muted-invisible;
+      padding: 6px 6px 4px 5px;
+      background: none;
 
       i {
         margin-right: 2px;
         color: $color-primary;
       }
 
-      &:active, &:focus {
+      &:active {
         background: $bg-muted-invisible;
       }
     }

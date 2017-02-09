@@ -57,8 +57,16 @@
     }
 
     &.shrinkwrapped {
-      i.fa-lock {
-        color: $color-npm;
+
+      i {
+        &.fa-lock {
+          color: $color-222;
+          margin:0 auto;
+        }
+
+        &.fa-folder-o {
+          color: $color-npm;
+        }
       }
     }
 

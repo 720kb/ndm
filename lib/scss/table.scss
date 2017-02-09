@@ -40,6 +40,9 @@
   line-height: 22.5px;
   padding: 0 5px;
 
+  b {
+    font-weight: 500;
+  }
   &:nth-child(odd) {
     background: $bg-lighter;
   }

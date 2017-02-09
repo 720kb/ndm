@@ -36,7 +36,7 @@
   padding: 0 3px;
 
   &:nth-child(odd) {
-    background: $bg-lighter;
+    background: $bg-muted-invisible;
   }
 
   &:focus, &:active, &.active {
@@ -100,16 +100,16 @@
 }
 
 .table-infos {
-  max-height: 150px;
-  overflow-y: auto;
-  font-size: 12px;
-  border: 1.5px solid $color-ddd;
-  border-radius: 1.5px;
-  padding: 0 1%;
-  color: $color-777;
+  background: $bg-muted-more;
 
-  .row {
-    padding-top: 3px;
+  &.tale-infos-content {
+    max-height: 120px;
+    overflow-y: auto;
+    font-size: 12px;
+    border: 1.5px solid $color-ddd;
+    border-radius: 1.5px;
+    padding: 0 1%;
+    color: $color-777;
   }
 
   .information {

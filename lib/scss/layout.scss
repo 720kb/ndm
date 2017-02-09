@@ -3,22 +3,24 @@
 }
 
 .right-column {
-  border-radius: 1.5px;
+  border-radius: 2px;
   float: left;
   margin: 10px 0;
   padding: 5px 3px;
   width: calc(100vw - 225px);
   height: calc(100vh - 33px);
   background: white;
+  border: 1px solid $color-ccc;
 
   h6 {
     font-size: 11px;
+    line-height: 10px;
     font-weight: 500;
   }
 }
 
 .left-column {
-  border-radius: 1.5px;
+  border-radius: 2px;
   float: left;
   height: calc(100vh - 33px);
   overflow: auto;
@@ -26,12 +28,15 @@
   padding: 15px;
   width: 200px;
   background: white;
+  box-shadow: -1px -1px 5px $bg-muted-invisible inset;
+  border: 1px solid $color-ccc;
 
   a {
     display: inline-block;
     margin: 0;
     padding: 0 6px;
     white-space: nowrap;
+    width: 100%;
 
     &:first-child {
       margin-bottom: 5px;
@@ -94,7 +99,7 @@
         max-width: 21px;
         transition: color .11s linear;
         z-index: 999;
-        left: -10px;
+        left: 0;
         background: none;
         border: none;
         line-height: 18px;

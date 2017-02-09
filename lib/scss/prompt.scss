@@ -119,13 +119,13 @@
   }
 
   &.dialog-window {
-    height: calc(100vh - 23px - 33px);
+    height: 90vh;
     position: fixed;
     left: 200px;
     border: 0;
     box-shadow: none;
-    top: 31px;
-    width: calc(100vw - 199px);
+    top: 11px;
+    width: calc(100vw - 231px);
     padding: 0;
     border-radius: 0;
     background: white;
@@ -202,7 +202,7 @@
   margin: 0 auto;
   line-height: 25px;
   float: none;
-  height: 27px;
+  height: 30px;
 
   i {
     margin-left: 0;
@@ -214,9 +214,9 @@
   button {
     height: 19.5px;
     line-height: 13.5px;
-    font-size: 12.5px;
+    font-size: 12px;
     float: right;
-    margin-top: 2px;
+    margin-top: 4px;
   }
 
   img {

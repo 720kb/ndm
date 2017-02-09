@@ -59,6 +59,10 @@
 
   input {
 
+    &[type="checkbox"] {
+      vertical-align: middle;
+      margin: 0;
+    }
     &[type='text'] {
       border: none;
       line-height: initial;

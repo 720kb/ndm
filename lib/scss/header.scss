@@ -22,44 +22,48 @@
   .button-latest {
     float: right;
     font-size: 12px;
-    padding: .5px 5px 1px 0;
-    margin: 4px 4px 0 0;
+    padding-left: 2px;
+    margin: 5px 4px 0 0;
+    line-height: 13px;
 
     i {
       color: $color-222;
       vertical-align: baseline;
     }
 
-    &.button-add-package {
-      float: left;
-      border: 0;
-      margin: 0 auto;
-      padding: 5px 6px 5px 2px;
-      background: none;
+  }
 
-      i {
-        color: $color-primary;
-      }
+  .button-add-package {
+    float: left;
+    border: 0;
+    line-height: 26px;
+    margin: 0 auto;
+    padding: 0 6px 0 2px;
+    background: none;
 
-      &:active {
-        background: $bg-muted-invisible;
-      }
+    i {
+      color: $color-primary;
     }
 
-    &.button-uninstall {
-
-      i {
-        color: $color-error;
-      }
-    }
-
-    &.button-update {
-
-      i {
-        color: $color-green;
-      }
+    &:active {
+      background: $bg-muted-invisible;
     }
   }
+
+  .button-uninstall {
+
+    i {
+      color: $color-error;
+    }
+  }
+
+  .button-update {
+
+    i {
+      color: $color-green;
+    }
+  }
+
 
   a {
 

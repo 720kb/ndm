@@ -9,7 +9,7 @@
   width: calc(100vw - 225px);
   height: calc(100vh - 40px);
   background: white;
-  overflow-y: hidden;
+  overflow: hidden;
   border: 1px solid $color-ccc;
 
   h6 {

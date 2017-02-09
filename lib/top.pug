@@ -1,22 +1,22 @@
 .top-menu(ng-controller='TopMenuController as topMenu')
+  span(npm-loading)
   include ./install-new-package-version.pug
   include ./install-new-package.pug
-  span(npm-loading)
   .row
     .col-xs-12
-      button.button-add-package(title="Add Packages", ng-show="topMenu.projectPath", ng-click="topMenu.activeClickedLink('1');", ng-class="{'active': topMenu.activeLink === '1'}")
+      button.button-add-package(title="Add Packages", ng-show="topMenu.projectPath", ng-click="shell.activeClickedLink('1');", ng-class="{'active': shell.activeLink === '1'}")
         i.fa.fa-plus-circle
         | Add package
       span(ng-show='shell.showMenuButtons')
-        button.button-uninstall(title="Uninstall", ng-click="topMenu.activeClickedLink('5'); topMenu.uninstallPackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '5'}")
+        button.button-uninstall(title="Uninstall", ng-click="shell.activeClickedLink('5'); topMenu.uninstallPackage(shell.currentSelectedPackages)", ng-class="{'active': shell.activeLink === '5'}")
           i.fa.fa-remove
           | Uninstall
-        button.button-update(title="Update", ng-click="topMenu.activeClickedLink('2'); topMenu.updatePackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '2'}")
+        button.button-update(title="Update", ng-click="shell.activeClickedLink('2'); topMenu.updatePackage(shell.currentSelectedPackages)", ng-class="{'active': shell.activeLink === '2'}")
           i.fa.fa-level-up
           | Update
-        button.button-latest(title="Install Latest", ng-click="topMenu.activeClickedLink('3'); topMenu.installLatest(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '3'}")
+        button.button-latest(title="Install Latest", ng-click="shell.activeClickedLink('3'); topMenu.installLatest(shell.currentSelectedPackages)", ng-class="{'active': shell.activeLink === '3'}")
           i.fa.fa-rocket
           | Latest
-        button.button-version(title="Install Version", ng-show="shell.currentSelectedPackages.length === 1", ng-click="topMenu.activeClickedLink('4'); topMenu.showPackageInstallPrompt = undefined; topMenu.showSpecificVersionPrompt = true", ng-class="{'active': topMenu.activeLink === '4'}")
+        button.button-version(title="Install Version", ng-show="shell.currentSelectedPackages.length === 1", ng-click="shell.activeClickedLink('4'); topMenu.showPackageInstallPrompt = undefined; topMenu.showSpecificVersionPrompt = true", ng-class="{'active': shell.activeLink === '4'}")
           i.fa.fa-at
           | Version

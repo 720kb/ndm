@@ -5,7 +5,7 @@
   .row
     .col-xs-12
       button.button-add-package(title="Add Packages", ng-show="topMenu.projectPath", ng-click="topMenu.activeClickedLink('1');", ng-class="{'active': topMenu.activeLink === '1'}")
-        i.fa.fa-cloud-download
+        i.fa.fa-circle-plus
         | Add package
       span(ng-show='shell.showMenuButtons')
         button.button-uninstall(title="Uninstall", ng-click="topMenu.activeClickedLink('5'); topMenu.uninstallPackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '5'}")

@@ -1,12 +1,17 @@
 .footer.bg-footer
-  span(class="badge-version", title="Current npm version", ng-show="shell.npmCurrentVersionBadge", ng-mouseover="shell.updateNpmBadgeVersion()")
+  span(class="badge-version", title="Current npm version", ng-mouseover="shell.updateNpmBadgeVersion()")
     b
       | npm
     = " "
     small
       | v{{shell.npmCurrentVersionBadge || ' - - -'}}
-    button
-      | update
+    button.button-global(type="button", title="Enable ndm in global folder",  ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
+      i.fa.fa-globe.color-primary
+      | Enable
+    button.button-update(type="button", title="Update npm", ng-show="!shell.globalDisabled", ng-click="shell.updateNpm()")
+      i.fa.fa-history
+      | Update
+
   span(class="npm-status", ng-mouseenter="shell.checkRegistryStatus()")
     i.fa.fa-disk(title="npm registry is available", ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
     i.fa.fa-disk(title="npm registry checking ...", ng-show="shell.loadingRegistryStatus")

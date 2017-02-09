@@ -60,8 +60,40 @@
       }
     }
 
+    i {
+      font-size: 14.5px;
+      margin-right: 2px;
+      margin-left: 10px;
+      color: $color-primary;
+    }
+
+    &.shrinkwrapped {
+      i {
+        color: $color-npm;
+      }
+    }
+
     &:hover {
       background: $bg-muted-invisible;
+    }
+
+    button {
+      position: absolute;
+      display: none;
+      float: left;
+      max-width: 21px;
+      transition: color .11s linear;
+      z-index: 999;
+      left: 6px;
+      background: none;
+      border: none;
+      line-height: 18px;
+
+      i {
+        color: $color-222;
+        margin: 0 auto;
+        font-size: 12px;
+      }
     }
 
     b {
@@ -76,40 +108,8 @@
 
     &.project {
 
-      i {
-        font-size: 14.5px;
-        margin-right: 2px;
-        margin-left: 10px;
-        color: $color-primary;
-      }
-
-      &.shrinkwrapped {
-        i {
-          color: $color-npm;
-        }
-      }
-
       &.active, &:focus {
         background: $bg-muted-invisible;
-      }
-
-      button {
-        position: absolute;
-        display: none;
-        float: left;
-        max-width: 21px;
-        transition: color .11s linear;
-        z-index: 999;
-        left: 6px;
-        background: none;
-        border: none;
-        line-height: 18px;
-
-        i {
-          color: $color-222;
-          margin: 0 auto;
-          font-size: 13px;
-        }
       }
 
       &:hover {

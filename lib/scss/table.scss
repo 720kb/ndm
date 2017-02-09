@@ -14,9 +14,11 @@
     background: $bg-light;
     text-align: left;
     padding: 0 4px;
+    border: 1px solid $color-ddd;
+    border-top: 0;
 
-    &:nth-child(even) {
-      border-left: 1px solid $color-ddd;
+    &:first-child {
+      border-left: 0;
     }
   }
 

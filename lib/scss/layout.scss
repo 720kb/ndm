@@ -37,8 +37,10 @@
     padding: 0 6px;
     white-space: nowrap;
     width: 100%;
-    line-height: 22px;
-    &:first-child {
+    line-height: 21px;
+
+    &:not(.project) {
+
       line-height: 25px;
     }
     img {

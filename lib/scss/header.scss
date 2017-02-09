@@ -1,6 +1,7 @@
 .top-menu {
   width: 100%;
   min-height: 31px;
+  background: $bg-light;
 
   .top-menu-left {
     width: 200px;
@@ -14,24 +15,52 @@
     margin-right: 6px;
   }
 
-  button, .button-global, .button-update, .button-add-project {
-    float: left;
+  button {
+    float: right;
     font-size: 11.5px;
-    height: 19px;
+    max-height: 19px;
     padding: 0 5px;
-    line-height: 15px;
-    margin: 5px;
+    margin: 5px 3px;
+
+    &:last-child {
+
+      margin-right: 0;
+    }
 
     i {
-      margin: 0 3px;
-      color: $color-primary;
+      margin-right: 3px;
+      color: $color-222;
+      vertical-align: baseline;
+    }
+
+    &.button-add-package {
+      float: left;
+      border: 0;
+      margin: 0;
+      height: auto;
+      padding: 5px;
+      background: $bg-muted-invisible;
+      i {
+        color: $color-primary;
+      }
+    }
+
+    &.button-uninstall {
+
+      i {
+        color: $color-error;
+      }
+    }
+
+    &.button-update {
+
+      i {
+        color: $color-green;
+      }
     }
   }
 
   a {
-    &.pull-right {
-      margin-left: 4.5px;
-    }
 
     &:active, &.active {
       i {

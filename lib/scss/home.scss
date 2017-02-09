@@ -2,6 +2,10 @@
   min-height: 100vh;
   padding-top: 30vh;
   text-align: center;
+  position: relative;
+  margin-top: -30vh;
+  z-index: 999;
+  background: white;
 
   button {
     height: 21px;

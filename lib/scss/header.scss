@@ -22,16 +22,15 @@
   .button-latest {
     float: right;
     font-size: 12px;
-    padding: 0 5px;
+    padding: 1px 5px 1.5px 0;
     margin: 5px 3px;
 
-    &:last-child {
+    &:first-child {
 
       margin-right: 0;
     }
 
     i {
-      margin-right: 3px;
       color: $color-222;
       vertical-align: baseline;
     }

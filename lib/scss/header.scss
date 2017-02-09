@@ -21,8 +21,7 @@
   .button-version,
   .button-latest {
     float: right;
-    font-size: 11.5px;
-    max-height: 19px;
+    font-size: 12px;
     padding: 0 5px;
     margin: 5px 3px;
 
@@ -41,8 +40,6 @@
       float: left;
       border: 0;
       margin: 0 auto;
-      max-height: auto;
-      height: 30px;
       background: $bg-muted-invisible;
       i {
         color: $color-primary;

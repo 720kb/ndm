@@ -26,9 +26,9 @@
     min-width: 13%;
     width: auto;
     margin-left: 8px;
-    line-height: 16px;
+    line-height: 15px;
     margin-top: 2px;
-    max-height: 21px;
+    font-size: 12px;
 
     img {
       width: 13px;
@@ -199,7 +199,7 @@
   padding: 0 6px;
   width: 100%;
   display: inline-block;
-  background: rgba(0, 0, 0, .05);
+  background: $bg-light;
   margin: 0 auto;
   line-height: 25px;
   float: none;

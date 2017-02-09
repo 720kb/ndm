@@ -44,6 +44,7 @@
 
       line-height: 25px;
     }
+
     img {
       &.global-img {
         width: 20px;
@@ -55,7 +56,7 @@
     i {
       font-size: 14.5px;
       margin-right: 2px;
-      margin-left: 14px;
+      margin-left: 10px;
       color: $color-primary;
     }
 
@@ -95,7 +96,6 @@
         color: $color-222;
         margin: 0 auto;
         font-size: 12px;
-        margin-left: 3px;
         position: relative;
         top: -2px;
       }

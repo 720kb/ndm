@@ -2,6 +2,7 @@
   font-size: 12px;
   line-height: 20px;
   border-top: 1px solid $color-ddd;
+  margin: 0 auto;
   transition: opacity .3s linear;
 
   .clickable {
@@ -86,7 +87,7 @@
 
 .table-loader {
   min-height: 100vh;
-  padding-top: 30vh;
+  padding-top: 40vh;
   position: relative;
   margin-top: -30vh;
   z-index: 999;

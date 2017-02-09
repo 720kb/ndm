@@ -15,7 +15,11 @@
     margin-right: 6px;
   }
 
-  button {
+  .button-add-package,
+  .button-update,
+  .button-uninstall,
+  .button-version,
+  .button-latest {
     float: right;
     font-size: 11.5px;
     max-height: 19px;
@@ -36,9 +40,9 @@
     &.button-add-package {
       float: left;
       border: 0;
-      margin: 0;
-      height: auto;
-      padding: 5px;
+      margin: 0 auto;
+      max-height: auto;
+      height: 30px;
       background: $bg-muted-invisible;
       i {
         color: $color-primary;

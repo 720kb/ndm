@@ -1,4 +1,6 @@
 .top-menu(ng-controller='TopMenuController as topMenu')
+  include ./install-new-package-version.pug
+  include ./install-new-package.pug
   span(npm-loading)
   .row
     .col-xs-12
@@ -6,6 +8,9 @@
         i.fa.fa-cloud-download
         | Add package
       span(ng-show='shell.showMenuButtons')
+        button.button-uninstall(title="Uninstall", ng-click="topMenu.activeClickedLink('5'); topMenu.uninstallPackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '5'}")
+          i.fa.fa-remove
+          | Uninstall
         button.button-update(title="Update", ng-click="topMenu.activeClickedLink('2'); topMenu.updatePackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '2'}")
           i.fa.fa-level-up
           | Update
@@ -15,8 +20,3 @@
         button.button-version(title="Install Version", ng-show="shell.currentSelectedPackages.length === 1", ng-click="topMenu.activeClickedLink('4'); topMenu.showPackageInstallPrompt = undefined; topMenu.showSpecificVersionPrompt = true", ng-class="{'active': topMenu.activeLink === '4'}")
           i.fa.fa-at
           | Version
-        button.button-uninstall(title="Uninstall", ng-click="topMenu.activeClickedLink('5'); topMenu.uninstallPackage(shell.currentSelectedPackages)", ng-class="{'active': topMenu.activeLink === '5'}")
-          i.fa.fa-remove
-          | Uninstall
-    include ./install-new-package-version.pug
-    include ./install-new-package.pug

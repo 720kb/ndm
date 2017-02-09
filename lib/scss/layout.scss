@@ -52,7 +52,7 @@
     i {
       font-size: 14.5px;
       margin-right: 2px;
-      margin-left: 10px;
+      margin-left: 14px;
       color: $color-primary;
     }
 
@@ -60,8 +60,10 @@
 
       i {
         &.fa-lock {
-          color: $color-222;
+          color: $color-333;
           margin:0 auto;
+          margin-left:-4px;
+          font-size: 11.5px;
         }
 
         &.fa-folder-o {

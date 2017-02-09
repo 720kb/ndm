@@ -35,29 +35,17 @@
 
   a {
     display: inline-block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 6px;
     white-space: nowrap;
     width: 100%;
-
-    &:first-child {
-      margin-bottom: 5px;
-    }
+    line-height: 22px;
 
     img {
       &.global-img {
         width: 20px;
         margin-right: 3px;
         margin-top: -3px;
-      }
-      //for when project has npm-shrinkwrap.json inside
-      &.shrinkwrap-img {
-        position: relative;
-        width: 9px;
-        z-index: 99;
-        margin-right: -10px;
-        left: 16px;
-        background: red;
       }
     }
 
@@ -69,7 +57,7 @@
     }
 
     &.shrinkwrapped {
-      i {
+      i:last-child {
         color: $color-npm;
       }
     }

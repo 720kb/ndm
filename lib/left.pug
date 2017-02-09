@@ -8,10 +8,10 @@ div(ng-controller='LeftBarController as leftBar')
         | Globals
       div(ng-repeat='item in shell.projects track by $index')
         a.row.project(title="{{ item.shrinkwrap ? 'Shrinkwrap enabled' : item.path }}", ng-right-click="leftBar.rightClickMenu(item, $event)", ng-class="{'active': leftBar.selectedProject === item && !leftBar.global, 'shrinkwrapped': item.shrinkwrap}", ng-if="leftBar.removedProject !== item", ng-click='leftBar.selectProject(item, $event)')
-          img(class="shrinkwrap-img", src="img/lock.svg", ng-if="item.shrinkwrap")
           button(ng-click='leftBar.deleteProject(item, $event)')
             i.fa.fa-times-circle-o
           i.fa.fa-folder-o
+          i.fa.fa-times-circle-o(ng-if="item.shrinkwrap")
           | {{item.dirName}}
         div(ng-init="leftBar.cancelProgressActionId = false;")
           .left-progress.left-progress-minor.color-white.fake-link(ng-repeat="runningScript in leftBar.npmRunningScriptsProject[item.path] track by $index")

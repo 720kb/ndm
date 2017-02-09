@@ -81,7 +81,7 @@
 
 .table-body {
   //(table - header - table-infos) to calculate height
-  height: calc(100vh - 130px - 105px);
+  height: calc(100vh - 150px - 105px);
   overflow-x: hidden;
   padding-bottom: 20px;
   background: white;
@@ -109,7 +109,7 @@
 
 .table-infos {
     background: $bg-light;
-    max-height: 139px;
+    max-height: 159px;
     padding: 0 5px 5px 5px;
     overflow-y: auto;
     font-size: 12px;

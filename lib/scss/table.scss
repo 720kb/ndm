@@ -76,14 +76,13 @@
 
 .table-body {
   //(table - header - table-infos) to calculate height
-  height: calc(100vh - 143px - 105px);
+  height: calc(100vh - 140px - 105px);
   overflow-x: hidden;
   padding-bottom: 20px;
   background: white;
   margin: 0 3px;
   border-radius: 0 2px 2px 0;
   margin: 0 3px;
-  border: 1px solid #ccc;
   border-top: 0;
 }
 

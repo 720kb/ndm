@@ -11,12 +11,12 @@
   }
 
   div {
-    background: $bg-lighter;
+    background: $bg-light;
     text-align: left;
     padding: 0 4px;
 
-    &:nth-child(odd) {
-      border-right: 1px solid $color-ddd;
+    &:nth-child(even) {
+      border-left: 1px solid $color-ddd;
     }
   }
 
@@ -36,7 +36,7 @@
 
 .table-row {
   line-height: 22.5px;
-  padding: 0 3px;
+  padding: 0 5px;
 
   &:nth-child(odd) {
     background: $bg-lighter;
@@ -108,7 +108,7 @@
 .table-infos {
     background: $bg-light;
     max-height: 139px;
-    padding: 5px;
+    padding: 0 5px 5px 5px;
     overflow-y: auto;
     font-size: 12px;
     color: $color-777;

@@ -14,17 +14,17 @@
     margin-right: 6px;
   }
 
-  a, .button-global, .button-update, .button-add-project {
+  button, .button-global, .button-update, .button-add-project {
     float: left;
     font-size: 11.5px;
-    height: 20.5px;
+    height: 19px;
     padding: 0 5px;
-    line-height: 16.5px;
-    -webkit-appearance: button;
+    line-height: 15px;
+    margin: 5px;
 
     i {
+      margin: 0 3px;
       color: $color-primary;
-      vertical-align: baseline;
     }
   }
 

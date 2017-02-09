@@ -1,7 +1,7 @@
 .table-header {
   font-size: 12px;
   line-height: 20px;
-  margin: 0 auto;
+  margin: 0 3px;
   transition: opacity .3s linear;
 
   .clickable {
@@ -80,9 +80,10 @@
   overflow-x: hidden;
   padding-bottom: 20px;
   background: white;
-  border-radius: 1.5px;
-
-  box-shadow: 0 1px .5px $color-ddd inset;
+  margin: 0 3px;
+  border-radius: 0 2px 2px 0;
+  margin: 0 3px;
+  border-top: 0;
 }
 
 .table-loader {
@@ -100,17 +101,13 @@
 }
 
 .table-infos {
-  max-height: 150px;
-  overflow-y: auto;
-  font-size: 12px;
-  border: 1.5px solid $color-ddd;
-  border-radius: 1.5px;
-  padding: 0 1%;
-  color: $color-777;
-
-  .row {
-    padding-top: 3px;
-  }
+    background: #f8f8f8;
+    max-height: 139px;
+    padding: 5px;
+    overflow-y: auto;
+    font-size: 12px;
+    color: $color-777;
+    border-top: 1px solid $color-ccc;
 
   .information {
     margin-top: 3px;

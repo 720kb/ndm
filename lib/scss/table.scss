@@ -48,11 +48,10 @@
   }
 
   &:focus, &:active, &.active {
-    &:not(.table-row-loading) {
-      &:not(.disabled) {
-        * {
-          color: white;
-        }
+
+    &:not(.disabled) {
+      * {
+        color: white;
       }
     }
 

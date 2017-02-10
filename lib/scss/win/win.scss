@@ -16,10 +16,15 @@ a, button, .fake-link {
   }
 }
 
-select {
-  margin-top: 2px;
+.dialog {
+  select {
+    vertical-align: top;
+  }
 }
 
+.top-menu .button-add-project {
+  line-height: 30px;
+}
 .ace_editor {
   font-size: 14px !important;
 }

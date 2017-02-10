@@ -1,5 +1,6 @@
 .page {
   height: calc(100vh - 23px);
+  box-shadow: 0 0 1px $color-ddd inset;
 }
 
 .right-column {

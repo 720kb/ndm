@@ -1,4 +1,4 @@
-div.dialog.prompt(ng-if="topMenu.activeLink === '1'")
+div.dialog.prompt(ng-if="shell.activeLink === '1'")
   form(ng-submit='topMenu.installPackage(topMenu.packageName, topMenu.newPackageKind)')
     <!--do not remove placeholder even if it's not an input-->
     div(class="tags-input", ng-model="topMenu.packageName", contenteditable="true", ng-attr-disabled="{{topMenu.installingPackage ? 'disabled' : ''}}" placeholder="package<@version> ..." ng-tag-input, ng-autofocus)
@@ -17,4 +17,4 @@ div.dialog.prompt(ng-if="topMenu.activeLink === '1'")
         img(src="img/loading.svg", width="13")
     = " "
     = " "
-    i(class="fa fa-times-circle-o", ng-click="topMenu.activeLink = undefined")
+    i(class="fa fa-times-circle-o button-close-prompt", ng-click="shell.activeLink = undefined")

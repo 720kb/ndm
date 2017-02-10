@@ -1,7 +1,7 @@
 .table-header {
   font-size: 12px;
-  line-height: 22px;
-  padding: 0 10px;
+  line-height: 20px;
+  margin: 0 auto;
   transition: opacity .3s linear;
 
   .clickable {
@@ -11,10 +11,15 @@
   }
 
   div {
-    background: $bg-lighter;
-    box-shadow: -1px -1px $color-ddd inset;
+    background: $bg-light;
     text-align: left;
-    padding: 0 10px;
+    padding: 0 4px;
+    border: 1px solid $color-ddd;
+    border-top: 0;
+
+    &:first-child {
+      border-left: 0;
+    }
   }
 
   i {
@@ -33,18 +38,20 @@
 
 .table-row {
   line-height: 22.5px;
-  padding: 0 6px;
+  padding: 0 5px;
 
+  b {
+    font-weight: 500;
+  }
   &:nth-child(odd) {
     background: $bg-lighter;
   }
 
   &:focus, &:active, &.active {
-    &:not(.table-row-loading) {
-      &:not(.disabled) {
-        * {
-          color: white;
-        }
+
+    &:not(.disabled) {
+      * {
+        color: white;
       }
     }
 
@@ -56,7 +63,7 @@
   }
 
   &.disabled {
-    background: $bg-light;
+    background: none;
     cursor: not-allowed;
 
     * {
@@ -76,15 +83,21 @@
 
 .table-body {
   //(table - header - table-infos) to calculate height
-  height: calc(100vh - 120px - 105px);
+  height: calc(100vh - 150px - 105px);
   overflow-x: hidden;
-  overflow-y: auto;
   padding-bottom: 20px;
+  background: white;
+  border-radius: 0 2px 2px 0;
+  border-top: 0;
 }
 
 .table-loader {
   min-height: 100vh;
-  padding-top: 30vh;
+  padding-top: 58vh;
+  position: relative;
+  margin-top: -30vh;
+  z-index: 9;
+  background: white;
   text-align: center;
 }
 
@@ -97,44 +110,22 @@
 }
 
 .table-infos {
-  height: 150px;
-  font-size: 12.5px;
-  padding: 0 2%;
-  background: #f0f0f0;
-  box-shadow: 0 -1px $bg-muted-more;
-
-  .row {
-    padding-top: 3px;
-  }
+    background: $bg-light;
+    max-height: 159px;
+    padding: 0 5px 11px 5px;
+    overflow-y: auto;
+    font-size: 12px;
+    color: $color-777;
+    border-top: 1px solid $color-ccc;
 
   .information {
     margin-top: 3px;
-    height: 17px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     -webkit-user-select: text;
-    width: 100%;
-    float: none;
-    clear: both;
-
-    .info-x2 {
-      display: inline-block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-
-      &:nth-child(even) {
-        margin-left: 3%;
-      }
-      &:nth-child(odd) {
-        max-width: 47%;
-      }
-    }
 
     b {
-      color: $color-muted;
       font-weight: 500;
+      font-size: 11.5px;
+      color: $color-222;
     }
     a {
       color: $color-primary;

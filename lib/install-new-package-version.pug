@@ -1,4 +1,4 @@
-div.dialog.prompt(ng-if="topMenu.activeLink === '4'", ng-init="topMenu.versionPackageVersion = undefined")
+div.dialog.prompt(ng-if="shell.activeLink === '4'", ng-init="topMenu.versionPackageVersion = undefined")
   form(ng-submit='topMenu.installVersionPackage(shell.currentSelectedPackages[0], topMenu.versionPackageVersion)')
     input(placeholder='Package name',
       type='text',
@@ -26,4 +26,4 @@ div.dialog.prompt(ng-if="topMenu.activeLink === '4'", ng-init="topMenu.versionPa
         img(src="img/loading.svg", width="13")
     = " "
     = " "
-    i(class="fa fa-times-circle-o", ng-click="topMenu.activeLink = undefined;")
+    i(class="fa fa-times-circle-o button-close-prompt", ng-click="shell.activeLink = undefined;")

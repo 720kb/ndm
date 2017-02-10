@@ -10,16 +10,26 @@ a, button, .fake-link {
   }
 }
 
+.page {
+
+  box-shadow: 0 1px 0 $color-ccc inset;
+}
+
 .home {
   button {
     height: 23px;
   }
 }
 
-select {
-  margin-top: 2px;
+.dialog {
+  select {
+    vertical-align: text-top;
+  }
 }
 
+.top-menu .button-add-package {
+  line-height: 30px;
+}
 .ace_editor {
   font-size: 14px !important;
 }

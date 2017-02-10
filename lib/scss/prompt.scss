@@ -1,5 +1,5 @@
 .dialog {
-  background: $bg-header;
+  background: $bg-light;
   border-radius: $border-radius-prompt;
   box-shadow: 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
@@ -18,22 +18,27 @@
 
   i {
     margin-left: 4px;
-    vertical-align: middle;
     font-size: 15px;
+  }
+
+  .button-close-prompt {
+    position: relative;
+    bottom: -1px;
   }
 
   button {
     min-width: 13%;
     width: auto;
     margin-left: 8px;
-    line-height: 16px;
+    line-height: 13px;
     margin-top: 2px;
-    max-height: 21px;
+    font-size: 12px;
 
     img {
-      width: 13px;
+      width: 12px;
+      top: -1px;
       position: relative;
-      top: -2px;
+      margin: 0;
     }
 
     &.disabled {
@@ -42,32 +47,29 @@
     }
   }
   &:not(.dialog-window) {
-    input {
-
-      &[type="checkbox"] {
-        vertical-align: text-bottom;
-      }
-    }
     button {
       width: 56px;
-      vertical-align: bottom;
     }
   }
 
   select {
     width: 82px;
-    vertical-align: middle;
+    height: 19px;
   }
 
   input {
 
+    &[type="checkbox"] {
+      vertical-align: middle;
+      margin: 0;
+    }
     &[type='text'] {
       border: none;
       line-height: initial;
       border-radius: $border-radius-inputs;
       box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
       font-size: 11px;
-      padding: 3.5px 4px 4px 4px;
+      padding: 3px 4px 2.5px 4px;
       width: 18%;
 
       &:first-child {
@@ -82,7 +84,7 @@
     border-radius: 3px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
     font-size: 12.5px;
-    padding: 3.5px 4px 4px 4px;
+    padding: 3px 4px 2.5px 4px;
     width: calc(72% - 15px);
     background: white;
     white-space: nowrap;
@@ -114,21 +116,23 @@
       background: $bg-tags;
       border-radius: $border-radius-tags;
       border: $border-tags;
-      padding: 0 3px 1.5px 3px;
+      padding: 0 3px 1px 3px;
+      margin: 1px 0 0 0;
     }
   }
 
   &.dialog-window {
-    height: calc(100vh - 23px - 33px);
+    height: 89vh;
     position: fixed;
-    left: 200px;
+    left: 204px;
     border: 0;
     box-shadow: none;
-    top: 31px;
-    width: calc(100vw - 199px);
+    top: 11px;
+    width: calc(100vw - 227px);
     padding: 0;
     border-radius: 0;
     background: white;
+    z-index: 9999;
   }
 
   .window {
@@ -154,6 +158,9 @@
   width: 100%;
   margin: 0 auto;
 
+  &:first-child {
+    padding-top: 3px;
+  }
   &:hover {
     &:not(.active) {
       background: $bg-lighter;
@@ -198,11 +205,11 @@
   padding: 0 6px;
   width: 100%;
   display: inline-block;
-  background: rgba(0, 0, 0, .05);
+  background: $bg-light;
   margin: 0 auto;
   line-height: 25px;
   float: none;
-  height: 27px;
+  height: 30px;
 
   i {
     margin-left: 0;
@@ -213,10 +220,10 @@
 
   button {
     height: 19.5px;
-    line-height: 13.5px;
-    font-size: 12.5px;
+    line-height: 13px;
+    font-size: 12px;
     float: right;
-    margin-top: 2px;
+    margin-top: 3px;
   }
 
   img {

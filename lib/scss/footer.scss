@@ -1,12 +1,9 @@
 .footer {
   -webkit-app-region: drag;
-  background: $bg-light;
-  border-top: 1px solid $color-ddd;
-  bottom: 0;
+  bottom: 3px;
   font-weight: normal;
-  height: 24px;
-  line-height: 22.5px;
-  padding: 0 7px;
+  height: 21px;
+  padding: 0 11px;
   position: fixed;
   width: 100%;
   z-index: 9;
@@ -73,6 +70,19 @@
           color: $color-error;
         }
       }
+    }
+  }
+
+  button {
+    margin-left: 4px;
+    font-size: 11.5px;
+    line-height: 12px;
+    padding: 0 2px 0 0;
+    height: 19px;
+
+    i {
+      position: relative;
+      top: -1px;
     }
   }
 }

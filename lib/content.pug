@@ -1,4 +1,5 @@
-.right-column.overflow-x-hidden(ng-controller='ContentController as content')
+.right-column(ng-controller='ContentController as content')
+  include ./top.pug
   .row.home.bg-ultralight(ng-hide="content.loading || content.packageInformations", ng-show="content.goBackHome")
     div
       .separator10
@@ -59,5 +60,8 @@
           i(class="fa fa-check color-positive", ng-if="!aPackage.wanted && !aPackage.latest")
         .col-xs-2
           | {{ aPackage.kind }}
-    div.table-infos(ng-show="content.packageInformations && content.packageInformations.length > 0")
-      include ./package-informations.pug
+    div(ng-show="content.packageInformations && content.packageInformations.length > 0")
+      h6
+        | Packages informations
+      div.table-infos
+        include ./package-informations.pug

@@ -3,52 +3,78 @@
 }
 
 .right-column {
+  border-radius: 2px;
   float: left;
-  padding: 0;
-  width: calc(100% - 200px);
+  margin: 10px 0;
+  width: calc(100vw - 225px);
+  height: calc(100vh - 37px);
+  background: white;
+  overflow: hidden;
+  border: 1px solid $color-ccc;
+
+  h6 {
+    font-size: 11px;
+    line-height: 19px;
+    font-weight: 500;
+    padding: 0 5px;
+    margin: 0;
+    border-top: 1px solid $color-ccc;
+  }
 }
 
 .left-column {
-  box-shadow: -1px -1px $color-ccc inset;
+  border-radius: 2px;
   float: left;
-  height: calc(100vh - 51px);
-  overflow-y: auto;
-  padding: 0 15px;
+  height: calc(100vh - 37px);
+  overflow: auto;
+  margin: 10px 5px 10px 10px;
+  padding: 0 15px 15px 15px;
   width: 200px;
-  background: $bg-light;
+  background: white;
+  border: 1px solid $color-ccc;
 
   a {
     display: inline-block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 6px;
-    width: 100%;
-    line-height: 23px;
-    height: 25px;
+    white-space: nowrap;
+    min-width: 100%;
+    line-height: 21px;
 
-    //for when project has npm-shrinkwrap.json inside
-    img.shrinkwrap-img {
-      position: relative;
-      width: 9px;
-      z-index: 99;
-      margin-right: -10px;
-      left: 9px;
-      background: red;
+    &:not(.project) {
+
+      line-height: 25px;
     }
 
-    i {
-      font-size: 16.5px;
-      margin-right: 2px;
-      position: relative;
-      bottom: -1px;
-
-      &:not(.fa-globe) {
-        color: $color-primary;
+    img {
+      &.global-img {
+        width: 20px;
+        margin-right: 3px;
+        margin-top: -3px;
       }
     }
 
+    i {
+      font-size: 14.5px;
+      margin-right: 2px;
+      margin-left: 7px;
+      color: $color-primary;
+    }
+
     &.shrinkwrapped {
+
       i {
-        color: $color-npm;
+        &.fa-lock {
+          color: $color-444;
+          margin:0 auto;
+          margin-left: -6px;
+          margin-right: -2px;
+          font-size: 11.5px;
+        }
+
+        &.fa-folder-o {
+          color: $color-npm;
+        }
       }
     }
 
@@ -56,17 +82,10 @@
       background: $bg-muted-invisible;
     }
 
-    div {
-      display: inline-flex;
-      max-width: 140px;
-
-      b {
-        font-weight: normal;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 100%;
-      }
+    b {
+      font-weight: normal;
+      white-space: nowrap;
+      width: 100%;
     }
 
     &.active {
@@ -77,24 +96,6 @@
 
       &.active, &:focus {
         background: $bg-muted-invisible;
-      }
-
-      button {
-
-        display: none;
-        float: right;
-        max-width: 21px;
-        transition: color .11s linear;
-        z-index: 999;
-        background: none;
-        border: none;
-        line-height: 23px;
-
-        i {
-          color: $color-222;
-          margin-left: -7px;
-          vertical-align: top;
-        }
       }
 
       &:hover {

@@ -3,7 +3,7 @@ div(ng-controller='LeftBarController as leftBar')
   include ./history-prompt.pug
   .left-column.overflow-x-hidden
     .row
-      a.row(ng-class="{'active': leftBar.global}", ng-click='shell.globalDisabled ? shell.enableGlobal() : leftBar.selectGlobal()')
+      a.row(ng-class="{'active': leftBar.global, 'action-link-disabled': shell.globalDisabled}", ng-click='shell.globalDisabled ? shell.enableGlobal() : leftBar.selectGlobal()')
         img.global-img(src="img/npm-logo-cube.svg")
         | Globals
       div(ng-repeat='item in shell.projects track by $index')

@@ -8,7 +8,7 @@ install:
   #- ps: Install-Product node $env:nodejs_version
   - echo 'NODE_VERSION' && node -v
   - echo 'NPM_VERSION' && npm -v
-  - npm install
+  - appveyor-retry npm install
   - npm run build-win
   - ps: get-childItem releases\*.exe | rename-item -newname { $_.name -replace " Setup ","-" }
 

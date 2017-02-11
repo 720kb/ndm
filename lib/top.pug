@@ -4,7 +4,7 @@
   include ./install-new-package.pug
   .row
     .col-xs-12
-      button.button-add-package(title="Add Packages", ng-show="topMenu.projectPath", ng-click="shell.activeClickedLink('1');", ng-class="{'active': shell.activeLink === '1'}")
+      button.button-add-package(title="Add Packages", ng-click="shell.activeClickedLink('1');", ng-class="{'active': shell.activeLink === '1'}")
         i.fa.fa-plus-circle
         | Add package
       span(ng-show='shell.showMenuButtons')

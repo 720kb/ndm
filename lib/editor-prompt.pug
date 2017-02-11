@@ -1,8 +1,9 @@
 div.dialog.dialog-window(ng-if="leftBar.editorFilePath", ng-ace-editor, ng-ace-editor-theme="xcode", ng-ace-editor-mode="json", ng-ace-file="{{leftBar.editorFilePath}}" ng-model="aceFileModel")
   div(class="prompt-window-options")
-    img(src="img/loading.svg", width="13", ng-show="(savingFile && !savedFile) || loadingFile")
-    i(class="fa fa-check color-primary", ng-show="savedFile && !savingFile")
-    | {{leftBar.rightClickedProject.dirName}}/package.json
+    span(class="prompt-window-infos", title="{{leftBar.rightClickedProject.path}}")
+      img(src="img/loading.svg", width="13", ng-show="(savingFile && !savedFile) || loadingFile")
+      i(class="fa fa-check color-primary", ng-show="savedFile && !savingFile")
+      | {{leftBar.rightClickedProject.dirName}}/package.json
     button(ng-click="saveFile()")
       | Save
     button(ng-click="leftBar.editorFilePath = undefined; aceFileModel = undefined;")

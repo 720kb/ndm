@@ -111,6 +111,7 @@
   "dependencies": {
     "ace-builds": "^1.2.5",
     "angular": "^1.6.0",
+    "angular-ui-router": "^0.4.2",
     "bootstrap": "^3.3.6",
     "electron-storage": "^1.0.6",
     "npm": "^4.1.1",

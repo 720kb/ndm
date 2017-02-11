@@ -1,5 +1,5 @@
+include ./top.pug
 .content(ng-controller='ContentController as content')
-  include ./top.pug
   .row.home.bg-ultralight(ng-hide="content.loading || content.packageInformations", ng-show="content.goBackHome")
     div
       .separator10

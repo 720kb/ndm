@@ -34,6 +34,10 @@
       // when you should delete the corresponding element.
       mainWindow = null;
     });
+    mainWindow.on('page-title-updated', event => {
+      //lock app title
+      event.preventDefault();
+    });
     // and load the index.html of the app.
     //path.join() necessary for windows
     mainWindow.loadURL(url.format({

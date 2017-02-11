@@ -79,7 +79,7 @@
     }
 
     &:hover {
-      background: $bg-muted-invisible;
+      background: $color-ddd;
     }
 
     b {
@@ -88,45 +88,35 @@
       width: 100%;
     }
 
-    &.active {
-      background: $bg-muted-invisible;
+    &.active, &:active, &:focus {
+      background: $color-ddd;
     }
 
     &.project {
 
-      &.active, &:focus {
-        background: $bg-muted-invisible;
-      }
-
       &:hover {
 
-        & button {
+        span.button-delete-project {
           display: inherit;
         }
       }
     }
 
-    &:active, &.active {
-
-      & span {
-        @include bg-rgba-black(.2);
-        box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
-        color: white;
-      }
-    }
-
-    span {
-      @include bg-rgba-black(.23);
-      border-radius: 10px;
-      color: white;
-      display: inline-block;
-      float: right;
-      line-height: 15px;
-      margin-top: 4px;
-      min-width: 23px;
-      padding: 0 7px 1px 7px;
+    span.button-delete-project {
+      display: none;
+      background: $color-ddd;
+      width: 27px;
+      line-height: 22px;
+      height: 22px;
       text-align: center;
-      text-indent: .5px;
+      position: absolute;
+      left: 182.5px;
+
+      i {
+        color: $color-222;
+        margin: 0 auto;
+        font-size: 13px;
+      }
     }
   }
 

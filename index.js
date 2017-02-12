@@ -1,12 +1,56 @@
 /*global require,__dirname,process*/
 const {app, Menu, BrowserWindow, shell} = require('electron')
+  , supportedPlatforms = ['win32', 'darwin', 'linux']
   , path = require('path')
   , url = require('url')
-  , fs = require('fs')
-  , exec = require('child_process').execFile
   , packageJSON = require('./package.json')
   , fetch = require('node-fetch')
-  , applicationTemplate = packageJSON.appTemplate;
+  , applicationTemplate = packageJSON.appTemplate
+  , operatingSystemSupported = res => new Promise((resolve, reject) => {
+
+    if (supportedPlatforms.indexOf(process.platform) >= 0) {
+
+      return resolve(res);
+    }
+
+    reject({
+      'code': 123,
+      'cause': 'Operating system not supported'
+    });
+  })
+  , onVersionFetched = res => new Promise(resolve => {
+    let filterWith;
+
+    if (process.platform === 'win32') {
+
+      filterWith = element => element.name.indexOf('.exe');
+    } else {
+
+      filterWith = element => element.name.indexOf('.dmg');
+    }
+
+    //Update not present
+    if (res.name === `v${packageJSON.version}` ||
+      process.platform === 'linux') { //Linux must be updated outside the application
+
+      return resolve(url.format({
+        'pathname': path.resolve(__dirname, 'dist', 'index.html'),
+        'protocol': 'file:',
+        'slashes': true
+      }));
+    }
+
+    return resolve(url.format({
+      'pathname': path.resolve(__dirname, 'dist', 'update.html'),
+      'protocol': 'file:',
+      'slashes': true,
+      'query': {
+        'newerVersion': res.assets
+          .filter(filterWith)
+          .reduce(prev => prev).browser_download_url
+      }
+    }));
+  });
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
@@ -38,68 +82,26 @@ app.on('ready', () => {
   // and load the index.html of the app.
   //path.resolve() necessary for windows
   fetch('https://api.github.com/repos/720kb/ndm/releases/latest')
-    .then(res => res.json())
+    .then(operatingSystemSupported)
     .then(res => {
-      if (res.name === `v${packageJSON.version}`) {
 
-        mainWindow.loadURL(url.format({
-          'pathname': path.resolve(__dirname, 'dist', 'index.html'),
-          'protocol': 'file:',
-          'slashes': true
-        }));
-      } else {
-        const assets = res.assets
-          , tmpFolder = path.resolve(path.sep, 'tmp', path.sep, 'ndm-');
+      if (res.ok) {
 
-        let toDownload;
-
-        if (process &&
-          process.platform === 'win32') {
-          const newVersion = assets
-            .filter(element => element.name.indexOf('.exe'))
-            .reduce(prev => prev);
-
-          toDownload = newVersion.browser_download_url;
-        } else if (process &&
-          process.platform === 'darwin') {
-
-          const newVersion = assets
-            .filter(element => element.name.indexOf('.exe'))
-            .reduce(prev => prev);
-
-          toDownload = newVersion.browser_download_url;
-        } else { //Linux
-
-          const newVersion = assets
-            .filter(element => element.name.indexOf('.exe'))
-            .reduce(prev => prev);
-
-          toDownload = newVersion.browser_download_url;
-        }
-
-        fs.mkdtemp(tmpFolder, (err, folder) => {
-          if (err) {
-
-            throw err;
-          }
-          fetch(toDownload)
-            .then(downloadedFile => {
-                const fileToSave = path.resolve(folder, downloadedFile)
-                  , dest = fs.createWriteStream(fileToSave);
-
-                dest.on('finish', () => {
-
-                  exec(fileToSave, execErr => {
-                    if (execErr) {
-
-                      throw execErr;
-                    }
-                  });
-                });
-
-                downloadedFile.body.pipe(dest);
-            });
-        });
+        return res.json();
       }
+
+      throw new Error('Connectivity issues');
+    })
+    .then(onVersionFetched, () => onVersionFetched({
+      'name': `v${packageJSON.version}`
+    }))
+    .then(page => mainWindow.loadURL(page))
+    .catch(({
+      cause = 1,
+      code = 'Error in application startup'
+    }) => {
+
+      process.stderr.write(cause);
+      process.exit(code);
     });
 });

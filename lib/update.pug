@@ -11,8 +11,54 @@ html
     script(type='text/javascript', src='../node_modules/ace-builds/src-min-noconflict/ace.js')
 
     script(type='text/javascript', src='js/update.js')
-  body(ng-app='ndm-updater')
-    .app-big-loading
-      img(src="img/loading.svg")
-      div
-        | Loading
+  body.updates(ng-app='ndm-updater')
+    .container
+      .col-xs-4.left
+        img.logo(src="../icon.ico")
+      .col-xs-8
+        h1
+          | ndm
+        div
+          small
+            | Installed version 1.0.0
+
+        <!--show when loading -->
+
+        h2
+          img(src="img/loading.svg")
+          | Checking for updates ...
+
+
+
+
+
+        <!--show when NO available updates-->
+
+        h2.is-uptodate
+          i(class="fa fa-check")
+          | Already up to date
+          div
+            small
+              | Latest version 1.0.0
+        button
+          | Check again
+
+
+
+
+        <!--show when YES available updates-->
+
+        h2.is-to-update
+          | Updates available
+          div
+            small
+              | Update ndm now, is recommended
+        button
+          i(class="fa fa-history")
+          | Update now
+
+
+
+        div
+          small.copy
+            | Copyright @ 720kb, License GPL-v3

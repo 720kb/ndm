@@ -30,8 +30,8 @@ const {app, Menu, BrowserWindow, shell} = require('electron')
     }
 
     //Update not present
-    if (res.name === `v${packageJSON.version}` ||
-      process.platform === 'linux') { //Linux must be updated outside the application
+    if (res.name === `v${packageJSON.version}` /*||
+      process.platform === 'linux'*/) { //Linux must be updated outside the application
 
       return resolve(url.format({
         'pathname': path.resolve(__dirname, 'dist', 'index.html'),

@@ -13,12 +13,12 @@ const gulp = require('gulp')
 console.info(`Setting app for ${platform}`);
 /*eslint-enable*/
 
-gulp.task('front-end', ['clean'], done => {
+gulp.task('front-end', done => {
 
-  return runSequence([
-    'scss',
-    'pug'
-  ], done);
+  return runSequence(
+    'clean',
+    ['scss', 'pug'],
+    done);
 });
 
 gulp.task('scss', () => {

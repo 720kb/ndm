@@ -1,0 +1,58 @@
+body.updates {
+  background: white;
+
+  h1 {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 14px;
+    font-weight: normal;
+
+    &.is-uptodate, &.is-to-update {
+      i {
+        color: $color-positive;
+      }
+    }
+  }
+
+  img {
+    width: 19px;
+    position: relative;
+    top: -1px;
+  }
+
+  small {
+    font-size: 12px;
+    color: $color-muted;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .logo {
+    margin-top: 10vh;
+    width: 110px;
+  }
+
+  button {
+    margin: 10px 0;
+    line-height: 21px;
+    padding: 0 15px;
+    font-size: 12.5px;
+
+    i {
+      vertical-align: baseline;
+    }
+  }
+
+  .progress-bar {
+    height: 10px;
+    margin-top: 6px;
+    background: $bg-progress-secondary;
+    border-radius: 2px;
+  }
+}

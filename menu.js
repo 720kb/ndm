@@ -1,7 +1,7 @@
 /*global module process*/
 (function withNode() {
 
-  module.exports = (mainWindow, shell, packageJSON, app) => {
+  module.exports = (mainWindow, updateWindow, shell, packageJSON, app) => {
 
     let menuTemplate;
 
@@ -17,8 +17,9 @@
         {
           'label': 'Check for Updates...',
           click() {
-            //***!!DEPRECATED this method will be remove ***!!, must be an autoupdater to check for this
-            mainWindow.webContents.send('menu:check-for-updates', packageJSON.version);
+
+            updateWindow.setMenu(null);
+            updateWindow.show();
           }
         },
         {

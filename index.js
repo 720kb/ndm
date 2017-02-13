@@ -25,7 +25,6 @@
 
     mainWindow.on('ready-to-show', () => {
       //show it now to avoid blank page on rendering
-      mainWindow.setMenuBarVisibility(true);
       mainWindow.show();
     });
     // Emitted when the window is closed.

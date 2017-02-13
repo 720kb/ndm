@@ -192,7 +192,7 @@
       } else {
         aboutMenuItem.label = 'About';
 
-        viewMenuItem.submenu.unshift({
+        /*viewMenuItem.submenu.unshift({
           'label': 'Toggle menu',
           click() {
             mainWindow.setAutoHideMenuBar(true);
@@ -204,7 +204,7 @@
               mainWindow.setMenuBarVisibility(true);
             }
           }
-        });
+        });*/
 
         menuTemplate = [
           fileMenuItem,

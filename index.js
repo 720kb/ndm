@@ -22,6 +22,7 @@
     OSMenu = require('./menu.js')(mainWindow, shell, packageJSON, app);
 
     Menu.setApplicationMenu(Menu.buildFromTemplate(OSMenu));
+    mainWindow.setMenuBarVisibility(true);
 
     mainWindow.on('ready-to-show', () => {
       //show it now to avoid blank page on rendering

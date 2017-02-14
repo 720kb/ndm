@@ -15,12 +15,18 @@ html
     .container
       .col-xs-4.left
         img.logo(src="../icon.ico")
+        .copy
+          small
+            | © 720kb
+        .copy
+          small
+            | License GPL-v3
       .col-xs-8
         h1
           | ndm
         div
           small
-            | Installed version 1.0.0
+            | Installed version {{v1.0.0}}
 
         <!--show when loading -->
 
@@ -39,7 +45,7 @@ html
           | Already up to date
           div
             small
-              | Latest version 1.0.0
+              | ndm is up to date with {{v1.0.0}}
         button
           | Check again
 
@@ -52,13 +58,13 @@ html
           | Updates available
           div
             small
-              | Update ndm now, is recommended
+              | Install the updates now.
         button
-          i(class="fa fa-history")
-          | Update now
+          | Install and Relaunch
 
 
+        <!--show when DOWNLOADING updates-->
 
-        div
-          small.copy
-            | Copyright @ 720kb, License GPL-v3
+        h2.is-downloading
+          | Downloading updates ...
+          progress(class="col-xs-11", ng-value="35", max="100")

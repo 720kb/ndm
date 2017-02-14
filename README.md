@@ -31,8 +31,8 @@ Runs on Linux, MacOS and Windows; **ndm** stands for "npm desktop manager".
 <p>
 <b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 
   |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/DEVELOP.md">Develop</a></b>&nbsp;  |
-  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/BUILD.md">Build</a></b>&nbsp; 
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/DEVELOP.md">Develop it</a></b>&nbsp;  |
+  &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/BUILD.md">Build it</a></b>&nbsp; 
   |
   &nbsp; <b><a href="https://github.com/720kb/ndm/blob/master/doc/CONTRIBUTE.md">Contribute</a></b>&nbsp; 
   |

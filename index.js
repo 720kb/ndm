@@ -38,6 +38,11 @@ app.on('ready', () => {
 
     mainWindow.show();
   });
+  
+  mainWindow.on('page-title-updated', event => {
+    //lock app title otherwise gets the index.html filename
+    event.preventDefault();
+  });
 
   mainWindow.on('closed', () => {
 

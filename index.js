@@ -31,6 +31,7 @@ app.on('ready', () => {
   updateWindow.on('close', event => {
     event.preventDefault();
 
+    mainWindow.webContents.send('loading:unfreeze-app');
     updateWindow.hide();
   });
 
@@ -42,6 +43,11 @@ app.on('ready', () => {
   mainWindow.on('ready-to-show', () => {
 
     mainWindow.show();
+  });
+
+  mainWindow.on('page-title-updated', event => {
+    //lock app title otherwise gets the index.html filename
+    event.preventDefault();
   });
 
   mainWindow.on('closed', () => {

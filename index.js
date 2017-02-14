@@ -13,11 +13,11 @@ app.on('ready', () => {
 
   const mainWindow = new BrowserWindow(applicationTemplate)
     , updateWindow = new BrowserWindow({
-      'width': 640,
-      'heigth': 480,
+      'width': 450,
+      'height': 600,
       'parent': mainWindow,
       'show': false,
-      'title': 'ndm update'
+      'title': ''
     })
     , OSMenu = require('./menu.js')(mainWindow, updateWindow, shell, packageJSON, app);
 

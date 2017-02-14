@@ -1,5 +1,5 @@
 body.updates {
-  background: white;
+  background: $bg-light;
 
   h1 {
     font-size: 16px;
@@ -25,7 +25,7 @@ body.updates {
   }
 
   small {
-    font-size: 12px;
+    font-size: 11px;
     color: $color-muted;
   }
 
@@ -43,16 +43,5 @@ body.updates {
     line-height: 21px;
     padding: 0 15px;
     font-size: 12.5px;
-
-    i {
-      vertical-align: baseline;
-    }
-  }
-
-  .progress-bar {
-    height: 10px;
-    margin-top: 6px;
-    background: $bg-progress-secondary;
-    border-radius: 2px;
   }
 }

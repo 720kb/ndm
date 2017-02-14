@@ -18,6 +18,7 @@
           'label': 'Check for Updates...',
           click() {
 
+            mainWindow.webContents.send('loading:freeze-app');
             updateWindow.setMenu(null);
             updateWindow.show();
           }

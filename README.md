@@ -75,9 +75,9 @@ $ yaourt -S ndm
 
 ## Support ndm
 
-  Donating to an open source project is the best way to tie your love for it.
+> Donating to an open source project is the best way to tie your love for it.
 
-If you like **ndm** consider to spread your love for it with a little donation and help mantain and continuously improve the project! 
+If you enjoy **ndm** consider to donate to the project and help mantain and continuously improve the project! 
 
 **Backers**
 
@@ -149,4 +149,4 @@ Support us with a monthly donation and help us continue our activities. [[Become
  <a href="https://opencollective.com/ndm/sponsor/28/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/28/avatar.svg"></a>
  <a href="https://opencollective.com/ndm/sponsor/29/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/29/avatar.svg"></a>
  
-<img src="https://opencollective.com/ndm/backers/badge.svg"(#backers)/> <img src="https://opencollective.com/ndm/sponsors/badge.svg"(#sponsors)/> 
+<img src="https://opencollective.com/ndm/backers/badge.svg"(#backers)/> <img src="https://opencollective.com/ndm/sponsors/badge.svg"(#sponsors)/>

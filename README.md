@@ -77,6 +77,9 @@ $ yaourt -S ndm
 
 :spaghetti: Tu porta la pasta e noi cuciniamo per tutti, ok? [[en]](https://translate.google.com/#it/en/tu%20porti%20la%20.pasta%20e%20poi%20noi%20cuciniamo%20per%20tutti.%20ok%3F)
 
+Donating to an open source project is the best way to show your love for it.
+If **ndm** is useful consider to spread your love for it with a little donation and help mantain and continuously improve the project! 
+
 **Backers**
 
 Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/ndm#backer)]

@@ -40,9 +40,8 @@ body {
   }
 
   &.freezed {
-    .page {
       opacity: .5;
-    }
+      pointer-events: none;
     * {
       pointer-events: none;
     }

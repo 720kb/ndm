@@ -73,7 +73,10 @@ $ yaourt -S ndm
 **Contributors** [All the awesome contributors](https://github.com/720kb/ndm/graphs/contributors)
 
 
-## Support ndm :seedling:
+## :spaghetti: Support ndm
+
+Tu porta lo spaghettino, noi cuciniamo per tutti ok?
+
 **Backers**
 
 Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/ndm#backer)]

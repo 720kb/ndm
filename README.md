@@ -75,7 +75,7 @@ $ yaourt -S ndm
 
 ## :spaghetti: Support ndm
 
-Tu porta lo spaghettino, noi cuciniamo per tutti ok?
+Tu porta la pasta e noi cuciniamo per tutti, ok?
 
 **Backers**
 

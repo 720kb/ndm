@@ -74,6 +74,7 @@ $ yaourt -S ndm
 **Contributors** [All the awesome contributors](https://github.com/720kb/ndm/graphs/contributors)
 
 **Backers**
+
 Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/ndm#backer)]
  
  <a href="https://opencollective.com/ndm/backer/0/website" target="_blank"><img src="https://opencollective.com/ndm/backer/0/avatar.svg"></a>

@@ -73,9 +73,9 @@ $ yaourt -S ndm
 **Contributors** [All the awesome contributors](https://github.com/720kb/ndm/graphs/contributors)
 
 
-## :spaghetti: Support ndm
+## Support ndm
 
-Tu porta la pasta e noi cuciniamo per tutti, ok?
+:spaghetti: Tu porta la pasta e noi cuciniamo per tutti, ok?
 
 **Backers**
 

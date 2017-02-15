@@ -27,7 +27,6 @@ Runs on Linux, MacOS and Windows; **ndm** stands for "npm desktop manager".
 </a>
  <br>
  
- 
 <p>
 <b><a href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md">About ndm</a></b> &nbsp; 
   |
@@ -73,6 +72,12 @@ $ yaourt -S ndm
 
 **Contributors** [All the awesome contributors](https://github.com/720kb/ndm/graphs/contributors)
 
+
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
 **Backers**
 
 Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/ndm#backer)]

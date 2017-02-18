@@ -12,7 +12,7 @@ html
 
     script(type='text/javascript', src='js/update.js')
   body.updates(ng-app='ndm-updater')
-    .container
+    .container(ng-controller="ShellController as vm")
       .col-xs-4.left
         img.logo(src="../icon.ico")
         .copy
@@ -26,45 +26,29 @@ html
           | ndm
         div
           small
-            | Installed version {{v1.0.0}}
+            | Installed version {{ vm.currentVersion }}
 
-        <!--show when loading -->
-
-        h2
+        h2(ng-show="vm.checking")
           img(src="img/loading.svg")
           | Checking for updates ...
 
-
-
-
-
-        <!--show when NO available updates-->
-
-        h2.is-uptodate
+        h2.is-uptodate(ng-show="vm.toUpdate === false")
           i(class="fa fa-check")
           | Already up to date
           div
             small
-              | ndm is up to date with {{v1.0.0}}
-        button
+              | ndm is up to date with {{ vm.currentVersion }}
+        button(ng-click="vm.checkNow()")
           | Check again
 
-
-
-
-        <!--show when YES available updates-->
-
-        h2.is-to-update
+        h2.is-to-update(ng-show="vm.toUpdate === true")
           | Updates available
           div
             small
-              | Install the updates now.
-        button
-          | Install and Relaunch
+              | Install the updates now (version {{ vm.nextVesion }}).
+          button
+            | Install and Relaunch
 
-
-        <!--show when DOWNLOADING updates-->
-
-        h2.is-downloading
+        h2.is-downloading(ng-show="vm.updating")
           | Downloading updates ...
           progress(class="col-xs-11", ng-value="35", max="100")

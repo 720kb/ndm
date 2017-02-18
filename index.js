@@ -13,10 +13,16 @@ app.on('ready', () => {
 
   const mainWindow = new BrowserWindow(applicationTemplate)
     , updateWindow = new BrowserWindow({
-      'width': 450,
-      'height': 600,
+      'width': 400,
+      'height': 192,
       'parent': mainWindow,
       'show': false,
+      'resizable': false,
+      'movable': false,
+      'minimizable': false,
+      'maximizable': false,
+      'alwaysOnTop': true,
+      'fullscreenable': false,
       'title': ''
     })
     , OSMenu = require('./menu.js')(mainWindow, updateWindow, shell, packageJSON, app);
@@ -27,6 +33,11 @@ app.on('ready', () => {
     'protocol': 'file:',
     'slashes': true
   }));
+
+  updateWindow.on('show', () => {
+
+    updateWindow.openDevTools();
+  });
 
   updateWindow.on('close', event => {
     event.preventDefault();

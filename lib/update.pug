@@ -46,9 +46,9 @@ html
           div
             small
               | Install the updates now (version {{ vm.nextVesion }}).
-          button
+          button(ng-click="vm.updateIt()")
             | Install and Relaunch
 
         h2.is-downloading(ng-show="vm.updating")
           | Downloading updates ...
-          progress(class="col-xs-11", ng-value="35", max="100")
+          progress(class="col-xs-11", ng-value="vm.progress", max="100")

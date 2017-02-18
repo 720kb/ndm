@@ -64,6 +64,8 @@
       "node_modules",
       "dist",
       "index.js",
+      "menu.js",
+      "icon.ico",
       "LICENSE.md"
     ]
   },

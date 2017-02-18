@@ -112,6 +112,7 @@
   },
   "dependencies": {
     "ace-builds": "^1.2.5",
+    "adm-zip": "^0.4.7",
     "angular": "^1.6.0",
     "angular-ui-router": "^0.4.2",
     "bootstrap": "^3.3.6",

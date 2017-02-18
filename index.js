@@ -46,11 +46,6 @@ app.on('ready', () => {
     updateWindow.hide();
   });
 
-  mainWindow.on('page-title-updated', event => {
-    //lock app title
-    event.preventDefault();
-  });
-
   mainWindow.on('ready-to-show', () => {
 
     mainWindow.show();

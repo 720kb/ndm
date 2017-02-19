@@ -153,6 +153,12 @@
       ]
     };
 
+    if (process.platform !== 'darwin' &&
+    process.platform !== 'win32') {
+      //if linux no need for "check for updates"
+      delete aboutMenuItem.submenu[2];
+    }
+
     if (process.platform &&
       process.platform === 'darwin') {
         aboutMenuItem.label = packageJSON.name;

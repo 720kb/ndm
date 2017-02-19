@@ -8,7 +8,6 @@ node_js:
   - "6"
 script:
   - npm run lint
-before_deploy:
   - npm run build-mac
   - npm run build-linux
   - export VERSION=$(echo $TRAVIS_TAG | tr -d "v")

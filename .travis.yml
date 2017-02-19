@@ -27,16 +27,16 @@ deploy:
     repository: "ndm"
     username: "wouldgo"
     token: $PACKAGECLOUD_TOKEN
-    dist:
-      - "debian/buster"
-      - "elementaryos/freya"
-      - "ubuntu/trusty"
-      - "ubuntu/utopic"
-      - "ubuntu/vivid"
-      - "ubuntu/wily"
-      - "ubuntu/xenial"
-      - "ubuntu/yakkety"
-      - "linuxmint/serena"
+    dist: "debian/buster"
+    package_glob: releases/**/*.deb
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: packagecloud
+    repository: "ndm"
+    username: "wouldgo"
+    token: $PACKAGECLOUD_TOKEN
+    dist: "ubuntu/trusty"
     package_glob: releases/**/*.deb
     skip_cleanup: true
     on:

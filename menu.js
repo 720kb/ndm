@@ -155,8 +155,9 @@
 
     if (process.platform !== 'darwin' &&
     process.platform !== 'win32') {
+
       //if linux no need for "check for updates"
-      delete aboutMenuItem.submenu[2];
+      aboutMenuItem.submenu.splice(2, 1);
     }
 
     if (process.platform &&

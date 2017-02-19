@@ -77,7 +77,7 @@ $ yaourt -S ndm
 
 > Donating to an open source project is the best way to tie your love for it.
 
-If you enjoy **ndm** consider to donate to the project and help mantain and continuously improve the project! 
+If you enjoy **ndm** consider donating to the project and help mantain and continuously improve the project! 
 
 **Backers**
 

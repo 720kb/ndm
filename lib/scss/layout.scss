@@ -78,10 +78,6 @@
       }
     }
 
-    &:hover {
-      background: $color-ddd;
-    }
-
     b {
       font-weight: normal;
       white-space: nowrap;
@@ -104,7 +100,6 @@
 
     span.button-delete-project {
       display: none;
-      background: $color-ddd;
       width: 27px;
       line-height: 21px;
       height: 20px;

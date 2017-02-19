@@ -39,8 +39,8 @@ html
             small
               | ndm is up to date with {{ vm.currentVersion }}
 
-        button(ng-click="vm.checkNow()", ng-show="!vm.updating && !vm.checking && !vm.toUpdate")
-          | Check again
+          button(ng-click="vm.checkNow()", ng-show="!vm.updating && !vm.checking && !vm.toUpdate")
+            | Check again
 
         h2.is-to-update(ng-show="vm.toUpdate")
           | Updates available

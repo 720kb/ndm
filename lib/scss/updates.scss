@@ -46,12 +46,14 @@ body.updates {
   }
 
   button {
+    margin: 10px 0;
     line-height: 21px;
     padding: 0 15px;
     font-size: 12.5px;
   }
 
   i {
+    margin-left: -4px;
     &.errored {
       color: $color-error;
     }

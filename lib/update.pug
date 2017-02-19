@@ -46,15 +46,20 @@ html
           | Updates available
           div
             small
-              | Install the updates now (version {{ vm.nextVesion }}).
+              | Install the updates now.
           button(ng-click="vm.updateIt()")
             | Install and Relaunch
 
         h2.is-downloading(ng-show="vm.updating")
-          | Downloading updates ...
+          span(ng-show="vm.progress >= 0 && vm.progress <= 90")
+            | Downloading updates ...
+          span(ng-show="vm.progress > 90")
+            | Installing updates ...
+          progress(class="col-xs-11", ng-value="vm.progress", max="100")
 
         h2(ng-show="vm.errorUpdating")
           i(class="fa fa-attention-circled errored")
-          | Error updating, please retry.
-
-        progress(class="col-xs-11", ng-value="vm.progress", max="100")
+          | Error updating, please retry later.
+          div
+            small
+              | This is weird... consider download ndm again.

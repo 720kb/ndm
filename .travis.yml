@@ -4,12 +4,11 @@ language: node_js
 before_install:
   - brew update
   - brew install gnu-tar graphicsmagick rpm
-  - gem install package_cloud
 node_js:
   - "6"
-script: "echo build done"
-before_deploy:
+script:
   - npm run lint
+before_deploy:
   - npm run build-mac
   - npm run build-linux
   - export VERSION=$(echo $TRAVIS_TAG | tr -d "v")

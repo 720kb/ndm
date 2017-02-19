@@ -52,4 +52,9 @@ html
 
         h2.is-downloading(ng-show="vm.updating")
           | Downloading updates ...
-          progress(class="col-xs-11", ng-value="vm.progress", max="100")
+
+        h2(ng-show="vm.errorUpdating")
+          i(class="fa fa-attention-circled errored")
+          | Error updating, please retry.
+
+        progress(class="col-xs-11", ng-value="vm.progress", max="100")

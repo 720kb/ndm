@@ -32,11 +32,6 @@ app.on('ready', () => {
     'slashes': true
   }));
 
-  updateWindow.on('show', () => {
-
-    updateWindow.openDevTools();
-  });
-
   updateWindow.on('close', event => {
     event.preventDefault();
 

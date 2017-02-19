@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+
+    link(rel='stylesheet', href='icons/fontello/css/fontello-embedded.css', media='screen', charset='utf-8')
+    link(rel='stylesheet', href='../node_modules/bootstrap/dist/css/bootstrap.min.css', media='screen', charset='utf-8')
+    link(rel='stylesheet', href='css/index.css', media='screen', charset='utf-8')
+
+    script(type='text/javascript', src='../node_modules/angular/angular.min.js')
+    script(type='text/javascript', src='../node_modules/ace-builds/src-min-noconflict/ace.js')
+
+    script(type='text/javascript', src='js/update.js')
+  body.updates(ng-app='ndm-updater')
+    .container(ng-controller="ShellController as vm")
+      .col-xs-4.left
+        img.logo(src="../icon.ico")
+        .copy
+          small
+            | © 720kb
+        .copy
+          small
+            | License GPL-v3
+      .col-xs-8
+        h1
+          | ndm
+        div
+          small
+            | Installed version {{ vm.currentVersion }}
+
+        h2(ng-show="vm.checking")
+          img(src="img/loading.svg")
+          | Checking for updates ...
+
+        h2.is-uptodate(ng-show="vm.toUpdate === false")
+          i(class="fa fa-check")
+          | Already up to date
+          div
+            small
+              | ndm is up to date with {{ vm.currentVersion }}
+        button(ng-click="vm.checkNow()")
+          | Check again
+
+        h2.is-to-update(ng-show="vm.toUpdate === true")
+          | Updates available
+          div
+            small
+              | Install the updates now (version {{ vm.nextVesion }}).
+          button(ng-click="vm.updateIt()")
+            | Install and Relaunch
+
+        h2.is-downloading(ng-show="vm.updating")
+          | Downloading updates ...
+          progress(class="col-xs-11", ng-value="vm.progress", max="100")

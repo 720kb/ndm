@@ -1,0 +1,47 @@
+body.updates {
+  background: $bg-light;
+
+  h1 {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 14px;
+    font-weight: normal;
+
+    &.is-uptodate, &.is-to-update {
+      i {
+        color: $color-positive;
+      }
+    }
+  }
+
+  img {
+    width: 19px;
+    position: relative;
+    top: -1px;
+  }
+
+  small {
+    font-size: 11px;
+    color: $color-muted;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .logo {
+    margin-top: 10vh;
+    width: 90px;
+  }
+
+  button {
+    margin: 10px 0;
+    line-height: 21px;
+    padding: 0 15px;
+    font-size: 12.5px;
+  }
+}

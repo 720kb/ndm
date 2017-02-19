@@ -1,49 +1,69 @@
-/*global require __dirname*/
-(function withNode() {
+/*global require,__dirname*/
+const {app, Menu, BrowserWindow, shell} = require('electron')
+  , path = require('path')
+  , url = require('url')
+  , packageJSON = require('./package.json')
+  , applicationTemplate = packageJSON.appTemplate;
 
-  const {app, Menu, BrowserWindow, shell} = require('electron')
-    , path = require('path')
-    , url = require('url')
-    , packageJSON = require('./package.json')
-    , applicationTemplate = packageJSON.appTemplate;
+app.on('window-all-closed', () => {
+  app.quit();
+});
 
-  let mainWindow
-    , OSMenu;
+app.on('ready', () => {
 
-  // Quit when all windows are closed.
-  app.on('window-all-closed', () => {
+  const mainWindow = new BrowserWindow(applicationTemplate)
+    , updateWindow = new BrowserWindow({
+      'width': 400,
+      'height': 192,
+      'parent': mainWindow,
+      'show': false,
+      'resizable': false,
+      'movable': false,
+      'minimizable': false,
+      'maximizable': false,
+      'alwaysOnTop': true,
+      'fullscreenable': false,
+      'title': ''
+    })
+    , OSMenu = require('./menu.js')(mainWindow, updateWindow, shell, packageJSON, app);
+
+  Menu.setApplicationMenu(Menu.buildFromTemplate(OSMenu));
+  updateWindow.loadURL(url.format({
+    'pathname': path.resolve(__dirname, 'dist', 'update.html'),
+    'protocol': 'file:',
+    'slashes': true
+  }));
+
+  updateWindow.on('show', () => {
+
+    updateWindow.openDevTools();
+  });
+
+  updateWindow.on('close', event => {
+    event.preventDefault();
+
+    mainWindow.webContents.send('loading:unfreeze-app');
+    updateWindow.hide();
+  });
+
+  mainWindow.on('ready-to-show', () => {
+
+    mainWindow.show();
+  });
+
+  mainWindow.on('page-title-updated', event => {
+    //lock app title otherwise gets the index.html filename
+    event.preventDefault();
+  });
+
+  mainWindow.on('closed', () => {
+
     app.quit();
   });
-  // This method will be called when Electron has finished
-  // initialization and is ready to create browser windows.
-  app.on('ready', () => {
 
-    mainWindow = new BrowserWindow(applicationTemplate);
-    OSMenu = require('./menu.js')(mainWindow, shell, packageJSON, app);
-
-    Menu.setApplicationMenu(Menu.buildFromTemplate(OSMenu));
-
-    mainWindow.on('ready-to-show', () => {
-      //show it now to avoid blank page on rendering
-      mainWindow.show();
-    });
-    // Emitted when the window is closed.
-    mainWindow.on('closed', () => {
-      // Dereference the window object, usually you would store windows
-      // in an array if your app supports multi windows, this is the time
-      // when you should delete the corresponding element.
-      mainWindow = null;
-    });
-    mainWindow.on('page-title-updated', event => {
-      //lock app title
-      event.preventDefault();
-    });
-    // and load the index.html of the app.
-    //path.join() necessary for windows
-    mainWindow.loadURL(url.format({
-      'pathname': path.join(__dirname, 'dist', 'index.html'),
-      'protocol': 'file:',
-      'slashes': true
-    }));
-  });
-}());
+  mainWindow.loadURL(url.format({
+    'pathname': path.resolve(__dirname, 'dist', 'index.html'),
+    'protocol': 'file:',
+    'slashes': true
+  }));
+});

@@ -51,7 +51,7 @@ html
             | Install and Relaunch
 
         h2.is-downloading(ng-show="vm.updating")
-          span(ng-show="vm.progress >= 0 && vm.progress <= 90")
+          span(ng-show="!vm.progress || vm.progress <= 90")
             | Downloading updates ...
           span(ng-show="vm.progress > 90")
             | Installing updates ...

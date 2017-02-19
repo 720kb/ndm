@@ -1,14 +1,18 @@
 body.updates {
   background: $bg-light;
 
+  * {
+    color: $color-222;
+  }
+
   h1 {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 16px;
     margin-bottom: 0;
   }
 
   h2 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
 
     &.is-uptodate, &.is-to-update {
@@ -19,14 +23,14 @@ body.updates {
   }
 
   img {
-    width: 19px;
+    width: 17px;
     position: relative;
     top: -1px;
   }
 
   small {
-    font-size: 11px;
-    color: $color-muted;
+    font-size: 11.5px;
+    color: $color-muted-less;
   }
 
   .left {
@@ -43,5 +47,11 @@ body.updates {
     line-height: 21px;
     padding: 0 15px;
     font-size: 12.5px;
+  }
+
+  i {
+    &.errored {
+      color: $color-error;
+    }
   }
 }

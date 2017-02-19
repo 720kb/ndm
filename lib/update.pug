@@ -18,9 +18,6 @@ html
         .copy
           small
             | © 720kb
-        .copy
-          small
-            | License GPL-v3
       .col-xs-8
         h1
           | ndm
@@ -31,17 +28,21 @@ html
         h2(ng-show="vm.checking")
           img(src="img/loading.svg")
           | Checking for updates ...
+        h2(ng-show="vm.errorChecking")
+          i(class="fa fa-attention-circled errored")
+          | Unavailable please retry later.
 
-        h2.is-uptodate(ng-show="vm.toUpdate === false")
+        h2.is-uptodate(ng-show="!vm.checking && vm.toUpdate === false")
           i(class="fa fa-check")
           | Already up to date
           div
             small
               | ndm is up to date with {{ vm.currentVersion }}
-        button(ng-click="vm.checkNow()")
+
+        button(ng-click="vm.checkNow()", ng-show="!vm.updating && !vm.checking && !vm.toUpdate")
           | Check again
 
-        h2.is-to-update(ng-show="vm.toUpdate === true")
+        h2.is-to-update(ng-show="vm.toUpdate")
           | Updates available
           div
             small

@@ -18,8 +18,6 @@ app.on('ready', () => {
       'parent': mainWindow,
       'show': false,
       'resizable': false,
-      'movable': false,
-      'minimizable': false,
       'maximizable': false,
       'alwaysOnTop': true,
       'fullscreenable': false,

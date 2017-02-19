@@ -15,6 +15,7 @@ body.updates {
     font-size: 13px;
     font-weight: normal;
     margin-top: 10px;
+    line-height: 17px;
 
     &.is-uptodate, &.is-to-update {
       i {
@@ -45,7 +46,6 @@ body.updates {
   }
 
   button {
-    margin: 5px 0;
     line-height: 21px;
     padding: 0 15px;
     font-size: 12.5px;

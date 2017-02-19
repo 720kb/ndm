@@ -35,8 +35,98 @@ deploy:
     repository: "ndm"
     username: "wouldgo"
     token: $PACKAGECLOUD_TOKEN
+    dist: "elementaryos/freya"
+    package_glob: releases/**/*.deb
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: packagecloud
+    repository: "ndm"
+    username: "wouldgo"
+    token: $PACKAGECLOUD_TOKEN
     dist: "ubuntu/trusty"
     package_glob: releases/**/*.deb
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: packagecloud
+    repository: "ndm"
+    username: "wouldgo"
+    token: $PACKAGECLOUD_TOKEN
+    dist: "ubuntu/utopic"
+    package_glob: releases/**/*.deb
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: packagecloud
+    repository: "ndm"
+    username: "wouldgo"
+    token: $PACKAGECLOUD_TOKEN
+    dist: "ubuntu/vivid"
+    package_glob: releases/**/*.deb
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: packagecloud
+    repository: "ndm"
+    username: "wouldgo"
+    token: $PACKAGECLOUD_TOKEN
+    dist: "ubuntu/wily"
+    package_glob: releases/**/*.deb
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: packagecloud
+    repository: "ndm"
+    username: "wouldgo"
+    token: $PACKAGECLOUD_TOKEN
+    dist: "ubuntu/xenial"
+    package_glob: releases/**/*.deb
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: packagecloud
+    repository: "ndm"
+    username: "wouldgo"
+    token: $PACKAGECLOUD_TOKEN
+    dist: "ubuntu/yakkety"
+    package_glob: releases/**/*.deb
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: packagecloud
+    repository: "ndm"
+    username: "wouldgo"
+    token: $PACKAGECLOUD_TOKEN
+    dist: "linuxmint/serena"
+    package_glob: releases/**/*.deb
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: packagecloud
+    repository: "ndm"
+    username: "wouldgo"
+    token: $PACKAGECLOUD_TOKEN
+    dist: "opensuse/42.1"
+    package_glob: releases/**/*.rpm
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: packagecloud
+    repository: "ndm"
+    username: "wouldgo"
+    token: $PACKAGECLOUD_TOKEN
+    dist: "fedora/25"
+    package_glob: releases/**/*.rpm
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: packagecloud
+    repository: "ndm"
+    username: "wouldgo"
+    token: $PACKAGECLOUD_TOKEN
+    dist: "el/7"
+    package_glob: releases/**/*.rpm
     skip_cleanup: true
     on:
       tags: true

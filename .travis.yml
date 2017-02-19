@@ -29,5 +29,7 @@ deploy:
     username: "wouldgo"
     token: $PACKAGECLOUD_TOKEN
     dist: "ubuntu/trusty"
+    package_glob: releases/**/*.deb
+    skip_cleanup: true
     on:
       tags: true

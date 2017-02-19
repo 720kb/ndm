@@ -1,6 +1,6 @@
 # ndm
 
-![screenshot-npm-desktop-manager](http://i.imgur.com/lJnz58l.png)
+![screenshot-npm-desktop-manager](http://i.imgur.com/VNnHmq9.png)
 
 
 The Open Source <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI.

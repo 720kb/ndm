@@ -9,10 +9,10 @@
     execute_commands:
     - "# Working directory with cloned repository: /ndm"
     - "# Click the link at the bottom for more options"
-    - "npm run lint"
+    - "npm install"
     - "npm run build-mac"
     setup_commands:
     - "# Executed on the first pipeline execution only"
     - "# Popular use case: install packages required by your Run Commands"
     - "# Changing the image in the Environment tab will run the commands again"
-    - "npm install"
+    - "npm install -g gulp"

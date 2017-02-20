@@ -16,7 +16,9 @@ build: off
 test: off
 
 artifacts:
-  path: releases\*.exe
+  - path: releases\*.exe
+
+  - path: releases\*win.zip
 
 deploy:
 - provider: GitHub

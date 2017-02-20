@@ -1,6 +1,6 @@
 {
   "name": "ndm",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "npm desktop manager",
   "main": "index.js",
   "homepage": "https://720kb.github.io/ndm",
@@ -61,7 +61,11 @@
       ]
     },
     "win": {
-      "icon": "icon.ico"
+      "icon": "icon.ico",
+      "target": [
+        "zip",
+        "nsis"
+      ]
     },
     "files": [
       "node_modules",

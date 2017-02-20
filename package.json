@@ -38,7 +38,10 @@
     "icon": "icon.icns",
     "mac": {
       "category": "public.app-category.productivity",
-      "target": "dmg"
+      "target": [
+        "dmg",
+        "zip"
+      ]
     },
     "dmg": {
       "backgroundColor": "#cdcdcd"

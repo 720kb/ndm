@@ -16,6 +16,7 @@ deploy:
     api_key: $GITHUB_ACCESS_TOKEN
     file:
       - "releases/mac/ndm-$(echo $VERSION).dmg"
+      - "releases/ndm-$(echo $VERSION)-mac.zip"
       - "releases/ndm_$(echo $VERSION)_amd64.deb"
       - "releases/ndm-$(echo $VERSION).rpm"
       - "releases/ndm-$(echo $VERSION).zip"

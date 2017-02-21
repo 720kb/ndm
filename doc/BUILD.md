@@ -5,7 +5,7 @@ _Generate the Desktop executables which you can run whitout needing to open the 
 
 #### Setup
 
-```bash
+```
 $ git clone https://github.com/720kb/ndm.git
 
 $ cd ndm

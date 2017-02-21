@@ -52,7 +52,7 @@ Runs on Linux, MacOS and Windows; **ndm** stands for "npm desktop manager".
 
 ## Homebrew
 
-On MacOS you can install **ndm** with [Homebrew Cask](https://caskroom.github.io/):
+On MacOS you can install **ndm** also with [Homebrew Cask](https://caskroom.github.io/):
 
 ```bash
 $ brew update
@@ -61,7 +61,7 @@ $ brew cask install ndm
 
 ## Arch Linux
 
-On Linux you can install **ndm** like this:
+On Linux you can install **ndm** also like this:
 
 ```bash
 $ yaourt -S ndm

@@ -5,10 +5,10 @@ _Generate the Desktop executables which you can run whitout needing to open the 
 
 #### Setup
 
-```
+```shell
 $ git clone https://github.com/720kb/ndm.git
 
-$ cd ndm`
+$ cd ndm
 
 $ npm install
 ```

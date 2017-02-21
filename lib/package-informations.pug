@@ -14,7 +14,10 @@ div.table-infos-content
       | Dependencies:
     = " "
     span(ng-repeat="(dep, value) in content.packageViewInfos.dependencies")
-      | {{ dep }},
+      a(title="Open in browser", ng-click="shell.openBrowserLink('https://npmjs.com/package/' + dep)")
+        | {{ dep }}
+      span(ng-if="!$last")
+        | ,
       = " "
     span(ng-if="!content.packageViewInfos.dependencies || content.packageViewInfos.dependencies.length <= 0")
       | -

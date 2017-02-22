@@ -22,6 +22,7 @@ div.dialog.prompt(ng-if="shell.activeLink === '1'")
     .prompt-search-content
       .prompt-search-loader(ng-if="!topMenu.packageName")
         img(src="img/loading.svg")
+        | Loading results ...
       .prompt-search-item(ng-if="topMenu.packageName")
         h5
           | mocha

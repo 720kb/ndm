@@ -23,26 +23,10 @@ div.dialog.prompt(ng-if="shell.activeLink === '1'")
   .prompt-search
     .prompt-search-content
       .prompt-search-item(ng-repeat="item in topMenu.searchResults")
-        | {{item}}
+        h5
+          | {{item.name}}
+        div
+          | {{item.description}}
       .prompt-search-loader
         img(src="img/loading.svg")
         | Loading results ...
-      .prompt-search-item(ng-if="topMenu.packageName")
-        h5
-          | mocha
-        div
-          | some description about this package and some other stuff very long
-      .prompt-search-item(ng-if="topMenu.packageName")
-        h5
-          | virgola
-        div
-          | some description about this package and some other stuff very long
-      .prompt-search-item(ng-if="topMenu.packageName")
-        h5
-          | ansery
-        | some description about this package and some other stuff very long
-      .prompt-search-item(ng-if="topMenu.packageName")
-        h5
-          | browserify
-        div
-          | some description about this package and some other stuff very long

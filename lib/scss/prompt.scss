@@ -250,11 +250,13 @@
   color: $color-muted;
   overflow: hidden;
   overflow-y: auto;
-  max-height: 490px;
+  max-height: 200px;
 
   .prompt-search-loader {
-    padding: 0 3px;
     img {
+      vertical-align: bottom;
+      margin: 0;
+      margin-right: 2px;
       width: 16px;
     }
   }

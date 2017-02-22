@@ -20,7 +20,8 @@ div.dialog.prompt(ng-if="shell.activeLink === '1'")
     i(class="fa fa-times-circle-o button-close-prompt", ng-click="shell.activeLink = undefined")
   .prompt-search
     .prompt-search-content
-      .prompt-search-loader(ng-if="!topMenu.packageName")
+      | {{topMenu.packageName}}
+      .prompt-search-loader
         img(src="img/loading.svg")
         | Loading results ...
       .prompt-search-item(ng-if="topMenu.packageName")

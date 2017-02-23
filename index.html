@@ -24,14 +24,14 @@
   <meta name="description" content='npm desktop manager'/>
   <meta name="keywords" content="npm, desktop, manager, client, gui, app, tool, download, atom, electron, ndm, open source, mac, osx, windows,  linux"/>
   <title>npm desktop manager</title>
-  
+
   <link href="bower_components/csshelper/dist/helper.min.css" rel="stylesheet" type="text/css"/>
   <link href="css/site.css" rel="stylesheet" type="text/css"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
   <link href="fontello/css/fontello-embedded.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.4.0/balloon.min.css/">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300|Kalam" rel="stylesheet" type="text/css"/>
- 
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.sparkles.js"></script>
   <script type="text/javascript">
@@ -116,7 +116,7 @@
       <div class="top-menu col6 right-content">
         <a href="https://github.com/720kb/ndm" target="_blank" class="color-white toggle-opacity-hover"> <span class="desktop"><i class="fa fa-github"></i></span> Github</a>
         <a href="https://github.com/720kb/ndm/blob/master/doc/CONTRIBUTE.md" target="_blank" class="color-white toggle-opacity-hover"> <span class="desktop">Contribute</span></a>
-        <a href="https://gitter.im/720kb/ndm" target="_blank" class="color-white toggle-opacity-hover"> <span class="desktop">Join</span> Chat</a>
+        <a href="https://gitter.im/720kb/ndm" target="_blank" class="color-white toggle-opacity-hover"><span class="desktop">Join</span> Chat</a>
       </div>
     </div>
     <div class="line line-max">
@@ -126,13 +126,13 @@
           <div class="separator10"></div>
           <div class="slogan">
             <div class="separator30 desktop"></div>
-            <h1 class="line desktop font-big font-one font-medium color-white">
-              Manage <b>npm</b> from the couch.
-            </h1>
+            <h1 class="description font-bold color-white font-handwritten">"npm desktop manager"</h1>
             <div class="separator10"></div>
-            <h3 class="description font-bold color-white font-handwritten">"npm desktop manager"</h3>
+            <h2 class="line desktop font-one font-medium color-white">
+              Manage <b>npm</b> from the couch.
+            </h2>
           </div>
-          <div class="separator50"></div>
+          <div class="separator50 desktop"></div>
           <div>
             <div class="separator10"></div>
             <span class="switcher">
@@ -219,39 +219,43 @@
       </div>
     </div>
   </div>
-  <div class="separator50"></div>
+  <div class="separator30"></div>
   <div class="separator50"></div>
   <div class="line bg-yellow">
     <div class="line-compress line-max github-infos center-content-tablet">
       <div class="separator30"></div>
       <div class="separator10"></div>
-      <div class="font-light">
-        Built with web technologies thanks to
+      <div class="line font-light">
+      <div class="separator5 show-mobile-tablet tablet"></div>
+        Built with web technologies
+        <div class="separator5 show-mobile-tablet tablet"></div>
+        thanks to
         <a href="http://electron.atom.io/" target="_blank" class="color-red"> Electron</a>
         &nbsp;&nbsp;&nbsp;
-        <div class="separator10 show-mobile-tablet tablet"></div>
-        <div class="separator10 tablet"></div>
-        <div class="separator10 tablet"></div>
-        <a class="github-button color-white" href="https://github.com/720kb/ndm/subscription" data-icon="octicon-eye" data-count-href="/720kb/ndm/watchers" data-count-api="/repos/720kb/ndm#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch 720kb/ndm on GitHub">Watch</a>
-        &nbsp;
+        <div class="separator30 show-mobile-tablet tablet"></div>
         <a class="github-button color-white" href="https://github.com/720kb/ndm/fork" data-icon="octicon-repo-forked"  data-count-href="/720kb/ndm/network" data-count-api="/repos/720kb/ndm#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork 720kb/ndm on GitHub">Fork</a>
         &nbsp;
         <a class="github-button color-white" href="https://github.com/720kb/ndm" data-icon="octicon-star"  data-count-href="/720kb/ndm/stargazers" data-count-api="/repos/720kb/ndm#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star 720kb/ndm on GitHub">Star</a>
-      </div>
+    </div>
       <div class="separator10"></div>
       <div class="separator30"></div>
       <div class="separator30 tablet"></div>
     </div>
   </div>
-  <div class="separator50"></div>
+  <div class="separator30"></div>
   <div class="line footer">
     <div class="line-compress line-max left-content color-muted">
       <div class="separator30"></div>
       <div class="line line-tablet center-content-tablet">
-        ©
-        <a class="color-black toggle-opacity-hover" href="http://720kb.net" target="_blank">720kb</a>
-        <a class="color-black toggle-opacity-hover pull-right desktop" href="https://twitter.com/720kb_" target="_blank"><i class="color-twitter fa fa-twitter"></i> Follow on Twitter</a>
-        <a class="color-black toggle-opacity-hover tablet mobile" href="https://twitter.com/720kb_" target="_blank"> &nbsp; <i class="color-twitter fa fa-twitter"></i> Follow on Twitter</a>
+        <a class="color-black toggle-opacity-hover push-left line-tablet" href="http://720kb.net" target="_blank">© 720kb</a>
+        <a class="color-black toggle-opacity-hover push-left line-tablet" href="https://twitter.com/720kb_" target="_blank"><i class="color-twitter fa fa-twitter"></i> Follow on Twitter</a>
+        <a class="color-black toggle-opacity-hover push-right line-tablet" href="https://opencollective.com/ndm" target="_blank">Donate</a>
+        <a class="color-black toggle-opacity-hover push-right line-tablet" href="https://opencollective.com/ndm" target="_blank"> Become a sponsor</a>
+        <a class="color-black toggle-opacity-hover push-right line-tablet" href="https://github.com/720kb/ndm/blob/master/doc/ABOUT.md#about-ndm" target="_blank">More About</a>
+        <a class="color-black toggle-opacity-hover push-right line-tablet" href="https://github.com/720kb/ndm/blob/master/doc/FAQ.md#faq" target="_blank">FAQ</a>
+        <a class="color-black toggle-opacity-hover push-right line-tablet" href="https://github.com/720kb/ndm/releases/latest" target="_blank"> Changelog</a>
+        <a class="color-black toggle-opacity-hover push-right line-tablet" href="https://github.com/720kb/ndm/blob/master/doc/BUILD.md#build-the-app" target="_blank">Build ndm</a>
+        <a class="color-black toggle-opacity-hover push-right line-tablet" href="https://github.com/720kb/ndm/blob/master/doc/RECOMMENDATIONS.md#recommendations-ok_hand" target="_blank">Recommendations</a>
         <div class="separator30 tablet mobile"></div>
         <div class="separator30"></div>
       </div>

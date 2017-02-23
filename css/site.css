@@ -39,10 +39,13 @@ small , small *, *.font-small{
   transition: all 20s linear;
 }
 .bg-yellow {
-  background-color: #fffdea;
+  background-color: #fdfad9;
 }
 .color-red {
   color: #ff7a7a;
+}
+.slogan h1 {
+  font-size: 24px;
 }
 .screenshot {
   z-index: 9999;
@@ -183,7 +186,10 @@ small , small *, *.font-small{
 .footer .github-button {
   vertical-align: text-bottom;
 }
-
+.footer a {
+  padding-right: 20px;
+  line-height: 35px;
+}
 .github-infos{
   color:brown;
 }
@@ -200,8 +206,18 @@ small , small *, *.font-small{
 /*tablet*/
 @media screen and (max-width:1090px){
   /*put in here all tablet rules*/
+  .slogan h1 {
+    font-size: 26px;
+  }
   .switcher  a{
     margin: 0 10px;
+  }
+  .footer a {
+    padding: 0;
+    margin: 0;
+    float: none;
+    min-width: 100%;
+    display: block;
   }
   .hide-mobile-tablet {
     display: none;
@@ -224,9 +240,6 @@ small , small *, *.font-small{
   .download-link.linux {
     margin-top: 5px;
   }
-  .slogan h3 {
-    font-size: 36px;
-  }
   .center-content-tablet {
     text-align: center;
   }
@@ -245,9 +258,6 @@ small , small *, *.font-small{
     width: 100%;
     margin-top:-120px;
   }
-  .slogan h1 {
-    font-size: 30px;
-  }
   .desktop {
     display:none;
   }
@@ -259,18 +269,19 @@ small , small *, *.font-small{
   background: rgba(0,0,0, .03);
 }
 .bg-gradient.mac {
-  background: -webkit-linear-gradient(274deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
-  background: linear-gradient(176deg,#261a4b 0,#2A6DCC 48%,#4781c0 100%);
-  background: -webkit-radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
-  background: radial-gradient(56% 135%,140% 196%,#50b5e7 0,#2A6DCC 48%,#000 100%);
-  background-repeat: no-repeat;
+  background: #272870;
+background: -moz-linear-gradient(top,  #272870 0, #2f56c4 52%, #4a4cdb 100%);
+background: -webkit-linear-gradient(top,  #272870 0,#2f56c4 52%,#4a4cdb 100%);
+background: linear-gradient(to bottom,  #272870 0,#2f56c4 52%,#4a4cdb 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272870', endColorstr='#4a4cdb',GradientType=0 );
+
 }
 .bg-gradient.linux {
-  background: #6b2544;
-  background: -moz-linear-gradient(top,  #6b2544 0%, #7f2c58 33%, #e85237 100%);
-  background: -webkit-linear-gradient(top,  #6b2544 0%,#7f2c58 33%,#e85237 100%);
-  background: linear-gradient(to bottom,  #6b2544 0%,#7f2c58 33%,#e85237 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b2544', endColorstr='#e85237',GradientType=0 );
+  background: #5b1642;
+background: -moz-linear-gradient(top,  #5b1642 0%, #93264c 33%, #e03d23 100%);
+background: -webkit-linear-gradient(top,  #5b1642 0%,#93264c 33%,#e03d23 100%);
+background: linear-gradient(to bottom,  #5b1642 0%,#93264c 33%,#e03d23 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1642', endColorstr='#e03d23',GradientType=0 );
 }
 .bg-gradient.win {
   background: #1c1b2d;
@@ -287,11 +298,8 @@ small , small *, *.font-small{
   .top-menu a {
     margin-left: 5px;
   }
-  .slogan h1 {
-    font-size: 20px;
-  }
 
-  .slogan h3 {
+  .slogan h1 {
     font-size: 24px;
   }
 }

@@ -17,4 +17,4 @@ div.dialog.prompt(ng-if="activeLink === '1'")
         img(src="img/loading.svg", width="13")
     = " "
     = " "
-    i(class="fa fa-times-circle-o button-close-prompt", ng-click="activeLink = undefined")
+    i(class="fa fa-times-circle-o button-close-prompt", ng-click="destroyActiveClickedLink()")

@@ -1,10 +1,10 @@
-div.dialog.prompt(ng-if="activeLink === '4'", ng-init="versionPackageVersion = undefined")
-  form(ng-submit='installVersionPackage(shell.currentSelectedPackages[0], versionPackageVersion)')
+div.dialog.prompt(ng-show="activeLink === '4'", ng-init="versionPackageVersion = undefined")
+  form(ng-submit='installVersionPackage(currentSelectedPackages[0], versionPackageVersion)')
     input(placeholder='Package name',
       type='text',
       readonly,
       disabled,
-      ng-value="shell.currentSelectedPackages[0].name")
+      ng-value="currentSelectedPackages[0].name")
     = " "
     input(class="hide",
       placeholder='@version',
@@ -17,7 +17,7 @@ div.dialog.prompt(ng-if="activeLink === '4'", ng-init="versionPackageVersion = u
       select(name="packageVersionSelect", ng-model="pkgVersionModel", ng-change="versionPackageVersion = pkgVersionModel")
         option(value="", selected)
           | -
-        option(ng-repeat="pkgVersion in shell.selectedPackageViewInfos.versions | orderBy : pkgVersion : 'reverse' track by $index", ng-value="pkgVersion")
+        option(ng-repeat="pkgVersion in selectedPackageViewInfos.versions | orderBy : pkgVersion : 'reverse' track by $index", ng-value="pkgVersion")
           | {{pkgVersion}}
     button
       span(ng-show="!installingPackageVersion")

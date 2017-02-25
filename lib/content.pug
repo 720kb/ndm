@@ -49,7 +49,7 @@
           .col-xs-2
             | {{ aPackage.kind }}
         <!-- show all packages except for npm global-->
-        .row.table-row(ng-repeat='aPackage in packageInformations | orderBy: tableOrderBy', id="table-item-{{$index}}", ng-table-keyboard-selected-items="selectedPackages", ng-if="!isGlobalProject ||  isGlobalProject && aPackage.name !== 'npm'", selection-model, selection-model-mode="'multiple'", selection-model-selected-items="selectedPackages", ng-click="shell.selectPackages(selectedPackages)", ng-class="{'active': selectedPackages.includes(aPackage), 'table-row-loading': shell.currentSelectedPackages.includes(aPackage) && showLoadingSelectedRow}")
+        .row.table-row(ng-repeat='aPackage in packageInformations | orderBy: tableOrderBy', id="table-item-{{$index}}", ng-table-keyboard-selected-items="selectedPackages", ng-if="!isGlobalProject ||  isGlobalProject && aPackage.name !== 'npm'", selection-model, selection-model-mode="'multiple'", selection-model-selected-items="selectedPackages", ng-click="selectPackages(selectedPackages)", ng-class="{'active': selectedPackages.includes(aPackage), 'table-row-loading': currentSelectedPackages.includes(aPackage) && showLoadingSelectedRow}")
           .col-xs-4 {{ aPackage.name }}
           .col-xs-2
             span(ng-class="{'color-positive font-light': !aPackage.wanted && !aPackage.latest}")

@@ -8,6 +8,7 @@ div.dialog.dialog-window(ng-if="shell.activeLink === 'doctor'")
     div(class="col-md-12 logs")
       b
         | Running doctor
+    div(class="col-md-12")
       | Output:
       div(contenteditable="true", ng-repeat="aLog in shell.doctorLog track by $index")
         | {{ aLog }}

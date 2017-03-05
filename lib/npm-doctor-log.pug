@@ -14,60 +14,60 @@ div.dialog.dialog-window(ng-if="shell.activeLink === 'doctor'")
         b
           | {{shell.doctorLog[0][1]}}
     div(class="col-md-12 logs logs-error", ng-if="shell.doctorLog[0][2] && shell.doctorLog[0][2].length > 0")
-      | {{shell.doctorLog[0][2].replace(/\[\d\dm/, '')}}
+      | {{shell.doctorLog[0][2]}}
     div(class="col-md-12 logs")
       npm -v:
         = " "
         b
           | {{shell.doctorLog[1][1]}}
     div(class="col-md-12 logs logs-error", ng-if="shell.doctorLog[1][2] && shell.doctorLog[1][2].length > 0")
-      | {{shell.doctorLog[1][2].replace(/\[\d\dm/, '')}}
+      | {{shell.doctorLog[1][2]}}
     div(class="col-md-12 logs")
       node -v:
         = " "
         b
           | {{shell.doctorLog[2][1]}}
     div(class="col-md-12 logs logs-error", ng-if="shell.doctorLog[2][2] && shell.doctorLog[2][2].length > 0")
-      | {{shell.doctorLog[2][2].replace(/\[\d\dm/, '')}}
+      | {{shell.doctorLog[2][2]}}
     div(class="col-md-12 logs")
       npm config get registry:
         = " "
         b
           | {{shell.doctorLog[3][1]}}
     div(class="col-md-12 logs logs-error", ng-if="shell.doctorLog[3][2] && shell.doctorLog[3][2].length > 0")
-      | {{shell.doctorLog[3][2].replace(/\[\d\dm/, '')}}
+      | {{shell.doctorLog[3][2]}}
     div(class="col-md-12 logs")
       which git:
         = " "
         b
           | {{shell.doctorLog[4][1]}}
     div(class="col-md-12 logs logs-error", ng-if="shell.doctorLog[4][2] && shell.doctorLog[4][2].length > 0")
-      | {{shell.doctorLog[4][2].replace(/\[\d\dm/, '')}}
+      | {{shell.doctorLog[4][2]}}
     div(class="col-md-12 logs")
       Perms check on cached files:
         = " "
         b
           | {{shell.doctorLog[5][1]}}
     div(class="col-md-12 logs logs-error", ng-if="shell.doctorLog[5][2] && shell.doctorLog[5][2].length > 0")
-      | {{shell.doctorLog[5][2].replace(/\[\d\dm/, '')}}
+      | {{shell.doctorLog[5][2]}}
     div(class="col-md-12 logs")
       Perms check on global node_modules:
         = " "
         b
           | {{shell.doctorLog[6][1]}}
     div(class="col-md-12 logs logs-error", ng-if="shell.doctorLog[6][2] && shell.doctorLog[6][2].length > 0")
-      | {{shell.doctorLog[6][2].replace(/\[\d\dm/, '')}}
+      | {{shell.doctorLog[6][2]}}
     div(class="col-md-12 logs")
       Perms check on local node_modules:
         = " "
         b
           | {{shell.doctorLog[7][1]}}
     div(class="col-md-12 logs logs-error", ng-if="shell.doctorLog[7][2] && shell.doctorLog[7][2].length > 0")
-      | {{shell.doctorLog[7][2].replace(/\[\d\dm/, '')}}
+      | {{shell.doctorLog[7][2]}}
     div(class="col-md-12 logs")
       Checksum cached files :
         = " "
         b
           | {{shell.doctorLog[8][1]}}
     div(class="col-md-12 logs logs-error", ng-if="shell.doctorLog[8][2] && shell.doctorLog[8][2].length > 0")
-      | {{shell.doctorLog[8][2].replace(/\[\d\dm/, '')}}
+      | {{shell.doctorLog[8][2]}}

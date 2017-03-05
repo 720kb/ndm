@@ -1,7 +1,7 @@
 div.dialog.prompt(ng-if="shell.activeLink === '1'")
   form(ng-submit='topMenu.installPackage(topMenu.packageName, topMenu.newPackageKind)')
     <!--do not remove placeholder even if it's not an input-->
-    div(class="tags-input", ng-model="topMenu.packageName", ng-change="topMenu.search(topMenu.packageName[topMenu.packageName.length - 1].name)", contenteditable="true", ng-attr-disabled="{{topMenu.installingPackage ? 'disabled' : ''}}" placeholder="package<@version> ..." ng-tag-input, ng-autofocus)
+    div(class="tags-input", ng-model="topMenu.packageName", ng-keyup="topMenu.search(topMenu.packageName[topMenu.packageName.length - 1].name)", contenteditable="true", ng-attr-disabled="{{topMenu.installingPackage ? 'disabled' : ''}}" placeholder="package<@version> ..." ng-tag-input, ng-autofocus)
     <!-- this input holds search keywords, do not remove it -->
     input(ng-hide="true", ng-model="topMenu.searchKeywords", ng-bind="topMenu.packageName")
     = " "
@@ -27,6 +27,6 @@ div.dialog.prompt(ng-if="shell.activeLink === '1'")
           | {{item.package.name}}
         div
           | {{item.package.description}}
-      .prompt-search-loader
+      .prompt-search-loader(ng-show="topMenu.searchingNpm")
         img(src="img/loading.svg")
         | Loading results ...

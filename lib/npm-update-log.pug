@@ -8,15 +8,7 @@ div.dialog.dialog-window(ng-if="shell.activeLink === 'update'")
     div(class="col-md-12 logs")
       b
         | Updating npm
-      div
-        | =============================================
-      | Local Datetime:
-      = " "
-      | {{ log.nowDatetime | date : 'longDate'}}
-      = " "
-      | {{ log.nowDatetime | date : 'mediumTime'}}
-      div
-        | =============================================
+    div(class="col-md-12 logs")
       | Output:
-      div(contenteditable="true", ng-repeat="aLog in log.logs track by $index")
-        | {{ aLog }}
+    div(class="col-md-12 logs", contenteditable="true", ng-repeat="aLog in log.logs track by $index")
+      | {{ aLog }}

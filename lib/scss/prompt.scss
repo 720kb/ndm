@@ -145,8 +145,16 @@
     margin-top: -4px;
 
     .logs {
-      padding: 6px;
+      padding: 1px 6px;
+
+      &:first-child {
+        margin-top: 5px;
+      }
     }
+    .logs-error {
+      color: $color-error;
+    }
+
     .ng-ace-editor {
       height: 100%;
     }

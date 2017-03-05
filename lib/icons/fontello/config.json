@@ -131,6 +131,12 @@
       "css": "globe",
       "code": 59394,
       "src": "fontawesome"
+    },
+    {
+      "uid": "5590d2f643b64d2d0757ae660f9c24cb",
+      "css": "doctor",
+      "code": 61681,
+      "src": "fontawesome"
     }
   ]
 }

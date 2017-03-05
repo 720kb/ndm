@@ -1,0 +1,13 @@
+div.dialog.dialog-window(ng-if="shell.activeLink === 'doctor'")
+  div(class="prompt-window-options")
+    img(ng-show="!shell.finishedRunningDoctor", src='img/loading.svg', width='13')
+    i(class="fa fa-check color-primary", ng-show="shell.finishedRunningDoctor")
+    button(ng-click="shell.activeLink = false", ng-if="!shell.runningDoctor")
+      | Close
+  div(contenteditable="true", class="window", ng-autoscroll)
+    div(class="col-md-12 logs")
+      b
+        | Running doctor
+      | Output:
+      div(contenteditable="true", ng-repeat="aLog in shell.doctorLog track by $index")
+        | {{ aLog }}

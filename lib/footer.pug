@@ -11,6 +11,9 @@
     button.button-update(type="button", ng-show="!shell.globalDisabled && shell.npmCurrentVersionBadge", title="Update npm", ng-click="shell.activeClickedLink('update'); shell.updateNpm()")
       i.fa.fa-history
       | Update npm
+    button.button-update(type="button", title="Run doctor", ng-click="shell.activeClickedLink('doctor'); shell.runDoctor()")
+      i.fa.fa-history
+      | Doctor
   span(class="npm-status", ng-mouseenter="shell.checkRegistryStatus()")
     i.fa.fa-disk(title="npm registry is available", ng-show="!shell.loadingRegistryStatus && shell.registryStatus")
     i.fa.fa-disk(title="npm registry checking ...", ng-show="shell.loadingRegistryStatus")

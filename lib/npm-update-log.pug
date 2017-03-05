@@ -8,6 +8,7 @@ div.dialog.dialog-window(ng-if="shell.activeLink === 'update'")
     div(class="col-md-12 logs")
       b
         | Updating npm
-      | Output:
+    div(class="col-md-12")
+        | Output:
       div(contenteditable="true", ng-repeat="aLog in log.logs track by $index")
-        | {{ aLog }}
+        | {{ aLog.join(' ') }}

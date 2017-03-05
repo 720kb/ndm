@@ -1,7 +1,7 @@
 div.dialog.prompt(ng-if="shell.activeLink === '1'")
   form(ng-submit='topMenu.installPackage(topMenu.packageName, topMenu.newPackageKind)')
     <!--do not remove placeholder even if it's not an input-->
-    div(class="tags-input", ng-model="topMenu.packageName", ng-keyup="topMenu.search(topMenu.packageName[topMenu.packageName.length - 1].name)", contenteditable="true", ng-attr-disabled="{{topMenu.installingPackage ? 'disabled' : ''}}" placeholder="package<@version> ..." ng-tag-input, ng-autofocus)
+    div(class="tags-input", ng-tag-input, ng-autofocus, ng-model="topMenu.packageName", ng-keyup="topMenu.search(topMenu.packageName[topMenu.packageName.length - 1].name)", contenteditable="true", ng-attr-disabled="{{topMenu.installingPackage ? 'disabled' : ''}}" placeholder="package<@version> ...")
     <!-- this input holds search keywords, do not remove it -->
     input(ng-hide="true", ng-model="topMenu.searchKeywords", ng-bind="topMenu.packageName")
     = " "
@@ -22,7 +22,7 @@ div.dialog.prompt(ng-if="shell.activeLink === '1'")
     i(class="fa fa-times-circle-o button-close-prompt", ng-click="shell.activeLink = undefined")
   .prompt-search
     .prompt-search-content
-      .prompt-search-item(ng-repeat="item in topMenu.searchResults.objects")
+      .prompt-search-item(ng-repeat="item in topMenu.searchResults.objects", ng-click="topMenu.searchChoosePackage(item.package.name)")
         h5
           | {{item.package.name}}
         div

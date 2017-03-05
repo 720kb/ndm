@@ -27,5 +27,3 @@ deploy:
     slug: "~wouldgo/ndm/+git/ndm"
     oauth_token: $LAUNCHPAD_OAUTH_TOKEN
     oauth_token_secret: $LAUNCHPAD_OAUTH_TOKEN_SECRET
-    file:
-      - "releases/ndm_$(echo $VERSION)_amd64.deb"

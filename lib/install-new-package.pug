@@ -22,11 +22,11 @@ div.dialog.prompt(ng-if="shell.activeLink === '1'")
     i(class="fa fa-times-circle-o button-close-prompt", ng-click="shell.activeLink = undefined")
   .prompt-search
     .prompt-search-content
-      .prompt-search-item(ng-repeat="item in topMenu.searchResults")
+      .prompt-search-item(ng-repeat="item in topMenu.searchResults.objects")
         h5
-          | {{item.name}}
+          | {{item.package.name}}
         div
-          | {{item.description}}
+          | {{item.package.description}}
       .prompt-search-loader
         img(src="img/loading.svg")
         | Loading results ...

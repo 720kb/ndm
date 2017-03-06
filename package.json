@@ -129,6 +129,7 @@
     "rimraf": "^2.5.4",
     "selection-model": "^0.11.0",
     "shell-path": "^2.0.0",
+    "sudo-prompt": "^6.2.1",
     "universal-analytics": "^0.4.8",
     "uuid": "^3.0.1"
   },

@@ -21,6 +21,7 @@
             mainWindow.webContents.send('loading:freeze-app');
             updateWindow.setMenu(null);
             updateWindow.show();
+            updateWindow.openDevTools();
           }
         },
         {
@@ -153,12 +154,13 @@
       ]
     };
 
+    /*XXX ATM linux updates inside the app
     if (process.platform !== 'darwin' &&
     process.platform !== 'win32') {
 
       //if linux no need for "check for updates"
       aboutMenuItem.submenu.splice(2, 1);
-    }
+    }*/
 
     if (process.platform &&
       process.platform === 'darwin') {

@@ -11,6 +11,8 @@ script:
   - npm run build-mac
   - npm run build-linux
   - export VERSION=$(echo $TRAVIS_TAG | tr -d "v")
+  - curl -F package=@releases/ndm_$(echo $VERSION)_amd64.deb https://$GEMFURY_TOKEN@push.fury.io/720kb/
+  - curl -F package=@releases/ndm_$(echo $VERSION).rpm https://$GEMFURY_TOKEN@push.fury.io/720kb/
 deploy:
   - provider: releases
     api_key: $GITHUB_ACCESS_TOKEN

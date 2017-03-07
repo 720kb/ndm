@@ -145,8 +145,16 @@
     margin-top: -4px;
 
     .logs {
-      padding: 6px;
+      padding: 1px 6px;
+
+      &:first-child {
+        margin-top: 5px;
+      }
     }
+    .logs-error {
+      color: $color-error;
+    }
+
     .ng-ace-editor {
       height: 100%;
     }
@@ -240,6 +248,47 @@
 
     &:hover, &:focus, &:active {
       cursor: ns-resize;
+    }
+  }
+}
+
+.prompt-search {
+  font-size: 11.5px;
+  margin-top: 3px;
+  color: $color-muted;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 200px;
+
+  .prompt-search-loader {
+    img {
+      vertical-align: bottom;
+      margin: 0;
+      margin-right: 2px;
+      width: 16px;
+    }
+  }
+
+  h5 {
+    color: $color-222;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  .prompt-search-item {
+    padding: 3px;
+    border-bottom: 1px solid $bg-muted-invisible;
+
+    &:last-child {
+      border: 0;
+    }
+
+    &:hover {
+      background: $bg-muted-invisible;
     }
   }
 }

@@ -1,7 +1,9 @@
 div.dialog.prompt(ng-if="activeLink === '1'")
   form(ng-submit='installPackage(packageName, newPackageKind)')
     <!--do not remove placeholder even if it's not an input-->
-    div(class="tags-input", ng-model="packageName", contenteditable="true", ng-attr-disabled="{{installingPackage ? 'disabled' : ''}}" placeholder="package<@version> ..." ng-tag-input, ng-autofocus)
+    div(class="tags-input", ng-tag-input, ng-autofocus, ng-model="topMenu.packageName", ng-keyup="topMenu.search(topMenu.packageName[topMenu.packageName.length - 1].name)", contenteditable="true", ng-attr-disabled="{{topMenu.installingPackage ? 'disabled' : ''}}" placeholder="package<@version> ...")
+    <!-- this input holds search keywords, do not remove it -->
+    input(ng-hide="true", ng-model="topMenu.searchKeywords", ng-bind="topMenu.packageName")
     = " "
     span(class="prompt-kind")
       input(type="checkbox", ng-model='newPackageKind', ng-disabled='shell.globalSelected')
@@ -17,4 +19,14 @@ div.dialog.prompt(ng-if="activeLink === '1'")
         img(src="img/loading.svg", width="13")
     = " "
     = " "
-    i(class="fa fa-times-circle-o button-close-prompt", ng-click="destroyActiveClickedLink()")
+    i(class="fa fa-times-circle-o button-close-prompt", ng-click="shell.activeLink = undefined")
+  .prompt-search
+    .prompt-search-content
+      .prompt-search-item(ng-repeat="item in topMenu.searchResults.objects", ng-click="topMenu.searchChoosePackage(item.package.name)")
+        h5
+          | {{item.package.name}}
+        div
+          | {{item.package.description}}
+      .prompt-search-loader(ng-show="topMenu.searchingNpm")
+        img(src="img/loading.svg")
+        | Loading results ...

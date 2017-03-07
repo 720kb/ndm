@@ -8,7 +8,7 @@ div.table-infos-content
     b
       | Description:
     = " "
-    | {{packageViewInfos.description || '-'}}
+    | {{packageViewInfos.description || '-' | removeHTML}}
   div.information(title="Package dependencies")
     b
       | Dependencies:

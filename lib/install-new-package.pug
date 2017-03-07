@@ -1,7 +1,7 @@
 div.dialog.prompt(ng-show="showInstallPrompt")
   form(ng-submit='installPackage(packageName, newPackageKind)')
     <!--do not remove placeholder even if it's not an input-->
-    div(class="tags-input", ng-tag-input, ng-autofocus, ng-model="packageName", ng-keyup="search(packageName[packageName.length - 1].name)", contenteditable="true", ng-attr-disabled="{{installingPackage ? 'disabled' : ''}}" placeholder="package<@version> ...")
+    div(class="tags-input", ng-tag-input, tab-path-id="{{tab}}" ng-autofocus, ng-model="packageName", ng-keyup="search(packageName[packageName.length - 1].name)", contenteditable="true", ng-attr-disabled="{{installingPackage ? 'disabled' : ''}}" placeholder="package<@version> ...")
     <!-- this input holds search keywords, do not remove it -->
     input(ng-hide="true", ng-model="searchKeywords", ng-bind="packageName")
     = " "

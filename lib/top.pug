@@ -5,7 +5,7 @@
   include ./install-new-package.pug
   .row
     .col-xs-12
-      button.button-add-package(title="Add Packages", ng-click="activeClickedLink('1');", ng-class="{'active': activeLink === '1'}")
+      button.button-add-package(title="Add Packages", ng-click="showInstallPrompt = true", ng-class="{'active': showInstallPrompt}")
         i.fa.fa-plus-circle
         | Add package
       span(ng-show='showMenuButtons')
@@ -18,6 +18,6 @@
         button.button-latest(title="Install Latest", ng-click="activeClickedLink('3'); installLatest(currentSelectedPackages)", ng-class="{'active': activeLink === '3'}")
           i.fa.fa-rocket
           | Latest
-        button.button-version(title="Install Version", ng-show="currentSelectedPackages.length === 1", ng-click="activeClickedLink('4'); showPackageInstallPrompt = undefined; showSpecificVersionPrompt = true", ng-class="{'active': activeLink === '4'}")
+        button.button-version(title="Install Version", ng-show="currentSelectedPackages.length === 1", ng-click="showSpecificVersionPrompt = true", ng-class="{'active': showSpecificVersionPrompt}")
           i.fa.fa-at
           | Version

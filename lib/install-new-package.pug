@@ -1,4 +1,4 @@
-div.dialog.prompt(ng-if="activeLink === '1'")
+div.dialog.prompt(ng-if="showInstallPrompt")
   form(ng-submit='installPackage(packageName, newPackageKind)')
     <!--do not remove placeholder even if it's not an input-->
     div(class="tags-input", ng-tag-input, ng-autofocus, ng-model="packageName", ng-keyup="search(packageName[packageName.length - 1].name)", contenteditable="true", ng-attr-disabled="{{installingPackage ? 'disabled' : ''}}" placeholder="package<@version> ...")
@@ -19,7 +19,7 @@ div.dialog.prompt(ng-if="activeLink === '1'")
         img(src="img/loading.svg", width="13")
     = " "
     = " "
-    i(class="fa fa-times-circle-o button-close-prompt", ng-click="shell.activeLink = undefined")
+    i(class="fa fa-times-circle-o button-close-prompt", ng-click="showInstallPrompt = false")
   .prompt-search
     .prompt-search-content
       .prompt-search-item(ng-repeat="item in searchResults.objects", ng-click="searchChoosePackage(item.package.name)")

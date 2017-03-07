@@ -24,6 +24,6 @@ deploy:
     on:
       tags: true
   - provider: script
-      script: conf/linux.sh $VERSION $GEMFURY_TOKEN
-      on:
-        tags: true
+    script: conf/linux.sh $VERSION $GEMFURY_TOKEN
+    on:
+      tags: true

@@ -19,7 +19,7 @@ div.dialog.prompt(ng-if="showInstallPrompt")
         img(src="img/loading.svg", width="13")
     = " "
     = " "
-    i(class="fa fa-times-circle-o button-close-prompt", ng-click="showInstallPrompt = false")
+    i(class="fa fa-times-circle-o button-close-prompt", ng-click="hideInstallPrompt();")
   .prompt-search
     .prompt-search-content
       .prompt-search-item(ng-repeat="item in searchResults.objects", ng-click="searchChoosePackage(item.package.name)")

@@ -8,7 +8,7 @@
       .separator10
       button.home-button(ng-click="shell.openChooser()")
         | Add projects
-  .tab(ng-repeat="tab in content.tabs", ng-show="content.activeTab === tab && tab", npm-tabs, npm-tab-id="{{tab}}")
+  .tab(npm-tabs, ng-repeat="tab in content.tabs", npm-tab-id="{{tab}}", ng-show="content.activeTab === tab && tab")
     span.tab-button(ng-repeat="tab in content.tabs", ng-class="{'active': content.activeTab === tab}", ng-click="content.activeTab = tab")
       | {{tab}}
       a(ng-click="content.closeProjectTab(tab)")

@@ -1,11 +1,11 @@
 .home {
   min-height: 100vh;
-  padding-top: 58vh;
+  padding-top: 33vh;
   text-align: center;
   position: relative;
-  margin-top: -30vh;
   z-index: 9;
   background: white;
+  border-top: 1px solid $color-ccc;
 
   button {
     height: 21px;

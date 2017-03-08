@@ -10,8 +10,7 @@
   height: calc(100vh - 37px);
   background: white;
   overflow: hidden;
-  border: 1px solid $color-ccc;
-  border-top: 0;
+  border-bottom: 1px solid $color-ccc;
 }
 
 .left-column {

@@ -5,7 +5,8 @@
   position: relative;
   z-index: 9;
   background: white;
-  border-top: 1px solid $color-ccc;
+  border: 1px solid $color-ccc;
+  border-bottom: 0;
 
   button {
     height: 21px;

@@ -122,7 +122,7 @@
   }
 
   &.dialog-window {
-    height: 89vh;
+    height: calc(100vh - 41px);
     position: fixed;
     left: 179px;
     border: 0;

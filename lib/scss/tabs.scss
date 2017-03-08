@@ -1,0 +1,26 @@
+.tab {
+  position: relative;
+  top: -3px;
+  overflow: hidden;
+
+  .tab-button {
+    background: $bg-light;
+    padding: 5px;
+    i {
+      opacity: .7;
+      color: $color-error;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &.active {
+      box-shadow: 0 1px $color-ccc;
+      border-radius: 2px;
+      background: white;
+      i {
+        opacity: 1;
+      }
+    }
+  }
+}

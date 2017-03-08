@@ -9,8 +9,10 @@
       button.home-button(ng-click="shell.openChooser()")
         | Add projects
   .tab(ng-repeat="tab in content.tabs", ng-show="content.activeTab === tab && tab", npm-tabs, npm-tab-id="{{tab}}")
-    button(ng-repeat="tab in content.tabs", ng-click="content.activeTab = tab")
+    span.tab-button(ng-repeat="tab in content.tabs", ng-class="{'active': content.activeTab === tab}", ng-click="content.activeTab = tab")
       | {{tab}}
+      a(ng-click="content.closeProjectTab(tab)")
+        i(class="fa fa-remove")
     include ./top.pug
     div(ng-show="tab")
       .row.table-header

@@ -15,26 +15,13 @@ body {
       opacity: .6;
     }
   }
+
   &.loading  {
 
-    &:hover {
-      cursor: wait;
-    }
-
-    * {
-      cursor: wait;
-      pointer-events: none;
-    }
-
-    .dialog {
+    .table-body {
       * {
-        pointer-events: all;
-      }
-    }
-
-    .footer {
-      * {
-        pointer-events: all;
+        cursor: wait;
+        pointer-events: none;
       }
     }
   }

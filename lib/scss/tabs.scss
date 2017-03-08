@@ -1,7 +1,7 @@
 .tab {
   position: relative;
   top: -3px;
-  overflow: hidden;
+  overflow-x: hidden;
 
   .tab-button {
     background: $bg-light;
@@ -16,7 +16,7 @@
     }
     &.active {
       box-shadow: 0 1px $color-ccc;
-      border-radius: 2px;
+      border-radius: 2px 2px 0 0;
       background: white;
       i {
         opacity: 1;

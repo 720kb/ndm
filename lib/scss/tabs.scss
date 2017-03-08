@@ -1,10 +1,13 @@
 .tab {
   overflow-x: hidden;
-  background: $bg-light;
-
-  .tab-button {
+  .tab-menu {
+    height: 20px;
     background: $bg-light;
-    padding: 5px;
+  }
+  .tab-button {
+    font-size: 12.5px;
+    background: $bg-light;
+    padding: 2px 4px;
     i {
       opacity: .7;
       color: $color-error;
@@ -14,7 +17,7 @@
       }
     }
     &.active {
-      border-radius: 3px 3px 0 0;
+      border-radius: 4px 4px 0 0;
       background: white;
       i {
         opacity: 1;

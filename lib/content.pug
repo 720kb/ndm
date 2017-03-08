@@ -9,10 +9,11 @@
       button.home-button(ng-click="shell.openChooser()")
         | Add projects
   .tab(npm-tabs, ng-repeat="tab in content.tabs", npm-tab-id="{{tab}}", ng-show="content.activeTab === tab && tab")
-    span.tab-button(ng-repeat="tab in content.tabs", ng-class="{'active': content.activeTab === tab}", ng-click="content.activeTab = tab")
-      | {{tab}}
-      a(ng-click="content.closeProjectTab(tab)")
-        i(class="fa fa-remove")
+    .tab-menu
+      span.tab-button(ng-repeat="tab in content.tabs", ng-class="{'active': content.activeTab === tab}", ng-click="content.activeTab = tab")
+        | {{tab}}
+        a(ng-click="content.closeProjectTab(tab)")
+          i(class="fa fa-remove")
     include ./top.pug
     div(ng-show="tab")
       .row.table-header
@@ -66,8 +67,6 @@
             i(class="fa fa-check color-positive", ng-if="!aPackage.wanted && !aPackage.latest")
           .col-xs-2
             | {{ aPackage.kind }}
-      div(ng-show="packageInformations && packageInformations.length > 0")
-        h6
-          | Packages informations
+      div
         div.table-infos
           include ./package-informations.pug

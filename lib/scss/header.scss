@@ -3,12 +3,6 @@
   background: $bg-light;
   border-bottom: 1px solid $color-ddd;
 
-  .top-menu-left {
-    width: 200px;
-  }
-  .top-menu-right {
-    width: calc(100% - 200px);
-  }
   img {
     width: 23px;
     margin-top: 4px;
@@ -22,7 +16,8 @@
   .button-latest {
     float: right;
     font-size: 12px;
-    padding-left: 2px;
+    padding-left: 0;
+    padding-right: 3px;
     margin: 4.5px 4px 0 0;
     line-height: 13px;
 

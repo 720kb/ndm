@@ -108,10 +108,10 @@
     "linux": "gulp dist --platform=linux && electron .",
     "win": "gulp dist --platform=win && electron .",
     "build": "npm run build-mac && npm run build-linux && npm run build-win",
-    "build-mac": "gulp distify --platform=mac && build --mac && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
-    "build-win": "gulp distify --platform=win && build --win && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
-    "build-linux": "gulp distify --platform=linux && build --linux && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
-    "build-linux-deb": "gulp distify --platform=linux && build --linux deb && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-mac": "gulp distify --platform=mac && build --mac --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-win": "gulp distify --platform=win && build --win --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-linux": "gulp distify --platform=linux && build --linux --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-linux-deb": "gulp distify --platform=linux && build --linux deb --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
     "postversion": "git push && git push --tags"
   },
   "dependencies": {

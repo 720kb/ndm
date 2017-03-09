@@ -51,9 +51,6 @@
       "category": "Utility",
       "description": "npm desktop manager",
       "packageCategory": "Utility",
-      "arch": [
-        "x64"
-      ],
       "target": [
         "deb",
         "rpm",
@@ -74,7 +71,10 @@
       "menu.js",
       "icon.ico",
       "LICENSE.md"
-    ]
+    ],
+    "directories": {
+      "output": "./releases"
+    }
   },
   "social": {
     "twitter": {
@@ -98,9 +98,6 @@
     "maximizable": true,
     "closable": true,
     "fullscreenable": true
-  },
-  "directories": {
-    "output": "./releases"
   },
   "scripts": {
     "precommit": "npm run lint",

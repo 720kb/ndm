@@ -3,14 +3,14 @@
   border-radius: $border-radius-prompt;
   box-shadow: 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
-  left: 0;
+  left: calc(199px + ((100vw - 199px) / 2) - 226px);
   padding: 3px 5px;
   position: absolute;
-  right: 0;
   margin: 0 auto;
-  width: 500px;
+  width: 100%;
+  max-width: 432px;
   z-index: 9999;
-  top: 0;
+  top: 31px;
 
   &:not(.dialog-window) {
     animation: promptSliding .13s ease;
@@ -73,7 +73,7 @@
       width: 18%;
 
       &:first-child {
-        width: 62%;
+        width: 57%;
         margin-right: 0;
       }
     }
@@ -85,7 +85,7 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
     font-size: 12.5px;
     padding: 3px 4px 2.5px 4px;
-    width: calc(72% - 15px);
+    width: 66%;
     background: white;
     white-space: nowrap;
     overflow: hidden;

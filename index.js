@@ -49,6 +49,11 @@ app.on('ready', () => {
     event.preventDefault();
   });
 
+  mainWindow.on('restore', () => {
+    updateWindow.hide();
+    mainWindow.webContents.send('loading:unfreeze-app');
+  });
+
   mainWindow.on('closed', () => {
 
     app.quit();

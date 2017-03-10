@@ -5,6 +5,8 @@
   width: 98%;
   margin: 0 auto;
   transition: opacity .3s linear;
+  border: 1px solid $color-ddd;
+  border-bottom: 0;
 
   .clickable {
     &:active {
@@ -16,8 +18,7 @@
     background: none;
     text-align: left;
     padding: 0 4px;
-    border: 1px solid $color-ddd;
-    border-top: 0;
+    border-left: 1px solid $color-ddd;
 
     &:first-child {
       border-left: 0;
@@ -92,6 +93,9 @@
   border-radius: 0 2px 2px 0;
   width: 98%;
   margin: 0 auto;
+  border: 1px solid $color-ccc;
+  border-top: 0;
+  margin-bottom: 5px;
 }
 
 .table-loader {

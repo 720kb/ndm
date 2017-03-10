@@ -1,14 +1,18 @@
 .tab {
   overflow-x: hidden;
   .tab-menu {
+    display: flex;
+    overflow: hidden;
     height: 23px;
     background: $bg-light;
   }
   .tab-button {
+    display: inline-flex;
     font-size: 12.5px;
     background: $bg-light;
-    padding: 5px 4px;
-    line-height: 22px;
+    padding: 4px 3px 5px 6px;
+    line-height: 15px;
+    white-space: nowrap;
 
     i {
       opacity: .7;

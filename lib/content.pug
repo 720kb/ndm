@@ -11,7 +11,7 @@
   .tab(npm-tabs, ng-repeat="tab in content.tabs", npm-tab-id="{{tab}}", ng-show="content.activeTab === tab && tab")
     .tab-menu
       span.tab-button(ng-repeat="tab in content.tabs", ng-class="{'active': content.activeTab === tab}", ng-click="content.activeTab = tab")
-        | {{tab}}
+        | {{tab | lastNameInPath}}
         a(ng-click="content.closeProjectTab(tab)")
           i(class="fa fa-remove")
     include ./top.pug

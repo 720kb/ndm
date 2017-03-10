@@ -46,7 +46,7 @@
     font-weight: 500;
   }
   &:nth-child(odd) {
-    background: $bg-eee;
+    background: $bg-table-row;
   }
 
   &:focus, &:active, &.active {

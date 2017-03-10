@@ -60,7 +60,6 @@
       }
     }
     &.npm-status {
-      float: right;
 
       i {
         &.checking {
@@ -74,13 +73,15 @@
   }
 
   button {
-    margin-left: 4px;
+    margin-left: 6px;
+    margin-right: 5px;
     font-size: 11.5px;
     line-height: 12px;
     padding: 0 2px 0 0;
     height: 19px;
 
     i {
+      color: $color-positive;
       position: relative;
       top: -1px;
     }

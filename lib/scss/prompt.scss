@@ -122,17 +122,19 @@
   }
 
   &.dialog-window {
-    height: calc(100vh - 41px);
+    height: calc(100vh - 39px);
     position: fixed;
-    left: 179px;
+    left: 190px;
     border: 0;
     box-shadow: none;
-    top: 11px;
-    width: calc(100vw - 202px);
+    top: 10px;
+    width: 100%;
     padding: 0;
     border-radius: 0;
     background: white;
     z-index: 9999;
+    max-width: calc(100vw - 200px);
+    border: 1px solid $color-ccc;
   }
 
   .window {

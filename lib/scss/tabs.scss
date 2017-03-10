@@ -13,12 +13,9 @@
     i {
       opacity: .7;
       border-radius: 3px;
-      color: $color-muted;
-      font-size: 8px;
+      color: $color-666;
       margin: 3px;
       padding: 1px .5px 1px 1.5px;
-      position: relative;
-      top: -1px;
 
       &:hover {
         opacity: 1;
@@ -29,10 +26,18 @@
       background: white;
       i {
         opacity: 1;
-        background: $color-npm;
+        font-size: 7px;
+        position: relative;
+        top: -1px;
+        background: $color-error;
         color: white;
         text-shadow: 0 -1px rgba(0,0,0,0.3);
         box-shadow: 0 2px 3px red inset;
+        display: inline-block;
+        height: 13px;
+        width: 13px;
+        line-height: 10px;
+        text-align: center;
       }
     }
   }

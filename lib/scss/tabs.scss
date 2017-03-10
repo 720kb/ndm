@@ -1,16 +1,24 @@
 .tab {
   overflow-x: hidden;
   .tab-menu {
-    height: 20px;
+    height: 23px;
     background: $bg-light;
   }
   .tab-button {
     font-size: 12.5px;
     background: $bg-light;
-    padding: 2px 4px;
+    padding: 5px 4px;
+    line-height: 22px;
+
     i {
       opacity: .7;
-      color: $color-error;
+      border-radius: 3px;
+      color: $color-muted;
+      font-size: 8px;
+      margin: 3px;
+      padding: 1px .5px 1px 1.5px;
+      position: relative;
+      top: -1px;
 
       &:hover {
         opacity: 1;
@@ -21,6 +29,10 @@
       background: white;
       i {
         opacity: 1;
+        background: $color-npm;
+        color: white;
+        text-shadow: 0 -1px rgba(0,0,0,0.3);
+        box-shadow: 0 2px 3px red inset;
       }
     }
   }

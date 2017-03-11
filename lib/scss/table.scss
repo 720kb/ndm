@@ -106,6 +106,14 @@
   z-index: 9;
   background: white;
   text-align: center;
+  .table-loader-content {
+    font-size: 12px;
+    margin-top: 5vh;
+    img {
+      width: 17px;
+      margin-right: 1px;
+    }
+  }
 }
 
 .table-row-loading,

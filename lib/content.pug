@@ -31,12 +31,9 @@
           i(class="fa", ng-class="{'fa-sort': !tableOrderBy.includes('-kind') || !tableOrderBy.includes('kind'), 'fa-sort-down': tableOrderBy.includes('-kind'), 'fa-sort-up': tableOrderBy.includes('kind')}")
       .table-body(ng-table-keyboard)
         .table-loader(ng-show="loading && !loaded")
-          img(src='img/loading.svg', width='22')
-          | Loading ...
-          .separator10
-          .color-black
-            small
-              | May take some time
+          .table-loader-content
+            img(src='img/loading.svg')
+            | Loading packages...
         <!-- show disabled npm global row if in globals-->
         .row.table-row.disabled(ng-repeat='aPackage in packageInformations', ng-if="isGlobalProject && aPackage.name === 'npm'", title="Do not perform npm global actions from here")
           .col-xs-4 {{ aPackage.name }}

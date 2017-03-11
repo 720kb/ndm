@@ -1,6 +1,5 @@
 .dialog {
   background: $bg-light;
-  border-radius: $border-radius-prompt;
   box-shadow: 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
   left: calc(199px + ((100vw - 199px) / 2) - 226px);
@@ -10,9 +9,12 @@
   width: 100%;
   max-width: 432px;
   z-index: 9999;
-  top: 31px;
+  top: 34px;
 
   &:not(.dialog-window) {
+    border-radius: $border-radius-prompt;
+    padding: 2px;
+    padding-bottom: 0;
     animation: promptSliding .13s ease;
   }
 

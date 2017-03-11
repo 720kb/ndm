@@ -14,12 +14,16 @@
     line-height: 15px;
     white-space: nowrap;
 
-    i {
-      opacity: .7;
+    a {
+      opacity: .5;
       border-radius: 3px;
-      color: $color-666;
-      margin: 3px;
-      padding: 1px .5px 1px 1.5px;
+      color: #666;
+      margin: 0 3px;
+
+      i {
+        display: inline-block;
+        width: 14px;
+      }
 
       &:hover {
         opacity: 1;
@@ -28,19 +32,20 @@
     &.active {
       border-radius: 4px 4px 0 0;
       background: white;
-      i {
+
+      a {
         opacity: 1;
         font-size: 7px;
         position: relative;
-        top: -1px;
+        bottom: -2px;
         background: $color-error;
         color: white;
-        text-shadow: 0 -1px rgba(0,0,0,0.3);
+        text-shadow: 0 -1px rgba(0, 0, 0, .3);
         box-shadow: 0 2px 3px red inset;
-        display: inline-block;
+        right: -2px;
         height: 13px;
         width: 13px;
-        line-height: 10px;
+        line-height: 12px;
         text-align: center;
       }
     }

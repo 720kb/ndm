@@ -1,4 +1,6 @@
 .content(ng-controller="ContentController as content")
+  span(npm-loading)
+  include ./npm-doctor-log.pug
   .row.home.bg-ultralight(ng-show="content.tabs.length <= 0")
     div
       .separator10

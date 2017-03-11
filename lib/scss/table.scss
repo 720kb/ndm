@@ -2,10 +2,11 @@
   background: $bg-light;
   font-size: 12px;
   line-height: 20px;
-  width: 98%;
+  width: calc(100% - 6px);
   margin: 0 auto;
   transition: opacity .3s linear;
   border: 1px solid $color-ddd;
+  border-radius: 1.5px 1.5px 0 0;
 
   .clickable {
     &:active {
@@ -89,8 +90,8 @@
   overflow-x: hidden;
   padding-bottom: 20px;
   background: white;
-  border-radius: 0 2px 2px 0;
-  width: 98%;
+  border-radius: 0 0 2px 2px;
+  width: calc(100% - 6px);
   margin: 0 auto;
   border: 1px solid $color-ccc;
   border-top: 0;
@@ -124,7 +125,7 @@
     color: $color-777;
     border: 1px solid $color-ccc;
     border-radius: 2px;
-    width: 98%;
+    width: calc(100% - 6px);
     margin: 0 auto;
 
   .information {

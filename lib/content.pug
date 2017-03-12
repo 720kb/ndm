@@ -13,7 +13,11 @@
   .tab(npm-tabs, ng-repeat="tab in content.tabs", npm-tab-id="{{tab}}", ng-show="content.activeTab === tab && tab")
     .tab-menu
       span.tab-button(ng-repeat="tab in content.tabs", ng-class="{'active': content.activeTab === tab}", ng-click="content.activeTab = tab")
-        | {{tab | lastNameInPath}}
+        spanner(ng-if="tab === '<global>'")
+          img(src="img/npm-logo-cube.svg", width="16")
+          | Globals
+        spanner(ng-if="tab !== '<global>'")
+          | {{ tab | lastNameInPath}}
         a(ng-click="content.closeProjectTab(tab)")
           i(class="fa fa-remove")
     include ./top.pug

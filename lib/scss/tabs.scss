@@ -16,6 +16,10 @@
     position: relative;
     bottom: -1px;
 
+    img {
+      vertical-align: top;
+      margin-right: 3px;
+    }
     a {
       opacity: .5;
       border-radius: 3px;

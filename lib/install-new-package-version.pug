@@ -19,7 +19,7 @@ div.dialog.prompt(ng-show="showSpecificVersionPrompt", ng-init="versionPackageVe
           | -
         option(ng-repeat="pkgVersion in selectedPackageViewInfos.versions | orderBy : pkgVersion : 'reverse' track by $index", ng-value="pkgVersion")
           | {{pkgVersion}}
-    button
+    button(ng-disabled="installingPackageVersion")
       span(ng-show="!installingPackageVersion")
         | Install
       span(ng-show="installingPackageVersion")

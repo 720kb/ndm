@@ -12,7 +12,7 @@ div.dialog.prompt(ng-show="showInstallPrompt")
       | dev
       = " "
     <!--do not remove id="" from the button-->
-    button(id="install-new-packages-button", ng-class="{'disabled': installingPackage || !packageName}")
+    button(id="install-new-packages-button", ng-disabled="installingPackage || !packageName")
       span(ng-show="!installingPackage")
         | Install
       span(ng-show="installingPackage")

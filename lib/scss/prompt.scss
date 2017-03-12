@@ -50,9 +50,14 @@
       opacity: .5;
     }
   }
+
   &:not(.dialog-window) {
     button {
       width: 56px;
+
+      img {
+        width: 13px;
+      }
     }
   }
 

@@ -20,7 +20,7 @@ div.dialog.prompt(ng-show="showInstallPrompt")
     = " "
     = " "
     i(class="fa fa-times-circle-o button-close-prompt", ng-click="hideInstallPrompt();")
-  .prompt-search
+  .prompt-search(ng-hide="installingPackage")
     .prompt-search-content
       .prompt-search-item(ng-repeat="item in searchResults.objects", ng-click="searchChoosePackage(item.package.name)")
         h5

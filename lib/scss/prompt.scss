@@ -57,8 +57,11 @@
   }
 
   select {
-    width: 82px;
-    height: 19px;
+    width: 77px;
+    height: 17px;
+    font-size: 11px;
+    position: relative;
+    bottom: -1px;
   }
 
   input {

@@ -15,9 +15,12 @@ install:
 build: off
 test: off
 
+branches:
+  only:
+    - master
+    
 artifacts:
   - path: releases\*.exe
-
   - path: releases\*win.zip
 
 deploy:

@@ -146,5 +146,4 @@ Support us with a monthly donation and help us continue our activities. [[Become
  <a href="https://opencollective.com/ndm/sponsor/28/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/28/avatar.svg"></a>
  <a href="https://opencollective.com/ndm/sponsor/29/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/29/avatar.svg"></a>
  
-<img src="https://opencollective.com/ndm/backers/badge.svg"(#backers)/> 
-<img src="https://opencollective.com/ndm/sponsors/badge.svg"(#sponsors)/>
+<img src="https://opencollective.com/ndm/backers/badge.svg(#backers)"/> <img src="https://opencollective.com/ndm/sponsors/badge.svg(#sponsors)"/>

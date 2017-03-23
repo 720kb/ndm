@@ -42,12 +42,12 @@ Then (if you have 5 minutes to spend) what we suggest is to read this tiny mini 
 
 **4) Why is ndm so slow on my pc?**
 
-ndm speed depends exclusively on your pc/device specs and [npm-cli](https://docs.npmjs.com/cli/npm) speed.
-We can't do much to speed up your machine or the npm commands.
+**ndm** speed depends exclusively on your pc/device specs and [npm-cli](https://docs.npmjs.com/cli/npm) speed.
+We can't do much to speed up your machine or the npm native commands.
 
 **5) Yarn?**
 
-Premise: **ndm** was born several months before Yarn was out.
+_Premise: **ndm** was born several months before Yarn was out._
 Yarn is a great tool, we are looking forward to seeing what happens both on the Yarn and the npm side.
 Many things could change in the meantime. 
 That said: if you have any idea or suggestion, here you are welcome to share and discuss!

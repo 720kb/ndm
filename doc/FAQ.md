@@ -36,7 +36,7 @@ Your help is always appreciated and you are welcome anytime!
 Actually not, not really.
 **ndm** does not run any malicious or env/system breaking commands in background, and it doesn't run anything outside of the npm native commands.
 If you want to be 100% sure about it, just look at the source code, which is clear and very readable.
-What we suggest is to read this tiny mini guide of safe [recommendations](https://github.com/720kb/ndm/blob/master/doc/RECOMMENDATIONS.md).
+What we suggest is to read this tiny mini guide of sane [recommendations](https://github.com/720kb/ndm/blob/master/doc/RECOMMENDATIONS.md).
 
 **4) Why is ndm so slow on my pc?**
 

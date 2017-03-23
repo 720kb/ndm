@@ -48,9 +48,12 @@ We can't do much to speed up your machine or the npm native commands.
 **5) Yarn?**
 
 _Premise: **ndm** was born several months before Yarn was out._
-Yarn is a great tool, we are looking forward to seeing what happens both on the Yarn and the npm side.
+
+Yarn is a great tool, we are looking forward to seeing what happens: both on the Yarn and the npm side.
+
 Many things could change in the meantime. 
-That said: if you have any idea or suggestion, here you are welcome to share and discuss!
+
+That said: if you have any idea or suggestion you are welcome to share and discuss!
 
 6) **Support?**
 

@@ -11,7 +11,7 @@ script:
   - npm run build-mac
   - npm run build-linux
   - export VERSION=$(echo $TRAVIS_TAG | tr -d "v")
-  - ./conf/linux.sh 1.1.1 $GEMFURY_TOKEN
+  - ./conf/linux.sh 11.1.1 $GEMFURY_TOKEN
 deploy:
   - provider: releases
     api_key: $GITHUB_ACCESS_TOKEN

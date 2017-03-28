@@ -17,8 +17,6 @@ deploy:
     file:
       - "releases/mac/ndm-$(echo $VERSION).dmg"
       - "releases/mac/ndm-$(echo $VERSION)-mac.zip"
-      - "releases/ndm_$(echo $VERSION)_amd64.deb"
-      - "releases/ndm-$(echo $VERSION).rpm"
       - "releases/ndm-$(echo $VERSION).zip"
     skip_cleanup: true
     on:

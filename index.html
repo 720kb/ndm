@@ -167,15 +167,14 @@
               </div>
               <div class="line download-code">
                 <code contenteditable="true">
-                [fury]
-                name=Gemfury Private Repo
-                baseurl=https://repo.fury.io/720kb/
-                enabled=1
-                gpgcheck=0
+                  $ echo "[fury]
+                    name=Gemfury Private Repo
+                    baseurl=https://repo.fury.io/720kb/
+                    enabled=1
+                    gpgcheck=0" | sudo tee /etc/yum.repos.d/ndm.repo && sudo yum update && sudo yum install ndm
               </code>
               </div>
             </div>
-
               <a class="download-link line color-white center-content win hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".exe" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
                 <i class="fa fa-download"></i>&nbsp;Download
               </a>

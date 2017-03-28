@@ -75,14 +75,14 @@ $ echo "deb [trusted=yes] https://apt.fury.io/720kb/ /" | sudo tee
 
 ## RedHat based
 
-On RedHat based linux is possible to install **ndm** putting into _/etc/yum.repos.d/ndm.repo_ this conf:
+On RedHat based linux is possible to install **ndm** doing:
 
 ```bash
-[fury]
+echo "[fury]               
 name=Gemfury Private Repo
 baseurl=https://repo.fury.io/720kb/
 enabled=1
-gpgcheck=0
+gpgcheck=0" | sudo tee /etc/yum.repos.d/ndm.repo && sudo yum update && sudo yum install ndm
 ```
 
 **Core team**

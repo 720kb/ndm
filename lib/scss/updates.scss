@@ -1,0 +1,65 @@
+body.updates {
+  background: $bg-light;
+
+  * {
+    color: $color-222;
+  }
+
+  h1 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    line-height: 17px;
+
+    &.is-uptodate, &.is-to-update {
+      i {
+        color: $color-positive;
+      }
+    }
+  }
+
+  img {
+    width: 17px;
+    position: relative;
+    top: -1px;
+    margin-right: 1px;
+  }
+
+  small {
+    font-size: 11.5px;
+    color: $color-muted-less;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .logo {
+    margin-top: 10vh;
+    width: 90px;
+  }
+
+  button {
+    margin: 0;
+    line-height: 21px;
+    padding: 0 15px;
+    font-size: 12.5px;
+  }
+
+  i {
+    margin-left: -4px;
+    &.errored {
+      color: $color-error;
+    }
+  }
+
+  progress {
+    margin-top: 5px;
+  }
+}

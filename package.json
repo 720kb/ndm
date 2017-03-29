@@ -1,6 +1,6 @@
 {
   "name": "ndm",
-  "version": "1.0.0",
+  "version": "3.3.9299292929",
   "description": "npm desktop manager",
   "main": "index.js",
   "homepage": "https://720kb.github.io/ndm",
@@ -38,7 +38,10 @@
     "icon": "icon.icns",
     "mac": {
       "category": "public.app-category.productivity",
-      "target": "dmg"
+      "target": [
+        "dmg",
+        "zip"
+      ]
     },
     "dmg": {
       "backgroundColor": "#cdcdcd"
@@ -48,9 +51,6 @@
       "category": "Utility",
       "description": "npm desktop manager",
       "packageCategory": "Utility",
-      "arch": [
-        "x64"
-      ],
       "target": [
         "deb",
         "rpm",
@@ -58,14 +58,23 @@
       ]
     },
     "win": {
-      "icon": "icon.ico"
+      "icon": "icon.ico",
+      "target": [
+        "zip",
+        "nsis"
+      ]
     },
     "files": [
       "node_modules",
       "dist",
       "index.js",
+      "menu.js",
+      "icon.ico",
       "LICENSE.md"
-    ]
+    ],
+    "directories": {
+      "output": "./releases"
+    }
   },
   "social": {
     "twitter": {
@@ -78,9 +87,9 @@
   "appTemplate": {
     "title": "ndm",
     "width": 640,
-    "height": 430,
+    "height": 420,
     "minWidth": 640,
-    "minHeight": 430,
+    "minHeight": 420,
     "show": false,
     "center": true,
     "movable": true,
@@ -89,9 +98,6 @@
     "maximizable": true,
     "closable": true,
     "fullscreenable": true
-  },
-  "directories": {
-    "output": "./releases"
   },
   "scripts": {
     "precommit": "npm run lint",
@@ -102,19 +108,21 @@
     "linux": "gulp dist --platform=linux && electron .",
     "win": "gulp dist --platform=win && electron .",
     "build": "npm run build-mac && npm run build-linux && npm run build-win",
-    "build-mac": "gulp distify --platform=mac && build --mac && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
-    "build-win": "gulp distify --platform=win && build --win && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
-    "build-linux": "gulp distify --platform=linux && build --linux && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
-    "build-linux-deb": "gulp distify --platform=linux && build --linux deb && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-mac": "gulp distify --platform=mac && build --mac --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-win": "gulp distify --platform=win && build --win --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-linux": "gulp distify --platform=linux && build --linux --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-linux-deb": "gulp distify --platform=linux && build --linux deb --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "ace-builds": "^1.2.5",
+    "adm-zip": "^0.4.7",
     "angular": "^1.6.0",
     "angular-ui-router": "^0.4.2",
     "bootstrap": "^3.3.6",
     "electron-storage": "^1.0.6",
-    "npm": "^4.1.1",
+    "fs-extra": "^2.0.0",
+    "npm": "^4.4.0",
     "rimraf": "^2.5.4",
     "selection-model": "^0.11.0",
     "shell-path": "^2.0.0",
@@ -124,8 +132,8 @@
   "devDependencies": {
     "babel-preset-es2015-rollup": "^3.0.0",
     "del": "^2.2.0",
-    "electron": "^1.4.14",
-    "electron-builder": "^11.2.4",
+    "electron": "^1.6.2",
+    "electron-builder": "^15.1.1",
     "eslint": "^3.13.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.2.0",

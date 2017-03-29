@@ -1,7 +1,7 @@
 /*global module process*/
 (function withNode() {
 
-  module.exports = (mainWindow, shell, packageJSON, app) => {
+  module.exports = (mainWindow, updateWindow, shell, packageJSON, app) => {
 
     let menuTemplate;
 
@@ -17,8 +17,10 @@
         {
           'label': 'Check for Updates...',
           click() {
-            //***!!DEPRECATED this method will be remove ***!!, must be an autoupdater to check for this
-            mainWindow.webContents.send('menu:check-for-updates', packageJSON.version);
+
+            mainWindow.webContents.send('loading:freeze-app');
+            updateWindow.setMenu(null);
+            updateWindow.show();
           }
         },
         {
@@ -150,6 +152,13 @@
         }
       ]
     };
+
+    if (process.platform !== 'darwin' &&
+    process.platform !== 'win32') {
+
+      //if linux no need for "check for updates"
+      aboutMenuItem.submenu.splice(2, 1);
+    }
 
     if (process.platform &&
       process.platform === 'darwin') {

@@ -5,9 +5,13 @@ _Generate the Desktop executables which you can run whitout needing to open the 
 
 #### Setup
 
-`$ git clone <repo> && cd ndm`
+```
+$ git clone https://github.com/720kb/ndm.git
 
-`$ npm install`
+$ cd ndm
+
+$ npm install
+```
 
 
 #### Builds for Mac

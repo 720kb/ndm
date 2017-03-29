@@ -1,0 +1,65 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+
+    link(rel='stylesheet', href='icons/fontello/css/fontello-embedded.css', media='screen', charset='utf-8')
+    link(rel='stylesheet', href='../node_modules/bootstrap/dist/css/bootstrap.min.css', media='screen', charset='utf-8')
+    link(rel='stylesheet', href='css/index.css', media='screen', charset='utf-8')
+
+    script(type='text/javascript', src='../node_modules/angular/angular.min.js')
+    script(type='text/javascript', src='../node_modules/ace-builds/src-min-noconflict/ace.js')
+
+    script(type='text/javascript', src='js/update.js')
+  body.updates(ng-app='ndm-updater')
+    .container(ng-controller="ShellController as vm")
+      .col-xs-4.left
+        img.logo(src="../icon.ico")
+        .copy
+          small
+            | © 720kb
+      .col-xs-8
+        h1
+          | ndm
+        div
+          small
+            | Installed version {{ vm.currentVersion }}
+
+        h2(ng-show="vm.checking")
+          img(src="img/loading.svg")
+          | Checking for updates ...
+        h2(ng-show="vm.errorChecking")
+          i(class="fa fa-attention-circled errored")
+          | Unavailable please retry later.
+
+        h2.is-uptodate(ng-show="!vm.checking && vm.toUpdate === false")
+          i(class="fa fa-check")
+          | Already up to date
+          div
+            small
+              | ndm is up to date with {{ vm.currentVersion }}
+
+        button(ng-click="vm.checkNow()", ng-show="!vm.updating && !vm.checking && !vm.toUpdate")
+          | Check again
+
+        h2.is-to-update(ng-show="vm.toUpdate")
+          | Updates available
+          div
+            small
+              | Install the updates now.
+        button(ng-click="vm.updateIt()", ng-show="vm.toUpdate")
+          | Install and Relaunch
+
+        h2.is-downloading(ng-show="vm.updating")
+          span(ng-show="!vm.progress || vm.progress <= 90")
+            | Downloading updates ...
+          span(ng-show="vm.progress > 90")
+            | Installing updates ...
+          progress(class="col-xs-11", ng-value="vm.progress", max="100")
+
+        h2(ng-show="vm.errorUpdating")
+          i(class="fa fa-attention-circled errored")
+          | Error updating, please retry later.
+          div
+            small
+              | This is weird... consider download ndm again.

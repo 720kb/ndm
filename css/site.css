@@ -50,6 +50,9 @@ small , small *, *.font-small{
 .slogan h1 {
   font-size: 24px;
 }
+.header {
+  min-height: 510px;
+}
 .screenshot {
   z-index: 9999;
   position: relative;

@@ -190,7 +190,6 @@ background: rgba(0,0,0, .2);
 font-size: 12px;
 border-radius: 5px 5px 0 0;
 padding: 2px 6px;
-box-shadow: 0 -1px rgba(0,0,0, .1) inset;
 }
 .download-code code {
   padding: 0 5px;

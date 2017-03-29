@@ -29,7 +29,6 @@
   <link href="css/site.css" rel="stylesheet" type="text/css"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
   <link href="fontello/css/fontello-embedded.css" rel="stylesheet" type="text/css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.4.0/balloon.min.css/">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300|Kalam" rel="stylesheet" type="text/css"/>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
@@ -150,7 +149,7 @@
               <a class="download-link line color-white center-content mac" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".dmg" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
                 <i class="fa fa-download"></i>&nbsp;Download
               </a>
-              <div class="download-link linux">
+              <div class="download-link linux hide">
                 <div class="separator5"></div>
               <div class="line color-white">
                 <span class="download-code-badge">Debian</span>

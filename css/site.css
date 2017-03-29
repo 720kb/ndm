@@ -51,7 +51,7 @@ small , small *, *.font-small{
   font-size: 24px;
 }
 .header {
-  min-height: 510px;
+  min-height: 490px;
 }
 .screenshot {
   z-index: 9999;
@@ -189,7 +189,7 @@ small , small *, *.font-small{
 }
 .download-code-badge {
 float:left;
-background: rgba(0,0,0, .2);
+background: #f90000;
 font-size: 12px;
 border-radius: 5px 5px 0 0;
 padding: 2px 6px;

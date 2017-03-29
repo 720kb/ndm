@@ -23,7 +23,7 @@ deploy:
 - provider: GitHub
   auth_token:
     secure: ZQe3awDIx7JDSXPfjp8Y+mKgdXERdHAeNikOKo3eyYWZzjykn74n6S6B8qJqqbBx
-  draft: true
+  draft: false
   prerelease: false
   on:
     appveyor_repo_tag: true

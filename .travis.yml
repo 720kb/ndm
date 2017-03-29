@@ -23,5 +23,6 @@ deploy:
       tags: true
   - provider: script
     script: conf/linux.sh $VERSION $GEMFURY_TOKEN
+    skip_cleanup: true
     on:
       tags: true

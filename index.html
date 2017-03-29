@@ -29,7 +29,6 @@
   <link href="css/site.css" rel="stylesheet" type="text/css"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
   <link href="fontello/css/fontello-embedded.css" rel="stylesheet" type="text/css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.4.0/balloon.min.css/">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300|Kalam" rel="stylesheet" type="text/css"/>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
@@ -125,14 +124,13 @@
         <div class="left-column line-tablet">
           <div class="separator10"></div>
           <div class="slogan">
-            <div class="separator30 desktop"></div>
             <h1 class="description font-bold color-white font-handwritten">"npm desktop manager"</h1>
             <div class="separator10"></div>
             <h2 class="line desktop font-one font-medium color-white">
               Manage <b>npm</b> from the couch.
             </h2>
           </div>
-          <div class="separator50 desktop"></div>
+          <div class="separator30 desktop"></div>
           <div>
             <div class="separator10"></div>
             <span class="switcher">
@@ -146,20 +144,36 @@
                 <i class="fa fa-windows"></i> Windows
               </a>
             </span>
-            <div class="separator30"></div>
+            <div class="separator15"></div>
             <div class="line downloads center-content-tablet">
               <a class="download-link line color-white center-content mac" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".dmg" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
                 <i class="fa fa-download"></i>&nbsp;Download
               </a>
-              <a class="download-link line color-white center-content linux hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".deb" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-                <i class="fa fa-download"></i>&nbsp;.deb
-              </a>
-              <a class="download-link line color-white center-content linux hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".rpm" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-                <i class="fa fa-download"></i>&nbsp;.rpm
-              </a>
-              <a class="download-link line color-white center-content linux hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".zip" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
-                <i class="fa fa-download"></i>&nbsp;.zip
-              </a>
+              <div class="download-link linux hide">
+                <div class="separator5"></div>
+              <div class="line color-white">
+                <span class="download-code-badge">Debian</span>
+              </div>
+              <div class="line download-code">
+                <code class="no-wrap" contenteditable="true">
+                  $ echo "deb [trusted=yes] https://apt.fury.io/720kb/ /" | sudo tee /etc/apt/sources.list.d/ndm.list && sudo apt-get update && sudo apt-get install ndm
+                </code>
+              </div>
+
+              <div class="separator10"></div>
+              <div class="line color-white">
+              <span class="download-code-badge">RedHat</span>
+              </div>
+              <div class="line download-code">
+                <code contenteditable="true">
+                  $ echo "[fury]
+                    name=Gemfury Private Repo
+                    baseurl=https://repo.fury.io/720kb/
+                    enabled=1
+                    gpgcheck=0" | sudo tee /etc/yum.repos.d/ndm.repo && sudo yum update && sudo yum install ndm
+              </code>
+              </div>
+            </div>
               <a class="download-link line color-white center-content win hide" href='{% for asset in site.github.releases[0].assets %} {% if asset.name contains ".exe" %}{{asset.browser_download_url}} {% endif %}{% endfor %}'>
                 <i class="fa fa-download"></i>&nbsp;Download
               </a>
@@ -188,8 +202,8 @@
 <div class="separator30 desktop"></div>
 <div class="separator30"></div>
 <div class="article mac line left-content center-content-tablet">
-  <div class="separator50"></div>
-  <div class="separator10"></div>
+  <div class="separator30"></div>
+  <div class="separator50 tablet"></div>
   <div class="line line-max">
     <div class="col5 line-tablet">
       <div class="col5 line-mobile">

@@ -6,9 +6,6 @@ body {
 a, a *{
   transition: .15s linear;
 }
-.no-wrap {
-  white-space: nowrap;
-}
 .link {
   color: #0D70FF;
 }
@@ -61,7 +58,6 @@ small , small *, *.font-small{
 .left-column {
   width: 44%;
   float: left;
-  min-height: 350px;
 }
 .right-column {
   width: 56%;
@@ -149,7 +145,7 @@ small , small *, *.font-small{
   background: rgba(0,0,0,.16);
   color: white;
 }
-.download-link.mac, .download-link.win{
+.download-link{
   border-radius:4px;
   width: 100%;
   max-width: 270px;
@@ -158,45 +154,23 @@ small , small *, *.font-small{
   line-height: 44px;
   box-shadow: 0 1px 3px rgba(0,0,0, .2);
 }
-.download-link.mac:hover, .download-link.win:hover{
+.download-link:hover{
   box-shadow: 0 3px 6px rgba(0,0,0, .2);
 }
-.download-link.mac:active,.download-link.win:active {
+.download-link:active {
   box-shadow: none;
 }
 .download-link.win {
   background: #5c6077;
 }
-.download-link.mac i,.download-link.win i {
-  margin-right:5px;
-}
 .download-link.linux {
-  margin: 0 5px;
-  margin-top: -5px;
+  background: #ff4444;
+  margin-right: 2%;
+  max-width: 83px;
+  width: 30%;
 }
-.download-code {
-  padding: 5px;
-  background: rgba(0,0,0, .1);
-  max-height: 100px;
-  width: 300px;
-  overflow: scroll;
-  border-radius: 0 3px 3px 3px;
-  box-shadow: 0 2px 5px rgba(0,0,0, .1) inset;
-  color:white;
-}
-.download-code-badge {
-float:left;
-background: rgba(0,0,0, .2);
-font-size: 12px;
-border-radius: 5px 5px 0 0;
-padding: 2px 6px;
-box-shadow: 0 -1px rgba(0,0,0, .1) inset;
-}
-.download-code code {
-  padding: 0 5px;
-  font-size: 12px;
-  float: left;
-  text-align: left;
+.download-link i {
+  margin-right:5px;
 }
 .infos {
   float: none;
@@ -232,9 +206,6 @@ box-shadow: 0 -1px rgba(0,0,0, .1) inset;
 /*tablet*/
 @media screen and (max-width:1090px){
   /*put in here all tablet rules*/
-  .left-column {
-    min-height: 0;
-  }
   .slogan h1 {
     font-size: 26px;
   }
@@ -247,10 +218,6 @@ box-shadow: 0 -1px rgba(0,0,0, .1) inset;
     float: none;
     min-width: 100%;
     display: block;
-  }
-  .download-code {
-    margin: 0 auto;
-    width:260px;
   }
   .hide-mobile-tablet {
     display: none;
@@ -267,8 +234,11 @@ box-shadow: 0 -1px rgba(0,0,0, .1) inset;
     float: none;
     max-width: 260px;
   }
-  .download-link.mac, .download-link.win {
+  .download-link {
     min-width: 100%;
+  }
+  .download-link.linux {
+    margin-top: 5px;
   }
   .center-content-tablet {
     text-align: center;
@@ -330,9 +300,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1642', end
 
   .slogan h1 {
     font-size: 24px;
-  }
-  .download-code {
-    margin: 0 auto;
   }
 }
 [data-balloon]:after, [data-balloon]:before{

@@ -5,7 +5,9 @@
 
 The Open Source <a href="https://npmjs.com/" target="_blank">npm</a> desktop GUI.
 
-Runs on Linux, MacOS and Windows; **ndm** stands for "npm desktop manager".
+Runs on Linux, MacOS and Windows; 
+
+**ndm** stands for "npm desktop manager".
 
 <a href="https://github.com/720kb/ndm/releases" target="_blank">
 <img src="https://img.shields.io/github/release/720kb/ndm.svg"/>

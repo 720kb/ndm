@@ -97,7 +97,7 @@ gpgcheck=0" | sudo tee /etc/yum.repos.d/ndm.repo && sudo yum update && sudo yum 
 
 > Donating to an open source project is the best way to tie your love for it.
 
-If you enjoy **ndm** consider donating to the project and help mantain and continuously improve the project!
+If you enjoy **ndm** consider donating to the project and help mantain and continuously improve it!
 
 **Backers**
 

@@ -64,7 +64,7 @@ On Linux you can install **ndm** also like this:
 $ yaourt -S ndm
 ```
 
-## Debian based
+## Debian
 
 On Debian based linux is possible to install **ndm** doing:
 
@@ -73,7 +73,7 @@ $ echo "deb [trusted=yes] https://apt.fury.io/720kb/ /" | sudo tee
 /etc/apt/sources.list.d/ndm.list && sudo apt-get update && sudo apt-get install ndm
 ```
 
-## RedHat based
+## RedHat
 
 On RedHat based linux is possible to install **ndm** doing:
 

@@ -155,7 +155,7 @@
               </div>
               <div class="line download-code">
                 <code class="no-wrap" contenteditable="true">
-                  $ echo "deb [trusted=yes] https://apt.fury.io/720kb/ /" | sudo tee /etc/apt/sources.list.d/ndm.list && sudo apt-get update && sudo apt-get install ndm
+                  echo "deb [trusted=yes] https://apt.fury.io/720kb/ /" | sudo tee /etc/apt/sources.list.d/ndm.list && sudo apt-get update && sudo apt-get install ndm
                 </code>
               </div>
 
@@ -165,7 +165,7 @@
               </div>
               <div class="line download-code">
                 <code contenteditable="true">
-                  $ echo "[fury]
+                  echo "[fury]
                     name=Gemfury Private Repo
                     baseurl=https://repo.fury.io/720kb/
                     enabled=1

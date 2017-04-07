@@ -101,7 +101,7 @@ If you enjoy **ndm** consider donating to the project and help mantain and conti
 
 **Backers**
 
-Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/ndm#backer)]
+Support us with a monthly donation and help us continue our activities. [Become a backer](https://opencollective.com/ndm#backer)
 
  <a href="https://opencollective.com/ndm/backer/0/website" target="_blank"><img src="https://opencollective.com/ndm/backer/0/avatar.svg"></a>
  <a href="https://opencollective.com/ndm/backer/1/website" target="_blank"><img src="https://opencollective.com/ndm/backer/1/avatar.svg"></a>
@@ -136,7 +136,7 @@ Support us with a monthly donation and help us continue our activities. [[Become
 
  **Sponsors**
 
- Become a sponsor and get your logo on our README on Github with a link to your site. [[Become a sponsor](https://opencollective.com/ndm#sponsor)]
+ Become a sponsor and get your logo on our README on Github with a link to your site. [Become a sponsor](https://opencollective.com/ndm#sponsor)
 
  <a href="https://opencollective.com/ndm/sponsor/0/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/0/avatar.svg"></a>
  <a href="https://opencollective.com/ndm/sponsor/1/website" target="_blank"><img src="https://opencollective.com/ndm/sponsor/1/avatar.svg"></a>

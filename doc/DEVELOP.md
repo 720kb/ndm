@@ -1,13 +1,13 @@
 
 ## Develop ndm
 
-_Setup_
+Setup
 
 `$ git clone https://github.com/720kb/ndm.git && cd ndm`
 
 `$ npm install`
 
-_Run app_
+Run app
 
 #### Run on Linux
 `$ npm run linux`

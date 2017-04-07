@@ -9,11 +9,12 @@ It is obviously very powerful.
 *ndm* is an alternative experience to the `npmCLI` and here are all the pros:
 
 - Less struggling with long terminal logs, scrolling to find eventual warnings and/or errors.
-- All your projects are on the same view, no more multiple `cd` to move from a project to another, just drag them all into the app.
+- All your projects are on the same view, no more multiple `cd` to move from a project to another, just drag them all into the app view.
 - Notifications (specially when your long long npm install finishes)
-- List all your global and local npm installed packages with all the informations you need in one maybe two clicks.
-- Cleaner point of view of all your npm projects and dependencies.
+- List all your npm global and local packages in one maybe two clicks.
+- Cleaner view of all your npm projects and dependencies.
 - Run npm commands and scripts in one maybe two clicks.
+- Search npm packages and see packages infos like a pro
 - More features to be finished and to come ...
 
 Some of the greatest and widely used package managers got their own GUI... brew, apt ... just for example.

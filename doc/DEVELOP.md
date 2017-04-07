@@ -1,11 +1,9 @@
 
 ## Develop ndm
 
-To run the app locally in development mode:
-
 _Setup_
 
-`$ git clone <repo> && cd ndm`
+`$ git clone https://github.com/720kb/ndm.git && cd ndm`
 
 `$ npm install`
 

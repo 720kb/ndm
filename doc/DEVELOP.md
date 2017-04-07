@@ -3,7 +3,9 @@
 
 Setup
 
-`$ git clone https://github.com/720kb/ndm.git && cd ndm`
+`$ git clone https://github.com/720kb/ndm.git`
+
+`$ cd ndm`
 
 `$ npm install`
 

@@ -1,7 +1,7 @@
 
 ## Build the app
 
-_Generate the Desktop executables which you can run whitout needing to open the terminal (.dmg, .deb, .exe, etc ..)_ 
+Generate the Desktop executables which you can run whitout needing to open the terminal (.dmg, .deb, .exe, etc ..)
 
 #### Setup
 

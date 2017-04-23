@@ -12,7 +12,32 @@ gulp.task('es6-build', done => {
     'front-end',
     'ndm',
     'ndm-updater',
+    'npm-runner',
     done);
+});
+
+gulp.task('npm-runner', () => {
+
+  return rollup({
+    'entry': `${paths.lib}js/npm/npm-runner.js`,
+    'plugins': [
+      rollupJSON(),
+      rollupBabel({
+        'presets': [
+          'es2015-rollup'
+        ]
+      })
+    ]
+  }).then(bundle => {
+
+    return bundle.write({
+      'format': 'iife',
+      'moduleId': 'npm-ui-ng',
+      'moduleName': 'npm-ui-ng',
+      'sourceMap': true,
+      'dest': `${paths.tmp}/npm-runner.js`
+    });
+  });
 });
 
 gulp.task('ndm', () => {

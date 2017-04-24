@@ -14,10 +14,16 @@
   &:not(.dialog-window) {
     min-height: 28px;
     z-index: 999;
-    border-radius: $border-radius-prompt;
-    padding: 2px;
+    border-radius: 2px 2px 0 0;
+    padding: 3px;
     padding-bottom: 0;
-    animation: promptSliding .13s ease;
+    left: 194px;
+    border: 1px solid $color-ccc;
+    width: calc(100vw - 208px);
+    box-shadow: none;
+    border-bottom: none;
+    max-width: none;
+    min-width: none;
   }
 
   i {
@@ -277,7 +283,7 @@
   .prompt-search-loader {
 
     padding-bottom: 3px;
-    
+
     img {
       vertical-align: bottom;
       margin: 0;

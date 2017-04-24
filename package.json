@@ -1,6 +1,6 @@
 {
   "name": "ndm",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "npm desktop manager",
   "main": "index.js",
   "homepage": "https://720kb.github.io/ndm",
@@ -51,9 +51,6 @@
       "category": "Utility",
       "description": "npm desktop manager",
       "packageCategory": "Utility",
-      "arch": [
-        "x64"
-      ],
       "target": [
         "deb",
         "rpm",
@@ -74,7 +71,10 @@
       "menu.js",
       "icon.ico",
       "LICENSE.md"
-    ]
+    ],
+    "directories": {
+      "output": "./releases"
+    }
   },
   "social": {
     "twitter": {
@@ -99,9 +99,6 @@
     "closable": true,
     "fullscreenable": true
   },
-  "directories": {
-    "output": "./releases"
-  },
   "scripts": {
     "precommit": "npm run lint",
     "lint": "gulp lint",
@@ -111,10 +108,10 @@
     "linux": "gulp dist --platform=linux && electron .",
     "win": "gulp dist --platform=win && electron .",
     "build": "npm run build-mac && npm run build-linux && npm run build-win",
-    "build-mac": "gulp distify --platform=mac && build --mac && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
-    "build-win": "gulp distify --platform=win && build --win && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
-    "build-linux": "gulp distify --platform=linux && build --linux && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
-    "build-linux-deb": "gulp distify --platform=linux && build --linux deb && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-mac": "gulp distify --platform=mac && build --mac --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-win": "gulp distify --platform=win && build --win --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-linux": "gulp distify --platform=linux && build --linux --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
+    "build-linux-deb": "gulp distify --platform=linux && build --linux deb --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
@@ -134,8 +131,8 @@
   "devDependencies": {
     "babel-preset-es2015-rollup": "^3.0.0",
     "del": "^2.2.0",
-    "electron": "^1.4.14",
-    "electron-builder": "^11.2.4",
+    "electron": "^1.6.2",
+    "electron-builder": "^15.1.1",
     "eslint": "^3.13.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.2.0",

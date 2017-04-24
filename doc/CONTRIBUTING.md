@@ -1,4 +1,4 @@
-###Contributing Guidelines
+# Contributing Guidelines
 
 If you are so kind to help and support us, please consider following these guidelines before sending PRs or commits:
 

@@ -2,7 +2,7 @@
 
 **ndm** stands for _"npm desktop manager"_ 
 
-It is a cross-platform GUI for [npm](https://npmjs.com/) built with web technologies.
+A cross-platform GUI for [npm](https://npmjs.com/) built with web technologies.
 
 With **ndm** you can manage npm, npm projects and packages straight from the couch.
 

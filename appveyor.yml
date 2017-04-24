@@ -17,13 +17,12 @@ test: off
 
 artifacts:
   - path: releases\*.exe
-
   - path: releases\*win.zip
 
 deploy:
 - provider: GitHub
   auth_token:
-    secure: tsButLvk52+UaRqT1htE6Lw8Txzy5fq3pvK21gbLd9NNbYBArjt1GgonfVDccyKr
+    secure: ZQe3awDIx7JDSXPfjp8Y+mKgdXERdHAeNikOKo3eyYWZzjykn74n6S6B8qJqqbBx
   draft: false
   prerelease: false
   on:

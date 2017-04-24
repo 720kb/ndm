@@ -1,6 +1,6 @@
 ## FAQ
 
-1) **I use the CLI, why use an app?**
+**1) I use the CLI, why use an app?**
 
 Of course, we all love the npm CLI, no jokes.
 
@@ -9,11 +9,12 @@ It is obviously very powerful.
 *ndm* is an alternative experience to the `npmCLI` and here are all the pros:
 
 - Less struggling with long terminal logs, scrolling to find eventual warnings and/or errors.
-- All your projects are on the same view, no more multiple `cd` to move from a project to another, just drag them all into the app.
+- All your projects are on the same view, no more multiple `cd` to move from a project to another, just drag them all into the app view.
 - Notifications (specially when your long long npm install finishes)
-- List all your global and local npm installed packages with all the informations you need in one maybe two clicks.
-- Cleaner point of view of all your npm projects and dependencies.
+- List all your npm global and local packages in one maybe two clicks.
+- Cleaner view of all your npm projects and dependencies.
 - Run npm commands and scripts in one maybe two clicks.
+- Search npm packages and see packages infos like a pro
 - More features to be finished and to come ...
 
 Some of the greatest and widely used package managers got their own GUI... brew, apt ... just for example.
@@ -23,7 +24,7 @@ Here is ndm, give it a try before to say "_no, mmmmm, no, meh, maybe_" :ok_hand:
 
 **Obviously:** using **ndm** doesn't mean you can no longer use the CLI.
 
-2) **Is ndm stable?**
+**2) Is ndm stable?**
 
 The first releases are not guaranteed to be very stable, some problem/bug may happen.
 
@@ -31,23 +32,29 @@ Just give it some time, have some patience and if you like ndm project then come
 Your help is always appreciated and you are welcome anytime!
 
 
-3) **Do i have to worry about anything when using ndm?**
+**3) Do i have to worry about anything when using ndm?**
 
 Actually not, not really.
 **ndm** does not run any malicious or env/system breaking commands in background, and it doesn't run anything outside of the npm native commands.
+
 If you want to be 100% sure about it, just look at the source code, which is clear and very readable.
 
-4) **Why is so slow on my pc?**
+Then (if you have 5 minutes to spend) what we suggest is to read this tiny mini guide of sane [recommendations](https://github.com/720kb/ndm/blob/master/doc/RECOMMENDATIONS.md).
 
-ndm speed depends exclusively on your pc/device specs and [npm-cli](https://docs.npmjs.com/cli/npm) speed.
-We can't do much to speed up your machine or the npm commands.
+**4) Why is ndm so slow on my pc?**
 
-5) **Yarn?**
+**ndm** speed depends exclusively on your pc/device specs and [npm-cli](https://docs.npmjs.com/cli/npm) speed.
+We can't do much to speed up your machine or the npm native commands.
 
-Premise: **ndm** was born several months before Yarn was out.
-Yarn is a great tool, we are looking forward to seeing what happens both on the Yarn and the npm side.
+**5) Yarn?**
+
+_Premise: **ndm** was born several months before Yarn was out._
+
+Yarn is a great tool, we are looking forward to seeing what happens: both on the Yarn and the npm side.
+
 Many things could change in the meantime. 
-That said: if you have any idea or suggestion, here you are welcome to share and discuss!
+
+That said: if you have any idea or suggestion you are welcome to share and discuss!
 
 6) **Support?**
 

@@ -104,7 +104,7 @@
     "lint": "gulp lint",
     "prestart": "npm install && gulp dist --platform=mac",
     "start": "LANG=en_US.UTF-8 && electron .",
-    "mac": "LANG=en_US.UTF-8 && gulp dist --platform=mac && electron . LANG=en_US.UTF-8",
+    "mac": "LANG=en_US.UTF-8 && gulp dist --platform=mac && electron .",
     "linux": "LANG=en_US.UTF-8 && gulp dist --platform=linux && electron .",
     "win": "LANG=en_US.UTF-8 && gulp dist --platform=win && electron .",
     "build": "npm run build-mac && npm run build-linux && npm run build-win",

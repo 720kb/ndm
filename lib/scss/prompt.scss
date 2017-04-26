@@ -14,26 +14,20 @@
   &:not(.dialog-window) {
     min-height: 28px;
     z-index: 999;
-    border-radius: 2px 2px 0 0;
-    padding: 3px;
+    border-radius: 1.5px 1.5px 0 0;
+    padding: 2px 3px 0 3px;
     padding-bottom: 0;
     left: 194px;
-    border: 1px solid $color-ccc;
+    border: 1px solid $color-ddd;
     width: calc(100vw - 208px);
     box-shadow: none;
-    border-bottom: none;
     max-width: none;
-    min-width: none;
+    margin-top: 2px;
   }
 
   i {
     margin-left: 4px;
     font-size: 15px;
-  }
-
-  .button-close-prompt {
-    position: relative;
-    bottom: -1px;
   }
 
   button {
@@ -63,6 +57,18 @@
 
       img {
         width: 13px;
+      }
+
+      &.button-close-prompt {
+        width: 18px;
+        text-indent: -2.5px;
+
+        i {
+          font-size: 11px;
+          left: -6.5px;
+          position: relative;
+          float: left;
+        }
       }
     }
   }

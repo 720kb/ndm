@@ -50,6 +50,13 @@ app.on('ready', () => {
   });
 
   mainWindow.on('restore', () => {
+    //hide autoupdates window
+    updateWindow.hide();
+    mainWindow.webContents.send('loading:unfreeze-app');
+  });
+
+  mainWindow.on('enter-full-screen', () => {
+    //hide autoupdates window
     updateWindow.hide();
     mainWindow.webContents.send('loading:unfreeze-app');
   });

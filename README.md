@@ -81,7 +81,7 @@ On RedHat based linux is possible to install **ndm** doing:
 
 ```bash
 echo "[fury]               
-name=Gemfury Private Repo
+name=ndm repository
 baseurl=https://repo.fury.io/720kb/
 enabled=1
 gpgcheck=0" | sudo tee /etc/yum.repos.d/ndm.repo && sudo yum update && sudo yum install ndm

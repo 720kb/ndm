@@ -16,13 +16,13 @@
     z-index: 999;
     border-radius: 1.5px 1.5px 0 0;
     padding: 2px 3px 0 3px;
-    padding-bottom: 0;
     left: 194px;
     border: 1px solid $color-ddd;
     width: calc(100vw - 208px);
     box-shadow: none;
     max-width: none;
     margin-top: 2px;
+    border-bottom: 0;
   }
 
   i {

@@ -2,6 +2,8 @@
   width: calc(100% - 8px);
   margin: 0 auto;
   background: white;
+  margin-top: 4px;
+  margin-bottom: 2px;
 
   img {
     width: 23px;
@@ -18,7 +20,7 @@
     font-size: 12px;
     padding-left: 0;
     padding-right: 3px;
-    margin: 4.5px 4px 0 0;
+    margin: 1px 0 0 4px;
     line-height: 13px;
 
     i {
@@ -31,17 +33,19 @@
   .button-add-package {
     float: left;
     border: 0;
-    line-height: 26px;
+    line-height: 18px;
     margin: 0 auto;
-    padding: 0 6px 0 2px;
+    padding: 0 0 0 0;
     background: none;
+    margin-bottom: 3px;
+    border-radius: 10px;
 
     i {
       color: $color-primary;
     }
 
-    &:active {
-      background: $bg-muted-invisible;
+    &:focus {
+      opacity: .7;
     }
   }
 

@@ -22,6 +22,7 @@
     max-width: none;
     margin-top: 2px;
     border-bottom: 0;
+    min-height: 25px;
   }
 
   i {
@@ -91,7 +92,7 @@
       line-height: initial;
       border-radius: $border-radius-inputs;
       box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
-      font-size: 11px;
+      font-size: 12px;
       padding: 3px 4px 2.5px 4px;
       width: 18%;
 
@@ -106,7 +107,7 @@
     line-height: initial;
     border-radius: 3px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
-    font-size: 12.5px;
+    font-size: 12px;
     padding: 3px 4px 2.5px 4px;
     width: 66%;
     background: white;
@@ -283,7 +284,7 @@
   color: $color-muted;
   overflow: hidden;
   overflow-y: auto;
-  max-height: 200px;
+  max-height: 39.8vh;
 
   .prompt-search-loader {
 

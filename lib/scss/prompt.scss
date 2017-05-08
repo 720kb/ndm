@@ -14,15 +14,19 @@
   &:not(.dialog-window) {
     z-index: 999;
     border-radius: 1.5px 1.5px 0 0;
-    padding: 2px 3px 0 3px;
     left: 194px;
     border: 1px solid $color-ddd;
     width: calc(100vw - 208px);
     box-shadow: none;
     max-width: none;
     margin-top: 2px;
-    border-bottom: 0;
     min-height: 25px;
+    border-bottom: 0;
+    padding: 0;
+
+    form {
+     padding: 1px 3px;
+    }
   }
 
   i {
@@ -285,10 +289,13 @@
   overflow: hidden;
   overflow-y: auto;
   max-height: 39.8vh;
+  border-bottom: 1px solid $color-ddd;
+  box-shadow: 10px -10px 10px $bg-eee inset;
 
   .prompt-search-loader {
     color: $color-222;
     padding-top: 3px;
+    padding-bottom: 1px;
 
     img {
       vertical-align: bottom;

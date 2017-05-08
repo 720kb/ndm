@@ -16,16 +16,6 @@ body {
     }
   }
 
-  &.loading  {
-
-    .table-body {
-      * {
-        cursor: wait;
-        pointer-events: none;
-      }
-    }
-  }
-
   &.freezed {
       opacity: .5;
       pointer-events: none;

@@ -35,7 +35,7 @@
         .col-xs-2.clickable(ng-click="sortTableBy('kind')")
           | Env
           i(class="fa", ng-class="{'fa-sort': !tableOrderBy.includes('-kind') || !tableOrderBy.includes('kind'), 'fa-sort-down': tableOrderBy.includes('-kind'), 'fa-sort-up': tableOrderBy.includes('kind')}")
-      .table-body(ng-table-keyboard)
+      .table-body(ng-table-keyboard, ng-class="{'freezed': showLoadingSelectedRow}")
         .table-loader(ng-show="loading && !loaded")
           .table-loader-content
             img(src='img/loading.svg')

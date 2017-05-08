@@ -97,6 +97,14 @@
   border: 1px solid $color-ccc;
   border-top: 0;
   margin-bottom: 5px;
+
+  &.freezed {
+    cursor: wait;
+    * {
+      cursor: wait;
+      pointer-events: none;
+    }
+  }
 }
 
 .table-loader {

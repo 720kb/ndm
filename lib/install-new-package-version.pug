@@ -1,4 +1,4 @@
-div.dialog.prompt(ng-show="showSpecificVersionPrompt", ng-init="versionPackageVersion = undefined")
+div.dialog.prompt(ng-show="showSpecificVersionPrompt && currentSelectedPackages.length === 1", ng-init="versionPackageVersion = undefined")
   form(ng-submit='installVersionPackage(currentSelectedPackages[0], versionPackageVersion)')
     input(placeholder='Package name',
       type='text',

@@ -5,6 +5,14 @@
   margin-top: 4px;
   margin-bottom: 2px;
 
+  &.freezed {
+    cursor: wait;
+    * {
+      cursor: wait;
+      pointer-events: none;
+    }
+  }
+
   img {
     width: 23px;
     margin-top: 4px;

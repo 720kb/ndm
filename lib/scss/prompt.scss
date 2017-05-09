@@ -65,6 +65,8 @@
 
       &.button-close-prompt {
         width: 18px;
+        max-width: 18px;
+        min-width: 18px;
         text-indent: -2.5px;
 
         i {

@@ -1,7 +1,7 @@
 div.dialog.dialog-window(ng-if="shell.activeLink === 'update'")
   div(class="prompt-window-options")
-    img(ng-show="!log.logsFinished", src='img/loading.svg', width='13')
-    i(class="fa fa-check color-primary", ng-show="log.logsFinished")
+    img(ng-show="shell.updatingNpm", src='img/loading.svg', width='13')
+    i(class="fa fa-check color-primary", ng-show="!shell.updatingNpm && log.logs")
     button(ng-click="shell.activeLink = false", ng-if="!shell.updatingNpm")
       | Close
     button(ng-click="shell.activeClickedLink('update'); shell.updateNpm()", ng-if="!shell.updatingNpm")

@@ -29,3 +29,12 @@ body, html {
 .ace_editor {
   font-size: 15px !important;
 }
+
+.dialog {
+
+  select {
+    height: 18.5px;
+    bottom: 0;
+    top: -1px;
+  }
+}

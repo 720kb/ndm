@@ -1,6 +1,5 @@
 
 .left-progress {
-  animation: loadingStripes 1.3s linear infinite;
   font-size: 11px;
   line-height: 0;
   width: 80%;
@@ -36,6 +35,7 @@
     margin-top: 6px;
     background: $bg-progress-secondary;
     border-radius: 2px;
+    animation: loadingStripes 1.3s ease-out infinite;
   }
 
   &.left-progress-minor {

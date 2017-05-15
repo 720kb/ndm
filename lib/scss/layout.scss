@@ -6,20 +6,10 @@
   border-radius: 2px;
   float: left;
   margin: 10px 0;
-  width: calc(100vw - 225px);
+  width: calc(100vw - 200px);
   height: calc(100vh - 37px);
   background: white;
   overflow: hidden;
-  border: 1px solid $color-ccc;
-
-  h6 {
-    font-size: 11px;
-    line-height: 19px;
-    font-weight: 500;
-    padding: 0 5px;
-    margin: 0;
-    border-top: 1px solid $color-ccc;
-  }
 }
 
 .left-column {
@@ -29,7 +19,7 @@
   overflow: auto;
   margin: 10px 5px 10px 10px;
   padding: 0 15px 15px 15px;
-  width: 200px;
+  width: 175px;
   background: white;
   border: 1px solid $color-ccc;
 
@@ -42,7 +32,6 @@
     line-height: 20px;
 
     &:not(.project) {
-
       line-height: 25px;
     }
 
@@ -84,7 +73,7 @@
       width: 100%;
     }
 
-    &.active, &:active, &:focus {
+    &:active, &:focus {
       background: $color-ddd;
     }
 
@@ -105,7 +94,7 @@
       height: 20px;
       text-align: center;
       position: absolute;
-      left: 182.5px;
+      left: 157.5px;
 
       i {
         color: $color-222;

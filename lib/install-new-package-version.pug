@@ -1,29 +1,30 @@
-div.dialog.prompt(ng-if="shell.activeLink === '4'", ng-init="topMenu.versionPackageVersion = undefined")
-  form(ng-submit='topMenu.installVersionPackage(shell.currentSelectedPackages[0], topMenu.versionPackageVersion)')
+div.dialog.prompt(ng-show="showSpecificVersionPrompt && currentSelectedPackages.length === 1", ng-init="versionPackageVersion = undefined")
+  form(ng-submit='installVersionPackage(currentSelectedPackages[0], versionPackageVersion)')
     input(placeholder='Package name',
       type='text',
       readonly,
       disabled,
-      ng-value="shell.currentSelectedPackages[0].name")
+      ng-value="currentSelectedPackages[0].name")
     = " "
     input(class="hide",
       placeholder='@version',
       ng-autofocus,
       type='text',
-      ng-model='topMenu.versionPackageVersion',
-      ng-value="topMenu.versionPackageVersion")
+      ng-model='versionPackageVersion',
+      ng-value="versionPackageVersion")
     = " "
     span(class="prompt-kind")
-      select(name="packageVersionSelect", ng-model="topMenu.pkgVersionModel", ng-change="topMenu.versionPackageVersion = topMenu.pkgVersionModel")
+      select(name="packageVersionSelect", ng-model="pkgVersionModel", ng-change="versionPackageVersion = pkgVersionModel")
         option(value="", selected)
           | -
-        option(ng-repeat="pkgVersion in shell.selectedPackageViewInfos.versions | orderBy : pkgVersion : 'reverse' track by $index", ng-value="pkgVersion")
+        option(ng-repeat="pkgVersion in selectedPackageViewInfos.versions | orderBy : pkgVersion : 'reverse' track by $index", ng-value="pkgVersion")
           | {{pkgVersion}}
-    button
-      span(ng-show="!topMenu.installingPackageVersion")
+    button(ng-disabled="installingPackageVersion")
+      span(ng-show="!installingPackageVersion")
         | Install
-      span(ng-show="topMenu.installingPackageVersion")
+      span(ng-show="installingPackageVersion")
         img(src="img/loading.svg", width="13")
     = " "
     = " "
-    i(class="fa fa-times-circle-o button-close-prompt", ng-click="shell.activeLink = undefined;")
+    button(class="button-close-prompt pull-right", type="button", ng-click="hideInstallVersionPrompt();")
+      i(class="fa fa-remove")

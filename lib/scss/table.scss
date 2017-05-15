@@ -1,8 +1,13 @@
 .table-header {
+  background: $bg-light;
   font-size: 12px;
-  line-height: 20px;
+  padding-top: 1.5px;
+  line-height: 18px;
+  width: calc(100% - 8px);
   margin: 0 auto;
   transition: opacity .3s linear;
+  border: 1px solid $color-ddd;
+  border-radius: 1.5px 1.5px 0 0;
 
   .clickable {
     &:active {
@@ -11,11 +16,10 @@
   }
 
   div {
-    background: $bg-light;
+    background: none;
     text-align: left;
     padding: 0 4px;
-    border: 1px solid $color-ddd;
-    border-top: 0;
+    border-left: 1px solid $color-ddd;
 
     &:first-child {
       border-left: 0;
@@ -44,7 +48,7 @@
     font-weight: 500;
   }
   &:nth-child(odd) {
-    background: $bg-lighter;
+    background: $bg-table-row;
   }
 
   &:focus, &:active, &.active {
@@ -83,43 +87,66 @@
 
 .table-body {
   //(table - header - table-infos) to calculate height
-  height: calc(100vh - 150px - 105px);
+  height: calc(100vh - 155px - 105px);
   overflow-x: hidden;
   padding-bottom: 20px;
   background: white;
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 0 2px 2px;
+  width: calc(100% - 8px);
+  margin: 0 auto;
+  border: 1px solid $color-ccc;
   border-top: 0;
+  margin-bottom: 5px;
+
+  &.freezed {
+    cursor: wait;
+    * {
+      cursor: wait;
+      pointer-events: none;
+    }
+  }
 }
 
 .table-loader {
-  min-height: 100vh;
-  padding-top: 58vh;
+  padding-top: 41vh;
   position: relative;
   margin-top: -30vh;
   z-index: 9;
   background: white;
   text-align: center;
+  .table-loader-content {
+    font-size: 12px;
+    margin-top: 3vh;
+    img {
+      width: 17px;
+      margin-right: 1px;
+    }
+  }
 }
 
 .table-row-loading,
 .table-row-loading.active,
 .table-row-loading.active:active,
 .table-row-loading.active:focus {
-  background: $bg-progress;
-  animation: loadingStripes  1.5s linear infinite;
+  background: $bg-table-row-loading;
+  animation: loadingStripes  1.2s linear infinite;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .05) inset;
 }
 
 .table-infos {
     background: $bg-light;
-    max-height: 159px;
-    padding: 0 5px 11px 5px;
+    max-height: 140px;
+    padding: 0 5px 5px 5px;
     overflow-y: auto;
     font-size: 12px;
     color: $color-777;
-    border-top: 1px solid $color-ccc;
+    border: 1px solid $color-ccc;
+    border-radius: 2px;
+    width: calc(100% - 8px);
+    margin: 0 auto;
 
   .information {
-    margin-top: 3px;
+    margin-top: 2px;
     -webkit-user-select: text;
 
     b {

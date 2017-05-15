@@ -3,47 +3,47 @@ div.table-infos-content
     b
       | Name:
     = " "
-    | {{content.packageViewInfos.name || '-'}}
-  div.information(title="{{content.packageViewInfos.description}}")
+    | {{packageViewInfos.name || '-'}}
+  div.information(title="{{packageViewInfos.description}}")
     b
       | Description:
     = " "
-    | {{content.packageViewInfos.description || '-' | removeHTML}}
+    | {{packageViewInfos.description || '-' | removeHTML}}
   div.information(title="Package dependencies")
     b
       | Dependencies:
     = " "
-    span(ng-repeat="(dep, value) in content.packageViewInfos.dependencies")
+    span(ng-repeat="(dep, value) in packageViewInfos.dependencies")
       a(title="Open in browser", ng-click="shell.openBrowserLink('https://npmjs.com/package/' + dep)")
         | {{ dep }}
       span(ng-if="!$last")
         | ,
       = " "
-    span(ng-if="!content.packageViewInfos.dependencies || content.packageViewInfos.dependencies.length <= 0")
+    span(ng-if="!packageViewInfos.dependencies || packageViewInfos.dependencies.length <= 0")
       | -
   div.information(title="Package repository url")
     b
       | Repository:
     = " "
-    | {{content.packageViewInfos.repository.url || '-'}}
+    | {{packageViewInfos.repository.url || '-'}}
   div.information
     b
       | Issues:
     = " "
-    a(title="Open in browser", ng-if="content.packageViewInfos.bugs.url", ng-click="shell.openBrowserLink(content.packageViewInfos.bugs.url)")
-      | {{content.packageViewInfos.bugs.url}}
-    span(ng-if="!content.packageViewInfos.bugs || !content.packageViewInfos.bugs.url")
+    a(title="Open in browser", ng-if="packageViewInfos.bugs.url", ng-click="shell.openBrowserLink(packageViewInfos.bugs.url)")
+      | {{packageViewInfos.bugs.url}}
+    span(ng-if="!packageViewInfos.bugs || !packageViewInfos.bugs.url")
       | -
   div.information
     b
       | Url:
     = " "
-    a(title="Open in browser", ng-init="content.pkgUrlToNpmJsWebsite = 'https://npmjs.com/package/' + content.packageViewInfos.name", ng-if="content.packageViewInfos.name", ng-click="shell.openBrowserLink(content.pkgUrlToNpmJsWebsite)")
-      | {{ content.pkgUrlToNpmJsWebsite }}
-    span(ng-if="!content.packageViewInfos.name")
+    a(title="Open in browser", ng-init="pkgUrlToNpmJsWebsite = 'https://npmjs.com/package/' + packageViewInfos.name", ng-if="packageViewInfos.name", ng-click="shell.openBrowserLink(pkgUrlToNpmJsWebsite)")
+      | {{ pkgUrlToNpmJsWebsite }}
+    span(ng-if="!packageViewInfos.name")
       | -
   div.information
     b
       | License:
     = " "
-    | {{content.packageViewInfos.license.type || content.packageViewInfos.license || '-'}}
+    | {{packageViewInfos.license.type || packageViewInfos.license || '-'}}

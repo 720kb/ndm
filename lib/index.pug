@@ -8,7 +8,6 @@ html
     link(rel='stylesheet', href='css/index.css', media='screen', charset='utf-8')
 
     script(type='text/javascript', src='../node_modules/angular/angular.min.js')
-    script(type='text/javascript', src='../node_modules/angular-ui-router/release/angular-ui-router.min.js')
     script(type='text/javascript', src='../node_modules/selection-model/dist/selection-model.min.js')
     script(type='text/javascript', src='../node_modules/ace-builds/src-min-noconflict/ace.js')
 
@@ -20,6 +19,7 @@ html
         | Loading
     .page
       include ./left.pug
-      .right-column(ui-view)
+      .right-column
+        include ./content.pug
     <!-- do not touch indentation-->
     include ./footer.pug

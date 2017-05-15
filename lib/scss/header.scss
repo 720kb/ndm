@@ -1,14 +1,18 @@
 .top-menu {
-  width: 100%;
-  background: $bg-light;
-  border-bottom: 1px solid $color-ddd;
+  width: calc(100% - 8px);
+  margin: 0 auto;
+  background: white;
+  margin-top: 4px;
+  margin-bottom: 2px;
 
-  .top-menu-left {
-    width: 200px;
+  &.freezed {
+    cursor: wait;
+    * {
+      cursor: wait;
+      pointer-events: none;
+    }
   }
-  .top-menu-right {
-    width: calc(100% - 200px);
-  }
+
   img {
     width: 23px;
     margin-top: 4px;
@@ -22,8 +26,9 @@
   .button-latest {
     float: right;
     font-size: 12px;
-    padding-left: 2px;
-    margin: 4.5px 4px 0 0;
+    padding-left: 0;
+    padding-right: 3px;
+    margin: 1px 0 0 4px;
     line-height: 13px;
 
     i {
@@ -36,17 +41,19 @@
   .button-add-package {
     float: left;
     border: 0;
-    line-height: 26px;
+    line-height: 18px;
     margin: 0 auto;
-    padding: 0 6px 0 2px;
+    padding: 0 0 0 0;
     background: none;
+    margin-bottom: 3px;
+    border-radius: 10px;
 
     i {
       color: $color-primary;
     }
 
-    &:active {
-      background: $bg-muted-invisible;
+    &:focus {
+      opacity: .7;
     }
   }
 

@@ -1,29 +1,37 @@
 .dialog {
   background: $bg-light;
-  border-radius: $border-radius-prompt;
   box-shadow: 1px .5px 3px rgba(0, 0, 0, .29), -.5px .5px .5px rgba(0, 0, 0, .2);
   float: none;
-  left: 0;
+  left: calc(199px + ((100vw - 199px) / 2) - 226px);
   padding: 3px 5px;
   position: absolute;
-  right: 0;
   margin: 0 auto;
-  width: 500px;
-  z-index: 9999;
-  top: 0;
+  width: 100%;
+  max-width: 432px;
+  z-index: 999999999;
+  top: 34px;
 
   &:not(.dialog-window) {
-    animation: promptSliding .13s ease;
+    z-index: 999;
+    border-radius: 1.5px 1.5px 0 0;
+    left: 194px;
+    border: 1px solid $color-ddd;
+    width: calc(100vw - 208px);
+    box-shadow: none;
+    max-width: none;
+    margin-top: 2px;
+    min-height: 25px;
+    border-bottom: 0;
+    padding: 0;
+
+    form {
+     padding: 1px 3px;
+    }
   }
 
   i {
     margin-left: 4px;
     font-size: 15px;
-  }
-
-  .button-close-prompt {
-    position: relative;
-    bottom: -1px;
   }
 
   button {
@@ -46,9 +54,29 @@
       opacity: .5;
     }
   }
+
   &:not(.dialog-window) {
     button {
-      width: 56px;
+      width: 55px;
+      min-width: auto;
+
+      img {
+        width: 13px;
+      }
+
+      &.button-close-prompt {
+        width: 18px;
+        max-width: 18px;
+        min-width: 18px;
+        text-indent: -2.5px;
+
+        i {
+          font-size: 11px;
+          left: -6.5px;
+          position: relative;
+          float: left;
+        }
+      }
     }
   }
 
@@ -71,12 +99,12 @@
       line-height: initial;
       border-radius: $border-radius-inputs;
       box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
-      font-size: 11px;
+      font-size: 12px;
       padding: 3px 4px 2.5px 4px;
       width: 18%;
 
       &:first-child {
-        width: 62%;
+        width: 57%;
         margin-right: 0;
       }
     }
@@ -86,9 +114,9 @@
     line-height: initial;
     border-radius: 3px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25) inset;
-    font-size: 12.5px;
+    font-size: 12px;
     padding: 3px 4px 2.5px 4px;
-    width: calc(72% - 15px);
+    width: 66%;
     background: white;
     white-space: nowrap;
     overflow: hidden;
@@ -125,17 +153,19 @@
   }
 
   &.dialog-window {
-    height: 89vh;
+    height: calc(100vh - 39px);
     position: fixed;
-    left: 204px;
+    left: 190px;
     border: 0;
     box-shadow: none;
-    top: 11px;
-    width: calc(100vw - 227px);
+    top: 10px;
+    width: 100%;
     padding: 0;
     border-radius: 0;
     background: white;
     z-index: 9999;
+    max-width: calc(100vw - 200px);
+    border: 1px solid $color-ccc;
   }
 
   .window {
@@ -261,9 +291,14 @@
   color: $color-muted;
   overflow: hidden;
   overflow-y: auto;
-  max-height: 200px;
+  max-height: 39.8vh;
+  border-bottom: 1px solid $color-ddd;
+  box-shadow: 10px -10px 10px $bg-eee inset;
 
   .prompt-search-loader {
+    color: $color-222;
+    padding: 1.5px 3.5px 2.5px 3.5px;
+
     img {
       vertical-align: bottom;
       margin: 0;
@@ -283,7 +318,7 @@
   }
 
   .prompt-search-item {
-    padding: 3px;
+    padding: 3px 6px;
     border-bottom: 1px solid $bg-muted-invisible;
 
     &:last-child {

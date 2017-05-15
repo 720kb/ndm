@@ -1,0 +1,60 @@
+.tab {
+  overflow-x: hidden;
+  .tab-menu {
+    display: flex;
+    overflow: hidden;
+    height: 23px;
+    background: $bg-light;
+  }
+  .tab-button {
+    display: inline-flex;
+    font-size: 13px;
+    background: $bg-light;
+    padding: 4px 3px 5px 6px;
+    line-height: 15px;
+    white-space: nowrap;
+    position: relative;
+    bottom: -1px;
+
+    img {
+      vertical-align: top;
+      margin-right: 3px;
+    }
+    a {
+      opacity: .5;
+      border-radius: 3px;
+      color: #666;
+      margin: 0 4px;
+      margin-left: 8px;
+
+      i {
+        display: block;
+        width: 13px;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &.active {
+      border-radius: 4px 4px 0 0;
+      background: white;
+
+      a {
+        opacity: 1;
+        font-size: 7px;
+        position: relative;
+        bottom: -1px;
+        background: $color-error;
+        color: white;
+        text-shadow: 0 -1px rgba(0, 0, 0, .3);
+        box-shadow: 0 2px 3px red inset;
+        right: -2px;
+        height: 13px;
+        width: 13px;
+        line-height: 12px;
+        text-align: center;
+      }
+    }
+  }
+}

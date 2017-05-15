@@ -58,6 +58,7 @@
   &:not(.dialog-window) {
     button {
       width: 55px;
+      min-width: auto;
 
       img {
         width: 13px;
@@ -296,8 +297,7 @@
 
   .prompt-search-loader {
     color: $color-222;
-    padding-top: 3px;
-    padding-bottom: 1px;
+    padding: 1px 3.5px 1.5px 3.5px;
 
     img {
       vertical-align: bottom;
@@ -318,7 +318,7 @@
   }
 
   .prompt-search-item {
-    padding: 3px;
+    padding: 3px 6px;
     border-bottom: 1px solid $bg-muted-invisible;
 
     &:last-child {

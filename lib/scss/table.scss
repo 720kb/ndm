@@ -130,7 +130,7 @@
 .table-row-loading.active:focus {
   background: $bg-table-row-loading;
   animation: loadingStripes  1.2s linear infinite;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, .05) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .03) inset;
 }
 
 .table-infos {

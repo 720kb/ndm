@@ -1,10 +1,15 @@
-/*global require,__dirname*/
+/*global require,process,__dirname*/
 const {app, Menu, BrowserWindow, shell} = require('electron')
   , path = require('path')
   , url = require('url')
   , packageJSON = require('./package.json')
   , applicationTemplate = packageJSON.appTemplate;
 
+//Set main window height bigger for Linux and Win ONLY
+if (process.platform !== 'darwin') {
+  applicationTemplate.minHeight += 30;
+  applicationTemplate.height += 30;
+}
 app.on('window-all-closed', () => {
   app.quit();
 });

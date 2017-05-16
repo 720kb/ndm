@@ -5,8 +5,8 @@ const {app, Menu, BrowserWindow, shell} = require('electron')
   , packageJSON = require('./package.json')
   , applicationTemplate = packageJSON.appTemplate;
 
-//Set main window height bigger for Linux and Win ONLY
-if (process.platform !== 'darwin') {
+//Set main window height bigger for Windows ONLY
+if (process.platform === 'win32') {
   applicationTemplate.minHeight += 30;
   applicationTemplate.height += 30;
 }

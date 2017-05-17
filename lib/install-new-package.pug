@@ -6,7 +6,7 @@ div.dialog.prompt(ng-show="showInstallPrompt")
     input(ng-hide="true", ng-model="searchKeywords", ng-bind="packageName")
     = " "
     span(class="prompt-kind")
-      input(type="checkbox", ng-model="newPackageKind", ng-disabled="globalSelected")
+      input(type="checkbox", ng-model="newPackageKind", ng-disabled="tab === '<global>'")
       = " "
       = " "
       | dev

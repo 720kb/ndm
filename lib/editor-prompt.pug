@@ -9,4 +9,4 @@ div.dialog.dialog-window(ng-if="leftBar.editorFilePath", ng-ace-editor, ng-ace-e
     button(ng-click="leftBar.editorFilePath = undefined; aceFileModel = undefined;")
       | Close
   div(class="window")
-    div(class="ng-ace-editor" autofocus)
+    div(class="ng-ace-editor", autofocus, ng-autofocus="true")

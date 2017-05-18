@@ -10,6 +10,12 @@ if (process.platform === 'win32') {
   applicationTemplate.minHeight += 30;
   applicationTemplate.height += 30;
 }
+//Set main window height smaller for Linux ONLY
+if (process.platform !== 'win32' &&
+  process.platform !== 'darwin') {
+  applicationTemplate.minHeight -= 30;
+  applicationTemplate.height -= 30;
+}
 app.on('window-all-closed', () => {
   app.quit();
 });

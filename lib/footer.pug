@@ -8,7 +8,7 @@
     button.button-global(type="button", title="Enable ndm in global folder",  ng-show="shell.globalDisabled", ng-click="shell.enableGlobal()")
       i.fa.fa-globe.color-primary
       | Enable globals
-    button.button-update(type="button", ng-show="!shell.globalDisabled && shell.npmCurrentVersionBadge", title="Update npm", ng-click="shell.activeClickedLink('update'); shell.updateNpm()")
+    button.button-update(type="button", ng-show="!shell.globalDisabled && shell.npmCurrentVersionBadge", title="Update npm", ng-click="shell.updateNpm()")
       i.fa.fa-history
       | Update npm
   span(class="npm-status pull-right", ng-mouseenter="shell.checkRegistryStatus()")

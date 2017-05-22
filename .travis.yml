@@ -16,7 +16,7 @@ deploy:
     api_key: $GITHUB_ACCESS_TOKEN
     file:
       - "releases/ndm-$(echo $VERSION).dmg"
-      - "releases/mac/ndm-$(echo $VERSION)-mac.zip"
+      - "releases/ndm-$(echo $VERSION)-mac.zip"
       - "releases/ndm-$(echo $VERSION).zip"
     skip_cleanup: true
     on:

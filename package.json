@@ -1,6 +1,6 @@
 {
   "name": "ndm",
-  "version": "1.2.0",
+  "version": "1.1.1",
   "description": "npm desktop manager",
   "main": "index.js",
   "homepage": "https://720kb.github.io/ndm",

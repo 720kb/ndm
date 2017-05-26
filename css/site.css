@@ -115,6 +115,12 @@ small , small *, *.font-small{
   vertical-align: text-bottom;
   margin: 0 3px;
 }
+.top-menu a i.icon-chat {
+  font-size: 12px;
+  color: #00ffd0;
+  position: relative;
+  top: -1px;
+}
 .content{
   box-shadow: 0 -2px 6px rgba(0,0,0, .1);
   border-top:1px solid #f4f6f6;

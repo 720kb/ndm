@@ -19,7 +19,17 @@ To run the app while developing [is this simple](https://github.com/720kb/ndm/bl
 
 ### Which programming languages
 
-Languages you need to know in order to contribute are simply: javascript and Sass (CSS)
+Languages you'll need to have experience with in order to contribute on *ndm* are simply: javascript (ES6) and CSS.
+
+Tools we use:
+
+- Angular
+- Electron
+- node
+- gulp
+- Sass
+- Babel
+- npm
 
 ### Guidelines
 

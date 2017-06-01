@@ -18,12 +18,12 @@ If you are so kind to help and support us, please consider following these guide
 
 - If you are editing the GUI style (CSS) do not change or edit .pug/.html files to fit your style; CSS must fit the html structure and not the opposite.
 
-- As you finished to code your changes always make a new clean install (`rm -Rf node_modules/ && npm install`)
-  , Then run the app and test all your changes deeply (`npm start`)
+- As you finished to code your changes always make a new clean npm install (`rm -Rf node_modules/ && npm install`)
+  , Then run the app and test all your changes very deeply (`npm start`)
   
-- Be sure to always update your node version to LTS before to start coding your changes/fixs
+- Be sure to always update your node version to LTS before to start coding
 
-- If you are not sure or you have doubts about what you are doing/changing: consider opening an issue and ask, before to go PR or commit or simply contact us [here]
+- If you are not sure or you have any doubt about what you are doing/editing: consider opening an issue and ask, before to go PR or commit. You can even join the [live chat](https://gitter.im/720kb/ndm) and ask there.
 
 - If your changes are radicals, please open an issue or contact us [here](https://gitter.im/720kb/ndm), so that we can discuss it togheter before everything goes on. By radicals we can list for example: 
    - changed the HTML layout
@@ -34,7 +34,8 @@ If you are so kind to help and support us, please consider following these guide
    - changed the project folders structure
    - rewrote js file/s for a good 50% and up
 
-These guidelines are not imperative, it's just the simplest method to be synced with you, you can PR any file in the repo, and this same file too :ok_hand:
+These guidelines are not imperative at all, it's just the simplest method we have to be synced with you. 
+You can PR any file in the repo, and this same file too :ok_hand:
 
 Look! One thing, to be absolutely clear: contributing on the ***ndm*** project, and in general on open source projects, does not mean to get paid and in any currency or good for the time/work/service. That's your time and you provide it on your own choice; it doesn't mean neither to get hired or to get a job in a company. By reading these contribution guidelines and before to contribute on the **ndm** project you declare you have read and accepted these conditions, thank you.
 

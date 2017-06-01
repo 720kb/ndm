@@ -37,7 +37,9 @@ If you are so kind to help and support us, please consider following these guide
 These guidelines are not imperative at all, it's just the simplest method we have to be synced with you. 
 You can PR any file in the repo: even this same file you are now reading. :ok_hand:
 
-Look! One thing, to be absolutely clear: contributing on the ***ndm*** project, and in general on open source projects, does not mean to get paid and in any currency or good for the time/work/service. That's your time and you provide it on your own choice; it doesn't mean neither to get hired or to get a job in a company. By reading these contribution guidelines and before to contribute on the **ndm** project you declare you have read and accepted these conditions, thank you.
+Look! One thing...to be absolutely clear: 
+
+contributing on the ***ndm*** project, and in general on open source projects, does not mean to get paid or receive any good for the time/ and work and service you freely provide for the project. It is your time/service/work and you provide it on your own choice; Contributing to **ndm**  doesn't mean neither to get hired or to get a job in any company. By reading these contribution guidelines and before to contribute on the **ndm** project you declare you have read and accepted these conditions, thank you.
 
 Thank you for listening :speaker:! We really would love and hope to have you on board, to have some fun and share new tricks and tips, each others of course!
 

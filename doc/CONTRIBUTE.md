@@ -21,6 +21,8 @@ To run the app while developing [is this simple](https://github.com/720kb/ndm/bl
 
 Languages you need to know in order to contribute are simply: javascript and Sass (CSS)
 
+### Guidelines
+
 Below are some Contribution Guidelines, consider reading these before to contribute, just that!
 
 [Contributing Guidelines](https://github.com/720kb/ndm/blob/master/CONTRIBUTING.md)

@@ -30,6 +30,8 @@ Tools we use:
 - Sass
 - Babel
 - npm
+- bash
+- svg
 
 ### Guidelines
 

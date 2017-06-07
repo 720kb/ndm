@@ -56,6 +56,6 @@ Many things could change in the meantime.
 
 That said: if you have any idea or suggestion you are welcome to share and discuss!
 
-6) **Support?**
+**6) Support?**
 
 Just open an issue, we'll be in touch :ok_hand:

@@ -1,7 +1,6 @@
 ## :tada: Come Contribute! :tada:
 
 We'll be much grateful if you help and contribute to the project, in any way, even a feature request.
-Feel free to contribute by forking, opening issues, pull requests and whatever you think it's important for the project.
 
 Doors are wide open!
 

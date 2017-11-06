@@ -353,12 +353,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1642', end
     overflow: hidden;
     padding: 1em;
     line-height: 1.5;
-    max-width: 300px;
+    max-width: 340px;
     color: darkgrey;
     text-align: center;
     border-radius: 5px;
     background: #eee;
     float: left;
+    width: 100%;
 }
 
 #carbonads span {

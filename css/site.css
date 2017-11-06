@@ -356,7 +356,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1642', end
     max-width: 300px;
     color: darkgrey;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 5px;
     background: #eee;
     float: left;
 }

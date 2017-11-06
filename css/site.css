@@ -349,11 +349,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1642', end
 }
 
 #carbonads {
-  display: block;
-  overflow: hidden;
-  padding: 1em;
-  font-family: Verdana, "Helvetica Neue", Helvetica, sans-serif;
-  line-height: 1.5;
+     display: block;
+    overflow: hidden;
+    padding: 1em;
+    line-height: 1.5;
+    max-width: 300px;
+    color: darkgrey;
+    text-align: center;
+    border-radius: 15px;
+    background: #eee;
+    float: left;
 }
 
 #carbonads span {
@@ -365,6 +370,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1642', end
 .carbon-img {
   float: left;
   margin-right: 1em;
+  border-radius:5px;
 }
 
 .carbon-img img {
@@ -376,6 +382,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1642', end
   float: left;
   max-width: calc(100% - 130px - 1em);
   text-align: left;
+  color:grey;
 }
 
 .carbon-poweredby {
@@ -387,4 +394,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1642', end
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 1px;
+  color:grey;
 }

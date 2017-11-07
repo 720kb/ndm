@@ -351,6 +351,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1642', end
 #carbonads {
      display: block;
     overflow: hidden;
+    padding: 1em;
     line-height: 1.5;
     max-width: 340px;
     color: darkgrey;
@@ -358,7 +359,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1642', end
     border-radius: 5px;
     background: #eee;
     float: left;
-    width: 100%;
 }
 
 #carbonads span {

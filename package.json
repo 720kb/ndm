@@ -69,6 +69,7 @@
       "dist",
       "index.js",
       "menu.js",
+      "storage.js",
       "icon.ico",
       "LICENSE.md"
     ],
@@ -106,6 +107,7 @@
     "bootstrap": "^3.3.6",
     "electron-storage": "^1.0.6",
     "fs-extra": "^2.0.0",
+    "lodash.throttle": "^4.1.1",
     "node-fetch": "^1.6.3",
     "npm": "^4.4.0",
     "rimraf": "^2.6.1",

@@ -3,8 +3,8 @@ const {app, Menu, BrowserWindow, shell} = require('electron')
   , path = require('path')
   , url = require('url')
   , packageJSON = require('./package.json')
-  , storage = require('./storage')
-  , _ = require('lodash');
+  , storage = require('./storage.js')
+  , throttle = require('lodash.throttle');
 
 app.on('window-all-closed', () => {
   app.quit();
@@ -86,7 +86,7 @@ app.on('ready', () => {
       'slashes': true
     }));
 
-    const getWindowState = _.throttle(() => {
+    const getWindowState = throttle(() => {
       const bounds = mainWindow.getBounds();
       data.window = bounds;
       storage.saveData(data);

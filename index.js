@@ -2,27 +2,15 @@
 const {app, Menu, BrowserWindow, shell} = require('electron')
   , path = require('path')
   , url = require('url')
-  , packageJSON = require('./package.json')
-  , applicationTemplate = packageJSON.appTemplate;
+  , packageJSON = require('./package.json');
 
-//Set main window height bigger for Windows ONLY
-if (process.platform === 'win32') {
-  applicationTemplate.minHeight += 30;
-  applicationTemplate.height += 30;
-}
-//Set main window height smaller for Linux ONLY
-if (process.platform !== 'win32' &&
-  process.platform !== 'darwin') {
-  applicationTemplate.minHeight -= 20;
-  applicationTemplate.height -= 20;
-}
 app.on('window-all-closed', () => {
   app.quit();
 });
 
 app.on('ready', () => {
 
-  const mainWindow = new BrowserWindow(applicationTemplate)
+  const mainWindow = new BrowserWindow()
     , updateWindow = new BrowserWindow({
       'width': 400,
       'height': 192,

@@ -84,21 +84,6 @@
       "url": "https://gitter.im/720kb/ndm"
     }
   },
-  "appTemplate": {
-    "title": "ndm",
-    "width": 640,
-    "height": 420,
-    "minWidth": 640,
-    "minHeight": 420,
-    "show": false,
-    "center": true,
-    "movable": true,
-    "resizable": true,
-    "minimizable": true,
-    "maximizable": true,
-    "closable": true,
-    "fullscreenable": true
-  },
   "scripts": {
     "precommit": "npm run lint",
     "lint": "gulp lint",

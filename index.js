@@ -2,7 +2,8 @@
 const {app, Menu, BrowserWindow, shell} = require('electron')
   , path = require('path')
   , url = require('url')
-  , packageJSON = require('./package.json');
+  , packageJSON = require('./package.json')
+  , storage = require('./storage.js');
 
 app.on('window-all-closed', () => {
   app.quit();

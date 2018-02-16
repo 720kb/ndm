@@ -3,7 +3,8 @@ const {app, Menu, BrowserWindow, shell} = require('electron')
   , path = require('path')
   , url = require('url')
   , packageJSON = require('./package.json')
-  , storage = require('./storage');
+  , storage = require('./storage')
+  , _ = require('lodash');
 
 app.on('window-all-closed', () => {
   app.quit();
@@ -79,6 +80,14 @@ app.on('ready', () => {
       'protocol': 'file:',
       'slashes': true
     }));
+
+    const windowBounds = _.throttle(() => {
+      const bounds = mainWindow.getBounds();
+      data.window = bounds;
+      storage.saveData(data);
+    }, 500);
+
+    mainWindow.on('resize', windowBounds );
 
   });
 });

@@ -20,6 +20,11 @@ app.on('ready', () => {
       'title': data.title
     }
 
+    if (data.window.x !== undefined) {
+      windowOptions.x = data.window.x;
+      windowOptions.y = data.window.y;
+    }
+
     const mainWindow = new BrowserWindow(windowOptions)
       , updateWindow = new BrowserWindow({
         'width': 400,
@@ -81,13 +86,14 @@ app.on('ready', () => {
       'slashes': true
     }));
 
-    const windowBounds = _.throttle(() => {
+    const getWindowState = _.throttle(() => {
       const bounds = mainWindow.getBounds();
       data.window = bounds;
       storage.saveData(data);
     }, 500);
 
-    mainWindow.on('resize', windowBounds );
+    mainWindow.on('resize', getWindowState );
+    mainWindow.on('moved', getWindowState );
 
   });
 });

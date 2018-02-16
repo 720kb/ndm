@@ -3,7 +3,7 @@ const {app, Menu, BrowserWindow, shell} = require('electron')
   , path = require('path')
   , url = require('url')
   , packageJSON = require('./package.json')
-  , storage = require('./storage.js');
+  , storage = require('./storage');
 
 app.on('window-all-closed', () => {
   app.quit();
@@ -11,64 +11,74 @@ app.on('window-all-closed', () => {
 
 app.on('ready', () => {
 
-  const mainWindow = new BrowserWindow()
-    , updateWindow = new BrowserWindow({
-      'width': 400,
-      'height': 192,
-      'parent': mainWindow,
-      'show': false,
-      'resizable': false,
-      'maximizable': false,
-      'alwaysOnTop': true,
-      'fullscreenable': false,
-      'title': ''
-    })
-    , OSMenu = require('./menu.js')(mainWindow, updateWindow, shell, packageJSON, app);
+  storage.loadData().then(data => {
 
-  Menu.setApplicationMenu(Menu.buildFromTemplate(OSMenu));
-  updateWindow.loadURL(url.format({
-    'pathname': path.resolve(__dirname, 'dist', 'update.html'),
-    'protocol': 'file:',
-    'slashes': true
-  }));
+    windowOptions = {
+      'width': data.window.width,
+      'height': data.window.height,
+      'title': data.title
+    }
 
-  updateWindow.on('close', event => {
-    event.preventDefault();
+    const mainWindow = new BrowserWindow(windowOptions)
+      , updateWindow = new BrowserWindow({
+        'width': 400,
+        'height': 192,
+        'parent': mainWindow,
+        'show': false,
+        'resizable': false,
+        'maximizable': false,
+        'alwaysOnTop': true,
+        'fullscreenable': false,
+        'title': ''
+      })
+      , OSMenu = require('./menu.js')(mainWindow, updateWindow, shell, packageJSON, app);
 
-    mainWindow.webContents.send('loading:unfreeze-app');
-    updateWindow.hide();
+    Menu.setApplicationMenu(Menu.buildFromTemplate(OSMenu));
+    updateWindow.loadURL(url.format({
+      'pathname': path.resolve(__dirname, 'dist', 'update.html'),
+      'protocol': 'file:',
+      'slashes': true
+    }));
+
+    updateWindow.on('close', event => {
+      event.preventDefault();
+
+      mainWindow.webContents.send('loading:unfreeze-app');
+      updateWindow.hide();
+    });
+
+    mainWindow.on('ready-to-show', () => {
+
+      mainWindow.show();
+    });
+
+    mainWindow.on('page-title-updated', event => {
+      //lock app title otherwise gets the index.html filename
+      event.preventDefault();
+    });
+
+    mainWindow.on('restore', () => {
+      //hide autoupdates window
+      updateWindow.hide();
+      mainWindow.webContents.send('loading:unfreeze-app');
+    });
+
+    mainWindow.on('enter-full-screen', () => {
+      //hide autoupdates window
+      updateWindow.hide();
+      mainWindow.webContents.send('loading:unfreeze-app');
+    });
+
+    mainWindow.on('closed', () => {
+
+      app.quit();
+    });
+
+    mainWindow.loadURL(url.format({
+      'pathname': path.resolve(__dirname, 'dist', 'index.html'),
+      'protocol': 'file:',
+      'slashes': true
+    }));
+
   });
-
-  mainWindow.on('ready-to-show', () => {
-
-    mainWindow.show();
-  });
-
-  mainWindow.on('page-title-updated', event => {
-    //lock app title otherwise gets the index.html filename
-    event.preventDefault();
-  });
-
-  mainWindow.on('restore', () => {
-    //hide autoupdates window
-    updateWindow.hide();
-    mainWindow.webContents.send('loading:unfreeze-app');
-  });
-
-  mainWindow.on('enter-full-screen', () => {
-    //hide autoupdates window
-    updateWindow.hide();
-    mainWindow.webContents.send('loading:unfreeze-app');
-  });
-
-  mainWindow.on('closed', () => {
-
-    app.quit();
-  });
-
-  mainWindow.loadURL(url.format({
-    'pathname': path.resolve(__dirname, 'dist', 'index.html'),
-    'protocol': 'file:',
-    'slashes': true
-  }));
 });

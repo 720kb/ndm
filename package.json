@@ -112,7 +112,9 @@
     "build-win": "gulp distify --platform=win && build --win --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
     "build-linux": "gulp distify --platform=linux && build --linux --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
     "build-linux-deb": "gulp distify --platform=linux && build --linux deb --publish=never && echo 'IMPORTANT! if build fails see https://github.com/electron-userland/electron-builder/wiki/Multi-Platform-Build , you probably miss some library on your OS, just install them and retry :).'",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "ace-builds": "^1.2.5",
@@ -122,12 +124,13 @@
     "electron-storage": "^1.0.6",
     "fs-extra": "^2.0.0",
     "node-fetch": "^1.6.3",
-    "npm": "^4.4.0",
+    "npm": "^5.5.0",
     "rimraf": "^2.6.1",
     "selection-model": "^0.11.0",
     "shell-path": "^2.0.0",
     "universal-analytics": "^0.4.8",
-    "uuid": "^3.0.1"
+    "uuid": "^3.0.1",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^3.0.0",
@@ -152,5 +155,6 @@
     "rollup-plugin-json": "^2.0.0",
     "run-sequence": "^1.1.5",
     "yargs": "^6.5.0"
-  }
+  },
+  "snyk": true
 }

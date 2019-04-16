@@ -11,16 +11,16 @@ It is obviously very powerful.
 - Less struggling with long terminal logs, scrolling to find eventual warnings and/or errors.
 - All your projects are on the same view, no more multiple `cd` to move from a project to another, just drag them all into the app view.
 - Notifications (specially when your long long npm install finishes)
-- List all your npm global and local packages in one maybe two clicks.
-- Cleaner view of all your npm projects and dependencies.
-- Run npm commands and scripts in one maybe two clicks.
-- Search npm packages and see packages infos like a pro
+- List all your `npm` global and local packages in one maybe two clicks.
+- Cleaner view of all your `npm` projects and dependencies.
+- Run `npm` commands and scripts in one maybe two clicks.
+- Search `npm` packages and see packages infos like a pro
 - More features to be finished and to come ...
 
-Some of the greatest and widely used package managers got their own GUI... brew, apt ... just for example.
+Some of the greatest and widely used package managers got their own GUI... `brew`, `apt` ... just for example.
 npm got none. That's bad, that doesn't help npm itself and the npm community.
 
-Here is ndm, give it a try before to say "_no, mmmmm, no, meh, maybe_" :ok_hand:
+Here is `ndm`, give it a try before to say "_no, mmmmm, no, meh, maybe_" :ok_hand:
 
 **Obviously:** using **ndm** doesn't mean you can no longer use the CLI.
 
@@ -28,14 +28,14 @@ Here is ndm, give it a try before to say "_no, mmmmm, no, meh, maybe_" :ok_hand:
 
 The first releases are not guaranteed to be very stable, some problem/bug may happen.
 
-Just give it some time, have some patience and if you like ndm project then come contribute! 
+Just give it some time, have some patience and if you like `ndm` project then come contribute! 
 Your help is always appreciated and you are welcome anytime!
 
 
 **3) Do i have to worry about anything when using ndm?**
 
 Actually not, not really.
-**ndm** does not run any malicious or env/system breaking commands in background, and it doesn't run anything outside of the npm native commands.
+**ndm** does not run any malicious or env/system breaking commands in background, and it doesn't run anything outside of the `npm` native commands.
 
 If you want to be 100% sure about it, just look at the source code, which is clear and very readable.
 
@@ -44,13 +44,13 @@ Then (if you have 5 minutes to spend) what we suggest is to read this tiny mini 
 **4) Why is ndm so slow on my pc?**
 
 **ndm** speed depends exclusively on your pc/device specs and [npm-cli](https://docs.npmjs.com/cli/npm) speed.
-We can't do much to speed up your machine or the npm native commands.
+We can't do much to speed up your machine or the `npm` native commands.
 
 **5) Yarn?**
 
 _Premise: **ndm** was born several months before Yarn was out._
 
-Yarn is a great tool, we are looking forward to seeing what happens: both on the Yarn and the npm side.
+`Yarn` is a great tool, we are looking forward to seeing what happens: both on the `Yarn` and the `npm` side.
 
 Many things could change in the meantime. 
 

@@ -69,6 +69,7 @@
       "dist",
       "index.js",
       "menu.js",
+      "storage.js",
       "icon.ico",
       "LICENSE.md"
     ],
@@ -83,21 +84,6 @@
     "gitter": {
       "url": "https://gitter.im/720kb/ndm"
     }
-  },
-  "appTemplate": {
-    "title": "ndm",
-    "width": 640,
-    "height": 420,
-    "minWidth": 640,
-    "minHeight": 420,
-    "show": false,
-    "center": true,
-    "movable": true,
-    "resizable": true,
-    "minimizable": true,
-    "maximizable": true,
-    "closable": true,
-    "fullscreenable": true
   },
   "scripts": {
     "precommit": "npm run lint",
@@ -121,6 +107,7 @@
     "bootstrap": "^3.3.6",
     "electron-storage": "^1.0.6",
     "fs-extra": "^2.0.0",
+    "lodash.throttle": "^4.1.1",
     "node-fetch": "^1.6.3",
     "npm": "^4.4.0",
     "rimraf": "^2.6.1",

@@ -116,7 +116,7 @@
   },
   "dependencies": {
     "ace-builds": "^1.2.5",
-    "adm-zip": "^0.4.7",
+    "adm-zip": "^0.5.2",
     "angular": "^1.6.0",
     "bootstrap": "^3.3.6",
     "electron-storage": "^1.0.6",

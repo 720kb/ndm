@@ -161,7 +161,7 @@ small , small *, *.font-small{
 .download-link.mac, .download-link.win{
   border-radius:4px;
   width: 100%;
-  max-width: 270px;
+  max-width: 290px;
   font-size: 15px;
   background: #0d70ff;
   line-height: 44px;

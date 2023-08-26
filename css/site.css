@@ -57,9 +57,9 @@ small , small *, *.font-small{
   z-index: 9999;
   position: relative;
   max-width: 700px;
-  margin-top: -80px;
+  margin-top: -55px;
   left: -20%;
-  margin-bottom: -50px;
+  margin-bottom: -100px;
 }
 .left-column {
   width: 44%;

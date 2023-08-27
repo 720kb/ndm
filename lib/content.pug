@@ -14,7 +14,7 @@
     .tab-menu
       span.tab-button(ng-repeat="tab in content.tabs", ng-class="{'active': content.activeTab === tab}", ng-click="content.activeTab = tab")
         spanner(ng-if="tab === '<global>'")
-          img(src="img/npm-logo-cube.svg", width="16")
+          i(class="fa fa-globe")
           | Globals
         spanner(ng-if="tab !== '<global>'")
           | {{ tab | lastNameInPath}}

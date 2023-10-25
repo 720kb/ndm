@@ -118,7 +118,7 @@
     "ace-builds": "^1.2.5",
     "adm-zip": "^0.4.7",
     "angular": "^1.6.0",
-    "bootstrap": "^3.3.6",
+    "bootstrap": "^4.0.0",
     "electron-storage": "^1.0.6",
     "fs-extra": "^2.0.0",
     "node-fetch": "^1.6.3",

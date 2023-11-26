@@ -122,11 +122,11 @@
     "electron-storage": "^1.0.6",
     "fs-extra": "^2.0.0",
     "node-fetch": "^1.6.3",
-    "npm": "^4.4.0",
+    "npm": "^7.0.0",
     "rimraf": "^2.6.1",
     "selection-model": "^0.11.0",
     "shell-path": "^2.0.0",
-    "universal-analytics": "^0.4.8",
+    "universal-analytics": "^0.5.0",
     "uuid": "^3.0.1"
   },
   "devDependencies": {
